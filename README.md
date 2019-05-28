@@ -1,2 +1,4 @@
 # IMG
-Informatie Model Geluid
+Deze repository bevat het Informatie Model Geluid
+
+Het informatie model is te lezen via GeitHub Pages: https://geonovum.github.io/IMG/
