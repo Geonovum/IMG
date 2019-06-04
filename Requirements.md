@@ -65,7 +65,7 @@
 - [*Specificeren*] Object **Geluidbrontype**: type geluidbron
 - Relatie **Geluidbron**, **Geluidbrontype** en **Geluidbronsoort**
 - [*Specificeren*] Relatie **Rijlijn**, **Wegvak** tot netwerktopologie?
-- Relatie **Rijweg** met **Rijksweg** omdraaien: wegvak met rijlijn ...
+- Relatie **Rijweg** met **Rijksweg** omdraaien
 - Object **Absorbtieniveau** (de absorbtiefactor van het bodemvlak (bijv. asfalt) van de weg (polygoon), betreft 0db of 0,5db)
 - [*Specificeren*] Snelheden en andere attributen zijn ook logischer op rijlijnniveau
 
