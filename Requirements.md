@@ -1,3 +1,4 @@
+
 # Overleg RIVM 2019-05-28
 
 ## Requirements
@@ -10,9 +11,9 @@
    - De GPP's opnieuw uit te rekenen
    - Daarbij op dezelfde plafondwaarde uit te komen.
    - Bij overdracht van weg van ene partij naar andere partij bij herberekening op zelfde 
-   - Vanuit I&W is deze ambitie er juist niet
+   - Vanuit de opdrachtgever is deze ambitie er niet
 - Het IMG mag groter zijn dan wat wettelijk als nodig wordt verondersteld. Het datamodel moet Nederlandbreed geluid ondersteunen. 
-- [*Beslispunt*] Voor de European Noise Directive (END), die over 3 jaar in werking treedt, is overdracht in brede zin nodig. Het is wenselijk om hierop voor te sorteren. I&W heeft aangegeven dat compliancy met END buiten de scope valt. Houdt rekening met het brede plaatje. Over 3 jaar moet je geluidskaarten kunnen produceren. Het IMG zou hiervoor dan wel de faciliteiten moeten kunnen bieden. De END zit nu niet in de scope, maar het is de wens van RWS dat het datamodel wel zo ontwikkeld wordt dat je voorsorteert op END.
+- [*Beslispunt*] Voor de European Noise Directive (END), die over 3 jaar in werking treedt, is overdracht in brede zin nodig. Het is wenselijk om hierop voor te sorteren. De opdrachtgever heeft aangegeven dat compliancy met END buiten de scope valt. Houdt rekening met het brede plaatje. Over 3 jaar moet je geluidskaarten kunnen produceren. Het IMG zou hiervoor dan wel de faciliteiten moeten kunnen bieden. De END zit nu niet in de scope, maar het is de wens van de stakeholders dat het datamodel wel zo ontwikkeld wordt dat je voorsorteert op END.
 - [*Specificeren*] Voor alle onderdelen, waneer is dat gestart en waneer eindigt het, de juridisch geldige situatie (besluit), voor dat besluit ook aangeven wat de peildatum van de brondata voor dat besluit is.
 - In model de relatie meenemen, maar hoeft niet in de voorziening te worden opgenomen. Je zou ook nog optioneel een relatie naar (bijv.) BGT-wegdeel. 
 - Doel is ook om bronhouders zoveel mogelijk te ontlasten. 
@@ -33,7 +34,7 @@
 - Binnen het begrip **snelheid** duidelijk onderscheid maken tussen:
     - [1] wat mag er maximaal gereden worden
     - [2] daadwerkelijk gereden snelheid
-- [*Beslispunt*] RWS geeft voorkeur aan **NWB als standaard** voor wegen, daarin graag die afstemming en conformiteit (zie ook: onderzoek geluid-compliant maken NWB). Voor provincies is het **NWB nog niet goed bruikbaar als bron**
+- [*Beslispunt*] Er is nog geen concensus over het bronbestand voor wegen.  Enerzijds is er voorkeur voor het **NWB als standaard** voor wegen, mede omdat er al onderzoek is gedaan naar het geluid-compliant maken NWB). Tegelijkertijd is **NWB nog niet voor alle partijen goed bruikbaar als bron**
 - [*Specificeren*] Het IMG legt niet op hoe je om moet gaan met rijlijnen. Het rekenmodel zelf zal bepalende factor zijn voor omgang rijlijnen.
 - In IMG kunnen zien hoe rijlijnen **samenhangen met andere datasets**
 - De **breedte** van de weg hoort niet bij de rijlijn, maar bij het wegvak.
@@ -91,7 +92,7 @@
 ### Besluit
 - Het is voor de voorziening voldoende om het besluit vast te leggen.
 - [*Specificeren*] Gebruikers willen de juridische status weten
-- Er kan een verschil zijn tussen wat in het besluit staat versus wat er daadwerkelijk aanwezig is. RWS leeft nu na op besluitinformatie. ProRail leeft na op actuele informatie. Dat is eigenlijk mooier (*Wat betekent dat voor het eventueel opnemen van een object* **besluit**)
+- Er kan een verschil zijn tussen wat in het besluit staat versus wat er daadwerkelijk aanwezig is. Rijkswaterstaat leeft nu na op besluitinformatie. ProRail leeft na op actuele informatie. Dat laatste verdient volgens stakeholders de voorkeur. (*Wat betekent dat voor het eventueel opnemen van een object* **besluit**)
 - Het model heeft betrekking op de **vergunde situatie**. Veranderingen in de werklijkheid betekenen niet noodzakelijk dat die automatisch tot wijzigingen in een berekening leiden.
 - De vraag kunnen stellen welke bronnen op een bepaald moment in de werkelijkheid en juridisch bestonden
 
