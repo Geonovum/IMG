@@ -18,14 +18,10 @@
 - Rond wegen bestaat veel dubbele registratie: voorkomen in IMG, sluit aan bij bestaande bronnen/ontwikkelingen
 - Handhaven van de vrijheid voor het plaatsen van de rijlijnen (omdat aan harmoniseren kosten verbonden zijn)
 
-### Ter discussie
-[aan onderstaande punten nog reactie Danny toevoegen]
-- Het object **geluidbron** specialisatie laten zijn van het object ***emissiebron***. Hierdoor geeft je aan dat het doel van IM Geluid, niet het vastleggen van de fysieke ligging van de weg is, ook niet waar de auto's daadwerkelijk rijden, maar dat de weg in IM Geluid een emissiebron van geluid is, en vooral input voor een rekenmodel. Diezelfde weg kan trouwens ook een emissiebron voor lucht zij, dan wel stikstof. In al die gevallen zijn de kenmerken van de weg invoer gegevens voor een rekenmodel. De rekenmodellen voor Lucht, Stikstof en Geluid zijn uiteraard verschillend ;-)
-- Het **referentiepunt** opnemen als onderdeel van het object **rekenpunt**. Een geluidgevoelig object is ook een rekenpunt. Zo'n rekenmodel rekent dan voor nadere gedefinieerde rekenpunten (bijv een referentiepunt (GPP), maar kan ook een geluidgevoelig object zijn met geluidbelasting) de Geluidproductie op dat rekenpunt uit. Een referentiepunt heeft daarnaast ook nog een juridische status en moet gemonitord worden.
-
 ### Geluidrelevante objecten
 > *Eventueel later opsplitsen naar* ***bron***, ***overdracht*** *en* ***omgeving***.
 - [*Beslispunt*] Helder onderscheiden wat verschil is tussen de categorieën: ***emissiebron***, ***omgeving***, ***overdracht***. Vooral onderscheid tussen laatste twee is nog niet scherp en verdient nog extra aandacht.
+- Het object **geluidbron** specialisatie laten zijn van het object ***emissiebron***. Hierdoor geeft je aan dat het doel van IM Geluid, niet het vastleggen van de fysieke ligging van de weg is, ook niet waar de auto's daadwerkelijk rijden, maar dat de weg in IM Geluid een emissiebron van geluid is, en vooral input voor een rekenmodel. Diezelfde weg kan trouwens ook een emissiebron voor lucht zij, dan wel stikstof. In al die gevallen zijn de kenmerken van de weg invoer gegevens voor een rekenmodel. De rekenmodellen voor Lucht, Stikstof en Geluid zijn uiteraard verschillend. Het is hier wel de vraag in hoeverre het opnemen van een degelijk niet-geluidspecifiek objecttype verstandig is. Hoewel het voor de hand ligt om voor te sorteren op breder gebruik van het informatiemodel, maakt het de vraag complexer en is de vraag of hergebruik op dit niveau plaats zal vinden.
 - [*Specificeren*] Eigenschappen die bepalend zijn voor de sterkte van het geluid
 - De term **bebouwing** wijzigen naar bijv.: *inrichting(en)*, *installaties*. Dit soort tussentermen kunnen vervallen als we het model in profielen groeperen.
 -  **Intensiteiten** meenemen (aantal voertuigen per tijdseenheid)
@@ -61,7 +57,7 @@
 - [*Specificeren*] De **bronhoogte** van [...] is voor de berekening van GPP's een constante (0,75m) en bovendien technisch geen eigenschap van de weg. (*In hoeverre is deze waarde voor een bredere scope relevant? Is het dan wel een variabele?*)
 - [*Specificeren*] De **standaardwaarde** is voor GPP's een constante (50dB) en dient niet in het model te worden opgenomen. De waarde is vastgelegd in wet- en regelgeving. Verwijzen naar geannoteerde regel in LVBB? Eventueel als attribuut van **geluidaandachtsgebied** opnemen
 - [*Specificeren*] Object of attribuut **Geluidafschermende objecten** opnemen i.p.v. *Geluidbeperkende maatregel*. *Waarom bestaat een scherm uit losse 'schermdelen'?*
-- Object **Referentiepunt** heeft een aantal waarden (is een type van een rekenpunt)
+- Object **Referentiepunt** heeft een aantal waarden (is een type van een rekenpunt). Het **referentiepunt** opnemen als onderdeel van het object **rekenpunt**. Een geluidgevoelig object is ook een rekenpunt. Zo'n rekenmodel rekent dan voor nadere gedefinieerde rekenpunten (bijv een referentiepunt (GPP), maar kan ook een geluidgevoelig object zijn met geluidbelasting) de Geluidproductie op dat rekenpunt uit. Een referentiepunt heeft daarnaast ook nog een juridische status en moet gemonitord worden. In hoeverre is een referentiepunt als een specialisatie van rekenpunt van toegevoegde waarde? De rekenpunten waarop je de geluidbelasting berekent zijn andere punten. Geluidgevoelige objecten vallen ook niet binnen de scope van de gegevens die we beheren.
 - Attribuut **Geluidproductieplafond** opnemen bij *Referentiepunt*.
 - Object **Recent besluit**, je wilt hier apart naar kunnen verwijzen
 - Attribuut **Plafondcorrectiewaarde** 1,5dB die op de weg plaats vindt. Bij tracébesluiten gaat het over toekomstwaarde en mag je 1.5db niet eens meenemen. [**LET OP**] Kan meer waarden hebben dan alleen 0 of 1,5 dB. Bij spoor heeft de HSL-lijn bijvoorbeeld een andere waarde.
