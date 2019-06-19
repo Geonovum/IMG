@@ -19,6 +19,27 @@
 - Handhaven van de vrijheid voor het plaatsen van de rijlijnen (omdat aan harmoniseren kosten verbonden zijn)
 
 ### Geluidrelevante objecten
+
+#### Nog plaatsen
+- standaardwaarde: voorgedefieerde. Wordt er niet mee gerekend? Zijn constanten (50dB). Waarde zit in wet en regelgeving. Wil je kunnen herleiden o.b.v. standwaarden iets berekend is (reconstrueren). Verwijzen naar geannoteerde regel in LVBB? Hoe belangrijk. Traceerbaarheidseis (vraag aan Ministerie). Kan ook als attribuut van geluidaandachtgebied.
+- geluidafschermend objecten i.p.v geluidbeperkende maatregel. Nog uitzoeken of het een object of attribuut wordt. Waarom segmenten scherm? TEchnische reden? Vraag aan RWS, hier wens om te normaliseren
+- referentiepunt: heeft aantal waarden (is een type van een rekenpunt), kan een juridisch punt verplaatst worden
+- gpp als attribuut van referentiepunt
+- recent besluit als apart object
+  - hoogte van het referentiepunt t.o.v. maaiveld vastleggen. Moet tussen 3,5 en 4 meter liggen.
+  - plafondcorrectiewaarde, 1,5dB die op de weg plaats vindt. Bij tracébesluiten gaat het over toekomstwaarde en mag je 1.5db niet eens meenemen
+  - snelheden per voertuigcategorie
+- geluidaandachtgebied: overschreiding niet (is meer monitoring), is per geluidbronSOORT
+- Geluidbronsoort NIET geluidbronTYPE VERZAMELING geen TYPE. Zie vorige punt. Geluidbrondsoort en aandachtgebied aan elkaar relateren
+- Voor img, willen we het stukje van de rijlijn dat binnen een wegvak valt.
+- [1] representatie wegen in werkelijkheid [2] respresentatie voor geluidberekening. Onderscheid hard maken, profiteren van fysieke beschrijvingen (imgeo/imbor), deel uit IMWV en uiteindelijk 3de categorie, geluidsberekening (abstracte geometrieën). Uitgangsputn, alleen vastleggen wat je nodig hebt voor de berekening. In model de relatie meenemen, maar hoeft niet in de voorziening te worden opgenomen. Je zou ook nog optioneel een relatie naar (bijv.) BGT-wegdeel. Doel is ook om bronhouders zoveel mogelijk te ontlasten. Tegelijk qua kwaliteit: wel heel goed te zien hoe goed iets gemapped is met anders modellen.
+- we leggen vast wat de vergunde situatie. Verandering in de werklijkheid betekenen niet noodzakelijk dat die automatisch tot wijzigingen in een rekekning leiden.
+- breedte van de weg hoeft er neit in
+- wat er niet instaat, maar wel wenselijk is: wat is het absorbtieniveau (de absorbtiefactor van het bodemvlak) van de bodemvlak (asfalt) van de weg (polygon) (0dB of 0,5dB)
+- er is vrijheid in het plaatsen van de rijlijnen, vrijheid wrodt behouden (omdat aan harmoniseren kosten verbonden zijn)
+- snelheden en ander attributen zijn ook logischer op rijlijnniveau
+- verwijzingen naar andere registrateis als optionele attributen om te kunnen relateren
+
 > *Eventueel later opsplitsen naar* ***bron***, ***overdracht*** *en* ***omgeving***.
 - [*Beslispunt*] Helder onderscheiden wat verschil is tussen de categorieën: ***emissiebron***, ***omgeving***, ***overdracht***. Vooral onderscheid tussen laatste twee is nog niet scherp en verdient nog extra aandacht.
 - Het object **geluidbron** specialisatie laten zijn van het object ***emissiebron***. Hierdoor geeft je aan dat het doel van IM Geluid, niet het vastleggen van de fysieke ligging van de weg is, ook niet waar de auto's daadwerkelijk rijden, maar dat de weg in IM Geluid een emissiebron van geluid is, en vooral input voor een rekenmodel. Diezelfde weg kan trouwens ook een emissiebron voor lucht zij, dan wel stikstof. In al die gevallen zijn de kenmerken van de weg invoer gegevens voor een rekenmodel. De rekenmodellen voor Lucht, Stikstof en Geluid zijn uiteraard verschillend. Het is hier wel de vraag in hoeverre het opnemen van een degelijk niet-geluidspecifiek objecttype verstandig is. Hoewel het voor de hand ligt om voor te sorteren op breder gebruik van het informatiemodel, maakt het de vraag complexer en is de vraag of hergebruik op dit niveau plaats zal vinden.
