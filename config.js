@@ -96,7 +96,15 @@ var respecConfig =
         status:     "versie van de publicatie",
         publisher:  "naam van de publiceerder",
         company:    "eventueel naam van bedrijf",
-    }
+    },
+    MIM: {
+      id: "mim10",
+      title: "MIM - Metamodel Informatie Modellering",
+      href: "https://docs.geostandaarden.nl/mim/mim10/",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "2017-06-14"
+    },
   },
 
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
