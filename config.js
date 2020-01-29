@@ -60,7 +60,7 @@ var respecConfig =
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
   shortName: "img", 	            // Wordt gebruikt in de document URL
   //-- pubDomain is verplicht! (komt in de URL: Activeer 1 van de volgende) ------------
-  pubDomain: "img", 	              // Informatiemodel Geluid
+  pubDomain: "cvgg", 	              // Informatiemodel Geluid
   //pubDomain: "mim", 	            // Metamodel Informatie Modellering
   //pubDomain: "bor", 	            // Beheer Openbare Ruimte
   //pubDomain: "bro", 	            // Basisregistratie Ondergrond
