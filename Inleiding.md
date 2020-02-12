@@ -2,7 +2,7 @@
 
 ## Inleiding Centrale Voorziening Geluidgegevens
 
-In 2021 treedt de Omgevingswet in werking. Het Digitaal Stelsel Omgevingswet (DSO) ondersteunt deze Omgevingswet. Het biedt een digitaal loket voor het melden en aanvragen van initiatieven in de leefomgeving. Geluid is een specifiek thema in de Omgevingswet dat parallel aan het DSO wordt ingericht. Het Rijksinstituut voor Volksgezondheid en Milieu (RIVM Rijksinstituut voor Volksgezondheid en Milieu ) werkt in opdracht van het ministerie van Infrastructuur en Waterstaat (I&W Ministerie van Infrastructuur & Waterstaat ) aan de Centrale Voorziening Geluidgegevens (CVGG). Via deze voorziening worden geluidgegevens laagdrempelig en uniform beschikbaar gesteld. Naar verwachting komen relevante delen van de CVGG in de toekomst ook in het DSO.
+In 2021 treedt de Omgevingswet in werking. Het Digitaal Stelsel Omgevingswet (DSO) ondersteunt deze Omgevingswet. Het biedt een digitaal loket voor het melden en aanvragen van initiatieven in de leefomgeving. Geluid is een specifiek thema in de Omgevingswet dat parallel aan het DSO wordt ingericht. Het [Rijksinstituut voor Volksgezondheid en Milieu (RIVM)](https://www.rivm.nl) werkt in opdracht van het [ministerie van Infrastructuur en Waterstaat (I&W)](https://www.rijksoverheid.nl/ministeries/ministerie-van-infrastructuur-en-waterstaat) aan de Centrale Voorziening Geluidgegevens (CVGG). Via deze voorziening worden geluidgegevens laagdrempelig en uniform beschikbaar gesteld. Naar verwachting komen relevante delen van de CVGG in de toekomst ook in het DSO.
 
 ### Waarom komt er een Centrale Voorziening Geluidgegevens?
 Met de Omgevingswet bundelt de overheid de regels voor onder andere ruimtelijke projecten. Zo wordt het straks eenvoudiger om bijvoorbeeld een bouwproject te starten en plannen op elkaar af te stemmen. Gemeenten, provincies en waterschappen krijgen ook meer ruimte om keuzes te maken en hun omgevingsbeleid aan te passen aan hun doelen en wensen.
@@ -21,9 +21,9 @@ Bron: [CVGG website van RIVM](https://www.rivm.nl/cvgg)
 ## Inleiding informatiemodel
 
 ### Het Informatiemodel Geluid: de basis voor een gestructureerde in- en uitvoer
-De Centrale Voorziening Geluidgegevens (CVGG) wordt het digitale systeem om geluidgegevens uit te wisselen. Dat betekent dat het rijk, provincies, gemeenten en waterschappen veel geluidinformatie gaan leveren aan deze voorziening. De geluidinformatie is heel divers. Het varieert van verkeersgegevens, geluidproductiegegevens tot en met gegevens die zijn vastgesteld op een besluit. In het Informatiemodel Geluid staan de afspraken, technische eisen en aanleverspecificaties waaraan de gegevens moeten voldoen. Om te komen tot een gedragen Informatiemodel Geluid stelt het ontwikkelteam CVGG deze op in overleg met bronhouders en gebruikers.
+De Centrale Voorziening Geluidgegevens (CVGG) wordt het digitale systeem om geluidgegevens uit te wisselen. Dat betekent dat het rijk, provincies, gemeenten en waterschappen veel geluidinformatie gaan leveren aan deze voorziening. De geluidinformatie is heel divers. Het varieert van verkeersgegevens, geluidproductie- en dempingsgegevens tot en met gegevens die zijn vastgesteld in een besluit. In het Informatiemodel Geluid staan de afspraken, technische eisen en aanleverspecificaties waaraan de gegevens moeten voldoen. Om te komen tot een gedragen Informatiemodel Geluid stelt het ontwikkelteam CVGG deze op in overleg met bronhouders en gebruikers.
 
-Een informatiemodel (IM) is nodig om informatie uit te wisselen. De definities en eisen aan de kwaliteit van de gegevens worden in een IM vastgelegd. Een IM bevat ook afspraken over de formaten waarin de informatie geleverd moet, kan of mag worden. Het doel van het Informatiemodel Geluid is dat:
+Een informatiemodel (IM) is nodig om op een interoperabele manier informatie uit te wisselen. Het bevat de formele definitie van objecten, attributen, relaties en regels in een bepaald toepassingsdomein, inclusief de eisen aan de structuur, inhoud (semantiek) en kwaliteit van de gegevens die worden uitgewisseld binnen dit domein. Het toepassingsdomein is in dit geval het beheersen van de geluidproductie. Het doel van het Informatiemodel Geluid is dat:
 
 - alle relevante gegevens voor geluidberekeningen op gelijke, eenduidige, vooraf vastgestelde wijze aangeleverd kunnen worden;
 - gegevens op een eenduidige geautomatiseerde wijze uitgewisseld kunnen worden tussen de verschillende gebruikers, zoals bevoegde gezagen (waaronder gemeenten en waterschappen) en initiatiefnemers.
@@ -32,11 +32,11 @@ Bron: [CVGG nieuwsbrief van RIVM](https://www.rivm.nl/abonneren/nieuwsbrief-cent
 
 ### IMGeluid Catalogus
 
-In het IM Geluid komen de afspraken over de aanlevering van informatie over:
+In het IMGeluid komen de afspraken over de uitwisseling van informatie over een aantal domeinen:
 
 - Geluidproductieplafonds, (wegverkeer, spoor en industrieterreinen);
 - Basisgeluidemissies (wegverkeer, lokaal spoor);
 - Windturbines (contouren en/of brongegevens);
 - Luchthavens (contouren);
 
-In deze catalogus is voor ieder van deze domeinen de laatste versie van het informatiemodel te vinden. Deze informatiemodellen bestaan uit objecten die in relatie staan met elkaar. Voor ieder object worden alle eigenschappen (Attributen), die in de werkelijkheid relevant zijn, opgenomen in het informatiemodel. De informatiemodellen in deze catalogus zijn gemodelleerd conform het Metamodel Informatie Modellering [[MIM]]. In de MIM catalogus vallen alle regels waar het Informatie Model Geluid aan moet voldoen genoemd. In deze catalogus zijn (de meeste) objecten en attributen voorzien van definities zodat het Informatiemodel ook te begrijpen is zonder kennis van UML.
+De afspraken uit het IMGeluid zijn vastgelegd in dit document, de IMGeluid catalogus. In deze catalogus is voor ieder van deze domeinen de laatste versie van het informatiemodel te vinden. Deze informatiemodellen bestaan uit objecten die in relatie staan met elkaar. Voor ieder object worden alle eigenschappen (attributen), die in de werkelijkheid relevant zijn, opgenomen in het informatiemodel. De informatiemodellen in deze catalogus zijn gemodelleerd conform het Metamodel Informatie Modellering [[MIM]] met behulp van de modelleertaal [[uml]]. Het MIM bevat alle modelleerregels waar het IMGeluid aan moet voldoen. In deze catalogus zijn de objecten en attributen voorzien van definities, en waar nodig nadere toelichtingen, zodat het informatiemodel ook te begrijpen is zonder kennis van UML.
