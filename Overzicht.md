@@ -60,10 +60,7 @@ controleren van allerlei kwaliteitsregels die inzicht geven in de plausibiliteit
 van de gegevens. Het is de verantwoordelijkheid van de bronhouders zelf om
 eventuele correcties in de gegevens aan te brengen
 
-![](media/8ee9cc4dee95a5bc0cfdc07e6ef21178.emf)
-
-Figuur 3 Architectuurschets Centrale Voorziening Geluidgegevens (AFBEELDING CVGG
-INVOEGEN)
+![Architectuurschets Centrale Voorziening Geluidgegevens](https://github.com/Geonovum/IMG/blob/gh-pages/media/ArchitectuurCVGG.jpg)
 
 Om betekenisvolle en uniforme uitwisseling van geluidgegevens mogelijk te maken,
 is in samenwerking met Geonovum een informatiemodel geluid ontwikkeld. Dit
@@ -107,9 +104,9 @@ ervoor te zorgen dat objecten niet redundant in de dataspecificatie hoeven
 worden opgenomen. In de afbeelding hieronder is gemodelleerd hoe de hiërarchie
 in elkaar zit aan de hand van de UML generalisatie relatie.
 
-![Afbeelding met schermafbeelding Automatisch gegenereerde beschrijving](media/cbc99a70e5c9ba86cdafbf429348a508.png)
+![Domeinen van het Informatiemodel Geluid](https://github.com/Geonovum/IMG/blob/gh-pages/media/DomeinenIMG.jpg)
 
-**Aanleverplicht. (AFBEELDING DOMEINEN INVOEGEN)**
+**Aanleverplicht**
 
 IMG2020 zal samen met de AREG een juridische status krijgen. Dit houd in dat het
 wettelijk zal worden vastgesteld welke brongegevens moeten worden aangeleverd.
