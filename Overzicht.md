@@ -60,7 +60,7 @@ controleren van allerlei kwaliteitsregels die inzicht geven in de plausibiliteit
 van de gegevens. Het is de verantwoordelijkheid van de bronhouders zelf om
 eventuele correcties in de gegevens aan te brengen
 
-![Architectuurschets Centrale Voorziening Geluidgegevens](https://github.com/Geonovum/IMG/blob/gh-pages/media/ArchitectuurCVGG.jpg)
+![Architectuurschets Centrale Voorziening Geluidgegevens](media/ArchitectuurCVGG.jpg)
 
 Om betekenisvolle en uniforme uitwisseling van geluidgegevens mogelijk te maken,
 is in samenwerking met Geonovum een informatiemodel geluid ontwikkeld. Dit
@@ -104,7 +104,7 @@ ervoor te zorgen dat objecten niet redundant in de dataspecificatie hoeven
 worden opgenomen. In de afbeelding hieronder is gemodelleerd hoe de hiërarchie
 in elkaar zit aan de hand van de UML generalisatie relatie.
 
-![Domeinen van het Informatiemodel Geluid](https://github.com/Geonovum/IMG/blob/gh-pages/media/DomeinenIMG.jpg)
+![Domeinen van het Informatiemodel Geluid](media/DomeinenIMG.jpg)
 
 **Aanleverplicht**
 
