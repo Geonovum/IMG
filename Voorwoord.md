@@ -1,3 +1,3 @@
 # Voorwoord
 
-Tekst
+In 2021 treedt de Omgevingswet in werking. Het Digitaal Stelsel Omgevingswet (DSO) ondersteunt deze Omgevingswet. Het biedt een digitaal loket voor het melden en aanvragen van initiatieven in de leefomgeving. Geluid is een specifiek thema in de Omgevingswet dat parallel aan het DSO wordt ingericht. Het [Rijksinstituut voor Volksgezondheid en Milieu (RIVM)](https://www.rivm.nl) werkt in opdracht van het [ministerie van Infrastructuur en Waterstaat (I&W)](https://www.rijksoverheid.nl/ministeries/ministerie-van-infrastructuur-en-waterstaat) aan de Centrale Voorziening Geluidgegevens (CVGG). Via deze voorziening worden geluidgegevens laagdrempelig en uniform beschikbaar gesteld. Naar verwachting komen relevante delen van de CVGG in de toekomst ook in het DSO.
