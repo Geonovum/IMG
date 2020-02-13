@@ -1,7 +1,7 @@
-1 Inleiding en leeswijzer.
+Inleiding en leeswijzer.
 ==========================
 
-1.2.1 Inleiding informatiemodel
+Inleiding informatiemodel
 -------------------------------
 
 De Centrale Voorziening Geluidgegevens (CVGG) wordt het digitale systeem om
@@ -39,7 +39,7 @@ moet voldoen. In deze catalogus zijn de objecten en attributen voorzien van
 definities, en waar nodig nadere toelichtingen, zodat het informatiemodel ook te
 begrijpen is zonder kennis van UML.
 
-1.2.2 Leeswijzer
+Leeswijzer
 ----------------
 
 De dataspecificatie van het informatiemodel geluid, staat omschreven in dit
