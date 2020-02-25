@@ -1,15 +1,15 @@
 Overzicht 
 ============
 
-Naam en Acroniemen. 
+Naam en Acroniemen
 ------------------------
 
 IMG2020 – Dataspecificatie voor Centrale Voorziening Geluidgegevens (CVGG).
 
-Informele beschrijving.
+Informele beschrijving
 ---------------------------
 
-Definitie. 
+Definitie
 -----------------
 
 RIVM ontwikkelt in opdracht van het ministerie van Infrastructuur en Waterstaat
@@ -27,7 +27,7 @@ geluidproductieplafond ook verplicht gebruikt worden bij het berekenen van
 geluidbelasting. Deze gegevens kunnen dan ook laagdrempelig worden verkregen uit
 de centrale voorziening.
 
-Beschrijving. 
+Beschrijving
 --------------------
 
 **Centrale Voorziening Geluidgegevens**
