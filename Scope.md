@@ -1,9 +1,6 @@
 Scope 
 ========
 
-Scope. 
------------
-
 Dit document omschrijft de dataspecificatie, IMG2020, voor de Centrale
 Voorziening Geluidgegevens (CVGG).
 
@@ -16,7 +13,7 @@ voort uit verschillende wetgevingen, regelingen en processen. Deze zijn:
 
 -   **Omgevingswet:** Met de Omgevingswet wil de overheid de regels voor de
     ontwikkeling en het gebruik van de fysieke leefomgeving vereenvoudigen en
-    samenvoegen. Zodat het straks bijvoorbeeld makkelijker is om bouwprojecten
+    samenvoegen, zodat het straks bijvoorbeeld makkelijker is om bouwprojecten
     te starten. De hoger liggende doelen zijn het (a) bereiken en in stand
     houden van een veilige en gezonde fysieke leefomgeving en een goede
     omgevingskwaliteit en (b) doelmatig beheren, gebruiken en ontwikkelen van de
@@ -67,6 +64,6 @@ voort uit verschillende wetgevingen, regelingen en processen. Deze zijn:
     gebruikt. Voor het standaardiseren van de inhoud zijn dataspecificaties
     ontwikkeld. Deze standaardiseren de structuur en de betekenis van de uit te
     wisselen gegevens. Zolang de centrale voorziening de EU-richtlijn niet
-    ondersteund is INSPIRE niet relevant. Vooralsnog lijken de gegevens die de
+    ondersteunt is INSPIRE niet relevant. Vooralsnog lijken de gegevens die de
     centrale voorziening bevat niet onder INSPIRE te vallen omdat zij specifiek
     zijn voor de Nederlandse situatie.
