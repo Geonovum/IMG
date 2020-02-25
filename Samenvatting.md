@@ -6,4 +6,4 @@ uit objecten die te maken hebben met de geluidberekening, zoals emissieobjecten
 en overdrachtobjecten, en objecten die te maken hebben met de regelgeving, zoals
 vaststellingen. Het is niet de werkelijkheid die met deze gegevens geschetst
 wordt, maar de vergunde situatie. IMG2020 is gemodelleerd conform het Metamodel
-Informatie Modellering [[mim10]].</p>
+Informatie Modellering [[MIM]].</p>

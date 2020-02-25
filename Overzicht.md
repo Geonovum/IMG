@@ -78,7 +78,7 @@ spoorwegen en industrieterreinen.
 IMG2020 vormt het gemeenschappelijke begrippenkader voor de uitwisseling van
 informatie van verschillende bestaande en nieuwe geluidregisters. IMG2020 is
 gemodelleerd conform de specificaties van het Metamodel Informatie Modellering
-[[mim10]]. Voor de uitleg van betekenis van entiteiten binnen het informatiemodel
+[[MIM]]. Voor de uitleg van betekenis van entiteiten binnen het informatiemodel
 wordt verwezen naar de [MIM catalogus bijlage](https://docs.geostandaarden.nl/mim/mim10/#B00) die dit toelicht. 
 
 Binnen de scope van de CVGG vallen verschillende geluiddomeinen. Om technische en
@@ -124,12 +124,12 @@ gekeken of deze regels ook in het informatiemodel kunnen worden opgenomen.
     informatie bovenop het wettelijke verplichte minimum, dan kan dat uit
     oogpunt van dienstverlening worden opgenomen.
 
-Normatieve referenties. 
+Normatieve referenties
 ----------------------------
 
 De volgende documenten zijn onmisbaar voor de totstandkoming van dit document:
 
--   Metamodel Informatie Modellering [[mim10]]
+-   Metamodel Informatie Modellering [[MIM]]
 
 -   [Raamwerk van geo-standaarden 3.0](https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf)
 
@@ -158,7 +158,7 @@ Deze specificatie is opgesteld door Geonovum en is gebaseerd op ??.
 Mapping met bestaande standaarden
 -------------------------------------
 
-Algemene Termen en definities. 
+Algemene Termen en definities
 -----------------------------------
 
 Lijst van termen en definities die in deze beschrijving worden gehanteerd,
