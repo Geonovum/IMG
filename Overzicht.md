@@ -143,7 +143,7 @@ De volgende documenten zijn onmisbaar voor de totstandkoming van dit document:
 
 -   AREG - Aanvullingsregeling geluid_200113
 
-Totstandkoming. 
+Totstandkoming
 --------------------
 
 Deze specificatie is opgesteld door Geonovum en is gebaseerd op ??.
@@ -245,7 +245,7 @@ Bron: RIVM: PSA Centrale Voorziening Geluidgegevens 1.03
 | **waardelijst**                                              | lijst van waarden                                                                                                                                                                                                                                                                                |
 | **werkelijkheid**                                            | beeld van de echte of hypothetische wereld die alles van belang omvat                                                                                                                                                                                                                            |
 
-Algemene Symbolen en afkortingen. 
+Algemene Symbolen en afkortingen
 --------------------------------------
 
 Lijst van afkortingen en acroniemen die worden gehanteerd in deze
