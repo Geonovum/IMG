@@ -1,4 +1,4 @@
-Overzicht test
+Overzicht
 ============
 
 Naam en Acroniemen
