@@ -46,7 +46,7 @@ moeten de brongegevens bij een geluidproductieplafond ook verplicht gebruikt
 worden bij het berekenen van geluidbelasting. Deze gegevens kunnen dan ook
 laagdrempelig worden verkregen uit de centrale voorziening.
 
-Figuur 3 geeft een schets van de architectuur van de Centrale Voorziening
+Figuur 1 geeft een schets van de architectuur van de Centrale Voorziening
 Geluidgegevens. Hierin is zichtbaar dat zowel rijk, provincies, gemeenten als
 waterschappen bronhouder zijn. Zij zullen de relevante gegevens zelf halen uit
 bijvoorbeeld asset management systemen, geluidrekenmodules of geografische
@@ -60,7 +60,8 @@ controleren van allerlei kwaliteitsregels die inzicht geven in de plausibiliteit
 van de gegevens. Het is de verantwoordelijkheid van de bronhouders zelf om
 eventuele correcties in de gegevens aan te brengen
 
-![Architectuurschets Centrale Voorziening Geluidgegevens](media/ArchitectuurCVGG.jpg)
+![Figuur 1: Architectuurschets Centrale Voorziening Geluidgegevens](media/ArchitectuurCVGG.jpg)
+*Figuur 1: Architectuurschets Centrale Voorziening Geluidgegevens*
 
 Om betekenisvolle en uniforme uitwisseling van geluidgegevens mogelijk te maken,
 is in samenwerking met Geonovum een informatiemodel geluid ontwikkeld. Dit
@@ -75,8 +76,8 @@ spoorwegen en industrieterreinen.
 
 **Informatie Model Geluid**
 
-IMG2020 vormt het gemeenschappelijke begrippenkader voor de uitwisseling van
-informatie van verschillende bestaande en nieuwe geluidregisters. IMG2020 is
+IMGeluid vormt het gemeenschappelijke begrippenkader voor de uitwisseling van
+informatie van verschillende bestaande en nieuwe geluidregisters. IMGeluid is
 gemodelleerd conform de specificaties van het Metamodel Informatie Modellering
 [[MIM]]. Voor de uitleg van betekenis van entiteiten binnen het informatiemodel
 wordt verwezen naar de [MIM catalogus bijlage](https://docs.geostandaarden.nl/mim/mim10/#B00) die dit toelicht. 
@@ -88,11 +89,11 @@ de dataspecificatie (zie [Hoofdstuk 5 Gegevensdefinitie](#cat).
 
 | Domeinnaam    | Omschrijving                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Algemeen      | In domeinmodel Algemeen staan objecten, attributen en relaties die relevant zijn voor akoestisch onderzoek bij alle domeinen binnen IMG2020. Vanuit andere domeinen wordt vaak verwezen naar objecten binnen dit domein. Meestal is deze verwijzing in de vorm van een associatie. In sommige gevallen wordt er een domein specifieke specialisatie gemaakt van een Algemeen object. Dit wordt gedaan door gebruik te maken van een generalisatierelatie (het omgekeerde van een generalisatierelatie is een specialisatierelatie). |
-| BGE Algemeen  | In domeinmodel BGE Algemeen staan objecten, attributen en relaties die relevant zijn voor akoestisch onderzoek bij alle basisgeluidemissie (BGE) domeinen binnen IMG2020.                                                                                                                                                                                                                                                                                                                                                  |
+| Algemeen      | In domeinmodel Algemeen staan objecten, attributen en relaties die relevant zijn voor akoestisch onderzoek bij alle domeinen binnen IMGeluid. Vanuit andere domeinen wordt vaak verwezen naar objecten binnen dit domein. Meestal is deze verwijzing in de vorm van een associatie. In sommige gevallen wordt er een domein specifieke specialisatie gemaakt van een Algemeen object. Dit wordt gedaan door gebruik te maken van een generalisatierelatie (het omgekeerde van een generalisatierelatie is een specialisatierelatie). |
+| BGE Algemeen  | In domeinmodel BGE Algemeen staan objecten, attributen en relaties die relevant zijn voor akoestisch onderzoek bij alle basisgeluidemissie (BGE) domeinen binnen IMGeluid.                                                                                                                                                                                                                                                                                                                                                  |
 | BGE Spoor     | In domeinmodel BGE Spoor staan objecten, attributen en relaties die nodig zijn voor akoestisch onderzoek bij lokale spoorwegen waarvoor de basisgeluidemissie regeling geldt.                                                                                                                                                                                                                                                                                                                                               |
 | BGE Weg       | In domeinmodel BGE Weg staan objecten, attributen en relaties die nodig zijn voor akoestisch onderzoek bij gemeentelijke wegen waarvoor de basisgeluidemissie regeling geldt.                                                                                                                                                                                                                                                                                                                                               |
-| GPP Algemeen  | In domeinmodel GPP Algemeen staan objecten, attributen en relaties die relevant zijn voor akoestisch onderzoek bij alle GPP domeinen binnen IMG2020.                                                                                                                                                                                                                                                                                                                                                                       |
+| GPP Algemeen  | In domeinmodel GPP Algemeen staan objecten, attributen en relaties die relevant zijn voor akoestisch onderzoek bij alle GPP domeinen binnen IMGeluid.                                                                                                                                                                                                                                                                                                                                                                       |
 | GPP Industrie | In domeinmodel GPP Industrie staan objecten, attributen en relaties die nodig zijn voor akoestisch onderzoek bij industrieterreinen waarvoor de geluidproductieplafond regeling geldt.                                                                                                                                                                                                                                                                                                                                      |
 | GPP Spoor     | In domeinmodel GPP Spoor staan objecten, attributen en relaties die nodig zijn voor akoestisch onderzoek bij spoorwegen waarvoor de geluidproductieplafond regeling geldt.                                                                                                                                                                                                                                                                                                                                                  |
 | GPP Weg       | In domeinmodel GPP Weg staan objecten, attributen en relaties die nodig zijn voor akoestisch onderzoek bij wegen waarvoor de geluidproductieplafond regeling geldt.                                                                                                                                                                                                                                                                                                                                                         |
@@ -104,22 +105,23 @@ ervoor te zorgen dat objecten niet redundant in de dataspecificatie hoeven
 worden opgenomen. In de afbeelding hieronder is gemodelleerd hoe de hiërarchie
 in elkaar zit aan de hand van de UML generalisatie relatie.
 
-![Domeinen van het Informatiemodel Geluid](media/DomeinenIMG.jpg)
+![Figuur 2: Domeinen van het Informatiemodel Geluid](media/DomeinenIMG.jpg)
+*Figuur 2: Domeinen van het Informatiemodel Geluid*
 
 **Aanleverplicht**
 
-IMG2020 zal samen met de AREG een juridische status krijgen. Dit houd in dat het
+IMGeluid zal samen met de AREG een juridische status krijgen. Dit houd in dat het
 wettelijk zal worden vastgesteld welke brongegevens moeten worden aangeleverd.
 Vooralsnog zal de AREG bepalen welke brongegevens dit zijn. Momenteel wordt
 gekeken of deze regels ook in het informatiemodel kunnen worden opgenomen.
 
-**Uitgangspunten toegepast bij modelleren van IMG2020**
+**Uitgangspunten toegepast bij modelleren van IMGeluid**
 
--   IMG2020 is gemodelleerd conform het Metamodel Informatie Modellering.
+-   IMGeluid is gemodelleerd conform het Metamodel Informatie Modellering.
 
--   IMG2020 gaat uit van een Nederlandse syntax.
+-   IMGeluid gaat uit van een Nederlandse syntax.
 
--   IMG2020 ondersteunt de huidige werkprocessen en is niet bedoeld om die te
+-   IMGeluid ondersteunt de huidige werkprocessen en is niet bedoeld om die te
     harmoniseren. Wanneer vanuit gebruik de behoefte bestaat aan aanvullende
     informatie bovenop het wettelijke verplichte minimum, dan kan dat uit
     oogpunt van dienstverlening worden opgenomen.
@@ -142,18 +144,6 @@ De volgende documenten zijn onmisbaar voor de totstandkoming van dit document:
 -   RIVM: PSA Centrale Voorziening Geluidgegevens 1.03?
 
 -   AREG - Aanvullingsregeling geluid_200113
-
-Totstandkoming
---------------------
-
-Deze specificatie is opgesteld door Geonovum en is gebaseerd op ??.
-
-| Documenttitel      | IMG2020 – Dataspecificatie Centrale Voorziening Geluidgegevens |
-|--------------------|----------------------------------------------------------------|
-| Referentiedatum    | 2020-01-29                                                     |
-| Auteur(s)          | Gerard Trouborst, Joeri van Es, Linda van den Brink            |
-| Betrokken partijen | Ministerie van I&W, RIVM en Geonovum                           |
-| Taal               | Nederlands                                                     |
 
 Mapping met bestaande standaarden
 -------------------------------------
