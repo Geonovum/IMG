@@ -1,14 +1,14 @@
 Scope 
 ========
 
-Dit document omschrijft de dataspecificatie, IMG2020, voor de Centrale
+Dit document omschrijft de dataspecificatie, IMGeluid, voor de Centrale
 Voorziening Geluidgegevens (CVGG).
 
-IMG2020 geeft de gedetailleerde beschrijving van structuur, inhoud en
+IMGeluid geeft de gedetailleerde beschrijving van structuur, inhoud en
 datakwaliteit van de CVGG en dient als basis voor de realisatie en ontsluiting
 van CVGG services.
 
-De gebruikstoepassing waar de semantiek van IMG2020 door wordt bepaald komt
+De gebruikstoepassing waar de semantiek van IMGeluid door wordt bepaald komt
 voort uit verschillende wetgevingen, regelingen en processen. Deze zijn:
 
 -   **Omgevingswet:** Met de Omgevingswet wil de overheid de regels voor de
