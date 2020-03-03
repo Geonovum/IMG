@@ -4,7 +4,7 @@ Overzicht
 Naam en Acroniemen
 ------------------------
 
-IMG2020 – Dataspecificatie voor Centrale Voorziening Geluidgegevens (CVGG).
+IMGeluid – Dataspecificatie voor Centrale Voorziening Geluidgegevens (CVGG).
 
 Informele beschrijving
 ---------------------------
@@ -208,7 +208,7 @@ Bron: RIVM: PSA Centrale Voorziening Geluidgegevens 1.03
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **annotatie**                                                | Elke toevoeging op een kaartbeeld voor verduidelijking                                                                                                                                                                                                                                           |
 | **applicatieschema**                                         | informatiemodel dat gegevens beschrijft die worden gebruikt door een of meer applicaties OPMERKING IMKL is met UML beschreven in een applicatieschema.                                                                                                                                           |
-| **associatie of relatie \<UML\>**                            | semantische relatie tussen twee of meer klassen die de connectie tussen hun instanties weergeeft                                                                                                                                                                                                 |
+| **associatie of relatie**                            | semantische relatie tussen twee of meer klassen die de connectie tussen hun instanties weergeeft                                                                                                                                                                                                 |
 | **attribuut**                                                | kenmerk van een object                                                                                                                                                                                                                                                                           |
 | **attribuutwaarde (value)**                                  | waarde die een attribuut aanneemt                                                                                                                                                                                                                                                                |
 | **coördinaat**                                               | getal in een sequentie van n getallen om de positie van een punt in een n-dimensionale ruimte te bepalen                                                                                                                                                                                         |
