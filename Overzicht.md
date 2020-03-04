@@ -108,12 +108,11 @@ in elkaar zit aan de hand van de UML generalisatie relatie.
 ![Figuur 2: Domeinen van het Informatiemodel Geluid](media/Hierarchie.png)
 *Figuur 2: Domeinen van het Informatiemodel Geluid*
 
-**Aanleverplicht**
+**Facultatief gegeven**
 
 IMGeluid zal samen met de AREG een juridische status krijgen. Dit houd in dat het
 wettelijk zal worden vastgesteld welke brongegevens moeten worden aangeleverd.
-Vooralsnog zal de AREG bepalen welke brongegevens dit zijn. Momenteel wordt
-gekeken of deze regels ook in het informatiemodel kunnen worden opgenomen.
+In principe zijn alle emissieobjecten en overdrachtsobjecten brongegevens en daarmee een verplicht onderdeel van de CVGG. Daarnaast kunnen bronhouders aanvullende facultatieve gegevens aanleveren. Deze objecten zijn toegevoegd uit praktische overwegingen, maar hoeven niet bij akoestisch onderzoek te worden gebruikt. In het informatiemodel valt te zien welke brongegevens facultatief mogen worden aangeleverd aan de hand van een oranje kader. 
 
 **Uitgangspunten toegepast bij modelleren van IMGeluid**
 
