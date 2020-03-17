@@ -2,7 +2,7 @@
 <section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
    <p><b>Deze tekst is normatief.</b>
-      <!--MIMLM-InformatiemodelGeluid-1.0-0-20191202-20200312-080258 imvertor 1.59.2--></p><a class="anchor" id="global_package_Algemeen"></a><section id="global_package_Algemeen">
+      <!--MIMLM-InformatiemodelGeluid-1.0-0-20191202-20200317-114409 imvertor 1.59.2--></p><a class="anchor" id="global_package_Algemeen"></a><section id="global_package_Algemeen">
       <h3>Domein   Algemeen</h3>
       <div class="imageinfo overview"><img src="data/Images/EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F.png" usemap="#imagemap-EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F" alt="Diagram Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen&#xA;"><map name="imagemap-EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F">
             <area shape="rect" alt="Monitoringresultaat Monitoringresultaat" coords="536,846,750,947" href="#graph_EAID_BA00B77B_D408_4590_8185_CE59E5838F1E">
@@ -855,16 +855,23 @@
                      <td>IMGeluid</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Verwijzing naar het onderliggende besluit voor GPP, onderliggende bepaling voor BGE
+                           of onderliggende monitoringsrapportage voor een Monitoringswaarde of overige besluiten
+                           of meldingen.
+                        </p>
+                        
+                     </td>
+                  </tr>
+                  <tr>
                      <th>Herkomst definitie</th>
                      <td>IMGeluid</td>
                   </tr>
                   <tr>
                      <th>Toelichting</th>
                      <td>
-                        
-                        <p>Verwijzing naar het onderliggende besluit voor GPP, onderliggende bepaling voor BGE
-                           of onderliggende monitoringsrapportage voor een Monitoringswaarde
-                        </p>
                         
                         <p>Een documentverwijzing kan verbonden zijn aan een monitoringsresultaat dat toebehooort
                            aan een basisgeluidemissieobject. Om die reden heeft een documentverwijzing <em>geen</em> of <em>meerdere</em> geluidproductieplafondobjecten [0..*].
@@ -2122,6 +2129,11 @@
                               <th>Toelichting</th>
                               <td>
                                  
+                                 <p>Een Industrieterrein kan over gemeente grenzen heel vallen. Een Industrieterrein kan
+                                    dus meer bevoegd gezag hebben, daarom bestaat de optie om meer dan 1 bronhouder toe
+                                    te voegen.
+                                 </p>
+                                 
                                  <p>Klik op onderstaande link voor meer informatie:
                                     <a href="$inet://" shape="rect">https://www.logius.nl/diensten/oin/hoe-werkt-het</a>
                                     
@@ -2143,7 +2155,7 @@
                            </tr>
                            <tr>
                               <th>Indicatie kardinaliteit</th>
-                              <td>1</td>
+                              <td>1 .. *</td>
                            </tr>
                            <tr>
                               <th>Indicatie authentiek</th>
@@ -4895,7 +4907,9 @@
                      </td>
                      <td>
                         
-                        <p>Indicatie of een geluidproductieplafond van rechtswege is overgaan.</p>
+                        <p>Indicatie of de initiële vastelling van het geluidproductieplafond van rechtswege
+                           is.
+                        </p>
                         
                      </td>
                      <td>
@@ -4946,7 +4960,7 @@
                         
                      </td>
                      <td>
-                        DatumTijd
+                        Datum
                         
                      </td>
                      <td>1</td>
@@ -5351,7 +5365,7 @@
                      </td>
                      <td>
                         
-                        <p>Een GeluidbronIndustrie hoort wel of niet bij een Geluidbronlijn.</p>
+                        <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een Geluidbronlijn.</p>
                         
                      </td>
                   </tr>
@@ -5370,7 +5384,7 @@
                      </td>
                      <td>
                         
-                        <p>Een GeluidbronIndustrie hoort wel of niet bij een Geluidbronvlak.</p>
+                        <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een Geluidbronvlak.</p>
                         
                      </td>
                   </tr>
@@ -5434,10 +5448,15 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>Er is een vaste strook hard bodemgebied onder de rijlijn gedefinieerd, waardoor het
-                           eerste deel van de geluidsoverdracht altijd over een reflecterende bodem plaatsvindt.
-                           De lengte van dit gedeelte is voor elke sector verschillend. De lengte X is proportioneel
-                           gemaakt ten opzichte van lengte Y, via de formulering X/sin(?).
+                        <p>Bij GPP wegen is een vaste strook hard bodemgebied onder de rijlijn gedefinieerd,
+                           waardoor het eerste deel van de geluidsoverdracht altijd over een reflecterende bodem
+                           plaatsvindt. De lengte van dit gedeelte is voor elke sector verschillend. De lengte
+                           X is proportioneel gemaakt ten opzichte van lengte Y, via de formulering X/sin(?).
+                        </p>
+                        
+                        <p>Is facultatief om te gebruik geluidberekeningen bij wegen,  behalve als deze op een
+                           industrieterrein ligt.
+                           .
                         </p>
                         
                      </td>
@@ -5807,7 +5826,7 @@
                      <td>
                         
                         <p>Het object Hoogtelijnen is optioneel. Het is niet verplicht om hoogtelijnen in de
-                           berekening van het GPP gebruiken.
+                           berekening van het GPP gebruiken, behalve als deze op een industrieterrein ligt.
                         </p>
                         
                      </td>
@@ -6396,7 +6415,9 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Indicatie of een geluidproductieplafond van rechtswege is overgaan.</p>
+                              <p>Indicatie of de initiële vastelling van het geluidproductieplafond van rechtswege
+                                 is.
+                              </p>
                               
                            </td>
                         </tr>
@@ -6408,7 +6429,9 @@
                            <th>Toelichting</th>
                            <td>
                               
-                              <p>Geluidproductieplafonds uit de bestaande systematiek gaan van rechtswege over. Dat
+                              <p>Invoering van rechtswege (2012) obv van Wet Milieubeer art.11.45 lid 1, lid2 en lid
+                                 3.
+                                 Geluidproductieplafonds uit de bestaande systematiek gaan van rechtswege over. Dat
                                  betekent dat het geluidproductieplafond opnieuw berekend wordt met dezelfde brongegevens.
                                  Daardoor kan de waarde wel veranderen ten opzichte van de oorspronkelijke situatie,
                                  maar het geluidproductieplafond wordt niet formeel gewijzigd. Deze overgang van rechtswege
@@ -6683,7 +6706,7 @@
                            </tr>
                            <tr>
                               <th>Formaat</th>
-                              <td>DatumTijd</td>
+                              <td>Datum</td>
                            </tr>
                         </tbody>
                      </table>
@@ -7683,8 +7706,8 @@
                            <th>Toelichting</th>
                            <td>
                               
-                              <p>Geometrie conform met GM_Point datatype. Hoogte van geluidbron ten opzichte van NAP
-                                 kan worden opgeslagen in de geometrie.
+                              <p>Geometrie conform met GM_Point datatype. Z hoogte van geluidbron ten opzichte van
+                                 NAP moet worden opgeslagen in de geometrie.
                               </p>
                               
                            </td>
@@ -7738,7 +7761,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Een GeluidbronIndustrie hoort wel of niet bij een Geluidbronlijn.</p>
+                              <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een Geluidbronlijn.</p>
                               
                            </td>
                         </tr>
@@ -7774,7 +7797,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Een GeluidbronIndustrie hoort wel of niet bij een Geluidbronvlak.</p>
+                              <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een Geluidbronvlak.</p>
                               
                            </td>
                         </tr>
@@ -9176,7 +9199,7 @@
                      </td>
                      <td>
                         
-                        <p>Een GeluidbronIndustrie hoort wel of niet bij een Geluidbronvlak.</p>
+                        <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een Geluidbronvlak.</p>
                         
                      </td>
                   </tr>
@@ -9882,7 +9905,7 @@
                      </td>
                      <td>
                         
-                        <p>Een GeluidbronIndustrie hoort wel of niet bij een Geluidbronlijn.</p>
+                        <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een Geluidbronlijn.</p>
                         
                      </td>
                   </tr>
@@ -12239,7 +12262,7 @@
                   </tr>
                   <tr>
                      <td>
-                        geospoortak
+                        geluidbronregisterlijn
                         
                      </td>
                      <td>
@@ -13594,8 +13617,8 @@
                   </table>
                   
                </div>
-               <a class="anchor" id="detail_attribute_GPPSpoor_Spoordeel_geospoortak"></a><div class="deepheader" id="detail_attribute_GPPSpoor_Spoordeel_geospoortak">
-                  <h7>  <a href="#global_class_GPPSpoor_Spoordeel">Spoordeel</a> geospoortak
+               <a class="anchor" id="detail_attribute_GPPSpoor_Spoordeel_geluidbronregisterlijn"></a><div class="deepheader" id="detail_attribute_GPPSpoor_Spoordeel_geluidbronregisterlijn">
+                  <h7>  <a href="#global_class_GPPSpoor_Spoordeel">Spoordeel</a> geluidbronregisterlijn
                   </h7>
                   
                   <table style="width: 100%;">
@@ -13604,7 +13627,7 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>geospoortak</td>
+                           <td>geluidbronregisterlijn</td>
                         </tr>
                         <tr>
                            <th>Herkomst</th>
@@ -15592,39 +15615,6 @@
                      <th>Herkomst definitie</th>
                      <td>IMGeluid</td>
                   </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>De geluidreducerende effecten van stille wegdekken zijn in de bijlage III van het
-                           Reken- en meetvoorschrift geluid 2012 verrekend in de bronterm Cwegdek. Deze wegdekcorrectiefactoren
-                           zijn bepaald volgens de methode beschreven in bijlage III van het Reken- en meetvoorschrift
-                           geluidhinder 2012. In de CROW-publicatie nr. 316 'De wegdekcorrectie voor geluid van
-                           wegverkeer 2012' zijn de gegevens van enkele standaard RAW wegdektypen opgenomen.
-                        </p>
-                        
-                        <p>In de CROW-publicatie nr. 316 zijn de wegdekken ingedeeld in 15 categorieën. Dit zijn
-                           voor een deel standaard wegdektypen en voor een deel categorieën waar een aantal producten
-                           met soortgelijke eigenschappen in past. Bijvoorbeeld stille elementenverhardingen
-                           en de 2 categorieën dunne deklagen. Deze categorieën zijn bedoeld om in een vroeg
-                           stadium van het akoestisch onderzoek te rekenen met een benadering van de geluidreductie,
-                           zonder dat er al een keuze voor een specifiek product gemaakt hoeft te worden. Nadat
-                           de keuze voor een bepaald product is gemaakt, worden de akoestische berekeningen aangepast
-                           met de Cwegdek van dat product.
-                        </p>
-                        
-                        <p>Naast de wegdekcategorieën uit de publicatie zijn er ook veel producten in omloop,
-                           die veelal gebonden zijn aan een bepaalde producent. Voor deze producten kan de producent
-                           de Cwegdek laten vaststellen. De rapporten daarvan zullen hier als download beschikbaar
-                           zijn zodra Expertisecentrum Geluid van het RIVM deze heeft goedgekeurd.
-                        </p>
-                        
-                        <p>Meer informatie, inclusief de waardelijst zijn te vinden op: <a href="https://www.infomil.nl/onderwerpen/geluid/regelgeving/wet-geluidhinder/wegverkeerslawaai/akoestisch-rapport/cwegdek/" shape="rect">https://www.infomil.nl/onderwerpen/geluid/regelgeving/wet-geluidhinder/wegverkeerslawaai/akoestisch-rapport/cwegdek/</a>
-                           
-                        </p>
-                        
-                     </td>
-                  </tr>
                </tbody>
             </table>
             
@@ -15705,9 +15695,7 @@
                      </td>
                      <td>
                         
-                        <p>De driedimensionale akoestische representatie van een geluidbron op een wegdeel van
-                           een rijks- of provinciale weg met homogene akoestissche eigenschappen.
-                        </p>
+                        <p>Lijn gelegen boven een weg die de plaats van de geluidafstraling representeert.</p>
                         
                      </td>
                      <td>
@@ -16277,8 +16265,8 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Polylijnen die worden gebruikt om het hoogteverloop van de bodem en het bodemmodel
-                           rondom het provinciale of rijkswegennet te modelleren.
+                        <p>LIjn die word gebruikt om het hoogteverloop van de bodem en het bodemmodel rondom
+                           het provinciale of rijkswegennet te modelleren.
                         </p>
                         
                      </td>
@@ -16291,8 +16279,8 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>Rijkswaterstaat categoriseert de hoogtelijnen (zie: enumeratie::Hoogtelijntype). Dit
-                           is een optioneel veld dat ook door de provincies gebruikt mag worden.
+                        <p>Classificatie van de hoogtelijn (zie: enumeratie::Hoogtelijntype). Dit is een optioneel
+                           veld.
                         </p>
                         
                      </td>
@@ -16655,9 +16643,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>De driedimensionale akoestische representatie van een geluidbron op een wegdeel van
-                                 een rijks- of provinciale weg met homogene akoestissche eigenschappen.
-                              </p>
+                              <p>Lijn gelegen boven een weg die de plaats van de geluidafstraling representeert.</p>
                               
                            </td>
                         </tr>
@@ -18218,9 +18204,10 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>De verzameling van emissie-objecten die deel uitmaken van gemeentelijke wegen, waterschapswegen
-                           of lokaal spoor, waarvan het bevoegd gezag de gezamenlijke basisgeluidemissiewaarde
-                           vastlegt.
+                        <p>Deel van een (spoor)weg, waarover de geluidemissie van weg en/of spoor verkeer constant
+                           kan worden veronderstel - gelet op het type wegdek / bovenbouw, gemiddelde snelheid
+                           en verkeersintensiteiten - en waarvoor het bevoegd gezag een basisgeluidemissie weg
+                           of spoor heeft bepaald&nbsp;
                         </p>
                         
                      </td>
@@ -18331,7 +18318,7 @@
                         
                      </td>
                      <td>
-                        DatumTijd
+                        Datum
                         
                      </td>
                      <td>1</td>
@@ -18527,6 +18514,12 @@
                         
                         <p>De tweedimensionale akoestische representatie van een geluidbron op een spoordeel
                            van een lokaal spoor met homogene akoestische eigenschappen.
+                        </p>
+                        
+                        <p>Bij spoor wordt gesproken ove een emissietraject. Soortgelijke definitie. 'deel van
+                           een spoorweg, waarover de geluidemissie van spoorvoertuiggeluid min of meer constant
+                           kan worden verondersteld, gelet op de bovenbouwconstructie en de baangesteldheid.
+                           
                         </p>
                         
                      </td>
@@ -18993,7 +18986,7 @@
                         </tr>
                         <tr>
                            <th>Formeel patroon</th>
-                           <td>^[0-9]{1,2}\,[0-9]$</td>
+                           <td>^[0-9]{1,3}\,[0-9]$</td>
                         </tr>
                         <tr>
                            <th>Formaat</th>
@@ -19247,7 +19240,7 @@
                            </tr>
                            <tr>
                               <th>Formaat</th>
-                              <td>DatumTijd</td>
+                              <td>Datum</td>
                            </tr>
                         </tbody>
                      </table>
@@ -19753,6 +19746,12 @@
                               
                               <p>De tweedimensionale akoestische representatie van een geluidbron op een spoordeel
                                  van een lokaal spoor met homogene akoestische eigenschappen.
+                              </p>
+                              
+                              <p>Bij spoor wordt gesproken ove een emissietraject. Soortgelijke definitie. 'deel van
+                                 een spoorweg, waarover de geluidemissie van spoorvoertuiggeluid min of meer constant
+                                 kan worden verondersteld, gelet op de bovenbouwconstructie en de baangesteldheid.
+                                 
                               </p>
                               
                            </td>
@@ -20710,9 +20709,9 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Kleinste functioneel onafhankelijk stukje van een NEN 3610 Weg met gelijkblijvende,
-                           homogene akoestische eigenschappen en relaties en primair bedoeld voor het representeren
-                           van akoestische eigenschappen van wegverkeer op gemeentelijke wegen of waterschapswegen.
+                        <p>Kleinste functioneel onafhankelijk stukje van een NEN 3610 Weg waarover de geluidemissie
+                           van wegverkeer constant kan worden verondersteld, gelet op het type wegdek, gemiddelde
+                           snelheid en verkeersintensiteiten. 
                         </p>
                         
                      </td>
@@ -20776,9 +20775,7 @@
                      </td>
                      <td>
                         
-                        <p>De tweedimensionale akoestische representatie van een geluidbron op een wegdeel van
-                           een lokale weg met homogene akoestische eigenschappen.
-                        </p>
+                        <p>Lijn die de plaats van de geluidafstraling representeert.</p>
                         
                      </td>
                      <td>
@@ -21272,9 +21269,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>De tweedimensionale akoestische representatie van een geluidbron op een wegdeel van
-                                 een lokale weg met homogene akoestische eigenschappen.
-                              </p>
+                              <p>Lijn die de plaats van de geluidafstraling representeert.</p>
                               
                            </td>
                         </tr>
@@ -23683,7 +23678,7 @@
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
    <p><b>Deze tekst is normatief.</b>
-      <!--MIMLM-InformatiemodelGeluid-1.0-0-20191202-20200312-080258 imvertor 1.59.2--></p>
+      <!--MIMLM-InformatiemodelGeluid-1.0-0-20191202-20200317-114409 imvertor 1.59.2--></p>
    <section id="">
       <h3>   </h3><a class="anchor" id="graph_EAID_4A679509_B62E_4dfc_8864_C4852847204B"></a><a class="anchor" id="detail_class_Algemeen_Spoorstaafruwheid"></a><section id="detail_class_Algemeen_Spoorstaafruwheid">
          <h4>   Spoorstaafruwheid</h4>
@@ -24336,17 +24331,6 @@
                   <th>Omschrijving</th>
                </tr>
                <tr>
-                  <th>bepaling</th>
-                  <td>
-                     
-                     <p>Het meest actuele beleidsdocument dat door het betreffende bevoegdgezag is opgesteld
-                        waarin (een deel van) de basisgeluidemissies zijn vastgelegd die onder de jurisdictie
-                        van dat bevoegd gezag vallen.
-                     </p>
-                     
-                  </td>
-               </tr>
-               <tr>
                   <th>besluit</th>
                   <td>
                      
@@ -24357,14 +24341,14 @@
                   </td>
                </tr>
                <tr>
-                  <th>cumulatiebesluit</th>
+                  <th>melding</th>
                   <td></td>
                </tr>
                <tr>
-                  <th>nalevingsverslag</th>
+                  <th>monitoringsverslag</th>
                   <td>
                      
-                     <p>Het nalevingsverslag is het voornaamste instrument van bevoegde gezagen om 
+                     <p>Hetmonitoringsverslag is het voornaamste instrument van bevoegde gezagen om 
                         te monitoren of de GPP’s niet worden overschreden of hoe de geluidproductie zich ten
                         opzichte van het BGE ontwikkeld heeft en;
                         de minister en het publiek te informeren over de wijze waarop het bevoegd gezag zorgdraagt
@@ -24806,38 +24790,6 @@
                      
                   </td>
                </tr>
-               <tr>
-                  <th>oppervlaktebron</th>
-                  <td>
-                     
-                     <p>Is behandeld door rekensoftware als een oppervlaktebron. </p>
-                     
-                  </td>
-               </tr>
-               <tr>
-                  <th>uitstralendeWand</th>
-                  <td>
-                     
-                     <p>Is behandeld door rekensoftware als een uitstralende wand.</p>
-                     
-                  </td>
-               </tr>
-               <tr>
-                  <th>mobieleBron</th>
-                  <td>
-                     
-                     <p>Is behandeld door rekensoftware als een mobiele bron.</p>
-                     
-                  </td>
-               </tr>
-               <tr>
-                  <th>lijnBron</th>
-                  <td>
-                     
-                     <p>Is behandeld door rekensoftware als een lijn bron.</p>
-                     
-                  </td>
-               </tr>
             </tbody>
          </table>
          
@@ -24867,21 +24819,7 @@
                </tr>
                <tr>
                   <th>Middenberm</th>
-                  <td>
-                     
-                     <p>Definition
-                        Lorem ipsum dolor sit amet.
-                     </p>
-                     
-                     <p>Description
-                        Lorem ipsum dolor sit amet.
-                     </p>
-                     
-                     <p>Source
-                        Lorem ipsum dolor sit amet.
-                     </p>
-                     
-                  </td>
+                  <td></td>
                </tr>
                <tr>
                   <th>Perron</th>
@@ -24889,57 +24827,15 @@
                </tr>
                <tr>
                   <th>Scherp</th>
-                  <td>
-                     
-                     <p>Definition
-                        Lorem ipsum dolor sit amet.
-                     </p>
-                     
-                     <p>Description
-                        Lorem ipsum dolor sit amet.
-                     </p>
-                     
-                     <p>Source
-                        Lorem ipsum dolor sit amet.
-                     </p>
-                     
-                  </td>
+                  <td></td>
                </tr>
                <tr>
                   <th>Stomp</th>
-                  <td>
-                     
-                     <p>Definition
-                        Lorem ipsum dolor sit amet.
-                     </p>
-                     
-                     <p>Description
-                        Lorem ipsum dolor sit amet.
-                     </p>
-                     
-                     <p>Source
-                        Lorem ipsum dolor sit amet.
-                     </p>
-                     
-                  </td>
+                  <td></td>
                </tr>
                <tr>
                   <th>T-top</th>
-                  <td>
-                     
-                     <p>Definition
-                        Lorem ipsum dolor sit amet.
-                     </p>
-                     
-                     <p>Description
-                        Lorem ipsum dolor sit amet.
-                     </p>
-                     
-                     <p>Source
-                        Lorem ipsum dolor sit amet.
-                     </p>
-                     
-                  </td>
+                  <td></td>
                </tr>
             </tbody>
          </table>
