@@ -60,7 +60,7 @@ controleren van allerlei kwaliteitsregels die inzicht geven in de plausibiliteit
 van de gegevens. Het is de verantwoordelijkheid van de bronhouders zelf om
 eventuele correcties in de gegevens aan te brengen
 
-![Figuur 1: Architectuurschets Centrale Voorziening Geluidgegevens](media/ArchitectuurCVGG.jpg)
+![Figuur 1: Architectuurschets Centrale Voorziening Geluidgegevens  -fullwidth](media/ArchitectuurCVGG.jpg)
 *Figuur 1: Architectuurschets Centrale Voorziening Geluidgegevens*
 
 Om betekenisvolle en uniforme uitwisseling van geluidgegevens mogelijk te maken,
@@ -105,7 +105,7 @@ ervoor te zorgen dat objecten niet redundant in de dataspecificatie hoeven
 worden opgenomen. In de afbeelding hieronder is gemodelleerd hoe de hiërarchie
 in elkaar zit aan de hand van de UML generalisatie relatie.
 
-![Figuur 2: Domeinen van het Informatiemodel Geluid](media/Hierarchie.png){:width:"100%"}
+![Figuur 2: Domeinen van het Informatiemodel Geluid  -fullwidth](media/Hierarchie.png)
 *Figuur 2: Domeinen van het Informatiemodel Geluid*
 
 **Facultatief gegeven**
