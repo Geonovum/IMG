@@ -107,5 +107,6 @@ div#remark
 h7{
     font-weight: bold;
     font-size: 16px;
-    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
  }
