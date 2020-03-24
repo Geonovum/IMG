@@ -1,9 +1,9 @@
-<p>IMG2020 beschrijft de semantiek van digitale bestanden voor de Centrale
+IMGeluid beschrijft de semantiek van digitale bestanden voor de Centrale
 Voorziening Geluidgegevens. De Centrale Voorziening Geluidgegevens wordt een
 centraal punt voor het eenduidig uitwisselen van akoestische gegevens tussen
-verschillende bronhouders en geluiddomeinen. Deze gegevens bestaan voornamelijk
-uit objecten die te maken hebben met de geluidberekening, zoals emissieobjecten
-en overdrachtobjecten, en objecten die te maken hebben met de regelgeving, zoals
-vaststellingen. Het is niet de werkelijkheid die met deze gegevens geschetst
-wordt, maar de vergunde situatie. IMG2020 is gemodelleerd conform het Metamodel
-Informatie Modellering [[MIM]].</p>
+bronhouders en gebruikers voor verschillende geluiddomeinen. Deze gegevens
+bestaan uit objecten die te maken hebben met bronbeheersing en gegevens voor
+akoestisch onderzoek. Het gaat dan om emissieobjecten, overdrachtsobjecten en
+documentobjecten . Deze gegevens geven de juridische werkelijkheid weer en
+worden gebruikt voor vergunningen en monitoring. IMGeluid is gemodelleerd
+conform het Metamodel Informatie Modellering [[MIM]].
