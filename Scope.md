@@ -2,9 +2,9 @@ Scope
 ========
 
 Dit document omschrijft de dataspecificatie, IMGeluid, voor de Centrale
-Voorziening Geluidgegevens (CVGG). Een dataspecificatie bevat de inhoud van een
+Voorziening Geluidgegevens (CVGG). Een dataspecificatie bevat [volgens NEN3610](https://geonovum.github.io/bmgi/docs/#dataproductspecificatie-nl), de inhoud van een
 dataproduct plus additionele informatie die nodig is voor inwinning transport en
-gebruik. [[NEN3610]](https://geonovum.github.io/bmgi/docs/#dataproductspecificatie-nl)
+gebruik. 
 Het IMGeluid is in dit geval het dataproduct.
 
 IMGeluid geeft de gedetailleerde beschrijving van structuur, inhoud en
