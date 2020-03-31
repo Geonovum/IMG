@@ -142,10 +142,10 @@ NL.IMG.*volgnummer_bronhouder*.*identificatie_van_bronhouder*
 
 #### Authentieke gegevens
 
-Voor invulling van het [MIM metagegegeven Authentiek](https://geonovum.github.io/MIM-Werkomgeving/#authentieke-gegevens), zullen attributen het label
+Voor invulling van het [MIM metagegegeven Authentiek](https://geonovum.github.io/MIM-Werkomgeving/#authentieke-gegevens), zullen aan attributen het label
 “wettelijk kerngegeven” of “overig” worden toegekend.
  Daar is
-voor gekozen omdat de CVGG geen basisregistratie is, maar wel een grandslag
+voor gekozen omdat de CVGG geen basisregistratie is, maar wel een grondslag
 heeft in de wet. Indien er voor een attribuut binnen iedere context een
 geluidbrongegeven is, wordt het label “wettelijk kerngegeven” toegekend. Wanneer
 een attribuut niet of alleen in een specifieke context een geluidbrongegeven is,
@@ -171,22 +171,22 @@ definitie) Een formeel patroon is uitgedrukt als regular expression (RegEx).
 ##### Meeteenheid:
 
 Bij een attribuutwaarde met het GML formaat “Measure” is een specifieke
-meeteenheid is vereist. Deze meeteenheid wordt gespecificeerd op attribuutniveau
+meeteenheid vereist. Deze meeteenheid wordt gespecificeerd op attribuutniveau
 in de metagegeventabel achter de tagged value “Meeteenheid”.
 
 ##### Multipliciteit
 
 In het geval van IMGeluid is de multipliciteit altijd relatief aan een
 Geluidgegevenscollectie. De multipliciteit van een attribuut geeft aan hoe vaak
-een waarde mag voorkomen binnen een object. Een multipliciteit van "[0..1]" houd
-bijvoorbeeld in dat de waarde van dit attribuut facultatief is.
+het attribuut met een waarde mag voorkomen binnen een object. Een multipliciteit van "[0..1]" houdt
+bijvoorbeeld in dat dit attribuut facultatief is.
 
 ##### Regels:
 
 In bepaalde gevallen worden regels gebruikt. Een mogelijke toepassing van regels
 is om te bepalen of een attribuutwaarde in een specifieke situatie verplicht is.
 Dit kan ervoor zorgen dat attributen met een multipliciteit van "[0..1]" wel
-verplicht is wanneer de condities uit de regel geldig zijn. De voorziening zal
+verplicht zijn wanneer de condities uit de regel geldig zijn. De voorziening zal
 zorgen voor een validatiesysteem dat kan omgaan met regels, multipliciteit en
 patronen.
 
@@ -224,7 +224,7 @@ gesorteerd op alfabetische volgorde per domein.
 
 ### Geluiddomein
 
-| **Termen**                                                                               | **Definities**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Term**                                                                               | **Definitie**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Afschermende objecten**                                                                | Ter verbetering van de kwaliteit van het milieu direct langs een weg of spoorweg geplaatste wallen en schermen (bron: regeling geluid milieubeheer).                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | **Basisgeluidemissie**                                                                   | Basisgeluidemissie als bedoeld in artikel 3.25 (bron: Aanvullingsbesluit geluid). Basisgeluidemissies gelden voor gemeentewegen, waterschapswegen en lokaal spoor.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
