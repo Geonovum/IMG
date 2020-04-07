@@ -1,13 +1,6 @@
 Scope 
 ========
 
-(OPMERKING: dit kan weg
-Dit document omschrijft de dataspecificatie, IMGeluid, voor de Centrale
-Voorziening Geluidgegevens (CVGG). Een dataspecificatie bevat [volgens NEN3610](https://geonovum.github.io/bmgi/docs/#dataproductspecificatie-nl), de inhoud van een
-dataproduct plus additionele informatie die nodig is voor inwinning transport en
-gebruik. 
-Het IMGeluid is in dit geval het dataproduct.)
-
 Het toepassingsdomein is beheersing van het geluid van wegen, spoorwegen, en industrieterreinen; en gegevensuitwisseling ten behoeve van akoestisch onderzoek. Dit wordt geoperationaliseerd in de CVGG. IMGeluid geeft de gedetailleerde beschrijving van structuur, inhoud en
 datakwaliteit van de CVGG en dient als basis voor de realisatie en ontsluiting
 van CVGG services.
