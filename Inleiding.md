@@ -1,14 +1,14 @@
-1 Inleiding en leeswijzer.
+Inleiding en leeswijzer.
 ==========================
 
-1.2.1 Inleiding informatiemodel
+Inleiding informatiemodel
 -------------------------------
 
 De Centrale Voorziening Geluidgegevens (CVGG) wordt het digitale systeem om
 geluidgegevens uit te wisselen. De bronhouders zijn het rijk, de provincies, de
 gemeenten en de waterschappen. Zij gaan geluidgegevens leveren aan de
 voorziening. Geluidgegevens zijn geluidbrongegevens, zoals verkeersgegevens, en
-berekende geluidwaarden, zoals een geluidproductieplafonds en
+berekende geluidwaarden, zoals geluidproductieplafonds en
 monitoringswaarden. In het Informatiemodel Geluid staan de afspraken, technische
 eisen en het applicatieschema waaraan de gegevens moeten voldoen. Om te komen
 tot een gedragen Informatiemodel Geluid stelt het ontwikkelteam CVGG deze op in
@@ -31,7 +31,7 @@ onderzoek. Het doel van het Informatiemodel Geluid is dat:
 
 De afspraken uit het IMGeluid zijn vastgelegd in dit document, de IMGeluid
 catalogus. In deze catalogus is de laatste versie van het informatiemodel te
-vinden. Dit informatiemodel bestaan uit objecten die in relatie staan met
+vinden. Dit informatiemodel bestaat uit objecten die in relatie staan met
 elkaar. Voor ieder object worden alle eigenschappen (attributen), die in de
 werkelijkheid relevant zijn, opgenomen in het informatiemodel. Het
 informatiemodel in deze catalogus is gemodelleerd conform het Metamodel
@@ -41,7 +41,7 @@ IMGeluid ook aan op NEN3610.** In deze catalogus zijn de objecten en attributen
 voorzien van definities, en waar nodig nadere toelichtingen, zodat het
 informatiemodel ook te begrijpen is zonder kennis van UML.
 
-1.2.2 Leeswijzer
+Leeswijzer
 ----------------
 
 De dataspecificatie van het informatiemodel geluid, staat omschreven in dit
