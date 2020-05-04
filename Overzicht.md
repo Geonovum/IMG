@@ -64,7 +64,7 @@ gemodelleerd conform de specificaties van het Metamodel Informatie Modellering
 wordt verwezen naar de [MIM catalogus bijlage](https://docs.geostandaarden.nl/mim/mim10/#B00). 
 
 Binnen de scope van de CVGG vallen verschillende geluiddomeinen. Om technische en
-informatiekundige redenen, is de dataspecificatie opgedeeld in 9 domeinen. De
+informatiekundige redenen, is de dataspecificatie opgedeeld in 7 domeinen. De
 domeinen staan hieronder beschreven en hebben elk een apart domeinmodel binnen
 de dataspecificatie (zie [Hoofdstuk 5 Gegevensdefinitie](#cat).
 
