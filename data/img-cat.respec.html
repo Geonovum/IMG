@@ -2,7 +2,7 @@
 <section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
    <p><b>Deze tekst is normatief.</b>
-      <!--MIMLM-InformatiemodelGeluid-1.0-0-20200421-20200508-160515 imvertor 1.59.4--></p><a class="anchor" id="global_package_Algemeen"></a><section id="global_package_Algemeen">
+      <!--MIMLM-InformatiemodelGeluid-1.0-0-20200421-20200512-133443 imvertor 1.59.4--></p><a class="anchor" id="global_package_Algemeen"></a><section id="global_package_Algemeen">
       <h3>Domein   Algemeen</h3>
       <div class="imageinfo overview"><img src="data/Images/EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F.png" usemap="#imagemap-EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F" alt="Diagram Het Basismodel vormt de samenhang tussen alle domeinen van het IMGeluid. Alle objecttypen en relaties uit het IMGeluid komen samen in een Geluidgegevenscollectie.&#xA;Binnen het IMGeluid worden geluidbrongegevens die gebruikt worden voor GPP en BGE berekeningen, gemodelleerd als een Geluidemissie of Geluidoverdrachtobject. De resultaten van GPP of BGE berekeningen worden opgeslagen in een Geluidgegevenscollectie. De onderliggende juridische vastleggingen, vaststellingen, of monitoringsverslagen van deze omgevings- of monitoringswaarden, worden ook opgeslagen in dezelfde Geluidgegevenscollectie.&#xA;Per geluidbron per toepassing kan er een Geluidgegevenscollectie bestaan. Deze kan geassocieerd worden met maximaal 1 Geluidaandachtsgebied. Wanneer geluidgegevens met betrekking tot cumulatieberekeningen worden aangeleverd, bevat een Geluidgegevenscollectie geen Geluidaandachtsgebied.&#xA;&#xA;&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen."><map name="imagemap-EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F">
             <area shape="rect" alt="Monitoringresultaat" coords="535,638,750,760" href="#graph_EAID_BA00B77B_D408_4590_8185_CE59E5838F1E">
@@ -445,8 +445,8 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Monitoringresultaat voor geluidproductieplafonds of basisgeluidemissies, dat wordt
-                           berekend op basis van geluidbrongegevens elke 1 of 5 jaar.
+                        <p>Monitoringgegevens voor geluidproductieplafonds of basisgeluidemissie zoals opgenomen
+                           in het meest recente openbare verslag over de monitoring.
                         </p>
                         
                         <p>.</p>
@@ -463,27 +463,13 @@
                         
                         <ul>
                            
-                           <li>Het bevoegd gezag heeft de plicht zorg te dragen voor de naleving van deze GPP’s,
-                              danwel de ontwikkeling van BGE's.
+                           <li>Monitoring voor geluidproductieplafonds als omgevingswaarden vindt plaats door de
+                              geluidproductie te berekenen.
                            </li>
                            
-                           <li>Bij alle relevante ontwikkelingen op het hoofdwegennet, lokale wegennet, hoofdspoornet,
-                              lokale spoornet of industrieterreinen, beoordeelt het bevoegd gezag of deze gevolgen
-                              hebben voor het naleven van de GPP’s, danwel de ontwikkeling van de BGE's. Het nalevingsverslag
-                              presenteert de resultaten van de monitoring en de stappen die het bevoegd gezag neemt
-                              om de GPP’s na te leven, danwel ontwikkeling van de BGE's.
-                           </li>
-                           
-                           <li>Voor rijkswegen, provinciale wegen en hoofd-spoorwegen geldt dat elk jaar het nieuwe
-                              Monitoringresultaat wordt aangeleverd.
-                           </li>
-                           
-                           <li>Voor industrieterreinen geldt dat elke 5 jaar het nieuwe Monitoringsresultaat wordt
-                              aangeleverd.
-                           </li>
-                           
-                           <li>Voor BGE wordt het Monitoringresultaat elke vijf jaar aangeleverd Het eerste Monitoringresultaat
-                              is de basisgeluidemissie. Dit wordt ook wel het emissieverschil genoemd.
+                           <li>Monitoring van de basisgeluidemissie vindt plaats door het het verschil tussen de
+                              gemiddelde geluidemissie in een kalenderjaar en de basisgeluidemissie zoals opgenomen
+                              in het meest recente openbare verslag over de monitoring te berekenen of te schatten.
                            </li>
                            
                         </ul>
@@ -648,7 +634,7 @@
                   <tr>
                      <td>
                         Monitoringresultaat
-                        [ 1 .. * ]
+                        [ 0 .. * ]
                         
                         <a class="link" href="#detail_association_Algemeen_Monitoringresultaat_geluidberekeningobject">geluidberekeningobject: geluidberekeningobject</a>
                         
@@ -1347,7 +1333,7 @@
                         
                         <a class="link" href="#global_class_Algemeen_Monitoringresultaat">Monitoringresultaat</a>
                         
-                        [ 1 .. * ]
+                        [ 0 .. * ]
                         
                         <a class="link" href="#detail_association_Algemeen_Monitoringresultaat_geluidberekeningobject">geluidberekeningobject: geluidberekeningobject</a>
                         
@@ -16507,7 +16493,7 @@
             <area shape="rect" alt="Geluidemissieobject" coords="71,183,250,298" href="#graph_EAID_361C96BA_A638_494e_80BA_590ED481A81B">
             <area shape="rect" alt="Geluidoverdrachtsobject" coords="71,352,250,467" href="#graph_EAID_2FEA326B_B7E7_48a4_B50F_00CCB2694677">
             <area shape="rect" alt="Diffractor" coords="360,894,570,1009" href="#graph_EAID_1B63DB45_6061_48e5_8890_AC0CA30E1454">
-            <area shape="rect" alt="Wegdeel" coords="61,894,335,1052" href="#graph_EAID_955703EE_254E_4d46_89C5_37D46AEADA8B">
+            <area shape="rect" alt="WegdeelGPP" coords="61,894,335,1052" href="#graph_EAID_955703EE_254E_4d46_89C5_37D46AEADA8B">
             <area shape="rect" alt="Bodemvlak" coords="1080,893,1256,982" href="#graph_EAID_902B9218_E1B1_4512_B52A_F8DADD1DB990">
             <area shape="rect" alt="Geluidschermdeel" coords="595,894,805,1050" href="#graph_EAID_BC342A75_1053_4086_9B42_321F22E3FA82">
             <area shape="rect" alt="Hoogtelijn" coords="829,893,1055,968" href="#graph_EAID_CE3003A0_5F16_4630_B2A6_519B33439135">
@@ -16533,8 +16519,8 @@
       </div>
       <section id="">
          <h4>Entiteittypen   </h4>
-         <a class="anchor" id="graph_EAID_955703EE_254E_4d46_89C5_37D46AEADA8B"></a><a class="anchor" id="global_class_GPPWeg_Wegdeel"></a><section id="global_class_GPPWeg_Wegdeel">
-            <h5>   Wegdeel</h5>
+         <a class="anchor" id="graph_EAID_955703EE_254E_4d46_89C5_37D46AEADA8B"></a><a class="anchor" id="global_class_GPPWeg_WegdeelGPP"></a><section id="global_class_GPPWeg_WegdeelGPP">
+            <h5>   WegdeelGPP</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -16542,7 +16528,7 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Wegdeel</td>
+                     <td>WegdeelGPP</td>
                   </tr>
                   <tr>
                      <th>Herkomst</th>
@@ -16582,7 +16568,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_GPPWeg_Wegdeel_plafondcorrectiewaarde">plafondcorrectiewaarde</a>
+                        <a class="link" href="#detail_attribute_GPPWeg_WegdeelGPP_plafondcorrectiewaarde">plafondcorrectiewaarde</a>
                         
                      </td>
                      <td>
@@ -16601,7 +16587,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_GPPWeg_Wegdeel_wegdeelhoogte">wegdeelhoogte</a>
+                        <a class="link" href="#detail_attribute_GPPWeg_WegdeelGPP_wegdeelhoogte">wegdeelhoogte</a>
                         
                      </td>
                      <td>
@@ -16619,7 +16605,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_GPPWeg_Wegdeel_wegdektype">wegdektype</a>
+                        <a class="link" href="#detail_attribute_GPPWeg_WegdeelGPP_wegdektype">wegdektype</a>
                         
                      </td>
                      <td>
@@ -16638,7 +16624,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_GPPWeg_Wegdeel_geluidbronregisterlijn">geluidbronregisterlijn</a>
+                        <a class="link" href="#detail_attribute_GPPWeg_WegdeelGPP_geluidbronregisterlijn">geluidbronregisterlijn</a>
                         
                      </td>
                      <td>
@@ -17001,7 +16987,7 @@
                   </tr>
                   <tr>
                      <td>
-                        Wegdeel
+                        WegdeelGPP
                         is specialisatie van
                         
                         <a class="link" href="#global_class_Algemeen_Geluidemissieobject">Geluidemissieobject</a>
@@ -17200,10 +17186,10 @@
          
          <section id="">
             <h5>Entiteittype details  </h5>
-            <a class="anchor" id="detail_class_GPPWeg_Wegdeel"></a><section id="detail_class_GPPWeg_Wegdeel">
-               <h6>   Wegdeel</h6>
-               <a class="anchor" id="detail_attribute_GPPWeg_Wegdeel_plafondcorrectiewaarde"></a><div class="deepheader" id="detail_attribute_GPPWeg_Wegdeel_plafondcorrectiewaarde">
-                  <h7>  <a href="#global_class_GPPWeg_Wegdeel">Wegdeel</a> plafondcorrectiewaarde
+            <a class="anchor" id="detail_class_GPPWeg_WegdeelGPP"></a><section id="detail_class_GPPWeg_WegdeelGPP">
+               <h6>   WegdeelGPP</h6>
+               <a class="anchor" id="detail_attribute_GPPWeg_WegdeelGPP_plafondcorrectiewaarde"></a><div class="deepheader" id="detail_attribute_GPPWeg_WegdeelGPP_plafondcorrectiewaarde">
+                  <h7>  <a href="#global_class_GPPWeg_WegdeelGPP">WegdeelGPP</a> plafondcorrectiewaarde
                   </h7>
                   
                   <table style="width: 100%;">
@@ -17275,8 +17261,8 @@
                   </table>
                   
                </div>
-               <a class="anchor" id="detail_attribute_GPPWeg_Wegdeel_wegdeelhoogte"></a><div class="deepheader" id="detail_attribute_GPPWeg_Wegdeel_wegdeelhoogte">
-                  <h7>  <a href="#global_class_GPPWeg_Wegdeel">Wegdeel</a> wegdeelhoogte
+               <a class="anchor" id="detail_attribute_GPPWeg_WegdeelGPP_wegdeelhoogte"></a><div class="deepheader" id="detail_attribute_GPPWeg_WegdeelGPP_wegdeelhoogte">
+                  <h7>  <a href="#global_class_GPPWeg_WegdeelGPP">WegdeelGPP</a> wegdeelhoogte
                   </h7>
                   
                   <table style="width: 100%;">
@@ -17376,8 +17362,8 @@
                   </table>
                   
                </div>
-               <a class="anchor" id="detail_attribute_GPPWeg_Wegdeel_wegdektype"></a><div class="deepheader" id="detail_attribute_GPPWeg_Wegdeel_wegdektype">
-                  <h7>  <a href="#global_class_GPPWeg_Wegdeel">Wegdeel</a> wegdektype
+               <a class="anchor" id="detail_attribute_GPPWeg_WegdeelGPP_wegdektype"></a><div class="deepheader" id="detail_attribute_GPPWeg_WegdeelGPP_wegdektype">
+                  <h7>  <a href="#global_class_GPPWeg_WegdeelGPP">WegdeelGPP</a> wegdektype
                   </h7>
                   
                   <table style="width: 100%;">
@@ -17470,8 +17456,8 @@
                   </table>
                   
                </div>
-               <a class="anchor" id="detail_attribute_GPPWeg_Wegdeel_geluidbronregisterlijn"></a><div class="deepheader" id="detail_attribute_GPPWeg_Wegdeel_geluidbronregisterlijn">
-                  <h7>  <a href="#global_class_GPPWeg_Wegdeel">Wegdeel</a> geluidbronregisterlijn
+               <a class="anchor" id="detail_attribute_GPPWeg_WegdeelGPP_geluidbronregisterlijn"></a><div class="deepheader" id="detail_attribute_GPPWeg_WegdeelGPP_geluidbronregisterlijn">
+                  <h7>  <a href="#global_class_GPPWeg_WegdeelGPP">WegdeelGPP</a> geluidbronregisterlijn
                   </h7>
                   
                   <table style="width: 100%;">
@@ -17555,7 +17541,7 @@
                   
                </div>
                <a class="anchor" id="graph_EAID_A5AB50E8_5A98_4426_A89E_F5C9D91CF6F8"></a><a class="anchor" id="detail_class_Algemeen_IntensiteitgegevensWeg"></a><div class="deepheader" id="detail_class_Algemeen_IntensiteitgegevensWeg">
-                  <h7>  <a href="#global_class_GPPWeg_Wegdeel">Wegdeel</a> IntensiteitgegevensWeg
+                  <h7>  <a href="#global_class_GPPWeg_WegdeelGPP">WegdeelGPP</a> IntensiteitgegevensWeg
                   </h7>
                   
                   <table style="width: 100%;">
@@ -18182,7 +18168,7 @@
                   
                </div>
                <a class="anchor" id="graph_EAID_81EA9658_0F58_4013_9B39_6F7DA54DA698"></a><a class="anchor" id="detail_class_Algemeen_SnelheidgegevensWeg"></a><div class="deepheader" id="detail_class_Algemeen_SnelheidgegevensWeg">
-                  <h7>  <a href="#global_class_GPPWeg_Wegdeel">Wegdeel</a> SnelheidgegevensWeg
+                  <h7>  <a href="#global_class_GPPWeg_WegdeelGPP">WegdeelGPP</a> SnelheidgegevensWeg
                   </h7>
                   
                   <table style="width: 100%;">
@@ -19105,7 +19091,7 @@
    </section><a class="anchor" id="global_package_BGEAlgemeen"></a><section id="global_package_BGEAlgemeen">
       <h3>Domein   BGE Algemeen</h3>
       <div class="imageinfo overview"><img src="data/Images/EAID_364458AB_9840_41eb_9BE1_63A5FE73DB2B.png" usemap="#imagemap-EAID_364458AB_9840_41eb_9BE1_63A5FE73DB2B" alt="Diagram In domeinmodel BGE Algemeen staan objecttypen en relaties die relevant zijn voor alle basisgeluidemissie (BGE) domeinen binnen IMGeluid. &#xA;De door het bevoegd gezag bepaalde basisgeluidemissiewaarde wordt conform het “Basisgeluidemissieobject” opgenomen in het geluidregister. Deze waarde heeft betrekking op een “Geluidemissieobject”. Voor BGE Spoor is dit “Geluidemissieobject” alleen een “Spoordeel”. Voor BGE Weg zijn zowel “Spoordeel” als “Wegdeel” een specialisatie van “Geluidemissieobject”, omdat het bevoegd gezag de keuze heeft om spoor en wegdelen dezelfde basisgeluidemissiewaarde toe te kennen.&#xA;&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen&#xA;&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen&#xA;"><map name="imagemap-EAID_364458AB_9840_41eb_9BE1_63A5FE73DB2B">
-            <area shape="rect" alt="Wegdeel" coords="35,453,259,585" href="#graph_EAID_04AEFD5E_76C1_40e6_8FCC_5C35CBE6814B">
+            <area shape="rect" alt="WegdeelBGE" coords="35,453,259,585" href="#graph_EAID_04AEFD5E_76C1_40e6_8FCC_5C35CBE6814B">
             <area shape="rect" alt="Geluidaandachtsgebied" coords="678,126,864,228" href="#graph_EAID_B06128AC_518C_4e26_88E5_14ED5A050A19">
             <area shape="rect" alt="Monitoringresultaat" coords="652,666,865,786" href="#graph_EAID_BA00B77B_D408_4590_8185_CE59E5838F1E">
             <area shape="rect" alt="Geluidgegevenscollectie" coords="335,126,548,271" href="#graph_EAID_313C5AF9_49B8_4860_9E65_DE7C70084864">
@@ -19384,7 +19370,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_BGEAlgemeen_SpoordeelBGE_geluidbronregisterlijn">geluidbronregisterlijn</a>
+                        <a class="link" href="#detail_attribute_BGEAlgemeen_SpoordeelBGE_spoorbaandeel">spoorbaandeel</a>
                         
                      </td>
                      <td>
@@ -19738,8 +19724,8 @@
             
             
          </section>
-         <a class="anchor" id="graph_EAID_04AEFD5E_76C1_40e6_8FCC_5C35CBE6814B"></a><a class="anchor" id="global_class_BGEAlgemeen_Wegdeel"></a><section id="global_class_BGEAlgemeen_Wegdeel">
-            <h5>   Wegdeel</h5>
+         <a class="anchor" id="graph_EAID_04AEFD5E_76C1_40e6_8FCC_5C35CBE6814B"></a><a class="anchor" id="global_class_BGEAlgemeen_WegdeelBGE"></a><section id="global_class_BGEAlgemeen_WegdeelBGE">
+            <h5>   WegdeelBGE</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -19747,7 +19733,7 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Wegdeel</td>
+                     <td>WegdeelBGE</td>
                   </tr>
                   <tr>
                      <th>Herkomst</th>
@@ -19774,7 +19760,7 @@
                         
                         <ul>
                            
-                           <li>Dit een op akoestische toepassingen toegespitste definitie van een BGT-wegdeel. </li>
+                           <li>Dit een op akoestische toepassingen toegespitste definitie van een BGT-wegdeel.</li>
                            
                            <li>De akoestische representatie van een geluidbronnen op de lokale weg, kent in tegenstellnig
                               tot de Basisregistratie Grootschalige Topografie geen vlak-geometrie, maar een lijn-geometrie
@@ -19804,7 +19790,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_BGEAlgemeen_Wegdeel_wegdektype">wegdektype</a>
+                        <a class="link" href="#detail_attribute_BGEAlgemeen_WegdeelBGE_wegdektype">wegdektype</a>
                         
                      </td>
                      <td>
@@ -19823,7 +19809,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_BGEAlgemeen_Wegdeel_rijlijn">rijlijn</a>
+                        <a class="link" href="#detail_attribute_BGEAlgemeen_WegdeelBGE_rijlijn">rijlijn</a>
                         
                      </td>
                      <td>
@@ -20186,7 +20172,7 @@
                   </tr>
                   <tr>
                      <td>
-                        Wegdeel
+                        WegdeelBGE
                         is specialisatie van
                         
                         <a class="link" href="#global_class_Algemeen_Geluidemissieobject">Geluidemissieobject</a>
@@ -20747,8 +20733,8 @@
                   </div>
                   
                </div>
-               <a class="anchor" id="detail_attribute_BGEAlgemeen_SpoordeelBGE_geluidbronregisterlijn"></a><div class="deepheader" id="detail_attribute_BGEAlgemeen_SpoordeelBGE_geluidbronregisterlijn">
-                  <h7>  <a href="#global_class_BGEAlgemeen_SpoordeelBGE">SpoordeelBGE</a> geluidbronregisterlijn
+               <a class="anchor" id="detail_attribute_BGEAlgemeen_SpoordeelBGE_spoorbaandeel"></a><div class="deepheader" id="detail_attribute_BGEAlgemeen_SpoordeelBGE_spoorbaandeel">
+                  <h7>  <a href="#global_class_BGEAlgemeen_SpoordeelBGE">SpoordeelBGE</a> spoorbaandeel
                   </h7>
                   
                   <table style="width: 100%;">
@@ -20757,7 +20743,7 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>geluidbronregisterlijn</td>
+                           <td>spoorbaandeel</td>
                         </tr>
                         <tr>
                            <th>Herkomst</th>
@@ -21779,10 +21765,10 @@
                </div>
                
             </section>
-            <a class="anchor" id="detail_class_BGEAlgemeen_Wegdeel"></a><section id="detail_class_BGEAlgemeen_Wegdeel">
-               <h6>   Wegdeel</h6>
-               <a class="anchor" id="detail_attribute_BGEAlgemeen_Wegdeel_wegdektype"></a><div class="deepheader" id="detail_attribute_BGEAlgemeen_Wegdeel_wegdektype">
-                  <h7>  <a href="#global_class_BGEAlgemeen_Wegdeel">Wegdeel</a> wegdektype
+            <a class="anchor" id="detail_class_BGEAlgemeen_WegdeelBGE"></a><section id="detail_class_BGEAlgemeen_WegdeelBGE">
+               <h6>   WegdeelBGE</h6>
+               <a class="anchor" id="detail_attribute_BGEAlgemeen_WegdeelBGE_wegdektype"></a><div class="deepheader" id="detail_attribute_BGEAlgemeen_WegdeelBGE_wegdektype">
+                  <h7>  <a href="#global_class_BGEAlgemeen_WegdeelBGE">WegdeelBGE</a> wegdektype
                   </h7>
                   
                   <table style="width: 100%;">
@@ -21883,8 +21869,8 @@
                   </table>
                   
                </div>
-               <a class="anchor" id="detail_attribute_BGEAlgemeen_Wegdeel_rijlijn"></a><div class="deepheader" id="detail_attribute_BGEAlgemeen_Wegdeel_rijlijn">
-                  <h7>  <a href="#global_class_BGEAlgemeen_Wegdeel">Wegdeel</a> rijlijn
+               <a class="anchor" id="detail_attribute_BGEAlgemeen_WegdeelBGE_rijlijn"></a><div class="deepheader" id="detail_attribute_BGEAlgemeen_WegdeelBGE_rijlijn">
+                  <h7>  <a href="#global_class_BGEAlgemeen_WegdeelBGE">WegdeelBGE</a> rijlijn
                   </h7>
                   
                   <table style="width: 100%;">
@@ -21972,7 +21958,7 @@
                   
                </div>
                <a class="anchor" id="graph_EAID_A5AB50E8_5A98_4426_A89E_F5C9D91CF6F8"></a><a class="anchor" id="detail_class_Algemeen_IntensiteitgegevensWeg"></a><div class="deepheader" id="detail_class_Algemeen_IntensiteitgegevensWeg">
-                  <h7>  <a href="#global_class_BGEAlgemeen_Wegdeel">Wegdeel</a> IntensiteitgegevensWeg
+                  <h7>  <a href="#global_class_BGEAlgemeen_WegdeelBGE">WegdeelBGE</a> IntensiteitgegevensWeg
                   </h7>
                   
                   <table style="width: 100%;">
@@ -22599,7 +22585,7 @@
                   
                </div>
                <a class="anchor" id="graph_EAID_81EA9658_0F58_4013_9B39_6F7DA54DA698"></a><a class="anchor" id="detail_class_Algemeen_SnelheidgegevensWeg"></a><div class="deepheader" id="detail_class_Algemeen_SnelheidgegevensWeg">
-                  <h7>  <a href="#global_class_BGEAlgemeen_Wegdeel">Wegdeel</a> SnelheidgegevensWeg
+                  <h7>  <a href="#global_class_BGEAlgemeen_WegdeelBGE">WegdeelBGE</a> SnelheidgegevensWeg
                   </h7>
                   
                   <table style="width: 100%;">
@@ -24486,7 +24472,7 @@
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
    <p><b>Deze tekst is normatief.</b>
-      <!--MIMLM-InformatiemodelGeluid-1.0-0-20200421-20200508-160515 imvertor 1.59.4--></p>
+      <!--MIMLM-InformatiemodelGeluid-1.0-0-20200421-20200512-133443 imvertor 1.59.4--></p>
    <section id="">
       <h3>   </h3><a class="anchor" id="graph_EAID_4A679509_B62E_4dfc_8864_C4852847204B"></a><a class="anchor" id="detail_class_Algemeen_Spoorstaafruwheid"></a><section id="detail_class_Algemeen_Spoorstaafruwheid">
          <h4>   Spoorstaafruwheid</h4>
