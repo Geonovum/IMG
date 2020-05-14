@@ -14,8 +14,8 @@
 var respecConfig = 
 {
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-  //specStatus: "GN-WV",                // Werk Versie
-  specStatus: "GN-CV",              // Consultatie Versie
+  specStatus: "GN-WV",                // Werk Versie
+  //specStatus: "GN-CV",              // Consultatie Versie
   //specStatus: "GN-VV",              // Vaststellings Versie
   //specStatus: "GN-DEF",             // Definitieve Versie
   //-- specType is verplicht! (activeer 1 van de volgende) ----------------------------
@@ -31,7 +31,7 @@ var respecConfig =
   //format: "markdown",                 // altijd "markdown"     
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  publishDate: "2020-05-14",  	      // Format is "YYY-MM-DD"
+  //publishDate: "2020-05-14",  	      // Format is "YYY-MM-DD"
   //-- de namen van de Editor(s) ------------------------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors: 
@@ -119,9 +119,9 @@ var respecConfig =
   },
 
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
-  //previousPublishDate: "2017-06-14",    	    // Format is "YYYY-MM-DD"
+  previousPublishDate: "2020-05-14",    	    // Format is "YYYY-MM-DD"
   //previousMaturity: "GN-DEF",                 // kies 1 van deze 3 regels
-  //previousMaturity: "CV",                   // kies 1 van deze 3 regels  	  
+  previousMaturity: "CV",                   // kies 1 van deze 3 regels  	  
   //previousMaturity: "VV",  	                // kies 1 van deze 3 regels
 
   //-- Optionele parameters:
