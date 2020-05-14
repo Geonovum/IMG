@@ -222,16 +222,13 @@ Normatieve referenties
 
 De volgende documenten zijn onmisbaar voor de totstandkoming van dit document:
 
--   [[MIM]] – [Metamodel Informatie Modellering](
-    <https://docs.geostandaarden.nl/mim/mim/>)
+-   [[MIM]] – [Metamodel Informatie Modellering](https://docs.geostandaarden.nl/mim/mim/)
 
--   [Raamwerk van geo-standaarden
-    3.0](<https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf>)
+-   [Raamwerk van geo-standaarden 3.0](https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf)
 
--   [NEN 3610:2011/A1:2016 Basismodel Geo-informatie](
-    <https://geonovum.github.io/bmgi/docs/#dataproductspecificatie-nl>)
+-   [NEN 3610:2011/A1:2016 Basismodel Geo-informatie](https://geonovum.github.io/bmgi/docs/#dataproductspecificatie-nl)
 
--   ISO19107: Geographic information – Spatial schema .
+-   ISO19107: Geographic information – Spatial schema
 
 -   RIVM: PSA Centrale Voorziening Geluidgegevens 1.03
 
