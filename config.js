@@ -105,6 +105,12 @@ var respecConfig =
       publisher: "Geonovum",
       date: "2017-06-14"
     },
+    "ISO19108-2005": {
+      "href": "https://www.iso.org/standard/39891.html",
+      "title": "Geographic information -- Rules for application schema",
+      "date": "2005-06",
+      "publisher": "International Organization for Standardization"
+    },
   },
 
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
