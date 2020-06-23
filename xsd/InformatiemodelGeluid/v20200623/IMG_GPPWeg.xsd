@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:GPPWeg="http://geluidgegevens.nl/GPPweg"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:gml="http://www.opengis.net/gml/3.2"
+           xmlns:Algemeen="http://geluidgegevens.nl/algemeen"
+           xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+           targetNamespace="http://geluidgegevens.nl/GPPweg"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="1.0-0">
+   <xs:annotation>
+      <xs:appinfo source="http://www.imvertor.org/model-info/project">MIMLM</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/application">Informatiemodel Geluid</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/release">20200421</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/version">1.0</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/phase">0</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/uri">www.geluidgegevens.nl/namespace/GPPweg</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/generated">2020-05-12T11:34:40Z</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/file-location">Informatiemodel Geluid/unknown/v20200421/Informatiemodel Geluid_GPPWeg_v1_0.xsd</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generated">May 12, 2020 at 11:34:40</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generator">1.59.4</xs:appinfo>
+      <xs:documentation source="http://www.imvertor.org/schema-info/conversion">
+        This schema is based on an UML specification, which is transformed by the Imvertor software. Imvertor modules are in the public domain, see http://www.imvertor.org.
+    </xs:documentation>
+   </xs:annotation>
+   <xs:annotation>
+      <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+         <gmlsf:ComplianceLevel>2</gmlsf:ComplianceLevel>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:import namespace="http://www.opengis.net/gml/3.2"
+              schemaLocation="../../gml/3.2.1/gml.xsd"/>
+   <xs:import namespace="http://geluidgegevens.nl/algemeen"
+              schemaLocation="IMG_Algemeen.xsd"/>
+   <xs:element name="WegdeelGPP"
+               type="GPPWeg:WegdeelGPPType"
+               substitutionGroup="Algemeen:Geluidemissieobject">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Kleinste functioneel onafhankelijk stukje van een NEN 3610 Weg met gelijkblijvende, homogene akoestische eigenschappen en relaties en primair bedoeld voor het representeren van akoestische eigenschappen van wegverkeer op rijkswegen of provinciale wegen.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="WegdeelGPPType">
+      <xs:complexContent>
+         <xs:extension base="Algemeen:GeluidemissieobjectType">
+            <xs:sequence>
+               <xs:element name="plafondcorrectiewaarde" type="gml:MeasureType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Getal waarmee de geluidemissie wordt vermeerderd met betrekking tot een daarbij aangegeven gedeelte van een weg of spoorweg ten behoeve van het bepalen van de geluidproductie dan wel de geluidsbelasting.
+Explanation: Een '0' invoeren indien niet toegepast (de waarde '0' is bij GPP's over algemeen een prognose).</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="wegdeelhoogte" type="gml:doubleList" minOccurs="0">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het hoogteverschil tussen het op een brug of fly-over gelegen wegdeel en het onderliggende maaiveld.
+Explanation: Dit is een optioneel attribuut dat alleen relevant is wanneer de hoogte van de rijlijn (z-waarde in de geometrie) en de hoogte van het maaiveld verschillen. Dat is het geval wanneer een wegdeel op een brug of fly-over gelegen is. Indien van een dergelijke situatie sprake is, dan moet deze informatie of via dit veld, of via een hoogtelijn gemodelleerd worden. Dit is een lijst met relatieve hoogtewaarden per vertex van de geometrie van het geluidscherm. Het is cruciaal dat de volgorde van de lijstwaarden exact overeenkomt met de x- en y-waarden van de geometrie. Met andere woorden; de schermhoogte en de geometrie van het geluidscherm hanteren exact dezelfde modelleerrichting. Omdat de schermhoogte gedefinieerd is als het verschil tussen de top van het scherm en het maaiveld, kan deze hoogte afwijken van de fysieke schermhoogte indien het scherm onder een hellingshoek geplaatst is. Let op: Het formeel patroon geldt voor een enkele lijstwaarde, niet voor de totale lijst.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="wegdektype" type="gml:ReferenceType">
+                  <xs:annotation>
+                     <xs:appinfo>
+                        <CodeListName>Wegdektype</CodeListName>
+                        <CodeListURI>https://www.infomil.nl/onderwerpen/geluid/regelgeving/wet-geluidhinder/wegverkeerslawaai/akoestisch-rapport/cwegdek/#Overzichtwegdekcorrecties</CodeListURI>
+                     </xs:appinfo>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Classificatie van typen toplagen op een wegdeel waarvan geluidreducerende effecten per type zijn vertaald naar correctiewaarden die gezamenlijk worden uitgedrukt met de bronterm Cwegdek.
+Explanation: De geluidreducerende effecten van stille wegdekken zijn in AREG Bijlage IVd verrekend in de bronterm Cwegdek. Deze wegdekcorrectiefactoren zijn bepaald volgens de methode beschreven in AREG Bijlage IVd. In de CROW-publicatie nr. 316 zijn de wegdekken ingedeeld in 15 categorieën. Dit zijn voor een deel standaard wegdektypen en voor een deel categorieën waar een aantal producten met soortgelijke eigenschappen in past. Bijvoorbeeld stille elementenverhardingen en de 2 categorieën dunne deklagen. Deze categorieën zijn bedoeld om in een vroeg stadium van het akoestisch onderzoek te rekenen met een benadering van de geluidreductie, zonder dat er al een keuze voor een specifiek product gemaakt hoeft te worden. Nadat de keuze voor een bepaald product is gemaakt, worden de akoestische berekeningen aangepast met de Cwegdek van dat product. Naast de wegdekcategorieën uit de publicatie zijn er ook veel producten in omloop, die veelal gebonden zijn aan een bepaalde producent. Voor deze producten kan de producent de Cwegdek laten vaststellen. De rapporten daarvan zullen hier als download beschikbaar zijn zodra Expertisecentrum Geluid van het RIVM deze heeft goedgekeurd.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="geluidbronregisterlijn" type="gml:CurvePropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Lijn gelegen boven een weg die de plaats van de geluidafstraling representeert.
+Explanation: Het bevoegd gezag bepaalt zelf de locatie en de hoeveelheid geluidbronregisterlijnen die het nodig acht voor de bepaling van het geluidproductieplafond en de monitoring daarvan. Het begin- en eindpunt van de lijn wordt bepaald door het punt in de ruimte waarop één van de akoestische eigenschappen van de geluidbron wijzigt. Geometrie van de geluidbronregisterlijn is conform het GM_Curve datatype. De z-hoogte is de hoogte van een punt binnen de geometrie. De z-hoogte ten opzichte van NAP is conform de richtlijnen van ISO19107 opgenomen in de geometrie.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="intensiteiten"
+                           nillable="false"
+                           type="Algemeen:IntensiteitgegevensWegType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Gemiddeld aantal voertuigen per dagdeel, per voertuigcategorie.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="snelheden"
+                           nillable="false"
+                           type="Algemeen:SnelheidgegevensWegType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Representatief te achten snelheid van voertuigen per dagdeel, per voertuigcategorie</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="WegdeelGPPPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPWeg:WegdeelGPP"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="Diffractor"
+               type="GPPWeg:DiffractorType"
+               substitutionGroup="Algemeen:Geluidoverdrachtsobject">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een geluidgoot of geluidafbuiger is een experimentele geluidsreducerende maatregel langs (spoor)wegen.
+Explanation: Een diffractor is een betonnen constructie met daarin holtes die parallel aan het wegdek lopen (resonatoren), waardoor geluid geabsorbeerd wordt en vanwege verschillen in geluidsdruk de geluidsgolven naar boven worden gericht. Het systeem werkt vooral bij het rolgeluid van banden en is daarom voornamelijk langs autosnelwegen en provinciale wegen effectief. In de bebouwde kom is dit systeem minder effectief omdat hier het motorgeluid overheerst. Afhankelijk van de situatie varieert de geluidreductie tussen 0,0 en 3,0 dB Diffractors zijn geen verplichte geluidbrongegevens.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="DiffractorType">
+      <xs:complexContent>
+         <xs:extension base="Algemeen:GeluidoverdrachtsobjectType">
+            <xs:sequence>
+               <xs:element name="breedte" type="gml:MeasureType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De breedte van de diffractor, gezien vanuit de geluidbron (weg/spoor)kortste afmeting van een geluidbeperkende voorziening.
+Explanation: Deze waarde wordt alleen bij de berekening met diffractor gebruikt. De gebruiker dient het midden van de diffractor te modelleren. De bodem onder een diffractor wordt in de berekening altijd als hard verondersteld! Eventuele andere bodemfactoren worden dus ter plekke van de diffractor niet gebruikt.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="statusZwevend" type="xs:boolean">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicator voor de aan- of afwezigheid van een doorgang onder het afschermende object.
+Explanation: Het object zit niet vast aan de grond. Hiermee is het mogelijk een onderdoorgang of luifel te modelleren. Met de optie Zwevend object kan een doorgang onder de diffractor worden gemodelleeerd. De maaiveldhoogte van het item wordt dan beschouwd als de onderzijde van het item.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="diffractoreffect" type="Algemeen:WaardePerOctaafbandPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De fractie van de door de geluidgoot/-afbuiger gereflecteerde geluidsenergie per octaafband.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="geometrie" type="gml:CurvePropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De driedimensionale meetkundige representatie van een diffractor of geluidgoot.
+Explanation: Geometrie van een diffractor conform het GM_Curve datatype. De z-hoogte is de hoogte van een punt binnen de geometrie. De z-hoogte ten opzichte van NAP is conform de richtlijnen van ISO19107 opgenomen in de geometrie.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="DiffractorPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPWeg:Diffractor"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+</xs:schema>

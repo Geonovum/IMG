@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:GPPIndustrie="http://geluidgegevens.nl/industrie"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:gml="http://www.opengis.net/gml/3.2"
+           xmlns:Algemeen="http://geluidgegevens.nl/algemeen"
+           xmlns:GPPAlgemeen="http://geluidgegevens.nl/GPPalgemeen"
+           xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+           targetNamespace="http://geluidgegevens.nl/industrie"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="1.0-0">
+   <xs:annotation>
+      <xs:appinfo source="http://www.imvertor.org/model-info/project">MIMLM</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/application">Informatiemodel Geluid</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/release">20200421</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/version">1.0</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/phase">0</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/uri">www.geluidgegevens.nl/namespace/industrie</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/generated">2020-05-12T11:34:40Z</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/file-location">Informatiemodel Geluid/unknown/v20200421/Informatiemodel Geluid_GPPIndustrie_v1_0.xsd</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generated">May 12, 2020 at 11:34:40</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generator">1.59.4</xs:appinfo>
+      <xs:documentation source="http://www.imvertor.org/schema-info/conversion">
+        This schema is based on an UML specification, which is transformed by the Imvertor software. Imvertor modules are in the public domain, see http://www.imvertor.org.
+    </xs:documentation>
+   </xs:annotation>
+   <xs:annotation>
+      <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+         <gmlsf:ComplianceLevel>2</gmlsf:ComplianceLevel>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:import namespace="http://www.opengis.net/gml/3.2"
+              schemaLocation="../../gml/3.2.1/gml.xsd"/>
+   <xs:import namespace="http://geluidgegevens.nl/algemeen"
+              schemaLocation="IMG_Algemeen.xsd"/>
+   <xs:import namespace="http://geluidgegevens.nl/GPPalgemeen"
+              schemaLocation="IMG_GPPAlgemeen.xsd"/>
+   <xs:element name="Industrieterrein"
+               type="GPPIndustrie:IndustrieterreinType"
+               substitutionGroup="gml:AbstractFeature">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Industrieterreinen waar bij algemene maatregel van bestuur aangewezen activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroorzaken.
+Explanation: Betreft industrieterreinen met een geluidproductieplafond (als omgevingswaarde).</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="IndustrieterreinType">
+      <xs:complexContent>
+         <xs:extension base="gml:AbstractFeatureType">
+            <xs:sequence>
+               <xs:element name="geometrie" type="gml:MultiSurfacePropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Multivlak geometrie van een industrieterrein.
+Explanation: Geometrie van een industrieterrein is conform met het GM_MultiSurface datatype. Hoogte is niet nodig bij een punt binnen de geometrie.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="identificatie" type="Algemeen:NEN3610IDPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Unieke identificatie van het object binnen het domein van NEN 3610.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="naam" type="xs:string">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Combinatie naam van het industrieterrein in tekst.
+Explanation: Het zou kunnen voorkomen dat hetzelfde industriegebied meerdere namen heeft. Deze namen moeten in het geluidregister worden ingevoerd als enkele CharacterString.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="omschrijving" type="xs:string">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Lang tekstveld voor omschrijving van Industrie.
+Explanation: Omschrijving toevoegen is optioneel. Alleen toevoegen wanneer deze informatie van toegevoegde waarde is voor een gebruiker van het geluidregister.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="IndustrieterreinPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPIndustrie:Industrieterrein"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="Geluidbronvlak"
+               type="GPPIndustrie:GeluidbronvlakType"
+               substitutionGroup="gml:AbstractFeature">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Object dat aangeeft op basis van welke vlakbron de geluidbronindustrie tot stand gekomen is.
+Explanation: Voor herleidbaarheid van de berekening kunnen deze punten gelinkt worden aan de bijbehorende vlakbron. Een vlakbron is afgeleid uit de vlak geometrie van een geluidbrontype uit een rekenpakket. Deze vlakbron kan ook extra eigenschappen hebben die worden gebruikt door rekensoftware.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="GeluidbronvlakType">
+      <xs:complexContent>
+         <xs:extension base="gml:AbstractFeatureType">
+            <xs:sequence>
+               <xs:element name="geometrie" type="gml:SurfacePropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Vlakgeometrie die overeenkomt met de geometrie van een vlakbron die is gebruikt in het rekenpakket.
+Explanation: Geometrie conform met GM_Surface datatype. Z hoogte ten opzichte van NAP kan worden opgeslagen in de geometrie per vertex. Het is ook toegestaan een verticaal vlak in te voeren.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="identificatie" type="Algemeen:NEN3610IDPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Unieke identificatie van het object binnen het domein van NEN 3610.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="negeerOverdrachtsobjecten" type="xs:boolean">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Wanneer dit waar is, kan worden opgegeven dat eventuele gebouwen en schermen binnen de vlakbron niet worden gezien door de puntbronnen welke tot de vlakbron behoren.
+Explanation: Deze optie bestaat omdat het bronvermogen per m2 vaak gegeven is inclusief de bebouwing op de kavel. Dit attribuut wordt gebruikt om aan te geven dat de vlakbron een Oppervlaktebron is in Geomilieu dat reflecterende en afschermende objecten negeert . Dit geldt dus niet voor andere items zoals procesinstallatiegebieden</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="naam" type="xs:string" minOccurs="0">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Kort tekstveld voor de naam voor het Geluidbronvlak.
+Explanation: Naam toevoegen is optioneel. Alleen toevoegen wanneer deze informatie van toegevoegde waarde is voor gebruiker van het geluidregister.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="omschrijving" type="xs:string" minOccurs="0">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Lang tekstveld voor omschrijving voor het Geluidbronvlak.
+Explanation: Omschrijving toevoegen is optioneel. Alleen toevoegen wanneer deze informatie van toegevoegde waarde is voor gebruiker van het geluidregister.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="GeluidbronvlakPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPIndustrie:Geluidbronvlak"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="GeluidproductieplafondobjectIndustrie"
+               type="GPPIndustrie:GeluidproductieplafondobjectIndustrieType"
+               substitutionGroup="GPPAlgemeen:Geluidproductieplafondobject">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Lokaal Geluidproductieplafondobject voor industrie.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="GeluidproductieplafondobjectIndustrieType">
+      <xs:complexContent>
+         <xs:extension base="GPPAlgemeen:GeluidproductieplafondobjectType">
+            <xs:sequence>
+               <xs:element name="geluidproductieplafondLnight" type="gml:MeasureType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Vastgestelde GPP waarde voor de representatieve situatie van geluidproductie op een industrieterrein in de nacht.
+Explanation: Deze waarde hoeft alleen te worden opgegeven wanneer het geluidproductieplafondType Industrie is.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="GeluidproductieplafondobjectIndustriePropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPIndustrie:GeluidproductieplafondobjectIndustrie"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="GeluidbronIndustrie"
+               type="GPPIndustrie:GeluidbronIndustrieType"
+               substitutionGroup="Algemeen:Geluidemissieobject">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Geluidafstralend toestel, apparaat, gebouw of activiteit, dan wel een combinatie hiervan, binnen een inrichting of industrieterrein.
+Explanation: Dit object wordt zowel voor binnen het domein GPP-industrie als GPP-spoor gebruikt. In dat laatste geval alleen voor stilstaande treinen op emplacementen/opstelterreinen.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="GeluidbronIndustrieType">
+      <xs:complexContent>
+         <xs:extension base="Algemeen:GeluidemissieobjectType">
+            <xs:sequence>
+               <xs:element name="bedrijfsduurcorrectie"
+                           type="GPPAlgemeen:BedrijfsduurcorrectieWaardePropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Bedrijfsduurcorrectie in dB per dagdeel.
+Explanation: Bij de bedrijvigheid op een industrieterrein gaan we uit van de jaargemiddelde bedrijfssituatie. Jaargemiddelde bedrijfssituatie: De toestand die jaargemiddeld optreedt qua geluidproductie van de activiteiten in het te beschouwen gedeelte van het etmaal.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="bronType" type="GPPAlgemeen:BronTypeWaardeType" minOccurs="0">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Geeft aan of geluidbron onderdeel is van een normale puntbron, uitstalende gevel of uitstralend dak.
+Explanation: Benamingen van data types kunnen verschillen per softwarepakket.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="reflectiepuntHoogte" type="gml:MeasureType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Hoogte van een punt ten opzichte van NAP waarop eerste reflectie van een geluidbron op een oppervlak plaatsvindt.
+Explanation: Voor een geluidbron binnen het industriedomein, is het relevant om te weten wat het hoogteverschil is tussen de bron en het eerste punt waarop reflectie zal plaatsvinden. Wanneer de geluidemissie van deze bron wordt meegenomen in een geluidberekening, wordt een rechte lijn getrokken tussen bron en ontvanger. Op deze lijn zal aan de hand van een formule het reflectie punt worden bepaald. Dit kan zijn op een Geluidoverdrachtsobject of op de bodem.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="negeerGebouw" type="xs:boolean">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Geeft aan dat gebouwen waarbinnen de bron zich bevindt geen effect hebben op de geluidsoverdracht van bron naar ontvanger.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="negeerProcesinstallatiegebied" type="xs:boolean">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Geeft aan dat procesinstallatiegebieden waarbinnen de bron zich bevindt geen effect hebben op de geluidsoverdracht van bron naar ontvanger.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="negeerReflectie" type="xs:boolean">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indien geen reflectie in de dichtstbijzijnde zijde van een gebouw is berekend, is dit waar.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="relevanteBronsterkte"
+                           type="Algemeen:WaardePerOctaafbandPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Geluidsvermogensniveau van een denkbeeldige bron, gelegen in het centrum van de werkelijke geluidsbron, die in de richting van het geluidimmissiepunt dezelfde geluiddrukniveaus veroorzaakt als de werkelijke geluidbron.
+Explanation: De relevante geluidbronsterkte wordt gebruikt om de geluidemissie uit te drukken per Octaafband in Db(A). Db(A) wordt gebruikt om aan te geven dat de A filter is toegepast. De A filter is een correctie op de decibel-schaal naar menselijk gehoor.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="uitstralingsRichting"
+                           type="GPPIndustrie:BronUitstralingsRichtingWaardePropertyType"
+                           minOccurs="0">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Richting waarop geluidbron emissie uitstraalt.
+Explanation: Wanneer bij brontype voor een normale puntbron wordt gekozen, kan de uitstralingsrichting ingesteld worden. De uitstralingsrichting van een Puntbron wordt bepaald door een 'openingshoek' en een 'uitstralingsrichting'. De uitstralingsrichting is: Richting waar emissie naar uitstraalt. De openingshoek is: Opening van de hoek van emissie-uitstraling met als midden de uitstralingsrichting. Deze hoeken worden uitgedrukt in graden volgens de kompasrichtingen.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="geometrie" type="gml:PointPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Geometrie van GeluidbronIndustrie.
+Explanation: Geometrie conform met GM_Point datatype. De z-hoogte is de hoogte van een punt binnen de geometrie. De z-hoogte ten opzichte van NAP is conform de richtlijnen van ISO19107 opgenomen in de geometrie.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element minOccurs="0"
+                           name="geluidbronlijn"
+                           nillable="false"
+                           type="GPPIndustrie:GeluidbronlijnPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Explanation: Een GeluidbronIndustrie hoort wel of niet bij een Geluidbronlijn.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element minOccurs="0"
+                           name="geluidbronvlak"
+                           nillable="false"
+                           type="GPPIndustrie:GeluidbronvlakPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een Geluidbronvlak.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="GeluidbronIndustriePropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPIndustrie:GeluidbronIndustrie"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="Bouwwerk"
+               type="GPPIndustrie:BouwwerkType"
+               substitutionGroup="Algemeen:Geluidoverdrachtsobject">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Overdracht object dat de absorberende en reflecterende akoestische werking van een statisch fysiek object modelleert.
+Explanation: Een Bouwwerk kan bij akoestisch onderzoek voor industrieterreinen worden gebruikt, om de reflecterende en absorberende werking van een fysiek object zoals een gebouw te modelleren. In de reken- en meetvoorschriften wordt er gesproken van een Gebouw in plaats van Bouwwerk. In IMGeluid hebben we ervoor gekozen de naam Bouwwerk te gebruiken, omdat dit object niet per definitie een Gebouw hoeft te zijn zoals dit begrip gedefinieerd is in andere registraties.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="BouwwerkType">
+      <xs:complexContent>
+         <xs:extension base="Algemeen:GeluidoverdrachtsobjectType">
+            <xs:sequence>
+               <xs:element name="geometrie" type="gml:SurfacePropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Vlak geometrie van het dak van een bouwwerk conform AREG Bijlage IVf en het GM_Surface datatype.
+Explanation: Geometrie van het dak van een bouwwerk is conform het GM_Surface datatype. De z-hoogte is de hoogte van een punt binnen de geometrie van het dak. De z-hoogte ten opzichte van NAP is conform de richtlijnen van ISO19107 opgenomen in de geometrie. Bij het modelleren van een complex bouwwerk mogen meerdere bouwwerk objecten worden gebruikt.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="isCilindrisch" type="xs:boolean">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Geeft aan of een Bouwwerk cilindervormig is.
+Explanation: Wanneer een gebouw een cilinder is worden andere absorptiewaardes toegekend. Hoe met cilindrisch gaat worden omgegeaan is nog niet zeker. Wel is duidelijk geworden dat niet elk rekenpakket hier hetzelfde mee omgaat.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="profielcorrectie" type="GPPIndustrie:ProfielcorrectieWaardeType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De profielcorrectie geeft de mogelijkheid de schermwerking in alle frequenties te verlagen bij flauwe tophoeken van daken, taluds of wallen met de ingevoerde waarde.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="reflectiefactor" type="Algemeen:FactorPerOctaafbandPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De fractie van de door het geveloppervlak gereflecteerde geluidenergie per octaafband.
+Explanation: reflectiefactor 1 : akoestisch reflecterende wand reflectiefactor 0 : volledig absorberende wand reflectiefactor 0.2 : voorkeurswaarde voor taluds, dijklichamen e.a. reflectiefactor 0.8 : voorkeurswaarde voor overige gebouwen. De reflectiefactor wordt per octaafband ingevoerd en staat standaard op 0.8, dit komt overeen met 1 dB(A) geluidsniveauvermindering conform de reken- en meetvoorschriften.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="relatieveHoogte" type="gml:doubleList" minOccurs="0">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Lijst met verschil in hoogte tussen de z waarde uit de vertex in de geometrie en het maaiveld.
+Explanation: Dit is een lijst met relatieve hoogtewaarden per vertex van de geometrie van het bouwwerk. Het is cruciaal dat de volgorde van de lijstwaarden exact overeenkomt met de x- en y-waarden van de geometrie. Met andere woorden; de relatieveHoogte en de geometrie van het bouwwerk hanteren exact dezelfde modelleerrichting. De eerste waarde van de lijst met overeen komen met de laatste.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="BouwwerkPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPIndustrie:Bouwwerk"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="Vegetatiegebied"
+               type="GPPIndustrie:VegetatiegebiedType"
+               substitutionGroup="Algemeen:Geluidoverdrachtsobject">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Overdracht object dat een gebied afbakent, waarin door vegetatie de overdracht van geluid wordt beperkt met een vast waarde .</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="VegetatiegebiedType">
+      <xs:complexContent>
+         <xs:extension base="Algemeen:GeluidoverdrachtsobjectType">
+            <xs:sequence>
+               <xs:element name="demping" type="Algemeen:WaardePerOctaafbandPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Dempingswaarde voor een vegetatiegebied per octaafband.
+Explanation: Heeft momenteel 2 mogelijke waarden (bladverliezend en niet bladverliezend).</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="geometrie" type="gml:SurfacePropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Vlak geometrie van een vegetatiegebied conform het reken- en meetvoorsschrift voor industrie lawaai en het GM_Surface datatype.
+Explanation: Geometrie van het vegetatiegebied conform het GM_Surface datatype. De z-hoogte is de hoogte van een punt binnen de geometrie. De z-hoogte ten opzichte van NAP is conform de richtlijnen van ISO19107 opgenomen in de geometrie. Voor het modelleren van een vegetatiegebied met verschillende eigenschappen mogen meerdere objecten worden gebruikt.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="relatieveHoogte" type="gml:doubleList" minOccurs="0">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Verschil in hoogte tussen de z waarde uit de vertex in de geometrie en het maaiveld.
+Explanation: Dit is een lijst met relatieve hoogtewaarden per vertex van de geometrie van het bouwwerk. Het is cruciaal dat de volgorde van de lijstwaarden exact overeenkomt met de x- en y-waarden van de geometrie. Met andere woorden; de relatieveHoogte en de geometrie van het bouwwerk hanteren exact dezelfde modelleerrichting. De eerste waarde van de lijst met overeen komen met de laatste.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="VegetatiegebiedPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPIndustrie:Vegetatiegebied"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="Geluidbronlijn"
+               type="GPPIndustrie:GeluidbronlijnType"
+               substitutionGroup="gml:AbstractFeature">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Object dat aangeeft op basis van welke lijnbron de geluidbronindustrie tot stand gekomen is.
+Explanation: Voor herleidbaarheid van de berekening kunnen deze punten gelinkt worden aan de bijbehorende lijnbron. Een lijnbron is afgeleid uit de lijn geometrie van een geluidbrontype uit rekensoftware.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="GeluidbronlijnType">
+      <xs:complexContent>
+         <xs:extension base="gml:AbstractFeatureType">
+            <xs:sequence>
+               <xs:element name="geometrie" type="gml:CurvePropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Lijngeometrie die overeenkomt met de geometrie van een lijnbron of een mobielebron die is gebruikt in het rekenpakket.
+Explanation: Geometrie conform met GM_Curve datatype. Z hoogte ten opzichte van NAP kan worden opgeslagen in de geometrie per vertex.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="identificatie" type="Algemeen:NEN3610IDPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Unieke identificatie van het object binnen het domein van NEN 3610.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="naam" type="xs:string" minOccurs="0">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Kort tekstveld voor de naam voor de Geluidbronlijn.
+Explanation: Naam toevoegen is optioneel. Alleen toevoegen wanneer deze informatie van toegevoegde waarde is voor gebruiker van het geluidregister.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="omschrijving" type="xs:string" minOccurs="0">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Lang tekstveld voor omschrijving van de Geluidbronlijn.
+Explanation: Omschrijving toevoegen is optioneel. Alleen toevoegen wanneer deze informatie van toegevoegde waarde is voor gebruiker van het geluidregister.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="GeluidbronlijnPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPIndustrie:Geluidbronlijn"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="Procesinstallatiegebied"
+               type="GPPIndustrie:ProcesinstallatiegebiedType"
+               substitutionGroup="Algemeen:Geluidoverdrachtsobject">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Gebied dat een dempende invloed heeft op de geluidemissie van bronnen.
+Explanation: Een procesinstallatiegebied wordt gebruikt om te simuleren hoe de fysieke installaties van geluidbronnen een dempende werking hebben op andere geluidbronnen. Het is bijvoorbeeld mogelijk dat een installatie met een geluidemissie een andere installatie dempt. Een procesinstallatiegebied wordt gebruikt om het dempende effect hiervan te simuleren.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="ProcesinstallatiegebiedType">
+      <xs:complexContent>
+         <xs:extension base="Algemeen:GeluidoverdrachtsobjectType">
+            <xs:sequence>
+               <xs:element name="demping" type="Algemeen:WaardePerOctaafbandPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Dempingswaarde voor een Procesinstallatiegebied per octaafband, per meter dat geluid door procesinstallatiegebied aflegt.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="geometrie" type="gml:SurfacePropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Vlak geometrie van een procesinstallatiegebied conform het reken- en meetvoorsschrift voor industrie lawaai en het GM_Surface datatype.
+Explanation: Geometrie van het vegetatiegebied is conform het GM_Surface datatype. De z-hoogte is de hoogte van een punt binnen de geometrie. De z-hoogte ten opzichte van NAP is conform de richtlijnen van ISO19107 opgenomen in de geometrie. Voor het modelleren van een vegetatiegebied met verschillende eigenschappen mogen meerdere objecten worden gebruikt.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="maxDemping" type="gml:MeasureType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Maximale waarde in dB dat attribuut demping kan hebben per octaafband.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="relatieveHoogte" type="gml:doubleList" minOccurs="0">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Verschil in hoogte tussen de z waarde uit de vertex in de geometrie en het maaiveld.
+Explanation: Dit is een lijst met relatieve hoogtewaarden per vertex van de geometrie van het bouwwerk. Het is cruciaal dat de volgorde van de lijstwaarden exact overeenkomt met de x- en y-waarden van de geometrie. Met andere woorden; de relatieveHoogte en de geometrie van het bouwwerk hanteren exact dezelfde modelleerrichting. De eerste waarde van de lijst met overeen komen met de laatste.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="ProcesinstallatiegebiedPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPIndustrie:Procesinstallatiegebied"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="BronUitstralingsRichtingWaarde"
+               type="GPPIndustrie:BronUitstralingsRichtingWaardeType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Bepaald de breedte en richting van geluidsemissie vanaf een 'normale puntbron', 'uitstralende gevel' of een 'uitstralend dak'.
+Explanation: Kan ook worden gemodelleerd door 2 punten in model te gebruiken. Een met kleinere emissie en 1 met grotere emissie.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="BronUitstralingsRichtingWaardeType">
+      <xs:sequence>
+         <xs:element name="openingshoek" type="gml:MeasureType">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Opening van de hoek van emissie-uitstraling met als midden de uitstralingsrichting.
+Explanation: Wanneer openingshoek 360 graden, 'uitstralingsrichting' == 0</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="uitstralingsrichting" type="gml:MeasureType">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Richting waar emissie naar uitstraalt.
+Explanation: Uitgedrukt in graden volgens kompasrichtingen.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="BronUitstralingsRichtingWaardePropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPIndustrie:BronUitstralingsRichtingWaarde"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="IndustrieRekeninstellingenType">
+      <xs:sequence>
+         <xs:element name="luchtabsorptiecoFficiNten"
+                     type="Algemeen:WaardePerOctaafbandPropertyType">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een specificatie, per octaafband, voor de demping door de lucht.
+Explanation: Standaard wordt gebruik gemaakt van de in reken-voorschriften vastgestelde waarde, een andere waarde is alleen toegestaan als deze wetenschappelijk kan worden gevalideerd.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="standaardBodem" type="gml:MeasureType">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Absorptiefactor van grond waar geen bodem vlak gedefinieerd is.
+Explanation: Absorptiefactor is een waarde tussen 0 en 1. Deze waarde geeft aan hoe hard de ondergrond is, waarbij 0 is de hardste boden en 1 de zachtste bodem.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType name="ProfielcorrectieWaardeType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De enumeratie met mogelijke profielcorrectie waardes binnen domein industrie.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="0dB">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Profielcorrectiewaarde is 0 decibel.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="2dB">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Profielcorrectiewaarde is 2 decibel.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

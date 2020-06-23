@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:GPPSpoor="http://geluidgegevens.nl/GPPspoor"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:gml="http://www.opengis.net/gml/3.2"
+           xmlns:Algemeen="http://geluidgegevens.nl/algemeen"
+           xmlns:GPPAlgemeen="http://geluidgegevens.nl/GPPalgemeen"
+           xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+           targetNamespace="http://geluidgegevens.nl/GPPspoor"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="1.0-0">
+   <xs:annotation>
+      <xs:appinfo source="http://www.imvertor.org/model-info/project">MIMLM</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/application">Informatiemodel Geluid</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/release">20200421</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/version">1.0</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/phase">0</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/uri">www.geluidgegevens.nl/namespace/GPPspoor</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/generated">2020-05-12T11:34:40Z</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/file-location">Informatiemodel Geluid/unknown/v20200421/Informatiemodel Geluid_GPPSpoor_v1_0.xsd</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generated">May 12, 2020 at 11:34:40</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generator">1.59.4</xs:appinfo>
+      <xs:documentation source="http://www.imvertor.org/schema-info/conversion">
+        This schema is based on an UML specification, which is transformed by the Imvertor software. Imvertor modules are in the public domain, see http://www.imvertor.org.
+    </xs:documentation>
+   </xs:annotation>
+   <xs:annotation>
+      <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+         <gmlsf:ComplianceLevel>2</gmlsf:ComplianceLevel>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:import namespace="http://www.opengis.net/gml/3.2"
+              schemaLocation="../../gml/3.2.1/gml.xsd"/>
+   <xs:import namespace="http://geluidgegevens.nl/algemeen"
+              schemaLocation="IMG_Algemeen.xsd"/>
+   <xs:import namespace="http://geluidgegevens.nl/GPPalgemeen"
+              schemaLocation="IMG_GPPAlgemeen.xsd"/>
+   <xs:element name="SpoordeelGPP"
+               type="GPPSpoor:SpoordeelGPPType"
+               substitutionGroup="Algemeen:Geluidemissieobject">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Gedeelte van een spoorbaan met homogene akoestische eigenschappen.
+Explanation: Een spoorbaan in het informatiemodel is opgebouwd uit allemaal afzonderlijke segmenten, de Spoordelen. Een Spoordeel dient homogene eigenschappen te hebben. Indien één van de eigenschappen van een Spoordeel verandert, bijvoorbeeld de snelheid, dan ontstaat er een nieuw Spoordeel.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="SpoordeelGPPType">
+      <xs:complexContent>
+         <xs:extension base="Algemeen:GeluidemissieobjectType">
+            <xs:sequence>
+               <xs:element name="wissel" type="xs:boolean">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een wissel is een installatie in een spoorweg om een trein, metro of tram naar een ander spoor te leiden
+Explanation: Spoordeel maakt deel uit van een wissel.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="geluidbronregisterlijn" type="gml:CurvePropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Deel van een spoorweg, waarover de geluidemissie van spoorvoertuiggeluid min of meer constant kan worden verondersteld, gelet op de snelheden, intensiteiten, bovenbouwconstructie en de baangesteldheid.
+Explanation: Dit is over het algemeen de hartlijn van de spoorbaan. Dit wordt ook wel de bronregisterlijn genoemd. Geometrie van geluidbron op een spoordeel conform het GM_Curve datatype. De z-hoogte is de hoogte van een punt binnen de geometrie. De z-hoogte ten opzichte van NAP is conform de richtlijnen van ISO19107 opgenomen in de geometrie.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="bovenbouw"
+                           nillable="false"
+                           type="Algemeen:BovenbouwgegevensSpoorType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De constructie die het dragen en geleiden van spoorvoertuigen verzorgd en gelegen is op de onderbouw (het geheel van aardenbaan en kunstwerken. Dit is de dragende constructie voor de bovenbouw).
+Explanation: Het geheel van spoorconstructie: (dikte van) ballastbed, dwarsligger, bevestiging, voegen en railruwheid. Er bestaan 2 bovenbouwconstructies, te weten: De ballastconstructie; deze bestaat uit ballast, dwarsliggers, spoorstaven en wissels alsmede het bijbehorende bevestigingsmateriaal; Ballastloze constructie; deze bestaat uit: een doorlopende plaat van beton, spoorstaven, bevestigingsmiddelen al dan niet gevat in een gietmassa. Komt o.a. voor bij tankinstallatie, wasinstallaties en kunstwerken</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element maxOccurs="unbounded"
+                           name="intensiteiten"
+                           nillable="false"
+                           type="Algemeen:IntensiteitgegevensSpoorType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Verzameling van gegevens over het gemiddeld aantal voertuigverplaatsingen per dagdeel, spoorvoertuigcategorie, profieltype, rijrichting, treintype, op het betreffende Spoordeel.
+Explanation: Dit is een repeterende gegevensgroep; een Spoordeel kan meerdere gegevensgroepen met intensiteitsgegevens bevatten.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="plafondcorrectie"
+                           nillable="false"
+                           type="Algemeen:GeluidproductieplafondcorrectiepSpoorType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Getal waarmee de geluidemissie wordt vermeerderd met betrekking tot een daarbij aangegeven gedeelte van een weg of spoorweg ten behoeve van het bepalen van de geluidproductie dan wel de geluidsbelasting.
+Explanation: De plafondcorrectiewaarde is de toeslag die wordt toegepast bij berekeningen op basis van de brongegevens uit het geluidregister. De plafondcorrectiewaarde is dus van belang in rekenmodellen (voor berekeningen op referentiepunten of op woningniveau) die geheel of gedeeltelijk op registerdata zijn gebaseerd.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element maxOccurs="unbounded"
+                           name="snelheden"
+                           nillable="false"
+                           type="Algemeen:SnelheidgegevensSpoorType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Verzameling van snelheidsgegevens van treinvoertuigen met betrekking tot de *representatieve snelheid * per treintype, profieltype, remindicatie en rijrichting op het betreffende Spoordeel.
+Explanation: Dit is een repeterende gegevensgroep; een spoordeel kan meerdere gegevensgroepen met snelheidsgegevens bevatten.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="SpoordeelGPPPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPSpoor:SpoordeelGPP"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="GeluidschermSpoor"
+               type="GPPSpoor:GeluidschermSpoorType"
+               substitutionGroup="GPPAlgemeen:Geluidschermdeel">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Speciaal voorkomen van een Geluidscherm, bedoeld om nader onderscheid te kunnen maken tussen typen schermen zoals die voorkomen bij het hoofdspoor.
+Explanation: Deze specialisatie is alleen van toepassing op het hoofdspoor (GPP-spoor).</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="GeluidschermSpoorType">
+      <xs:complexContent>
+         <xs:extension base="GPPAlgemeen:GeluidschermdeelType">
+            <xs:sequence>
+               <xs:element name="schermtype" type="GPPSpoor:SchermtypeType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Door ProRail gehanteerde categorisering van het typen geluidschermen
+Explanation: De schermwerking is voor ieder type hetzelfde, maar het is voor adviesbureaus en andere partijen waardevol om de herkomst van het scherm op basis van de typering te kunnen herleiden</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="GeluidschermSpoorPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPSpoor:GeluidschermSpoor"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="Kunstwerk"
+               type="GPPSpoor:KunstwerkType"
+               substitutionGroup="Algemeen:Geluidoverdrachtsobject">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een civiel-technisch werk voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen.
+Explanation: Let op: definitie overgeonomen van KunstwerkDEEL uit BGT. In BGT vallen de objecten die in IM GEluid als subtypen van een kunstwerk zijn gemodelleerd niet (allemaal) onder een kunstwerkdeel, zoals in de BGT omschreven</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="KunstwerkType">
+      <xs:complexContent>
+         <xs:extension base="Algemeen:GeluidoverdrachtsobjectType">
+            <xs:sequence>
+               <xs:element name="geometrie" type="gml:SurfacePropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Meetkundige representatie van een infrastructureel object
+Explanation: Hierbij gaat het specifiek om een brug, een overkapping, een tunnelbak of een tunnel. Alleen een brug wordt gebruikt in de GPP-berekening. De overige objecten hebben alleen een informatieve waarde. Geometrie conform met GM_Surface datatype. De z-hoogte is de hoogte van een punt binnen de geometrie van een Brug. De z-hoogte is alleen relevant wanner het kunstwerk een Brug is. De z-hoogte ten opzichte van NAP is conform de richtlijnen van ISO19107 opgenomen in de geometrie.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="KunstwerkPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPSpoor:Kunstwerk"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="Brug"
+               type="GPPSpoor:BrugType"
+               substitutionGroup="GPPSpoor:Kunstwerk">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Kunstwerk over een watervlakte of waterloop, bestaande uit een brugdek gesteund door pijlers en/of landhoofden.
+Explanation: Dit object is voor de berekening van het GPP op twee manieren relevant: Het bepaalt waar de brugtoeslag geldt Als het een betonnen brug is, geldt de brug als een reflecterend bodemvlak op hoogte, met z-waarde t.o.v. N.A.P. (afgeleid van spoorhooge = spoorhoogte minus 20cm).</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="BrugType">
+      <xs:complexContent>
+         <xs:extension base="GPPSpoor:KunstwerkType">
+            <xs:sequence>
+               <xs:element name="indicatieToeslag" type="xs:boolean">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Attribuut dat aangeeft of de brug uit staal, danwel beton is opgebouwd.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="geluidtoeslag"
+                           nillable="false"
+                           type="GPPSpoor:GeluidtoeslagType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het verschil tussen de emissie van de door het kunstwerk beïnvloede bronnen en dezelfde bronnen zonder de invloed van het kunstwerk.
+Explanation: Het rijden over een stalen kunstwerk zal in het algemeen leiden tot een toename van de geluidemissie. Deze toename wordt veroorzaakt door enerzijds een toename van het rolgeluid van het spoorvoertuig en anderzijds de geluidafstraling van het stalen kunstwerk zelf. Bij stalen kunstwerken wordt in de rekenmethode deze toename van de geluidemissie gekarakteriseerd door een geluidemissietoeslag. Deze geluidemissietoeslag wordt bepaald per voertuigcategorie, per octaafband.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element minOccurs="0"
+                           maxOccurs="unbounded"
+                           name="geluidafschermSpoor"
+                           nillable="false"
+                           type="GPPSpoor:GeluidschermSpoorPropertyType"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="BrugPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPSpoor:Brug"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="Overkapping"
+               type="GPPSpoor:OverkappingType"
+               substitutionGroup="GPPSpoor:Kunstwerk">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Geluidoverdrachtsobject met tegenhoudende en absorberende werking, dat zich typisch boven een Spoordeel bevind.
+Explanation: Dit gegevens is akoestisch relevant voor de berekening van het GPP, maar indien overkappingszijwanden ontbreken is onbekend wat het effect van de overkapping is. Indien er wel overkappingszijwanden zijn, in hoeverre verschilt de combinatie van objecten dan van een tunnel?</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="OverkappingType">
+      <xs:complexContent>
+         <xs:extension base="GPPSpoor:KunstwerkType">
+            <xs:sequence>
+               <xs:element minOccurs="0"
+                           maxOccurs="unbounded"
+                           name="geluidschermSpoor"
+                           nillable="false"
+                           type="GPPSpoor:GeluidschermSpoorPropertyType"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="OverkappingPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPSpoor:Overkapping"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="Tunnel"
+               type="GPPSpoor:TunnelType"
+               substitutionGroup="GPPSpoor:Kunstwerk">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Onderdeel van een kunstmatig aangelegde, kokervormige onderdoorgang dat essentieel is voor de constructie.
+Explanation: Alle Spoordelen die binnen dit vlakken vallen worden op emissiewaarde "0" gezet. In tegenstelling tot de andere infraobjecten wordt voor een tunnel zelf geen onderscheid gemaakt tussen, bodem, zijwand en overkapping. De tunnel sluit het geluid namelijk volledig af, dus de ligging van de tunnel is volstaat.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="TunnelType">
+      <xs:complexContent>
+         <xs:extension base="GPPSpoor:KunstwerkType"/>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="TunnelPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPSpoor:Tunnel"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="Tunnelbak"
+               type="GPPSpoor:TunnelbakType"
+               substitutionGroup="GPPSpoor:Kunstwerk">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bodemvlak (vloer) van de niet overkapte helling die een tunnel verbindt met het maaiveld.
+Explanation: Dit beteft het bodemvlak van de tunnelbak. De wanden van de tunnelbak worden als GeluidschermSpoor.schermtype=tunnelbakwand gemodelleerd en behoren niet de geometrie van dit object.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="TunnelbakType">
+      <xs:complexContent>
+         <xs:extension base="GPPSpoor:KunstwerkType">
+            <xs:sequence>
+               <xs:element name="reflectiefactor" type="Algemeen:FactorPerOctaafbandPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De fractie van de door het bodemvlak van de tunnelbak gereflecteerde geluidsenergie per octaafband.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element minOccurs="0"
+                           maxOccurs="unbounded"
+                           name="kunstwerkTunnelbak"
+                           nillable="false"
+                           type="GPPSpoor:GeluidschermSpoorPropertyType"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="TunnelbakPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPSpoor:Tunnelbak"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:complexType name="GeluidtoeslagType">
+      <xs:sequence>
+         <xs:element name="reflectiefactor" type="Algemeen:FactorPerOctaafbandPropertyType">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De fractie van de door de brugwand van een object Brug gereflecteerde geluidsenergie per octaafband.
+Explanation: Bij brugwanden kan een reflectiefactor opgegeven worden. Deze is van belang binnen de berekeningen in SoundBase. Een scherm kan in de praktijk akoestisch reflecterend of absorberend zijn. ProRail voert wel een reflectiefactor op, maar deze wordt genegeerd door het rekenhart. Van alle schermen wordt binnen SoundBase (ProRail) dus aangenomen dat deze absorberend zijn en geen effect hebben op gpp’s aan de overzijde van het spoor. De reden om in SoundBase wel de reflectiefactor op te geven, is dat deze in een later stadium wel relevant is voor de berekeningen op woningniveau. Door de reflectiefactor reeds in SoundBase op te geven, zit deze direct correct in de export naar het SRM2-model.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="spoorvoertuigcategorie"
+                     type="Algemeen:SpoorvoertuigcategorieType">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Categorie-indeling van spoorvoertuigtypen.
+Explanation: Zie het AREG Bijlage IVe voor een nadere omschrijving.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="toeslag" type="gml:MeasureType">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De emissietoeslag voor stalen kunstwerken, gebaseerd op de methode zoals omschreven in AREG Bijlage IVe.
+Explanation: Indien een dergelijke waarde niet voorhanden is, wordt er gebruik gemaakt van een brugemissietoeslag (voor elke spoorvoertuigcategorie en octaafband) die afhankelijk is van het type bovenbouwconstructie. Directe bevestiging zonder ballastbed (voegloos): toeslag 10 dB; Directe bevestiging zonder ballastbed (voegenspoor): toeslag 12 dB; Houten dwarsligger zonder ballastbed: toeslag 10 dB; Ballastspoor met dwarsliggers (voegloos): toeslag 5 dB; Ingegoten spoorstaaf zonder ballastbed (voegloos): toeslag 8 dB; Ingegoten spoorstaaf (stille brugontwerp): toeslag gelijk aan voegloos ballastspoor met houten dwarsliggers.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType name="SchermtypeType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Door ProRail gehanteerde categorisering van de typen geluidschermen.
+Explanation: De schermwerking is voor ieder type hetzelfde, maar het is voor adviesbureaus en andere partijen waardevol om de herkomst van het scherm op basis van de typering te kunnen herleiden.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Brugwand">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een geluidscherm op een brug of verticaal oppervlak aan één of beide zijden van een brug dat als geluidscherm fungeert.
+Explanation: Bij een brugwand is de reflectiefactor wel relevant voor de GPP-berekening</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Geluidscherm">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Ter verbetering van de kwaliteit van het milieu direct langs een spoorweg geplaatst geluidregisterscherm dat gebruikt is in de GPP-berekening.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Geluidwal">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Ter verbetering van de kwaliteit van het milieu direct langs een spoorweg geplaatste geluidwal dat gebruikt is in de GPP-berekening.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Overkappingszijwand">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een geluidscherm onder een overkapping of verticaal oppervlak aan één of beide zijden van een overkapping dat als geluidscherm fungeert.
+Explanation: Een overkappingszijwand heeft een reflectiefactor die relevant is voor (wordt meegenomen in) de GPP-berekening</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Perronrand">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De verticale wand langs het spoor die de hoogte verbrugt tussen de bovenkant van het spoor en de bovenkant van het perron.
+Explanation: Tussen een passerende trein en de perronrand kan het geluid heen-en-weer kaatsen. Verder heeft een perronrand heeft in principe een default-hoogte van 80cm, maar er zijn uitzonderingen in het register die deze hoogte ruimschoots overschrijden. Een perron heeft geen reflectiefactor want het heeft juridisch een andere oorsprong dan bijvoorbeeld een brugwand. Een perron heeft namelijk niet als hoofddoel 'geluidafscherming'.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Tunnelbakwand">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een verticaal oppervlak aan de zijde van een tunnelbak dat als geluidscherm fungeert.
+Explanation: Vraag: heeft een tunnelbakrand een reflectiefactor die relevant is voor (wordt meegenomen in) de GPP-berekening?</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

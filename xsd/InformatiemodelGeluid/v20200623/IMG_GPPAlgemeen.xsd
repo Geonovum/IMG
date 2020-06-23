@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:GPPAlgemeen="http://geluidgegevens.nl/GPPalgemeen"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:Algemeen="http://geluidgegevens.nl/algemeen"
+           xmlns:gml="http://www.opengis.net/gml/3.2"
+           xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+           targetNamespace="http://geluidgegevens.nl/GPPalgemeen"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="1.0-0">
+   <xs:annotation>
+      <xs:appinfo source="http://www.imvertor.org/model-info/project">MIMLM</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/application">Informatiemodel Geluid</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/release">20200421</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/version">1.0</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/phase">0</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/uri">www.geluidgegevens.nl/namespace/GPPalgemeen</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/generated">2020-05-12T11:34:40Z</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/file-location">Informatiemodel Geluid/unknown/v20200421/Informatiemodel Geluid_GPPAlgemeen_v1_0.xsd</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generated">May 12, 2020 at 11:34:40</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generator">1.59.4</xs:appinfo>
+      <xs:documentation source="http://www.imvertor.org/schema-info/conversion">
+        This schema is based on an UML specification, which is transformed by the Imvertor software. Imvertor modules are in the public domain, see http://www.imvertor.org.
+    </xs:documentation>
+   </xs:annotation>
+   <xs:annotation>
+      <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+         <gmlsf:ComplianceLevel>2</gmlsf:ComplianceLevel>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:import namespace="http://geluidgegevens.nl/algemeen"
+              schemaLocation="IMG_Algemeen.xsd"/>
+   <xs:import namespace="http://www.opengis.net/gml/3.2"
+              schemaLocation="../../gml/3.2.1/gml.xsd"/>
+   <xs:element name="Geluidproductieplafondobject"
+               type="GPPAlgemeen:GeluidproductieplafondobjectType"
+               substitutionGroup="gml:AbstractFeature">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een punt in Nederland waar ter referentie is vastgesteld wat de maximale toegstane geluidbelasting per etmaalperiode mag zijn die geproduceerd wordt door een Rijksweg, een provinciale weg, een industrieterrein, of het hoofdspoor.
+Explanation: Het geluidproductieplafondobject is een verzamelobject dat de in een besluit vastgestelde GPP-waarde op een referentiepunt opslaat, samen met informatie over een eventueel van toepassing zijnde ontheffing of een vrijstelling.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="GeluidproductieplafondobjectType">
+      <xs:complexContent>
+         <xs:extension base="gml:AbstractFeatureType">
+            <xs:sequence>
+               <xs:element name="identificatie" type="Algemeen:NEN3610IDPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Unieke identificatie van het object binnen het domein van NEN 3610.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="geluidproductieplafond" type="gml:MeasureType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De door het bevoegd gezag vastgestelde maximaal toegestane jaargemiddelde geluidbelasting op een referentiepunt over de periode van een etmaal.
+Explanation: Lden staat voor Level day evening night. Dit attribuut is van toepassing op de domeinen: industrie, spoor en weg. Sommige domeinen kennen aanvullende GPP-waarden. Deze worden als apart attribuut opgenomen binnen dit object.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="tijdelijkeOntheffing" minOccurs="0" type="gml:MeasureType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Geeft een periode aan volgens datatype TM_Period waarin er een tijdelijke ontheffing geldt voor de naleving op de vastgestelde GPP-waarde op het bijbehorende referentiepunt.
+Explanation: Het invullen van dit attribuut is van toepassing als er sprake is van een tijdelijke ontheffing. Dat wil zeggen indien bij de monitoring sprake is van een binnen de wettelijk gestelde marge tijdelijke periode van overschrijding van het geluidproductieplafond. Binnen het TM_Period datatype, worden het begin en eind van de periode opgeslagen op de internationale manier, volgens de opbouw: .</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="tijdelijkeOntheffingswaarde"
+                           type="gml:MeasureType"
+                           minOccurs="0">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Aantal dB waarmee het geldende GPP verhoogd wordt gedurende de geldigheid van de tijdelijke ontheffing.
+Explanation: Dit is geen verplicht gegeven.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="vrijstelling" minOccurs="0" type="gml:MeasureType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Situatie waarin wel een geluidproductieplafond is vastgesteld, maar waarop voor de duur van een bepaalde periode niet gemonitord hoeft te worden aan het geluidproductieplafond.
+Explanation: Een vrijstelling alleen geldt in situaties waarin een tracébesluit is genomen voor een nieuw aan te leggen weg waarvoor al wel een GPP is vastgesteld, maar er nog niets te monitoren valt, omdat er nog geen verkeersbewegingen kunnen zijn. Een dergelijke situatie kan op één zelfde plek niet nogmaals voorkomen. Binnen het TM_Period datatype, worden het begin en eind van de periode opgeslagen op de internationale manier, volgens de opbouw: .</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="vaststellingVanRechtswege" type="xs:boolean">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicatie of de initiële vastelling van het geluidproductieplafond van rechtswege is.
+Explanation: Het betreft hier invoering van rechtswege (2012) obv van Wet Milieubeer art.11.45 lid 1, lid2 en lid 3</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="referentiepunt"
+                           nillable="false"
+                           type="GPPAlgemeen:ReferentiepuntType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De rekenkundige locatie van de door het bevoegd gezag vastgestelde geluidproductieplafond op vaste afstand t.o.v. van een rijksweg, een provinciale weg, een spoorbaan of een industrieterrein, zoals bedoeld in artikel 11.19 van de Wet milieubeheer;
+Explanation: Een referentiepunt bestaat niet in de fysieke werklijkheid. maar wordt voor rekendoeleinden geprojecteerd op vaste afstand van een weg, spoor of industrieterrein.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="berekening"
+                           nillable="false"
+                           type="Algemeen:GeluidberekeningobjectPropertyType"/>
+               <xs:element minOccurs="0"
+                           maxOccurs="3"
+                           name="besluit"
+                           nillable="false"
+                           type="Algemeen:DocumentverwijzingPropertyType"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="GeluidproductieplafondobjectPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPAlgemeen:Geluidproductieplafondobject"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="Hoogtelijnspecificatie"
+               type="GPPAlgemeen:HoogtelijnspecificatieType"
+               substitutionGroup="GPPAlgemeen:Hoogtelijn">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Optionele extra informatie over de hoogtelijn.
+Explanation: Verschillende bronhouders hebben ervoor gekozen of zullen er in de toekomst voor kiezen om hun hoogtelijnen bestand te vereenvoudigen en per hoogtelijn een aanduiding van het type mee te geven. De attributen van dit object bieden de mogelijkheid om deze informatie toe te voegen.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="HoogtelijnspecificatieType">
+      <xs:complexContent>
+         <xs:extension base="GPPAlgemeen:HoogtelijnType">
+            <xs:sequence>
+               <xs:element name="hoogtelijnobjecttype"
+                           type="GPPAlgemeen:HoogtelijnobjecttypeType"
+                           minOccurs="0">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Aanduidiging voor het fysieke object waarvan de HoogtelijnSpoor deel uitmaakt.
+Explanation: Dit attribuut dient gebruikt te worden om aan te geven op welke type fysieke object de hoogtelijn van toepassing is.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="hoogtelijntype"
+                           type="GPPAlgemeen:HoogtelijntypeType"
+                           minOccurs="0">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Classificatie van het soort breuklijn
+Explanation: ProRail heeft het hoogtelijnenmodel vereenvoudigd en onderscheid nu vijf verschillende typen hoogtelijnen. De typen Tunnelbaklijn, balastbedlijn en kantaardebaanlijn komen uit het spoorregister en mogen niet aangepast worden. De andere twee typen komen uit het Actueel Hoogtebestand Nederland (AHN).</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="HoogtelijnspecificatiePropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPAlgemeen:Hoogtelijnspecificatie"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="Bodemvlak"
+               type="GPPAlgemeen:BodemvlakType"
+               substitutionGroup="Algemeen:Geluidoverdrachtsobject">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Object dat de geluid-absorberende werking van een vlak hardere of zachtere bodem simuleert.
+Explanation: Bij GPP wegen is een vaste strook hard bodemgebied onder de rijlijn gedefinieerd, waardoor het eerste deel van de geluidsoverdracht altijd over een reflecterende bodem plaatsvindt. De lengte van dit gedeelte is voor elke sector verschillend. .</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="BodemvlakType">
+      <xs:complexContent>
+         <xs:extension base="Algemeen:GeluidoverdrachtsobjectType">
+            <xs:sequence>
+               <xs:element name="absorptiefractie" type="gml:MeasureType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Aanduiding voor de akoestische hardheid van de bodem.
+Explanation: Aanduiding voor de akoestische hardheid van de bodem.absorptiefractie: hard (0), zacht (1) en half (0,5). Dit is gewijzigd van een discrete naar een continue waarde. De gemiddelde absorptiefractie in een gebied wordt berekend door middeling van de absorptiefracties van de deelgebieden, waarbij een weging wordt toegepast die is gebaseerd op het quotiënt van de lengte van het deelgebied en de lengte van het totale gebied. Als de lengte van het middengebied nihil is, wordt de gemiddelde absorptiefractie van het middengebied op 1 gesteld. Voor akoestisch hard gebied (water, geasfalteerde vlakken en dergelijke) is de absorptiefractie gelijk aan nul. Voor akoestisch zacht gebied, zoals grasland, akkerland en bos- en duingrond is de absorptiefractie gelijk aan 1,0. Bij een wegdektype dat significant absorberende eigenschappen heeft (zoals ZOAB en (Fijn) tweelaags ZOAB), wordt een absorptiefractie van 0,5 aangehouden.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="geometrie" type="gml:SurfacePropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De tweedimensionale meetkundige representatie van een akoestisch bodemvlak.
+Explanation: Een bodemvlakgeometrie heeft geen hoogte.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="BodemvlakPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPAlgemeen:Bodemvlak"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="Geluidschermdeel"
+               type="GPPAlgemeen:GeluidschermdeelType"
+               substitutionGroup="Algemeen:Geluidoverdrachtsobject">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Ter verbetering van de kwaliteit van het milieu direct langs een weg of spoorweg geplaatste registerscherm en of wal die gebruikt zijn voor de berekening van het geluidproductieplafond.
+Explanation: Dient voor afscherming en heeft een reflectie factor die aan de twee zijden verschillend kan zijn. Objecten rondom de weg (schermen en wallen) die nodig zijn om de geluidproductieplafonds te berekenen en daarmee onderdeel zijn van de brongegevens voor wegen. In principe worden geen gemeente-schermen aangeleverd, tenzij die zijn gebruikt in de GPP-berekening. Een scherm kan in de praktijk akoestisch reflecterend of absorberend zijn. ProRail voert wel een reflectiefactor op, maar deze wordt genegeerd door het rekenhart. Van alle schermen wordt binnen SoundBase (ProRail) dus aangenomen dat deze absorberend zijn en geen effect hebben op gpp’s aan de overzijde van het spoor. De reden om in SoundBase wel de reflectiefactor op te geven, is dat deze in een later stadium wel relevant is voor de berekeningen op woningniveau. Door de reflectiefactor reeds in SoundBase op te geven, zit deze direct correct in de export naar het SRM2-model. Het gaat hier net als bij rijlijnen om homogene 'schermdelen'. M.a.w. indien één eigenschap van het scherm wijzigt, heb je een nieuw afschermend object nodig.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="GeluidschermdeelType">
+      <xs:complexContent>
+         <xs:extension base="Algemeen:GeluidoverdrachtsobjectType">
+            <xs:sequence>
+               <xs:element name="hellingshoek" type="gml:MeasureType" minOccurs="0">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De hoek van het geluidscherm uitgedrukt in hele graden ten opzichte van de loodlijn op de ondergrond.
+Explanation: Uitgedrukt in hele graden. Voor een vooroverhellend scherm, gelden negatieve waarden -1 tot -90 graden Verticaal scherm is 0 graden Voor achteroverhellend scherm, gelden positieve waarden +1 tot + 90 graden Let op: bij het invoeren van een andere waarde dan 0, is een '+' of '-' teken noodzakelijk</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="schermhoogte" type="gml:doubleList" minOccurs="0">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het verschil tussen de top van het geluidscherm en het maaiveld, gemeten als een loodrechte lijn ten opzichte van het maaiveld uitgedrukt in meters.
+Explanation: Dit is een lijst met relatieve hoogtewaarden per vertex van de geometrie van het geluidscherm. Het is cruciaal dat de volgorde van de lijstwaarden exact overeenkomt met de x- en y-waarden van de geometrie. Met andere woorden; de schermhoogte en de geometrie van het geluidscherm hanteren exact dezelfde modelleerrichting. Omdat de schermhoogte gedefinieerd is als het verschil tussen de top van het scherm en het maaiveld, kan deze hoogte afwijken van de fysieke schermhoogte indien het scherm onder een hellingshoek geplaatst is. Het formeel patroon geldt voor een enkele lijstwaarde, niet voor de totale lijst.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="profieltype" type="GPPAlgemeen:ProfieltypeGeluidschermType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Vormaanduiding van het type geluidscherm
+Explanation: De profieltypes corresponderen met vaste profielcorrectiewaarden van 0,0 dB, 2,0 dB of 5,0 dB.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="reflectiefactorL" type="Algemeen:FactorPerOctaafbandPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De fractie van de door de linkerzijde van het geluidscherm gereflecteerde geluidsenergie per octaafband.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="reflectiefactorR" type="Algemeen:FactorPerOctaafbandPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De fractie van de door de rechterzijde van het geluidscherm gereflecteerde geluidenergie per octaafband.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="zwevend" type="xs:boolean">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicator voor de aan- of afwezigheid van een doorgang onder het afschermende object.
+Explanation: Het object zit niet vast aan de grond. Hiermee is het mogelijk een onderdoorgang of luifel te modelleren. Met de optie Zwevend object kan een doorgang onder het scherm worden gemodelleeerd. De maaiveldhoogte van het item wordt dan beschouwd als de onderzijde van het item.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ligging" type="gml:CurvePropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3D-lijn gemodelleerde representatie van de locatie van de voet en de hoogte van de top van het afschermende object.
+Explanation: x en y geven de locatie van de voet van het geluidscherm aan. De ligging wordt opgenomen conform het GM_Curve datatype. De z-waarde is de hoogte van de bovenkant (top) van het scherm in meters. De z-hoogte van het object ten opzichte van NAP is conform de richtlijnen van ISO19107 opgenomen in de geometrie. Voor deze modellering is gekozen omdat in een apart attribuut de hellingshoek van het scherm wordt opgenomen, waarbij de wens is om denkbeeldige draai-as ten opzichte waarop de hellingshoek gegevens wordt, te kunnen relateren aan de onderkant van het scherm (en niet aan de bovenkant).</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="GeluidschermdeelPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPAlgemeen:Geluidschermdeel"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="Hoogtelijn"
+               type="GPPAlgemeen:HoogtelijnType"
+               substitutionGroup="Algemeen:Geluidoverdrachtsobject">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Breuklijn om het hoogteverloop van het terrein te modelleren
+Explanation: Het object Hoogtelijnen is optioneel. Het is niet verplicht om hoogtelijnen in de berekening van het GPP gebruiken, behalve als deze binnen de grenzen van een industrieterrein ligt.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="HoogtelijnType">
+      <xs:complexContent>
+         <xs:extension base="Algemeen:GeluidoverdrachtsobjectType">
+            <xs:sequence>
+               <xs:element name="geometrie" type="gml:CurvePropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De driedimensionale meetkundige representatie van een hoogtelijn
+Explanation: Geometrie van een hoogtelijn conform het GM_Curve datatype. De z-hoogte is de hoogte van een punt binnen de geometrie. De z-hoogte ten opzichte van NAP is conform de richtlijnen van ISO19107 opgenomen in de geometrie.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="HoogtelijnPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPAlgemeen:Hoogtelijn"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <xs:attributeGroup ref="gml:OwnershipAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="BedrijfsduurcorrectieWaarde"
+               type="GPPAlgemeen:BedrijfsduurcorrectieWaardeType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Tijd in uren per dagdeel waar geluidbron actief is.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="BedrijfsduurcorrectieWaardeType">
+      <xs:sequence>
+         <xs:element name="bedrijfsduurcorrectiewaarde" type="gml:MeasureType">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Bedrijfsduurcorrectiewaarde in dB.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="dagdeel" type="Algemeen:DagdeelType">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Deel van de dag waarvoor bedrijfsduucorrectiewaarde van toepassing is.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="BedrijfsduurcorrectieWaardePropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="GPPAlgemeen:BedrijfsduurcorrectieWaarde"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ReferentiepuntType">
+      <xs:sequence>
+         <xs:element name="geometrie" type="gml:PointPropertyType">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Geometrische locatie van een referentiepunt volgens GM_Point datatype.
+Explanation: Geometrie van een referentiepunt is conform met GM_Point datatype. De z-hoogte is de hoogte van een punt binnen de geometrie. De z-hoogte ten opzichte van NAP is conform de richtlijnen van ISO19107 opgenomen in de geometrie.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="hoogteReferentiepunt" type="gml:MeasureType">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Hoogteverschil tussen de z-waarde uit de geometrie van referentiepunt en het plaatselijk maaiveld.
+Explanation: In de meeste gevallen ligt deze waarde op 4 meter boven het maaiveld, maar er is een marge van 0,5m toegestaan.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType name="HoogtelijnobjecttypeType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Classificatie van het toepassingsgebied van een hoogtelijn.
+Explanation: Dit attribuut dient gebruikt te worden om aan te geven waarop de hoogtelijnen van toepassing zijn.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Tunnelbakmaaiveld"/>
+         <xs:enumeration value="Tunnelbakvloerlijn"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="HoogtelijntypeType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Classificatie van het soort hoogtelijn.
+Explanation: ProRail heeft het hoogtelijnenmodel vereenvoudigd en onderscheid nu vijf verschillende typen hoogtelijnen. De typen Tunnelbaklijn, balastbedlijn en kantaardebaanlijn komen uit het spoorregister en mogen niet aangepast worden. De andere twee typen komen uit het Actueel Hoogtebestand Nederland (AHN). Deze typen, de teentaludlijn en de referentiepuntenlijn, mag een adviesbureau aanpassen.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Ballastbedlijn">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Breuklijn van het ballastbed</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Kantaardebaanlijn">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Breuklijn van de kantaardebaanlijn
+Explanation: Bij GPP wegen ook wel HL1 genoemd</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Teentaludlijn">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Breuklijn van de teen van het tallud
+Explanation: Bij GPP wegen ook wel HL2 genoemd</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Referentiepuntenlijn">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Hoogteligging van de referentiepunten</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Tunnelbaklijn">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Breuklijn van tunnelbak</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="BronTypeWaardeType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Enumeratie met mogelijke waarden voor bron type.
+Explanation: Wanneer bron type ontbreekt kan deze lijst worden aangevuld.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="normalePuntbron">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Is behandeld door rekensoftware als een normale puntbron.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="uitstralendeGevel">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Is behandeld door rekensoftware als een uitstralende gevel.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="uitstralendDak">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Is behandeld door rekensoftware als een uitstralend dak.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ProfieltypeGeluidschermType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Vormaanduiding van het type geluidscherm
+Explanation: Deze klassen corresponderen met vaste profielcorrectiewaarden van 0,0 dB, 2,0 dB of 5,0 dB.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Scherp">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Alle gebouwen, dunne wanden waarvan de hoek met verticaal = 20°, grondlichamen met 0° = T = 70°, alle grondlichamen met daarop een dunne wand, als de totale constructiehoogte minder dan twee maal de hoogte van die wand is, of als de wand hoger is dan 3,5 m, bij toepassing van een schermtop en waarvan het effect met de correctieterm CT in rekening wordt gebracht.
+Explanation: De profielcorrectie van een scherp scherm is 0,0 dB</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Stomp">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Alle randen van weglichamen in ophoging, randen van wegen op een viaduct, alle grondlichamen met daarop een dunne wand, als de totale constructiehoogte meer bedraagt dan twee maal de hoogte van die wand en de wand niet hoger is dan 3,5 m en grondlichamen met 70° &lt; T = 165°
+Explanation: De profielcorrectiewaarde van een stomp scherm is 2,0 dB</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Perron">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Rand van het perron.
+Explanation: De perronrand heeft een afschermende werking en wordt gemodelleerd als een scherm van 0,8 meter hoogte, gemeten vanaf de bovenkant van het spoor. De profielcorrectie van een perron is 5,0 dB.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Middenberm">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Afschermende object dat bestaat uit dunne wanden en waarvoor geldt dat in het betreffende pad tussen bron- en waarneempunt zich behalve het genoemde afschermende object een tweede afschermend object bevindt op een afstand van, loodrecht gemeten, ten hoogste 50 meter en waarvan de hoogte ten minste gelijk is aan de bronhoogte. Daarnaast bevindt zich tussen beide afschermende objecten ten minste één rijlijn. Als niet aan deze voorwaarden voldaan is, dan wordt de afschermende werking van het ‘middenbermscherm’ op eenzelfde manier bepaald als van andere afschermende objecten.
+Explanation: Een middenbememscherm heeft geen profielcorrectie: correctie = 0).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="T-top">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Horizontaal geplaatst element boven op een scherm wat tot aanvullende schermwerking leidt.
+Explanation: Een t-top heeft geen profielcorrectie, maar gegeven de constrcutie hoort het bij een scherm met correctie 0</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>
