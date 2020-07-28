@@ -5,4 +5,4 @@ Het informatiemodel Geluid is van 2 juni tot en met 3 juli 2020 in consultatie g
 
 Het consultatierapport beschrijft in grote lijnen hoe de reacties zijn verwerkt. 
 
-Het consultatierapport is nog in bewerking en kan op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Zie https://geonovum.github.io/img/cr voor de draft versie. 
+Het consultatierapport is nog in bewerking en kan op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Zie https://geonovum.github.io/IMG/cr voor de draft versie. 
