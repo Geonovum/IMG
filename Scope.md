@@ -53,7 +53,4 @@ voort uit verschillende wet- en regelgevingen. Deze zijn:
     stelt eisen aan de inhoud, serviceniveaus en uitwisselstandaarden die worden
     gebruikt. Voor het standaardiseren van de inhoud zijn dataspecificaties
     ontwikkeld. Deze standaardiseren de structuur en de betekenis van de uit te
-    wisselen gegevens. Zolang de centrale voorziening de EU-richtlijn niet
-    ondersteund is INSPIRE niet relevant. Vooralsnog lijken de gegevens die de
-    centrale voorziening bevat niet onder INSPIRE te vallen omdat zij specifiek
-    zijn voor de Nederlandse situatie.
+    wisselen gegevens.
