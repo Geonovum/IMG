@@ -116,6 +116,12 @@ var respecConfig =
       "date": "2005-06",
       "publisher": "International Organization for Standardization"
     },
+    "ISO19118-2011": {
+      "href": "https://www.iso.org/standard/44212.html",
+      "title": "Geographic information -- Encoding",
+      "date": "2011-10",
+      "publisher": "International Organization for Standardization"
+    },
   },
 
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 

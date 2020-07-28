@@ -322,3 +322,11 @@ dataspecificatie.
 | **UML**         | Unified Modeling Language                         |
 | **WFS**         | Web Feature Service                               |
 | **XML**         | Extensible Markup Language                        |
+
+
+Gegevensuitwisseling met GML
+--------------------------------------
+
+Om op basis van het Informatiemodel Geluid gegevens te kunnen uitwisselen, is een GML application schema gedefinieerd. Dit schema is gebaseerd op XML en meer specifiek op [Geography Markup Language](https://www.geonovum.nl/geo-standaarden/geography-markup-language-gml) (GML), het standaard uitwisselingsformaat voor geografische bestanden. 
+
+Het GML application schema is uit het Informatiemodel Geluid afgeleid conform [[ISO19118-2011]] en annex E van de GML standaard [[gml]]. 
