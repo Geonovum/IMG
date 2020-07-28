@@ -147,9 +147,9 @@ Voor invulling van het [MIM metagegegeven Authentiek](https://geonovum.github.io
 “wettelijk kerngegeven” of “overig” worden toegekend.
  Daar is
 voor gekozen omdat de CVGG geen basisregistratie is, maar wel een grondslag
-heeft in de wet. Indien er voor een attribuut binnen iedere context een
+heeft in de wet. Indien er voor een attribuutsoort binnen iedere context een
 geluidbrongegeven is, wordt het label “wettelijk kerngegeven” toegekend. Wanneer
-een attribuut niet of alleen in een specifieke context een geluidbrongegeven is,
+een attribuutsoort niet of alleen in een specifieke context een geluidbrongegeven is,
 zal het label “overig” worden toegepast.
 
 #### Validatie van attribuutwaardes
@@ -162,8 +162,8 @@ attribuutniveau in de tabel met metagegevens.
 ##### Patroon/formeel patroon:
 
 Het MIM metagegeven “Patroon” omschrijft de structuur van de waarde die het
-attribuut bevat. (zie [MIM Patroon](https://geonovum.github.io/MIM-Werkomgeving/#metagegeven-patroon) voor
-definitie) De waarde van een attribuut mag niet buiten de kaders vallen van de
+attribuutsoort bevat. (zie [MIM Patroon](https://geonovum.github.io/MIM-Werkomgeving/#metagegeven-patroon) voor
+definitie) De waarde van een attribuutsoort mag niet buiten de kaders vallen van de
 structuur, zoals vastgesteld in het patroon. Om dit te valideren zal de
 voorziening gebruik maken van de machine-leesbare variant van dit patroon, het
 MIM metagegeven Formeel Patroon. (Zie [MIM formeel patroon](https://geonovum.github.io/MIM-Werkomgeving/#metagegeven-formeel-patroon) voor
@@ -178,9 +178,9 @@ in de metagegeventabel achter de tagged value “Meeteenheid”.
 ##### Multipliciteit
 
 In het geval van IMGeluid is de multipliciteit altijd relatief aan een
-Geluidgegevenscollectie. De multipliciteit van een attribuut geeft aan hoe vaak
-het attribuut met een waarde mag voorkomen binnen een object. Een multipliciteit van "[0..1]" houdt
-bijvoorbeeld in dat dit attribuut facultatief is.
+Geluidgegevenscollectie. De multipliciteit van een attribuutsoort geeft aan hoe vaak
+het attribuutsoort met een waarde mag voorkomen binnen een object. Een multipliciteit van "[0..1]" houdt
+bijvoorbeeld in dat dit attribuutsoort facultatief is.
 
 ##### Regels:
 
@@ -278,7 +278,7 @@ gesorteerd op alfabetische volgorde per domein.
 | **Applicatieschema**             | Informatiemodel dat gegevens beschrijft die worden gebruikt door een of meer applicaties.                                                                                                                                                 |
 | **Relatie**              | Semantische relatie tussen twee of meer geo-objecten die samenhang tussen hun instanties weergeeft.                                                                                                                                       |
 | **Attribuutsoort**               | Kenmerk van een geo-object.                                                                                                                                                                                                               |
-| **Attribuutwaarde**              | Waarde die een attribuut aanneemt.                                                                                                                                                                                                        |
+| **Attribuutwaarde**              | Waarde die een attribuutsoort aanneemt.                                                                                                                                                                                                        |
 | **Coördinaat**                   | Getal in een sequentie van n getallen om de positie van een punt in een n-dimensionale ruimte te bepalen.                                                                                                                                 |
 | **Coördinaatreferentiesysteem**  | Coördinaatsysteem dat aan een object is gerelateerd door een datum.                                                                                                                                                                       |
 | **Coördinaatsysteem**            | Set van wiskundige regels voor het toekennen van coördinaten aan punten.                                                                                                                                                                  |
@@ -291,7 +291,7 @@ gesorteerd op alfabetische volgorde per domein.
 | **Informatiemodel**              | Formele definitie van objecten, attributen, relaties en regels in een bepaald domein. OPMERKING: Domein is in dit verband: een kennisgebied of activiteit gekarakteriseerd door een verzameling van concepten en begrippen                |
 | **Instantie**                    | Benoemd, identificeerbaar object uit een objecttype.                                                                                                                                                                                    |
 | **Label**                        | Tekst of getal dat een eigenschap omschrijft of kwantificeert en als annotatie op een kaartbeeld wordt afgebeeld                                                                                                                          |
-| **Namespace**                    | Collectie van namen die in XML documenten gebruikt worden als element en attribuutnamen OPMERKING: Een namespace wordt geïdentificeerd door een URI.                                                                                      |
+| **Namespace**                    | Collectie van namen die in XML documenten gebruikt worden als objecttype- en attribuutsoortnamen OPMERKING: Een namespace wordt geïdentificeerd door een URI.                                                                                      |
 | **Objecttype**                 | Verzameling van objecten met dezelfde eigenschappen. OPMERKING: Ook wel feature class genoemd.                                                                                                                                            |
 | **Rasterformaat**                | Representatie van beeld middel een gewoonlijk rechthoekig patroon van parallelle lijnen.                                                                                                                                                  |
 | **Registratie**                  | Op nationaal niveau geïdentificeerde en erkende gegevensverzameling. OPMERKING: Een basisregistratie is een registratie.                                                                                                                  |
