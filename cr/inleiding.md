@@ -14,7 +14,7 @@ Elke reactie is meegenomen in het ontwikkelproces en afgewogen. Niet elke reacti
 Tijdens de consultatieperiode kwamen er ook reacties uit het bouwteam dat bezig is met de implementatie van de Centrale Voorziening Geluidgegevens. Deze reacties hebben we tegelijkertijd met de consultatiereacties verwerkt, wat in sommige gevallen heeft geleid tot aanpassingen in het informatiemodel.
 
 ## Wijzigingen ten gevolge van de consultatie
-Een significant deel van de reacties betreft niet zozeer het informatiemodel, maar de inhoud van de Aanvullingsregeling Geluid (AREG). Het informatiemodel Geluid volgt inhoudelijk dat wat in de AREG bepaald is. Omdat het informatiemodel volgend is, kan het geen wijzigingen of aanvullingen op de AREG bevatten. De AREG zou eerst moeten worden aangepast voordat het informatiemodel deze aanpassing kan overnemen. De reacties die hierom vragen zijn daarom voor het informatiemodel buiten scope geplaatst. 
+Een significant deel van de reacties betreft niet zozeer het informatiemodel, maar de inhoud van de Aanvullingsregeling Geluid (AREG). Dit was het geval bij alle reacties over het onderwerp luchtvaart en het merendeel van de reacties over lokaal spoor. Het informatiemodel Geluid volgt inhoudelijk dat wat in de AREG bepaald is. Omdat het informatiemodel volgend is, kan het geen wijzigingen of aanvullingen op de AREG bevatten. De AREG zou eerst moeten worden aangepast voordat het informatiemodel deze aanpassing kan overnemen. De reacties die hierom vragen zijn daarom voor het informatiemodel buiten scope geplaatst. 
 
 <aside class="issue">Worden deze reacties doorgestuurd naar de schrijvers van de AREG? Indien mogelijk nog aan de tekst toevoegen wat er met de buiten scope reacties is gedaan.</aside>
 
