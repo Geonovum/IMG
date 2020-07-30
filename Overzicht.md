@@ -191,22 +191,28 @@ verplicht zijn wanneer de condities uit de regel geldig zijn. De voorziening zal
 zorgen voor een validatiesysteem dat kan omgaan met regels, multipliciteit en
 patronen.
 
-#### Hoogte projectie en 3D
-Het toegepaste coördinaatsysteem voor de IMGeluid is dat van het stelsel van de
-Rijksdriehoeksmeting (RD-stelsel). De coördinaatgetallen zijn daarbij op
-centimeternauwkeurigheid met als eenheid meters. Het coördinaatgetal heeft
-maximaal twee cijfers achter de komma. Zo nodig wordt daarvoor afgerond, zodanig
-dat als het derde cijfer achter de komma de waarde 1 t/m 4 bedraagt, het tweede
-cijfer achter de komma niet wijzigt en als het derde cijfer achter de komma de
-waarde 5 t/m 9 bedraagt, het tweede cijfer achter de komma met één wordt
-verhoogd, met mogelijk ook implicaties voor de voorliggende cijfers, waarbij
-dezelfde regel geldt.
+#### 2D en 3D
+In geluidmodellen is het bij het merendeel van de gemodelleerde objecten van belang om de hoogte te weten. Voor alle objecttypen in IMGeluid is bepaald of de hoogte van belang is en moet worden opgenomen. Als de hoogte wordt opgenomen, gebeurt dit als onderdeel van de geometrie. We spreken dan van een 3D geometrie. Als de hoogte niet is opgenomen is dit een 2D geometrie. 
 
-Binnen IMGeluid bestaan zowel 3D als 2D objecten. Per object met een geometrie
-is bepaald of dit een 2D of 3D object is. Voor ieder object met een geometrie is
-een manier van hoogte uitdrukken gekozen die het best past bij het object. De
-discussie over hoogte en uiteindelijke conclusies zijn terug te vinden op
-[GitHub](https://github.com/Geonovum/IMG/issues/61).
+Hoogte wordt in 3D geometrie opgenomen als derde coördinaat, de `H`, in elk coördinatenpaar van de geometrie. In hoofdstuk 5 is bij elk objecttype dat een geometrie als eigenschap heeft, bij deze eigenschap voorgeschreven of het om een 2D of 3D geometrie gaat.
+
+Hoogte is bij 3D geometrieën altijd aangegeven in meters ten opzichte van NAP. In sommige gevallen is het van belang om daarnaast te weten wat de relatieve hoogte is van het object ten opzichte van het maaiveld ter plaatse. Het IMGeluid maakt het mogelijk om deze informatie op te nemen als een lijst van hoogtegetallen die correspondeert met de lijst van coordinaten, i.e. voor elk coördinatenpaar (`x,y,H`) een getal dat de relatieve hoogte uitdrukt. De lijst van hoogtegetallen moet even lang zijn als de lijst met coördinatenparen, en dezelfde volgorde hanteren, zodat te zien is welk relatieve hoogtegetal correspondeert met welk coördinatenpaar. 
+
+Indien nodig is het daarnaast mogelijk om aan te geven dat een object zwevend is ten opzichte van het maaiveld.
+
+#### Coördinaatsystemen
+Bij gegevensuitwisseling conform IMGeluid wordt als ruimtelijk referentiesysteem ofwel ETRS89, ofwel RD New + NAP gehanteerd. RD New is een geprojecteerd CRS dat voor het laatst is herzien op 26 oktober 2019. Het is geschikt voor gebruik in Nederland, op land inclusief de Waddenzee, de Waddeneilanden en 12 mijl uit de kust. RD New vervangt EPSG28991 (RD Oud).  RD + NAP betekent dat wordt uitgegaan van Normaal Amsterdams Peil voor de hoogte.
+
+Coördinaten in ETRS89 worden vastgelegd in eenheden van decimale graden, waarbij de waarde maximaal 8 decimalen achter de komma mag hebben. De hoogte wordt uitgedrukt in meters t.o.v. ellipsoide. Coördinaten in RD New + NAP bestaan uit x, y, en H (hoogte t.o.v. NAP, in geval van 3D) en worden vastgelegd in meters, waarbij de waarde maximaal 2 decimalen achter de komma mag hebben. Zo nodig wordt daarvoor afgerond, zodanig dat als het derde cijfer achter de komma de waarde 1 t/m 4 bedraagt, het tweede cijfer achter de komma niet wijzigt en als het derde cijfer achter de komma de waarde 5 t/m 9 bedraagt, het tweede cijfer achter de komma met één wordt verhoogd, met mogelijk ook implicaties voor de voorliggende cijfers, waarbij dezelfde regel geldt.
+
+Het ruimtelijk referentiesysteem moet altijd expliciet zijn aangegeven door het vermelden van de EPSG code. Toegestane EPSG codes zijn: 
+
+Referentiesysteem| EPSG code
+-----------------|----------
+ETRS89 (2D) | `EPSG:4258`
+ETRS89 (3D) | `EPSG:4937`
+RD New (2D) | `EPSG:28992`
+RD New + NAP (3D) | `EPSG:7415`
 
 #### Datum en tijd
 Het Informatiemodel Geluid hanteert de ISO 8601 norm [[ISO8601]] voor het beschrijven van tijdsaspecten. De notatie van de tijd is overeenkomstig de ISO-regelgeving: `jjjj-mm-ddTuu:mm:ss`. De hoofdletter `T` wordt gebruikt om de datum- en tijdcomponent te scheiden. Een voorbeeld: `2011-10-13T10:47:48` betekent dus 13 oktober 2011 om 10 uur 47 minuten en 48 seconden. Hierbij is de tijdzone voor Nederland, de Midden-Europese tijdzone, van kracht.
