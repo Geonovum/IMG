@@ -248,6 +248,26 @@ Het [Geluidaandachtsgebied](#global_class_Algemeen_Geluidaandachtsgebied) valt o
 
 Het Informatiemodel Geluid is waar nodig afgestemd op INSPIRE om aan deze verplichting te kunnen voldoen. 
 
+De mapping is als volgt: 
+
+INSPIRE | IMGeluid
+--------|--------
+ManagementRestrictionAndRegulationZone | Geluidaandachtsgebied
+&nbsp;&nbsp;inspireId | identificatie (NEN3610ID)
+&nbsp;&nbsp;geometry | geometrie
+&nbsp;&nbsp;zoneType | vaste waarde `noise restriction zone`
+&nbsp;&nbsp;environmentalDomain | vaste waarde `noise`
+&nbsp;&nbsp;designationPerdiod | Vastlegging.beginGeldigheid plus &nbsp;&nbsp;eindGeldigheid
+&nbsp;&nbsp;competentAuthority | Aanlevering.herkomstAanlevering
+&nbsp;&nbsp;beginLifespanVersion | Aanlevering.tijdstipRegistratie
+DocumentCitation | Documentverwijzing
+&nbsp;&nbsp;name | naam
+&nbsp;&nbsp;date | datumInwerkingtreding
+&nbsp;&nbsp;link | locatie
+&nbsp;&nbsp;specialisedZoneType | geluidbronsoort
+LegislationCitation | ontbreekt in IMGeluid, vaste verwijzing naar gerelateerde wet/regelgeving
+&nbsp;&nbsp;level | vaste waarde `national` 
+
 Algemene Termen en definities
 -----------------------------------
 
