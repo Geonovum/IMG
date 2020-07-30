@@ -6,26 +6,12 @@ Naam en Acroniemen
 
 IMGeluid – Dataspecificatie voor Centrale Voorziening Geluidgegevens (CVGG).
 
-Informele beschrijving
----------------------------
-
 Definitie
 -----------------
 
-RIVM ontwikkelt in opdracht van het ministerie van Infrastructuur en Waterstaat
-de Centrale Voorziening Geluidgegevens om de nieuwe geluidregelgeving onder de
-Omgevingswet te ondersteunen. Het geeft invulling aan wat in het
-Aanvullingsbesluit Geluid onder de Omgevingswet het “geluidregister” wordt
-genoemd. De voorziening is een voortzetting van en uitbreiding op de
-geluidregisters die al bestaan voor rijkswegen en hoofdspoor. In de voorziening
-moeten gegevens worden vastgelegd over de geluidproductieplafonds, de
-basisgeluidemissies, de geluidbrongegevens op basis waarvan deze zijn berekend,
-geluidaandachtsgebieden en de monitoringswaarden. Hierdoor zijn geluidgegevens
-voor iedereen op één plaats, uniform en laagdrempelig beschikbaar. Dat zorgt
-enerzijds voor transparantie over hoe waarden tot stand zijn gekomen. Daarnaast
-moeten de geluidbrongegevens bij een geluidproductieplafond ook verplicht
-gebruikt worden bij het berekenen van geluidbelasting. Deze gegevens kunnen dan
-ook laagdrempelig worden verkregen uit de centrale voorziening.
+In de Centrale Voorziening Geluidgegevens (CVGG) worden de gegevens vastgelegd die nodig zijn om de nieuwe geluidregelgeving onder de Omgevingswet te ondersteunen. Het Informatiemodel Geluid zorgt ervoor dat alle gegevens die de voorziening beschikbaar
+stelt eenduidig interpreteerbaar zijn en op een standaard manier kunnen worden
+uitgewisseld met andere systemen.
 
 Beschrijving
 --------------------
@@ -46,6 +32,7 @@ geluidbrongegevens bij een geluidproductieplafond ook verplicht gebruikt worden
 bij het berekenen van geluidbelasting. Deze gegevens kunnen dan ook
 laagdrempelig worden verkregen uit de centrale voorziening.
 
+### Informatiemodel Geluid
 Om betekenisvolle en uniforme uitwisseling van geluidgegevens mogelijk te maken,
 is in samenwerking met Geonovum een informatiemodel geluid ontwikkeld. Dit
 informatiemodel zorgt ervoor dat alle gegevens die de voorziening beschikbaar
@@ -55,22 +42,20 @@ beschrijven van de gegevens die noodzakelijk zijn om akoestische berekeningen
 uit te voeren. Hierdoor ontstaat een geluidspecifiek beeld van onder meer wegen,
 spoorwegen en industrieterreinen.
 
-**Informatiemodel Geluid**
-
 IMGeluid vormt het gemeenschappelijke begrippenkader voor de uitwisseling van
 informatie van verschillende bestaande en nieuwe geluidregisters. IMGeluid is
 gemodelleerd conform de specificaties van het Metamodel Informatie Modellering
 [[MIM]]. Voor de uitleg van betekenis van entiteiten binnen het informatiemodel
-wordt verwezen naar de [MIM catalogus bijlage](https://docs.geostandaarden.nl/mim/mim10/#B00). 
+wordt verwezen naar [MIM hoofdstuk 2: Metamodel Algemeen](https://docs.geostandaarden.nl/mim/mim/#metamodel-algemeen). 
 
 Binnen de scope van de CVGG vallen verschillende geluiddomeinen. Om technische en
 informatiekundige redenen, is de dataspecificatie opgedeeld in 7 domeinen. De
 domeinen staan hieronder beschreven en hebben elk een apart domeinmodel binnen
-de dataspecificatie (zie [Hoofdstuk 5 Gegevensdefinitie](#cat).
+de dataspecificatie (zie [Hoofdstuk 5 Gegevensdefinitie](#cat)).
 
 | Domeinnaam    | Omschrijving                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Algemeen      | Het Basismodel vormt de samenhang tussen alle domeinen van het IMGeluid. Alle objecttypen en relaties uit het IMGeluid komen samen in een Geluidgegevenscollectie. Binnen het IMGeluid worden geluidbrongegevens die gebruikt worden voor GPP en BGE berekeningen, gemodelleerd als een Geluidemissie of Geluidoverdrachtobject. De resultaten van GPP of BGE berekeningen worden opgeslagen in een Geluidgegevenscollectie. De onderliggende juridische vastleggingen, vaststellingen, of monitoringsverslagen van deze omgevings- of monitoringswaarden, worden ook opgeslagen in dezelfde Geluidgegevenscollectie. Per geluidbron per toepassing kan er een Geluidgegevenscollectie bestaan. Deze kan geassocieerd worden met maximaal 1 Geluidaandachtsgebied. Wanneer geluidgegevens met betrekking tot cumulatieberekeningen worden aangeleverd, bevat een Geluidgegevenscollectie geen Geluidaandachtsgebied.                                                                                                                                                                                                                                                                                     |
+| Algemeen      | De module Algemeen, het Basismodel vormt de samenhang tussen alle domeinen van het IMGeluid. Alle objecttypen en relaties uit het IMGeluid komen samen in een Geluidgegevenscollectie. Binnen het IMGeluid worden geluidbrongegevens die gebruikt worden voor GPP en BGE berekeningen, gemodelleerd als een Geluidemissie of Geluidoverdrachtobject. De resultaten van GPP of BGE berekeningen worden opgeslagen in een Geluidgegevenscollectie. De onderliggende juridische vastleggingen, vaststellingen, of monitoringsverslagen van deze omgevings- of monitoringswaarden, worden ook opgeslagen in dezelfde Geluidgegevenscollectie. Per geluidbron per toepassing kan er een Geluidgegevenscollectie bestaan. Deze kan geassocieerd worden met maximaal 1 Geluidaandachtsgebied. Wanneer geluidgegevens met betrekking tot cumulatieberekeningen worden aangeleverd, bevat een Geluidgegevenscollectie geen Geluidaandachtsgebied.                                                                                                                                                                                                                                                                                     |
 | GPP Algemeen  | GPP Algemeen bevat objecttypen en relaties met in ieder geval betrekking tot geluidproductieplafonds, onderliggende geluidbrongegevens en juridische vaststellingen. GPP algemeen omvat drie subdomeinen: GPP Industie, GPP Wegen en GPP Spoor. Een aantal objecten zijn al eerder verschenen in het Basismodel, maar worden hier verder gespecificeerd. Zo worden binnen dit domein een aantal  Geluidoverdrachtobjecten gespecificeerd. Een voorbeeld hiervan is het Geluidschermdeel dat in alle GPP domeinen gebruikt wordt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | GPP Industrie | In domeinmodel GPP Industrie staan objecttypen en relaties die relevant zijn voor geluidbronbeheersing van industrieterreinen waarvoor de geluidproductieplafond regeling geldt; en die nodig zijn voor akoestisch onderzoek binnen het geluidaandachtsgebied van het industrieterrein. Alle geluidbronnen op een industrieterrein worden opgeslagen als puntbronnen in het object  "GeluidbronIndustrie". Indien binnen geluidrekensoftware gebruik is gemaakt van lijn- of vlakgeometrie voor het uitdrukken van geluidbronnen kan dit worden opgeslagen als facultatieve informatie conform de objecten "Geluidbronlijn" en "Geluidbronvlak ". Voor ieder "Geluidproductieplafondobject" rondom het industrieterrein, valt te herleiden op welke geluidberekening de geluidproductieplafondwaarde gebaseerd is. Deze informatie wordt bijgehouden conform het "Geluidberekeningobject". Ook valt er te herleiden welke geluidbrongegevens gebruikt zijn bij een geluidberekening. Deze geluidbrongegevens zijn samen met het "Geluidberekeningsobject" terug te vinden in een  "Geluidgegevenscollectie" in de vorm van gespecialiseerde geluidemissie- en geluidoverdrachtsobjecten. |
 | GPP Weg       | In domeinmodel GPP Weg staan objecttypen en relaties die relevant zijn voor geluidbronbeheersing van wegen waarvoor de geluidproductieplafond regeling geldt; en die nodig zijn voor akoestisch onderzoek binnen het geluidaandachtsgebied van wegen. Geluidbronnen binnen GPP Weg worden opgeslagen als lijnbron conform het object “Wegdeel”. Voor ieder "Geluidproductieplafondobject" langs een Provinciale weg of Rijksweg, valt te herleiden op welke geluidberekening de geluidproductieplafondwaarde gebaseerd is. Deze informatie wordt bijgehouden conform het "Geluidberekeningobject". Ook valt er te herleiden welke geluidbrongegevens gebruikt zijn bij een geluidberekening. Deze geluidbrongegevens zijn samen met het "Geluidberekeningsobject" terug te vinden in een  "Geluidgegevenscollectie" in de vorm van gespecialiseerde geluidemissie- en geluidoverdrachtsobjecten.                                                                                                                                                                                                                                                                                         |
@@ -80,7 +65,7 @@ de dataspecificatie (zie [Hoofdstuk 5 Gegevensdefinitie](#cat).
 
 
 Niet ieder domein staat op hetzelfde hiërarchische niveau. Hiermee wordt bedoeld
-dat sommige domeinen objecten over nemen uit andere domeinen. Dit is gedaan om
+dat sommige domeinen objecten nader detailleren, die op een generieke manier in andere domeinen gedefinieerd zijn. Dit is gedaan om
 ervoor te zorgen dat objecten niet redundant in de dataspecificatie hoeven
 worden opgenomen. In de afbeelding hieronder is gemodelleerd hoe de hiërarchie
 in elkaar zit aan de hand van de UML generalisatie relatie.
@@ -90,7 +75,7 @@ in elkaar zit aan de hand van de UML generalisatie relatie.
 
 **Facultatief gegeven**
 
-IMGeluid zal samen met de AREG een juridische status krijgen. Dit houd in dat
+IMGeluid zal samen met de AREG een juridische status krijgen. Dit houdt in dat
 het wettelijk zal worden vastgesteld welke geluidbrongegevens moeten worden
 aangeleverd. In principe zijn alle emissieobjecten en overdrachtsobjecten
 geluidbrongegevens en daarmee een verplicht onderdeel van de CVGG. Daarnaast
@@ -128,7 +113,7 @@ De IMGeluid-objectidentificatie (object-ID) hanteert de richtlijnen van NEN
 3610:2011. Aan elk object wordt een uniek identificatienummer toegekend, dat uit
 twee delen bestaat: een namespace en een identificatiecode. Zolang het object
 bestaat, mag dit ID niet veranderen. Het IMGeluid hanteert voor het eerste deel,
-de namespace, NL.IMG. Het eerste deel is daarbij landcode, gevolgd door een
+de namespace: `NL.IMG`. Het eerste deel is daarbij landcode, gevolgd door een
 punt. Het tweede deel is de code voor IMGeluid. De identificatiecode bestaat uit
 het volgnummer van de bronhouder gevolgd door een punt en daarna een
 identificatie toegekend door de bronhouder. Voor de duidelijkheid: bij het
@@ -139,39 +124,39 @@ identificatie toegekend door de bronhouder moet het object per bronhouder uniek
 identificeren. Hiervoor mag gebruik gemaakt worden van een UUID of een GUID. Op
 deze wijze ziet de opbouw van een IMGeluid-ID er dan als volgt uit.
 
-NL.IMG.*volgnummer_bronhouder*.*identificatie_van_bronhouder*
+`NL.IMG.volgnummer_bronhouder.identificatie_van_bronhouder`
 
 #### Authentieke gegevens
 
-Voor invulling van het [MIM metagegegeven Authentiek](https://geonovum.github.io/MIM-Werkomgeving/#authentieke-gegevens), zullen aan attributen het label
-“wettelijk kerngegeven” of “overig” worden toegekend.
+Voor invulling van het [MIM metagegegeven Authentiek](https://geonovum.github.io/MIM-Werkomgeving/#authentieke-gegevens), zal aan attributen het label
+`wettelijk kerngegeven` of `overig` worden toegekend.
  Daar is
 voor gekozen omdat de CVGG geen basisregistratie is, maar wel een grondslag
 heeft in de wet. Indien er voor een attribuutsoort binnen iedere context een
-geluidbrongegeven is, wordt het label “wettelijk kerngegeven” toegekend. Wanneer
+geluidbrongegeven is, wordt het label `wettelijk kerngegeven` toegekend. Wanneer
 een attribuutsoort niet of alleen in een specifieke context een geluidbrongegeven is,
-zal het label “overig” worden toegepast.
+zal het label `overig` worden toegepast.
 
 #### Validatie van attribuutwaardes
 
 In IMGeluid heeft het uitgangspunt om met datatypes aan te sluiten op de
-richtlijnen van de ISO19107 standaard. In sommige gevallen was het nodig om
+richtlijnen van de ISO19107 standaard, waarin geometrietypen zoals punt, lijn en vlak gedefinieerd zijn. In sommige gevallen was het nodig om
 aanvullende eisen te stellen. Deze eisen zijn gespecificeerd waar nodig op
 attribuutniveau in de tabel met metagegevens.
 
 ##### Patroon/formeel patroon:
 
 Het MIM metagegeven “Patroon” omschrijft de structuur van de waarde die het
-attribuutsoort bevat. (zie [MIM Patroon](https://geonovum.github.io/MIM-Werkomgeving/#metagegeven-patroon) voor
-definitie) De waarde van een attribuutsoort mag niet buiten de kaders vallen van de
+attribuutsoort bevat (zie [MIM Patroon](https://geonovum.github.io/MIM-Werkomgeving/#metagegeven-patroon) voor
+definitie). De waarde van een attribuutsoort mag niet buiten de kaders vallen van de
 structuur, zoals vastgesteld in het patroon. Om dit te valideren zal de
 voorziening gebruik maken van de machine-leesbare variant van dit patroon, het
-MIM metagegeven Formeel Patroon. (Zie [MIM formeel patroon](https://geonovum.github.io/MIM-Werkomgeving/#metagegeven-formeel-patroon) voor
-definitie) Een formeel patroon is uitgedrukt als regular expression (RegEx).
+MIM metagegeven Formeel Patroon(Zie [MIM formeel patroon](https://geonovum.github.io/MIM-Werkomgeving/#metagegeven-formeel-patroon) voor
+definitie). Een formeel patroon is uitgedrukt als regular expression (RegEx).
 
 ##### Meeteenheid:
 
-Bij een attribuutwaarde met het GML formaat “Measure” is een specifieke
+Bij een attribuutwaarde met het formaat `Measure` is een specifieke
 meeteenheid vereist. Deze meeteenheid wordt gespecificeerd op attribuutniveau
 in de metagegeventabel achter de tagged value “Meeteenheid”.
 
@@ -179,14 +164,14 @@ in de metagegeventabel achter de tagged value “Meeteenheid”.
 
 In het geval van IMGeluid is de multipliciteit altijd relatief aan een
 Geluidgegevenscollectie. De multipliciteit van een attribuutsoort geeft aan hoe vaak
-het attribuutsoort met een waarde mag voorkomen binnen een object. Een multipliciteit van "[0..1]" houdt
+het attribuutsoort met een waarde mag voorkomen binnen een object. Een multipliciteit van `[0..1]` houdt
 bijvoorbeeld in dat dit attribuutsoort facultatief is.
 
 ##### Regels:
 
 In bepaalde gevallen worden regels gebruikt. Een mogelijke toepassing van regels
 is om te bepalen of een attribuutwaarde in een specifieke situatie verplicht is.
-Dit kan ervoor zorgen dat attributen met een multipliciteit van "[0..1]" wel
+Dit kan ervoor zorgen dat attributen met een multipliciteit van ` [0..1]` wel
 verplicht zijn wanneer de condities uit de regel geldig zijn. De voorziening zal
 zorgen voor een validatiesysteem dat kan omgaan met regels, multipliciteit en
 patronen.
@@ -228,13 +213,13 @@ Normatieve referenties
 
 De volgende documenten zijn onmisbaar voor de totstandkoming van dit document:
 
--   [[MIM]] – [Metamodel Informatie Modellering](https://docs.geostandaarden.nl/mim/mim/)
+-   [Metamodel Informatie Modellering 1.1](https://docs.geostandaarden.nl/mim/mim/)
 
 -   [Raamwerk van geo-standaarden 3.0](https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf)
 
 -   [NEN 3610:2011/A1:2016 Basismodel Geo-informatie](https://geonovum.github.io/bmgi/docs/#dataproductspecificatie-nl)
 
--   ISO19107: Geographic information – Spatial schema
+-   [[iso-19107-2003]] ISO19107: Geographic information – Spatial schema
 
 -   RIVM: PSA Centrale Voorziening Geluidgegevens 1.03
 
