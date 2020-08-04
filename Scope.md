@@ -5,8 +5,7 @@ Het toepassingsdomein is beheersing van het geluid van wegen, spoorwegen, en ind
 datakwaliteit van de CVGG en dient als basis voor de realisatie en ontsluiting
 van CVGG services.
 
-
-Achtergrond:
+### Achtergrond
 De gebruikstoepassing waar de semantiek van IMGeluid door wordt bepaald komt
 voort uit verschillende wet- en regelgevingen. Deze zijn:
 
@@ -51,3 +50,7 @@ voort uit verschillende wet- en regelgevingen. Deze zijn:
     gebruikt. Voor het standaardiseren van de inhoud zijn dataspecificaties
     ontwikkeld. Deze standaardiseren de structuur en de betekenis van de uit te
     wisselen gegevens.
+
+### Buiten scope
+Het IMGeluid is niet expliciet afgestemd op de [Basisregistratie Grootschalige Topografie](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/basisregistraties-en-stelselafspraken/inhoud-basisregistraties/bgt/) (BGT). Bij de ontwikkeling van het IMGeluid is wel gekeken naar de BGT. Echter is het IMGeluid vanuit de specifieke context van geluidsmodellering ontwikkeld, waarbij vooral de akoestische representatie van geluidbronnen en geluidoverdragende objecten centraal staat. Dit stelt specifieke eisen aan de te modelleren objecten. Daarnaast is er rekening gehouden met de huidige praktijk waarin bronhouders de BGT nog niet altijd hanteren als bron voor de objecten in geluidmodellen. 
+
