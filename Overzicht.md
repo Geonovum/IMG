@@ -145,20 +145,26 @@ Als iets in sommige gevallen wel, en in andere gevallen niet verplicht is, dan i
 
 De IMGeluid-objectidentificatie (object-ID) hanteert de richtlijnen van NEN
 3610:2011. Aan elk object wordt een uniek identificatienummer toegekend, dat uit
-twee delen bestaat: een namespace en een identificatiecode. Zolang het object
-bestaat, mag dit ID niet veranderen. Het IMGeluid hanteert voor het eerste deel,
-de namespace: `NL.IMG`. Het eerste deel is daarbij landcode, gevolgd door een
-punt. Het tweede deel is de code voor IMGeluid. De identificatiecode bestaat uit
+drie delen bestaat: een namespace, een identificatiecode en een versienummer. Zolang het object
+bestaat, mag alleen het versienummer veranderen, de namespace en identificatiecode moeten gelijk blijven. Het IMGeluid hanteert voor het eerste deel,
+de namespace: `NL.img`. Dit deel van het object-ID is voor alle IMGeluid objecten identiek. Het eerste deel is daarbij landcode, gevolgd door een
+punt. Het tweede deel is de code voor IMGeluid. 
+
+Het tweede deel, de identificatiecode bestaat uit
 het volgnummer van de bronhouder gevolgd door een punt en daarna een
-identificatie toegekend door de bronhouder. Voor de duidelijkheid: bij het
+identificatie van het object toegekend door de bronhouder. Voor de duidelijkheid: bij het
 volgnummer moet altijd de bronhouder worden ingevuld en niet de eventuele
-inwinnende instantie, die dit namens de bronhouder uitvoert. De bronhoudercode
+inwinnende instantie, die dit namens de bronhouder uitvoert. Het volgnummer bronhouder
 wordt uitgegeven door de beheerder van de CVGG bij het aansluitproces. De
 identificatie toegekend door de bronhouder moet het object per bronhouder uniek
 identificeren. Hiervoor mag gebruik gemaakt worden van een UUID of een GUID. Op
 deze wijze ziet de opbouw van een IMGeluid-ID er dan als volgt uit.
 
-`NL.IMG.volgnummer_bronhouder.identificatie_van_bronhouder`
+`NL.img.volgnummer_bronhouder.identificatie_van_bronhouder`
+
+Meer details over de toegestane tekens en lengte van de identificatiecode zijn te vinden in de aanleverstandaard van de CVGG. 
+
+Het derde deel, het versienummer, bestaat uit een geheel getal dat telkens wordt opgehoogd als er een nieuwe versie van het object ontstaat. 
 
 #### Authentieke gegevens
 
