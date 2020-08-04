@@ -20,10 +20,7 @@ voort uit verschillende wet- en regelgevingen. Deze zijn:
     De Omgevingswet bundelt en moderniseert in één wet alle wetten voor de
     leefomgeving. Vanaf 2021 treedt de wet in werking.
 
--   **Aanvullingsspoor geluid:** Het aanvullingsspoor geluid bestaat uit de
-    Aanvullingswet Geluid onder de Omgevingswet, het Aanvullingsbesluit Geluid
-    onder de Omgevingswet, en de Aanvullingsregeling Geluid onder de
-    Omgevingswet. Het Aanvullingsbesluit Geluid onder de Omgevingswet bevat
+-   **Aanvullingsspoor geluid:** Het aanvullingsspoor geluid vult het nieuwe stelsel van omgevingsrecht aan met de Aanvullingswet geluid Omgevingswet, het Aanvullingsbesluit geluid Omgevingswet, en de Aanvullingsregeling geluid Omgevingswet. Het Aanvullingsbesluit geluid Omgevingswet bevat
     regels over de geluidbelasting afkomstig van infrastructuur (wegen en
     spoorwegen) en industrieterreinen. Regels voor deze geluidbronnen zijn tot
     dusver gesteld in en op grond van hoofdstuk 11 van de Wet milieubeheer voor

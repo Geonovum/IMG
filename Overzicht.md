@@ -9,7 +9,7 @@ IMGeluid – Dataspecificatie voor Centrale Voorziening Geluidgegevens (CVGG).
 Definitie
 -----------------
 
-In de Centrale Voorziening Geluidgegevens (CVGG) worden de gegevens vastgelegd die nodig zijn om de nieuwe geluidregelgeving onder de Omgevingswet te ondersteunen. Het Informatiemodel Geluid zorgt ervoor dat alle gegevens die de voorziening beschikbaar
+In de Centrale Voorziening Geluidgegevens (CVGG) worden de gegevens vastgelegd die nodig zijn om de nieuwe geluidregelgeving binnen de Omgevingswet te ondersteunen. Het Informatiemodel Geluid zorgt ervoor dat alle gegevens die de voorziening beschikbaar
 stelt eenduidig interpreteerbaar zijn en op een standaard manier kunnen worden
 uitgewisseld met andere systemen.
 
@@ -19,9 +19,8 @@ Beschrijving
 ### Centrale Voorziening Geluidgegevens
 
 RIVM ontwikkelt in opdracht van het ministerie van Infrastructuur en Waterstaat
-de Centrale Voorziening Geluidgegevens om de nieuwe geluidregelgeving onder de
-Omgevingswet te ondersteunen. Het geeft een invulling aan wat in het
-Aanvullingsbesluit onder de Omgevingswet het “geluidregister” wordt genoemd. De
+de Centrale Voorziening Geluidgegevens in het kader van het aanvullingsspoor geluid. Het CVGG geeft een invulling aan wat in het
+Aanvullingsbesluit geluid Omgevingswet het “geluidregister” wordt genoemd. De
 voorziening is een voortzetting en uitbreiding van de geluidregisters die al
 bestaan voor rijkswegen en hoofdspoor. In de voorziening moeten gegevens worden
 vastgelegd over de geluidproductieplafonds, de basisgeluidemissies, de
