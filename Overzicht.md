@@ -56,7 +56,7 @@ de dataspecificatie (zie [Hoofdstuk 5 Gegevensdefinitie](#cat)).
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Algemeen      | De module Algemeen, het Basismodel vormt de samenhang tussen alle domeinen van het IMGeluid. Alle objecttypen en relaties uit het IMGeluid komen samen in een Geluidgegevenscollectie. Binnen het IMGeluid worden geluidbrongegevens die gebruikt worden voor GPP en BGE berekeningen, gemodelleerd als een Geluidemissie of Geluidoverdrachtobject. De resultaten van GPP of BGE berekeningen worden opgeslagen in een Geluidgegevenscollectie. De onderliggende juridische vastleggingen, vaststellingen, of monitoringsverslagen van deze omgevings- of monitoringswaarden, worden ook opgeslagen in dezelfde Geluidgegevenscollectie. Per geluidbron per toepassing kan er een Geluidgegevenscollectie bestaan. Deze kan geassocieerd worden met maximaal 1 Geluidaandachtsgebied. Wanneer geluidgegevens met betrekking tot cumulatieberekeningen worden aangeleverd, bevat een Geluidgegevenscollectie geen Geluidaandachtsgebied.                                                                                                                                                                                                                                                                                     |
 | GPP Algemeen  | GPP Algemeen bevat objecttypen en relaties met in ieder geval betrekking tot geluidproductieplafonds, onderliggende geluidbrongegevens en juridische vaststellingen. GPP algemeen omvat drie subdomeinen: GPP Industie, GPP Wegen en GPP Spoor. Een aantal objecttypen zijn al eerder verschenen in het Basismodel, maar worden hier verder gespecificeerd. Zo worden binnen dit domein een aantal Geluidoverdrachtobjecten gespecificeerd. Een voorbeeld hiervan is het Geluidschermdeel dat in alle GPP domeinen gebruikt wordt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| GPP Industrie | In domeinmodel GPP Industrie staan objecttypen en relatiesoorten die relevant zijn voor geluidbronbeheersing van industrieterreinen waarvoor de geluidproductieplafond regeling geldt; en die nodig zijn voor akoestisch onderzoek binnen het geluidaandachtsgebied van het industrieterrein. Alle geluidbronnen op een industrieterrein worden opgeslagen als puntbronnen in het objecttype  "GeluidbronIndustrie". Indien binnen geluidrekensoftware gebruik is gemaakt van lijn- of vlakgeometrie voor het uitdrukken van geluidbronnen kan dit worden opgeslagen als facultatieve informatie conform de objecttypen "Geluidbronlijn" en "Geluidbronvlak ". Voor ieder "Geluidproductieplafondobject" rondom het industrieterrein, valt te herleiden op welke geluidberekening de geluidproductieplafondwaarde gebaseerd is. Deze informatie wordt bijgehouden conform het "Geluidberekeningobject". Ook valt er te herleiden welke geluidbrongegevens gebruikt zijn bij een geluidberekening. Deze geluidbrongegevens zijn samen met het "Geluidberekeningsobject" terug te vinden in een  "Geluidgegevenscollectie" in de vorm van gespecialiseerde geluidemissie- en geluidoverdrachtsobjecttypen. |
+| GPP Industrie | In domeinmodel GPP Industrie staan objecttypen en relatiesoorten die relevant zijn voor geluidbronbeheersing van industrieterreinen waarvoor de geluidproductieplafond regeling geldt; en die nodig zijn voor akoestisch onderzoek binnen het geluidaandachtsgebied van het industrieterrein. Alle geluidbronnen op een industrieterrein worden opgeslagen als puntbronnen in het objecttype  "GeluidbronIndustrie". Indien binnen geluidrekensoftware gebruik is gemaakt van lijn- of vlakgeometrie voor het uitdrukken van geluidbronnen kan dit worden opgeslagen als optionele informatie conform de objecttypen "Geluidbronlijn" en "Geluidbronvlak ". Voor ieder "Geluidproductieplafondobject" rondom het industrieterrein, valt te herleiden op welke geluidberekening de geluidproductieplafondwaarde gebaseerd is. Deze informatie wordt bijgehouden conform het "Geluidberekeningobject". Ook valt er te herleiden welke geluidbrongegevens gebruikt zijn bij een geluidberekening. Deze geluidbrongegevens zijn samen met het "Geluidberekeningsobject" terug te vinden in een  "Geluidgegevenscollectie" in de vorm van gespecialiseerde geluidemissie- en geluidoverdrachtsobjecttypen. |
 | GPP Weg       | In domeinmodel GPP Weg staan objecttypen en relatiesoorten die relevant zijn voor geluidbronbeheersing van wegen waarvoor de geluidproductieplafond regeling geldt; en die nodig zijn voor akoestisch onderzoek binnen het geluidaandachtsgebied van wegen. Geluidbronnen binnen GPP Weg worden opgeslagen als lijnbron conform het objecttype “Wegdeel”. Voor ieder "Geluidproductieplafondobject" langs een Provinciale weg of Rijksweg, valt te herleiden op welke geluidberekening de geluidproductieplafondwaarde gebaseerd is. Deze informatie wordt bijgehouden conform het "Geluidberekeningobject". Ook valt er te herleiden welke geluidbrongegevens gebruikt zijn bij een geluidberekening. Deze geluidbrongegevens zijn samen met het "Geluidberekeningsobject" terug te vinden in een  "Geluidgegevenscollectie" in de vorm van gespecialiseerde geluidemissie- en geluidoverdrachtsobjecttypen.                                                                                                                                                                                                                                                                                         |
 | GPP Spoor     | In domeinmodel GPP Spoor staan objecttypen en relatiesoorten die relevant zijn voor geluidbronbeheersing van spoorwegen waarvoor de geluidproductieplafond regeling geldt; en die nodig zijn voor akoestisch onderzoek binnen het geluidaandachtsgebied van spoorwegen. Geluidbronnen binnen GPP Spoor worden opgeslagen als lijnbron conform het objecttype “Spoordeel”, behalve voor geluidbronnen binnen spoorwegemplacementen. Deze geluidbronnen worden opgeslagen als "GeluidbronIndustrie". Voor ieder "Geluidproductieplafondobject" langs een Hoofdspoorweg, valt te herleiden op welke geluidberekening de geluidproductieplafondwaarde gebaseerd is. Deze informatie wordt bijgehouden conform het "Geluidberekeningobject". Ook valt er te herleiden welke geluidbrongegevens gebruikt zijn bij een geluidberekening. Deze geluidbrongegevens zijn samen met het "Geluidberekeningsobject" terug te vinden in een  "Geluidgegevenscollectie" in de vorm van gespecialiseerde geluidemissie- en geluidoverdrachtsobjecten.                                                                                                                                                              |
 | BGE Algemeen  | In domeinmodel BGE Algemeen staan objecttypen en relatiesoorten die relevant zijn voor alle basisgeluidemissie (BGE) domeinen binnen IMGeluid. De door het bevoegd gezag bepaalde basisgeluidemissiewaarde wordt conform het “Basisgeluidemissieobject” opgenomen in het geluidregister. Deze waarde heeft betrekking op een “Geluidemissieobject”. Voor BGE Spoor is dit “Geluidemissieobject” alleen een “Spoordeel”. Voor BGE Weg zijn zowel “Spoordeel” als “Wegdeel” een specialisatie van “Geluidemissieobject”, omdat het bevoegd gezag de keuze heeft om spoor en wegdelen dezelfde basisgeluidemissiewaarde toe te kennen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -72,19 +72,7 @@ in elkaar zit aan de hand van de UML generalisatie relatie.
 ![Figuur 2: Domeinen van het Informatiemodel Geluid  -fullwidth](media/Hierarchie.png)
 *Figuur 2: Domeinen van het Informatiemodel Geluid*
 
-**Facultatief gegeven**
-
-IMGeluid zal samen met de AREG een juridische status krijgen. Dit houdt in dat
-het wettelijk zal worden vastgesteld welke geluidbrongegevens moeten worden
-aangeleverd. In principe zijn alle emissieobjecten en overdrachtsobjecten
-geluidbrongegevens en daarmee een verplicht onderdeel van de CVGG. Daarnaast
-kunnen bronhouders aanvullende facultatieve gegevens aanleveren. Deze objecttypen
-zijn toegevoegd uit praktische overwegingen, maar hoeven niet bij akoestisch
-onderzoek te worden gebruikt. In het informatiemodel valt te zien welke
-geluidbrongegevens facultatief mogen worden aangeleverd aan de hand van een
-oranje kader.
-
-**Uitgangspunten toegepast bij modelleren van IMGeluid**
+#### Uitgangspunten toegepast bij modelleren van IMGeluid
 
 -   IMGeluid omschrijft de dataspecificatie voor het geluidregister. Een
     uitwissel/berichtenmodel kan hierop worden gebaseerd, maar valt niet binnen
@@ -106,6 +94,53 @@ oranje kader.
     informatie bovenop het wettelijke verplichte minimum, dan kan dat uit
     oogpunt van dienstverlening worden opgenomen.
     
+#### Verplichte en optionele gegevens
+
+In het IMGeluid is op een aantal manieren te zien welke gegevens verplicht aangeleverd moeten worden, en welke optioneel (vrijwillig) zijn: je mag ze aanleveren als je ze hebt, maar het hoeft niet. 
+
+Ten eerste is dit op objecttype niveau aangegeven. Een objecttype is een klasse, een groep, van gelijksoortige objecten. Bijvoorbeeld het objecttype `Geluidoverdrachtsobject` of het meer specifieke objecttype `Bodemvlak`. 
+
+IMGeluid zal samen met de AREG een juridische status krijgen. Dit houdt in dat
+het wettelijk zal worden vastgesteld welke geluidbrongegevens moeten worden
+aangeleverd. In principe zijn alle emissieobjecten en overdrachtsobjecten
+geluidbrongegevens en daarmee een verplicht onderdeel van de CVGG. Daarnaast
+kunnen bronhouders aanvullende optionele gegevens aanleveren. Deze objecttypen
+zijn toegevoegd uit praktische overwegingen, maar hoeven niet bij akoestisch
+onderzoek te worden gebruikt. In het informatiemodel valt te zien welke
+geluidbrongegevens optioneel mogen worden aangeleverd aan de hand van een
+oranje kader om het desbetreffende objecttype heen.
+
+<aside class='example'>
+<h4>Verplicht en optioneel objecttype</h4>
+In dit voorbeeld is het objecttype <code>Geluidsschermdeel</code> verplicht, en het objecttype <code>Bodemvlak</code> optioneel. Dit is te zien aan het oranje kader rondom het objecttype <code>Bodemvlak</code>.
+<img src='media/vb-optioneel-objtype.png' alt='verplicht en optioneel objecttype'/>
+</aside>
+
+Elk objecttype heeft eigenschappen en relaties. In bovenstaand voorbeeld is bijvoorbeeld `absorptiefractie` een eigenschap van `Bodemvlak`. Deze eigenschappen noemen we attribuutsoort. Relaties zijn in dit voorbeeld niet te zien maar worden in de diagrammen getoond als een pijl van het ene naar het  andere objecttype. 
+
+Zowel bij attribuutsoorten als bij relatiesoorten wordt aangegeven of dit gegeven verplicht of optioneel is, en of het één of meer keer voor kan komen binnen een object, door middel van de *kardinaliteit*, in de vorm van een aanduiding tussen blokhaken.
+- `[1..1]` betekent: verplicht en mag maximaal één keer voorkomen. Deze kardinaliteit wordt meestal weg gelaten. Als er bij een attribuutsoort of relatie niets is aangegeven tussen blokhaken, betekent dit `[1..1]`.
+- `[0..1]` betekent: optioneel en mag maximaal één keer voorkomen. 
+- `[1..*]` betekent: verplicht en mag meer dan één keer voorkomen.
+- `[0..*]` betekent: optioneel en mag meer dan één keer voorkomen.
+
+In het bovenstaande voorbeeld mogen dus de `hellingshoek` en `schermhoogte` van elk `Geluidsschermdeel` worden weggelaten. 
+
+Het IMGeluid bestaat zoals in de vorige paragraaf is uitgelegd, uit een aantal modules, waarvan sommige generieker (algemener) zijn en andere specifieker. Als een objecttype in een algemener deel van IMGeluid optioneel is verklaard, dan geldt dit ook in de specifiekere modules die gebruik maken van dit objecttype. Met andere woorden, de kardinaliteit die een attribuutsoort of relatiesoort in een generieke module van IMGeluid heeft, geldt ook voor de specifiekere modules. 
+
+<aside class='example'>
+<h4>Optionele naam</h4>
+In IMG Algemeen, de meest generieke module van IMGeluid, wordt het objecttype <code>Geluidemissieobject</code> gedefinieerd: 
+
+<p><img src='media/vb-geluidemissieobj.png' alt='Geluidemissieobject'/></p>
+
+Dit objecttype heeft een attribuutsoort `naam` met kardinaliteit `[0..1]`, dat wil zeggen het is optioneel: het mag worden aangeleverd, maar het hoeft niet. 
+
+In het domein GPP Industrie is een objecttype <code>GeluidbronIndustrie</code> gedefinieerd dat een specialisatie is van <code>Geluidemissieobject</code>. Als specialisatie erft het alle eigenschappen van <code>Geluidemissieobject</code>, inclusief de attribuutsoort <code>naam</code> en bijbehorende kardinaliteit. Ook in het domein GPP Industrie is de <code>naam</code> dus optioneel.
+</aside>
+
+Als iets in sommige gevallen wel, en in andere gevallen niet verplicht is, dan is dit aangegeven in hoofdstuk 5 bij het desbetreffende gegeven onder het kopje **Regels**. 
+
 #### Identificatie binnen het informatiemodel
 
 De IMGeluid-objectidentificatie (object-ID) hanteert de richtlijnen van NEN
@@ -143,7 +178,7 @@ richtlijnen van de ISO19107 standaard, waarin geometrietypen zoals punt, lijn en
 aanvullende eisen te stellen. Deze eisen zijn gespecificeerd waar nodig op
 attribuutniveau in de tabel met metagegevens.
 
-##### Patroon/formeel patroon:
+#### Patroon/formeel patroon
 
 Het MIM metagegeven “Patroon” omschrijft de structuur van de waarde die het
 attribuutsoort bevat (zie [MIM Patroon](https://geonovum.github.io/MIM-Werkomgeving/#metagegeven-patroon) voor
@@ -153,24 +188,17 @@ voorziening gebruik maken van de machine-leesbare variant van dit patroon, het
 MIM metagegeven Formeel Patroon(Zie [MIM formeel patroon](https://geonovum.github.io/MIM-Werkomgeving/#metagegeven-formeel-patroon) voor
 definitie). Een formeel patroon is uitgedrukt als regular expression (RegEx).
 
-##### Meeteenheid:
+#### Meeteenheid
 
 Bij een attribuutwaarde met het formaat `Measure` is een specifieke
 meeteenheid vereist. Deze meeteenheid wordt gespecificeerd op attribuutniveau
 in de metagegeventabel achter de tagged value “Meeteenheid”.
 
-##### Multipliciteit
-
-In het geval van IMGeluid is de multipliciteit altijd relatief aan een
-Geluidgegevenscollectie. De multipliciteit van een attribuutsoort geeft aan hoe vaak
-het attribuutsoort met een waarde mag voorkomen binnen een object. Een multipliciteit van `[0..1]` houdt
-bijvoorbeeld in dat dit attribuutsoort facultatief is.
-
-##### Regels:
+#### Regels
 
 In bepaalde gevallen worden regels gebruikt. Een mogelijke toepassing van regels
 is om te bepalen of een attribuutwaarde in een specifieke situatie verplicht is.
-Dit kan ervoor zorgen dat attributen met een multipliciteit van ` [0..1]` wel
+Dit kan ervoor zorgen dat attributen met een multipliciteit van `[0..1]` wel
 verplicht zijn wanneer de condities uit de regel geldig zijn. De voorziening zal
 zorgen voor een validatiesysteem dat kan omgaan met regels, multipliciteit en
 patronen.
