@@ -143,28 +143,17 @@ Als iets in sommige gevallen wel, en in andere gevallen niet verplicht is, dan i
 
 #### Identificatie binnen het informatiemodel
 
-De IMGeluid-objectidentificatie (object-ID) hanteert de richtlijnen van NEN
-3610:2011. Aan elk object wordt een uniek identificatienummer toegekend, dat uit
-drie delen bestaat: een namespace, een identificatiecode en een versienummer. Zolang het object
-bestaat, mag alleen het versienummer veranderen, de namespace en identificatiecode moeten gelijk blijven. Het IMGeluid hanteert voor het eerste deel,
-de namespace: `NL.img`. Dit deel van het object-ID is voor alle IMGeluid objecten identiek. Het eerste deel is daarbij landcode, gevolgd door een
-punt. Het tweede deel is de code voor IMGeluid. 
+Objecten worden in NEN3610 voorzien van een unieke identificatie: een NEN3610ID. Het informatiemodel maakt ook gebruik van dergelijke identificaties. Een NEN3610ID is opgebouwd uit drie delen: een namespace, lokaalID en versienummer. De volgende richtlijnen gelden voor het vullen van het NEN3610ID voor geluidgegevens:
+- De namespace is altijd “NL.img”;
+- De lokaalID is opgebouwd uit:
+  - Een unieke code van de bronhouder;
+  - Een punt (“.”);
+  - Een lokale identificatie zoals gebruikt door de bronhouder;
+- Het versienummer
 
-Het tweede deel, de identificatiecode bestaat uit
-het volgnummer van de bronhouder gevolgd door een punt en daarna een
-identificatie van het object toegekend door de bronhouder. Voor de duidelijkheid: bij het
-volgnummer moet altijd de bronhouder worden ingevuld en niet de eventuele
-inwinnende instantie, die dit namens de bronhouder uitvoert. Het volgnummer bronhouder
-wordt uitgegeven door de beheerder van de CVGG bij het aansluitproces. De
-identificatie toegekend door de bronhouder moet het object per bronhouder uniek
-identificeren. Hiervoor mag gebruik gemaakt worden van een UUID of een GUID. Op
-deze wijze ziet de opbouw van een IMGeluid-ID er dan als volgt uit.
+De unieke code van de bronhouder is het KvK-nummer van de organisatiewordt verstrekt bij het aansluitproces bij de CVGG. De lengte van de lokale identificatie staat toe dat bronhouders gebruik maken van UUID's/GUID’s als identificatie. Een lokale identificatie kan de volgende karakters bevatten: `{“A”… “Z”, “a”… “z”, “0”… “9”, “_”, “-”, “,”}`.
 
-`NL.img.volgnummer_bronhouder.identificatie_van_bronhouder`
-
-Meer details over de toegestane tekens en lengte van de identificatiecode zijn te vinden in de aanleverstandaard van de CVGG. 
-
-Het derde deel, het versienummer, bestaat uit een geheel getal dat telkens wordt opgehoogd als er een nieuwe versie van het object ontstaat. 
+Het versienummer wordt in de CVGG gebruikt ten behoeve van formele historie. Als een object in een aanlevering een gewijzigde versie is van een object in een voorgaande levering, dan dient deze hetzelfde lokaalID te hebben, maar een hoger versienummer. Versienummers zijn gehele getallen, die bij voorkeur starten met 1 en bij elke wijziging door de bronhouder dienen te worden opgehoogd met minimaal 1. 
 
 #### Authentieke gegevens
 
