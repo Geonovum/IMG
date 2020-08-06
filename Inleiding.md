@@ -53,3 +53,5 @@ afkortingen. Hoofdstuk 4 is een korte samenvatting en identificatie van de
 catalogus in tabelvorm. In hoofdstuk 5 is het UML model opgenomen en
 wordt met verschillende diagrammen het informatiemodel toegelicht en wordt alle
 modelinformatie gegeven in tabelvorm. Hoofdstuk 6 bevat de inhoud van alle bij de gegevensuitwisseling gebruikte waardenlijsten.
+
+De bijlage geeft een overzicht van de wijzigingen in het informatiemodel ten opzichte van de vorige versie. 
