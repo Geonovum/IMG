@@ -13,8 +13,8 @@ Elke reactie is meegenomen in het ontwikkelproces en afgewogen. Niet elke reacti
 ## Consultatie en andere factoren
 Tijdens de consultatieperiode kwamen er ook reacties uit het bouwteam dat bezig is met de implementatie van de Centrale Voorziening Geluidgegevens. Deze reacties hebben we tegelijkertijd met de consultatiereacties verwerkt, wat in sommige gevallen heeft geleid tot aanpassingen in het informatiemodel.
 
-## Wijzigingen ten gevolge van de consultatie
-Een significant deel van de reacties betreft niet zozeer het informatiemodel, maar de inhoud van de Aanvullingsregeling Geluid (AREG). Dit was het geval bij alle reacties over het onderwerp luchtvaart en het merendeel van de reacties over lokaal spoor. Het informatiemodel Geluid volgt inhoudelijk dat wat in de AREG bepaald is. Omdat het informatiemodel volgend is, kan het geen wijzigingen of aanvullingen op de AREG bevatten. De AREG zou eerst moeten worden aangepast voordat het informatiemodel deze aanpassing kan overnemen. De reacties die hierom vragen zijn daarom voor het informatiemodel buiten scope geplaatst. 
+## Reacties uit de consultatie en hun verwerking
+Een significant deel van de reacties betreft niet zozeer het informatiemodel, maar de inhoud van de Aanvullingsregeling Geluid (AREG). Het informatiemodel Geluid volgt inhoudelijk dat wat in de AREG bepaald is. We waren daarom genoodzaakd deze reacties voor het informatiemodel buiten scope te plaatsen. 
 
 <aside class="issue">Worden deze reacties doorgestuurd naar de schrijvers van de AREG? Indien mogelijk nog aan de tekst toevoegen wat er met de buiten scope reacties is gedaan.</aside>
 
@@ -22,7 +22,11 @@ Andere reacties vragen om aanpassingen in het informatiemodel die wel binnen sco
 
 Een ander deel van de reacties vallen in de categorie redactioneel. Ze hebben te maken met behoefte aan verduidelijking, overige tekstuele zaken, en met de presentatie van afbeeldingen. Deze reacties hebben we meegenomen en verwerkt. 
 
+De wijzigingen die zijn doorgevoerd in de versie ter vaststelling van het IMGeluid ten opzichte van de consultatieversie zijn samengevat in [Bijlage A van het informatiemodel Geluid](https://geonovum.github.io/IMG/#changelog).
+
+<aside class='issue'>To do: Deze URL nog aanpassen naar gepubliceerde versie</aside>
+
 ## Leeswijzer
-In dit document leest u het volgende. In hoofdstuk 2 worden algemene bevindingen en de wijze van verwerken van de consultatie beschreven. Dit geeft u een overzicht van hoe we met de consultatie zijn omgegaan. In hoofdstuk 3 en 4 zoomen we in hoofdlijnen in op de bevindingen. Dit doen we op hoofdlijnen. Dit betekent dat we een selectie van onderwerpen uit de consultatie hebben gekozen op basis van wat u belangrijk vond; we keken naar onderwerpen waar veel reactie op kwam of die cruciaal leken voor de doorontwikkeling. Hoofdstuk 3 behandelt de algemene apecten, hoofdstuk 4 behandelt inhoudelijke onderwerpen. In de bijlage is de excel met alle (geanonimiseerde) reacties opgenomen. Bij elke reactie is aangegeven wat de status van verwerking is.
+In dit document leest u het volgende. In [hoofdstuk 2](#verbetering) worden algemene bevindingen en de wijze van verwerken van de consultatie beschreven. Dit geeft u een overzicht van hoe we met de consultatie zijn omgegaan. In [hoofdstuk 3](#terugkoppeling) zoomen we in op de bevindingen. Dit doen we op hoofdlijnen. Dit betekent dat we een selectie van onderwerpen uit de consultatie hebben gekozen op basis van wat u belangrijk vond; we keken naar onderwerpen waar veel reactie op kwam of die cruciaal leken voor de doorontwikkeling. We beginnen met de algemene apecten, gevolgd door een behandeling van inhoudelijke onderwerpen. In [bijlage A](#bijlagen) is de tabel met alle (geanonimiseerde) reacties opgenomen. Bij elke reactie is aangegeven wat de status van verwerking is.
 
 <aside class='issue'>Leeswijzer nog actualiseren als document meer compleet is.</aside>
