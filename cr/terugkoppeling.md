@@ -1,12 +1,18 @@
 # Terugkoppeling op reacties op de standaard
 
 ## Tekstuele zaken en voorbeelden
-*Betreft: Tekstuele fouten, verkeerde verwijzingen in de tekst, foutieve of onduidelijke voorbeelden en voorbeeldbestanden etc.*
+*Betreft: Tekstuele fouten, verkeerde verwijzingen in de tekst, onduidelijkheden en fouten in de presentatie etc.*
 
 Dit betreft ca. xx% van de reacties. Deze ‘kleine’ issues leiden niet tot wijzigingen in de standaard, wel tot verbetering van de leesbaarheid en begrijpelijkheid.
 
 <aside class='issue'>
 To do: Percentage reacties invullen.</aside>
+
+## Onduidelijkheden
+Een aantal reacties ging over onduidelijkheden in het informatiemodel, die leidden tot interpretatieverschillen en vragen bij lezers. Op de punten die werden aangegeven hebben we de tekst zo veel mogelijk verduidelijkt. De belangrijkste punten waren:
+
+- Onduidelijkheden in het informatiemodel rondom hoogte van objecten. Dit is nu verduidelijkt in zowel hoofdstuk 3 waarin het informatiemodel inhoudelijk wordt toegelicht, als in hoofdstuk 5 bij de beschrijving van de individuele objecttypen. 
+- Onduidelijkheden rondom het al dan niet verplicht zijn van gegevens. Dit is nu verduidelijkt in hoofdstuk 3 waarin het informatiemodel inhoudelijk wordt toegelicht.
 
 ## Inhoudelijke reacties
 Dit gaat om zaken als de afstemming op andere standaarden, het al dan niet verplicht zijn van individuele gegevens en het toegestane waardenbereik van een gegeven. Deze hebben we stuk voor stuk bekeken en al dan niet gehonoreerd. De belangrijkste inhoudelijke punten lichten we hieronder toe. 
@@ -21,9 +27,6 @@ Daarnaast is aandacht gevraagd voor nieuwe informatiemodellen die momenteel word
 
 ### Afstemming op BGT standaarden
 Het IMGeluid heeft wat betreft fysieke objecten, die een rol spelen in de emissie of overdracht van geluid, een duidelijk raakvlak met de Basisregistratie Grootschalige Topografie (BGT). Enkele inconsistenties in naamgeving van gegevens en in toelichtende teksten bij IMGeluid gegevens, waarbij verwezen wordt naar de BGT, zijn gecorrigeerd. Het IMGeluid is niet verregaand geharmoniseerd met de BGT standaarden, omdat het in IMGeluid gaat om een op akoestische toepassingen toegespitst gebruik van fysieke objecten. 
-
-### Hoogte en 3D geometrie
-Een aantal reacties ging over onduidelijkheden in het informatiemodel rondom hoogte van objecten. Dit is nu verduidelijkt in zowel hoofdstuk 3 van de gegevenscatalogus als in hoofdstuk 5 bij de beschrijving van de individuele objecttypen. 
 
 <aside class='issue'>
 To do: Dit deel verder invullen nadat er meer reacties verwerkt zijn. </aside>
