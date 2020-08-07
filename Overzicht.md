@@ -98,7 +98,9 @@ in elkaar zit aan de hand van de UML generalisatie relatie.
 
 In het IMGeluid is op een aantal manieren te zien welke gegevens verplicht aangeleverd moeten worden, en welke optioneel (vrijwillig) zijn: je mag ze aanleveren als je ze hebt, maar het hoeft niet. 
 
-Ten eerste is dit op objecttype niveau aangegeven. Een objecttype is een klasse, een groep, van gelijksoortige objecten. Bijvoorbeeld het objecttype `Geluidoverdrachtsobject` of het meer specifieke objecttype `Bodemvlak`. 
+Allereerst geldt dat de gegevens zijn ingedeeld in modules die overeen komen met de verschillende geluiddomeinen: wegen, spoor, en industrie onder de regeling voor geluidproductieplafonds; basisgeluidemissies; en cumulatieberekeningen. Bij het aanleveren van gegevens voor één van deze geluiddomeinen hoeven gegevens uit andere geluiddomeinen niet te worden geleverd.
+
+Vervolgens is optionaliteit op objecttype niveau aangegeven. Een objecttype is een klasse, een groep, van gelijksoortige objecten. Bijvoorbeeld het objecttype `Geluidoverdrachtsobject` of het meer specifieke objecttype `Bodemvlak`. 
 
 IMGeluid zal samen met de AREG een juridische status krijgen. Dit houdt in dat
 het wettelijk zal worden vastgesteld welke geluidbrongegevens moeten worden
