@@ -98,7 +98,7 @@ in elkaar zit aan de hand van de UML generalisatie relatie.
 
 In het IMGeluid is op een aantal manieren te zien welke gegevens verplicht aangeleverd moeten worden, en welke optioneel (vrijwillig) zijn: je mag ze aanleveren als je ze hebt, maar het hoeft niet. 
 
-Allereerst geldt dat de gegevens zijn ingedeeld in modules die overeen komen met de verschillende geluiddomeinen: wegen, spoor, en industrie onder de regeling voor geluidproductieplafonds; basisgeluidemissies; en cumulatieberekeningen. Bij het aanleveren van gegevens voor één van deze geluiddomeinen hoeven gegevens uit andere geluiddomeinen niet te worden geleverd.
+Allereerst geldt dat de gegevens zijn ingedeeld in modules die overeen komen met de verschillende geluiddomeinen: wegen, spoor, en industrie onder de regeling voor geluidproductieplafonds; basisgeluidemissies; en cumulatieberekeningen. Daarnaast zijn er algemene modules die gegevens definiëren die in verschillende geluiddomeinen gebruikt worden. Daarbij worden ook vaak specifieke gegevens voor dat specifieke geluiddomein toegevoegd. Bij het aanleveren van gegevens voor één van deze geluiddomeinen hoeven gegevens uit andere geluiddomeinen niet te worden geleverd. Met andere woorden, men moet het informatiemodel zo lezen dat een extra eigenschap die bijvoorbeeld is toegevoegd bij het geluiddomein spoor alleen geldt voor spoor. 
 
 Vervolgens is optionaliteit op objecttype niveau aangegeven. Een objecttype is een klasse, een groep, van gelijksoortige objecten. Bijvoorbeeld het objecttype `Geluidoverdrachtsobject` of het meer specifieke objecttype `Bodemvlak`. 
 
