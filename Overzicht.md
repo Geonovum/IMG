@@ -143,6 +143,8 @@ In het domein GPP Industrie is een objecttype <code>GeluidbronIndustrie</code> g
 
 Als iets in sommige gevallen wel, en in andere gevallen niet verplicht is, dan is dit aangegeven in hoofdstuk 5 bij het desbetreffende gegeven onder het kopje **Regels**. 
 
+Bij alle gegevens is aangegeven in hoofdstuk 5 dat `mogelijk geen waarde = Nee`. Dit is een metagegeven dat conform MIM moet worden ingevuld. Het geeft aan of het is toegestaan om een waarde weg te laten die formeel verplicht is,  waarbij dan moet worden aangegeven wat de reden is van het weglaten. Dit wordt voor IMGeluid niet van belang geacht, maar moet wel worden ingevuld conform MIM.
+
 #### Identificatie binnen het informatiemodel
 
 Objecten worden in NEN3610 voorzien van een unieke identificatie: een NEN3610ID. Het informatiemodel maakt ook gebruik van dergelijke identificaties. Een NEN3610ID is opgebouwd uit drie delen: een namespace, lokaalID en versienummer. De volgende richtlijnen gelden voor het vullen van het NEN3610ID voor geluidgegevens:
