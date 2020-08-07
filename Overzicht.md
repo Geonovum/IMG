@@ -204,7 +204,7 @@ verplicht zijn wanneer de condities uit de regel geldig zijn. De voorziening zal
 zorgen voor een validatiesysteem dat kan omgaan met regels, multipliciteit en
 patronen.
 
-#### 2D en 3D
+#### Hoogte en geometrie
 In geluidmodellen is het bij het merendeel van de gemodelleerde objecten van belang om de hoogte te weten. Voor alle objecttypen in IMGeluid is bepaald of de hoogte van belang is en moet worden opgenomen. Als de hoogte wordt opgenomen, gebeurt dit als onderdeel van de geometrie. We spreken dan van een 3D geometrie. Als de hoogte niet is opgenomen is dit een 2D geometrie. 
 
 Hoogte wordt in 3D geometrie opgenomen als derde coördinaat, de `H`, in elk coördinatenpaar van de geometrie. In hoofdstuk 5 is bij elk objecttype dat een geometrie als eigenschap heeft, bij deze eigenschap voorgeschreven of het om een 2D of 3D geometrie gaat.
@@ -212,6 +212,8 @@ Hoogte wordt in 3D geometrie opgenomen als derde coördinaat, de `H`, in elk co�
 Hoogte is bij 3D geometrieën altijd aangegeven in meters ten opzichte van NAP. In sommige gevallen is het van belang om daarnaast te weten wat de relatieve hoogte is van het object ten opzichte van het maaiveld ter plaatse. Het IMGeluid maakt het mogelijk om deze informatie op te nemen als een lijst van hoogtegetallen die correspondeert met de lijst van coordinaten, i.e. voor elk coördinatenpaar (`x,y,H`) een getal dat de relatieve hoogte uitdrukt. De lijst van hoogtegetallen moet even lang zijn als de lijst met coördinatenparen, en dezelfde volgorde hanteren, zodat te zien is welk relatieve hoogtegetal correspondeert met welk coördinatenpaar. 
 
 Indien nodig is het daarnaast mogelijk om aan te geven dat een object zwevend is ten opzichte van het maaiveld.
+
+In sommige gevallen is het relevant om te weten of een object uit een geluidmodel links of rechts staat van een ander object, danwel voorover of achterover helt. Dit soort aanduidingen zijn altijd relatief aan de richting van de lijn die het object representeert. Het startpunt van een lijn is het eerste coordinatenpaar van de lijn.
 
 #### Coördinaatsystemen
 Bij gegevensuitwisseling conform IMGeluid wordt als ruimtelijk referentiesysteem ofwel ETRS89, ofwel RD New + NAP gehanteerd. RD New is een geprojecteerd CRS dat voor het laatst is herzien op 26 oktober 2019. Het is geschikt voor gebruik in Nederland, op land inclusief de Waddenzee, de Waddeneilanden en 12 mijl uit de kust. RD New vervangt EPSG28991 (RD Oud).  RD + NAP betekent dat wordt uitgegaan van Normaal Amsterdams Peil voor de hoogte.
