@@ -9,7 +9,7 @@ IMGeluid – Dataspecificatie voor Centrale Voorziening Geluidgegevens (CVGG).
 Definitie
 -----------------
 
-In de Centrale Voorziening Geluidgegevens (CVGG) worden de gegevens vastgelegd die nodig zijn om de nieuwe geluidregelgeving binnen de Omgevingswet te ondersteunen. Het Informatiemodel Geluid zorgt ervoor dat alle gegevens die de voorziening beschikbaar
+In de Centrale Voorziening Geluidgegevens (CVGG) worden de gegevens vastgelegd die nodig zijn om de nieuwe geluidregelgeving binnen de Omgevingswet te ondersteunen. Het informatiemodel Geluid zorgt ervoor dat alle gegevens die de voorziening beschikbaar
 stelt eenduidig interpreteerbaar zijn en op een standaard manier kunnen worden
 uitgewisseld met andere systemen.
 
@@ -33,7 +33,7 @@ laagdrempelig worden verkregen uit de centrale voorziening.
 
 ### Informatiemodel Geluid
 Om betekenisvolle en uniforme uitwisseling van geluidgegevens mogelijk te maken,
-is in samenwerking met Geonovum een informatiemodel geluid ontwikkeld. Dit
+is in samenwerking met Geonovum een informatiemodel Geluid ontwikkeld. Dit
 informatiemodel zorgt ervoor dat alle gegevens die de voorziening beschikbaar
 stelt eenduidig interpreteerbaar zijn en op een standaard manier kunnen worden
 uitgewisseld met andere systemen. De nadruk van het informatiemodel ligt op het
@@ -69,7 +69,7 @@ ervoor te zorgen dat objecttypen niet redundant in de dataspecificatie hoeven
 worden opgenomen. In de afbeelding hieronder is gemodelleerd hoe de hiërarchie
 in elkaar zit aan de hand van de UML generalisatie relatie.
 
-![Figuur 2: Domeinen van het Informatiemodel Geluid  -fullwidth](media/Hierarchie.png)
+![Figuur 2: Domeinen van het informatiemodel Geluid  -fullwidth](media/Hierarchie.png)
 *Figuur 2: Domeinen van het Informatiemodel Geluid*
 
 #### Uitgangspunten toegepast bij modelleren van IMGeluid
@@ -230,7 +230,7 @@ RD New (2D) | `EPSG:28992`
 RD New + NAP (3D) | `EPSG:7415`
 
 #### Datum en tijd
-Het Informatiemodel Geluid hanteert de ISO 8601 norm [[ISO8601]] voor het beschrijven van tijdsaspecten. De notatie van de tijd is overeenkomstig de ISO-regelgeving: `jjjj-mm-ddTuu:mm:ss`. De hoofdletter `T` wordt gebruikt om de datum- en tijdcomponent te scheiden. Een voorbeeld: `2011-10-13T10:47:48` betekent dus 13 oktober 2011 om 10 uur 47 minuten en 48 seconden. Hierbij is de tijdzone voor Nederland, de Midden-Europese tijdzone, van kracht.
+Het informatiemodel Geluid hanteert de ISO 8601 norm [[ISO8601]] voor het beschrijven van tijdsaspecten. De notatie van de tijd is overeenkomstig de ISO-regelgeving: `jjjj-mm-ddTuu:mm:ss`. De hoofdletter `T` wordt gebruikt om de datum- en tijdcomponent te scheiden. Een voorbeeld: `2011-10-13T10:47:48` betekent dus 13 oktober 2011 om 10 uur 47 minuten en 48 seconden. Hierbij is de tijdzone voor Nederland, de Midden-Europese tijdzone, van kracht.
 
 Meer in detail geldt: 
 - Bij attributen met het datatype `DatumTijd` is het formaat `jjjj-mm-ddTuu:mm:ss`.
@@ -257,11 +257,11 @@ De volgende documenten zijn onmisbaar voor de totstandkoming van dit document:
 
 Mapping met INSPIRE
 -------------------------------------
-Zoals genoemd in [hoofdstuk 2: Scope](#H02) komen de gegevens zoals gemodelleerd in het Informatiemodel Geluid onder de EU-richtlijn INSPIRE te vallen. Dit geldt niet voor alle gegevens, maar voor een specifiek deel dat we in deze paragraaf beschrijven.
+Zoals genoemd in [hoofdstuk 2: Scope](#H02) komen de gegevens zoals gemodelleerd in het informatiemodel Geluid onder de EU-richtlijn INSPIRE te vallen. Dit geldt niet voor alle gegevens, maar voor een specifiek deel dat we in deze paragraaf beschrijven.
 
 Het [Geluidaandachtsgebied](#global_class_Algemeen_Geluidaandachtsgebied) valt onder de INSPIRE-verplichting. De CVGG is hiervoor de authentieke bron. Het INSPIRE thema waaronder het Geluidaandachtsgebied valt is [Area Management](https://inspire.ec.europa.eu/theme/am). 
 
-Het Informatiemodel Geluid is waar nodig afgestemd op INSPIRE om aan deze verplichting te kunnen voldoen. 
+Het informatiemodel Geluid is waar nodig afgestemd op INSPIRE om aan deze verplichting te kunnen voldoen. 
 
 De mapping is als volgt: 
 
@@ -372,6 +372,6 @@ dataspecificatie.
 Gegevensuitwisseling met GML
 --------------------------------------
 
-Om op basis van het Informatiemodel Geluid gegevens te kunnen uitwisselen, is een GML application schema gedefinieerd. Dit schema is gebaseerd op XML en meer specifiek op [Geography Markup Language](https://www.geonovum.nl/geo-standaarden/geography-markup-language-gml) (GML), het standaard uitwisselingsformaat voor geografische bestanden. 
+Om op basis van het informatiemodel Geluid gegevens te kunnen uitwisselen, is een GML application schema gedefinieerd. Dit schema is gebaseerd op XML en meer specifiek op [Geography Markup Language](https://www.geonovum.nl/geo-standaarden/geography-markup-language-gml) (GML), het standaard uitwisselingsformaat voor geografische bestanden. 
 
-Het GML application schema is uit het Informatiemodel Geluid afgeleid conform [[ISO19118-2011]] en annex E van de GML standaard [[gml]]. 
+Het GML application schema is uit het informatiemodel Geluid afgeleid conform [[ISO19118-2011]] en annex E van de GML standaard [[gml]]. 

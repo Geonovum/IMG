@@ -1,4 +1,4 @@
-IMGeluid beschrijft de semantiek van digitale bestanden voor de Centrale
+Het informatiemodel Geluid (IMGeluid) beschrijft de semantiek van digitale bestanden voor de Centrale
 Voorziening Geluidgegevens. De Centrale Voorziening Geluidgegevens is een
 centraal punt voor het eenduidig uitwisselen van akoestische gegevens tussen
 bronhouders en gebruikers voor verschillende geluiddomeinen. Deze gegevens
