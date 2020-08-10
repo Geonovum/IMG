@@ -41,7 +41,7 @@ beschrijven van de gegevens die noodzakelijk zijn om akoestische berekeningen
 uit te voeren. Hierdoor ontstaat een geluidspecifiek beeld van onder meer wegen,
 spoorwegen en industrieterreinen.
 
-IMGeluid vormt het gemeenschappelijke begrippenkader voor de uitwisseling van
+IMGeluid vormt het gemeenschappelijke afsprakenstelsel voor de uitwisseling van
 informatie van verschillende bestaande en nieuwe geluidregisters. IMGeluid is
 gemodelleerd conform de specificaties van het Metamodel Informatie Modellering
 [[MIM]]. Voor de uitleg van betekenis van entiteiten binnen het informatiemodel
