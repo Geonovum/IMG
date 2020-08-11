@@ -67,3 +67,4 @@ Objecttypen worden binnen IMGeluid gecategoriseert als Verbindend objecttype, Ge
 | Geluidberekening objecttype | Het objecttype heeft te maken met de uitkomst van een geluidberekening.                                                                                               |
 | Geluidgegevens objecttype   | Het objecttype heeft te maken met akoestische gegevens die gebruikt kunnen worden bij een geluidberekening.                                                           |
 
+![Legenda](https://github.com/Geonovum/IMG/blob/gh-pages/media/Legenda.png "Legenda IMGeluid")
