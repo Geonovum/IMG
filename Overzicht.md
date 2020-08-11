@@ -355,7 +355,7 @@ dataspecificatie.
 
 | **Afkortingen** | **Betekenissen**                                  |
 |-----------------|---------------------------------------------------|
-| **AREG**        | Aanvullingsregeling geluid                        |
+| **AREG**        | Aanvullingsregeling geluid (Omgevingsregeling geluid)                        |
 | **BAG**         | Basisregistratie Adressen en Gebouwen             |
 | **BGE**         | Basisgeluidemissie                                |
 | **CVGG**        | Centrale Voorziening Geluidgegevens               |
