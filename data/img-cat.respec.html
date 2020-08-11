@@ -2,7 +2,7 @@
 <section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
    <p><b>Deze tekst is normatief.</b>
-      <!--MIMLM-InformatiemodelGeluid-1.0-0-20200421-20200806-213236 imvertor 1.61.2--></p><a class="anchor" id="global_package_Algemeen"></a><section id="global_package_Algemeen">
+      <!--MIMLM-InformatiemodelGeluid-1.0-0-20200421-20200811-130643 imvertor 1.61.2--></p><a class="anchor" id="global_package_Algemeen"></a><section id="global_package_Algemeen">
       <h3>Domein   Algemeen</h3>
       <div class="imageinfo overview"><img src="data/Images/EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F.png" usemap="#imagemap-EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F" alt="Diagram Het Basismodel vormt de samenhang tussen alle domeinen van het IMGeluid. Alle objecttypen en relaties uit het IMGeluid komen samen in een Geluidgegevenscollectie.&#xA;Binnen het IMGeluid worden geluidbrongegevens die gebruikt worden voor GPP en BGE berekeningen, gemodelleerd als een Geluidemissie of Geluidoverdrachtobject. De resultaten van GPP of BGE berekeningen worden opgeslagen in een Geluidgegevenscollectie. De onderliggende juridische vastleggingen, vaststellingen, of monitoringsverslagen van deze omgevings- of monitoringswaarden, worden ook opgeslagen in dezelfde Geluidgegevenscollectie.&#xA;Per geluidbron per toepassing kan er een Geluidgegevenscollectie bestaan. Deze kan geassocieerd worden met maximaal 1 Geluidaandachtsgebied. Wanneer geluidgegevens met betrekking tot cumulatieberekeningen worden aangeleverd, bevat een Geluidgegevenscollectie geen Geluidaandachtsgebied.&#xA;&#xA;&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen."><map name="imagemap-EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F"><area shape="rect" alt="Monitoringresultaat" coords="552,638,767,760" href="#graph_EAID_BA00B77B_D408_4590_8185_CE59E5838F1E"><area shape="rect" alt="Basisgeluidemissieobject" coords="102,638,368,760" href="#graph_EAID_9AD15457_4880_42e5_8C72_4E5EFAC91B15"><area shape="rect" alt="Geluidproductieplafondobject" coords="935,638,1193,821" href="#graph_EAID_237408F8_8CE9_4828_B8FB_1A5B8C917622"><area shape="rect" alt="Geluidberekeningobject" coords="544,873,799,1044" href="#graph_EAID_97ED59FE_9FCA_49a6_8F07_214E48000B76"><area shape="rect" alt="Documentverwijzing" coords="552,421,766,549" href="#graph_EAID_7E137496_1028_4af5_9367_569358A2167B"><area shape="rect" alt="Geluidaandachtsgebied" coords="974,187,1154,289" href="#graph_EAID_B06128AC_518C_4e26_88E5_14ED5A050A19"><area shape="rect" alt="Geluidgegevenscollectie" coords="503,168,815,322" href="#graph_EAID_313C5AF9_49B8_4860_9E65_DE7C70084864"><area shape="rect" alt="Geluidemissieobject" coords="109,179,361,297" href="#graph_EAID_361C96BA_A638_494e_80BA_590ED481A81B"><area shape="rect" alt="Geluidoverdrachtobject" coords="109,366,361,484" href="#graph_EAID_2FEA326B_B7E7_48a4_B50F_00CCB2694677"></map><p><b>Basismodel - overzicht</b> — Het Basismodel vormt de samenhang tussen alle domeinen van het IMGeluid. Alle objecttypen
             en relaties uit het IMGeluid komen samen in een Geluidgegevenscollectie.
@@ -85,7 +85,7 @@
                               is: Rijksweg OF Provinciale weg OF Hoofdspoorweg OF Industrie Of Lokale spoorweg;</li>
                            
                            <li>Er mag alleen geen Geluidaandachtsgebied in een Geluidgegevenscollectie zitten, wanneer
-                              geluidbron van Geluidgegevenscollectie= [Luchtverkeer, Militair schietterrein, Windturbine];</li>
+                              geluidbron van Geluidgegevenscollectie= [Luchtvaart, schiet- of springterrein, Windturbine];</li>
                            
                            <li>Wanneer geluidbron van Geluidgegevenscollectie = [industrieterrein] moet de Geluidgegevenscollectie
                               1 industrieterrein bevatten, anders 0;</li>
@@ -141,10 +141,10 @@
                         </td>
                      <td>
                         
-                        <p>Geeft aan voor welke toepassing de Geluidgegevenscollectie is gebruikt.</p>
+                        <p>Geeft aan voor welke type toepassing de Geluidgegevenscollectie is gebruikt.</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_Algemeen_Toepassing">Toepassing</a>
+                        <a class="link" href="#global_class_Algemeen_ToepassingGegevenscollectie">ToepassingGegevenscollectie</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -723,9 +723,6 @@
                            <li>Indien een initiatiefnemer een nieuw project wil ontwikkelen of een bestand project
                               wilt wijzigen dat in een geluidaandachtsgebied (GAG) valt, dient er aanvullend akoestisch
                               onderzoek gedaan te worden.</li>
-                           
-                           <li>Voor de bepaling van het GAG wordt een vereenvoudigde berekeningsmethode gebruikt,
-                              zodat per definitie hierbinnen de standaardwaarde niet overschreden wordt.</li>
                            
                            <li>Overlap van geluidaandachtsgebieden is toegestaan. Omdat alle gegevens van een bepaald
                               type van een bepaalde geluidbron met betrekking op een bepaalde periode in dezelfde
@@ -2442,7 +2439,7 @@
                      </td>
                </tr>
                <tr>
-                  <th><a class="anchor" id="graph_EAID_B6773E1F_22D6_4682_B531_6A2D392A2B3C"></a><a class="anchor" id="global_class_Algemeen_Toepassing"></a><a class="link" href="#detail_class_Algemeen_Toepassing">Toepassing</a></th>
+                  <th><a class="anchor" id="graph_EAID_B6773E1F_22D6_4682_B531_6A2D392A2B3C"></a><a class="anchor" id="global_class_Algemeen_ToepassingGegevenscollectie"></a><a class="link" href="#detail_class_Algemeen_ToepassingGegevenscollectie">ToepassingGegevenscollectie</a></th>
                   <td>
                      
                      <p>Indicatie van het type geluidgegevenscollectie</p>
@@ -2598,7 +2595,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Geeft aan voor welke toepassing de Geluidgegevenscollectie is gebruikt.</p>
+                              <p>Geeft aan voor welke type toepassing de Geluidgegevenscollectie is gebruikt.</p>
                               </td>
                         </tr>
                         <tr>
@@ -2623,7 +2620,7 @@
                         </tr>
                         <tr>
                            <th>Formaat</th>
-                           <td>Toepassing</td>
+                           <td>ToepassingGegevenscollectie</td>
                         </tr>
                      </tbody>
                   </table>
@@ -6589,7 +6586,7 @@
          </section>
    </section><a class="anchor" id="global_package_GPPAlgemeen"></a><section id="global_package_GPPAlgemeen">
       <h3>Domein   GPP Algemeen</h3>
-      <div class="imageinfo overview"><img src="data/Images/EAID_8A238AA8_87EB_46bf_B38F_4D4C086EDF94.png" usemap="#imagemap-EAID_8A238AA8_87EB_46bf_B38F_4D4C086EDF94" alt="Diagram GPP Algemeen bevat objecttypen en relaties met in ieder geval betrekking tot geluidproductieplafonds, onderliggende geluidbrongegevens en juridische vaststellingen. GPP algemeen omvat drie subdomeinen: GPP Industie, GPP Wegen en GPP Spoor. Een aantal objecten zijn al eerder verschenen in het Basismodel, maar worden hier verder gespecificeerd. Zo worden binnen dit domein een aantal  Geluidoverdrachtobjecten gespecificeerd. Een voorbeeld hiervan is het Geluidschermdeel dat in alle GPP domeinen gebruikt wordt. &#xA;&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen"><map name="imagemap-EAID_8A238AA8_87EB_46bf_B38F_4D4C086EDF94"><area shape="rect" alt="Geluidgegevenscollectie" coords="413,177,713,357" href="#graph_EAID_313C5AF9_49B8_4860_9E65_DE7C70084864"><area shape="rect" alt="Geluidemissieobject" coords="53,206,313,334" href="#graph_EAID_361C96BA_A638_494e_80BA_590ED481A81B"><area shape="rect" alt="Geluidoverdrachtobject" coords="53,386,313,514" href="#graph_EAID_2FEA326B_B7E7_48a4_B50F_00CCB2694677"><area shape="rect" alt="Bodemvlak" coords="89,826,277,926" href="#graph_EAID_902B9218_E1B1_4512_B52A_F8DADD1DB990"><area shape="rect" alt="Geluidschermdeel" coords="469,826,665,984" href="#graph_EAID_BC342A75_1053_4086_9B42_321F22E3FA82"><area shape="rect" alt="Hoogtelijn" coords="851,826,1031,915" href="#graph_EAID_CE3003A0_5F16_4630_B2A6_519B33439135"><area shape="rect" alt="Geluidberekeningobject" coords="84,572,315,743" href="#graph_EAID_97ED59FE_9FCA_49a6_8F07_214E48000B76"><area shape="rect" alt="Documentverwijzing" coords="464,584,662,712" href="#graph_EAID_7E137496_1028_4af5_9367_569358A2167B"><area shape="rect" alt="Geluidaandachtsgebied" coords="846,212,1042,322" href="#graph_EAID_B06128AC_518C_4e26_88E5_14ED5A050A19"><area shape="rect" alt="Geluidproductieplafondobject" coords="823,552,1051,736" href="#graph_EAID_237408F8_8CE9_4828_B8FB_1A5B8C917622"></map><p><b>GPP Algemeen - overzicht</b> — GPP Algemeen bevat objecttypen en relaties met in ieder geval betrekking tot geluidproductieplafonds,
+      <div class="imageinfo overview"><img src="data/Images/EAID_8A238AA8_87EB_46bf_B38F_4D4C086EDF94.png" usemap="#imagemap-EAID_8A238AA8_87EB_46bf_B38F_4D4C086EDF94" alt="Diagram GPP Algemeen bevat objecttypen en relaties met in ieder geval betrekking tot geluidproductieplafonds, onderliggende geluidbrongegevens en juridische vaststellingen. GPP algemeen omvat drie subdomeinen: GPP Industie, GPP Wegen en GPP Spoor. Een aantal objecten zijn al eerder verschenen in het Basismodel, maar worden hier verder gespecificeerd. Zo worden binnen dit domein een aantal  Geluidoverdrachtobjecten gespecificeerd. Een voorbeeld hiervan is het Geluidschermdeel dat in alle GPP domeinen gebruikt wordt. &#xA;&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen"><map name="imagemap-EAID_8A238AA8_87EB_46bf_B38F_4D4C086EDF94"><area shape="rect" alt="Geluidgegevenscollectie" coords="413,180,713,360" href="#graph_EAID_313C5AF9_49B8_4860_9E65_DE7C70084864"><area shape="rect" alt="Geluidemissieobject" coords="53,209,313,337" href="#graph_EAID_361C96BA_A638_494e_80BA_590ED481A81B"><area shape="rect" alt="Geluidoverdrachtobject" coords="53,389,313,517" href="#graph_EAID_2FEA326B_B7E7_48a4_B50F_00CCB2694677"><area shape="rect" alt="Bodemvlak" coords="89,829,277,929" href="#graph_EAID_902B9218_E1B1_4512_B52A_F8DADD1DB990"><area shape="rect" alt="Geluidschermdeel" coords="469,829,665,987" href="#graph_EAID_BC342A75_1053_4086_9B42_321F22E3FA82"><area shape="rect" alt="Hoogtelijn" coords="851,829,1031,918" href="#graph_EAID_CE3003A0_5F16_4630_B2A6_519B33439135"><area shape="rect" alt="Geluidberekeningobject" coords="84,575,315,746" href="#graph_EAID_97ED59FE_9FCA_49a6_8F07_214E48000B76"><area shape="rect" alt="Documentverwijzing" coords="464,587,662,715" href="#graph_EAID_7E137496_1028_4af5_9367_569358A2167B"><area shape="rect" alt="Geluidaandachtsgebied" coords="846,215,1042,325" href="#graph_EAID_B06128AC_518C_4e26_88E5_14ED5A050A19"><area shape="rect" alt="Geluidproductieplafondobject" coords="823,555,1051,739" href="#graph_EAID_237408F8_8CE9_4828_B8FB_1A5B8C917622"></map><p><b>GPP Algemeen - overzicht</b> — GPP Algemeen bevat objecttypen en relaties met in ieder geval betrekking tot geluidproductieplafonds,
             onderliggende geluidbrongegevens en juridische vaststellingen. GPP algemeen omvat
             drie subdomeinen: GPP Industie, GPP Wegen en GPP Spoor. Een aantal objecten zijn al
             eerder verschenen in het Basismodel, maar worden hier verder gespecificeerd. Zo worden
@@ -6749,9 +6746,8 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Ter verbetering van de kwaliteit van het milieu direct langs een weg of spoorweg geplaatste
-                           registerscherm en of wal die gebruikt zijn voor de berekening van het geluidproductieplafond.
-                           </p>
+                        <p>Deel van een geluidscherm of wal dat geplaatst is als een geluidwerende maatregel
+                           binnen een geluidaandachtsgebied waar de geluidproductieplafond regeling geldig is.</p>
                         </td>
                   </tr>
                   <tr>
@@ -6767,24 +6763,15 @@
                            <li>Dient voor afscherming en heeft een reflectie factor die aan de twee zijden verschillend
                               kan zijn.</li>
                            
-                           <li>Objecten rondom de weg (schermen en wallen) die nodig zijn om de geluidproductieplafonds
-                              te berekenen en daarmee onderdeel zijn van de brongegevens voor wegen. In principe
+                           <li>Objecten rondom de weg (geluidschermen en wallen) die nodig zijn om de geluidproductieplafonds
+                              te berekenen en daarmee onderdeel zijn van de geluidbrongegevens voor wegen. In principe
                               worden geen gemeente-schermen aangeleverd, tenzij die zijn gebruikt in de GPP-berekening.</li>
-                           
-                           <li>Een scherm kan in de praktijk akoestisch reflecterend of absorberend zijn. ProRail
-                              voert wel een reflectiefactor op, maar deze wordt genegeerd door het rekenhart. Van
-                              alle schermen wordt binnen SoundBase (ProRail) dus aangenomen dat deze absorberend
-                              zijn en geen effect hebben op gpp’s aan de overzijde van het spoor.</li>
-                           
-                           <li>De reden om in SoundBase wel de reflectiefactor op te geven, is dat deze in een later
-                              stadium wel relevant is voor de berekeningen op woningniveau. Door de reflectiefactor
-                              reeds in SoundBase op te geven, zit deze direct correct in de export naar het SRM2-model.</li>
                            </ul>
                         
                         <ul>
                            
-                           <li>Het gaat hier net als bij rijlijnen om homogene 'schermdelen'. M.a.w. indien één eigenschap
-                              van het scherm wijzigt, heb je een nieuw afschermend object nodig.</li>
+                           <li>Het gaat hier net als bij rijlijnen om homogene 'geluidschermdelen'. M.a.w. indien
+                              één eigenschap van het scherm wijzigt, heb je een nieuw afschermend object nodig.</li>
                            </ul>
                         </td>
                   </tr>
@@ -7967,7 +7954,7 @@
          </section>
    </section><a class="anchor" id="global_package_GPPIndustrie"></a><section id="global_package_GPPIndustrie">
       <h3>Domein   GPP Industrie</h3>
-      <div class="imageinfo overview"><img src="data/Images/EAID_4D140CCE_0889_4998_B668_8E4DB0053589.png" usemap="#imagemap-EAID_4D140CCE_0889_4998_B668_8E4DB0053589" alt="Diagram In domeinmodel GPP Industrie staan objecttypen en relaties die relevant zijn voor geluidbronbeheersing van industrieterreinen waarvoor de geluidproductieplafond regeling geldt; en die nodig zijn voor akoestisch onderzoek binnen het geluidaandachtsgebied van het industrieterrein.&#xA;Alle geluidbronnen op een industrieterrein worden opgeslagen als puntbronnen in het object  &#34;GeluidbronIndustrie&#34;. Indien binnen geluidrekensoftware gebruik is gemaakt van lijn- of vlakgeometrie voor het uitdrukken van geluidbronnen kan dit worden opgeslagen als optionele informatie conform de objecten &#34;Geluidbronlijn&#34; en &#34;Geluidbronvlak &#34;. &#xA;Voor ieder &#34;Geluidproductieplafondobject&#34; rondom het industrieterrein, valt te herleiden op welke geluidberekening de geluidproductieplafondwaarde gebaseerd is. Deze informatie wordt bijgehouden conform het &#34;Geluidberekeningobject&#34;.&#xA;Ook valt er te herleiden welke geluidbrongegevens gebruikt zijn bij een geluidberekening. Deze geluidbrongegevens zijn samen met het &#34;Geluidberekeningsobject&#34; terug te vinden in een  &#34;Geluidgegevenscollectie&#34; in de vorm van gespecialiseerde geluidemissie- en geluidoverdrachtsobjecten.&#xA;&#xA;&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen"><map name="imagemap-EAID_4D140CCE_0889_4998_B668_8E4DB0053589"><area shape="rect" alt="Monitoringresultaat" coords="522,528,739,653" href="#graph_EAID_BA00B77B_D408_4590_8185_CE59E5838F1E"><area shape="rect" alt="Geluidgegevenscollectie" coords="636,110,937,290" href="#graph_EAID_313C5AF9_49B8_4860_9E65_DE7C70084864"><area shape="rect" alt="Geluidoverdrachtobject" coords="914,878,1154,1006" href="#graph_EAID_2FEA326B_B7E7_48a4_B50F_00CCB2694677"><area shape="rect" alt="Geluidemissieobject" coords="395,873,616,1001" href="#graph_EAID_361C96BA_A638_494e_80BA_590ED481A81B"><area shape="rect" alt="GeluidproductieplafondobjectIndustrie" coords="132,640,354,729" href="#graph_EAID_54EBAB06_4239_44c9_A4FF_72CDA727F5D3"><area shape="rect" alt="Hoogtelijn" coords="694,1257,882,1337" href="#graph_EAID_CE3003A0_5F16_4630_B2A6_519B33439135"><area shape="rect" alt="Geluidschermdeel" coords="684,1074,892,1239" href="#graph_EAID_BC342A75_1053_4086_9B42_321F22E3FA82"><area shape="rect" alt="Geluidbronvlak" coords="45,1168,285,1309" href="#graph_EAID_43CE47B3_F0C4_4ee1_A29C_DA9AE6216E59"><area shape="rect" alt="IndustrieRekeninstellingen" coords="1005,655,1269,749" href="#graph_EAID_7B120AD1_3CF4_4d78_9CA8_B7D7B709DB5A"><area shape="rect" alt="Bodemvlak" coords="1146,1028,1334,1130" href="#graph_EAID_902B9218_E1B1_4512_B52A_F8DADD1DB990"><area shape="rect" alt="Geluidberekeningobject" coords="1005,448,1269,619" href="#graph_EAID_97ED59FE_9FCA_49a6_8F07_214E48000B76"><area shape="rect" alt="Industrieterrein" coords="314,110,514,290" href="#graph_EAID_3CF82A2D_EBD2_45f5_BDBF_6B65612322CD"><area shape="rect" alt="Geluidbronlijn" coords="45,1014,285,1132" href="#graph_EAID_EF66CAA4_E8AE_4eca_8176_0B5CE277CD47"><area shape="rect" alt="Procesinstallatiegebied" coords="932,1193,1120,1321" href="#graph_EAID_F66BFCFE_8850_4cf0_8769_084A9455A966"><area shape="rect" alt="Vegetatiegebied" coords="1146,1193,1334,1303" href="#graph_EAID_C09CF91E_C221_4fe9_B126_08102B3DEF5A"><area shape="rect" alt="Documentverwijzing" coords="64,112,263,290" href="#graph_EAID_7E137496_1028_4af5_9367_569358A2167B"><area shape="rect" alt="Geluidproductieplafondobject" coords="129,401,358,585" href="#graph_EAID_237408F8_8CE9_4828_B8FB_1A5B8C917622"><area shape="rect" alt="Bouwwerk" coords="684,878,892,1058" href="#graph_EAID_8A05EFB0_A6AD_45e8_AE68_FAA4399063F2"><area shape="rect" alt="Geluidaandachtsgebied" coords="1054,110,1254,290" href="#graph_EAID_B06128AC_518C_4e26_88E5_14ED5A050A19"><area shape="rect" alt="GeluidbronIndustrie" coords="363,1074,649,1271" href="#graph_EAID_7B6D3D2D_0C70_435a_AAFC_FABC9CD61353"></map><p><b>GPP Industrie - overzicht</b> — In domeinmodel GPP Industrie staan objecttypen en relaties die relevant zijn voor
+      <div class="imageinfo overview"><img src="data/Images/EAID_4D140CCE_0889_4998_B668_8E4DB0053589.png" usemap="#imagemap-EAID_4D140CCE_0889_4998_B668_8E4DB0053589" alt="Diagram In domeinmodel GPP Industrie staan objecttypen en relaties die relevant zijn voor geluidbronbeheersing van industrieterreinen waarvoor de geluidproductieplafond regeling geldt; en die nodig zijn voor akoestisch onderzoek binnen het geluidaandachtsgebied van het industrieterrein.&#xA;Alle geluidbronnen op een industrieterrein worden opgeslagen als puntbronnen in het object  &#34;GeluidbronIndustrie&#34;. Indien binnen geluidrekensoftware gebruik is gemaakt van lijn- of vlakgeometrie voor het uitdrukken van geluidbronnen kan dit worden opgeslagen als optionele informatie conform de objecten &#34;Geluidbronlijn&#34; en &#34;Geluidbronvlak &#34;. &#xA;Voor ieder &#34;Geluidproductieplafondobject&#34; rondom het industrieterrein, valt te herleiden op welke geluidberekening de geluidproductieplafondwaarde gebaseerd is. Deze informatie wordt bijgehouden conform het &#34;Geluidberekeningobject&#34;.&#xA;Ook valt er te herleiden welke geluidbrongegevens gebruikt zijn bij een geluidberekening. Deze geluidbrongegevens zijn samen met het &#34;Geluidberekeningsobject&#34; terug te vinden in een  &#34;Geluidgegevenscollectie&#34; in de vorm van gespecialiseerde geluidemissie- en geluidoverdrachtsobjecten.&#xA;&#xA;&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen"><map name="imagemap-EAID_4D140CCE_0889_4998_B668_8E4DB0053589"><area shape="rect" alt="Monitoringresultaat" coords="522,528,739,653" href="#graph_EAID_BA00B77B_D408_4590_8185_CE59E5838F1E"><area shape="rect" alt="Geluidgegevenscollectie" coords="636,112,937,292" href="#graph_EAID_313C5AF9_49B8_4860_9E65_DE7C70084864"><area shape="rect" alt="Geluidoverdrachtobject" coords="914,878,1154,1006" href="#graph_EAID_2FEA326B_B7E7_48a4_B50F_00CCB2694677"><area shape="rect" alt="Geluidemissieobject" coords="395,873,616,1001" href="#graph_EAID_361C96BA_A638_494e_80BA_590ED481A81B"><area shape="rect" alt="GeluidproductieplafondobjectIndustrie" coords="132,640,354,729" href="#graph_EAID_54EBAB06_4239_44c9_A4FF_72CDA727F5D3"><area shape="rect" alt="Hoogtelijn" coords="694,1257,882,1337" href="#graph_EAID_CE3003A0_5F16_4630_B2A6_519B33439135"><area shape="rect" alt="Geluidschermdeel" coords="684,1074,892,1239" href="#graph_EAID_BC342A75_1053_4086_9B42_321F22E3FA82"><area shape="rect" alt="Geluidbronvlak" coords="45,1168,285,1309" href="#graph_EAID_43CE47B3_F0C4_4ee1_A29C_DA9AE6216E59"><area shape="rect" alt="IndustrieRekeninstellingen" coords="1005,655,1269,749" href="#graph_EAID_7B120AD1_3CF4_4d78_9CA8_B7D7B709DB5A"><area shape="rect" alt="Bodemvlak" coords="1146,1028,1334,1130" href="#graph_EAID_902B9218_E1B1_4512_B52A_F8DADD1DB990"><area shape="rect" alt="Geluidberekeningobject" coords="1005,448,1269,619" href="#graph_EAID_97ED59FE_9FCA_49a6_8F07_214E48000B76"><area shape="rect" alt="Industrieterrein" coords="314,110,514,290" href="#graph_EAID_3CF82A2D_EBD2_45f5_BDBF_6B65612322CD"><area shape="rect" alt="Geluidbronlijn" coords="45,1014,285,1132" href="#graph_EAID_EF66CAA4_E8AE_4eca_8176_0B5CE277CD47"><area shape="rect" alt="Procesinstallatiegebied" coords="932,1193,1120,1321" href="#graph_EAID_F66BFCFE_8850_4cf0_8769_084A9455A966"><area shape="rect" alt="Vegetatiegebied" coords="1146,1193,1334,1303" href="#graph_EAID_C09CF91E_C221_4fe9_B126_08102B3DEF5A"><area shape="rect" alt="Documentverwijzing" coords="64,112,263,290" href="#graph_EAID_7E137496_1028_4af5_9367_569358A2167B"><area shape="rect" alt="Geluidproductieplafondobject" coords="129,401,358,585" href="#graph_EAID_237408F8_8CE9_4828_B8FB_1A5B8C917622"><area shape="rect" alt="Bouwwerk" coords="684,878,892,1058" href="#graph_EAID_8A05EFB0_A6AD_45e8_AE68_FAA4399063F2"><area shape="rect" alt="Geluidaandachtsgebied" coords="1054,110,1254,290" href="#graph_EAID_B06128AC_518C_4e26_88E5_14ED5A050A19"><area shape="rect" alt="GeluidbronIndustrie" coords="363,1074,649,1271" href="#graph_EAID_7B6D3D2D_0C70_435a_AAFC_FABC9CD61353"></map><p><b>GPP Industrie - overzicht</b> — In domeinmodel GPP Industrie staan objecttypen en relaties die relevant zijn voor
             geluidbronbeheersing van industrieterreinen waarvoor de geluidproductieplafond regeling
             geldt; en die nodig zijn voor akoestisch onderzoek binnen het geluidaandachtsgebied
             van het industrieterrein.
@@ -8424,7 +8411,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_GPPIndustrie_IndustrieRekeninstellingen_standaardBodem">standaardBodem</a>
+                        <a class="link" href="#detail_attribute_GPPIndustrie_IndustrieRekeninstellingen_standaardBodemabsorptiefractie">standaardBodemabsorptiefractie</a>
                         </td>
                      <td>
                         
@@ -10086,8 +10073,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_GPPIndustrie_IndustrieRekeninstellingen_standaardBodem"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_IndustrieRekeninstellingen_standaardBodem">
-                  <h7>  <a href="#global_class_GPPIndustrie_IndustrieRekeninstellingen">IndustrieRekeninstellingen</a> standaardBodem</h7>
+               <a class="anchor" id="detail_attribute_GPPIndustrie_IndustrieRekeninstellingen_standaardBodemabsorptiefractie"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_IndustrieRekeninstellingen_standaardBodemabsorptiefractie">
+                  <h7>  <a href="#global_class_GPPIndustrie_IndustrieRekeninstellingen">IndustrieRekeninstellingen</a> standaardBodemabsorptiefractie</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -10095,7 +10082,7 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>standaardBodem</td>
+                           <td>standaardBodemabsorptiefractie</td>
                         </tr>
                         <tr>
                            <th>Herkomst</th>
@@ -12539,9 +12526,8 @@
                         </td>
                      <td>
                         
-                        <p>Ter verbetering van de kwaliteit van het milieu direct langs een weg of spoorweg geplaatste
-                           registerscherm en of wal die gebruikt zijn voor de berekening van het geluidproductieplafond.
-                           </p>
+                        <p>Deel van een geluidscherm of wal dat geplaatst is als een geluidwerende maatregel
+                           binnen een geluidaandachtsgebied waar de geluidproductieplafond regeling geldig is.</p>
                         </td>
                   </tr>
                </tbody>
@@ -13458,10 +13444,10 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Een Spoordeel kan in SoundBase verschillende bovenbouwcodes hebben. De in te voeren
-                                    bovenbouwcode is afhankelijk van de boring, dwarsliggertype, spoorstaafbevestiging,
-                                    ballastdikte en de eventuele aanwezigheid van raildempers. De combinatie van voorgaande
-                                    factoren resulteert in een bijbehorende bovenbouwklasse.</p>
+                                 <p>Een Spoordeel kan verschillende bovenbouwcodes hebben. De in te voeren bovenbouwcode
+                                    is afhankelijk van de boring, dwarsliggertype, spoorstaafbevestiging, ballastdikte
+                                    en de eventuele aanwezigheid van raildempers. De combinatie van voorgaande factoren
+                                    resulteert in een bijbehorende bovenbouwklasse.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -14133,7 +14119,7 @@
                            </tr>
                            <tr>
                               <th>Meeteenheid</th>
-                              <td>km/h</td>
+                              <td>km/u</td>
                            </tr>
                         </tbody>
                      </table>
@@ -14572,21 +14558,6 @@
                               
                               <ul>
                                  
-                                 <li>Stalen bruggen hebben in SoundBase (ProRail) geen brugwand. Indien er in de praktijk
-                                    een brugwand aanwezig is op een stalen brug, wordt deze dus niet gemodelleerd. De
-                                    reden daarvoor is dat dergelijke brugwanden in de praktijk geen afschermende werking
-                                    hebben, omdat de geluidafstraling van de totale constructie afkomstig is. Deze geluidafstraling
-                                    is daarnaast al verrekend in de brugtoeslag.</li>
-                                 </ul>
-                              
-                              <ul>
-                                 
-                                 <li>Betonnen bruggen kunnen in ProRail-database wel een brugwand hebben. Een brugwand
-                                    is maximaal 2 meter hoog en dient niet als scherm gemodelleerd te worden, maar als
-                                    het specifieke object ‘brugwand’. Schermen van meer dan 2 meter hoog naast een betonnen
-                                    brug worden niet als brugwand maar als scherm gemodelleerd, met de werkelijke schermhoogte.
-                                    </li>
-                                 
                                  <li>Een brugwand is een zwevend scherm waardoor ook geluidimmissies van onderliggende
                                     sporen goed berekend kunnen worden. Er moet in zo’n geval nader onderzoek gedaan worden
                                     naar de geluiduitstraling van het kunstwerk.</li>
@@ -14621,26 +14592,6 @@
                            <tr>
                               <th>Herkomst definitie</th>
                               <td>AREG Bijlage IVe</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <ul>
-                                    
-                                    <li>Bij brugwanden kan een reflectiefactor opgegeven worden. Deze is van belang binnen
-                                       de berekeningen in SoundBase.</li>
-                                    
-                                    <li>Een scherm kan in de praktijk akoestisch reflecterend of absorberend zijn. ProRail
-                                       voert wel een reflectiefactor op, maar deze wordt genegeerd door het rekenhart. Van
-                                       alle schermen wordt binnen SoundBase (ProRail) dus aangenomen dat deze absorberend
-                                       zijn en geen effect hebben op gpp’s aan de overzijde van het spoor.</li>
-                                    
-                                    <li>De reden om in SoundBase wel de reflectiefactor op te geven, is dat deze in een later
-                                       stadium wel relevant is voor de berekeningen op woningniveau. Door de reflectiefactor
-                                       reeds in SoundBase op te geven, zit deze direct correct in de export naar het SRM2-model.</li>
-                                    </ul>
-                                 </td>
                            </tr>
                            <tr>
                               <th>Mogelijk geen waarde</th>
@@ -16014,7 +15965,7 @@
                            </tr>
                            <tr>
                               <th>Meeteenheid</th>
-                              <td>km/h</td>
+                              <td>km/u</td>
                            </tr>
                         </tbody>
                      </table>
@@ -17048,10 +16999,10 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Een Spoordeel kan in SoundBase verschillende bovenbouwcodes hebben. De in te voeren
-                                    bovenbouwcode is afhankelijk van de boring, dwarsliggertype, spoorstaafbevestiging,
-                                    ballastdikte en de eventuele aanwezigheid van raildempers. De combinatie van voorgaande
-                                    factoren resulteert in een bijbehorende bovenbouwklasse.</p>
+                                 <p>Een Spoordeel kan verschillende bovenbouwcodes hebben. De in te voeren bovenbouwcode
+                                    is afhankelijk van de boring, dwarsliggertype, spoorstaafbevestiging, ballastdikte
+                                    en de eventuele aanwezigheid van raildempers. De combinatie van voorgaande factoren
+                                    resulteert in een bijbehorende bovenbouwklasse.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -17742,7 +17693,7 @@
                            </tr>
                            <tr>
                               <th>Meeteenheid</th>
-                              <td>km/h</td>
+                              <td>km/u</td>
                            </tr>
                         </tbody>
                      </table>
@@ -18283,7 +18234,7 @@
                            </tr>
                            <tr>
                               <th>Meeteenheid</th>
-                              <td>km/h</td>
+                              <td>km/u</td>
                            </tr>
                         </tbody>
                      </table>
@@ -19604,7 +19555,7 @@
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
    <p><b>Deze tekst is normatief.</b>
-      <!--MIMLM-InformatiemodelGeluid-1.0-0-20200421-20200806-213236 imvertor 1.61.2--></p>
+      <!--MIMLM-InformatiemodelGeluid-1.0-0-20200421-20200811-130643 imvertor 1.61.2--></p>
    <section id="">
       <h3>   </h3><a class="anchor" id="graph_EAID_4A679509_B62E_4dfc_8864_C4852847204B"></a><a class="anchor" id="detail_class_Algemeen_Spoorstaafruwheid"></a><section id="detail_class_Algemeen_Spoorstaafruwheid">
          <h4>   Spoorstaafruwheid</h4>
@@ -20250,7 +20201,7 @@
                      </td>
                </tr>
                <tr>
-                  <th>luchtverkeer</th>
+                  <th>luchtvaart</th>
                   <td>
                      
                      <p>Geluidgegevenscollectie bevat geluidgegevens conform domein Cumulatief met luchtverkeer
@@ -20371,8 +20322,8 @@
                </tr>
             </tbody>
          </table>
-         </section><a class="anchor" id="graph_EAID_B6773E1F_22D6_4682_B531_6A2D392A2B3C"></a><a class="anchor" id="detail_class_Algemeen_Toepassing"></a><section id="detail_class_Algemeen_Toepassing">
-         <h4>Enumeratie details  Toepassing</h4>
+         </section><a class="anchor" id="graph_EAID_B6773E1F_22D6_4682_B531_6A2D392A2B3C"></a><a class="anchor" id="detail_class_Algemeen_ToepassingGegevenscollectie"></a><section id="detail_class_Algemeen_ToepassingGegevenscollectie">
+         <h4>Enumeratie details  ToepassingGegevenscollectie</h4>
          
          <table style="width: 100%;" class="list">
             <colgroup></colgroup>
@@ -20420,7 +20371,11 @@
                </tr>
                <tr>
                   <th>monitoringresultaat</th>
-                  <td></td>
+                  <td>
+                     
+                     <p>Geluidgegevenscollectie is gebruikt om het Monitoringresultaat te registreren bij
+                        het geluidregister.</p>
+                     </td>
                </tr>
             </tbody>
          </table>
