@@ -59,11 +59,11 @@ De bijlage geeft een overzicht van de wijzigingen in het informatiemodel ten opz
 ### Diagram leeswijzer
 
 Hoe deze catalogus kan worden gelezen wordt [in deze video verder toegelicht](https://www.youtube.com/watch?v=2UiJ38_QdRU). 
-Objecttypen worden binnen IMGeluid gecategoriseert als Verbindend objecttype, Geluidberekening objecttype of Geluidgegevens objecttype. Deze categorisering wordt aangegeven in het diagram aan de hand van de kleuren in de legenda. 
+Objecttypen worden binnen IMGeluid gecategoriseert als Administratief objecttype, Geluidberekening objecttype of Geluidgegevens objecttype. Deze categorisering wordt aangegeven in het diagram aan de hand van de kleuren in de legenda. 
 
 | Categorie              | Omschrijving                                                                                                                                                             |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Verbindend objecttype   | Het objecttype zorgt voor de herleidbaarheid van geluidberekening objecttypes, door samenhang te creëren met zowel geluidgegevens objecttypes als externe documenten. |
+| Administratief objecttype   | Het objecttype bevat administratieve gegevens die onder andere zorgen voor de herleidbaarheid van geluidberekening objecttypes, door samenhang te creëren met zowel geluidgegevens objecttypes als externe documenten. |
 | Geluidberekening objecttype | Het objecttype heeft te maken met de uitkomst van een geluidberekening.                                                                                               |
 | Geluidgegevens objecttype   | Het objecttype heeft te maken met akoestische gegevens die gebruikt kunnen worden bij een geluidberekening.                                                           |
 
