@@ -2,7 +2,7 @@
 <section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
    <p><b>Deze tekst is normatief.</b>
-      <!--MIMLM-InformatiemodelGeluid-1.0-0-20200421-20200811-155807 imvertor 1.61.2--></p><a class="anchor" id="global_package_Algemeen"></a><section id="global_package_Algemeen">
+      <!--MIMLM-InformatiemodelGeluid-1.0-0-20200421-20200812-164904 imvertor 1.61.2--></p><a class="anchor" id="global_package_Algemeen"></a><section id="global_package_Algemeen">
       <h3>Domein   Algemeen</h3>
       <div class="imageinfo overview"><img src="data/Images/EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F.png" usemap="#imagemap-EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F" alt="Diagram Het Basismodel vormt de samenhang tussen alle domeinen van het IMGeluid. Alle objecttypen en relaties uit het IMGeluid komen samen in een Geluidgegevenscollectie.&#xA;Binnen het IMGeluid worden geluidbrongegevens die gebruikt worden voor GPP en BGE berekeningen, gemodelleerd als een Geluidemissie of Geluidoverdrachtobject. De resultaten van GPP of BGE berekeningen worden opgeslagen in een Geluidgegevenscollectie. De onderliggende juridische vastleggingen, vaststellingen, of monitoringsverslagen van deze omgevings- of monitoringswaarden, worden ook opgeslagen in dezelfde Geluidgegevenscollectie.&#xA;Per geluidbron per toepassing kan er een Geluidgegevenscollectie bestaan. Deze kan geassocieerd worden met maximaal 1 Geluidaandachtsgebied. Wanneer geluidgegevens met betrekking tot cumulatieberekeningen worden aangeleverd, bevat een Geluidgegevenscollectie geen Geluidaandachtsgebied.&#xA;&#xA;&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen."><map name="imagemap-EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F"><area shape="rect" alt="Monitoringresultaat" coords="525,638,740,760" href="#graph_EAID_BA00B77B_D408_4590_8185_CE59E5838F1E"><area shape="rect" alt="Basisgeluidemissieobject" coords="75,638,341,760" href="#graph_EAID_9AD15457_4880_42e5_8C72_4E5EFAC91B15"><area shape="rect" alt="Geluidproductieplafondobject" coords="908,638,1166,821" href="#graph_EAID_237408F8_8CE9_4828_B8FB_1A5B8C917622"><area shape="rect" alt="Geluidberekeninggegevens" coords="517,873,772,1044" href="#graph_EAID_97ED59FE_9FCA_49a6_8F07_214E48000B76"><area shape="rect" alt="Documentverwijzing" coords="525,421,739,549" href="#graph_EAID_7E137496_1028_4af5_9367_569358A2167B"><area shape="rect" alt="Geluidaandachtsgebied" coords="947,187,1127,289" href="#graph_EAID_B06128AC_518C_4e26_88E5_14ED5A050A19"><area shape="rect" alt="Geluidgegevenscollectie" coords="476,168,788,322" href="#graph_EAID_313C5AF9_49B8_4860_9E65_DE7C70084864"><area shape="rect" alt="Geluidemissieobject" coords="82,179,334,297" href="#graph_EAID_361C96BA_A638_494e_80BA_590ED481A81B"><area shape="rect" alt="Geluidoverdrachtobject" coords="82,366,334,484" href="#graph_EAID_2FEA326B_B7E7_48a4_B50F_00CCB2694677"></map><p><b>Basismodel - overzicht</b> — Het Basismodel vormt de samenhang tussen alle domeinen van het IMGeluid. Alle objecttypen
             en relaties uit het IMGeluid komen samen in een Geluidgegevenscollectie.
@@ -41,7 +41,7 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Informatieobject dat gegevens specificeert over alle geluidproductrieplafonds of basisgeluidemissies,
+                        <p>Informatieobject dat gegevens specificeert over alle geluidproductieplafonds of basisgeluidemissies,
                            de voor de berekening daarvan gebruikte geluidbrongegevens (geluidemissie- en geluidoverdrachtsobjecten),
                            de onderliggende (juridische) documententatie, de monitoringsgegevens en het geluidaandachtsgebied,
                            die gezamenlijk deel uitmaken van hetzelfde type geluidbron.</p>
@@ -75,8 +75,6 @@
                      <td>
                         
                         <ul>
-                           
-                           <li>Een Geluidgegevenscollectie heeft: OF Geluidproductieplafondobjecten, Of Basisgeluidemissieobjecten;</li>
                            
                            <li>Een Geluidgegevenscollecte heeft alleen Basisgeluidemissieobjecten indien Geluidgegevenscollectie.geluidbron
                               is: Lokale weg OF Lokale spoorweg;</li>
@@ -144,7 +142,7 @@
                         <p>Geeft aan voor welke type toepassing de Geluidgegevenscollectie is gebruikt.</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_Algemeen_ToepassingGegevenscollectie">ToepassingGegevenscollectie</a>
+                        <a class="link" href="#global_class_Algemeen_TypeGegevenscollectie">TypeGegevenscollectie</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -372,15 +370,31 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_Algemeen_Geluidproductieplafondobject_vrijstelling">vrijstelling</a>
+                        <a class="link" href="#detail_attribute_Algemeen_Geluidproductieplafondobject_beginVrijstelling">beginVrijstelling</a>
                         </td>
                      <td>
                         
-                        <p>Situatie waarin wel een geluidproductieplafond is vastgesteld, maar waarop voor de
-                           duur van een bepaalde periode niet gemonitord hoeft te worden aan het geluidproductieplafond.</p>
+                        <p>Begindatum van de situatie waarin wel een geluidproductieplafond is vastgesteld, maar
+                           waarop voor de duur van een bepaalde periode niet gemonitord hoeft te worden aan het
+                           geluidproductieplafond.</p>
                         </td>
                      <td>
-                        <a class="external-link" href="">TM_Period</a>
+                        Datum
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Algemeen_Geluidproductieplafondobject_eindVrijstelling">eindVrijstelling</a>
+                        </td>
+                     <td>
+                        
+                        <p>Einddatum van de situatie waarin wel een geluidproductieplafond is vastgesteld, maar
+                           waarop voor de duur van een bepaalde periode niet gemonitord hoeft te worden aan het
+                           geluidproductieplafond.</p>
+                        </td>
+                     <td>
+                        Datum
                         </td>
                      <td>0 .. 1</td>
                   </tr>
@@ -556,17 +570,15 @@
                            
                            <li>Kan alleen de volgende specialisaties van een Emissieobject bevatten</li>
                            
-                           <li>Indien <strong>*Geluidgegevenscollectie.geluidbron *</strong> = <strong>Gemeentelijke weg</strong>: <strong>*BGEWegdeel</strong>
+                           <li>Indien <strong>*Geluidgegevenscollectie.geluidbron *</strong> = <strong>Gemeentelijke weg</strong>: <strong>*WegdeelBGE</strong>
                               <em>, OF</em>
-                              <strong>BGEGeospoortak</strong>*</li>
+                              <strong>SpoordeelBGE</strong>*</li>
                            
                            <li>Indien <strong>*Geluidgegevenscollectie.geluidbron</strong>
                               <em>=</em>
                               <em>Waterschapsweg</em>
                               <em>:</em>
                               <strong>BGEWegdeel</strong>*</li>
-                           
-                           <li>Indien <strong>Geluidgegevenscollectie.geluidbron</strong> = <strong>Lokaal spoor</strong>: <strong>*BGEGeospoortak</strong>*</li>
                            </ul>
                         </td>
                   </tr>
@@ -663,7 +675,10 @@
                         </td>
                      <td>
                         
-                        <p>1 of meerdere </p>
+                        <p>1 of meerdere pasisgeluidemissieobjecten gelden voor 1 of meerdere geluidemissieobjecten.
+                           Het is bijvoorbeeld toegestaan dat meerdere basisgeluidemissieobjecten gelden voor
+                           hetzelfde BGESpoordeel en tegelijkertijd voor meerdere BGEWegdelen, wanneer deze homogene
+                           akoestische eigenschappen hebben.</p>
                         </td>
                   </tr>
                   <tr>
@@ -720,10 +735,6 @@
                         
                         <ul>
                            
-                           <li>Indien een initiatiefnemer een nieuw project wil ontwikkelen of een bestand project
-                              wilt wijzigen dat in een geluidaandachtsgebied (GAG) valt, dient er aanvullend akoestisch
-                              onderzoek gedaan te worden.</li>
-                           
                            <li>Overlap van geluidaandachtsgebieden is toegestaan. Omdat alle gegevens van een bepaald
                               type van een bepaalde geluidbron met betrekking op een bepaalde periode in dezelfde
                               geluidgegevenscollectie zitten kan worden getraceerd waar gegevens bij horen.</li>
@@ -766,7 +777,7 @@
                         </td>
                      <td>
                         
-                        <p>Type geluidbron (verkeer, rail, industrie) waarbij het geluidaandachtsgebied hoort.</p>
+                        <p>Type geluidbron (verkeer, spoor, industrie) waarbij het geluidaandachtsgebied hoort.</p>
                         </td>
                      <td>
                         <a class="link" href="#global_class_Algemeen_Geluidbronsoort">Geluidbronsoort</a>
@@ -1181,7 +1192,10 @@
                         </td>
                      <td>
                         
-                        <p>1 of meerdere </p>
+                        <p>1 of meerdere pasisgeluidemissieobjecten gelden voor 1 of meerdere geluidemissieobjecten.
+                           Het is bijvoorbeeld toegestaan dat meerdere basisgeluidemissieobjecten gelden voor
+                           hetzelfde BGESpoordeel en tegelijkertijd voor meerdere BGEWegdelen, wanneer deze homogene
+                           akoestische eigenschappen hebben.</p>
                         </td>
                   </tr>
                </tbody>
@@ -1387,7 +1401,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_Algemeen_Documentverwijzing_locatie">locatie</a>
+                        <a class="link" href="#detail_attribute_Algemeen_Documentverwijzing_linkNaarDocument">linkNaarDocument</a>
                         </td>
                      <td>
                         
@@ -2390,7 +2404,7 @@
                   <th><a class="anchor" id="graph_EAID_16AB414E_37DD_460d_AEAE_00A62748E617"></a><a class="anchor" id="global_class_Algemeen_Geluidbronsoort"></a><a class="link" href="#detail_class_Algemeen_Geluidbronsoort">Geluidbronsoort</a></th>
                   <td>
                      
-                     <p>Enumeratie van domeinen waarbij een geregistreerd object hoort. </p>
+                     <p>Enumeratie van domeinen waarbij een geregistreerd object kan horen. </p>
                      </td>
                </tr>
                <tr>
@@ -2439,7 +2453,7 @@
                      </td>
                </tr>
                <tr>
-                  <th><a class="anchor" id="graph_EAID_B6773E1F_22D6_4682_B531_6A2D392A2B3C"></a><a class="anchor" id="global_class_Algemeen_ToepassingGegevenscollectie"></a><a class="link" href="#detail_class_Algemeen_ToepassingGegevenscollectie">ToepassingGegevenscollectie</a></th>
+                  <th><a class="anchor" id="graph_EAID_B6773E1F_22D6_4682_B531_6A2D392A2B3C"></a><a class="anchor" id="global_class_Algemeen_TypeGegevenscollectie"></a><a class="link" href="#detail_class_Algemeen_TypeGegevenscollectie">TypeGegevenscollectie</a></th>
                   <td>
                      
                      <p>Indicatie van het type geluidgegevenscollectie</p>
@@ -2620,7 +2634,7 @@
                         </tr>
                         <tr>
                            <th>Formaat</th>
-                           <td>ToepassingGegevenscollectie</td>
+                           <td>TypeGegevenscollectie</td>
                         </tr>
                      </tbody>
                   </table>
@@ -3245,8 +3259,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_Algemeen_Geluidproductieplafondobject_vrijstelling"></a><div class="deepheader" id="detail_attribute_Algemeen_Geluidproductieplafondobject_vrijstelling">
-                  <h7>  <a href="#global_class_Algemeen_Geluidproductieplafondobject">Geluidproductieplafondobject</a> vrijstelling</h7>
+               <a class="anchor" id="detail_attribute_Algemeen_Geluidproductieplafondobject_beginVrijstelling"></a><div class="deepheader" id="detail_attribute_Algemeen_Geluidproductieplafondobject_beginVrijstelling">
+                  <h7>  <a href="#global_class_Algemeen_Geluidproductieplafondobject">Geluidproductieplafondobject</a> beginVrijstelling</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -3254,7 +3268,7 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>vrijstelling</td>
+                           <td>beginVrijstelling</td>
                         </tr>
                         <tr>
                            <th>Herkomst</th>
@@ -3264,8 +3278,9 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Situatie waarin wel een geluidproductieplafond is vastgesteld, maar waarop voor de
-                                 duur van een bepaalde periode niet gemonitord hoeft te worden aan het geluidproductieplafond.</p>
+                              <p>Begindatum van de situatie waarin wel een geluidproductieplafond is vastgesteld, maar
+                                 waarop voor de duur van een bepaalde periode niet gemonitord hoeft te worden aan het
+                                 geluidproductieplafond.</p>
                               </td>
                         </tr>
                         <tr>
@@ -3287,8 +3302,97 @@
                               
                               <ul>
                                  
-                                 <li>Binnen het TM_Period datatype, worden het begin en eind van de periode opgeslagen
-                                    op de internationale manier, volgens de opbouw:  .</li>
+                                 <li>Binnen het Date datatype, wordt de begindatum van de periode opgeslagen op de internationale
+                                    manier, volgens de opbouw: jaar-maand-dag.</li>
+                                 </ul>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie formele historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Overig</td>
+                        </tr>
+                        <tr>
+                           <th>Regels</th>
+                           <td>
+                              
+                              <ul>
+                                 
+                                 <li>Er kan maar één vrijstelling(periode) voorkomen</li>
+                                 </ul>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>&lt;jaar&gt;-&lt;maand&gt;-&lt;dag&gt;</td>
+                        </tr>
+                        <tr>
+                           <th>Formeel patroon</th>
+                           <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>Datum</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_Algemeen_Geluidproductieplafondobject_eindVrijstelling"></a><div class="deepheader" id="detail_attribute_Algemeen_Geluidproductieplafondobject_eindVrijstelling">
+                  <h7>  <a href="#global_class_Algemeen_Geluidproductieplafondobject">Geluidproductieplafondobject</a> eindVrijstelling</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>eindVrijstelling</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>IMGeluid</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Einddatum van de situatie waarin wel een geluidproductieplafond is vastgesteld, maar
+                                 waarop voor de duur van een bepaalde periode niet gemonitord hoeft te worden aan het
+                                 geluidproductieplafond.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>IMGeluid</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              <ul>
+                                 
+                                 <li>Een vrijstelling alleen geldt in situaties waarin een tracébesluit is genomen voor
+                                    een nieuw aan te leggen weg waarvoor al wel een GPP is vastgesteld, maar er nog niets
+                                    te monitoren valt, omdat er nog geen verkeersbewegingen kunnen zijn.</li>
+                                 
+                                 <li>Een dergelijke situatie kan op één zelfde plek niet nogmaals voorkomen.</li>
+                                 </ul>
+                              
+                              <ul>
+                                 
+                                 <li>Binnen het Date datatype, wordt de einddatum van de periode opgeslagen op de internationale
+                                    manier, volgens de opbouw: jaar-maand-dag.</li>
                                  </ul>
                               </td>
                         </tr>
@@ -3331,7 +3435,7 @@
                         </tr>
                         <tr>
                            <th>Formaat</th>
-                           <td>TM_Period</td>
+                           <td>Datum</td>
                         </tr>
                      </tbody>
                   </table>
@@ -3362,17 +3466,6 @@
                         <tr>
                            <th>Herkomst definitie</th>
                            <td>IMGeluid</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              
-                              <ul>
-                                 
-                                 <li>Het betreft hier invoering van rechtswege (2012) obv van Wet Milieubeer art.11.45
-                                    lid 1, lid2 en lid 3</li>
-                                 </ul>
-                              </td>
                         </tr>
                         <tr>
                            <th>Mogelijk geen waarde</th>
@@ -3722,32 +3815,6 @@
                            <td>IMGeluid</td>
                         </tr>
                         <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              
-                              <ul>
-                                 
-                                 <li>De gemiddelde geluidemissie wordt gebruikt om de basisgeluidemissie en de monitoringswaarde
-                                    te berekenen. Alleen parameters die van invloed zijn op de geluidemissie zijn hierbij
-                                    van belang.</li>
-                                 
-                                 <li>Er geldt één gemiddelde geluidemissie voor een homogeen wegdeel. Een wegdeel kan bestaan
-                                    uit een enkele rijlijn of spoorlijn, maar ook uit combinaties van meerdere rij- en/of
-                                    spoorlijnen.</li>
-                                 
-                                 <li>Voor het bepalen van een geluidemissie is het van belang uit te kunnen gaan van representatieve
-                                    waarden voor een wegvak. Zo kunnen kleine onderbrekingen in wegdektype buiten beschouwing
-                                    worden gelaten.</li>
-                                 
-                                 <li>Ook is het niet noodzakelijk in detail rotondes en kruisingen te beschouwen. Het bevoegd
-                                    gezag heeft hiermee enige vrijheid in gewenst detailniveau bij het berekenen van een
-                                    basisgeluidemissie.</li>
-                                 
-                                 <li>Het allereerste Monitoringresultaat die wordt aangeleverd wordt de basisgeluidemissie.</li>
-                                 </ul>
-                              </td>
-                        </tr>
-                        <tr>
                            <th>Mogelijk geen waarde</th>
                            <td>Nee</td>
                         </tr>
@@ -3832,7 +3899,10 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>1 of meerdere </p>
+                              <p>1 of meerdere pasisgeluidemissieobjecten gelden voor 1 of meerdere geluidemissieobjecten.
+                                 Het is bijvoorbeeld toegestaan dat meerdere basisgeluidemissieobjecten gelden voor
+                                 hetzelfde BGESpoordeel en tegelijkertijd voor meerdere BGEWegdelen, wanneer deze homogene
+                                 akoestische eigenschappen hebben.</p>
                               </td>
                         </tr>
                         <tr>
@@ -3919,7 +3989,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Type geluidbron (verkeer, rail, industrie) waarbij het geluidaandachtsgebied hoort.</p>
+                              <p>Type geluidbron (verkeer, spoor, industrie) waarbij het geluidaandachtsgebied hoort.</p>
                               </td>
                         </tr>
                         <tr>
@@ -4905,8 +4975,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_Algemeen_Documentverwijzing_locatie"></a><div class="deepheader" id="detail_attribute_Algemeen_Documentverwijzing_locatie">
-                  <h7>  <a href="#global_class_Algemeen_Documentverwijzing">Documentverwijzing</a> locatie</h7>
+               <a class="anchor" id="detail_attribute_Algemeen_Documentverwijzing_linkNaarDocument"></a><div class="deepheader" id="detail_attribute_Algemeen_Documentverwijzing_linkNaarDocument">
+                  <h7>  <a href="#global_class_Algemeen_Documentverwijzing">Documentverwijzing</a> linkNaarDocument</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -4914,7 +4984,7 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>locatie</td>
+                           <td>linkNaarDocument</td>
                         </tr>
                         <tr>
                            <th>Herkomst</th>
@@ -6877,7 +6947,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_GPPAlgemeen_Geluidschermdeel_ligging">ligging</a>
+                        <a class="link" href="#detail_attribute_GPPAlgemeen_Geluidschermdeel_geometrie">geometrie</a>
                         </td>
                      <td>
                         
@@ -7153,21 +7223,6 @@
                                  
                                  <li>Aanduiding voor de akoestische hardheid van de bodem.absorptiefractie: hard (0), zacht
                                     (1) en half (0,5).</li>
-                                 </ul>
-                              
-                              <ul>
-                                 
-                                 <li>Dit is gewijzigd van een discrete naar een continue waarde. De gemiddelde absorptiefractie
-                                    in een gebied wordt berekend door middeling van de absorptiefracties van de deelgebieden,
-                                    waarbij een weging wordt toegepast die is gebaseerd op het quotiënt van de lengte
-                                    van het deelgebied en de lengte van het totale gebied.</li>
-                                 
-                                 <li>Als de lengte van het middengebied nihil is, wordt de gemiddelde absorptiefractie
-                                    van het middengebied op 1 gesteld. Voor akoestisch hard gebied (water, geasfalteerde
-                                    vlakken en dergelijke) is de absorptiefractie gelijk aan nul. Voor akoestisch zacht
-                                    gebied, zoals grasland, akkerland en bos- en duingrond is de absorptiefractie gelijk
-                                    aan 1,0. Bij een wegdektype dat significant absorberende eigenschappen heeft (zoals
-                                    ZOAB en (Fijn) tweelaags ZOAB), wordt een absorptiefractie van 0,5 aangehouden.</li>
                                  </ul>
                               </td>
                         </tr>
@@ -7708,8 +7763,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_GPPAlgemeen_Geluidschermdeel_ligging"></a><div class="deepheader" id="detail_attribute_GPPAlgemeen_Geluidschermdeel_ligging">
-                  <h7>  <a href="#global_class_GPPAlgemeen_Geluidschermdeel">Geluidschermdeel</a> ligging</h7>
+               <a class="anchor" id="detail_attribute_GPPAlgemeen_Geluidschermdeel_geometrie"></a><div class="deepheader" id="detail_attribute_GPPAlgemeen_Geluidschermdeel_geometrie">
+                  <h7>  <a href="#global_class_GPPAlgemeen_Geluidschermdeel">Geluidschermdeel</a> geometrie</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -7717,7 +7772,7 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>ligging</td>
+                           <td>geometrie</td>
                         </tr>
                         <tr>
                            <th>Herkomst</th>
@@ -7954,7 +8009,7 @@
          </section>
    </section><a class="anchor" id="global_package_GPPIndustrie"></a><section id="global_package_GPPIndustrie">
       <h3>Domein   GPP Industrie</h3>
-      <div class="imageinfo overview"><img src="data/Images/EAID_4D140CCE_0889_4998_B668_8E4DB0053589.png" usemap="#imagemap-EAID_4D140CCE_0889_4998_B668_8E4DB0053589" alt="Diagram In domeinmodel GPP Industrie staan objecttypen en relaties die relevant zijn voor geluidbronbeheersing van industrieterreinen waarvoor de geluidproductieplafond regeling geldt; en die nodig zijn voor akoestisch onderzoek binnen het geluidaandachtsgebied van het industrieterrein.&#xA;Alle geluidbronnen op een industrieterrein worden opgeslagen als puntbronnen in het object  &#34;GeluidbronIndustrie&#34;. Indien binnen geluidrekensoftware gebruik is gemaakt van lijn- of vlakgeometrie voor het uitdrukken van geluidbronnen kan dit worden opgeslagen als optionele informatie conform de objecten &#34;Geluidbronlijn&#34; en &#34;Geluidbronvlak &#34;. &#xA;Voor ieder &#34;Geluidproductieplafondobject&#34; rondom het industrieterrein, valt te herleiden op welke geluidberekening de geluidproductieplafondwaarde gebaseerd is. Deze informatie wordt bijgehouden conform het &#34;Geluidberekeningobject&#34;.&#xA;Ook valt er te herleiden welke geluidbrongegevens gebruikt zijn bij een geluidberekening. Deze geluidbrongegevens zijn samen met het &#34;Geluidberekeningsobject&#34; terug te vinden in een  &#34;Geluidgegevenscollectie&#34; in de vorm van gespecialiseerde geluidemissie- en geluidoverdrachtsobjecten.&#xA;&#xA;&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen"><map name="imagemap-EAID_4D140CCE_0889_4998_B668_8E4DB0053589"><area shape="rect" alt="Monitoringresultaat" coords="541,380,758,505" href="#graph_EAID_BA00B77B_D408_4590_8185_CE59E5838F1E"><area shape="rect" alt="Geluidgegevenscollectie" coords="607,75,843,254" href="#graph_EAID_313C5AF9_49B8_4860_9E65_DE7C70084864"><area shape="rect" alt="Geluidoverdrachtobject" coords="915,609,1155,737" href="#graph_EAID_2FEA326B_B7E7_48a4_B50F_00CCB2694677"><area shape="rect" alt="Geluidemissieobject" coords="396,604,617,732" href="#graph_EAID_361C96BA_A638_494e_80BA_590ED481A81B"><area shape="rect" alt="GeluidproductieplafondobjectIndustrie" coords="41,567,263,656" href="#graph_EAID_54EBAB06_4239_44c9_A4FF_72CDA727F5D3"><area shape="rect" alt="Hoogtelijn" coords="695,988,883,1068" href="#graph_EAID_CE3003A0_5F16_4630_B2A6_519B33439135"><area shape="rect" alt="Geluidschermdeel" coords="685,805,893,970" href="#graph_EAID_BC342A75_1053_4086_9B42_321F22E3FA82"><area shape="rect" alt="Geluidbronvlak" coords="46,899,286,1040" href="#graph_EAID_43CE47B3_F0C4_4ee1_A29C_DA9AE6216E59"><area shape="rect" alt="IndustrieRekeninstellingen" coords="937,279,1201,373" href="#graph_EAID_7B120AD1_3CF4_4d78_9CA8_B7D7B709DB5A"><area shape="rect" alt="Bodemvlak" coords="1147,759,1335,861" href="#graph_EAID_902B9218_E1B1_4512_B52A_F8DADD1DB990"><area shape="rect" alt="Geluidberekeninggegevens" coords="937,411,1201,567" href="#graph_EAID_97ED59FE_9FCA_49a6_8F07_214E48000B76"><area shape="rect" alt="Industrieterrein" coords="285,73,485,253" href="#graph_EAID_3CF82A2D_EBD2_45f5_BDBF_6B65612322CD"><area shape="rect" alt="Geluidbronlijn" coords="46,745,286,863" href="#graph_EAID_EF66CAA4_E8AE_4eca_8176_0B5CE277CD47"><area shape="rect" alt="Procesinstallatiegebied" coords="933,924,1121,1052" href="#graph_EAID_F66BFCFE_8850_4cf0_8769_084A9455A966"><area shape="rect" alt="Vegetatiegebied" coords="1147,924,1335,1034" href="#graph_EAID_C09CF91E_C221_4fe9_B126_08102B3DEF5A"><area shape="rect" alt="Documentverwijzing" coords="35,75,234,253" href="#graph_EAID_7E137496_1028_4af5_9367_569358A2167B"><area shape="rect" alt="Geluidproductieplafondobject" coords="38,328,267,512" href="#graph_EAID_237408F8_8CE9_4828_B8FB_1A5B8C917622"><area shape="rect" alt="Bouwwerk" coords="685,609,893,789" href="#graph_EAID_8A05EFB0_A6AD_45e8_AE68_FAA4399063F2"><area shape="rect" alt="Geluidaandachtsgebied" coords="948,73,1148,253" href="#graph_EAID_B06128AC_518C_4e26_88E5_14ED5A050A19"><area shape="rect" alt="GeluidbronIndustrie" coords="364,805,650,1002" href="#graph_EAID_7B6D3D2D_0C70_435a_AAFC_FABC9CD61353"></map><p><b>GPP Industrie - overzicht</b> — In domeinmodel GPP Industrie staan objecttypen en relaties die relevant zijn voor
+      <div class="imageinfo overview"><img src="data/Images/EAID_4D140CCE_0889_4998_B668_8E4DB0053589.png" usemap="#imagemap-EAID_4D140CCE_0889_4998_B668_8E4DB0053589" alt="Diagram In domeinmodel GPP Industrie staan objecttypen en relaties die relevant zijn voor geluidbronbeheersing van industrieterreinen waarvoor de geluidproductieplafond regeling geldt; en die nodig zijn voor akoestisch onderzoek binnen het geluidaandachtsgebied van het industrieterrein.&#xA;Alle geluidbronnen op een industrieterrein worden opgeslagen als puntbronnen in het object  &#34;GeluidbronIndustrie&#34;. Indien binnen geluidrekensoftware gebruik is gemaakt van lijn- of vlakgeometrie voor het uitdrukken van geluidbronnen kan dit worden opgeslagen als optionele informatie conform de objecten &#34;Geluidbronlijn&#34; en &#34;Geluidbronvlak &#34;. &#xA;Voor ieder &#34;Geluidproductieplafondobject&#34; rondom het industrieterrein, valt te herleiden op welke geluidberekening de geluidproductieplafondwaarde gebaseerd is. Deze informatie wordt bijgehouden conform het &#34;Geluidberekeningobject&#34;.&#xA;Ook valt er te herleiden welke geluidbrongegevens gebruikt zijn bij een geluidberekening. Deze geluidbrongegevens zijn samen met het &#34;Geluidberekeningsobject&#34; terug te vinden in een  &#34;Geluidgegevenscollectie&#34; in de vorm van gespecialiseerde geluidemissie- en geluidoverdrachtsobjecten.&#xA;&#xA;&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen"><map name="imagemap-EAID_4D140CCE_0889_4998_B668_8E4DB0053589"><area shape="rect" alt="Monitoringresultaat" coords="541,380,758,505" href="#graph_EAID_BA00B77B_D408_4590_8185_CE59E5838F1E"><area shape="rect" alt="Geluidgegevenscollectie" coords="607,75,843,254" href="#graph_EAID_313C5AF9_49B8_4860_9E65_DE7C70084864"><area shape="rect" alt="Geluidoverdrachtobject" coords="915,609,1155,737" href="#graph_EAID_2FEA326B_B7E7_48a4_B50F_00CCB2694677"><area shape="rect" alt="Geluidemissieobject" coords="396,604,617,732" href="#graph_EAID_361C96BA_A638_494e_80BA_590ED481A81B"><area shape="rect" alt="GeluidproductieplafondobjectIndustrie" coords="41,567,263,656" href="#graph_EAID_54EBAB06_4239_44c9_A4FF_72CDA727F5D3"><area shape="rect" alt="Hoogtelijn" coords="695,988,883,1068" href="#graph_EAID_CE3003A0_5F16_4630_B2A6_519B33439135"><area shape="rect" alt="Geluidschermdeel" coords="685,805,893,970" href="#graph_EAID_BC342A75_1053_4086_9B42_321F22E3FA82"><area shape="rect" alt="VlakbronIndustrie" coords="46,899,286,1040" href="#graph_EAID_43CE47B3_F0C4_4ee1_A29C_DA9AE6216E59"><area shape="rect" alt="IndustrieRekeninstellingen" coords="937,279,1201,373" href="#graph_EAID_7B120AD1_3CF4_4d78_9CA8_B7D7B709DB5A"><area shape="rect" alt="Bodemvlak" coords="1147,759,1335,861" href="#graph_EAID_902B9218_E1B1_4512_B52A_F8DADD1DB990"><area shape="rect" alt="Geluidberekeninggegevens" coords="937,411,1201,567" href="#graph_EAID_97ED59FE_9FCA_49a6_8F07_214E48000B76"><area shape="rect" alt="Industrieterrein" coords="285,73,485,253" href="#graph_EAID_3CF82A2D_EBD2_45f5_BDBF_6B65612322CD"><area shape="rect" alt="LijnbronIndustrie" coords="46,745,286,863" href="#graph_EAID_EF66CAA4_E8AE_4eca_8176_0B5CE277CD47"><area shape="rect" alt="Procesinstallatiegebied" coords="933,924,1121,1052" href="#graph_EAID_F66BFCFE_8850_4cf0_8769_084A9455A966"><area shape="rect" alt="Vegetatiegebied" coords="1147,924,1335,1034" href="#graph_EAID_C09CF91E_C221_4fe9_B126_08102B3DEF5A"><area shape="rect" alt="Documentverwijzing" coords="35,75,234,253" href="#graph_EAID_7E137496_1028_4af5_9367_569358A2167B"><area shape="rect" alt="Geluidproductieplafondobject" coords="38,328,267,512" href="#graph_EAID_237408F8_8CE9_4828_B8FB_1A5B8C917622"><area shape="rect" alt="Bouwwerk" coords="685,609,893,789" href="#graph_EAID_8A05EFB0_A6AD_45e8_AE68_FAA4399063F2"><area shape="rect" alt="Geluidaandachtsgebied" coords="948,73,1148,253" href="#graph_EAID_B06128AC_518C_4e26_88E5_14ED5A050A19"><area shape="rect" alt="GeluidbronIndustrie" coords="364,805,650,1002" href="#graph_EAID_7B6D3D2D_0C70_435a_AAFC_FABC9CD61353"></map><p><b>GPP Industrie - overzicht</b> — In domeinmodel GPP Industrie staan objecttypen en relaties die relevant zijn voor
             geluidbronbeheersing van industrieterreinen waarvoor de geluidproductieplafond regeling
             geldt; en die nodig zijn voor akoestisch onderzoek binnen het geluidaandachtsgebied
             van het industrieterrein.
@@ -8084,8 +8139,8 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_43CE47B3_F0C4_4ee1_A29C_DA9AE6216E59"></a><a class="anchor" id="global_class_GPPIndustrie_Geluidbronvlak"></a><section id="global_class_GPPIndustrie_Geluidbronvlak">
-            <h5>   Geluidbronvlak</h5>
+         <a class="anchor" id="graph_EAID_43CE47B3_F0C4_4ee1_A29C_DA9AE6216E59"></a><a class="anchor" id="global_class_GPPIndustrie_VlakbronIndustrie"></a><section id="global_class_GPPIndustrie_VlakbronIndustrie">
+            <h5>   VlakbronIndustrie</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -8093,7 +8148,7 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Geluidbronvlak</td>
+                     <td>VlakbronIndustrie</td>
                   </tr>
                   <tr>
                      <th>Herkomst</th>
@@ -8118,7 +8173,7 @@
                         <ul>
                            
                            <li>Voor herleidbaarheid van de berekening kunnen deze punten gelinkt worden aan de bijbehorende
-                              vlakbron. </li>
+                              vlakbron.</li>
                            
                            <li>Een vlakbron is afgeleid uit de vlak geometrie van een geluidbrontype uit een rekenpakket.
                               Deze vlakbron kan ook extra eigenschappen hebben die worden gebruikt door rekensoftware.</li>
@@ -8144,7 +8199,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_GPPIndustrie_Geluidbronvlak_geometrie">geometrie</a>
+                        <a class="link" href="#detail_attribute_GPPIndustrie_VlakbronIndustrie_geometrie">geometrie</a>
                         </td>
                      <td>
                         
@@ -8158,7 +8213,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_GPPIndustrie_Geluidbronvlak_identificatie">identificatie</a>
+                        <a class="link" href="#detail_attribute_GPPIndustrie_VlakbronIndustrie_identificatie">identificatie</a>
                         </td>
                      <td>
                         
@@ -8171,7 +8226,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_GPPIndustrie_Geluidbronvlak_negeerOverdrachtsobjecten">negeerOverdrachtsobjecten</a>
+                        <a class="link" href="#detail_attribute_GPPIndustrie_VlakbronIndustrie_negeerOverdrachtsobjecten">negeerOverdrachtsobjecten</a>
                         </td>
                      <td>
                         
@@ -8185,7 +8240,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_GPPIndustrie_Geluidbronvlak_naam">naam</a>
+                        <a class="link" href="#detail_attribute_GPPIndustrie_VlakbronIndustrie_naam">naam</a>
                         </td>
                      <td>
                         
@@ -8198,7 +8253,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_GPPIndustrie_Geluidbronvlak_omschrijving">omschrijving</a>
+                        <a class="link" href="#detail_attribute_GPPIndustrie_VlakbronIndustrie_omschrijving">omschrijving</a>
                         </td>
                      <td>
                         
@@ -8231,14 +8286,14 @@
                         
                         [ 1 .. * ]
                         
-                        <a class="link" href="#detail_association_GPPIndustrie_GeluidbronIndustrie_geluidbronvlak">geluidbronvlak: geluidbronvlak</a>
+                        <a class="link" href="#detail_association_GPPIndustrie_GeluidbronIndustrie_vlakbronIndustrie">vlakbronIndustrie: vlakbronIndustrie</a>
                         
-                        Geluidbronvlak
+                        VlakbronIndustrie
                         [ 0 .. 1 ]
                         </td>
                      <td>
                         
-                        <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een Geluidbronvlak.</p>
+                        <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een VlakbronIndustrie.</p>
                         </td>
                   </tr>
                </tbody>
@@ -8544,8 +8599,8 @@
                         </td>
                      <td>
                         
-                        <p>Geeft aan of geluidbron onderdeel is van een normale puntbron, uitstalende gevel of
-                           uitstralend dak.</p>
+                        <p>Geeft aan of GeluidbronIndustrie onderdeel is van een normale puntbron, uitstalende
+                           gevel of uitstralend dak.</p>
                         </td>
                      <td>
                         <a class="link" href="#global_class_GPPAlgemeen_BronTypeWaarde">BronTypeWaarde</a>
@@ -8558,7 +8613,7 @@
                         </td>
                      <td>
                         
-                        <p>Hoogte van een punt ten opzichte van NAP waarop eerste reflectie van een geluidbron
+                        <p>Hoogte van een punt ten opzichte van NAP waarop eerste reflectie van een GeluidbronIndustrie
                            op een oppervlak plaatsvindt.</p>
                         </td>
                      <td>
@@ -8586,8 +8641,8 @@
                         </td>
                      <td>
                         
-                        <p>Geeft aan dat procesinstallatiegebieden waarbinnen de bron zich bevindt geen effect
-                           hebben op de geluidsoverdracht van bron naar ontvanger.</p>
+                        <p>Geeft aan dat procesinstallatiegebieden waarbinnen de GeluidbronIndustrie zich bevindt
+                           geen effect hebben op de geluidsoverdracht van bron naar ontvanger.</p>
                         </td>
                      <td>
                         Boolean
@@ -8629,7 +8684,7 @@
                         </td>
                      <td>
                         
-                        <p>Richting waarop geluidbron emissie uitstraalt.</p>
+                        <p>Richting waarop GeluidbronIndustrie emissie uitstraalt.</p>
                         </td>
                      <td>
                         <a class="link" href="#global_class_GPPIndustrie_BronUitstralingsRichtingWaarde">BronUitstralingsRichtingWaarde</a>
@@ -8642,7 +8697,7 @@
                         </td>
                      <td>
                         
-                        <p>Geometrie van GeluidbronIndustrie.</p>
+                        <p>3D geometrie van GeluidbronIndustrie.</p>
                         </td>
                      <td>
                         GM_Point
@@ -8669,16 +8724,16 @@
                         GeluidbronIndustrie
                         [ 1 .. * ]
                         
-                        <a class="link" href="#detail_association_GPPIndustrie_GeluidbronIndustrie_geluidbronlijn">geluidbronlijn: geluidbronlijn</a>
+                        <a class="link" href="#detail_association_GPPIndustrie_GeluidbronIndustrie_lijnbronIndustrie">lijnbronIndustrie: lijnbronIndustrie</a>
                         
                         
-                        <a class="link" href="#global_class_GPPIndustrie_Geluidbronlijn">Geluidbronlijn</a>
+                        <a class="link" href="#global_class_GPPIndustrie_LijnbronIndustrie">LijnbronIndustrie</a>
                         
                         [ 0 .. 1 ]
                         </td>
                      <td>
                         
-                        <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een Geluidbronlijn.</p>
+                        <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een LijnbronIndustrie.</p>
                         </td>
                   </tr>
                   <tr>
@@ -8686,16 +8741,16 @@
                         GeluidbronIndustrie
                         [ 1 .. * ]
                         
-                        <a class="link" href="#detail_association_GPPIndustrie_GeluidbronIndustrie_geluidbronvlak">geluidbronvlak: geluidbronvlak</a>
+                        <a class="link" href="#detail_association_GPPIndustrie_GeluidbronIndustrie_vlakbronIndustrie">vlakbronIndustrie: vlakbronIndustrie</a>
                         
                         
-                        <a class="link" href="#global_class_GPPIndustrie_Geluidbronvlak">Geluidbronvlak</a>
+                        <a class="link" href="#global_class_GPPIndustrie_VlakbronIndustrie">VlakbronIndustrie</a>
                         
                         [ 0 .. 1 ]
                         </td>
                      <td>
                         
-                        <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een Geluidbronvlak.</p>
+                        <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een VlakbronIndustrie.</p>
                         </td>
                   </tr>
                   <tr>
@@ -8993,8 +9048,8 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_EF66CAA4_E8AE_4eca_8176_0B5CE277CD47"></a><a class="anchor" id="global_class_GPPIndustrie_Geluidbronlijn"></a><section id="global_class_GPPIndustrie_Geluidbronlijn">
-            <h5>   Geluidbronlijn</h5>
+         <a class="anchor" id="graph_EAID_EF66CAA4_E8AE_4eca_8176_0B5CE277CD47"></a><a class="anchor" id="global_class_GPPIndustrie_LijnbronIndustrie"></a><section id="global_class_GPPIndustrie_LijnbronIndustrie">
+            <h5>   LijnbronIndustrie</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -9002,7 +9057,7 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Geluidbronlijn</td>
+                     <td>LijnbronIndustrie</td>
                   </tr>
                   <tr>
                      <th>Herkomst</th>
@@ -9027,10 +9082,9 @@
                         <ul>
                            
                            <li>Voor herleidbaarheid van de berekening kunnen deze punten gelinkt worden aan de bijbehorende
-                              lijnbron. </li>
+                              lijnbron.</li>
                            
-                           <li>Een lijnbron is afgeleid uit de lijn geometrie van een geluidbrontype uit rekensoftware.
-                              </li>
+                           <li>Een lijnbron is afgeleid uit de lijn geometrie van een geluidbrontype uit rekensoftware.</li>
                            </ul>
                         </td>
                   </tr>
@@ -9053,7 +9107,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_GPPIndustrie_Geluidbronlijn_geometrie">geometrie</a>
+                        <a class="link" href="#detail_attribute_GPPIndustrie_LijnbronIndustrie_geometrie">geometrie</a>
                         </td>
                      <td>
                         
@@ -9067,7 +9121,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_GPPIndustrie_Geluidbronlijn_identificatie">identificatie</a>
+                        <a class="link" href="#detail_attribute_GPPIndustrie_LijnbronIndustrie_identificatie">identificatie</a>
                         </td>
                      <td>
                         
@@ -9080,7 +9134,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_GPPIndustrie_Geluidbronlijn_naam">naam</a>
+                        <a class="link" href="#detail_attribute_GPPIndustrie_LijnbronIndustrie_naam">naam</a>
                         </td>
                      <td>
                         
@@ -9093,7 +9147,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_GPPIndustrie_Geluidbronlijn_omschrijving">omschrijving</a>
+                        <a class="link" href="#detail_attribute_GPPIndustrie_LijnbronIndustrie_omschrijving">omschrijving</a>
                         </td>
                      <td>
                         
@@ -9126,14 +9180,14 @@
                         
                         [ 1 .. * ]
                         
-                        <a class="link" href="#detail_association_GPPIndustrie_GeluidbronIndustrie_geluidbronlijn">geluidbronlijn: geluidbronlijn</a>
+                        <a class="link" href="#detail_association_GPPIndustrie_GeluidbronIndustrie_lijnbronIndustrie">lijnbronIndustrie: lijnbronIndustrie</a>
                         
-                        Geluidbronlijn
+                        LijnbronIndustrie
                         [ 0 .. 1 ]
                         </td>
                      <td>
                         
-                        <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een Geluidbronlijn.</p>
+                        <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een LijnbronIndustrie.</p>
                         </td>
                   </tr>
                </tbody>
@@ -9607,10 +9661,10 @@
                   </table>
                   </div>
                </section>
-            <a class="anchor" id="detail_class_GPPIndustrie_Geluidbronvlak"></a><section id="detail_class_GPPIndustrie_Geluidbronvlak">
-               <h6>   Geluidbronvlak</h6>
-               <a class="anchor" id="detail_attribute_GPPIndustrie_Geluidbronvlak_geometrie"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_Geluidbronvlak_geometrie">
-                  <h7>  <a href="#global_class_GPPIndustrie_Geluidbronvlak">Geluidbronvlak</a> geometrie</h7>
+            <a class="anchor" id="detail_class_GPPIndustrie_VlakbronIndustrie"></a><section id="detail_class_GPPIndustrie_VlakbronIndustrie">
+               <h6>   VlakbronIndustrie</h6>
+               <a class="anchor" id="detail_attribute_GPPIndustrie_VlakbronIndustrie_geometrie"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_VlakbronIndustrie_geometrie">
+                  <h7>  <a href="#global_class_GPPIndustrie_VlakbronIndustrie">VlakbronIndustrie</a> geometrie</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -9677,8 +9731,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_GPPIndustrie_Geluidbronvlak_identificatie"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_Geluidbronvlak_identificatie">
-                  <h7>  <a href="#global_class_GPPIndustrie_Geluidbronvlak">Geluidbronvlak</a> identificatie</h7>
+               <a class="anchor" id="detail_attribute_GPPIndustrie_VlakbronIndustrie_identificatie"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_VlakbronIndustrie_identificatie">
+                  <h7>  <a href="#global_class_GPPIndustrie_VlakbronIndustrie">VlakbronIndustrie</a> identificatie</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -9730,8 +9784,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_GPPIndustrie_Geluidbronvlak_negeerOverdrachtsobjecten"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_Geluidbronvlak_negeerOverdrachtsobjecten">
-                  <h7>  <a href="#global_class_GPPIndustrie_Geluidbronvlak">Geluidbronvlak</a> negeerOverdrachtsobjecten</h7>
+               <a class="anchor" id="detail_attribute_GPPIndustrie_VlakbronIndustrie_negeerOverdrachtsobjecten"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_VlakbronIndustrie_negeerOverdrachtsobjecten">
+                  <h7>  <a href="#global_class_GPPIndustrie_VlakbronIndustrie">VlakbronIndustrie</a> negeerOverdrachtsobjecten</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -9764,8 +9818,8 @@
                               <p>Deze optie bestaat omdat het bronvermogen per m2 vaak gegeven is inclusief de bebouwing
                                  op de kavel.
                                  Deze attribuutsoort wordt gebruikt om aan te geven dat de vlakbron een Oppervlaktebron
-                                 is in Geomilieu dat reflecterende en afschermende objecten negeert . Dit geldt dus
-                                 niet voor andere items zoals procesinstallatiegebieden</p>
+                                 is waarbinnen reflecterende en afschermende objecten worden genegeerd . Dit geldt
+                                 dus niet voor andere items zoals procesinstallatiegebieden</p>
                               </td>
                         </tr>
                         <tr>
@@ -9818,8 +9872,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_GPPIndustrie_Geluidbronvlak_naam"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_Geluidbronvlak_naam">
-                  <h7>  <a href="#global_class_GPPIndustrie_Geluidbronvlak">Geluidbronvlak</a> naam</h7>
+               <a class="anchor" id="detail_attribute_GPPIndustrie_VlakbronIndustrie_naam"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_VlakbronIndustrie_naam">
+                  <h7>  <a href="#global_class_GPPIndustrie_VlakbronIndustrie">VlakbronIndustrie</a> naam</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -9875,8 +9929,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_GPPIndustrie_Geluidbronvlak_omschrijving"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_Geluidbronvlak_omschrijving">
-                  <h7>  <a href="#global_class_GPPIndustrie_Geluidbronvlak">Geluidbronvlak</a> omschrijving</h7>
+               <a class="anchor" id="detail_attribute_GPPIndustrie_VlakbronIndustrie_omschrijving"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_VlakbronIndustrie_omschrijving">
+                  <h7>  <a href="#global_class_GPPIndustrie_VlakbronIndustrie">VlakbronIndustrie</a> omschrijving</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -10217,8 +10271,8 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Geeft aan of geluidbron onderdeel is van een normale puntbron, uitstalende gevel of
-                                 uitstralend dak.</p>
+                              <p>Geeft aan of GeluidbronIndustrie onderdeel is van een normale puntbron, uitstalende
+                                 gevel of uitstralend dak.</p>
                               </td>
                         </tr>
                         <tr>
@@ -10290,7 +10344,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Hoogte van een punt ten opzichte van NAP waarop eerste reflectie van een geluidbron
+                              <p>Hoogte van een punt ten opzichte van NAP waarop eerste reflectie van een GeluidbronIndustrie
                                  op een oppervlak plaatsvindt.</p>
                               </td>
                         </tr>
@@ -10304,8 +10358,8 @@
                               
                               <ul>
                                  
-                                 <li>Voor een geluidbron binnen het industriedomein, is het relevant om te weten wat het
-                                    hoogteverschil is tussen de bron en het eerste punt waarop reflectie zal plaatsvinden.</li>
+                                 <li>Voor een GeluidbronIndustrie binnen het industriedomein, is het relevant om te weten
+                                    wat het hoogteverschil is tussen de bron en het eerste punt waarop reflectie zal plaatsvinden.</li>
                                  
                                  <li>Wanneer de geluidemissie van deze bron wordt meegenomen in een geluidberekening, wordt
                                     een rechte lijn getrokken tussen bron en ontvanger.</li>
@@ -10430,8 +10484,8 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Geeft aan dat procesinstallatiegebieden waarbinnen de bron zich bevindt geen effect
-                                 hebben op de geluidsoverdracht van bron naar ontvanger.</p>
+                              <p>Geeft aan dat procesinstallatiegebieden waarbinnen de GeluidbronIndustrie zich bevindt
+                                 geen effect hebben op de geluidsoverdracht van bron naar ontvanger.</p>
                               </td>
                         </tr>
                         <tr>
@@ -10616,7 +10670,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Richting waarop geluidbron emissie uitstraalt.</p>
+                              <p>Richting waarop GeluidbronIndustrie emissie uitstraalt.</p>
                               </td>
                         </tr>
                         <tr>
@@ -10706,7 +10760,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Geometrie van GeluidbronIndustrie.</p>
+                              <p>3D geometrie van GeluidbronIndustrie.</p>
                               </td>
                         </tr>
                         <tr>
@@ -10755,8 +10809,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_association_GPPIndustrie_GeluidbronIndustrie_geluidbronlijn"></a><div class="deepheader" id="detail_association_GPPIndustrie_GeluidbronIndustrie_geluidbronlijn">
-                  <h7>Relatiesoort details  <a href="#global_class_GPPIndustrie_GeluidbronIndustrie">GeluidbronIndustrie</a> geluidbronlijn</h7>
+               <a class="anchor" id="detail_association_GPPIndustrie_GeluidbronIndustrie_lijnbronIndustrie"></a><div class="deepheader" id="detail_association_GPPIndustrie_GeluidbronIndustrie_lijnbronIndustrie">
+                  <h7>Relatiesoort details  <a href="#global_class_GPPIndustrie_GeluidbronIndustrie">GeluidbronIndustrie</a> lijnbronIndustrie</h7>
                   
                   
                   <table style="width: 100%;">
@@ -10765,13 +10819,13 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>geluidbronlijn</td>
+                           <td>lijnbronIndustrie</td>
                         </tr>
                         <tr>
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een Geluidbronlijn.</p>
+                              <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een LijnbronIndustrie.</p>
                               </td>
                         </tr>
                         <tr>
@@ -10781,14 +10835,14 @@
                         <tr>
                            <th>Gerelateerd objecttype</th>
                            <td>
-                              <a class="link" href="#global_class_GPPIndustrie_Geluidbronlijn">Geluidbronlijn</a>
+                              <a class="link" href="#global_class_GPPIndustrie_LijnbronIndustrie">LijnbronIndustrie</a>
                               </td>
                         </tr>
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_association_GPPIndustrie_GeluidbronIndustrie_geluidbronvlak"></a><div class="deepheader" id="detail_association_GPPIndustrie_GeluidbronIndustrie_geluidbronvlak">
-                  <h7>Relatiesoort details  <a href="#global_class_GPPIndustrie_GeluidbronIndustrie">GeluidbronIndustrie</a> geluidbronvlak</h7>
+               <a class="anchor" id="detail_association_GPPIndustrie_GeluidbronIndustrie_vlakbronIndustrie"></a><div class="deepheader" id="detail_association_GPPIndustrie_GeluidbronIndustrie_vlakbronIndustrie">
+                  <h7>Relatiesoort details  <a href="#global_class_GPPIndustrie_GeluidbronIndustrie">GeluidbronIndustrie</a> vlakbronIndustrie</h7>
                   
                   
                   <table style="width: 100%;">
@@ -10797,13 +10851,13 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>geluidbronvlak</td>
+                           <td>vlakbronIndustrie</td>
                         </tr>
                         <tr>
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een Geluidbronvlak.</p>
+                              <p>Een of meerdere GeluidbronIndustrie objecten horen wel of niet bij een VlakbronIndustrie.</p>
                               </td>
                         </tr>
                         <tr>
@@ -10813,7 +10867,7 @@
                         <tr>
                            <th>Gerelateerd objecttype</th>
                            <td>
-                              <a class="link" href="#global_class_GPPIndustrie_Geluidbronvlak">Geluidbronvlak</a>
+                              <a class="link" href="#global_class_GPPIndustrie_VlakbronIndustrie">VlakbronIndustrie</a>
                               </td>
                         </tr>
                      </tbody>
@@ -11225,7 +11279,7 @@
                            <th>Toelichting</th>
                            <td>
                               
-                              <p>Heeft momenteel 2 mogelijke waarden (bladverliezend en niet bladverliezend).</p>
+                              <p>Opties zijn hier de waarden horende bij bladverliezend OF niet bladverliezend.</p>
                               </td>
                         </tr>
                         <tr>
@@ -11409,10 +11463,10 @@
                   </table>
                   </div>
                </section>
-            <a class="anchor" id="detail_class_GPPIndustrie_Geluidbronlijn"></a><section id="detail_class_GPPIndustrie_Geluidbronlijn">
-               <h6>   Geluidbronlijn</h6>
-               <a class="anchor" id="detail_attribute_GPPIndustrie_Geluidbronlijn_geometrie"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_Geluidbronlijn_geometrie">
-                  <h7>  <a href="#global_class_GPPIndustrie_Geluidbronlijn">Geluidbronlijn</a> geometrie</h7>
+            <a class="anchor" id="detail_class_GPPIndustrie_LijnbronIndustrie"></a><section id="detail_class_GPPIndustrie_LijnbronIndustrie">
+               <h6>   LijnbronIndustrie</h6>
+               <a class="anchor" id="detail_attribute_GPPIndustrie_LijnbronIndustrie_geometrie"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_LijnbronIndustrie_geometrie">
+                  <h7>  <a href="#global_class_GPPIndustrie_LijnbronIndustrie">LijnbronIndustrie</a> geometrie</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -11477,8 +11531,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_GPPIndustrie_Geluidbronlijn_identificatie"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_Geluidbronlijn_identificatie">
-                  <h7>  <a href="#global_class_GPPIndustrie_Geluidbronlijn">Geluidbronlijn</a> identificatie</h7>
+               <a class="anchor" id="detail_attribute_GPPIndustrie_LijnbronIndustrie_identificatie"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_LijnbronIndustrie_identificatie">
+                  <h7>  <a href="#global_class_GPPIndustrie_LijnbronIndustrie">LijnbronIndustrie</a> identificatie</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -11530,8 +11584,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_GPPIndustrie_Geluidbronlijn_naam"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_Geluidbronlijn_naam">
-                  <h7>  <a href="#global_class_GPPIndustrie_Geluidbronlijn">Geluidbronlijn</a> naam</h7>
+               <a class="anchor" id="detail_attribute_GPPIndustrie_LijnbronIndustrie_naam"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_LijnbronIndustrie_naam">
+                  <h7>  <a href="#global_class_GPPIndustrie_LijnbronIndustrie">LijnbronIndustrie</a> naam</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -11587,8 +11641,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_GPPIndustrie_Geluidbronlijn_omschrijving"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_Geluidbronlijn_omschrijving">
-                  <h7>  <a href="#global_class_GPPIndustrie_Geluidbronlijn">Geluidbronlijn</a> omschrijving</h7>
+               <a class="anchor" id="detail_attribute_GPPIndustrie_LijnbronIndustrie_omschrijving"></a><div class="deepheader" id="detail_attribute_GPPIndustrie_LijnbronIndustrie_omschrijving">
+                  <h7>  <a href="#global_class_GPPIndustrie_LijnbronIndustrie">LijnbronIndustrie</a> omschrijving</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -12403,7 +12457,7 @@
                         
                         <ul>
                            
-                           <li>Kan alleen door ProRail worden aangeleverd voor GPP spoor</li>
+                           <li>Kan alleen worden aangeleverd voor GPP spoor</li>
                            </ul>
                         
                         <ul>
@@ -12443,7 +12497,7 @@
                         </td>
                      <td>
                         
-                        <p>Door ProRail gehanteerde categorisering van het typen geluidschermen</p>
+                        <p>De gehanteerde categorisering van het type geluidschermen.</p>
                         </td>
                      <td>
                         <a class="link" href="#global_class_GPPSpoor_Schermtype">Schermtype</a>
@@ -13224,7 +13278,7 @@
                   <th><a class="anchor" id="graph_EAID_C9ACE184_6E2B_40c1_ACE0_A7C5EE554EF9"></a><a class="anchor" id="global_class_GPPSpoor_Schermtype"></a><a class="link" href="#detail_class_GPPSpoor_Schermtype">Schermtype</a></th>
                   <td>
                      
-                     <p>Door ProRail gehanteerde categorisering van de typen geluidschermen.</p>
+                     <p>De gehanteerde categorisering van de type geluidschermen.</p>
                      </td>
                </tr>
             </tbody>
@@ -13438,7 +13492,7 @@
                            </tr>
                            <tr>
                               <th>Herkomst definitie</th>
-                              <td>Handboek akoestisch onderzoek Wet milieubeheer spoor 2017, v2</td>
+                              <td>Omgevingsregeling Geluid</td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
@@ -13925,7 +13979,7 @@
                            </tr>
                            <tr>
                               <th>Herkomst definitie</th>
-                              <td>https://www.ensie.nl/prorail/treintype</td>
+                              <td>IMGeluid</td>
                            </tr>
                            <tr>
                               <th>Mogelijk geen waarde</th>
@@ -14332,7 +14386,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Door ProRail gehanteerde categorisering van het typen geluidschermen</p>
+                              <p>De gehanteerde categorisering van het type geluidschermen.</p>
                               </td>
                         </tr>
                         <tr>
@@ -15011,12 +15065,9 @@
                               
                               <ul>
                                  
-                                 <li>ProRail heeft het hoogtelijnenmodel vereenvoudigd en onderscheid nu vijf verschillende
-                                    typen hoogtelijnen. </li>
-                                 
                                  <li>De typen Tunnelbaklijn, balastbedlijn en kantaardebaanlijn komen uit het spoorregister
                                     en mogen niet aangepast worden. De andere twee typen komen uit het Actueel Hoogtebestand
-                                    Nederland (AHN). </li>
+                                    Nederland (AHN).</li>
                                  </ul>
                               </td>
                         </tr>
@@ -15092,7 +15143,7 @@
          </section>
    </section><a class="anchor" id="global_package_GPPWeg"></a><section id="global_package_GPPWeg">
       <h3>Domein   GPP Weg</h3>
-      <div class="imageinfo overview"><img src="data/Images/EAID_82B8575E_C02C_4e96_9E78_ABCC68855A02.png" usemap="#imagemap-EAID_82B8575E_C02C_4e96_9E78_ABCC68855A02" alt="Diagram In domeinmodel GPP Weg staan objecttypen en relaties die relevant zijn voor geluidbronbeheersing van wegen waarvoor de geluidproductieplafond regeling geldt; en die nodig zijn voor akoestisch onderzoek binnen het geluidaandachtsgebied van wegen.&#xA;Geluidbronnen binnen GPP Weg worden opgeslagen als lijnbron conform het object “Wegdeel”. &#xA;Voor ieder &#34;Geluidproductieplafondobject&#34; langs een Provinciale weg of Rijksweg, valt te herleiden op welke geluidberekening de geluidproductieplafondwaarde gebaseerd is. Deze informatie wordt bijgehouden conform het &#34;Geluidberekeningobject&#34;.&#xA;Ook valt er te herleiden welke geluidbrongegevens gebruikt zijn bij een geluidberekening. Deze geluidbrongegevens zijn samen met het &#34;Geluidberekeningsobject&#34; terug te vinden in een  &#34;Geluidgegevenscollectie&#34; in de vorm van gespecialiseerde geluidemissie- en geluidoverdrachtsobjecten.&#xA;&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen"><map name="imagemap-EAID_82B8575E_C02C_4e96_9E78_ABCC68855A02"><area shape="rect" alt="Hoogtelijnspecificatie" coords="829,1006,1055,1095" href="#graph_EAID_B01AA864_A542_404a_908D_E23998395B87"><area shape="rect" alt="Monitoringresultaat" coords="585,696,793,811" href="#graph_EAID_BA00B77B_D408_4590_8185_CE59E5838F1E"><area shape="rect" alt="Geluidgegevenscollectie" coords="592,176,786,330" href="#graph_EAID_313C5AF9_49B8_4860_9E65_DE7C70084864"><area shape="rect" alt="Geluidemissieobject" coords="71,186,250,301" href="#graph_EAID_361C96BA_A638_494e_80BA_590ED481A81B"><area shape="rect" alt="Geluidoverdrachtobject" coords="71,355,250,470" href="#graph_EAID_2FEA326B_B7E7_48a4_B50F_00CCB2694677"><area shape="rect" alt="Diffractor" coords="360,897,570,1012" href="#graph_EAID_1B63DB45_6061_48e5_8890_AC0CA30E1454"><area shape="rect" alt="WegdeelGPP" coords="60,897,334,1055" href="#graph_EAID_955703EE_254E_4d46_89C5_37D46AEADA8B"><area shape="rect" alt="Bodemvlak" coords="1080,896,1256,985" href="#graph_EAID_902B9218_E1B1_4512_B52A_F8DADD1DB990"><area shape="rect" alt="Geluidschermdeel" coords="595,897,805,1053" href="#graph_EAID_BC342A75_1053_4086_9B42_321F22E3FA82"><area shape="rect" alt="Hoogtelijn" coords="829,896,1055,971" href="#graph_EAID_CE3003A0_5F16_4630_B2A6_519B33439135"><area shape="rect" alt="Geluidberekeninggegevens" coords="1034,662,1290,833" href="#graph_EAID_97ED59FE_9FCA_49a6_8F07_214E48000B76"><area shape="rect" alt="Documentverwijzing" coords="590,448,788,576" href="#graph_EAID_7E137496_1028_4af5_9367_569358A2167B"><area shape="rect" alt="Geluidaandachtsgebied" coords="1035,204,1263,309" href="#graph_EAID_B06128AC_518C_4e26_88E5_14ED5A050A19"><area shape="rect" alt="Geluidproductieplafondobject" coords="1015,415,1283,599" href="#graph_EAID_237408F8_8CE9_4828_B8FB_1A5B8C917622"></map><p><b>GPP Weg - overzicht</b> — In domeinmodel GPP Weg staan objecttypen en relaties die relevant zijn voor geluidbronbeheersing
+      <div class="imageinfo overview"><img src="data/Images/EAID_82B8575E_C02C_4e96_9E78_ABCC68855A02.png" usemap="#imagemap-EAID_82B8575E_C02C_4e96_9E78_ABCC68855A02" alt="Diagram In domeinmodel GPP Weg staan objecttypen en relaties die relevant zijn voor geluidbronbeheersing van wegen waarvoor de geluidproductieplafond regeling geldt; en die nodig zijn voor akoestisch onderzoek binnen het geluidaandachtsgebied van wegen.&#xA;Geluidbronnen binnen GPP Weg worden opgeslagen als lijnbron conform het object “Wegdeel”. &#xA;Voor ieder &#34;Geluidproductieplafondobject&#34; langs een Provinciale weg of Rijksweg, valt te herleiden op welke geluidberekening de geluidproductieplafondwaarde gebaseerd is. Deze informatie wordt bijgehouden conform het &#34;Geluidberekeningobject&#34;.&#xA;Ook valt er te herleiden welke geluidbrongegevens gebruikt zijn bij een geluidberekening. Deze geluidbrongegevens zijn samen met het &#34;Geluidberekeningsobject&#34; terug te vinden in een  &#34;Geluidgegevenscollectie&#34; in de vorm van gespecialiseerde geluidemissie- en geluidoverdrachtsobjecten.&#xA;&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen"><map name="imagemap-EAID_82B8575E_C02C_4e96_9E78_ABCC68855A02"><area shape="rect" alt="Hoogtelijnspecificatie" coords="307,1034,533,1123" href="#graph_EAID_B01AA864_A542_404a_908D_E23998395B87"><area shape="rect" alt="Monitoringresultaat" coords="453,655,661,770" href="#graph_EAID_BA00B77B_D408_4590_8185_CE59E5838F1E"><area shape="rect" alt="Geluidgegevenscollectie" coords="460,135,654,289" href="#graph_EAID_313C5AF9_49B8_4860_9E65_DE7C70084864"><area shape="rect" alt="Geluidemissieobject" coords="177,174,356,289" href="#graph_EAID_361C96BA_A638_494e_80BA_590ED481A81B"><area shape="rect" alt="Geluidoverdrachtobject" coords="178,521,357,636" href="#graph_EAID_2FEA326B_B7E7_48a4_B50F_00CCB2694677"><area shape="rect" alt="Diffractor" coords="37,667,247,782" href="#graph_EAID_1B63DB45_6061_48e5_8890_AC0CA30E1454"><area shape="rect" alt="WegdeelGPP" coords="36,308,267,467" href="#graph_EAID_955703EE_254E_4d46_89C5_37D46AEADA8B"><area shape="rect" alt="Bodemvlak" coords="344,811,520,900" href="#graph_EAID_902B9218_E1B1_4512_B52A_F8DADD1DB990"><area shape="rect" alt="Geluidschermdeel" coords="38,811,248,967" href="#graph_EAID_BC342A75_1053_4086_9B42_321F22E3FA82"><area shape="rect" alt="Hoogtelijn" coords="50,1034,276,1123" href="#graph_EAID_CE3003A0_5F16_4630_B2A6_519B33439135"><area shape="rect" alt="Geluidberekeninggegevens" coords="810,610,1038,781" href="#graph_EAID_97ED59FE_9FCA_49a6_8F07_214E48000B76"><area shape="rect" alt="Documentverwijzing" coords="458,407,656,535" href="#graph_EAID_7E137496_1028_4af5_9367_569358A2167B"><area shape="rect" alt="Geluidaandachtsgebied" coords="803,159,1038,264" href="#graph_EAID_B06128AC_518C_4e26_88E5_14ED5A050A19"><area shape="rect" alt="Geluidproductieplafondobject" coords="803,393,1038,577" href="#graph_EAID_237408F8_8CE9_4828_B8FB_1A5B8C917622"></map><p><b>GPP Weg - overzicht</b> — In domeinmodel GPP Weg staan objecttypen en relaties die relevant zijn voor geluidbronbeheersing
             van wegen waarvoor de geluidproductieplafond regeling geldt; en die nodig zijn voor
             akoestisch onderzoek binnen het geluidaandachtsgebied van wegen.
             Geluidbronnen binnen GPP Weg worden opgeslagen als lijnbron conform het object “Wegdeel”.
@@ -16895,7 +16946,7 @@
                            <th>Toelichting</th>
                            <td>
                               
-                              <p>Geospoortak maakt deel uit van een wissel</p>
+                              <p>SpoordeelBGE maakt deel uit van een wissel.</p>
                               </td>
                         </tr>
                         <tr>
@@ -16993,7 +17044,7 @@
                            </tr>
                            <tr>
                               <th>Herkomst definitie</th>
-                              <td>Handboek akoestisch onderzoek Wet milieubeheer spoor 2017, v2</td>
+                              <td>Omgevingsregeling Geluid</td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
@@ -17195,8 +17246,7 @@
                                  <li>Een spoor in het informatiemodel is opgebouwd uit allemaal afzonderlijke segmenten,
                                     de spoordelen. Een spoordeel dient homogene eigenschappen te hebben. Indien één van
                                     de eigenschappen van een spoordeel verandert, bijvoorbeeld de snelheid, dan ontstaat
-                                    er een nieuw spoordeel. Deze modellering wijkt af van het dynamisch gesegmenteerde
-                                    model waar ProRail zelf mee werkt.</li>
+                                    er een nieuw spoordeel. </li>
                                  </ul>
                               </td>
                         </tr>
@@ -17561,7 +17611,7 @@
                            </tr>
                            <tr>
                               <th>Herkomst definitie</th>
-                              <td>https://www.ensie.nl/prorail/treintype</td>
+                              <td>IMGeluid</td>
                            </tr>
                            <tr>
                               <th>Mogelijk geen waarde</th>
@@ -18363,7 +18413,7 @@
          </section>
    </section><a class="anchor" id="global_package_Cumulatief"></a><section id="global_package_Cumulatief">
       <h3>Domein   Cumulatief</h3>
-      <div class="imageinfo overview"><img src="data/Images/EAID_0C92279C_28A6_4454_84DC_4ACAECE11937.png" usemap="#imagemap-EAID_0C92279C_28A6_4454_84DC_4ACAECE11937" alt="Diagram In domeinmodel Cumulatief staan objecttypen en relaties ten behoeve van het uitvoeren van cumulatie van geluid. Voor luchthavens en schiet- of springterreinen betreft het geluidcontouren; voor windturbines betreft het geluidbrongegevens. &#xA;Een Geluidgegevenscollectie van cumulatieve gegevens bevat geen geluidaandachtsgebied. Informatie over de berekening van geluidcontouren wordt opgenomen in het geluidregister. &#xA;&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen."><map name="imagemap-EAID_0C92279C_28A6_4454_84DC_4ACAECE11937"><area shape="rect" alt="Geluidemissieobject" coords="484,274,740,403" href="#graph_EAID_361C96BA_A638_494e_80BA_590ED481A81B"><area shape="rect" alt="EmissiePerDagdeel" coords="35,660,342,748" href="#graph_EAID_2CA21F22_A3DC_41d4_82C3_37984841E391"><area shape="rect" alt="Documentverwijzing" coords="65,55,263,183" href="#graph_EAID_7E137496_1028_4af5_9367_569358A2167B"><area shape="rect" alt="Geluidgegevenscollectie" coords="430,46,687,200" href="#graph_EAID_313C5AF9_49B8_4860_9E65_DE7C70084864"><area shape="rect" alt="Windturbine" coords="483,469,739,583" href="#graph_EAID_DBD69202_F9F6_4121_99E0_A194D53BB62F"><area shape="rect" alt="contourType" coords="483,660,739,745" href="#graph_EAID_F0EBEC48_6162_4681_86C7_ECC93055F37A"><area shape="rect" alt="Geluidcontour" coords="36,274,292,428" href="#graph_EAID_593AE084_D3EF_403b_9863_496FC269DC87"><area shape="rect" alt="Geluidberekeninggegevens" coords="35,469,291,640" href="#graph_EAID_97ED59FE_9FCA_49a6_8F07_214E48000B76"></map><p><b>Overig -  overzicht</b> — In domeinmodel Cumulatief staan objecttypen en relaties ten behoeve van het uitvoeren
+      <div class="imageinfo overview"><img src="data/Images/EAID_0C92279C_28A6_4454_84DC_4ACAECE11937.png" usemap="#imagemap-EAID_0C92279C_28A6_4454_84DC_4ACAECE11937" alt="Diagram In domeinmodel Cumulatief staan objecttypen en relaties ten behoeve van het uitvoeren van cumulatie van geluid. Voor luchthavens en schiet- of springterreinen betreft het geluidcontouren; voor windturbines betreft het geluidbrongegevens. &#xA;Een Geluidgegevenscollectie van cumulatieve gegevens bevat geen geluidaandachtsgebied. Informatie over de berekening van geluidcontouren wordt opgenomen in het geluidregister. &#xA;&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grote in een nieuw tabblad te openen."><map name="imagemap-EAID_0C92279C_28A6_4454_84DC_4ACAECE11937"><area shape="rect" alt="Geluidemissieobject" coords="484,274,740,403" href="#graph_EAID_361C96BA_A638_494e_80BA_590ED481A81B"><area shape="rect" alt="EmissiePerDagdeel" coords="35,660,342,748" href="#graph_EAID_2CA21F22_A3DC_41d4_82C3_37984841E391"><area shape="rect" alt="Documentverwijzing" coords="65,55,263,183" href="#graph_EAID_7E137496_1028_4af5_9367_569358A2167B"><area shape="rect" alt="Geluidgegevenscollectie" coords="430,46,687,200" href="#graph_EAID_313C5AF9_49B8_4860_9E65_DE7C70084864"><area shape="rect" alt="Windturbine-as" coords="483,469,739,583" href="#graph_EAID_DBD69202_F9F6_4121_99E0_A194D53BB62F"><area shape="rect" alt="contourType" coords="483,660,739,745" href="#graph_EAID_F0EBEC48_6162_4681_86C7_ECC93055F37A"><area shape="rect" alt="Geluidcontour" coords="36,274,292,428" href="#graph_EAID_593AE084_D3EF_403b_9863_496FC269DC87"><area shape="rect" alt="Geluidberekeninggegevens" coords="35,469,291,640" href="#graph_EAID_97ED59FE_9FCA_49a6_8F07_214E48000B76"></map><p><b>Overig -  overzicht</b> — In domeinmodel Cumulatief staan objecttypen en relaties ten behoeve van het uitvoeren
             van cumulatie van geluid. Voor luchthavens en schiet- of springterreinen betreft het
             geluidcontouren; voor windturbines betreft het geluidbrongegevens. 
             Een Geluidgegevenscollectie van cumulatieve gegevens bevat geen geluidaandachtsgebied.
@@ -18499,7 +18549,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_Cumulatief_Geluidcontour_naamGeluidbron">naamGeluidbron</a>
+                        <a class="link" href="#detail_attribute_Cumulatief_Geluidcontour_naam">naam</a>
                         </td>
                      <td>
                         
@@ -18512,7 +18562,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_Cumulatief_Geluidcontour_omschrijvingGeluidbron">omschrijvingGeluidbron</a>
+                        <a class="link" href="#detail_attribute_Cumulatief_Geluidcontour_omschrijving">omschrijving</a>
                         </td>
                      <td>
                         
@@ -18573,8 +18623,8 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_DBD69202_F9F6_4121_99E0_A194D53BB62F"></a><a class="anchor" id="global_class_Cumulatief_Windturbine"></a><section id="global_class_Cumulatief_Windturbine">
-            <h5>   Windturbine</h5>
+         <a class="anchor" id="graph_EAID_DBD69202_F9F6_4121_99E0_A194D53BB62F"></a><a class="anchor" id="global_class_Cumulatief_Windturbineas"></a><section id="global_class_Cumulatief_Windturbineas">
+            <h5>   Windturbine-as</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -18582,7 +18632,7 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Windturbine</td>
+                     <td>Windturbine-as</td>
                   </tr>
                   <tr>
                      <th>Herkomst</th>
@@ -18635,7 +18685,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_Cumulatief_Windturbine_geometrie">geometrie</a>
+                        <a class="link" href="#detail_attribute_Cumulatief_Windturbineas_geometrie">geometrie</a>
                         </td>
                      <td>
                         
@@ -18648,7 +18698,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_Cumulatief_Windturbine_jaargemiddeldeGeluidemissie">jaargemiddeldeGeluidemissie</a>
+                        <a class="link" href="#detail_attribute_Cumulatief_Windturbineas_jaargemiddeldeGeluidemissie">jaargemiddeldeGeluidemissie</a>
                         </td>
                      <td>
                         
@@ -18661,7 +18711,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_Cumulatief_Windturbine_linkNaarMelding">linkNaarMelding</a>
+                        <a class="link" href="#detail_attribute_Cumulatief_Windturbineas_linkNaarMelding">linkNaarMelding</a>
                         </td>
                      <td>
                         
@@ -18675,7 +18725,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_Cumulatief_Windturbine_turbineHoogte">turbineHoogte</a>
+                        <a class="link" href="#detail_attribute_Cumulatief_Windturbineas_turbineHoogte">turbineHoogte</a>
                         </td>
                      <td>
                         
@@ -18703,7 +18753,7 @@
                   </tr>
                   <tr>
                      <td>
-                        Windturbine
+                        Windturbine-as
                         is specialisatie van
                         
                         <a class="link" href="#global_class_Algemeen_Geluidemissieobject">Geluidemissieobject</a>
@@ -19084,8 +19134,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_Cumulatief_Geluidcontour_naamGeluidbron"></a><div class="deepheader" id="detail_attribute_Cumulatief_Geluidcontour_naamGeluidbron">
-                  <h7>  <a href="#global_class_Cumulatief_Geluidcontour">Geluidcontour</a> naamGeluidbron</h7>
+               <a class="anchor" id="detail_attribute_Cumulatief_Geluidcontour_naam"></a><div class="deepheader" id="detail_attribute_Cumulatief_Geluidcontour_naam">
+                  <h7>  <a href="#global_class_Cumulatief_Geluidcontour">Geluidcontour</a> naam</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -19093,7 +19143,7 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>naamGeluidbron</td>
+                           <td>naam</td>
                         </tr>
                         <tr>
                            <th>Herkomst</th>
@@ -19141,8 +19191,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_Cumulatief_Geluidcontour_omschrijvingGeluidbron"></a><div class="deepheader" id="detail_attribute_Cumulatief_Geluidcontour_omschrijvingGeluidbron">
-                  <h7>  <a href="#global_class_Cumulatief_Geluidcontour">Geluidcontour</a> omschrijvingGeluidbron</h7>
+               <a class="anchor" id="detail_attribute_Cumulatief_Geluidcontour_omschrijving"></a><div class="deepheader" id="detail_attribute_Cumulatief_Geluidcontour_omschrijving">
+                  <h7>  <a href="#global_class_Cumulatief_Geluidcontour">Geluidcontour</a> omschrijving</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -19150,7 +19200,7 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>omschrijvingGeluidbron</td>
+                           <td>omschrijving</td>
                         </tr>
                         <tr>
                            <th>Herkomst</th>
@@ -19261,10 +19311,10 @@
                   </table>
                   </div>
                </section>
-            <a class="anchor" id="detail_class_Cumulatief_Windturbine"></a><section id="detail_class_Cumulatief_Windturbine">
-               <h6>   Windturbine</h6>
-               <a class="anchor" id="detail_attribute_Cumulatief_Windturbine_geometrie"></a><div class="deepheader" id="detail_attribute_Cumulatief_Windturbine_geometrie">
-                  <h7>  <a href="#global_class_Cumulatief_Windturbine">Windturbine</a> geometrie</h7>
+            <a class="anchor" id="detail_class_Cumulatief_Windturbineas"></a><section id="detail_class_Cumulatief_Windturbineas">
+               <h6>   Windturbine-as</h6>
+               <a class="anchor" id="detail_attribute_Cumulatief_Windturbineas_geometrie"></a><div class="deepheader" id="detail_attribute_Cumulatief_Windturbineas_geometrie">
+                  <h7>  <a href="#global_class_Cumulatief_Windturbineas">Windturbine-as</a> geometrie</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -19327,8 +19377,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_Cumulatief_Windturbine_jaargemiddeldeGeluidemissie"></a><div class="deepheader" id="detail_attribute_Cumulatief_Windturbine_jaargemiddeldeGeluidemissie">
-                  <h7>  <a href="#global_class_Cumulatief_Windturbine">Windturbine</a> jaargemiddeldeGeluidemissie</h7>
+               <a class="anchor" id="detail_attribute_Cumulatief_Windturbineas_jaargemiddeldeGeluidemissie"></a><div class="deepheader" id="detail_attribute_Cumulatief_Windturbineas_jaargemiddeldeGeluidemissie">
+                  <h7>  <a href="#global_class_Cumulatief_Windturbineas">Windturbine-as</a> jaargemiddeldeGeluidemissie</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -19376,8 +19426,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_Cumulatief_Windturbine_linkNaarMelding"></a><div class="deepheader" id="detail_attribute_Cumulatief_Windturbine_linkNaarMelding">
-                  <h7>  <a href="#global_class_Cumulatief_Windturbine">Windturbine</a> linkNaarMelding</h7>
+               <a class="anchor" id="detail_attribute_Cumulatief_Windturbineas_linkNaarMelding"></a><div class="deepheader" id="detail_attribute_Cumulatief_Windturbineas_linkNaarMelding">
+                  <h7>  <a href="#global_class_Cumulatief_Windturbineas">Windturbine-as</a> linkNaarMelding</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -19422,8 +19472,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_Cumulatief_Windturbine_turbineHoogte"></a><div class="deepheader" id="detail_attribute_Cumulatief_Windturbine_turbineHoogte">
-                  <h7>  <a href="#global_class_Cumulatief_Windturbine">Windturbine</a> turbineHoogte</h7>
+               <a class="anchor" id="detail_attribute_Cumulatief_Windturbineas_turbineHoogte"></a><div class="deepheader" id="detail_attribute_Cumulatief_Windturbineas_turbineHoogte">
+                  <h7>  <a href="#global_class_Cumulatief_Windturbineas">Windturbine-as</a> turbineHoogte</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -19555,7 +19605,7 @@
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
    <p><b>Deze tekst is normatief.</b>
-      <!--MIMLM-InformatiemodelGeluid-1.0-0-20200421-20200811-155807 imvertor 1.61.2--></p>
+      <!--MIMLM-InformatiemodelGeluid-1.0-0-20200421-20200812-164904 imvertor 1.61.2--></p>
    <section id="">
       <h3>   </h3><a class="anchor" id="graph_EAID_4A679509_B62E_4dfc_8864_C4852847204B"></a><a class="anchor" id="detail_class_Algemeen_Spoorstaafruwheid"></a><section id="detail_class_Algemeen_Spoorstaafruwheid">
          <h4>   Spoorstaafruwheid</h4>
@@ -19939,7 +19989,7 @@
                <tr>
                   <td>
                      
-                     <p>Enumeratie van domeinen waarbij een geregistreerd object hoort. </p>
+                     <p>Enumeratie van domeinen waarbij een geregistreerd object kan horen. </p>
                      </td>
                </tr>
             </tbody>
@@ -19955,31 +20005,52 @@
                </tr>
                <tr>
                   <th>Rijkswegen</th>
-                  <td></td>
+                  <td>
+                     
+                     <p>De geluidbron van het aandachtsgebied zijn Rijkswegen.</p>
+                     </td>
                </tr>
                <tr>
                   <th>Provinciale wegen</th>
-                  <td></td>
+                  <td>
+                     
+                     <p>De geluidbron van het aandachtsgebied zijn Provinciale wegen.</p>
+                     </td>
                </tr>
                <tr>
                   <th>Gemeentewegen</th>
-                  <td></td>
+                  <td>
+                     
+                     <p>De geluidbron van het aandachtsgebied zijn Gemeentewegen.</p>
+                     </td>
                </tr>
                <tr>
                   <th>Waterschapswegen</th>
-                  <td></td>
+                  <td>
+                     
+                     <p>De geluidbron van het aandachtsgebied zijn Waterschapswegen.</p>
+                     </td>
                </tr>
                <tr>
                   <th>Hoofdspoorwegen</th>
-                  <td></td>
+                  <td>
+                     
+                     <p>De geluidbron van het aandachtsgebied zijn Hoofdspoorwegen.</p>
+                     </td>
                </tr>
                <tr>
                   <th>Lokale spoorwegen</th>
-                  <td></td>
+                  <td>
+                     
+                     <p>De geluidbron van het aandachtsgebied zijn Lokale spoorwegen.</p>
+                     </td>
                </tr>
                <tr>
                   <th>Industrieterreinen</th>
-                  <td></td>
+                  <td>
+                     
+                     <p>De geluidbron van het aandachtsgebied zijn Industrieterreinen.</p>
+                     </td>
                </tr>
             </tbody>
          </table>
@@ -20322,8 +20393,8 @@
                </tr>
             </tbody>
          </table>
-         </section><a class="anchor" id="graph_EAID_B6773E1F_22D6_4682_B531_6A2D392A2B3C"></a><a class="anchor" id="detail_class_Algemeen_ToepassingGegevenscollectie"></a><section id="detail_class_Algemeen_ToepassingGegevenscollectie">
-         <h4>Enumeratie details  ToepassingGegevenscollectie</h4>
+         </section><a class="anchor" id="graph_EAID_B6773E1F_22D6_4682_B531_6A2D392A2B3C"></a><a class="anchor" id="detail_class_Algemeen_TypeGegevenscollectie"></a><section id="detail_class_Algemeen_TypeGegevenscollectie">
+         <h4>Enumeratie details  TypeGegevenscollectie</h4>
          
          <table style="width: 100%;" class="list">
             <colgroup></colgroup>
@@ -20350,7 +20421,8 @@
                   <td>
                      
                      <p>Objecten die gebruikt zijn om GPP's of BGE's te berekenen en daarmee behoren bij de
-                        vastgestelde waarden. </p>
+                        vastgestelde waarden danwel objecten die horen bij de geluidbronnen windturbines,
+                        luchtvaart, schiet- of springterrein.</p>
                      </td>
                </tr>
                <tr>
@@ -20752,7 +20824,7 @@
                <tr>
                   <td>
                      
-                     <p>Door ProRail gehanteerde categorisering van de typen geluidschermen.</p>
+                     <p>De gehanteerde categorisering van de type geluidschermen.</p>
                      </td>
                </tr>
             </tbody>
