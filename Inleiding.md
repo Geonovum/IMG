@@ -50,8 +50,19 @@ toepassingsgebied en hoe deze catalogus wordt toegepast in een
 informatie- en data-uitwisselingsproces. In dit hoofdstuk zijn ook de normatieve
 referenties opgenomen en de lijst met algemene termen, definities en
 afkortingen. Hoofdstuk 4 is een korte samenvatting en identificatie van de
-catalogus in tabelvorm. In hoofdstuk 5 is het UML model opgenomen en
-wordt met verschillende diagrammen het informatiemodel toegelicht en wordt alle
-modelinformatie gegeven in tabelvorm. Hoofdstuk 6 bevat de inhoud van alle bij de gegevensuitwisseling gebruikte waardenlijsten.
+catalogus in tabelvorm. In hoofdstuk 5 is staat het Informatiemodel Geluid gespecificeerd in UML. In paragraaf 5.0 staan eerst alle diagrammen onder elkaar. Door op objecttypen in de diagrammen te klikken, kan meer gedetailleerde informatie in tabelvorm worden weergegeven. Hoofdstuk 6 bevat de inhoud van alle bij de gegevensuitwisseling gebruikte waardenlijsten.
 
 De bijlage geeft een overzicht van de wijzigingen in het informatiemodel ten opzichte van de vorige versie. 
+
+### Diagram leeswijzer
+
+Hoe deze catalogus kan worden gelezen wordt [in deze video verder toegelicht](https://www.youtube.com/watch?v=2UiJ38_QdRU). 
+Objecttypen worden binnen IMGeluid gecategoriseert als Administratief objecttype, Geluidberekening objecttype of Geluidgegevens objecttype. Deze categorisering wordt aangegeven in het diagram aan de hand van de kleuren in de legenda. 
+
+| Categorie              | Omschrijving                                                                                                                                                             |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Administratief objecttype   | Het objecttype bevat administratieve gegevens die onder andere zorgen voor de herleidbaarheid van geluidberekening objecttypes, door samenhang te creëren met zowel geluidgegevens objecttypes als externe documenten. |
+| Geluidberekening objecttype | Het objecttype heeft te maken met de uitkomst van een geluidberekening.                                                                                               |
+| Geluidgegevens objecttype   | Het objecttype heeft te maken met akoestische gegevens die gebruikt kunnen worden bij een geluidberekening.                                                           |
+
+![Legenda IMGeluid](media/Legenda1.png "Legenda IMGeluid")
