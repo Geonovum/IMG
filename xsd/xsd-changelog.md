@@ -1,7 +1,24 @@
 # Wijzigingen in de IMGeluid XML Schema's 
 
+## Tussen versie 07-09-2020 en 03-09-2020 (0.8)
+De belangrijkste wijzigingen worden hier opgesomd.
+
+- Alle xsd bestanden zijn samengevoegd tot één bestand IMG_Algemeen.xsd
+- GML versie 3.2.2 is meegeleverd (was in vorige versie 3.2.1)
+
+### IMG_Algemeen.xsd
+- De namespace prefix van `http://geluidgegevens.nl/algemeen` is aangepast van `Algemeen` naar `img`.
+- Geluidgegevenscollectie
+    - Element `jaar [0..1]` toegevoegd.
+- `Documentverwijzing` is een FeatureType geworden.
+- `Geluidemissieobject`
+    - Element is abstract gemaakt.
+    - `jaar` is hernoemd naar `situatieVan` en optioneel geworden.
+
+Er zijn nog meer gedetailleerde wijzigingen doorgevoerd naar aanleiding van de consultatie. Dit is te vinden in de bijlage bij het consultatieverslag. Het is niet langer mogelijk de verschillende versies van de xsd's in detail te vergelijken vanwege het samenvoegen van de bestanden.
+
 ## Tussen versie 14-05-2020 en 07-09-2020
-*[Lijst is nog niet volledig]*
+*[Lijst is niet volledig]*
 ### IMG_Algemeen.xsd
 
 - Geluidgegevenscollectie

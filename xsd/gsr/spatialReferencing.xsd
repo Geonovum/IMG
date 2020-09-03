@@ -10,26 +10,26 @@
 This schema is provided by Geonovum as a local copy, as a convenience to the user. This schema may itself reference a local copy of the schema originally referenced by URI. The local reference takes the form of a relative path, and is introduced by Geonovum.
 -->
 	<!-- ================================= Annotation ================================ -->
-	  <xs:annotation>
-		    <xs:documentation>This file was generated from ISO TC/211 UML class diagrams == 01-26-2005 12:24:48 ====== </xs:documentation>
-	  </xs:annotation>
-	  <!-- ================================== Imports ================================== -->
-	  <xs:import namespace="http://www.isotc211.org/2005/gco"
+   <xs:annotation>
+      <xs:documentation>This file was generated from ISO TC/211 UML class diagrams == 01-26-2005 12:24:48 ====== </xs:documentation>
+   </xs:annotation>
+   <!-- ================================== Imports ================================== -->
+   <xs:import namespace="http://www.isotc211.org/2005/gco"
               schemaLocation="../gco/gco.xsd"/>
-	  <xs:import namespace="http://www.opengis.net/gml/3.2"
+   <xs:import namespace="http://www.opengis.net/gml/3.2"
               schemaLocation="../gml/3.2.1/gml.xsd"/>
-	  <!-- ########################################################################### -->
-	  <!-- ########################################################################### -->
-	  <!-- ================================== Classes ================================= -->
-	  <!-- ........................................................................ -->
-	  <!--==XCGE: gml:AbstractCRS==-->
-	  <!-- ........................................................................ -->
-	  <xs:complexType name="SC_CRS_PropertyType">
-		    <xs:sequence minOccurs="0">
-			      <xs:element ref="gml:AbstractCRS"/>
-		    </xs:sequence>
-		    <xs:attributeGroup ref="gco:ObjectReference"/>
-		    <xs:attribute ref="gco:nilReason"/>
-	  </xs:complexType>
-	  <!-- =========================================================================== -->
+   <!-- ########################################################################### -->
+   <!-- ########################################################################### -->
+   <!-- ================================== Classes ================================= -->
+   <!-- ........................................................................ -->
+   <!--==XCGE: gml:AbstractCRS==-->
+   <!-- ........................................................................ -->
+   <xs:complexType name="SC_CRS_PropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="gml:AbstractCRS"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gco:ObjectReference"/>
+      <xs:attribute ref="gco:nilReason"/>
+   </xs:complexType>
+   <!-- =========================================================================== -->
 </xs:schema>

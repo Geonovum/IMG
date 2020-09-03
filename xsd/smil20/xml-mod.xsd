@@ -21,22 +21,22 @@
         targetNamespace="http://www.w3.org/XML/1998/namespace"><!--
 This schema is provided by Geonovum as a local copy, as a convenience to the user. This schema may itself reference a local copy of the schema originally referenced by URI. The local reference takes the form of a relative path, and is introduced by Geonovum.
 -->
-	  <attribute name="lang" type="language">
-		    <annotation>
-			      <documentation>In due course, we should install the relevant ISO 2- and 3-letter
+   <attribute name="lang" type="language">
+      <annotation>
+         <documentation>In due course, we should install the relevant ISO 2- and 3-letter
                 codes as the enumerated possible values . . .</documentation>
-		    </annotation>
-	  </attribute>
-	  <attribute name="space" default="preserve">
-		    <simpleType>
-			      <restriction base="NCName">
-				        <enumeration value="default"/>
-				        <enumeration value="preserve"/>
-			      </restriction>
-		    </simpleType>
-	  </attribute>
-	  <attributeGroup name="specialAttrs">
-		    <attribute ref="xml:lang"/>
-		    <attribute ref="xml:space"/>
-	  </attributeGroup>
+      </annotation>
+   </attribute>
+   <attribute name="space" default="preserve">
+      <simpleType>
+         <restriction base="NCName">
+            <enumeration value="default"/>
+            <enumeration value="preserve"/>
+         </restriction>
+      </simpleType>
+   </attribute>
+   <attributeGroup name="specialAttrs">
+      <attribute ref="xml:lang"/>
+      <attribute ref="xml:space"/>
+   </attributeGroup>
 </schema>

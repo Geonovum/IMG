@@ -36,88 +36,88 @@ between substitutionGroups and wildcard content.
 This schema is provided by Geonovum as a local copy, as a convenience to the user. This schema may itself reference a local copy of the schema originally referenced by URI. The local reference takes the form of a relative path, and is introduced by Geonovum.
 -->
 	<!-- import the smil20 namespaces -->
-	  <import namespace="http://www.w3.org/2001/SMIL20/" schemaLocation="smil20.xsd"/>
-	  <element name="animate" type="smil20lang:animateType"/>
-	  <complexType name="animateType">
-		    <complexContent>
-			      <extension base="smil20:animatePrototype">
-				        <choice minOccurs="0" maxOccurs="unbounded">
-					          <any namespace="##other" processContents="lax"/>
-				        </choice>
-				        <attributeGroup ref="smil20lang:CoreAttrs"/>
-				        <attributeGroup ref="smil20lang:TimingAttrs"/>
-				        <attributeGroup ref="smil20:animTargetAttrs"/>
-				        <attributeGroup ref="smil20:animModeAttrs"/>
-				        <attributeGroup ref="smil20:skipContentAttrs"/>
-				        <anyAttribute namespace="##any" processContents="strict"/>
-			      </extension>
-		    </complexContent>
-	  </complexType>
-	  <attributeGroup name="CoreAttrs">
-		    <attributeGroup ref="smil20:structureModuleAttrs"/>
-		    <attributeGroup ref="smil20:alternateContentAttrs"/>
-	  </attributeGroup>
-	  <attributeGroup name="TimingAttrs">
-		    <attributeGroup ref="smil20lang:BasicTimingAttrs"/>
-		    <attributeGroup ref="smil20:syncBehaviorAttrs"/>
-		    <attributeGroup ref="smil20:syncBehaviorDefaultAttrs"/>
-		    <attributeGroup ref="smil20:restartTimingAttrs"/>
-		    <attributeGroup ref="smil20:restartDefaultAttrs"/>
-		    <attributeGroup ref="smil20:fillTimingAttrs"/>
-		    <attributeGroup ref="smil20:fillDefaultAttrs"/>
-	  </attributeGroup>
-	  <attributeGroup name="BasicTimingAttrs">
-		    <attributeGroup ref="smil20:beginEndTimingAttrs"/>
-		    <attributeGroup ref="smil20:durTimingAttrs"/>
-		    <attributeGroup ref="smil20:repeatTimingAttrs"/>
-		    <attributeGroup ref="smil20:deprecatedRepeatTiming"/>
-		    <attributeGroup ref="smil20:minMaxTimingAttrs"/>
-	  </attributeGroup>
-	  <element name="animateMotion" type="smil20lang:animateMotionType"/>
-	  <complexType name="animateMotionType">
-		    <complexContent>
-			      <extension base="smil20:animateMotionPrototype">
-				        <choice minOccurs="0" maxOccurs="unbounded">
-					          <any namespace="##other" processContents="lax"/>
-				        </choice>
-				        <attributeGroup ref="smil20lang:CoreAttrs"/>
-				        <attributeGroup ref="smil20lang:TimingAttrs"/>
-				        <attributeGroup ref="smil20:animTargetAttrs"/>
-				        <attributeGroup ref="smil20:animModeAttrs"/>
-				        <attributeGroup ref="smil20:skipContentAttrs"/>
-				        <anyAttribute namespace="##any" processContents="strict"/>
-			      </extension>
-		    </complexContent>
-	  </complexType>
-	  <element name="animateColor" type="smil20lang:animateColorType"/>
-	  <complexType name="animateColorType">
-		    <complexContent>
-			      <extension base="smil20:animateColorPrototype">
-				        <choice minOccurs="0" maxOccurs="unbounded">
-					          <any namespace="##other" processContents="lax"/>
-				        </choice>
-				        <attributeGroup ref="smil20lang:CoreAttrs"/>
-				        <attributeGroup ref="smil20lang:TimingAttrs"/>
-				        <attributeGroup ref="smil20:animTargetAttrs"/>
-				        <attributeGroup ref="smil20:animModeAttrs"/>
-				        <attributeGroup ref="smil20:skipContentAttrs"/>
-				        <anyAttribute namespace="##any" processContents="strict"/>
-			      </extension>
-		    </complexContent>
-	  </complexType>
-	  <element name="set" type="smil20lang:setType"/>
-	  <complexType name="setType">
-		    <complexContent>
-			      <extension base="smil20:setPrototype">
-				        <choice minOccurs="0" maxOccurs="unbounded">
-					          <any namespace="##other" processContents="lax"/>
-				        </choice>
-				        <attributeGroup ref="smil20lang:CoreAttrs"/>
-				        <attributeGroup ref="smil20lang:TimingAttrs"/>
-				        <attributeGroup ref="smil20:animTargetAttrs"/>
-				        <attributeGroup ref="smil20:skipContentAttrs"/>
-				        <anyAttribute namespace="##any" processContents="strict"/>
-			      </extension>
-		    </complexContent>
-	  </complexType>
+   <import namespace="http://www.w3.org/2001/SMIL20/" schemaLocation="smil20.xsd"/>
+   <element name="animate" type="smil20lang:animateType"/>
+   <complexType name="animateType">
+      <complexContent>
+         <extension base="smil20:animatePrototype">
+            <choice minOccurs="0" maxOccurs="unbounded">
+               <any namespace="##other" processContents="lax"/>
+            </choice>
+            <attributeGroup ref="smil20lang:CoreAttrs"/>
+            <attributeGroup ref="smil20lang:TimingAttrs"/>
+            <attributeGroup ref="smil20:animTargetAttrs"/>
+            <attributeGroup ref="smil20:animModeAttrs"/>
+            <attributeGroup ref="smil20:skipContentAttrs"/>
+            <anyAttribute namespace="##any" processContents="strict"/>
+         </extension>
+      </complexContent>
+   </complexType>
+   <attributeGroup name="CoreAttrs">
+      <attributeGroup ref="smil20:structureModuleAttrs"/>
+      <attributeGroup ref="smil20:alternateContentAttrs"/>
+   </attributeGroup>
+   <attributeGroup name="TimingAttrs">
+      <attributeGroup ref="smil20lang:BasicTimingAttrs"/>
+      <attributeGroup ref="smil20:syncBehaviorAttrs"/>
+      <attributeGroup ref="smil20:syncBehaviorDefaultAttrs"/>
+      <attributeGroup ref="smil20:restartTimingAttrs"/>
+      <attributeGroup ref="smil20:restartDefaultAttrs"/>
+      <attributeGroup ref="smil20:fillTimingAttrs"/>
+      <attributeGroup ref="smil20:fillDefaultAttrs"/>
+   </attributeGroup>
+   <attributeGroup name="BasicTimingAttrs">
+      <attributeGroup ref="smil20:beginEndTimingAttrs"/>
+      <attributeGroup ref="smil20:durTimingAttrs"/>
+      <attributeGroup ref="smil20:repeatTimingAttrs"/>
+      <attributeGroup ref="smil20:deprecatedRepeatTiming"/>
+      <attributeGroup ref="smil20:minMaxTimingAttrs"/>
+   </attributeGroup>
+   <element name="animateMotion" type="smil20lang:animateMotionType"/>
+   <complexType name="animateMotionType">
+      <complexContent>
+         <extension base="smil20:animateMotionPrototype">
+            <choice minOccurs="0" maxOccurs="unbounded">
+               <any namespace="##other" processContents="lax"/>
+            </choice>
+            <attributeGroup ref="smil20lang:CoreAttrs"/>
+            <attributeGroup ref="smil20lang:TimingAttrs"/>
+            <attributeGroup ref="smil20:animTargetAttrs"/>
+            <attributeGroup ref="smil20:animModeAttrs"/>
+            <attributeGroup ref="smil20:skipContentAttrs"/>
+            <anyAttribute namespace="##any" processContents="strict"/>
+         </extension>
+      </complexContent>
+   </complexType>
+   <element name="animateColor" type="smil20lang:animateColorType"/>
+   <complexType name="animateColorType">
+      <complexContent>
+         <extension base="smil20:animateColorPrototype">
+            <choice minOccurs="0" maxOccurs="unbounded">
+               <any namespace="##other" processContents="lax"/>
+            </choice>
+            <attributeGroup ref="smil20lang:CoreAttrs"/>
+            <attributeGroup ref="smil20lang:TimingAttrs"/>
+            <attributeGroup ref="smil20:animTargetAttrs"/>
+            <attributeGroup ref="smil20:animModeAttrs"/>
+            <attributeGroup ref="smil20:skipContentAttrs"/>
+            <anyAttribute namespace="##any" processContents="strict"/>
+         </extension>
+      </complexContent>
+   </complexType>
+   <element name="set" type="smil20lang:setType"/>
+   <complexType name="setType">
+      <complexContent>
+         <extension base="smil20:setPrototype">
+            <choice minOccurs="0" maxOccurs="unbounded">
+               <any namespace="##other" processContents="lax"/>
+            </choice>
+            <attributeGroup ref="smil20lang:CoreAttrs"/>
+            <attributeGroup ref="smil20lang:TimingAttrs"/>
+            <attributeGroup ref="smil20:animTargetAttrs"/>
+            <attributeGroup ref="smil20:skipContentAttrs"/>
+            <anyAttribute namespace="##any" processContents="strict"/>
+         </extension>
+      </complexContent>
+   </complexType>
 </schema>
