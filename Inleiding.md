@@ -48,8 +48,7 @@ toepassing is. Hoofdstuk 3 geeft een beschrijving van dit
 toepassingsgebied en hoe deze catalogus wordt toegepast in een
 informatie- en data-uitwisselingsproces. In dit hoofdstuk zijn ook de normatieve
 referenties opgenomen en de lijst met algemene termen, definities en
-afkortingen. Hoofdstuk 4 is een korte samenvatting en identificatie van de
-catalogus in tabelvorm. In hoofdstuk 5 is staat het Informatiemodel Geluid gespecificeerd in UML. In paragraaf 5.0 staan eerst alle diagrammen onder elkaar. Door op objecttypen in de diagrammen te klikken, kan meer gedetailleerde informatie in tabelvorm worden weergegeven. Hoofdstuk 6 bevat de inhoud van alle bij de gegevensuitwisseling gebruikte waardenlijsten.
+afkortingen. In hoofdstuk 4 is staat het Informatiemodel Geluid gespecificeerd in UML. In paragraaf 5.0 staan eerst alle diagrammen onder elkaar. Door op objecttypen in de diagrammen te klikken, kan meer gedetailleerde informatie in tabelvorm worden weergegeven. Hoofdstuk 5 bevat de inhoud van alle bij de gegevensuitwisseling gebruikte waardenlijsten.
 
 De bijlage geeft een overzicht van de wijzigingen in het informatiemodel ten opzichte van de vorige versie. 
 
