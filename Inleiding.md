@@ -10,9 +10,8 @@ gemeenten en de waterschappen. Zij gaan geluidgegevens leveren aan de
 voorziening. Geluidgegevens zijn geluidbrongegevens, zoals verkeersgegevens, en
 berekende geluidwaarden, zoals geluidproductieplafonds en
 monitoringswaarden. In het Informatiemodel Geluid staan de afspraken en technische
-eisen waaraan de gegevens moeten voldoen. Om te komen
-tot een gedragen Informatiemodel Geluid stelt het ontwikkelteam CVGG deze op in
-overleg met bronhouders en gebruikers. Een informatiemodel (IM) is nodig om op
+eisen waaraan de gegevens moeten voldoen. Om te komen tot een gedragen Informatiemodel is deze opgesteld in overleg met bronhouders en gebruikers. 
+Een informatiemodel (IM) is nodig om op
 een interoperabele manier informatie uit te wisselen. Het bevat de formele
 definitie van objecten, attributen, relaties en regels in een bepaald
 toepassingsdomein, inclusief de eisen aan de structuur en inhoud (semantiek) van
