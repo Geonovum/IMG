@@ -1,9 +1,8 @@
 Scope 
 ========
 
-Het toepassingsdomein is beheersing van het geluid van wegen, spoorwegen, en industrieterreinen; en gegevensuitwisseling ten behoeve van akoestisch onderzoek. Dit wordt geoperationaliseerd in de CVGG. IMGeluid geeft de gedetailleerde beschrijving van structuur, inhoud en
-datakwaliteit van de CVGG en dient als basis voor de realisatie en ontsluiting
-van CVGG services.
+Het toepassingsdomein is beheersing van het geluid van wegen, spoorwegen, en industrieterreinen; en gegevensuitwisseling ten behoeve van akoestisch onderzoek. Dit wordt geoperationaliseerd in de CVGG. IMGeluid geeft een beschrijving van de structuur, inhoud en technische kwaliteit van de gegevens in de CVGG
+ en dient als basis voor de realisatie en ontsluiting van CVGG services.
 
 ### Achtergrond
 De gebruikstoepassing waar de semantiek van IMGeluid door wordt bepaald komt
@@ -19,9 +18,7 @@ voort uit verschillende wet- en regelgevingen. Deze zijn:
     De Omgevingswet bundelt en moderniseert in één wet alle wetten voor de
     leefomgeving. Vanaf 2021 treedt de wet in werking.
 
--   **Aanvullingsspoor geluid:** Het aanvullingsspoor geluid vult het nieuwe stelsel van omgevingsrecht aan met de Aanvullingswet geluid Omgevingswet, het Aanvullingsbesluit geluid Omgevingswet, en de Aanvullingsregeling geluid Omgevingswet. Het Aanvullingsbesluit geluid Omgevingswet bevat
-    regels over de geluidbelasting afkomstig van infrastructuur (wegen en
-    spoorwegen) en industrieterreinen. Regels voor deze geluidbronnen zijn tot
+-   **Aanvullingsspoor geluid:** De nieuwe geluidregelgeving onder de Omgevingswet wordt vormgegeven via het Aanvullingsspoor geluid onder de Omgevingswet. Het Aanvullingsspoor     geluid bestaat uit een Aanvullingswet, een Aanvullingsbesluit, en een Aanvullingsregeling. De belangrijkste regels over de beheersing van geluid afkomstig van infrastructuur     (wegen en spoorwegen) en industrieterreinen staat in het Aanvullingsbesluit geluid Omgevingswet. Regels voor deze geluidbronnen zijn tot
     dusver gesteld in en op grond van hoofdstuk 11 van de Wet milieubeheer voor
     rijksinfrastructuur en de Wet geluidhinder voor decentrale infrastructuur en
     industrieterreinen en voor geluidgevoelige objecten. De regels worden in
@@ -38,9 +35,7 @@ voort uit verschillende wet- en regelgevingen. Deze zijn:
     geluidsystematiek is samen met IPO, UvW, VNG en VNO-NCW ontwikkeld onder de
     noemer “Swung-2”.
 
--   **AREG:** Het Reken- en meetvoorschrift geluid 2012 zal vervangen worden via
-    de Aanvullingsregeling geluid (AREG) door aangepaste rekenregels in de
-    Omgevingsregeling.
+-   **AREG:** De Aanvullingsregeling geluid Omgevingswet (AREG) bevat het Reken- en Meetvoorschrift Geluid (RMG). Dit RMG bevat een aantal noodzakelijke en belangrijke wijzigingen ten opzichte van het RMG 2012.
 
 -   **INSPIRE:** De gegevens in het kader van de EU-richtlijn komen onder
     INSPIRE te vallen. INSPIRE is Europese regelgeving die de uitwisseling van
@@ -52,5 +47,5 @@ voort uit verschillende wet- en regelgevingen. Deze zijn:
     wisselen gegevens.
 
 ### Buiten scope
-Het IMGeluid is niet expliciet afgestemd op de [Basisregistratie Grootschalige Topografie](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/basisregistraties-en-stelselafspraken/inhoud-basisregistraties/bgt/) (BGT). Bij de ontwikkeling van het IMGeluid is wel gekeken naar de BGT. Echter is het IMGeluid vanuit de specifieke context van geluidsmodellering ontwikkeld, waarbij vooral de akoestische representatie van geluidbronnen en geluidoverdragende objecten centraal staat. Dit stelt specifieke eisen aan de te modelleren objecten. Daarnaast is er rekening gehouden met de huidige praktijk waarin bronhouders de BGT nog niet altijd hanteren als bron voor de objecten in geluidmodellen. 
+Het IMGeluid kiest een andere modellering van objecttypen dan de [Basisregistratie Grootschalige Topografie](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/basisregistraties-en-stelselafspraken/inhoud-basisregistraties/bgt/) (BGT). Bij de ontwikkeling van het IMGeluid is wel gekeken naar de BGT. Echter is het IMGeluid vanuit de specifieke context van geluidsmodellering ontwikkeld, waarbij vooral de akoestische representatie van geluidbronnen en geluidoverdragende objecten centraal staat. Dit stelt specifieke eisen aan de te modelleren objecten. Daarnaast is er rekening gehouden met de huidige praktijk waarin bronhouders de BGT nog niet altijd hanteren als bron voor de objecten in geluidmodellen. 
 
