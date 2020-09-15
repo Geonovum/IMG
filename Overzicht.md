@@ -195,7 +195,7 @@ In geluidmodellen is het bij het merendeel van de gemodelleerde objecten van bel
 
 Hoogte wordt in 3D geometrie opgenomen als derde coördinaat, de `H`, in elk coördinatenpaar van de geometrie. In hoofdstuk 5 is bij elk objecttype dat een geometrie als eigenschap heeft, bij deze eigenschap voorgeschreven of het om een 2D of 3D geometrie gaat.
 
-Hoogte is bij 3D geometrieën altijd aangegeven in meters ten opzichte van NAP. In sommige gevallen is het van belang om daarnaast te weten wat de relatieve hoogte is van het object ten opzichte van het maaiveld ter plaatse. Het IMGeluid maakt het mogelijk om deze informatie op te nemen als een lijst van hoogtegetallen die correspondeert met de lijst van coordinaten, i.e. voor elk coördinatenpaar (`x,y,H`) een getal dat de relatieve hoogte uitdrukt. De lijst van hoogtegetallen moet even lang zijn als de lijst met coördinatenparen, en dezelfde volgorde hanteren, zodat te zien is welk relatieve hoogtegetal correspondeert met welk coördinatenpaar. 
+Hoogte is bij 3D geometrieën altijd aangegeven in meters ten opzichte van NAP. In sommige gevallen is het van belang om daarnaast te weten wat de relatieve hoogte is van het object ten opzichte van het maaiveld ter plaatse. Het IMGeluid maakt het mogelijk om deze informatie op te nemen als een lijst van hoogtegetallen die correspondeert met de lijst van coordinaten, i.e. voor elk coördinatenpaar (`x,y,z`) een getal dat de relatieve hoogte uitdrukt. De lijst van hoogtegetallen moet even lang zijn als de lijst met coördinatenparen, en dezelfde volgorde hanteren, zodat te zien is welk relatieve hoogtegetal correspondeert met welk coördinatenpaar. 
 
 Indien nodig is het daarnaast mogelijk om aan te geven dat een object zwevend is ten opzichte van het maaiveld.
 
