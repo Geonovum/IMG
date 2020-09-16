@@ -45,16 +45,16 @@ In de consultatie op het Informatiemodel Geluid zijn 163 reacties ontvangen. Dit
 
 Zoals uit de tabellen naar voren komt is er wat overlap tussen bijvoorbeeld de categorie **Presentatie** en het onderwerp **Verbetering presentatie**. In deze gevallen zou het toevoegen van een onderwerp gezien kunnen worden als een check of in eerste instantie de juiste classificatie is toegepast. In andere gevallen geeft het onderwerp een beeld van op welke onderwerpen de opmerkingen inhoudelijk ingaan. Dit maakte het mogelijk om een overzicht van de resultaten te maken in een tabel en een staafdiagram. 
 
-![Overzicht consultatiereacties tabel](/cr/media/Samenvatting%20consultatiereacties%20tabel.png "Overzicht consultatiereacties tabel")
+![Overzicht consultatiereacties tabel](/IMG/cr/media/Samenvatting%20consultatiereacties%20tabel.png "Overzicht consultatiereacties tabel")
 
 
-![Overzicht consultatiereacties staafdiagram](/cr/media/Overzicht%20consultatiereacties%20grafiek.png "Overzicht consultatiereacties staafdiagram")
+![Overzicht consultatiereacties staafdiagram](/IMG/cr/media/Overzicht%20consultatiereacties%20grafiek.png "Overzicht consultatiereacties staafdiagram")
 
 
 **Hieronder staat een overzicht van alle categorieën met welk percentage van het totaal deze deze opmerkingen innemen.**
 
 
-![alt text](/cr/media/Percentage%20van%20totaal.png "Relatieve grote van categorieën")
+![alt text](/IMG/cr/media/Percentage%20van%20totaal.png "Relatieve grote van categorieën")
 
 42,68% van de reacties, iets minder dan de helft, ging inhoudelijk over de AREG en waren daardoor voor deze consultatie buiten scope. We maken hieruit op dat de boodschap rondom de consultatie wellicht nog duidelijker had gekund. Tijdens het reviewen van het informatiemodel beseften reviewers wellicht niet goed, dat een verzoek om het een of andere gegeven aan het informatiemodel toe te voegen, zodat het gebruikt kan worden bij de berekening, meestal vertaald moet worden naar een uitbreiding van de AREG. Het informatiemodel is immers volgend en kan inhoudelijk niet meer van dit soort gegevens bevatten dan in de AREG is aangegeven. 
 
