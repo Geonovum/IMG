@@ -24,7 +24,7 @@ In de consultatie op het Informatiemodel Geluid zijn 163 reacties ontvangen. Dit
 | **Presentatie**                        | Alle opmerkingen die ingaan op taalgebruik, opmaak en presentatie van IMGeluid.                     |
 | **Overig**                             | Alle overige opmerkingen die niet vallen in te delen in een categorie.                              |
 
-
+<br>
 
 | **Onderwerp opmerking**     | **Betekenis**                                                                                                     |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -47,8 +47,7 @@ Zoals uit de tabellen naar voren komt is er wat overlap tussen bijvoorbeeld de c
 
 ![Overzicht consultatiereacties tabel](/IMG/cr/media/Samenvatting%20consultatiereacties%20tabel.png "Overzicht consultatiereacties tabel")
 
-
-![Overzicht consultatiereacties staafdiagram](/IMG/cr/media/Overzicht%20consultatiereacties%20grafiek.png "Overzicht consultatiereacties staafdiagram")
+<img src="/IMG/cr/media/Overzicht%20consultatiereacties%20grafiek.png" alt="Overzicht consultatiereacties staafdiagram" width="300">
 
 
 **Hieronder staat een overzicht van alle categorieën met welk percentage van het totaal deze deze opmerkingen innemen.**
