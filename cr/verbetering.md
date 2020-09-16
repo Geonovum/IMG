@@ -13,9 +13,11 @@ Op hoofdlijnen is het volgende met de consultatiereacties gebeurd:
 
 ## Consultatie in kentallen
 
-In de consultatie op het Informatiemodel Geluid zijn 148 reacties ontvangen. Dit zijn individuele opmerkingen die door in totaal ?10? reagerende organisaties zijn ingediend. 
+In de consultatie op het Informatiemodel Geluid zijn 164 reacties ontvangen. Dit zijn individuele opmerkingen die door in totaal 16 reagerende organisaties zijn ingediend. 
 
-xxx % van de reacties, meer dan de helft, ging inhoudelijk over de AREG en waren daardoor voor deze consultatie buiten scope. We maken hieruit op dat de boodschap rondom de consultatie wellicht nog duidelijker had gekund. Tijdens het reviewen van het informatiemodel beseften reviewers wellicht niet goed, dat een verzoek om het een of andere gegeven aan het informatiemodel toe te voegen, zodat het gebruikt kan worden bij de berekening, meestal vertaald moet worden naar een uitbreiding van de AREG. Het informatiemodel is immers volgend en kan inhoudelijk niet meer van dit soort gegevens bevatten dan in de AREG is aangegeven. 
+42,68% van de reacties, iets minder dan de helft, ging inhoudelijk over de AREG en waren daardoor voor deze consultatie buiten scope. We maken hieruit op dat de boodschap rondom de consultatie wellicht nog duidelijker had gekund. Tijdens het reviewen van het informatiemodel beseften reviewers wellicht niet goed, dat een verzoek om het een of andere gegeven aan het informatiemodel toe te voegen, zodat het gebruikt kan worden bij de berekening, meestal vertaald moet worden naar een uitbreiding van de AREG. Het informatiemodel is immers volgend en kan inhoudelijk niet meer van dit soort gegevens bevatten dan in de AREG is aangegeven. 
+
+![alt text](cr/media/Percentage van totaal.png "Relatieve grote van categorieën")
 
 <aside class='issue'>
 To do: 1) Percentage reacties dat over de AREG ging, invullen; 2) De genoemde getallen verifieren 3) Aanvullen met een algemene opmerking over de verdeling van de opmerkingen over de onderwerpen.</aside>
