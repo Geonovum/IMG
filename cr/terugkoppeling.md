@@ -3,7 +3,7 @@
 ## Tekstuele zaken en voorbeelden
 *Betreft: Tekstuele fouten, verkeerde verwijzingen in de tekst, onduidelijkheden en fouten in de presentatie etc.*
 
-Dit betreft ca. xx% van de reacties. Deze ‘kleine’ issues leiden niet tot wijzigingen in de standaard, wel tot verbetering van de leesbaarheid en begrijpelijkheid.
+Dit betreft ca. 15,24% van de reacties. Deze ‘kleine’ issues leiden niet tot wijzigingen in de standaard, wel tot verbetering van de leesbaarheid en begrijpelijkheid.
 
 <aside class='issue'>
 To do: Percentage reacties invullen.</aside>
