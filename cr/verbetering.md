@@ -49,13 +49,13 @@ Zoals uit de tabellen naar voren komt is er wat overlap tussen bijvoorbeeld de c
 
 ![Overzicht consultatiereacties tabel](/IMG/cr/media/Samenvatting%20consultatiereacties%20tabel.png "Overzicht consultatiereacties tabel")
 
-<img src="/IMG/cr/media/Overzicht%20consultatiereacties%20grafiek2.png" alt="Overzicht consultatiereacties staafdiagram" width="600"> aanpassen
+<img src="/IMG/cr/media/Overzicht%20consultatiereacties%20grafiek2.png" alt="Overzicht consultatiereacties staafdiagram" width="100%"> aanpassen
 
 
 **Hieronder staat een overzicht van alle categorieën met welk percentage van het totaal deze deze opmerkingen innemen.**
 
 
-<img src="/IMG/cr/media/Percentage%20van%20totaal.png" alt="Relatieve grote van categorieën" width="600">
+<img src="/IMG/cr/media/Percentage%20van%20totaal.png" alt="Relatieve grote van categorieën" width="100%">
 
 42,68% van de reacties, iets minder dan de helft, ging inhoudelijk over de AREG en waren daardoor voor deze consultatie buiten scope. We maken hieruit op dat de boodschap rondom de consultatie wellicht nog duidelijker had gekund. Tijdens het reviewen van het informatiemodel beseften reviewers wellicht niet goed, dat een verzoek om het een of andere gegeven aan het informatiemodel toe te voegen, zodat het gebruikt kan worden bij de berekening, meestal vertaald moet worden naar een uitbreiding van de AREG. Het informatiemodel is immers volgend en kan inhoudelijk niet meer van dit soort gegevens bevatten dan in de AREG is aangegeven. 
 
