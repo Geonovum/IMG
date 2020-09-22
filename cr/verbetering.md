@@ -9,9 +9,7 @@ Op hoofdlijnen is het volgende met de consultatiereacties gebeurd:
 - Redactionele zaken (verkeerde verwijzingen, onduidelijke afbeeldingen en taal/spelfouten) zijn verwerkt in de nieuwe versie.
 - Inconsistenties in begrippen zijn opgeheven.
 - Onduidelijkheden of ruimte in interpretatie van de documentatie zijn zoveel mogelijk weggenomen door herformulering van teksten en/of extra toelichting.
-- Gevraagde wijzigingen die binnen scope waren zijn in overleg tussen Geonovum, RIVM en I&W al dan niet doorgevoerd op basis van argumenten.
-
-Toevoegen Algemene RIVM wijzigingen/wijzigingen package structuur
+- Gevraagde wijzigingen aan het informatiemodel die binnen scope waren, zijn in overleg tussen Geonovum, RIVM en I&W al dan niet doorgevoerd op basis van argumenten.
 
 ## Consultatie in kentallen
 
@@ -45,11 +43,11 @@ In de consultatie op het Informatiemodel Geluid zijn 163 reacties ontvangen. Dit
 | **INSPIRE**                 | Opmerkingen met betrekking op INSPIRE.                                                                            |
 | **Algemeen**                | Algemene opmerkingen op het IMGeluid die niet binnen een onderwerp ingedeeld zijn.                                |
 
-Zoals uit de tabellen naar voren komt is er wat overlap tussen bijvoorbeeld de categorie **Presentatie** en het onderwerp **Verbetering presentatie**. In deze gevallen zou het toevoegen van een onderwerp gezien kunnen worden als een check of in eerste instantie de juiste classificatie is toegepast. In andere gevallen geeft het onderwerp een samenvatting van de inhoud van een opmerking. Dit maakte het mogelijk om een overzicht van de resultaten te maken in een tabel en een staafdiagram. 
+Het onderwerp geeft een samenvatting van de inhoud van een opmerking. Dit maakte het mogelijk om een overzicht van de resultaten te maken in een tabel en een staafdiagram. 
 
-![Overzicht consultatiereacties tabel](/IMG/cr/media/Samenvatting%20consultatiereacties%20tabel.png "Overzicht consultatiereacties tabel")
+![Overzicht consultatiereacties tabel](../cr/media/Samenvatting%20consultatiereacties%20tabel.png "Overzicht consultatiereacties tabel")
 
-<img src="/IMG/cr/media/Overzicht%20consultatiereacties%20grafiek2.png" alt="Overzicht consultatiereacties staafdiagram" width="100%"> aanpassen
+<img src="../cr/media/Overzicht%20consultatiereacties%20grafiek3.png" alt="Overzicht consultatiereacties staafdiagram" width="100%"> aanpassen
 
 
 **Hieronder staat een overzicht van alle categorieën met welk percentage van het totaal deze deze opmerkingen innemen.**
