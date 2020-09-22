@@ -1,0 +1,564 @@
+<!DOCTYPE html><html lang="nl"><!-- HTML-Header ------------------------------------------------------------------------------><head><meta charset="utf-8"><meta name="generator" content="ReSpec 24.5.2"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+<!--------------------------------------------------------------------------------------------------
+//-- File. . . :  index.html
+//-- Bevat . . :  Template voor de index.html die verplicht is voor respec  
+//--              Gebaseerd op https://github.com/Geonovum/respec/wiki
+//--              Deze file moet worden neergezet in de root-directory van de 
+//--              betreffende standaard. 
+//-- Door. . . :  Jan van Gelder
+//--------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+//-- Log . . . :  20181015 - JvG - Initiele versie 
+//
+----------------------------------------------------------------------------------------------------
+0        1         2         3         4         5         6         7         8         9         0
+1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+--------------------------------------------------------------------------------------------------->
+        <!-- Invullen: de titel van de standaard of het document ---------------------------------->
+        <title>Consultatierapport Informatie Model Geluid</title>    
+        <!-- Invullen: de naam van de lokale CSS file --------------------------------------------->
+        <link rel="stylesheet" type="text/css" href="./media/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico">
+        
+        
+    <style id="respec-mainstyle">/*****************************************************************
+ * ReSpec 3 CSS
+ * Robin Berjon - http://berjon.com/
+ *****************************************************************/
+
+/* Override code highlighter background */
+.hljs {
+  background: transparent !important;
+}
+
+/* --- INLINES --- */
+h1 abbr,
+h2 abbr,
+h3 abbr,
+h4 abbr,
+h5 abbr,
+h6 abbr,
+a abbr {
+  border: none;
+}
+
+dfn {
+  font-weight: bold;
+}
+
+a.internalDFN {
+  color: inherit;
+  border-bottom: 1px solid #99c;
+  text-decoration: none;
+}
+
+a.externalDFN {
+  color: inherit;
+  border-bottom: 1px dotted #ccc;
+  text-decoration: none;
+}
+
+a.bibref {
+  text-decoration: none;
+}
+
+#references :target {
+  background: #eaf3ff;
+}
+
+cite .bibref {
+  font-style: normal;
+}
+
+code {
+  color: #c83500;
+}
+
+th code {
+  color: inherit;
+}
+
+/* --- TOC --- */
+
+.toc a,
+.tof a {
+  text-decoration: none;
+}
+
+a .secno,
+a .figno {
+  color: #000;
+}
+
+ul.tof,
+ol.tof {
+  list-style: none outside none;
+}
+
+.caption {
+  margin-top: 0.5em;
+  font-style: italic;
+}
+
+/* --- TABLE --- */
+
+table.simple {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-bottom: 3px solid #005a9c;
+}
+
+.simple th {
+  background: #005a9c;
+  color: #fff;
+  padding: 3px 5px;
+  text-align: left;
+}
+
+.simple th[scope="row"] {
+  background: inherit;
+  color: inherit;
+  border-top: 1px solid #ddd;
+}
+
+.simple td {
+  padding: 3px 10px;
+  border-top: 1px solid #ddd;
+}
+
+.simple tr:nth-child(even) {
+  background: #f0f6ff;
+}
+
+/* --- DL --- */
+
+.section dd>p:first-child {
+  margin-top: 0;
+}
+
+.section dd>p:last-child {
+  margin-bottom: 0;
+}
+
+.section dd {
+  margin-bottom: 1em;
+}
+
+.section dl.attrs dd,
+.section dl.eldef dd {
+  margin-bottom: 0;
+}
+
+#issue-summary>ul,
+.respec-dfn-list {
+  column-count: 2;
+}
+
+#issue-summary li,
+.respec-dfn-list li {
+  list-style: none;
+}
+
+details.respec-tests-details {
+  margin-left: 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+details.respec-tests-details>* {
+  padding-right: 2em;
+}
+
+details.respec-tests-details[open] {
+  z-index: 999999;
+  position: absolute;
+  border: thin solid #cad3e2;
+  border-radius: 0.3em;
+  background-color: white;
+  padding-bottom: 0.5em;
+}
+
+details.respec-tests-details[open]>summary {
+  border-bottom: thin solid #cad3e2;
+  padding-left: 1em;
+  margin-bottom: 1em;
+  line-height: 2em;
+}
+
+details.respec-tests-details>ul {
+  width: 100%;
+  margin-top: -0.3em;
+}
+
+details.respec-tests-details>li {
+  padding-left: 1em;
+}
+
+a[href].self-link:hover {
+  opacity: 1;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+}
+
+aside.example .marker > a.self-link {
+  color: inherit;
+}
+
+h2>a.self-link,
+h3>a.self-link,
+h4>a.self-link,
+h5>a.self-link,
+h6>a.self-link {
+  border: none;
+  color: inherit;
+  font-size: 83%;
+  height: 2em;
+  left: -1.6em;
+  opacity: .5;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  transition: opacity .2s;
+  width: 2em;
+}
+
+h2>a.self-link::before,
+h3>a.self-link::before,
+h4>a.self-link::before,
+h5>a.self-link::before,
+h6>a.self-link::before {
+  content: "§";
+  display: block;
+}
+
+@media (max-width: 767px) {
+  dd {
+    margin-left: 0;
+  }
+
+  /* Don't position self-link in headings off-screen */
+  h2>a.self-link,
+  h3>a.self-link,
+  h4>a.self-link,
+  h5>a.self-link,
+  h6>a.self-link {
+    left: auto;
+    top: auto;
+  }
+}
+
+@media print {
+  .removeOnSave {
+    display: none;
+  }
+}
+</style><link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/GN-BASIS.css"><link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico"><script id="initialUserConfig" type="application/json">{
+  "specStatus": "GN-BASIS",
+  "publishDate": "2020-09-22",
+  "editors": [
+    {
+      "name": "Linda van den Brink",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Joeri van Es",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    },
+    {
+      "name": "Linda van den Brink",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    }
+  ],
+  "shortName": "img-cr",
+  "pubDomain": "cvgg",
+  "github": "https://github.com/Geonovum/IMG/",
+  "issueBase": "https://github.com/Geonovum/IMG/issues/",
+  "edDraftURI": "https://geonovum.github.io/IMG/cr",
+  "licence": "cc-by-nd",
+  "localBiblio": {
+    "CITAAT": {
+      "title": "Titel van het Citaat",
+      "href": "http://url van de publicatie",
+      "status": "versie van de publicatie",
+      "publisher": "naam van de publiceerder",
+      "company": "eventueel naam van bedrijf"
+    },
+    "MIM": {
+      "id": "mim10",
+      "title": "MIM - Metamodel Informatie Modellering",
+      "href": "https://docs.geostandaarden.nl/mim/mim10/",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2017-06-14"
+    },
+    "ISO19108-2005": {
+      "href": "https://www.iso.org/standard/39891.html",
+      "title": "Geographic information -- Rules for application schema",
+      "date": "2005-06",
+      "publisher": "International Organization for Standardization"
+    }
+  },
+  "publishISODate": "2020-09-22T00:00:00.000Z",
+  "generatedSubtitle": "Document 22 september 2020"
+}</script><meta name="description" content="Dit document beschrijft de bevindingen uit de consultatie op het informatiemodel Geluid zoals gepubliceerd op 14 mei 2020 en de wijze waarop deze bevindingen verwerkt zijn. De consultatie is gehouden van 2 juni tot en met 3 juli 2020. In dit document geven we op hoofdlijnen een terugkoppeling op de belangrijkste punten."><script type="application/ld+json">{
+  "@context": [
+    "http://schema.org",
+    {
+      "@vocab": "http://schema.org/",
+      "@language": "nl",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "datePublished": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "inLanguage": {
+        "@language": null
+      },
+      "isBasedOn": {
+        "@type": "@id"
+      },
+      "license": {
+        "@type": "@id"
+      }
+    }
+  ],
+  "id": "https://docs.geostandaarden.nl/cvgg/basis--img-cr-20200922/",
+  "type": [
+    "TechArticle"
+  ],
+  "name": "Consultatierapport Informatie Model Geluid",
+  "inLanguage": "nl",
+  "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+  "datePublished": "2020-09-22",
+  "copyrightHolder": {
+    "name": "Geonovum",
+    "url": "https://www.geonovum.nl/"
+  },
+  "discussionUrl": "https://github.com/Geonovum/IMG/issues/",
+  "alternativeHeadline": "",
+  "description": "Dit document beschrijft de bevindingen uit de consultatie op het informatiemodel Geluid zoals gepubliceerd op 14 mei 2020 en de wijze waarop deze bevindingen verwerkt zijn. De consultatie is gehouden van 2 juni tot en met 3 juli 2020. In dit document geven we op hoofdlijnen een terugkoppeling op de belangrijkste punten.",
+  "editor": [
+    {
+      "type": "Person",
+      "name": "Linda van den Brink",
+      "worksFor": {
+        "name": "Geonovum",
+        "url": "https://www.geonovum.nl"
+      }
+    }
+  ],
+  "contributor": [
+    {
+      "type": "Person",
+      "name": "Joeri van Es",
+      "worksFor": {
+        "name": "Geonovum",
+        "url": "https://www.geonovum.nl"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Linda van den Brink",
+      "worksFor": {
+        "name": "Geonovum",
+        "url": "https://www.geonovum.nl"
+      }
+    }
+  ],
+  "citation": []
+}</script></head>
+    <!-- HTML-Body -------------------------------------------------------------------------------->
+    <body class="h-entry"><div class="head">
+  <a href="https://www.geonovum.nl/" class="logo"><img id="Geonovum" alt="Geonovum" width="132" height="67" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg"></a>
+  <h1 class="title p-name" id="title">Consultatierapport Informatie Model Geluid</h1>
+  
+  <h2>Geonovum <br>
+  Document <time class="dt-published" datetime="2020-09-22">22 september 2020</time></h2>
+  <dl>
+    <dt>Deze versie:</dt><dd><a class="u-url" href="https://docs.geostandaarden.nl/cvgg/basis--img-cr-20200922/">https://docs.geostandaarden.nl/cvgg/basis--img-cr-20200922/</a></dd><dt>Laatst gepubliceerde versie:</dt><dd><a href="https://docs.geostandaarden.nl/cvgg/img-cr/">https://docs.geostandaarden.nl/cvgg/img-cr/</a></dd>
+    
+    
+    <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/IMG/cr">https://geonovum.github.io/IMG/cr</a></dd>
+    <dt>Redacteur:</dt>
+    <dd class="p-author h-card vcard"><span class="p-name fn">Linda van den Brink</span>, <a class="p-org org h-org h-card" href="https://www.geonovum.nl">Geonovum</a></dd>
+    <dt>Auteurs:</dt><dd class="p-author h-card vcard"><span class="p-name fn">Joeri van Es</span>, <a class="p-org org h-org h-card" href="https://www.geonovum.nl">Geonovum</a></dd><dd class="p-author h-card vcard"><span class="p-name fn">Linda van den Brink</span>, <a class="p-org org h-org h-card" href="https://www.geonovum.nl">Geonovum</a></dd>
+    <dt>Doe mee:</dt><dd>
+      <a href="https://github.com/Geonovum/IMG/">GitHub Geonovum/IMG</a>
+    </dd><dd>
+      <a href="https://github.com/Geonovum/IMG/issues/">Dien een melding in</a>
+    </dd><dd>
+      <a href="https://github.com/Geonovum/IMG/commits/gh-pages">Revisiehistorie</a>
+    </dd><dd>
+      <a href="https://github.com/Geonovum/IMG/pulls/">Pull requests</a>
+    </dd>
+  </dl>
+  
+  
+    <dl>
+          <dt>Rechtenbeleid:</dt>
+          <dd>
+            <div class="copyright" style="margin: 0.25em 0;">
+              <abbr title="Creative Commons Attribution 4.0 International Public License">
+              <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img width="115" height="40" src="https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg" alt="Creative Commons Attribution 4.0 International Public License"></a>
+            </abbr>
+              <div style="display:inline-block; vertical-align:top">
+                <p style="font-size: small;">Creative Commons Attribution 4.0 International Public License<br>(CC-BY)</p>
+              </div>
+            </div>
+          </dd>
+        </dl>
+  <hr title="Separator for header">
+</div>
+        <section id="abstract" data-format="markdown" aria-busy="false" class="introductory"><h2>Samenvatting</h2><p>Dit document beschrijft de bevindingen uit de consultatie op het informatiemodel Geluid zoals gepubliceerd op 14 mei 2020 en de wijze waarop deze bevindingen verwerkt zijn. De consultatie is gehouden van 2 juni tot en met 3 juli 2020. In dit document geven we op hoofdlijnen een terugkoppeling op de belangrijkste punten. </p></section>        
+        <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>
+    <em>Deze paragraaf beschrijft de status van dit document ten tijde van publicatie. Het is mogelijk dat er actuelere versies van dit document bestaan. Een lijst van Geonovum publicaties en de laatste gepubliceerde versie van dit document zijn te vinden op <a href="https://www.geonovum.nl/geo-standaarden/alle-standaarden">https://www.geonovum.nl/geo-standaarden/alle-standaarden</a>.</em>
+  </p><p>
+
+
+
+
+
+    Dit is een document zonder officiële status.
+
+
+
+
+</p><p></p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding"><span class="secno">1. </span>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#aanleiding-voor-dit-document"><span class="secno">1.1 </span>Aanleiding voor dit document</a></li><li class="tocline"><a class="tocxref" href="#consultatie-doel-en-werkwijze"><span class="secno">1.2 </span>Consultatie, doel en werkwijze</a></li><li class="tocline"><a class="tocxref" href="#consultatie-en-andere-factoren"><span class="secno">1.3 </span>Consultatie en andere factoren</a></li><li class="tocline"><a class="tocxref" href="#reacties-uit-de-consultatie-en-hun-verwerking"><span class="secno">1.4 </span>Reacties uit de consultatie en hun verwerking</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><span class="secno">1.5 </span>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#verbetering"><span class="secno">2. </span>Consultatie verbetert de standaard</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-hebben-we-met-de-consultatiereacties-gedaan"><span class="secno">2.1 </span>Wat hebben we met de consultatiereacties gedaan?</a></li><li class="tocline"><a class="tocxref" href="#consultatie-in-kentallen"><span class="secno">2.2 </span>Consultatie in kentallen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#terugkoppeling"><span class="secno">3. </span>Terugkoppeling op reacties op de standaard</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#tekstuele-zaken-en-voorbeelden"><span class="secno">3.1 </span>Tekstuele zaken en voorbeelden</a></li><li class="tocline"><a class="tocxref" href="#onduidelijkheden"><span class="secno">3.2 </span>Onduidelijkheden</a></li><li class="tocline"><a class="tocxref" href="#inhoudelijke-reacties"><span class="secno">3.3 </span>Inhoudelijke reacties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inhoudelijke-reacties-over-de-areg"><span class="secno">3.3.1 </span>Inhoudelijke reacties over de AREG</a></li><li class="tocline"><a class="tocxref" href="#afstemming-op-inspire-standaarden"><span class="secno">3.3.2 </span>Afstemming op INSPIRE standaarden</a></li><li class="tocline"><a class="tocxref" href="#afstemming-op-bgt-standaarden"><span class="secno">3.3.3 </span>Afstemming op BGT standaarden</a></li><li class="tocline"><a class="tocxref" href="#aanpassing-domein-structuur-imgeluid"><span class="secno">3.3.4 </span>Aanpassing domein structuur IMGeluid</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#bijlage"><span class="secno">A. </span>Verwerking van reacties</a></li></ol></nav>
+
+        <!-- vanaf hier per hoofdstuk een sectie of een div in het document ----------------------->
+        <!-- Secties komen in de inhoudsopgave div's niet ----------------------------------------->
+        <!-- Secties hebben verplicht <h2> tags, div's niet --------------------------------------->
+
+        <!-- Voorbeelden: ------------------------------------------------------------------------->
+        <!-- <div id='H00' data-format="markdown" data-include="filenaam.md"></div> --------------->
+        <!-- voor een nieuw hoofdstuk kopieer je een regel, en voegt die toe ---------------------->
+        <section id="inleiding" data-format="markdown" aria-busy="false"><!--OddPage--><h2 id="x1-inleiding"><span class="secno">1. </span>Inleiding</h2><section id="aanleiding-voor-dit-document"><h3 id="x1-1-aanleiding-voor-dit-document"><span class="secno">1.1 </span>Aanleiding voor dit document</h3><p>Dit document beschrijft de bevindingen uit de consultatie op het informatiemodel Geluid zoals gepubliceerd op 14 mei 2020 en de wijze waarop deze bevindingen verwerkt zijn. De consultatie is gehouden van 2 juni tot en met 3 juli 2020. In dit document geven we op hoofdlijnen een terugkoppeling op de belangrijkste punten. Gezien de hoeveelheid reacties die we hebben mogen ontvangen is het niet mogelijk op elke individuele reactie een antwoord te geven.</p><p>Op basis van de consultatie zal van het Informatiemodel Geluid een Versie ter Vaststelling worden gepubliceerd. Deze versie zal uiteraard wijzigingen bevatten ten opzichte van de consultatieversie van 14 mei, maar in grote lijnen blijft het informatiemodel overeind. Mede dankzij alle reacties op de consultatieversie zijn vele verbeteringen en verduidelijkingen aangebracht. </p></section><section id="consultatie-doel-en-werkwijze"><h3 id="x1-2-consultatie-doel-en-werkwijze"><span class="secno">1.2 </span>Consultatie, doel en werkwijze</h3><p>De consultatie is een raadpleging van het werkveld met als doel verbetervoorstellen voor de in ontwikkeling zijnde standaard te verkrijgen. Dit is ook de manier waarop we naar de reacties hebben gekeken. Alle reacties zijn bestudeerd en gekeken is hoe deze leiden tot verbeteringen van de standaard. </p><p>Elke reactie is meegenomen in het ontwikkelproces en afgewogen. Niet elke reactie heeft tot aanpassingen geleid, om verschillende redenen. Ook dat proberen we in dit document met zijn bijlage te duiden. </p></section><section id="consultatie-en-andere-factoren"><h3 id="x1-3-consultatie-en-andere-factoren"><span class="secno">1.3 </span>Consultatie en andere factoren</h3><p>Tijdens de consultatieperiode kwamen er ook reacties uit het bouwteam dat bezig is met de implementatie van de Centrale Voorziening Geluidgegevens. Deze reacties hebben we tegelijkertijd met de consultatiereacties verwerkt, wat in sommige gevallen heeft geleid tot aanpassingen in het informatiemodel. Een goed voorbeeld van een aanpassing die is gedaan als gevolg van gesprekken met het bouwteam, is de aanpasing aan de structuur van het informatiemodel. Meer hierover is omschreven in <a href="#aanpassing-domein-structuur-imgeluid">hoofdstuk 3</a>.</p></section><section id="reacties-uit-de-consultatie-en-hun-verwerking"><h3 id="x1-4-reacties-uit-de-consultatie-en-hun-verwerking"><span class="secno">1.4 </span>Reacties uit de consultatie en hun verwerking</h3><p>Een significant deel van de reacties betreft niet zozeer het informatiemodel, maar de inhoud van de Aanvullingsregeling Geluid (AREG). Het informatiemodel Geluid volgt inhoudelijk dat wat in de AREG bepaald is. We waren daarom genoodzaakt deze reacties voor het informatiemodel buiten scope te plaatsen. We hebben deze reacties wel onder de aandacht gebracht bij de schrijvers van de AREG binnen het ministerie van Infrastructuur en Waterstaat.</p><p>Andere reacties vragen om aanpassingen in het informatiemodel die wel binnen scope waren. Dit gaat om zaken als het al dan niet verplicht zijn van individuele gegevens en het toegestane waardenbereik van een gegeven. Deze hebben we stuk voor stuk bekeken en al dan niet gehonoreerd. In de bijlage is te zien hoe elke reactie verwerkt is.</p><p>Een ander deel van de reacties vallen in de categorie redactioneel. Ze hebben te maken met behoefte aan verduidelijking, overige tekstuele zaken, en met de presentatie van afbeeldingen. Deze reacties hebben we meegenomen en verwerkt. </p><p>Het overzicht van alle reacties op de consultatie en hoe deze reacties verwerkt zijn in het informatiemodel is te vinden in <a href="#bijlage">Bijlage A van dit consultatierapport</a>.</p></section><section id="leeswijzer"><h3 id="x1-5-leeswijzer"><span class="secno">1.5 </span>Leeswijzer</h3><p>In dit document leest u het volgende. In <a href="#verbetering">hoofdstuk 2</a> worden algemene bevindingen en de wijze van verwerken van de consultatie beschreven. Dit geeft u een overzicht van hoe we met de consultatie zijn omgegaan. In <a href="#terugkoppeling">hoofdstuk 3</a> zoomen we in op de bevindingen. Dit doen we op hoofdlijnen. Dit betekent dat we een selectie van onderwerpen uit de consultatie hebben gekozen op basis van wat u belangrijk vond; we keken naar onderwerpen waar veel reactie op kwam of die cruciaal leken voor de doorontwikkeling. We beginnen met de algemene apecten, gevolgd door een behandeling van inhoudelijke onderwerpen. In <a href="#bijlage">bijlage A</a> is de tabel met alle (geanonimiseerde) reacties opgenomen. Bij elke reactie is aangegeven wat de status van verwerking is.</p></section></section>
+        <section id="verbetering" data-format="markdown" aria-busy="false"><!--OddPage--><h2 id="x2-consultatie-verbetert-de-standaard"><span class="secno">2. </span>Consultatie verbetert de standaard</h2><section id="wat-hebben-we-met-de-consultatiereacties-gedaan"><h3 id="x2-1-wat-hebben-we-met-de-consultatiereacties-gedaan"><span class="secno">2.1 </span>Wat hebben we met de consultatiereacties gedaan?</h3><p>De consultatiereacties zijn een belangrijk onderdeel geweest van het verdere ontwikkelproces van de standaard. Voor de verwerking in de standaard(documentatie) en voor de terugkoppeling via dit document is een analyse
+gedaan van onderwerpen waar veel vragen over zijn gesteld of opmerkingen over zijn gemaakt.</p><p>Op hoofdlijnen is het volgende met de consultatiereacties gebeurd:</p><ul>
+<li>Redactionele zaken (verkeerde verwijzingen, onduidelijke afbeeldingen en taal/spelfouten) zijn verwerkt in de nieuwe versie.</li>
+<li>Inconsistenties in begrippen zijn opgeheven.</li>
+<li>Onduidelijkheden of ruimte in interpretatie van de documentatie zijn zoveel mogelijk weggenomen door herformulering van teksten en/of extra toelichting.</li>
+<li>Gevraagde wijzigingen aan het informatiemodel die binnen scope waren, zijn in overleg tussen Geonovum, RIVM en I&amp;W al dan niet doorgevoerd op basis van argumenten.</li>
+</ul></section><section id="consultatie-in-kentallen"><h3 id="x2-2-consultatie-in-kentallen"><span class="secno">2.2 </span>Consultatie in kentallen</h3><p>In de consultatie op het Informatiemodel Geluid zijn 164 reacties ontvangen. Dit zijn individuele opmerkingen die door in totaal 16 reagerende organisaties zijn ingediend. Deze opmerkingen hebben we eerst allemaal gescanned en gecategoriseerd. Vervolgens hebben we na het verwerken van de opmerking een groeperend onderwerp eraan toegekend. In sommige situaties kwam dan bijvoorbeeld naar voren dat "inhoudelijk (Akoestisch onderzoek)" punt eigenlijk een Presentatie punt was. In de tabellen hieronder staan de categoriën en onderwerpen uitgelegd.</p><table>
+<thead>
+<tr>
+<th><strong>Categorie opmerking</strong></th>
+<th><strong>Betekenis</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Modelleer-technisch</strong></td>
+<td>Alle opmerkingen die ingaan op toepassing van MIM een uitvoering en documentatie van modelleerwerk.</td>
+</tr>
+<tr>
+<td><strong>Software (RIVM)</strong></td>
+<td>Alle opmerkingen die ingaan op aanlevering of gebruik van de CVGG.</td>
+</tr>
+<tr>
+<td><strong>Inhoudelijk (Akoestisch onderzoek)</strong></td>
+<td>Alle opmerkingen die ingaan op de inhoud van het IMGeluid of ontbrekende informatie aankaarten.</td>
+</tr>
+<tr>
+<td><strong>Inhoudelijk (AREG)</strong></td>
+<td>Alle opmerkingen die ingaan op de inhoud van de AREG, rekenregels en wettelijke verplichtingen.</td>
+</tr>
+<tr>
+<td><strong>Presentatie</strong></td>
+<td>Alle opmerkingen die ingaan op taalgebruik, opmaak en presentatie van IMGeluid.</td>
+</tr>
+<tr>
+<td><strong>Overig</strong></td>
+<td>Alle overige opmerkingen die niet vallen in te delen in een categorie.</td>
+</tr>
+</tbody></table><br><table>
+<thead>
+<tr>
+<th><strong>Onderwerp opmerking</strong></th>
+<th><strong>Betekenis</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Cumulatie</strong></td>
+<td>Opmerkingen met betrekking op domein Cumulatief.</td>
+</tr>
+<tr>
+<td><strong>Facultatief</strong></td>
+<td>Opmerkingen met betrekking op optionele en verplichte gegevens.</td>
+</tr>
+<tr>
+<td><strong>GPP Weg</strong></td>
+<td>Opmerkingen met betrekking op domein GPP Weg.</td>
+</tr>
+<tr>
+<td><strong>Hoogte</strong></td>
+<td>Opmerkingen met betrekking op optionele en verplichte gegevens.</td>
+</tr>
+<tr>
+<td><strong>Industrielawaai</strong></td>
+<td>Opmerkingen met betrekking op domein GPP Industrie.</td>
+</tr>
+<tr>
+<td><strong>Lokaal spoor</strong></td>
+<td>Opmerkingen met betrekking op Lokaal spoor.</td>
+</tr>
+<tr>
+<td><strong>Luchtvaart</strong></td>
+<td>Opmerkingen met betrekking op Luchtvaart.</td>
+</tr>
+<tr>
+<td><strong>Modelleer techniek</strong></td>
+<td>Opmerkingen die inhoudelijk ingaan op de modelleer technieken en standaarden, die in het IMGeluid zijn toegepast.</td>
+</tr>
+<tr>
+<td><strong>Verbetering presentatie</strong></td>
+<td>Opmerkingen met betrekking op spelling, grammatica of vormgeving.</td>
+</tr>
+<tr>
+<td><strong>BGE Weg</strong></td>
+<td>Opmerkingen met betrekking op domein BGE Weg.</td>
+</tr>
+<tr>
+<td><strong>Documentverwijzing</strong></td>
+<td>Opmerkingen met betrekking op objecttype documentverwijzing.</td>
+</tr>
+<tr>
+<td><strong>Overdrachtsobject</strong></td>
+<td>Opmerkingen met betrekking op objecttype Overdrachtsobject.</td>
+</tr>
+<tr>
+<td><strong>INSPIRE</strong></td>
+<td>Opmerkingen met betrekking op INSPIRE.</td>
+</tr>
+<tr>
+<td><strong>Algemeen</strong></td>
+<td>Algemene opmerkingen op het IMGeluid die niet binnen een onderwerp ingedeeld zijn.</td>
+</tr>
+</tbody></table><p>Het onderwerp geeft een samenvatting van de inhoud van een opmerking. Dit maakte het mogelijk om een overzicht van de resultaten te maken in een tabel en een staafdiagram. 
+<img src="./media/Samenvatting%20consultatiereacties%20tabel.png" alt="Overzicht consultatiereacties tabel" width="100%">
+<img src="./media/Overzicht%20consultatiereacties%20grafiek3.png" alt="Overzicht consultatiereacties staafdiagram" width="100%"></p><p><strong>Hieronder staat een overzicht van alle categorieën met welk percentage van het totaal deze deze opmerkingen innemen.</strong></p><img src="./media/Percentage%20van%20totaal.png" alt="Relatieve grootte van categorieën" width="100%"><p>42,68% van de reacties, iets minder dan de helft, ging inhoudelijk over de AREG en waren daardoor voor deze consultatie buiten scope. We maken hieruit op dat de boodschap rondom de consultatie wellicht nog duidelijker had gekund. Tijdens het reviewen van het informatiemodel beseften reviewers wellicht niet goed, dat een verzoek om het een of andere gegeven aan het informatiemodel toe te voegen, zodat het gebruikt kan worden bij de berekening, meestal vertaald moet worden naar een uitbreiding van de AREG. Het informatiemodel is immers volgend en kan inhoudelijk niet meer van dit soort gegevens bevatten dan in de AREG is aangegeven.</p></section></section>
+        <section id="terugkoppeling" data-format="markdown" aria-busy="false"><!--OddPage--><h2 id="x3-terugkoppeling-op-reacties-op-de-standaard"><span class="secno">3. </span>Terugkoppeling op reacties op de standaard</h2><section id="tekstuele-zaken-en-voorbeelden"><h3 id="x3-1-tekstuele-zaken-en-voorbeelden"><span class="secno">3.1 </span>Tekstuele zaken en voorbeelden</h3><p><em>Betreft: Tekstuele fouten, verkeerde verwijzingen in de tekst, onduidelijkheden en fouten in de presentatie etc.</em></p><p>Dit betreft ca. 15,24% van de reacties. Deze ‘kleine’ issues leiden niet tot wijzigingen in de standaard, wel tot verbetering van de leesbaarheid en begrijpelijkheid.</p></section><section id="onduidelijkheden"><h3 id="x3-2-onduidelijkheden"><span class="secno">3.2 </span>Onduidelijkheden</h3><p>Een aantal reacties ging over onduidelijkheden in het informatiemodel, die leidden tot interpretatieverschillen en vragen bij lezers. Op de punten die werden aangegeven hebben we de tekst zo veel mogelijk verduidelijkt. De belangrijkste punten waren:</p><ul>
+<li>Onduidelijkheden in het informatiemodel rondom hoogte van objecten. Dit is nu verduidelijkt in zowel hoofdstuk 3 waarin het informatiemodel inhoudelijk wordt toegelicht, als in hoofdstuk 5 bij de beschrijving van de individuele objecttypen. </li>
+<li>Onduidelijkheden rondom het al dan niet verplicht zijn van gegevens. Dit is nu verduidelijkt in hoofdstuk 3 waarin het informatiemodel inhoudelijk wordt toegelicht.</li>
+</ul></section><section id="inhoudelijke-reacties"><h3 id="x3-3-inhoudelijke-reacties"><span class="secno">3.3 </span>Inhoudelijke reacties</h3><p>Dit gaat om zaken als de afstemming op andere standaarden, het al dan niet verplicht zijn van individuele gegevens en het toegestane waardenbereik van een gegeven. Deze hebben we stuk voor stuk bekeken en al dan niet gehonoreerd. De belangrijkste inhoudelijke punten lichten we hieronder toe. </p><section id="inhoudelijke-reacties-over-de-areg"><h4 id="x3-3-1-inhoudelijke-reacties-over-de-areg"><span class="secno">3.3.1 </span>Inhoudelijke reacties over de AREG</h4><p>Een significant deel van de reacties betreft niet zozeer het informatiemodel Geluid, maar de inhoud van de Aanvullingsregeling Geluid (AREG). Dit was het geval bij alle reacties over het onderwerp luchtvaart, het merendeel van de reacties over lokaal spoor, en een deel van de overige reacties. Het ging hierbij voor een deel om vragen om verduidelijking, maar onder de reacties waren ook verzoeken tot uitbreiding van het informatiemodel. Het informatiemodel Geluid volgt echter inhoudelijk dat wat in de AREG bepaald is. Omdat het informatiemodel volgend is, kan het geen wijzigingen of aanvullingen op de AREG bevatten. De AREG zou eerst moeten worden aangepast voordat het informatiemodel deze aanpassing kan overnemen. De reacties die hierom vragen zijn daarom voor het informatiemodel buiten scope geplaatst.</p></section><section id="afstemming-op-inspire-standaarden"><h4 id="x3-3-2-afstemming-op-inspire-standaarden"><span class="secno">3.3.2 </span>Afstemming op INSPIRE standaarden</h4><p>INSPIRE is Europese regelgeving die de uitwisseling van gegevens over de leefomgeving binnen Europa vereenvoudigt. De Europese richtlijn is in 2009 verankerd in de Nederlandse wet en regelgeving. Ook gegevens over omgevingsgeluid vallen onder INSPIRE. Uit consultatiereacties werd duidelijk dat een deel van de gegevens die in het CVGG worden opgenomen, onder INSPIRE vallen, maar nog niet volledig voldeden aan de eisen die INSPIRE stelt aan de inhoud. Concreet gaat het om de geluidaandachtsgebieden: deze vallen onder het INSPIRE thema Gebiedsbeheer. Dit heeft tot een aanpassing geleid in het domein Algemeen van het IMGeluid om te zorgen dat verwijzingen naar besluiten en andere documenten alle gegevens bevatten die door INSPIRE vereist zijn.</p><p>Daarnaast is aandacht gevraagd voor nieuwe informatiemodellen die momenteel worden opgesteld in het kader van de Richtlijn Omgevingslawaai en die worden afgestemd op INSPIRE. Het gaat daarbij om wegdelen, spoordelen en geluidscontouren. Voor dit punt is nog nadere afstemming en onderzoek nodig. Geluidcontouren zijn in de context van IMGeluid mogelijk andere objecten dan de geluidcontouren voor de richtlijn Omgveingslawaai. Ook hebben wijzigingen rondom geluidcontouren impact op de AREG en kunnen daarom niet in deze fase worden doorgevoerd in het IMGeluid. </p></section><section id="afstemming-op-bgt-standaarden"><h4 id="x3-3-3-afstemming-op-bgt-standaarden"><span class="secno">3.3.3 </span>Afstemming op BGT standaarden</h4><p>Het IMGeluid heeft wat betreft fysieke objecten, die een rol spelen in de emissie of overdracht van geluid, een duidelijk raakvlak met de Basisregistratie Grootschalige Topografie (BGT). Enkele inconsistenties in naamgeving van gegevens en in toelichtende teksten bij IMGeluid gegevens, waarbij verwezen wordt naar de BGT, zijn gecorrigeerd. Het IMGeluid is niet verregaand geharmoniseerd met de BGT standaarden, omdat het in IMGeluid gaat om een op akoestische toepassingen toegespitst gebruik van fysieke objecten. </p></section><section id="aanpassing-domein-structuur-imgeluid"><h4 id="x3-3-4-aanpassing-domein-structuur-imgeluid"><span class="secno">3.3.4 </span>Aanpassing domein structuur IMGeluid</h4><p>In de consultatieversie zijn de objecttypen van IMGeluid gestructureerd binnen verschillende domeinen. Deze indeling was bruikbaar om het lezen van het IMGeluid voor consultatiedeelnemers en ontwikkeling van het IMGeluid makkelijker te maken. Om validatie aan de hand van de GML applicatieschema's gemakkelijker te maken voor het bouwteam van het geluidregister en anderen, moest deze structuur worden aangepast. De structuur van de GML applicatieschema's wordt namelijk direct afgeleid uit die van het IMGeluid. Om deze reden wordt in nieuwere versies van het IMGeluid geen domein structurering van objecttypen meer gehanteerd.</p></section></section></section>
+        <!--<section id='H02' data-format="markdown" data-include="Scope.md"></section>
+        <section id='H03' data-format="markdown" data-include="Overzicht.md"></section>
+        <section id='H04' data-format="markdown" data-include="identificatie.md"></section>-->
+        <section id="bijlage" data-format="markdown" class="appendix" aria-busy="false"><!--OddPage--><h2 id="a-verwerking-van-reacties"><span class="secno">A. </span>Verwerking van reacties</h2><p>Alle reacties op de consultatie zijn opgenomen in een Excel bestand en geanonimiseerd te bekijken. Iedere reactie is voorzien van een terugkoppeling die is toegevoegd na afhandeling van de opmerking. Neem er kennis van dat de paragraafnummering waarnaar verwezen wordt overeenkomt met die van de <a href="https://docs.geostandaarden.nl/cvgg/cv-im-img-20200514/">consultatieversie van het IMGeluid</a>.</p><p><a href="../cr/media/Overzicht%20reacties%20op%20consultatie%20IMGeluid%20(public).xlsx">Klik hier voor het Excel bestand</a></p></section>
+    
+
+<p role="navigation" id="back-to-top"><a href="#title">
+  <abbr title="Naar begin">↑</abbr></a></p><script src="https://www.w3.org/scripts/TR/2016/fixup.js"></script></body></html>

@@ -11,20 +11,6 @@
 //-- Log . . . :  20181009 - JvG - Initiele versie 
 //-----------------------------------------------------------------------------------*/
 
-/*-- Definitie van Image ------------------------------------------------------------*/
-img 
-{
-
-  height: auto;
-  width: auto;
-}
-
-/*-- Vult elke img met -fullwidth aan het einde van de titel tot volledige breedte ------------------------------------------------------------*/
-img[alt$="-fullwidth"]{
-  width:  100%;
-  display: block;
-}
-
 /*-- Definite van het Geonovum Logo bovenaan Respec document ------------------------*/
 img#Geonovum
 {
