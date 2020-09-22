@@ -1,5 +1,8 @@
 # Wijzigingen in de IMGeluid XML Schema's 
 
+## Tussen versie 03-09-2020 (0.8) en 22-09-2020 (0.9)
+De wijzigingen voortkomend uit de verwerking van de consultatie en de daarop volgende review door RIVM zijn doorgevoerd. 
+
 ## Tussen versie 07-09-2020 en 03-09-2020 (0.8)
 De belangrijkste wijzigingen worden hier opgesomd.
 
@@ -15,7 +18,7 @@ De belangrijkste wijzigingen worden hier opgesomd.
     - Element is abstract gemaakt.
     - `jaar` is hernoemd naar `situatieVan` en optioneel geworden.
 
-Er zijn nog meer gedetailleerde wijzigingen doorgevoerd naar aanleiding van de consultatie. Dit is te vinden in de bijlage bij het consultatieverslag. Het is niet langer mogelijk de verschillende versies van de xsd's in detail te vergelijken vanwege het samenvoegen van de bestanden.
+Er zijn nog meer gedetailleerde wijzigingen doorgevoerd naar aanleiding van de consultatie. Dit is te vinden in de bijlage bij [het consultatierapport](https://docs.geostandaarden.nl/cvgg/img/cr/). Het is niet langer mogelijk de verschillende versies van de xsd's in detail te vergelijken vanwege het samenvoegen van de bestanden.
 
 ## Tussen versie 14-05-2020 en 07-09-2020
 *[Lijst is niet volledig]*
