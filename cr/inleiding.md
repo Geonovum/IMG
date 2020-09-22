@@ -14,19 +14,14 @@ Elke reactie is meegenomen in het ontwikkelproces en afgewogen. Niet elke reacti
 Tijdens de consultatieperiode kwamen er ook reacties uit het bouwteam dat bezig is met de implementatie van de Centrale Voorziening Geluidgegevens. Deze reacties hebben we tegelijkertijd met de consultatiereacties verwerkt, wat in sommige gevallen heeft geleid tot aanpassingen in het informatiemodel.
 
 ## Reacties uit de consultatie en hun verwerking
-Een significant deel van de reacties betreft niet zozeer het informatiemodel, maar de inhoud van de Aanvullingsregeling Geluid (AREG). Het informatiemodel Geluid volgt inhoudelijk dat wat in de AREG bepaald is. We waren daarom genoodzaakd deze reacties voor het informatiemodel buiten scope te plaatsen. 
-
-<aside class="issue">Worden deze reacties doorgestuurd naar de schrijvers van de AREG? Indien mogelijk nog aan de tekst toevoegen wat er met de buiten scope reacties is gedaan.</aside>
+Een significant deel van de reacties betreft niet zozeer het informatiemodel, maar de inhoud van de Aanvullingsregeling Geluid (AREG). Het informatiemodel Geluid volgt inhoudelijk dat wat in de AREG bepaald is. We waren daarom genoodzaakt deze reacties voor het informatiemodel buiten scope te plaatsen. We hebben deze reacties wel onder de aandacht gebracht bij de schrijvers van de AREG binnen het ministerie van Infrastructuur en Waterstaat.
 
 Andere reacties vragen om aanpassingen in het informatiemodel die wel binnen scope waren. Dit gaat om zaken als het al dan niet verplicht zijn van individuele gegevens en het toegestane waardenbereik van een gegeven. Deze hebben we stuk voor stuk bekeken en al dan niet gehonoreerd. In de bijlage is te zien hoe elke reactie verwerkt is.
 
 Een ander deel van de reacties vallen in de categorie redactioneel. Ze hebben te maken met behoefte aan verduidelijking, overige tekstuele zaken, en met de presentatie van afbeeldingen. Deze reacties hebben we meegenomen en verwerkt. 
 
-De wijzigingen die zijn doorgevoerd in de versie ter vaststelling van het IMGeluid ten opzichte van de consultatieversie zijn samengevat in [Bijlage A van het informatiemodel Geluid](https://geonovum.github.io/IMG/#changelog).
+Het overzicht van alle reacties op de consultatie en hoe deze reacties verwerkt zijn in het informatiemodel is te vinden in [Bijlage A van dit consultatierapport](#bijlage).
 
-<aside class='issue'>To do: Deze URL nog aanpassen naar gepubliceerde versie</aside>
 
 ## Leeswijzer
-In dit document leest u het volgende. In [hoofdstuk 2](#verbetering) worden algemene bevindingen en de wijze van verwerken van de consultatie beschreven. Dit geeft u een overzicht van hoe we met de consultatie zijn omgegaan. In [hoofdstuk 3](#terugkoppeling) zoomen we in op de bevindingen. Dit doen we op hoofdlijnen. Dit betekent dat we een selectie van onderwerpen uit de consultatie hebben gekozen op basis van wat u belangrijk vond; we keken naar onderwerpen waar veel reactie op kwam of die cruciaal leken voor de doorontwikkeling. We beginnen met de algemene apecten, gevolgd door een behandeling van inhoudelijke onderwerpen. In [bijlage A](#bijlagen) is de tabel met alle (geanonimiseerde) reacties opgenomen. Bij elke reactie is aangegeven wat de status van verwerking is.
-
-<aside class='issue'>Leeswijzer nog actualiseren als document meer compleet is.</aside>
+In dit document leest u het volgende. In [hoofdstuk 2](#verbetering) worden algemene bevindingen en de wijze van verwerken van de consultatie beschreven. Dit geeft u een overzicht van hoe we met de consultatie zijn omgegaan. In [hoofdstuk 3](#terugkoppeling) zoomen we in op de bevindingen. Dit doen we op hoofdlijnen. Dit betekent dat we een selectie van onderwerpen uit de consultatie hebben gekozen op basis van wat u belangrijk vond; we keken naar onderwerpen waar veel reactie op kwam of die cruciaal leken voor de doorontwikkeling. We beginnen met de algemene apecten, gevolgd door een behandeling van inhoudelijke onderwerpen. In [bijlage A](#bijlage) is de tabel met alle (geanonimiseerde) reacties opgenomen. Bij elke reactie is aangegeven wat de status van verwerking is.
