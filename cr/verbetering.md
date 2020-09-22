@@ -13,7 +13,7 @@ Op hoofdlijnen is het volgende met de consultatiereacties gebeurd:
 
 ## Consultatie in kentallen
 
-In de consultatie op het Informatiemodel Geluid zijn 163 reacties ontvangen. Dit zijn individuele opmerkingen die door in totaal 16 reagerende organisaties zijn ingediend. Deze opmerkingen hebben we eerst allemaal gescanned en gecategoriseerd. Vervolgens hebben we na het verwerken van de opmerking een groeperend onderwerp eraan toegekend. In sommige situaties kwam dan bijvoorbeeld naar voren dat "inhoudelijk (Akoestisch onderzoek)" punt eigenlijk een Presentatie punt was. In de tabellen hieronder staan de categoriën en onderwerpen uitgelegd.
+In de consultatie op het Informatiemodel Geluid zijn 164 reacties ontvangen. Dit zijn individuele opmerkingen die door in totaal 16 reagerende organisaties zijn ingediend. Deze opmerkingen hebben we eerst allemaal gescanned en gecategoriseerd. Vervolgens hebben we na het verwerken van de opmerking een groeperend onderwerp eraan toegekend. In sommige situaties kwam dan bijvoorbeeld naar voren dat "inhoudelijk (Akoestisch onderzoek)" punt eigenlijk een Presentatie punt was. In de tabellen hieronder staan de categoriën en onderwerpen uitgelegd.
 
 | **Categorie opmerking**                | **Betekenis**                                                                                       |
 |----------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -44,10 +44,9 @@ In de consultatie op het Informatiemodel Geluid zijn 163 reacties ontvangen. Dit
 | **Algemeen**                | Algemene opmerkingen op het IMGeluid die niet binnen een onderwerp ingedeeld zijn.                                |
 
 Het onderwerp geeft een samenvatting van de inhoud van een opmerking. Dit maakte het mogelijk om een overzicht van de resultaten te maken in een tabel en een staafdiagram. 
+<img src="../cr/media/Samenvatting%20consultatiereacties%20tabel.png" alt="Overzicht consultatiereacties tabel" width="100%">
 
-![Overzicht consultatiereacties tabel](../cr/media/Samenvatting%20consultatiereacties%20tabel.png "Overzicht consultatiereacties tabel")
-
-<img src="../cr/media/Overzicht%20consultatiereacties%20grafiek3.png" alt="Overzicht consultatiereacties staafdiagram" width="100%"> aanpassen
+<img src="../cr/media/Overzicht%20consultatiereacties%20grafiek3.png" alt="Overzicht consultatiereacties staafdiagram" width="100%">
 
 
 **Hieronder staat een overzicht van alle categorieën met welk percentage van het totaal deze deze opmerkingen innemen.**
