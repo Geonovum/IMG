@@ -11,7 +11,7 @@ De consultatie is een raadpleging van het werkveld met als doel verbetervoorstel
 Elke reactie is meegenomen in het ontwikkelproces en afgewogen. Niet elke reactie heeft tot aanpassingen geleid, om verschillende redenen. Ook dat proberen we in dit document met zijn bijlage te duiden. 
 
 ## Consultatie en andere factoren
-Tijdens de consultatieperiode kwamen er ook reacties uit het bouwteam dat bezig is met de implementatie van de Centrale Voorziening Geluidgegevens. Deze reacties hebben we tegelijkertijd met de consultatiereacties verwerkt, wat in sommige gevallen heeft geleid tot aanpassingen in het informatiemodel.
+Tijdens de consultatieperiode kwamen er ook reacties uit het bouwteam dat bezig is met de implementatie van de Centrale Voorziening Geluidgegevens. Deze reacties hebben we tegelijkertijd met de consultatiereacties verwerkt, wat in sommige gevallen heeft geleid tot aanpassingen in het informatiemodel. Een goed voorbeeld van een aanpassing die is gedaan als gevolg van gesprekken met het bouwteam, is de aanpasing aan de structuur van het informatiemodel. Meer hierover is omschrevenh in [hoofdstuk 3](#aanpassing-domein-structuur-imgeluid).
 
 ## Reacties uit de consultatie en hun verwerking
 Een significant deel van de reacties betreft niet zozeer het informatiemodel, maar de inhoud van de Aanvullingsregeling Geluid (AREG). Het informatiemodel Geluid volgt inhoudelijk dat wat in de AREG bepaald is. We waren daarom genoodzaakt deze reacties voor het informatiemodel buiten scope te plaatsen. We hebben deze reacties wel onder de aandacht gebracht bij de schrijvers van de AREG binnen het ministerie van Infrastructuur en Waterstaat.
