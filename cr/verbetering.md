@@ -11,6 +11,8 @@ Op hoofdlijnen is het volgende met de consultatiereacties gebeurd:
 - Onduidelijkheden of ruimte in interpretatie van de documentatie zijn zoveel mogelijk weggenomen door herformulering van teksten en/of extra toelichting.
 - Gevraagde wijzigingen die binnen scope waren zijn in overleg tussen Geonovum, RIVM en I&W al dan niet doorgevoerd op basis van argumenten.
 
+Toevoegen Algemene RIVM wijzigingen/wijzigingen package structuur
+
 ## Consultatie in kentallen
 
 In de consultatie op het Informatiemodel Geluid zijn 163 reacties ontvangen. Dit zijn individuele opmerkingen die door in totaal 16 reagerende organisaties zijn ingediend. Deze opmerkingen hebben we eerst allemaal gescanned en gecategoriseerd. Vervolgens hebben we na het verwerken van de opmerking een groeperend onderwerp eraan toegekend. In sommige situaties kwam dan bijvoorbeeld naar voren dat "inhoudelijk (Akoestisch onderzoek)" punt eigenlijk een Presentatie punt was. In de tabellen hieronder staan de categoriën en onderwerpen uitgelegd.
@@ -43,11 +45,11 @@ In de consultatie op het Informatiemodel Geluid zijn 163 reacties ontvangen. Dit
 | **INSPIRE**                 | Opmerkingen met betrekking op INSPIRE.                                                                            |
 | **Algemeen**                | Algemene opmerkingen op het IMGeluid die niet binnen een onderwerp ingedeeld zijn.                                |
 
-Zoals uit de tabellen naar voren komt is er wat overlap tussen bijvoorbeeld de categorie **Presentatie** en het onderwerp **Verbetering presentatie**. In deze gevallen zou het toevoegen van een onderwerp gezien kunnen worden als een check of in eerste instantie de juiste classificatie is toegepast. In andere gevallen geeft het onderwerp een beeld van op welke onderwerpen de opmerkingen inhoudelijk ingaan. Dit maakte het mogelijk om een overzicht van de resultaten te maken in een tabel en een staafdiagram. 
+Zoals uit de tabellen naar voren komt is er wat overlap tussen bijvoorbeeld de categorie **Presentatie** en het onderwerp **Verbetering presentatie**. In deze gevallen zou het toevoegen van een onderwerp gezien kunnen worden als een check of in eerste instantie de juiste classificatie is toegepast. In andere gevallen geeft het onderwerp een samenvatting van de inhoud van een opmerking. Dit maakte het mogelijk om een overzicht van de resultaten te maken in een tabel en een staafdiagram. 
 
 ![Overzicht consultatiereacties tabel](/IMG/cr/media/Samenvatting%20consultatiereacties%20tabel.png "Overzicht consultatiereacties tabel")
 
-<img src="/IMG/cr/media/Overzicht%20consultatiereacties%20grafiek2.png" alt="Overzicht consultatiereacties staafdiagram">
+<img src="/IMG/cr/media/Overzicht%20consultatiereacties%20grafiek2.png" alt="Overzicht consultatiereacties staafdiagram"> aanpassen
 
 
 **Hieronder staat een overzicht van alle categorieën met welk percentage van het totaal deze deze opmerkingen innemen.**
@@ -57,11 +59,3 @@ Zoals uit de tabellen naar voren komt is er wat overlap tussen bijvoorbeeld de c
 
 42,68% van de reacties, iets minder dan de helft, ging inhoudelijk over de AREG en waren daardoor voor deze consultatie buiten scope. We maken hieruit op dat de boodschap rondom de consultatie wellicht nog duidelijker had gekund. Tijdens het reviewen van het informatiemodel beseften reviewers wellicht niet goed, dat een verzoek om het een of andere gegeven aan het informatiemodel toe te voegen, zodat het gebruikt kan worden bij de berekening, meestal vertaald moet worden naar een uitbreiding van de AREG. Het informatiemodel is immers volgend en kan inhoudelijk niet meer van dit soort gegevens bevatten dan in de AREG is aangegeven. 
 
-
-
-<aside class='issue'>
-To do: 1) Percentage reacties dat over de AREG ging, invullen; 2) De genoemde getallen verifieren 3) Aanvullen met een algemene opmerking over de verdeling van de opmerkingen over de onderwerpen.</aside>
-
-<aside class='issue'>
-To do: een paar grafieken toevoegen. Bv verdeling over organisaties, verdeling over hoofdstukken, onderwerp, categorie, verdeling over hoe reacties verwerkt zijn (buiten scope verklaard|doorgevoerd|binnen scope maar niet doorgevoerd)
-</aside>
