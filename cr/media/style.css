@@ -11,6 +11,13 @@
 //-- Log . . . :  20181009 - JvG - Initiele versie 
 //-----------------------------------------------------------------------------------*/
 
+/*-- responsive images --------------------------------------------------------------*/
+img 
+{
+  width: 100%;
+  height: auto;
+}
+
 /*-- Definite van het Geonovum Logo bovenaan Respec document ------------------------*/
 img#Geonovum
 {
