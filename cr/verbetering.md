@@ -49,7 +49,7 @@ Zoals uit de tabellen naar voren komt is er wat overlap tussen bijvoorbeeld de c
 
 ![Overzicht consultatiereacties tabel](/IMG/cr/media/Samenvatting%20consultatiereacties%20tabel.png "Overzicht consultatiereacties tabel")
 
-<img src="/IMG/cr/media/Overzicht%20consultatiereacties%20grafiek2.png" alt="Overzicht consultatiereacties staafdiagram"> aanpassen
+<img src="/IMG/cr/media/Overzicht%20consultatiereacties%20grafiek2.png" alt="Overzicht consultatiereacties staafdiagram" height="350"> aanpassen
 
 
 **Hieronder staat een overzicht van alle categorieën met welk percentage van het totaal deze deze opmerkingen innemen.**
