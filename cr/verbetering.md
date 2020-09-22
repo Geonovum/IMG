@@ -44,15 +44,15 @@ In de consultatie op het Informatiemodel Geluid zijn 164 reacties ontvangen. Dit
 | **Algemeen**                | Algemene opmerkingen op het IMGeluid die niet binnen een onderwerp ingedeeld zijn.                                |
 
 Het onderwerp geeft een samenvatting van de inhoud van een opmerking. Dit maakte het mogelijk om een overzicht van de resultaten te maken in een tabel en een staafdiagram. 
-<img src="./media/Samenvatting%20consultatiereacties%20tabel.png" alt="Overzicht consultatiereacties tabel">
+<img src="./media/Samenvatting%20consultatiereacties%20tabel.png" alt="Overzicht consultatiereacties tabel" class="responsive">
 
-<img src="./media/Overzicht%20consultatiereacties%20grafiek3.png" alt="Overzicht consultatiereacties staafdiagram">
+<img src="./media/Overzicht%20consultatiereacties%20grafiek3.png" alt="Overzicht consultatiereacties staafdiagram" class="responsive">
 
 
 **Hieronder staat een overzicht van alle categorieën met welk percentage van het totaal deze deze opmerkingen innemen.**
 
 
-<img src="./media/Percentage%20van%20totaal.png" alt="Relatieve grootte van categorieën">
+<img src="./media/Percentage%20van%20totaal.png" alt="Relatieve grootte van categorieën" class="responsive">
 
 42,68% van de reacties, iets minder dan de helft, ging inhoudelijk over de AREG en waren daardoor voor deze consultatie buiten scope. We maken hieruit op dat de boodschap rondom de consultatie wellicht nog duidelijker had gekund. Tijdens het reviewen van het informatiemodel beseften reviewers wellicht niet goed, dat een verzoek om het een of andere gegeven aan het informatiemodel toe te voegen, zodat het gebruikt kan worden bij de berekening, meestal vertaald moet worden naar een uitbreiding van de AREG. Het informatiemodel is immers volgend en kan inhoudelijk niet meer van dit soort gegevens bevatten dan in de AREG is aangegeven. 
 
