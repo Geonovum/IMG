@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:img="http://geluidgegevens.nl/algemeen" xmlns:xs="http://www.w3.org/2001/XMLSchema"
    xmlns:gml="http://www.opengis.net/gml/3.2"
-   xmlns:nen3610="http://www.geonovum.nl/NEN3610/schemas/v20110301"
    xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
    targetNamespace="http://geluidgegevens.nl/algemeen" elementFormDefault="qualified"
    attributeFormDefault="unqualified" version="1.0-0">
