@@ -1,5 +1,8 @@
 # Wijzigingen in de IMGeluid XML Schema's 
 
+## Tussen versie 22-09-2020 (0.9) en 29-10-2020 (1.0)
+Kleine correcties in documentatie.
+
 ## Tussen versie 03-09-2020 (0.8) en 22-09-2020 (0.9)
 De wijzigingen voortkomend uit de verwerking van de consultatie en de daarop volgende review door RIVM zijn doorgevoerd. 
 
