@@ -1,4 +1,5 @@
-# Inleiding
+Inleiding
+==========================
 
 ## Aanleiding voor dit document
 
