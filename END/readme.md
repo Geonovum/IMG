@@ -7,3 +7,5 @@ De scope van dit document omvat:
 * Een omschrijving van de huidige processen rondom de aanlevering van geluidsgegevens aan Europa.
 * De architectuur van de toekomstige situatie met betrekking tot op het proces voor aanleveren van geluidgegevens conform het END datamodel.
 * Een impact analyse van deze toekomstige situatie op de Centrale Voorziening Geluidgegevens (CVGG) en het IMGeluid.
+
+Bekijk het document via [deze link](https://geonovum.github.io/IMG/END/)
