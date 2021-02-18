@@ -1,4 +1,4 @@
-# Aanleveren volgens het END datamodel
+# Overzicht van het END datamodel
 
 ## Inleiding END Datamodel
 
