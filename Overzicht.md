@@ -103,7 +103,7 @@ In dit voorbeeld is het objecttype <code>Geluidsschermdeel</code> verplicht, en 
 Elk objecttype heeft eigenschappen en relaties. In bovenstaand voorbeeld is bijvoorbeeld `absorptiefractie` een eigenschap van `Bodemvlak`. Deze eigenschappen noemen we attribuutsoort. Relaties zijn in dit voorbeeld niet te zien maar worden in de diagrammen getoond als een pijl van het ene naar het  andere objecttype. 
 
 Zowel bij attribuutsoorten als bij relatiesoorten wordt aangegeven of dit gegeven verplicht of optioneel is, en of het één of meer keer voor kan komen binnen een object, door middel van de *kardinaliteit*, in de vorm van een aanduiding tussen blokhaken.
-- `[1..1]` betekent: verplicht en mag maximaal één keer voorkomen. Deze kardinaliteit wordt meestal weg gelaten. Als er bij een attribuutsoort of relatie niets is aangegeven tussen blokhaken, betekent dit `[1..1]`.
+- `[1]` betekent: verplicht en mag maximaal één keer voorkomen. Deze kardinaliteit wordt meestal weggelaten. Als er bij een attribuutsoort of relatie niets is aangegeven tussen blokhaken, betekent dit `[1]`.
 - `[0..1]` betekent: optioneel en mag maximaal één keer voorkomen. 
 - `[1..*]` betekent: verplicht en mag meer dan één keer voorkomen.
 - `[0..*]` betekent: optioneel en mag meer dan één keer voorkomen.
