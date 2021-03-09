@@ -143,7 +143,7 @@ Objecten worden in NEN3610 voorzien van een unieke identificatie: een NEN3610ID.
 
 De unieke code van de bronhouder is het KvK-nummer van de organisatie. De lengte van de lokale identificatie staat toe dat bronhouders gebruik maken van UUID's/GUID’s als identificatie. Een lokale identificatie kan de volgende karakters bevatten: `{“A”… “Z”, “a”… “z”, “0”… “9”, “_”, “-”, “,”}`.
 
-Het versienummer wordt in de CVGG gebruikt ten behoeve van formele historie. Als een object in een aanlevering een gewijzigde versie is van een object in een voorgaande levering, dan dient deze hetzelfde lokaalID te hebben, maar een hoger versienummer. Versienummers zijn gehele getallen, die bij voorkeur starten met 1 en bij elke wijziging door de bronhouder dienen te worden opgehoogd met minimaal 1. 
+Het versienummer wordt in de CVGG gebruikt ten behoeve van formele historie. Als een object in een aanlevering een gewijzigde versie is van een object in een voorgaande levering, dan dient deze hetzelfde lokaalID te hebben, maar een hoger versienummer. Versienummers zijn gehele getallen, die bij voorkeur starten met 1 en bij elke wijziging door de bronhouder dienen te worden opgehoogd met minimaal 1. Het versienummer is verplicht, met uitzondering van de eerste versie van een object dat wordt aangeleverd. Als een versienummer ontbreekt dan is dat dus ook een indicatie dat er geen eerdere versies van het object zijn aangeleverd 
 
 #### Authentieke gegevens
 
