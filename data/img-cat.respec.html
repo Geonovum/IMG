@@ -1,7 +1,7 @@
 
 <section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
-   <!--MIMLM-InformatiemodelGeluid-1.0-0-20200421-20210224-184239 imvertor 1.61.3-->
+   <!--MIMLM-InformatiemodelGeluid-1.0-0-20210319-20210315-132307 imvertor 1.61.3-->
    <section id="">
       <h3>Objecttypen   </h3>
       <a class="anchor" id="graph_EAID_313C5AF9_49B8_4860_9E65_DE7C70084864"></a><a class="anchor" id="global_class_IMGeluidAlgemeen_Geluidgegevenscollectie"></a><section id="global_class_IMGeluidAlgemeen_Geluidgegevenscollectie">
@@ -59,12 +59,6 @@
                      
                      <ul>
                         
-                        <li>Een Geluidgegevenscollectie heeft alleen Basisgeluidemissieobjecten indien Geluidgegevenscollectie.geluidbron
-                           is: lokale weg OF Lokale spoorweg;</li>
-                        
-                        <li>Een Geluidgegevenscollectie heeft alleen Geluidproductieplafondobjecten indien Geluidgegevenscollectie.geluidbron
-                           is: Rijksweg OF Provinciale weg OF Hoofdspoorweg OF Industrie Of Lokale spoorweg;</li>
-                        
                         <li>Er mag alleen geen Geluidaandachtsgebied in een Geluidgegevenscollectie zitten, wanneer
                            geluidbron van Geluidgegevenscollectie= [Luchtvaart, schiet- of springterrein, Windturbine];</li>
                         
@@ -75,7 +69,7 @@
                         <li>Wanneer Geluidgegevenscollectie.type = vaststelling: mag de Geluidgegevenscollectie
                            (een specialisatie van) de volgende objecttypen bevatten: Geluidemissieobject, Geluidoverdrachtobject,
                            Basisgeluidemissieobject, Geluidproductieplafondobject, Geluidaandachtsgebied, Documentverwijzing,
-                           Geluidberekeningobject, Lijnbronindustrie, Vlakbronindustrie, Geluidcontour;</li>
+                           Geluidberekeningobject, Lijnbronindustrie, Vlakbronindustrie, Geluidcontour, Terrein;</li>
                         
                         <li>Wanneer Geluidgegevenscollectie.type = brongegevens monitoring: mag de Geluidgegevenscollectie
                            (een specialisatie van) de volgende objecttypen bevatten: Geluidemissieobject, Geluidoverdrachtobject,
@@ -87,6 +81,14 @@
                         <li>Wanneer Geluidgegevenscollectie.type = monitoringresultaat: mag de Geluidgegevenscollectie
                            (een specialisatie van) de volgende objecttypen bevatten: Monitoringresultaat, Geluidberekeningobject,
                            Documentverwijzing;</li>
+                        
+                        <li>Wanneer Geluidgegevenscollectie.geluidbron=Lokale spoorweg EN Geluidgegevenscollectie.systematiek
+                           =GPP: moet ook overdrachtsobjecten en de bronregisterlijn met x,y,z cöordinaten meegeleverd
+                           worden.</li>
+                        
+                        <li>Wanneer Geluidgegevenscollectie.geluidbron=Lokale spoorweg EN Geluidgegevenscollectie.systematiek
+                           =BGE: mag geen overdrachtsobjecten meegeleverd worden en de bronregisterlijn mogen
+                           alleen x,y cöordinaten bevatten.</li>
                         </ul>
                      </td>
                </tr>
@@ -196,6 +198,20 @@
                      </td>
                   <td>
                      DatumTijd
+                     </td>
+                  <td>0 .. 1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_IMGeluidAlgemeen_Geluidgegevenscollectie_systematiek">systematiek</a>
+                     </td>
+                  <td>
+                     
+                     <p>Geeft aan of bij aanlevering sprake is van GPP, BGE of nvt (geen van beiden, bij cummulatie
+                        bijv) </p>
+                     </td>
+                  <td>
+                     <a class="link" href="#global_class_IMGeluidAlgemeen_Systematiek">Systematiek</a>
                      </td>
                   <td>0 .. 1</td>
                </tr>
@@ -638,7 +654,7 @@
                   <td>
                      
                      <p>Dit objecttype kan alleen worden aangeleverd indien Geluidgegevenscollectie.geluidbron
-                        = industrieterrein, OF rijksweg, OF provinciale weg, <em> </em> OF hoofdspoor, OF lokale spoorweg;</p>
+                        = industrieterrein, OF rijksweg, OF provinciale weg, <em> </em> OF hoofdspoor, OF (lokale spoorweg en Geluidgegevenscollectie.systematiek=GPP );</p>
                      </td>
                </tr>
             </tbody>
@@ -675,12 +691,11 @@
                </tr>
                <tr>
                   <td>
-                     <a class="link" href="#detail_attribute_IMGeluidAlgemeen_Geluidproductieplafondobject_hoogteReferentiepunt">hoogteReferentiepunt</a>
+                     <a class="link" href="#detail_attribute_IMGeluidAlgemeen_Geluidproductieplafondobject_hoogteMaaiveld">hoogteMaaiveld</a>
                      </td>
                   <td>
                      
-                     <p>Hoogteverschil tussen de z-waarde uit de geometrie van referentiepunt en het plaatselijk
-                        maaiveld.</p>
+                     <p>Plaatselijk maaiveldhoogte tov NAP.</p>
                      </td>
                   <td>
                      <a class="external-link" href="">Measure</a>
@@ -959,6 +974,104 @@
          </table>
          
          </section>
+      <a class="anchor" id="graph_EAID_B9687B05_4B3A_4789_A07A_7B0C16C23CF5"></a><a class="anchor" id="global_class_IMGeluidAlgemeen_MonitoringresultaatIndustrie"></a><section id="global_class_IMGeluidAlgemeen_MonitoringresultaatIndustrie">
+         <h4>   MonitoringresultaatIndustrie</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>MonitoringresultaatIndustrie</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td>IMGeluid</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     <p>Lokaal Monitoringresultaat voor industrie.</p>
+                     </td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td>IMGeluid</td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td>
+                     
+                     <p>Wordt alleen gebruikt wanneer "geluidbron" van Geluidgegevenscollectie "Industrieterrein"
+                        is.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Type</th>
+                  <th>Kardinaliteit</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_IMGeluidAlgemeen_MonitoringresultaatIndustrie_monitoringwaardeLnight">monitoringwaardeLnight</a>
+                     </td>
+                  <td>
+                     
+                     <p>Vastgestelde monitoringwaarde voor de representatieve situatie van geluidproductie
+                        op een industrieterrein in de nacht.</p>
+                     </td>
+                  <td>
+                     <a class="external-link" href="">Measure</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     MonitoringresultaatIndustrie
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_IMGeluidAlgemeen_Monitoringresultaat">Monitoringresultaat</a>
+                     
+                     </td>
+                  <td>
+                     
+                     <p>Monitoringgegevens voor geluidproductieplafonds of basisgeluidemissie zoals opgenomen
+                        in het meest recente openbare verslag over de monitoring.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
       <a class="anchor" id="graph_EAID_9AD15457_4880_42e5_8C72_4E5EFAC91B15"></a><a class="anchor" id="global_class_IMGeluidAlgemeen_Basisgeluidemissieobject"></a><section id="global_class_IMGeluidAlgemeen_Basisgeluidemissieobject">
          <h4>   Basisgeluidemissieobject</h4>
          
@@ -1011,7 +1124,7 @@
                      <p>
                         <strong>Kan alleen de volgende specialisaties van een Geluidemissieobject bevatten:</strong> WANNEER Geluidgegevenscollectie.geluidbron = gemeenteweg: WegdeelBGE, OF SpoordeelBGE;
                         WANNEER Geluidgegevenscollectie.geluidbron = waterschapsweg: WegdeelBGE; WANNEER Geluidgegevenscollectie.geluidbron
-                        = lokale spoorweg: SpoordeelBGE;</p>
+                        = lokale spoorweg EN Geluidgegevenscollectie.systematiek=BGE : SpoordeelBGE;</p>
                      </td>
                </tr>
             </tbody>
@@ -1375,8 +1488,9 @@
                         <li>Wanneer Terrein.typeterrein = industrieterrein: Dan is Terrein.geometrie verplicht
                            om aan te leveren;</li>
                         
-                        <li>Wanneer Geluidgegevenscollectie.type = industrieterrein: dan mag maar 1 instantie
-                           van Terrein voorkomen binnen de Geluidgegevenscollectie;</li>
+                        <li>Wanneer geluidbron van Geluidgegevenscollectie = industrieterrein OF luchtvaart OF
+                           schiet- of springterrein, moet de Geluidgegevenscollectie 1 terrein bevatten, anders
+                           0;</li>
                         </ul>
                      </td>
                </tr>
@@ -1914,16 +2028,30 @@
                </tr>
                <tr>
                   <td>
+                     <a class="link" href="#detail_attribute_IMGeluidAlgemeen_Geluidcontour_contourLijn">contourLijn</a>
+                     </td>
+                  <td>
+                     
+                     <p>Als 2D-Lijn gemodelleerde meetkundige representatie van een geluidcontour boven Nederlands
+                        grondgebied.</p>
+                     </td>
+                  <td>
+                     GM_MultiCurve
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
                      <a class="link" href="#detail_attribute_IMGeluidAlgemeen_Geluidcontour_contourVlak">contourVlak</a>
                      </td>
                   <td>
                      
-                     <p>Optionele vlakgeometrie van een geluidcontour boven Nederlands grondgebied.</p>
+                     <p>Vlakgeometrie van een geluidcontour boven Nederlands grondgebied.</p>
                      </td>
                   <td>
                      GM_MultiSurface
                      </td>
-                  <td>0 .. 1</td>
+                  <td>1</td>
                </tr>
                <tr>
                   <td>
@@ -1935,20 +2063,6 @@
                      </td>
                   <td>
                      <a class="external-link" href="">Measure</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_IMGeluidAlgemeen_Geluidcontour_geometrie">geometrie</a>
-                     </td>
-                  <td>
-                     
-                     <p>Als 2D-Lijn gemodelleerde meetkundige representatie van een geluidcontour boven Nederlands
-                        grondgebied.</p>
-                     </td>
-                  <td>
-                     GM_MultiCurve
                      </td>
                   <td>1</td>
                </tr>
@@ -2276,8 +2390,14 @@
                   <th>Regels</th>
                   <td>
                      
-                     <p>Indien toegepast op emplacementen/opstelterreinen, dan zijn de volgende velden nodig:
-                        bedrijfsduurcorrectie, geometrie, uitstralingsrichting, relevanteBronsterkte;</p>
+                     <ul>
+                        
+                        <li>Indien toegepast op emplacementen/opstelterreinen, dan zijn de volgende velden nodig:
+                           bedrijfsduurcorrectie, geometrie, uitstralingsrichting, relevanteBronsterkte;</li>
+                        
+                        <li>uitstralingrichting kan optioneel aangeleverd worden alleen in het geval dat bronTyhpe
+                           "normalePuntbron"is.</li>
+                        </ul>
                      </td>
                </tr>
             </tbody>
@@ -2831,6 +2951,9 @@
                         
                         <li>Elke combinatie van waardes uit attribuutsoort dagdeel en attribuutsoort voertuigclassificatie
                            moet 1 keer voorkomen binnen een instantie van WegdeelGPP.</li>
+                        
+                        <li>De attribuutsoort optrektoeslag mag alleen toegevoegd worden indien Geluidgegevenscollectie.geluidbron
+                           is: provinciale weg.</li>
                         </ul>
                      </td>
                </tr>
@@ -2911,6 +3034,21 @@
                </tr>
                <tr>
                   <td>
+                     <a class="link" href="#detail_attribute_IMGeluidAlgemeen_WegdeelGPP_optrektoeslag">optrektoeslag</a>
+                     </td>
+                  <td>
+                     
+                     <p>De optrekcorrectie is een correctieterm ten gevolge van het afremmen en optrekken
+                        van het verkeer door de aanwezigheid van een kruispunt of een situatie die de gemiddelde
+                        snelheid van het verkeer sterk beperkt. </p>
+                     </td>
+                  <td>
+                     <a class="external-link" href="">Measure</a>
+                     </td>
+                  <td>0 .. 1</td>
+               </tr>
+               <tr>
+                  <td>
                      <a class="link" href="#detail_class_IMGeluidAlgemeen_VerkeergegevensWeg">verkeergegevens (VerkeergegevensWeg)</a>
                      :</td>
                   <td>
@@ -2968,7 +3106,8 @@
                      </td>
                   <td>
                      
-                     <p>Gemiddeld aantal motorvoertuigen van een voertuigklasse tijdens een dagdeel.</p>
+                     <p>Per dagdeel, het aantal motorvoertuigen, per voertuigklasse, dat gemiddeld over een
+                        kalenderjaar per uur  passeert.</p>
                      </td>
                   <td>
                      <a class="external-link" href="">Measure</a>
@@ -3536,7 +3675,8 @@
                      </td>
                   <td>
                      
-                     <p>Gemiddeld aantal motorvoertuigen van een voertuigklasse tijdens een dagdeel.</p>
+                     <p>Per dagdeel, het aantal motorvoertuigen, per voertuigklasse, dat gemiddeld over een
+                        kalenderjaar per uur  passeert.</p>
                      </td>
                   <td>
                      <a class="external-link" href="">Measure</a>
@@ -3620,7 +3760,8 @@
                      
                      <ul>
                         
-                        <li>Mag alleen voorkomen wanneer Geluidgegevenscollectie.geluidbron = lokale spoorweg;</li>
+                        <li>Mag alleen voorkomen wanneer Geluidgegevenscollectie.geluidbron = lokale spoorweg
+                           EN Geluidgegevenscollectie.geluidbron.systematiek=BGE;</li>
                         </ul>
                      </td>
                </tr>
@@ -3977,6 +4118,14 @@
                         Een windturbine heeft geen geluidaandachtsgebied.</p>
                      </td>
                </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td>
+                     
+                     <p>Elke combinatie van waardes uit attribuutsoort dagdeel en attribuutsoort jaargemiddeldeGeluidemissiewaarde
+                        moet 1 keer voorkomen binnen een instantie van Windturbine.</p>
+                     </td>
+               </tr>
             </tbody>
          </table>
          
@@ -4009,19 +4158,6 @@
                </tr>
                <tr>
                   <td>
-                     <a class="link" href="#detail_attribute_IMGeluidAlgemeen_Windturbine_jaargemiddeldeGeluidemissie">jaargemiddeldeGeluidemissie</a>
-                     </td>
-                  <td>
-                     
-                     <p>Jaargemiddelde emissie van windturbine.</p>
-                     </td>
-                  <td>
-                     <a class="link" href="#global_class_IMGeluidAlgemeen_EmissiePerDagdeel">EmissiePerDagdeel</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <td>
                      <a class="link" href="#detail_attribute_IMGeluidAlgemeen_Windturbine_linkNaarDocument">linkNaarDocument</a>
                      </td>
                   <td>
@@ -4044,6 +4180,44 @@
                      </td>
                   <td>
                      <a class="external-link" href="">Measure</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_class_IMGeluidAlgemeen_EmissiePerDagdeel">jaargemiddeldeGeluidemissie (EmissiePerDagdeel)</a>
+                     :</td>
+                  <td>
+                     
+                     <p>De jaargemiddelde emissie van een windturbine per octaafband op een dagdeel.</p>
+                     </td>
+                  <td></td>
+                  <td>3</td>
+               </tr>
+               <tr>
+                  <td>- 
+                     <a class="link" href="#detail_attribute_IMGeluidAlgemeen_EmissiePerDagdeel_dagdeel">dagdeel</a>
+                     </td>
+                  <td>
+                     
+                     <p>Afgebakend tijdsvak binnen etmaal, waarvan het geheel van tijdsvakken samen een etmaal
+                        beslaat.</p>
+                     </td>
+                  <td>
+                     <a class="link" href="#global_class_IMGeluidAlgemeen_Dagdeel">Dagdeel</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>- 
+                     <a class="link" href="#detail_attribute_IMGeluidAlgemeen_EmissiePerDagdeel_jaargemiddeldeGeluidemissiewaarde">jaargemiddeldeGeluidemissiewaarde</a>
+                     </td>
+                  <td>
+                     
+                     <p>Jaargemiddelde Geluidemissiewaarde per octaafband.</p>
+                     </td>
+                  <td>
+                     <a class="link" href="#global_class_IMGeluidAlgemeen_WaardePerOctaafband">WaardePerOctaafband</a>
                      </td>
                   <td>1</td>
                </tr>
@@ -4781,7 +4955,7 @@
                </tr>
                <tr>
                   <th>Herkomst definitie</th>
-                  <td>IMGeluid</td>
+                  <td>Reken- en meetvoorschrift geluid, 2012;</td>
                </tr>
                <tr>
                   <th>Regels</th>
@@ -4823,7 +4997,7 @@
                      <p>Aanduiding voor de akoestische hardheid van de bodem.</p>
                      </td>
                   <td>
-                     REAL
+                     Real
                      </td>
                   <td>1</td>
                </tr>
@@ -5601,20 +5775,6 @@
                </tr>
                <tr>
                   <td>- 
-                     <a class="link" href="#detail_attribute_IMGeluidAlgemeen_Geluidtoeslag_reflectiefactor">reflectiefactor</a>
-                     </td>
-                  <td>
-                     
-                     <p>De fractie van de door de brugwand van een object Brug gereflecteerde geluidenergie
-                        per octaafband.</p>
-                     </td>
-                  <td>
-                     <a class="link" href="#global_class_IMGeluidAlgemeen_FactorPerOctaafband">FactorPerOctaafband</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <td>- 
                      <a class="link" href="#detail_attribute_IMGeluidAlgemeen_Geluidtoeslag_spoorvoertuigcategorie">spoorvoertuigcategorie</a>
                      </td>
                   <td>
@@ -6056,58 +6216,6 @@
       </section>
    <section id="">
       <h3>Gestructureerde datatypen   </h3>
-      <a class="anchor" id="graph_EAID_2CA21F22_A3DC_41d4_82C3_37984841E391"></a><a class="anchor" id="global_class_IMGeluidAlgemeen_EmissiePerDagdeel"></a><section id="global_class_IMGeluidAlgemeen_EmissiePerDagdeel">
-         <h4>Gestructureerd datatype   EmissiePerDagdeel</h4>
-         
-         <table style="width: 100%;">
-            <tbody></tbody>
-         </table>
-         
-         <section id="">
-            <h5>Overzicht data elementen   </h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Data element</th>
-                     <th>Definitie</th>
-                     <th>Type</th>
-                     <th>Kardinaliteit</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMGeluidAlgemeen_EmissiePerDagdeel_dagdeel">dagdeel</a>
-                        </td>
-                     <td>
-                        
-                        <p>Dagdeel waarvoor jaargemiddelde emissiewaarde geldig is.</p>
-                        </td>
-                     <td>
-                        <a class="link" href="#global_class_IMGeluidAlgemeen_Dagdeel">Dagdeel</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_IMGeluidAlgemeen_EmissiePerDagdeel_jaargemiddeldeGeluidemissiewaarde">jaargemiddeldeGeluidemissiewaarde</a>
-                        </td>
-                     <td>
-                        
-                        <p>Jaargemiddelde Geluidemissiewaarde per octaafband.</p>
-                        </td>
-                     <td>
-                        <a class="link" href="#global_class_IMGeluidAlgemeen_WaardePerOctaafband">WaardePerOctaafband</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            </section>
-         </section>
       <a class="anchor" id="graph_EAID_2E128FCF_DE66_4517_86D2_331E9E0C46EE"></a><a class="anchor" id="global_class_IMGeluidAlgemeen_FactorPerOctaafband"></a><section id="global_class_IMGeluidAlgemeen_FactorPerOctaafband">
          <h4>Gestructureerd datatype   FactorPerOctaafband</h4>
          
@@ -6986,26 +7094,6 @@
          </section>
       </section>
    <section id="">
-      <h3>Codelijsten   </h3>
-      
-      <table style="width: 100%;">
-         <colgroup style="width: 30%;"></colgroup>
-         <colgroup style="width: 70%;"></colgroup>
-         <tbody>
-            <tr>
-               <th><a class="anchor" id="graph_EAID_32771007_4395_44a9_9388_99F79758D88D"></a><a class="anchor" id="global_class_IMGeluidAlgemeen_Wegdektype"></a><a class="link" href="#detail_class_IMGeluidAlgemeen_Wegdektype">Wegdektype</a></th>
-               <td>
-                  
-                  <p>Waardelijst met vastgestelde aanduidingen voor wegdekcorrectietypen. De vastgestelde
-                     aanduiding, die in de vorm van een code wordt aangeleverd, verwijst naar een wegdektype
-                     zoals gespecificeerd in een externe waardelijst. De locatie van deze waardelijst is
-                     nog onbekend.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      </section>
-   <section id="">
       <h3>Enumeraties   </h3>
       
       <table style="width: 100%;">
@@ -7071,6 +7159,16 @@
                   </td>
             </tr>
             <tr>
+               <th><a class="anchor" id="graph_EAID_0CD16775_F50F_4c87_B87F_11BCAE493512"></a><a class="anchor" id="global_class_IMGeluidAlgemeen_Wegdektype"></a><a class="link" href="#detail_class_IMGeluidAlgemeen_Wegdektype">Wegdektype</a></th>
+               <td>
+                  
+                  <p>Waardelijst met vastgestelde aanduidingen voor wegdekcorrectietypen. De vastgestelde
+                     aanduiding, die in de vorm van een code wordt aangeleverd, verwijst naar een wegdektype
+                     zoals gespecificeerd in een externe waardelijst. De locatie van deze waardelijst is
+                     nog onbekend.</p>
+                  </td>
+            </tr>
+            <tr>
                <th><a class="anchor" id="graph_EAID_11918723_A26B_4cbd_BC37_F6914A4A4A4E"></a><a class="anchor" id="global_class_IMGeluidAlgemeen_Treintype"></a><a class="link" href="#detail_class_IMGeluidAlgemeen_Treintype">Treintype</a></th>
                <td>
                   
@@ -7082,6 +7180,13 @@
                <td>
                   
                   <p>Enumeratie van domeinen waarbij een geregistreerd object kan horen. </p>
+                  </td>
+            </tr>
+            <tr>
+               <th><a class="anchor" id="graph_EAID_1C53A793_34DE_47bd_B794_766CD1ADBE6D"></a><a class="anchor" id="global_class_IMGeluidAlgemeen_Systematiek"></a><a class="link" href="#detail_class_IMGeluidAlgemeen_Systematiek">Systematiek</a></th>
+               <td>
+                  
+                  <p>Geeft aan of het bij aanlevering sprake is van GPP, BGE of nvt (bijv cummulatie) </p>
                   </td>
             </tr>
             <tr>
@@ -7645,6 +7750,59 @@
                   </tbody>
                </table>
                </section>
+            <a class="anchor" id="detail_attribute_IMGeluidAlgemeen_Geluidgegevenscollectie_systematiek"></a><section id="detail_attribute_IMGeluidAlgemeen_Geluidgegevenscollectie_systematiek">
+               <h6>  <a href="#global_class_IMGeluidAlgemeen_Geluidgegevenscollectie">Geluidgegevenscollectie</a> systematiek</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>systematiek</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td>IMGeluid</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           <p>Geeft aan of bij aanlevering sprake is van GPP, BGE of nvt (geen van beiden, bij cummulatie
+                              bijv) </p>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>IMGeluid</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           
+                           <p>Hierdoor is bij aanlevering duidelijk welke brongegevens verplicht meegeleverd worden.</p>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Kardinaliteit</th>
+                        <td>0 .. 1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie authentiek</th>
+                        <td>Authentiek</td>
+                     </tr>
+                     <tr>
+                        <th>Type</th>
+                        <td>Systematiek</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
             <a class="anchor" id="detail_association_IMGeluidAlgemeen_Geluidgegevenscollectie_geluidaandachtsgebied"></a><section id="detail_association_IMGeluidAlgemeen_Geluidgegevenscollectie_geluidaandachtsgebied">
                <h6>Relatiesoort details  <a href="#global_class_IMGeluidAlgemeen_Geluidgegevenscollectie">Geluidgegevenscollectie</a> geluidaandachtsgebied</h6>
                
@@ -7988,6 +8146,13 @@
                         <td>Overig</td>
                      </tr>
                      <tr>
+                        <th>Regels</th>
+                        <td>
+                           
+                           <p>Hier een correcte URL naar het document opgenomen moet worden</p>
+                           </td>
+                     </tr>
+                     <tr>
                         <th>Type</th>
                         <td>URI</td>
                      </tr>
@@ -8232,8 +8397,8 @@
                   </tbody>
                </table>
                </section>
-            <a class="anchor" id="detail_attribute_IMGeluidAlgemeen_Geluidproductieplafondobject_hoogteReferentiepunt"></a><section id="detail_attribute_IMGeluidAlgemeen_Geluidproductieplafondobject_hoogteReferentiepunt">
-               <h6>  <a href="#global_class_IMGeluidAlgemeen_Geluidproductieplafondobject">Geluidproductieplafondobject</a> hoogteReferentiepunt</h6>
+            <a class="anchor" id="detail_attribute_IMGeluidAlgemeen_Geluidproductieplafondobject_hoogteMaaiveld"></a><section id="detail_attribute_IMGeluidAlgemeen_Geluidproductieplafondobject_hoogteMaaiveld">
+               <h6>  <a href="#global_class_IMGeluidAlgemeen_Geluidproductieplafondobject">Geluidproductieplafondobject</a> hoogteMaaiveld</h6>
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -8241,7 +8406,7 @@
                   <tbody>
                      <tr>
                         <th>Naam</th>
-                        <td>hoogteReferentiepunt</td>
+                        <td>hoogteMaaiveld</td>
                      </tr>
                      <tr>
                         <th>Herkomst</th>
@@ -8251,22 +8416,12 @@
                         <th>Definitie</th>
                         <td>
                            
-                           <p>Hoogteverschil tussen de z-waarde uit de geometrie van referentiepunt en het plaatselijk
-                              maaiveld.</p>
+                           <p>Plaatselijk maaiveldhoogte tov NAP.</p>
                            </td>
                      </tr>
                      <tr>
                         <th>Herkomst definitie</th>
                         <td>IMGeluid</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           
-                           <p>In de meeste gevallen ligt deze waarde op 4 meter boven het maaiveld, maar er is een
-                              marge van 0,5m toegestaan, hierom mag optioneel de hoogte van het referentiepunt ook
-                              worden aangeleverd.</p>
-                           </td>
                      </tr>
                      <tr>
                         <th>Mogelijk geen waarde</th>
@@ -8285,18 +8440,6 @@
                         <td>Overig</td>
                      </tr>
                      <tr>
-                        <th>Regels</th>
-                        <td>
-                           
-                           <ul>
-                              
-                              <li>De minimaal toegestane waarde is 3,5m</li>
-                              
-                              <li>De maximaal toegestane waarde is 4,5m</li>
-                              </ul>
-                           </td>
-                     </tr>
-                     <tr>
                         <th>Patroon</th>
                         <td>Toegestane waarde: van 3,5 tot en met 4,5</td>
                      </tr>
@@ -8306,7 +8449,7 @@
                      </tr>
                      <tr>
                         <th>Meeteenheid</th>
-                        <td>meters</td>
+                        <td>meter</td>
                      </tr>
                      <tr>
                         <th>Indicatie afleidbaar</th>
@@ -8480,7 +8623,7 @@
                                  gestelde marge tijdelijke periode van overschrijding van het geluidproductieplafond.</li>
                               
                               <li>Binnen het TM_Period datatype, worden het begin en eind van de periode opgeslagen
-                                 op de internationale manier, volgens de opbouw: jaar-maand-dag .</li>
+                                 op de internationale manier.</li>
                               </ul>
                            </td>
                      </tr>
@@ -8499,6 +8642,16 @@
                      <tr>
                         <th>Indicatie authentiek</th>
                         <td>Overig</td>
+                     </tr>
+                     <tr>
+                        <th>Regels</th>
+                        <td>
+                           
+                           <ul>
+                              
+                              <li>Deze attribuutsoort moet alleen een Datum bevatten en mag geen Tijd inhouden.</li>
+                              </ul>
+                           </td>
                      </tr>
                      <tr>
                         <th>Type</th>
@@ -8623,7 +8776,7 @@
                            <ul>
                               
                               <li>Binnen het Date datatype, wordt de begindatum van de periode opgeslagen op de internationale
-                                 manier, volgens de opbouw: jaar-maand-dag.</li>
+                                 manier.</li>
                               </ul>
                            </td>
                      </tr>
@@ -8704,7 +8857,7 @@
                            <ul>
                               
                               <li>Binnen het Date datatype, wordt de einddatum van de periode opgeslagen op de internationale
-                                 manier, volgens de opbouw: jaar-maand-dag.</li>
+                                 manier.</li>
                               </ul>
                            </td>
                      </tr>
@@ -8888,6 +9041,71 @@
                            
                            <p>Vastgestelde GPP waarde voor de representatieve situatie van geluidproductie  op een
                               industrieterrein in de nacht.</p>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>IMGeluid</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie formele historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie authentiek</th>
+                        <td>Wettelijk gegeven</td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>Toegestane waarde: van 0,0 tot en met 99,0</td>
+                     </tr>
+                     <tr>
+                        <th>Type</th>
+                        <td>Measure</td>
+                     </tr>
+                     <tr>
+                        <th>Meeteenheid</th>
+                        <td>dB</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie afleidbaar</th>
+                        <td>Zie package</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         <a class="anchor" id="detail_class_IMGeluidAlgemeen_MonitoringresultaatIndustrie"></a><section id="detail_class_IMGeluidAlgemeen_MonitoringresultaatIndustrie">
+            <h5>   MonitoringresultaatIndustrie</h5>
+            <a class="anchor" id="detail_attribute_IMGeluidAlgemeen_MonitoringresultaatIndustrie_monitoringwaardeLnight"></a><section id="detail_attribute_IMGeluidAlgemeen_MonitoringresultaatIndustrie_monitoringwaardeLnight">
+               <h6>  <a href="#global_class_IMGeluidAlgemeen_MonitoringresultaatIndustrie">MonitoringresultaatIndustrie</a> monitoringwaardeLnight</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>monitoringwaardeLnight</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td>IMGeluid</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           <p>Vastgestelde monitoringwaarde voor de representatieve situatie van geluidproductie
+                              op een industrieterrein in de nacht.</p>
                            </td>
                      </tr>
                      <tr>
@@ -10250,6 +10468,66 @@
             </section>
          <a class="anchor" id="detail_class_IMGeluidAlgemeen_Geluidcontour"></a><section id="detail_class_IMGeluidAlgemeen_Geluidcontour">
             <h5>   Geluidcontour</h5>
+            <a class="anchor" id="detail_attribute_IMGeluidAlgemeen_Geluidcontour_contourLijn"></a><section id="detail_attribute_IMGeluidAlgemeen_Geluidcontour_contourLijn">
+               <h6>  <a href="#global_class_IMGeluidAlgemeen_Geluidcontour">Geluidcontour</a> contourLijn</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>contourLijn</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td>IMGeluid</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           <p>Als 2D-Lijn gemodelleerde meetkundige representatie van een geluidcontour boven Nederlands
+                              grondgebied.</p>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>IMGeluid</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           
+                           <ul>
+                              
+                              <li>2D geometrie van een geluidcontour.</li>
+                              </ul>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie formele historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie authentiek</th>
+                        <td>Wettelijk gegeven</td>
+                     </tr>
+                     <tr>
+                        <th>Type</th>
+                        <td>GM_MultiCurve</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
             <a class="anchor" id="detail_attribute_IMGeluidAlgemeen_Geluidcontour_contourVlak"></a><section id="detail_attribute_IMGeluidAlgemeen_Geluidcontour_contourVlak">
                <h6>  <a href="#global_class_IMGeluidAlgemeen_Geluidcontour">Geluidcontour</a> contourVlak</h6>
                
@@ -10269,7 +10547,7 @@
                         <th>Definitie</th>
                         <td>
                            
-                           <p>Optionele vlakgeometrie van een geluidcontour boven Nederlands grondgebied.</p>
+                           <p>Vlakgeometrie van een geluidcontour boven Nederlands grondgebied.</p>
                            </td>
                      </tr>
                      <tr>
@@ -10286,7 +10564,7 @@
                      </tr>
                      <tr>
                         <th>Kardinaliteit</th>
-                        <td>0 .. 1</td>
+                        <td>1</td>
                      </tr>
                      <tr>
                         <th>Indicatie authentiek</th>
@@ -10352,66 +10630,6 @@
                      <tr>
                         <th>Meeteenheid</th>
                         <td>dB</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            <a class="anchor" id="detail_attribute_IMGeluidAlgemeen_Geluidcontour_geometrie"></a><section id="detail_attribute_IMGeluidAlgemeen_Geluidcontour_geometrie">
-               <h6>  <a href="#global_class_IMGeluidAlgemeen_Geluidcontour">Geluidcontour</a> geometrie</h6>
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>geometrie</td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst</th>
-                        <td>IMGeluid</td>
-                     </tr>
-                     <tr>
-                        <th>Definitie</th>
-                        <td>
-                           
-                           <p>Als 2D-Lijn gemodelleerde meetkundige representatie van een geluidcontour boven Nederlands
-                              grondgebied.</p>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Herkomst definitie</th>
-                        <td>IMGeluid</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           
-                           <ul>
-                              
-                              <li>2D geometrie van een geluidcontour.</li>
-                              </ul>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie formele historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie authentiek</th>
-                        <td>Wettelijk gegeven</td>
-                     </tr>
-                     <tr>
-                        <th>Type</th>
-                        <td>GM_MultiCurve</td>
                      </tr>
                   </tbody>
                </table>
@@ -10812,7 +11030,8 @@
                               
                               <li>Geluidemissieobject te maken heeft met GPP besluiten die na inwerkingtreding op grond
                                  van de Omgevingswet genomen zijn EN Geluidgegevenscollectie.geluidbron = rijksweg,
-                                 OF provinciale weg, OF hoofdspoorweg, lokale spoorweg;</li>
+                                 OF provinciale weg, OF hoofdspoorweg OF( Geluidgegevenscollectie.geluidbron =lokale
+                                 spoorweg EN Geluidgegevenscollectie.systematiek =GPP);</li>
                               
                               <li>Geluidemissieobject hoort bij een Basisgeluidemissieobject;</li>
                               </ul>
@@ -11144,7 +11363,7 @@
                      </tr>
                      <tr>
                         <th>Meeteenheid</th>
-                        <td>meters</td>
+                        <td>meter</td>
                      </tr>
                      <tr>
                         <th>Indicatie afleidbaar</th>
@@ -11471,16 +11690,6 @@
                      <tr>
                         <th>Indicatie authentiek</th>
                         <td>Overig</td>
-                     </tr>
-                     <tr>
-                        <th>Regels</th>
-                        <td>
-                           
-                           <ul>
-                              
-                              <li>bronType is gelijk aan  "normalePuntbron".</li>
-                              </ul>
-                           </td>
                      </tr>
                      <tr>
                         <th>Type</th>
@@ -12463,6 +12672,61 @@
                   </tbody>
                </table>
                </section>
+            <a class="anchor" id="detail_attribute_IMGeluidAlgemeen_WegdeelGPP_optrektoeslag"></a><section id="detail_attribute_IMGeluidAlgemeen_WegdeelGPP_optrektoeslag">
+               <h6>  <a href="#global_class_IMGeluidAlgemeen_WegdeelGPP">WegdeelGPP</a> optrektoeslag</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>optrektoeslag</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td>IMGeluid</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           <p>De optrekcorrectie is een correctieterm ten gevolge van het afremmen en optrekken
+                              van het verkeer door de aanwezigheid van een kruispunt of een situatie die de gemiddelde
+                              snelheid van het verkeer sterk beperkt. </p>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>Reken- en meetvoorschrift geluid</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie formele historie</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Kardinaliteit</th>
+                        <td>0 .. 1</td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>Toegestane waarde: -9,9 t/m 9,9</td>
+                     </tr>
+                     <tr>
+                        <th>Type</th>
+                        <td>Measure</td>
+                     </tr>
+                     <tr>
+                        <th>Meeteenheid</th>
+                        <td>dB</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
             <a class="anchor" id="graph_EAID_A5AB50E8_5A98_4426_A89E_F5C9D91CF6F8"></a><a class="anchor" id="detail_class_IMGeluidAlgemeen_VerkeergegevensWeg"></a><section id="detail_class_IMGeluidAlgemeen_VerkeergegevensWeg">
                <h6>  <a href="#global_class_IMGeluidAlgemeen_WegdeelGPP">WegdeelGPP</a> VerkeergegevensWeg</h6>
                
@@ -12714,7 +12978,8 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Gemiddeld aantal motorvoertuigen van een voertuigklasse tijdens een dagdeel.</p>
+                              <p>Per dagdeel, het aantal motorvoertuigen, per voertuigklasse, dat gemiddeld over een
+                                 kalenderjaar per uur  passeert.</p>
                               </td>
                         </tr>
                         <tr>
@@ -14338,7 +14603,8 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Gemiddeld aantal motorvoertuigen van een voertuigklasse tijdens een dagdeel.</p>
+                              <p>Per dagdeel, het aantal motorvoertuigen, per voertuigklasse, dat gemiddeld over een
+                                 kalenderjaar per uur  passeert.</p>
                               </td>
                         </tr>
                         <tr>
@@ -15588,8 +15854,8 @@
                   </tbody>
                </table>
                </section>
-            <a class="anchor" id="detail_attribute_IMGeluidAlgemeen_Windturbine_jaargemiddeldeGeluidemissie"></a><section id="detail_attribute_IMGeluidAlgemeen_Windturbine_jaargemiddeldeGeluidemissie">
-               <h6>  <a href="#global_class_IMGeluidAlgemeen_Windturbine">Windturbine</a> jaargemiddeldeGeluidemissie</h6>
+            <a class="anchor" id="graph_EAID_9A426255_E676_4de1_B729_5977DDDAFA5D"></a><a class="anchor" id="detail_class_IMGeluidAlgemeen_EmissiePerDagdeel"></a><section id="detail_class_IMGeluidAlgemeen_EmissiePerDagdeel">
+               <h6>  <a href="#global_class_IMGeluidAlgemeen_Windturbine">Windturbine</a> EmissiePerDagdeel</h6>
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -15597,7 +15863,7 @@
                   <tbody>
                      <tr>
                         <th>Naam</th>
-                        <td>jaargemiddeldeGeluidemissie</td>
+                        <td>EmissiePerDagdeel</td>
                      </tr>
                      <tr>
                         <th>Herkomst</th>
@@ -15607,7 +15873,7 @@
                         <th>Definitie</th>
                         <td>
                            
-                           <p>Jaargemiddelde emissie van windturbine.</p>
+                           <p>De jaargemiddelde emissie van een windturbine per octaafband op een dagdeel.</p>
                            </td>
                      </tr>
                      <tr>
@@ -15615,27 +15881,156 @@
                         <td>IMGeluid</td>
                      </tr>
                      <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie formele historie</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie authentiek</th>
-                        <td>Wettelijk gegeven</td>
-                     </tr>
-                     <tr>
-                        <th>Type</th>
-                        <td>EmissiePerDagdeel</td>
+                        <th>Toelichting</th>
+                        <td>
+                           
+                           <ul>
+                              
+                              <li>De etmaalperiode (ook wel: dagdeel) is het gedeelte van een etmaal waarover het equivalent
+                                 geluidsniveau wordt bepaald.</li>
+                              
+                              <li>Deze gegevensgroep zal in totaal 3 keer moeten worden opgenomen per windturbine</li>
+                              </ul>
+                           
+                           <p>Etmaalperioden</p>
+                           
+                           <ul>
+                              
+                              <li>Dagperiode (7.00-19.00 uur)</li>
+                              
+                              <li>Avondperiode (19.00-23.00 uur)</li>
+                              </ul>
+                           
+                           <p>Nachtperiode (23.00-7.00 uur)</p>
+                           </td>
                      </tr>
                   </tbody>
                </table>
+               
+               <div class="notoc" id="detail_attribute_IMGeluidAlgemeen_EmissiePerDagdeel_dagdeel">
+                  <h7>Attribuutsoort    dagdeel EmissiePerDagdeel</h7>
+                  
+                  <table style="width: 100%;">
+                     <tbody>
+                        <tr></tr>
+                        <tr>
+                           <th>Naam</th>
+                           <td>dagdeel</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>IMGeluid</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Afgebakend tijdsvak binnen etmaal, waarvan het geheel van tijdsvakken samen een etmaal
+                                 beslaat.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>IMGeluid</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              <ul>
+                                 
+                                 <li>Dagperiode (7.00-19.00 uur)</li>
+                                 
+                                 <li>Avondperiode (19.00-23.00 uur)</li>
+                                 
+                                 <li>Nachtperiode (23.00-7.00 uur)</li>
+                                 </ul>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie formele historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Overig</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>Dagdeel</td>
+                        </tr>
+                        <tr>
+                           <th>Meeteenheid</th>
+                           <td>aantal</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="notoc" id="detail_attribute_IMGeluidAlgemeen_EmissiePerDagdeel_jaargemiddeldeGeluidemissiewaarde">
+                  <h7>Attribuutsoort    jaargemiddeldeGeluidemissiewaarde EmissiePerDagdeel</h7>
+                  
+                  <table style="width: 100%;">
+                     <tbody>
+                        <tr></tr>
+                        <tr>
+                           <th>Naam</th>
+                           <td>jaargemiddeldeGeluidemissiewaarde</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>IMGeluid</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Jaargemiddelde Geluidemissiewaarde per octaafband.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>IMGeluid</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie formele historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Overig</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>Toegestane waarde: van 0 tot en met 999</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>WaardePerOctaafband</td>
+                        </tr>
+                        <tr>
+                           <th>Meeteenheid</th>
+                           <td>km/u</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
                </section>
             <a class="anchor" id="detail_attribute_IMGeluidAlgemeen_Windturbine_linkNaarDocument"></a><section id="detail_attribute_IMGeluidAlgemeen_Windturbine_linkNaarDocument">
                <h6>  <a href="#global_class_IMGeluidAlgemeen_Windturbine">Windturbine</a> linkNaarDocument</h6>
@@ -15675,6 +16070,13 @@
                      <tr>
                         <th>Kardinaliteit</th>
                         <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Regels</th>
+                        <td>
+                           
+                           <p>Hier een correcte URL naar het document opgenomen moet worden</p>
+                           </td>
                      </tr>
                      <tr>
                         <th>Type</th>
@@ -15731,7 +16133,7 @@
                      </tr>
                      <tr>
                         <th>Meeteenheid</th>
-                        <td>meters</td>
+                        <td>meter</td>
                      </tr>
                   </tbody>
                </table>
@@ -16827,7 +17229,7 @@
                      </tr>
                      <tr>
                         <th>Type</th>
-                        <td>REAL</td>
+                        <td>Real</td>
                      </tr>
                      <tr>
                         <th>Indicatie afleidbaar</th>
@@ -17226,7 +17628,7 @@
                      </tr>
                      <tr>
                         <th>Meeteenheid</th>
-                        <td>meters</td>
+                        <td>meter</td>
                      </tr>
                   </tbody>
                </table>
@@ -17481,7 +17883,7 @@
                      </tr>
                      <tr>
                         <th>Meeteenheid</th>
-                        <td>meters</td>
+                        <td>meter</td>
                      </tr>
                   </tbody>
                </table>
@@ -17689,7 +18091,7 @@
                      </tr>
                      <tr>
                         <th>Meeteenheid</th>
-                        <td>meters</td>
+                        <td>meter</td>
                      </tr>
                   </tbody>
                </table>
@@ -17756,7 +18158,7 @@
                      </tr>
                      <tr>
                         <th>Meeteenheid</th>
-                        <td>meters</td>
+                        <td>meter</td>
                      </tr>
                   </tbody>
                </table>
@@ -18121,56 +18523,6 @@
                   </tbody>
                </table>
                
-               <div class="notoc" id="detail_attribute_IMGeluidAlgemeen_Geluidtoeslag_reflectiefactor">
-                  <h7>Attribuutsoort    reflectiefactor Geluidtoeslag</h7>
-                  
-                  <table style="width: 100%;">
-                     <tbody>
-                        <tr></tr>
-                        <tr>
-                           <th>Naam</th>
-                           <td>reflectiefactor</td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>IMGeluid</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>De fractie van de door de brugwand van een object Brug gereflecteerde geluidenergie
-                                 per octaafband.</p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>Omgevingsregeling</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie formele historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie authentiek</th>
-                           <td>Wettelijk gegeven</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>FactorPerOctaafband</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
                <div class="notoc" id="detail_attribute_IMGeluidAlgemeen_Geluidtoeslag_spoorvoertuigcategorie">
                   <h7>Attribuutsoort    spoorvoertuigcategorie Geluidtoeslag</h7>
                   
@@ -18514,67 +18866,6 @@
       
       <section id="">
          <h4>Gestructureerde datatypen  </h4>
-         <a class="anchor" id="detail_class_IMGeluidAlgemeen_EmissiePerDagdeel"></a><section id="detail_class_IMGeluidAlgemeen_EmissiePerDagdeel">
-            <h5>Gestructureerd datatype   EmissiePerDagdeel</h5>
-            <a class="anchor" id="detail_attribute_IMGeluidAlgemeen_EmissiePerDagdeel_dagdeel"></a><section id="detail_attribute_IMGeluidAlgemeen_EmissiePerDagdeel_dagdeel">
-               <h6>Data element details  <a href="#global_class_IMGeluidAlgemeen_EmissiePerDagdeel">EmissiePerDagdeel</a> dagdeel</h6>
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>dagdeel</td>
-                     </tr>
-                     <tr>
-                        <th>Definitie</th>
-                        <td>
-                           
-                           <p>Dagdeel waarvoor jaargemiddelde emissiewaarde geldig is.</p>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Type</th>
-                        <td>Dagdeel</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            <a class="anchor" id="detail_attribute_IMGeluidAlgemeen_EmissiePerDagdeel_jaargemiddeldeGeluidemissiewaarde"></a><section id="detail_attribute_IMGeluidAlgemeen_EmissiePerDagdeel_jaargemiddeldeGeluidemissiewaarde">
-               <h6>Data element details  <a href="#global_class_IMGeluidAlgemeen_EmissiePerDagdeel">EmissiePerDagdeel</a> jaargemiddeldeGeluidemissiewaarde</h6>
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>jaargemiddeldeGeluidemissiewaarde</td>
-                     </tr>
-                     <tr>
-                        <th>Definitie</th>
-                        <td>
-                           
-                           <p>Jaargemiddelde Geluidemissiewaarde per octaafband.</p>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Type</th>
-                        <td>WaardePerOctaafband</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            </section>
          <a class="anchor" id="detail_class_IMGeluidAlgemeen_FactorPerOctaafband"></a><section id="detail_class_IMGeluidAlgemeen_FactorPerOctaafband">
             <h5>Gestructureerd datatype   FactorPerOctaafband</h5>
             <a class="anchor" id="detail_attribute_IMGeluidAlgemeen_FactorPerOctaafband_band31Hz"></a><section id="detail_attribute_IMGeluidAlgemeen_FactorPerOctaafband_band31Hz">
@@ -20784,33 +21075,7 @@
 </section>
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
-   <!--MIMLM-InformatiemodelGeluid-1.0-0-20200421-20210224-184239 imvertor 1.61.3--><a class="anchor" id="graph_EAID_32771007_4395_44a9_9388_99F79758D88D"></a><a class="anchor" id="detail_class_IMGeluidAlgemeen_Wegdektype"></a><section id="detail_class_IMGeluidAlgemeen_Wegdektype">
-      <h3>  Wegdektype</h3>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <td>
-                  
-                  <p>Waardelijst met vastgestelde aanduidingen voor wegdekcorrectietypen. De vastgestelde
-                     aanduiding, die in de vorm van een code wordt aangeleverd, verwijst naar een wegdektype
-                     zoals gespecificeerd in een externe waardelijst. De locatie van deze waardelijst is
-                     nog onbekend.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      
-      <table style="width: 100%;">
-         <tbody>
-            <tr>
-               <th>Waarde</th>
-               <th>Omschrijving</th>
-            </tr>
-         </tbody>
-      </table>
-      </section><a class="anchor" id="graph_EAID_C9ACE184_6E2B_40c1_ACE0_A7C5EE554EF9"></a><a class="anchor" id="detail_class_IMGeluidAlgemeen_Schermtype"></a><section id="detail_class_IMGeluidAlgemeen_Schermtype">
+   <!--MIMLM-InformatiemodelGeluid-1.0-0-20210319-20210315-132307 imvertor 1.61.3--><a class="anchor" id="graph_EAID_C9ACE184_6E2B_40c1_ACE0_A7C5EE554EF9"></a><a class="anchor" id="detail_class_IMGeluidAlgemeen_Schermtype"></a><section id="detail_class_IMGeluidAlgemeen_Schermtype">
       <h3>Enumeratie details  Schermtype</h3>
       
       <table style="width: 100%;" class="list">
@@ -21082,13 +21347,6 @@
                   <p>Spoorvoertuigcategorie 12 zoals beschreven in geldende rekenregels voor railverkeer.</p>
                   </td>
             </tr>
-            <tr>
-               <th>13</th>
-               <td>
-                  
-                  <p>Spoorvoertuigcategorie 13 zoals beschreven in geldende rekenregels voor railverkeer.</p>
-                  </td>
-            </tr>
          </tbody>
       </table>
       </section><a class="anchor" id="graph_EAID_446F7B3A_1C41_4ef9_A7BF_C3D4F8F603E7"></a><a class="anchor" id="detail_class_IMGeluidAlgemeen_Wisselkantcode"></a><section id="detail_class_IMGeluidAlgemeen_Wisselkantcode">
@@ -21290,6 +21548,102 @@
             </tr>
          </tbody>
       </table>
+      </section><a class="anchor" id="graph_EAID_0CD16775_F50F_4c87_B87F_11BCAE493512"></a><a class="anchor" id="detail_class_IMGeluidAlgemeen_Wegdektype"></a><section id="detail_class_IMGeluidAlgemeen_Wegdektype">
+      <h3>Enumeratie details  Wegdektype</h3>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup></colgroup>
+         <tbody>
+            <tr>
+               <td>
+                  
+                  <p>Waardelijst met vastgestelde aanduidingen voor wegdekcorrectietypen. De vastgestelde
+                     aanduiding, die in de vorm van een code wordt aangeleverd, verwijst naar een wegdektype
+                     zoals gespecificeerd in een externe waardelijst. De locatie van deze waardelijst is
+                     nog onbekend.</p>
+                  </td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup style="width: 40%;"></colgroup>
+         <colgroup style="width: 60%;"></colgroup>
+         <tbody>
+            <tr>
+               <th>Waarde</th>
+               <th>Omschrijving</th>
+            </tr>
+            <tr>
+               <th>Referentiewegdek</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>1L ZOAB</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Akoestisch geoptimaliseerd 1L ZOAB</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>2L ZOAB</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>2L ZOAB fijn</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>SMA 0/5</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>SMA 0/8</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Akoestisch geoptimaliseerd SMA</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Uitgeborsteld beton</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Geoptimaliseerd uitgeborsteld beton</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Fijngebezemd beton</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Oppervlakbewerking</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Elementenverharding keperverband</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Elementenverharding niet in keperverband</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Stille elementenverharding</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Dunne deklagen A</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Dunne deklagen B</th>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
       </section><a class="anchor" id="graph_EAID_11918723_A26B_4cbd_BC37_F6914A4A4A4E"></a><a class="anchor" id="detail_class_IMGeluidAlgemeen_Treintype"></a><section id="detail_class_IMGeluidAlgemeen_Treintype">
       <h3>Enumeratie details  Treintype</h3>
       
@@ -21388,10 +21742,10 @@
                   </td>
             </tr>
             <tr>
-               <th>lokale spoorwegen</th>
+               <th>lokale spoorwegen met BGE</th>
                <td>
                   
-                  <p>De geluidbron van het aandachtsgebied zijn Lokale spoorwegen.</p>
+                  <p>De geluidbron van het aandachtsgebied zijn Lokale spoorwegen met BGE.</p>
                   </td>
             </tr>
             <tr>
@@ -21399,6 +21753,60 @@
                <td>
                   
                   <p>De geluidbron van het aandachtsgebied zijn Industrieterreinen.</p>
+                  </td>
+            </tr>
+            <tr>
+               <th>lokale spoorwegen met GPP</th>
+               <td>
+                  
+                  <p>De geluidbron van het aandachtsgebied zijn Lokale spoorwegen met GPP.</p>
+                  </td>
+            </tr>
+         </tbody>
+      </table>
+      </section><a class="anchor" id="graph_EAID_1C53A793_34DE_47bd_B794_766CD1ADBE6D"></a><a class="anchor" id="detail_class_IMGeluidAlgemeen_Systematiek"></a><section id="detail_class_IMGeluidAlgemeen_Systematiek">
+      <h3>Enumeratie details  Systematiek</h3>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup></colgroup>
+         <tbody>
+            <tr>
+               <td>
+                  
+                  <p>Geeft aan of het bij aanlevering sprake is van GPP, BGE of nvt (bijv cummulatie) </p>
+                  </td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup style="width: 40%;"></colgroup>
+         <colgroup style="width: 60%;"></colgroup>
+         <tbody>
+            <tr>
+               <th>Waarde</th>
+               <th>Omschrijving</th>
+            </tr>
+            <tr>
+               <th>GPP</th>
+               <td>
+                  
+                  <p>Geluidproductieplafond</p>
+                  </td>
+            </tr>
+            <tr>
+               <th>BGE</th>
+               <td>
+                  
+                  <p>Basisgeluidemissie</p>
+                  </td>
+            </tr>
+            <tr>
+               <th>nvt</th>
+               <td>
+                  
+                  <p>Baan met ballastbed met niet doorgelaste spoorstaven of onderbroken door maximaal
+                     twee niet voegloze wissels binnen 50 m (index b = 3);</p>
                   </td>
             </tr>
          </tbody>
@@ -21665,8 +22073,8 @@
                <th>lokale spoorweg</th>
                <td>
                   
-                  <p>Geluidgegevenscollectie bevat geluidgegevens conform domein BGE Spoor of domein GPP
-                     Spoor met lokale spoorweg als geluidbron. </p>
+                  <p>Geluidgegevenscollectie bevat geluidgegevens conform domein BGE of domein GPP Spoor
+                     met lokale spoorweg als geluidbron. </p>
                   </td>
             </tr>
             <tr>
@@ -22042,6 +22450,34 @@
                <td>
                   
                   <p>Baan bij overweg.</p>
+                  </td>
+            </tr>
+            <tr>
+               <th>indexB13</th>
+               <td>
+                  
+                  <p>Trambaan in gras (index bb=13);</p>
+                  </td>
+            </tr>
+            <tr>
+               <th>indexB14</th>
+               <td>
+                  
+                  <p>Trambaan in asfalt (index bb=14);</p>
+                  </td>
+            </tr>
+            <tr>
+               <th>indexB15</th>
+               <td>
+                  
+                  <p>Tramplatenspoor (index bb=15);</p>
+                  </td>
+            </tr>
+            <tr>
+               <th>indexB16</th>
+               <td>
+                  
+                  <p>Trambaan in klinkers (index bb=16);</p>
                   </td>
             </tr>
          </tbody>
