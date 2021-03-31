@@ -105,13 +105,27 @@ var respecConfig =
         publisher:  "naam van de publiceerder",
         company:    "eventueel naam van bedrijf",
     },
-    MIM: {
+    "MIM": {
       id: "mim11",
       title: "MIM - Metamodel Informatie Modellering",
       href: "https://docs.geostandaarden.nl/mim/mim10/",
       status: "Definitief",
       publisher: "Geonovum",
       date: "2017-06-14"
+    },
+    "Directive_2002/49/EC": {
+      id: "Directive_2002/49/EC",
+      title: "Directive 2002/49/EC of the European Parliament and of the Council of 25 June 2002 relating to the assessment and management of environmental noise",
+      status: "Definitief",
+      publisher: "the Commission in the Conciliation Committee on the Directive relating to the assessment and management of environmental noise",
+      date: "2002-06-25"
+    },
+    "Directive_2007/2/EC": {
+      id: "Directive_2007/2/EC",
+      title: "Directive 2007/2/EC of the European Parliament and of the Council of 14 March 2007 establishing an Infrastructure for Spatial Information in the European Community",
+      status: "Definitief",
+      publisher: "European Parliament and of the Council",
+      date: "2007-03-14"
     },
     "ISO19108-2005": {
       "href": "https://www.iso.org/standard/39891.html",
