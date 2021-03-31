@@ -24,11 +24,11 @@ var respecConfig =
   //specType: "ST",                   // Standaard
 //specType: "IM",                   // Informatie Model
   //specType: "PR",                   // Praktijk Richtlijn
-  //specType: "HR",                   // HandReiking
+  specType: "HR",                   // HandReiking
   //specType: "WA",                   // Werkafspraak
   //specType: "US",                   // Uitwisselings standaard
   //specType: "PS",                   // Presentatie standaard
-  specType: "AL",                   // Algemeen document
+  //specType: "AL",                   // Algemeen document
   //specType: "BD",                   // Beheer documentatie
   //-- format is verplicht! -----------------------------------------------------------
   //format: "markdown",                 // altijd "markdown"     
@@ -66,7 +66,7 @@ var respecConfig =
     }, 
   ],
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
-  shortName: "END", 	            // Wordt gebruikt in de document URL
+  shortName: "end", 	            // Wordt gebruikt in de document URL
   //-- pubDomain is verplicht! (komt in de URL: Activeer 1 van de volgende) ------------
   pubDomain: "cvgg", 	              // Informatiemodel Geluid
   //pubDomain: "mim", 	            // Metamodel Informatie Modellering
@@ -107,7 +107,7 @@ var respecConfig =
         company:    "eventueel naam van bedrijf",
     },
     MIM: {
-      id: "mim11",
+      id: "MIM",
       title: "MIM - Metamodel Informatie Modellering",
       href: "https://docs.geostandaarden.nl/mim/mim10/",
       status: "Definitief",
@@ -138,7 +138,7 @@ var respecConfig =
 
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
   //previousPublishDate: "2020-05-14",    	    // Format is "YYYY-MM-DD"
-  previousMaturity: "GN-DEF",                 // kies 1 van deze 3 regels
+  //previousMaturity: "GN-DEF",                 // kies 1 van deze 3 regels
   //previousMaturity: "CV",                   // kies 1 van deze 3 regels  	  
   //previousMaturity: "VV",  	                // kies 1 van deze 3 regels
 
