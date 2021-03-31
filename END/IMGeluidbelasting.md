@@ -248,14 +248,14 @@ die volgens artikel 3.20 Bkl geluidgevoelig zijn:
 >
 >   d. bijeenkomstfunctie voor kinderopvang met bedgebied en
 >   nevengebruiksfuncties daarvan.
-
-2. Het eerste lid geldt niet voor een gedeelte van een gebouw als het
-omgevingsplan in dat gedeelte van het gebouw geen geluidgevoelige ruimten
-toelaat, tenzij het gebouw een woonschip of woonwagen is.
-
-3. Onder een geluidgevoelig gebouw wordt ook verstaan een geluidgevoelig gebouw
-dat nog niet aanwezig is, maar op grond van het omgevingsplan of een
-omgevingsvergunning voor een omgevingsplanactiviteit mag worden gebouwd.
+>   
+>   2. Het eerste lid geldt niet voor een gedeelte van een gebouw als het
+>   omgevingsplan in dat gedeelte van het gebouw geen geluidgevoelige ruimten
+>   toelaat, tenzij het gebouw een woonschip of woonwagen is.
+>   
+>   3. Onder een geluidgevoelig gebouw wordt ook verstaan een geluidgevoelig gebouw
+>   dat nog niet aanwezig is, maar op grond van het omgevingsplan of een
+>   omgevingsvergunning voor een omgevingsplanactiviteit mag worden gebouwd.
 
 In de BAG is het gegeven ‘Gebruiksdoel’ opgenomen. Voor de
 gezondheidszorgfunctie wordt daarin echter niet opgenomen of die met of zonder
