@@ -24,17 +24,17 @@ var respecConfig =
   //specType: "ST",                   // Standaard
   //specType: "IM",                   // Informatie Model
   //specType: "PR",                   // Praktijk Richtlijn
-  specType: "HR",                   // HandReiking
+  //specType: "HR",                   // HandReiking
   //specType: "WA",                   // Werkafspraak
   //specType: "US",                   // Uitwisselings standaard
   //specType: "PS",                   // Presentatie standaard
-  //specType: "AL",                   // Algemeen document
+  specType: "AL",                   // Algemeen document
   //specType: "BD",                   // Beheer documentatie
   //-- format is verplicht! -----------------------------------------------------------
   //format: "markdown",                 // altijd "markdown"     
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  publishDate: "2020-09-22",  	      // Format is "YYY-MM-DD"
+  // publishDate: "2020-09-22",  	      // Format is "YYY-MM-DD"
   //-- de namen van de Editor(s) ------------------------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors: 
@@ -83,7 +83,7 @@ var respecConfig =
   //pubDomain: "visu", 	            // Visualisatie
   //pubDomain: "wp", 	              // White Paper
   //-- Repositorynaam op GitHub -------------------------------------------------------
-  github: "https://github.com/Geonovum/IMG/",
+  github: "https://github.com/Geonovum/IMG/END",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
   issueBase: "https://github.com/Geonovum/IMG/issues/",
   //-- edDraftURI: de URI van de werkversie van het document
