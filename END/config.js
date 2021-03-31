@@ -95,7 +95,8 @@ var respecConfig =
   
   //-- localBiblio: lokale bibliografie, voor verwijzigingen
   //-- NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging 
-  localBiblio: 
+  
+  localBiblio:
   {
     "CITAAT":
       {
@@ -137,7 +138,7 @@ var respecConfig =
 
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
   //previousPublishDate: "2020-05-14",    	    // Format is "YYYY-MM-DD"
-  //previousMaturity: "GN-DEF",                 // kies 1 van deze 3 regels
+  previousMaturity: "GN-DEF",                 // kies 1 van deze 3 regels
   //previousMaturity: "CV",                   // kies 1 van deze 3 regels  	  
   //previousMaturity: "VV",  	                // kies 1 van deze 3 regels
 
