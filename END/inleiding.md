@@ -12,10 +12,10 @@ Deze interviews [link of referentie naar verslag] omvatten het perspectief van
 alle groepen belanghebbenden die door het Ministerie van Infrastructuur en
 Waterstaat (I&W) geïdentificeerd zijn. Sommige van deze groepen komen overeen
 met het aangemerkte bevoegd gezag (BG). Andere groepen komen overeen met de
-[bronhouders van geluigegevens](https://www.begrippenxl.nl/dso/en/page/Bronhouder?clang=nl). In **tabel x**
+[bronhouders van geluigegevens](https://www.begrippenxl.nl/dso/en/page/Bronhouder?clang=nl). In **Tabel 1**
 staan de groepen stakeholders die worden erkend omschreven.
 
-| Naam groep stakeholders                              | Omschrijving                                                                                                                                                                                                                                                                                                                    | Rolomschrijving binnen de END                                                                                                                                                                                                                                                                                                                |
+| Naam (groep) stakeholder(s)                              | Omschrijving                                                                                                                                                                                                                                                                                                                    | Rolomschrijving binnen de END                                                                                                                                                                                                                                                                                                                |
 |------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Rijkswaterstaat (RWS)                                | Rijkswaterstaat is het uitvoerende agentschap van het Ministerie van Infrastructuur en Waterstaat. RWS beheert onder andere de Rijkswegen.                                                                                                                                                                                      | RWS is bronhouder en bevoegd gezag m.b.t. geluidgegevens voor Rijkswegen. Daarnaast heeft het RWS onderdeel Infomil de opdracht van I&W om de rapportage aan Europa te regelen.                                                                                                                                                              |
 | ProRail                                              | ProRail is de spoorwegbeheerder van Nederland. ProRail is daarbij verantwoordelijk voor het gehele spoorwegnet: aanleg, onderhoud, beheer en veiligheid.                                                                                                                                                                        | ProRail is bronhouder m.b.t. geluidgegevens voor hoofdspoorwegen.                                                                                                                                                                                                                                                                            |
@@ -24,6 +24,9 @@ staan de groepen stakeholders die worden erkend omschreven.
 | Ministerie van Infrastructuur en Waterstaat. (I&W)   | Het ministerie van Infrastructuur en Waterstaat (IenW) is verantwoordelijk voor verkeer en waterstaat, ruimtelijke ordening en leefbaarheid. Het thema geluid valt hier onder. I&W is de opdrachtgever voor de Centrale Voorziening Geluidgegevens en voor de uitbreiding van het IMGeluid.                                     | Afdeling DG Luchtvaart en Maritieme Zaken is bevoegd gezag op het gebied van de END verplichtingen rondom luchthavens van rijksbelang. Daarnaast is I&W bevoegd gezag voor hoofdspoorwegen.                                                                                                                                                  |
 | RijksInstituut voor Volksgezondheid en Milieu (RIVM) | Het Rijksinstituut voor Volksgezondheid en Milieu is een kennis- en onderzoeksinstituut in Nederland, gericht op de bevordering van de volksgezondheid en een gezond en veilig leefmilieu. Het RIVM heeft ook een afdeling gespecialiseerd in omgevingslawaai en is eigenaar van de Centrale Voorziening Geluidgegevens (CVGG). |                                                                                                                                                                                                                                                                                                                                              |
 | Adviesbureaus / Omgevingsdiensten                    | Adviesbureaus en omgevingsdiensten hebben experts in dienst op het gebied van akoestische simulaties en kunnen worden ingehuurd door bronhouders.                                                                                                                                                                               | De adviesbureaus en omgevingsdiensten maken de geluidmodellen in opdracht van bronhouders en berekenen de geluidbelastingkaarten.                                                                                                                                                                                                            |
+
+
+**Tabel 1. geluidbelastingkaarten en -tabellen stakeholders **
 
 Het beeld dat uit deze interviews is voortgekomen, is in afstemming met I&W en
 de Centrale Voorziening Geluidgegevens (CVGG) tot stand gekomen. In het volgende
@@ -60,7 +63,7 @@ niet per difinitie
 
 HIER AFBEELDING VAN DIT PROCES INVOEGEN
 
-verschil tussen berekeningen t.b.v geluidmonitoring en -belasting
+Verschil tussen berekeningen t.b.v geluidmonitoring en -belasting
 -----------------------------------------------------------------
 
 Het rekenhart van geluidsoftware is een soort super slimme rekenmachine die de
@@ -93,4 +96,9 @@ ze niet overeenkomen moet waarschijnlijk het IMGeluid worden aangepast.
 
 
 ## Leeswijzer
-Dit document is gestructureerd in x hoofdstukken. 
+Dit document is gestructureerd in 6 hoofdstukken. 
+- [Hoofdstuk 2](#end_datamodel) bevat een overzicht van het nieuwe END datamodel. 
+- [Hoofdstuk 3](#huidige_situatie) omschrijft de huidige situatie rondom de rapportage van geluidbelastingkaarten en -tabellen.
+- [Hoofdstuk 4](#toekomstige_situatie) omschijft de toekomstvisie rondom de rapportage van geluidbelastingkaarten en -tabellen.
+- [Hoofdstuk 5](#IMGeluidbelasting) bevat het Conceptueel Informatiemodel Geluidbelasting en een [aantal stellingen](#stellingen-ten-grondslag-aan-het-cimgeluidbelasting) die daaraan ten grondslag liggen.
+- [Hoofdstuk 6]() zal de precieze wijzigingen aan IMGeluid gaan bevatten.
