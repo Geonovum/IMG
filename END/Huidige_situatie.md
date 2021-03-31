@@ -2,7 +2,7 @@
 
 <figure id="Figuur_3">
 <img src="media/figuur3.png" alt="">
-<figcaption>Figuur 3. Huidige situatie rondom rapportage van END geluidbelastingkaarten en-tabellen gevisualiseerd.</figcaption>
+<figcaption>Huidige situatie rondom rapportage van END geluidbelastingkaarten en-tabellen gevisualiseerd.</figcaption>
 </figure>
 
 Om een beeld te schetsen van de huidige situatie zal de situatie worden
@@ -29,7 +29,7 @@ Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en -
 
 <figure id="Figuur_4">
 <img src="media/figuur4.png" alt="">
-<figcaption>Figuur 4. Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en -tabellen.</figcaption>
+<figcaption>Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en -tabellen.</figcaption>
 </figure>
 
 De eerste stap in de het huidige proces voor de rapportage van
@@ -66,7 +66,7 @@ Centraal aanleveren van kaarten aan infomil
 -------------------------------------------
 <figure id="Figuur_5">
 <img src="media/figuur5.png" alt="">
-<figcaption>Figuur 5. Centraal aanleveren van kaarten aan infomil.</figcaption>
+<figcaption>Centraal aanleveren van kaarten aan infomil.</figcaption>
 </figure>
 
 Wanneer de geluidbelastingkaarten en -tabellen berekend zijn, worden deze
@@ -84,7 +84,7 @@ Output prepareren van een rapportage aan de Europese commissie
 
 <figure id="Figuur_6">
 <img src="media/figuur6.png" alt="">
-<figcaption>Figuur 6. Output prepareren van een rapportage aan de Europese commissie.</figcaption>
+<figcaption>Output prepareren van een rapportage aan de Europese commissie.</figcaption>
 </figure>
 
 In het laatste deelproces zorgt Infomil ervoor dat de door bronhouders
