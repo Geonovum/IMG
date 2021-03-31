@@ -2,22 +2,19 @@
 
 ## Inleiding END Datamodel
 
-Overzicht Informatiemodel END
+De richtlijn omgevingslawaai 2002/49/ EG (END) [1] definieert
+rapportageverplichtingen voor de beoordeling en beheersing van omgevingslawaai.
+Met de introductie van de ‘INSPIRE-richtlijn’ [2] en de nieuwe ‘Verordening
+2019/1010 van de Europese Unie (EU) [3], zullen de lidstaten gegevens zoals
+vereist op grond van de END ter beschikking moeten stellen, conform de INSPIRE
+uitvoeringsbepalingen. Het huidige rapportagemechanisme waarin de lidstaten
+gegevens aanleveren, is niet in overeenstemming met de INSPIRE-richtlijn. Daarom
+wordt door het Europees Milieuagentschap een nieuw informatiemodel ontwikkeld
+dat voldoet aan zowel de END- als de INSPIRE-vereisten.
 
->   De richtlijn omgevingslawaai 2002/49/ EG (END) [1] definieert
->   rapportageverplichtingen voor de beoordeling en beheersing van
->   omgevingslawaai. Met de introductie van de ‘INSPIRE-richtlijn’ [2] en de
->   nieuwe ‘Verordening 2019/1010 van de Europese Unie (EU) [3], zullen de
->   lidstaten gegevens zoals vereist op grond van de END ter beschikking moeten
->   stellen, conform de INSPIRE uitvoeringsbepalingen. Het huidige
->   rapportagemechanisme waarin de lidstaten gegevens aanleveren, is niet in
->   overeenstemming met de INSPIRE-richtlijn. Daarom wordt door het Europees
->   Milieuagentschap een nieuw informatiemodel ontwikkeld dat voldoet aan zowel
->   de END- als de INSPIRE-vereisten.
-
->   Dit hoofdstuk geeft een overzicht van het nieuwe informatiemodel dat is
->   ontwikkeld voor de richtlijn omgevingslawaai om te voldoen aan de vereisten
->   ingevolge de INSPIRE richtlijn en de daarbij behorende dataspecificaties.
+Dit hoofdstuk geeft een overzicht van het nieuwe informatiemodel dat is
+ontwikkeld voor de richtlijn omgevingslawaai om te voldoen aan de vereisten
+ingevolge de INSPIRE richtlijn en de daarbij behorende dataspecificaties.
 
  Naam en Acroniemen
 ===================
@@ -27,36 +24,36 @@ Overzicht Informatiemodel END
  Doel en Definitie
 ==================
 
->   Het belangrijkste doel van de richtlijn omgevingslawaai is de niveaus van
->   geluidshinder vast te stellen en de nodige maatregelen te treffen, zowel op
->   lidstaat- als EU-niveau.
+Het belangrijkste doel van de richtlijn omgevingslawaai is de niveaus van
+geluidshinder vast te stellen en de nodige maatregelen te treffen, zowel op
+lidstaat- als EU-niveau.
 
->   Het END-informatiemodel, voorgesteld in het END-document, is ontwikkeld om
->   de rapportage door de lidstaten in een gemeenschappelijk formaat te
->   vergemakkelijken en ervoor te zorgen dat zowel aan de rapportagevereisten
->   van het END als aan INSPIRE wordt voldaan.
+Het END-informatiemodel, voorgesteld in het END-document, is ontwikkeld om de
+rapportage door de lidstaten in een gemeenschappelijk formaat te
+vergemakkelijken en ervoor te zorgen dat zowel aan de rapportagevereisten van
+het END als aan INSPIRE wordt voldaan.
 
 Environmental Noise Directive (END)
 -----------------------------------
 
->   Deze richtlijn Omgevingslawaai is van toepassing op geluid waaraan mensen
->   worden blootgesteld, met name in de bebouwde kom, in openbare parken of
->   andere stille gebieden in een agglomeratie, in stille gebieden in het open
->   landschap, in de buurt van scholen, ziekenhuizen en andere geluidsgevoelige
->   gebouwen en gebieden. Het is niet van toepassing op geluid dat wordt
->   veroorzaakt door de blootgestelde persoon zelf, geluid van huishoudelijke
->   activiteiten, geluid van buren, geluid op werkplekken, of geluid binnen
->   vervoermiddelen of door militaire activiteiten in militaire gebieden.
+Deze richtlijn Omgevingslawaai is van toepassing op geluid waaraan mensen worden
+blootgesteld, met name in de bebouwde kom, in openbare parken of andere stille
+gebieden in een agglomeratie, in stille gebieden in het open landschap, in de
+buurt van scholen, ziekenhuizen en andere geluidsgevoelige gebouwen en gebieden.
+Het is niet van toepassing op geluid dat wordt veroorzaakt door de blootgestelde
+persoon zelf, geluid van huishoudelijke activiteiten, geluid van buren, geluid
+op werkplekken, of geluid binnen vervoermiddelen of door militaire activiteiten
+in militaire gebieden.
 
->   Het belangrijkste doel van de richtlijn omgevingslawaai is de niveaus van
->   geluidshinder vast te stellen en de nodige maatregelen te treffen, zowel op
->   lidstaat- als EU-niveau.
+Het belangrijkste doel van de richtlijn omgevingslawaai is de niveaus van
+geluidshinder vast te stellen en de nodige maatregelen te treffen, zowel op
+lidstaat- als EU-niveau.
 
->   De Richtlijn omgevingslawaai (END) - Richtlijn 2002/49/ EG [1], bevat
->   verschillende bepalingen die de lidstaten verplichten om informatie aan de
->   Europese Commissie (EC) te verstrekken over o.a. de voorbereiding en
->   publicatie van strategische geluidsbelastingkaarten en actieplannen voor
->   geluidsbeheer voor:
+De Richtlijn omgevingslawaai (END) - Richtlijn 2002/49/ EG [1], bevat
+verschillende bepalingen die de lidstaten verplichten om informatie aan de
+Europese Commissie (EC) te verstrekken over o.a. de voorbereiding en publicatie
+van strategische geluidsbelastingkaarten en actieplannen voor geluidsbeheer
+voor:
 
 -   Alle wegen, spoorwegen, luchthavens en industrieterreinen binnen
     agglomeraties met meer dan 100.000 inwoners
@@ -68,31 +65,31 @@ Environmental Noise Directive (END)
 -   Grote luchthavens (meer dan 50.000 bewegingen per jaar) jaar, inclusief
     kleine vliegtuigen en helikopters).
 
->   Om de gestelde doelen uit de END richtlijn na te streven, richt de END zich
->   in het bijzonder op het bepalen van de blootstelling aan omgevingslawaai,
->   het waarborgen van informatie over omgevingslawaai en de effecten ervan voor
->   het publiek, het voorkomen en verminderen van omgevingslawaai waar nodig, en
->   het behouden van de kwaliteit van het omgevingslawaai waar het goed is.
+Om de gestelde doelen uit de END richtlijn na te streven, richt de END zich in
+het bijzonder op het bepalen van de blootstelling aan omgevingslawaai, het
+waarborgen van informatie over omgevingslawaai en de effecten ervan voor het
+publiek, het voorkomen en verminderen van omgevingslawaai waar nodig, en het
+behouden van de kwaliteit van het omgevingslawaai waar het goed is.
 
 END informatiemodelleringsproces
 --------------------------------
 
->   Het END-informatiemodel is ontwikkeld om te voldoen aan de
->   rapportageverplichtingen die in de END richtlijn zijn gespecificeerd. In dit
->   hoofdstuk wordt het nieuwe informatiemodel beschreven dat is ontwikkeld voor
->   de richtlijn omgevingslawaai om te voldoen aan de vereisten die lidstaten
->   van de Europese Unie (MS) en andere rapporterende landen moeten rapporteren
->   volgens de INSPIRE-dataspecificaties.
+Het END-informatiemodel is ontwikkeld om te voldoen aan de
+rapportageverplichtingen die in de END richtlijn zijn gespecificeerd. In dit
+hoofdstuk wordt het nieuwe informatiemodel beschreven dat is ontwikkeld voor de
+richtlijn omgevingslawaai om te voldoen aan de vereisten die lidstaten van de
+Europese Unie (MS) en andere rapporterende landen moeten rapporteren volgens de
+INSPIRE-dataspecificaties.
 
->   Het nieuwe END-informatiemodel bevat ruimtelijke data die conceptueel
->   overeenkomen met diverse INSPIRE ruimtelijke datathema's. De
->   INSPIRE-dataspecificaties zijn gebruikt als bron van een gemeenschappelijke
->   methodologie voor informatiemodellering en definities van INSPIRE-concepten.
+Het nieuwe END-informatiemodel bevat ruimtelijke data die conceptueel
+overeenkomen met diverse INSPIRE ruimtelijke datathema's. De
+INSPIRE-dataspecificaties zijn gebruikt als bron van een gemeenschappelijke
+methodologie voor informatiemodellering en definities van INSPIRE-concepten.
 
->   Verschillende INSPIRE-ruimtelijke gegevensthema's verwijzen naar use cases
->   voor omgevingslawaai, inclusief de rapportage in het kader van END. Daarom
->   zijn verschillende overwegingen in acht genomen bij de ontwikkeling van het
->   nieuwe END-informatiemodel:
+Verschillende INSPIRE-ruimtelijke gegevensthema's verwijzen naar use cases voor
+omgevingslawaai, inclusief de rapportage in het kader van END. Daarom zijn
+verschillende overwegingen in acht genomen bij de ontwikkeling van het nieuwe
+END-informatiemodel:
 
 -   Om te zorgen voor overeenstemming met beide richtlijnen die de
     END-rapportagecycli respecteren en de INSPIRE-richtlijn volledige
@@ -111,10 +108,10 @@ END informatiemodelleringsproces
     gegevensverzameling, bijvoorbeeld door gebruik te maken van
     INSPIRE-netwerkdiensten (nog in ontwikkeling).
 
->   De scope van het END informatiemodel betreft een ​​reeks gegevens die op grond
->   van de END aan de Europese Commissie moeten worden gerapporteerd. Het gaat
->   dus niet om de, meestal meer gedetailleerde en precieze, gegevens die worden
->   gebruikt in het geluidsmodelleringsproces.
+De scope van het END informatiemodel betreft een ​​reeks gegevens die op grond van
+de END aan de Europese Commissie moeten worden gerapporteerd. Het gaat dus niet
+om de, meestal meer gedetailleerde en precieze, gegevens die worden gebruikt in
+het geluidsmodelleringsproces.
 
 <figure id="Figuur_1">
 <img src="media/figuur1.png" alt="">
@@ -125,49 +122,47 @@ END informatiemodelleringsproces
 END informatiemodel en informatiemodel geluid (imgeluid)
 --------------------------------------------------------
 
->   Het END-datamodel is ontwikkeld om te voldoen aan de
->   rapportageverplichtingen gespecificeerd in de richtlijn voor de lidstaten
->   van de Europese Unie. Het huidige rapportagemechanisme waarin lidstaten
->   gegevens rapporteren, is niet in overeenstemming met de INSPIRE-richtlijn.
->   Daarom wordt door het Europees Milieuagentschap[^1] een nieuw datamodel
->   ontwikkeld dat zowel aan de END- als aan de INSPIRE-eisen voldoet.
+Het END-datamodel is ontwikkeld om te voldoen aan de rapportageverplichtingen
+gespecificeerd in de richtlijn voor de lidstaten van de Europese Unie. Het
+huidige rapportagemechanisme waarin lidstaten gegevens rapporteren, is niet in
+overeenstemming met de INSPIRE-richtlijn. Daarom wordt door het Europees
+Milieuagentschap[^1] een nieuw datamodel ontwikkeld dat zowel aan de END- als
+aan de INSPIRE-eisen voldoet.
 
 [^1]: European Environment Agency (EEA)
 
->   Het informatiemodel Geluid (IMGeluid) beschrijft de semantiek van digitale
->   bestanden voor de Centrale Voorziening Geluidgegevens. De Centrale
->   Voorziening Geluidgegevens (CVGG) is een centraal punt voor het eenduidig
->   uitwisselen van akoestische gegevens tussen bronhouders en gebruikers voor
->   verschillende geluiddomeinen. In IMGeluid staan de afspraken en technische
->   eisen waaraan de geluidbrongegevens en berekende geluidwaarden, zoals
->   geluidproductieplafonds en monitoringswaarden, moeten voldoen. Deze gegevens
->   geven de juridische werkelijkheid weer en worden gebruikt voor vergunningen
->   en monitoring. IMGeluid is gemodelleerd conform het Metamodel Informatie
->   Modellering (MIM).
+Het informatiemodel Geluid (IMGeluid) beschrijft de semantiek van digitale
+bestanden voor de Centrale Voorziening Geluidgegevens. De Centrale Voorziening
+Geluidgegevens (CVGG) is een centraal punt voor het eenduidig uitwisselen van
+akoestische gegevens tussen bronhouders en gebruikers voor verschillende
+geluiddomeinen. In IMGeluid staan de afspraken en technische eisen waaraan de
+geluidbrongegevens en berekende geluidwaarden, zoals geluidproductieplafonds en
+monitoringswaarden, moeten voldoen. Deze gegevens geven de juridische
+werkelijkheid weer en worden gebruikt voor vergunningen en monitoring. IMGeluid
+is gemodelleerd conform het Metamodel Informatie Modellering (MIM).
 
->   Terwijl de brongegevens voor geluidberekeningen voor rapportage aan EU
->   (volgens END informatiemodel) en aan CVGG (volgens IMGeluid) veel overlap
->   vertonen, is er een fundamenteel verschil tussen de reikwijdte van deze twee
->   geluidberekeningen. Voor de rapportage aan de EU wordt geluidsimissie
->   berekend, die geeft de geluidbelasting op een ontvanger (bijv.
->   geluidbelasting op de gevel van een huis) aan. De geluidsgegevens voor het
->   aanleveren aan CVGG geven echter geluidsemissie aan, wat een uitstoot aan de
->   geluidsbron betekent. Daarom voor immissie berekeningen rekening wordt
->   gehouden met het omgevingsmodel, (3D) informatie van de omliggende gebouwen
->   en terrein, wat bij emissie berekeningen niet het geval is. Verder kunnen de
->   karteringscriteria voor geluidbrongegevens (bijv. verkeersintensiteit
->   criteria) voor de rapportage aan EU en aan CVGG soms verschillen, waardoor
->   het niet altijd mogelijk is om één dataset direct te gebruiken in de
->   berekeningen voor zowel EU- als CVGG-rapportage.
+Terwijl de brongegevens voor geluidberekeningen voor rapportage aan EU (volgens
+END informatiemodel) en aan CVGG (volgens IMGeluid) veel overlap vertonen, is er
+een fundamenteel verschil tussen de reikwijdte van deze twee geluidberekeningen.
+Voor de rapportage aan de EU wordt geluidsimissie berekend, die geeft de
+geluidbelasting op een ontvanger (bijv. geluidbelasting op de gevel van een
+huis) aan. De geluidsgegevens voor het aanleveren aan CVGG geven echter
+geluidsemissie aan, wat een uitstoot aan de geluidsbron betekent. Daarom voor
+immissie berekeningen rekening wordt gehouden met het omgevingsmodel, (3D)
+informatie van de omliggende gebouwen en terrein, wat bij emissie berekeningen
+niet het geval is. Verder kunnen de karteringscriteria voor geluidbrongegevens
+(bijv. verkeersintensiteit criteria) voor de rapportage aan EU en aan CVGG soms
+verschillen, waardoor het niet altijd mogelijk is om één dataset direct te
+gebruiken in de berekeningen voor zowel EU- als CVGG-rapportage.
 
 END rapportage informatiemodel overzicht
 ----------------------------------------
 
->   Het nieuwe END-informatiemodel omvat voor elke rapportageverplichting een
->   apart informatiemodel data flow[^2]. Een schematisch overzicht van het
->   volledige END-informatiemodel geeft het gebruik van ruimtelijke data en
->   gestructureerde tabelgegevens aan met relaties tussen individuele
->   informatiemodellen (en rapportage data flows): zie Figuur 2.
+Het nieuwe END-informatiemodel omvat voor elke rapportageverplichting een apart
+informatiemodel data flow[^2]. Een schematisch overzicht van het volledige
+END-informatiemodel geeft het gebruik van ruimtelijke data en gestructureerde
+tabelgegevens aan met relaties tussen individuele informatiemodellen (en
+rapportage data flows): zie Figuur 2.
 
 [^2]: De informatiemodellen, die ruimtelijke informatie bevatten, zijn ontworpen
 de INSPIRE-informatiemodellen en specifieke END-vereisten te combineren. Andere
@@ -181,15 +176,12 @@ voorgestelde alternatieve vereenvoudigde gegevenstypen.
 <figcaption>Figuur 2. Combinatie van data flows in het END-informatiemodel</figcaption>
 </figure>
 
->   
+Het END-informatiemodel omvat alle rapportageverplichtingen op grond van de END.
+In het model zijn al deze verplichtingen aangemerkt als domeinen. Ieder domein
+heeft een eigen UML[^1] diagram. Een UML diagram voor een specifiek domein
+noemen we een domeinmodel. De volgende domeinenmodellen zijn gedefinieerd:
 
->   Het END-informatiemodel omvat alle rapportageverplichtingen op grond van de
->   END. In het model zijn al deze verplichtingen aangemerkt als domeinen. Ieder
->   domein heeft een eigen UML[^3] diagram. Een UML diagram voor een specifiek
->   domein noemen we een domeinmodel. De volgende domeinenmodellen zijn
->   gedefinieerd:
-
-[^3]: Unified Modeling Language
+[^1]: Unified Modeling Language
 
 -   Noise Sources (DF1_5): hoofdwegen, grote spoorwegen, grote luchthavens en
     agglomeraties, zoals gedefinieerd in de END;
@@ -220,89 +212,85 @@ voorgestelde alternatieve vereenvoudigde gegevenstypen.
 
 -   Bescherming en behoud van stille gebieden in agglomeraties of in open land.
 
->   De domeinmodellen zijn met elkaar verbonden en maken het mogelijk om de data
->   uit verschillende datastromen te combineren.
+De domeinmodellen zijn met elkaar verbonden en maken het mogelijk om de data uit
+verschillende datastromen te combineren.
 
->   Voor de *noise sources data flow* (DF1_5) moeten de ligging van wegen,
->   spoorwegen, luchthavens en agglomeraties van elk land in geografisch formaat
->   worden aangeleverd, inclusief akoestische eigenschappen die invloed hebben
->   op de totale geluidproductie, zoals bijvoorbeeld de jaarlijkse
->   verkeersstroom op een weg.
+Voor de *noise sources data flow* (DF1_5) moeten de ligging van wegen,
+spoorwegen, luchthavens en agglomeraties van elk land in geografisch formaat
+worden aangeleverd, inclusief akoestische eigenschappen die invloed hebben op de
+totale geluidproductie, zoals bijvoorbeeld de jaarlijkse verkeersstroom op een
+weg.
 
->   Voor de rapportage van *competent authorities* (DF_2) zijn geen ruimtelijke
->   gegevens nodig. De bevoegde autoriteiten van wegen en spoorwegen, die
->   verantwoordelijk zijn voor de geluidsbelastingkaarten en/of de
->   actieplanning, kunnen worden gerapporteerd op landniveau of op weg- /
->   spoorsegmentniveau[^4] (door middel van identificatoren). Bevoegde gezagen
->   van grote luchthavens moeten worden geïdentificeerd met behulp van
->   ICAO-codes en bevoegd gezag van agglomeraties met behulp van
->   agglomeratie-identificatoren. Bevoegd gezag dat belast is met de bescherming
->   van stille gebieden mag optioneel worden aangeleverd, maar het wordt
->   aanbevolen om dit te rapporteren door stilte gebiedsidentificaties te
->   gebruiken.
+Voor de rapportage van *competent authorities* (DF_2) zijn geen ruimtelijke
+gegevens nodig. De bevoegde autoriteiten van wegen en spoorwegen, die
+verantwoordelijk zijn voor de geluidsbelastingkaarten en/of de actieplanning,
+kunnen worden gerapporteerd op landniveau of op weg- / spoorsegmentniveau[^2]
+(door middel van identificatoren). Bevoegde gezagen van grote luchthavens moeten
+worden geïdentificeerd met behulp van ICAO-codes en bevoegd gezag van
+agglomeraties met behulp van agglomeratie-identificatoren. Bevoegd gezag dat
+belast is met de bescherming van stille gebieden mag optioneel worden
+aangeleverd, maar het wordt aanbevolen om dit te rapporteren door stilte
+gebiedsidentificaties te gebruiken.
 
-[^4]: De segmenten van hoofdwegen en spoorwegen zijn ontworpen om te voldoen aan
+[^2]: De segmenten van hoofdwegen en spoorwegen zijn ontworpen om te voldoen aan
 de END-criteria van de jaarlijkse verkeersstroom.
 
->   De *limit values* van een land of een gedefinieerde rapporteringsregio (DF3)
->   vereisen geen ruimtelijke informatie. De grenswaarden kunnen op landenniveau
->   gerapporteerd worden en het is mogelijk om deze grenswaarden apart voor elke
->   geluidbron of gezamenlijk voor alle bronnen te rapporteren.
+De *limit values* van een land of een gedefinieerde rapporteringsregio (DF3)
+vereisen geen ruimtelijke informatie. De grenswaarden kunnen op landenniveau
+gerapporteerd worden en het is mogelijk om deze grenswaarden apart voor elke
+geluidbron of gezamenlijk voor alle bronnen te rapporteren.
 
->   De *strategic noise maps* (DF4_8) bestaan ​​uit twee soorten gegevens. De
->   geluidscontouren worden aangeleverd als ruimtelijke data en dienen
->   aangeleverd te worden met een gesloten lijngeometrie of een polygoon. De
->   gegevens over de blootstelling van de bevolking aan een verhoogd
->   geluidsniveau, zijn gekoppeld aan ruimtelijke eenheden en kunnen op
->   verschillende rapportageniveaus worden verstrekt: voor hoofdwegen en
->   spoorwegen kunnen worden gerapporteerd op landniveau of met behulp van
->   kleinere territoriale eenheden. Voor grote luchthavens moeten de gegevens
->   worden gerapporteerd door middel van de ICAO-code met de mogelijkheid om de
->   blootstelling van de bevolking op lokale administratieve eenheden
->   (LAU)-niveau weer te geven. De informatie over de blootstelling van de
->   bevolking binnen agglomeraties voor wegen, spoorwegen, industrie, hoofdwegen
->   binnen een agglomeratie of grote spoorwegen binnen een agglomeratie, kan
->   worden gerapporteerd op agglomeratieniveau of door middel van gebruikmaking
->   van LAU-eenheden. De blootstelling van de bevolking voor luchthavens of
->   grote luchthavens binnen agglomeraties, kan op agglomeratieniveau of op
->   LBE-niveau worden gerapporteerd, samen met de respectieve ICAO-code wanneer
->   informatie over grote luchthavens wordt gerapporteerd.
+De *strategic noise maps* (DF4_8) bestaan ​​uit twee soorten gegevens. De
+geluidscontouren worden aangeleverd als ruimtelijke data en dienen aangeleverd
+te worden met een gesloten lijngeometrie of een polygoon. De gegevens over de
+blootstelling van de bevolking aan een verhoogd geluidsniveau, zijn gekoppeld
+aan ruimtelijke eenheden en kunnen op verschillende rapportageniveaus worden
+verstrekt: voor hoofdwegen en spoorwegen kunnen worden gerapporteerd op
+landniveau of met behulp van kleinere territoriale eenheden. Voor grote
+luchthavens moeten de gegevens worden gerapporteerd door middel van de ICAO-code
+met de mogelijkheid om de blootstelling van de bevolking op lokale
+administratieve eenheden (LAU)-niveau weer te geven. De informatie over de
+blootstelling van de bevolking binnen agglomeraties voor wegen, spoorwegen,
+industrie, hoofdwegen binnen een agglomeratie of grote spoorwegen binnen een
+agglomeratie, kan worden gerapporteerd op agglomeratieniveau of door middel van
+gebruikmaking van LAU-eenheden. De blootstelling van de bevolking voor
+luchthavens of grote luchthavens binnen agglomeraties, kan op agglomeratieniveau
+of op LBE-niveau worden gerapporteerd, samen met de respectieve ICAO-code
+wanneer informatie over grote luchthavens wordt gerapporteerd.
 
->   De *noise action plans* vereisen de rapportage van ruimtelijke informatie in
->   de vorm van een veelhoek. De informatie van het actieplan moet worden
->   ingevuld voor elke polygoon of multipolygoon waarvoor het actieplan wordt
->   opgesteld. Voor grote luchthavens is de ICAO-code ook vereist.
+De *noise action plans* vereisen de rapportage van ruimtelijke informatie in de
+vorm van een veelhoek. De informatie van het actieplan moet worden ingevuld voor
+elke polygoon of multipolygoon waarvoor het actieplan wordt opgesteld. Voor
+grote luchthavens is de ICAO-code ook vereist.
 
->   *Quiet Areas* zijn opgenomen in de data flow DF7_10 en vereisen rapportage
->   van een veelhoek van de stille ruimte die wordt beschermd tegen
->   omgevingslawaai. Voor stille gebieden binnen agglomeraties is het vereist om
->   de agglomeratie-identificatiecode te specificeren.
+*Quiet Areas* zijn opgenomen in de data flow DF7_10 en vereisen rapportage van
+een veelhoek van de stille ruimte die wordt beschermd tegen omgevingslawaai.
+Voor stille gebieden binnen agglomeraties is het vereist om de
+agglomeratie-identificatiecode te specificeren.
 
  END mapping naar INSPIRE ruimtelijke gegevensthema's
 =====================================================
 
->   INSPIRE ruimtelijke datathema's en bijbehorende dataspecificaties richten
->   zich op de algemene kenmerken van ruimtelijke data, die toepasbaar kunnen
->   zijn op verschillende use cases. Rapportageverplichtingen zijn daar slechts
->   een voorbeeld van, daarom bevatten de INSPIRE-informatiemodellen meestal
->   algemene informatie, zoals unieke identificatoren. Geometrie van ruimtelijke
->   objecten, informatie over de levenscyclus van objecten met betrekking tot
->   datamanagementprincipes en een reeks andere basiskenmerken die die
->   ruimtelijke objecten beschrijven, bijvoorbeeld een naam of specifieke
->   categorie.
+INSPIRE ruimtelijke datathema's en bijbehorende dataspecificaties richten zich
+op de algemene kenmerken van ruimtelijke data, die toepasbaar kunnen zijn op
+verschillende use cases. Rapportageverplichtingen zijn daar slechts een
+voorbeeld van, daarom bevatten de INSPIRE-informatiemodellen meestal algemene
+informatie, zoals unieke identificatoren. Geometrie van ruimtelijke objecten,
+informatie over de levenscyclus van objecten met betrekking tot
+datamanagementprincipes en een reeks andere basiskenmerken die die ruimtelijke
+objecten beschrijven, bijvoorbeeld een naam of specifieke categorie.
 
->   Aan de andere kant zijn de gerapporteerde gegevens onder de END-richtlijn
->   specifiek ontworpen om te voldoen aan de rapportageverplichtingen en
->   -criteria die door de END zijn gedefinieerd. Deze eisen dienen goed te
->   worden gecombineerd met de basis INSPIRE-informatiemodellen voor ruimtelijke
->   data.
+Aan de andere kant zijn de gerapporteerde gegevens onder de END-richtlijn
+specifiek ontworpen om te voldoen aan de rapportageverplichtingen en -criteria
+die door de END zijn gedefinieerd. Deze eisen dienen goed te worden gecombineerd
+met de basis INSPIRE-informatiemodellen voor ruimtelijke data.
 
->   De lijst met geïdentificeerde ruimtelijke gegevens in het toepassingsgebied
->   van de END-richtlijn heeft betrekking op de volgende
->   INSPIRE-ruimtelijke-gegevensthema's, gepresenteerd in Tabel 1.
+De lijst met geïdentificeerde ruimtelijke gegevens in het toepassingsgebied van
+de END-richtlijn heeft betrekking op de volgende
+INSPIRE-ruimtelijke-gegevensthema's, gepresenteerd in Tabel 1.
 
->   Table 1. Overzicht van het mapping van ruimtelijke data van END naar INSPIRE
->   ruimtelijke data thema's
+Table 1. Overzicht van het mapping van ruimtelijke data van END naar INSPIRE
+ruimtelijke data thema's
 
 | Basis for END spatial data                                | INSPIRE spatial data theme                                                      | INSPIRE spatial object type            |
 |-----------------------------------------------------------|---------------------------------------------------------------------------------|----------------------------------------|
@@ -317,34 +305,32 @@ de END-criteria van de jaarlijkse verkeersstroom.
  Normatieve referenties
 =======================
 
->   De volgende documenten zijn gehanteerd bij de totstandkoming van dit
->   document:
+De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
 
->   [1] Directive 2002/49/EC of the European Parliament and of the Council of 25
->   June 2002 relating to the assessment and management of environmental noise -
->   Declaration by the Commission in the Conciliation Committee on the Directive
->   relating to the assessment and management of environmental noise
+[1] Directive 2002/49/EC of the European Parliament and of the Council of 25
+June 2002 relating to the assessment and management of environmental noise -
+Declaration by the Commission in the Conciliation Committee on the Directive
+relating to the assessment and management of environmental noise
 
->   [2] Directive 2007/2/EC of the European Parliament and of the Council of 14
->   March 2007 establishing an Infrastructure for Spatial Information in the
->   European Community (INSPIRE)
+[2] Directive 2007/2/EC of the European Parliament and of the Council of 14
+March 2007 establishing an Infrastructure for Spatial Information in the
+European Community (INSPIRE)
 
->   [3] Regulation (EU) 2019/1010 of the European Parliament and of the Council
->   of 5 June 2019 on the alignment of reporting obligations in the field of
->   legislation related to the environment, and amending Regulations (EC) No
->   166/2006 and (EU) No 995/2010 of the European Parliament and of the Council,
->   Directives 2002/49/EC, 2004/35/EC, 2007/2/EC, 2009/147/EC and 2010/63/EU of
->   the European Parliament and of the Council, Council Regulations (EC) No
->   338/97 and (EC) No 2173/2005, and Council Directive 86/278/EEC (Text with
->   EEA relevance)
+[3] Regulation (EU) 2019/1010 of the European Parliament and of the Council of 5
+June 2019 on the alignment of reporting obligations in the field of legislation
+related to the environment, and amending Regulations (EC) No 166/2006 and (EU)
+No 995/2010 of the European Parliament and of the Council, Directives
+2002/49/EC, 2004/35/EC, 2007/2/EC, 2009/147/EC and 2010/63/EU of the European
+Parliament and of the Council, Council Regulations (EC) No 338/97 and (EC) No
+2173/2005, and Council Directive 86/278/EEC (Text with EEA relevance)
 
->   Link naar END document
+Link naar END document
 
  Algemene Termen en definities
 ------------------------------
 
->   Lijst van termen en definities die in deze beschrijving worden gehanteerd,
->   gesorteerd op alfabetische volgorde.
+Lijst van termen en definities die in deze beschrijving worden gehanteerd,
+gesorteerd op alfabetische volgorde.
 
 | **Term**                                                        | **Definitie**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -378,4 +364,5 @@ de END-criteria van de jaarlijkse verkeersstroom.
 | **MS**           | Member State                                     |
 | **NAP**          | Noise Action Plan                                |
 | **NUTS**         | Nomenclature of Territorial Units for Statistics |
+
 
