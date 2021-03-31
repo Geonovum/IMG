@@ -1,4 +1,4 @@
-Conceptueel informatiemodel geluidbelasting specificatie
+Conceptueel Informatiemodel Geluidbelasting specificatie (CIMGeluidbelasting)
 ========================================================
 <figure id="Figuur_10">
 <img src="media/CIMGeluidbelasting.png" alt="">
