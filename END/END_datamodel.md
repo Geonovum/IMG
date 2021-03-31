@@ -14,7 +14,7 @@ dat voldoet aan zowel de END- als de INSPIRE-vereisten.
 
 Dit hoofdstuk geeft een overzicht van het nieuwe informatiemodel dat is
 ontwikkeld voor de richtlijn omgevingslawaai om te voldoen aan de vereisten
-ingevolge de INSPIRE richtlijn en de daarbij behorende dataspecificaties.
+ingevolge de INSPIRE richtlijn en de daarbij behorende dataspecificaties [4].
 
  Naam en Acroniemen
 ===================
