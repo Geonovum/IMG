@@ -6,20 +6,18 @@ Toekomstvisie: geluidbelastingkaarten en -tabellen
 <figcaption>Toekomstvisie rondom rapportage van geluidbelastingkaarten en -tabellen gevisualiseerd.</figcaption>
 </figure>
 
-In de toekomstvisie doet Geonovum een voorzet om invulling te geven aan de
+In de toekomstvisie wordt op basis van de interviews een invulling gegeven aan de
 situatie na de komst van het END Datamodel. In dit beeld zijn de wensen van de
-opdrachtgever I&W en geïnterviewde stakeholders meegenomen. Hierbij heeft
-Geonovum haar positie als onafhankelijke overheidsstichting gebruikt om een
-onpartijdige afweging te maken. Bij deze afwegingen wordt er gestreefd naar een
+opdrachtgever I&W en geïnterviewde stakeholders meegenomen. Onder deze toekomstvisie liggen een aantal afwegingen. Bij deze afwegingen wordt er gestreefd naar een
 zo effectief mogelijke uitkomst, waarbij zowel technische als bestuurskundige
 aspecten zijn meegenomen. Technische aspecten en bestuurskundige aspecten hangen
 vaak met elkaar samen. Zo kan een standaard die complex is in beheer,
 bijvoorbeeld ook voor veel extra kosten zorgen. In dit hoofdstuk zal de
-toekomstvisie worden omscheven. De afwegingen die Geonovum heeft gemaakt, zullen
-in het [CIMGeluidbelasting](Link naar paragraaf) verder worden toegelicht.
+toekomstvisie worden omscheven. De rationale achter deze afwegingen, is te vinden
+in het [CIMGeluidbelasting](#IMGeluidbelasting).
 
-In [**Figuur 7**](Figuur_7) staat de toekomstvisie afgebeeld zoals Geonovum deze ziet. Het
-proces voor het aanleveren van geluidbelastingkaarten valt op te delen in drie
+In [**Figuur 7**](#Figuur_7) staat de toekomstvisie afgebeeld zoals uit interviews naar voren is gekomen. Het
+proces voor het aanleveren van geluidbelastingkaarten en -tabellen valt op te delen in drie
 deelprocessen:
 
 1.  Het verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en
@@ -44,10 +42,9 @@ door ProRail, Rijkswaterstaat, de provincies en I&W. Het gaat hierbij
 respectievelijk om geluidgegevens t.b.v. hoofdspoor, rijkswegen, provinciale
 wegen en luchthavens. Wanneer agglomeratie gemeenten de enige afnemer hiervan
 zijn, hoeven alleen de geluidgegevens, die zich binnen de agglomeratiegrenzen
-bevinden te worden aangeleverd. Het voorstel van Geonovum is dat agglomeratie
-gemeenten geen extra geluidgegevens aan de CVGG aanleveren. De afweging die
+bevinden te worden aangeleverd aan de CVGG. Uit de interviews blijkt dat het voor agglometatie gemeenten een beperkt voordeel oplevert, wanneer alle geluidgegevens t.b.v. geluidbelastingkaarten aan de CVGG kunnen worden aangeleverd. De afweging die
 hierachter ligt wordt nader toegelicht in [afwegingen ten grondslag aan het
-CIMGeluidbelasting](link).
+CIMGeluidbelasting](#stellingen-ten-grondslag-aan-het-cimgeluidbelasting).
 
 De geluidgegevens ten behoeve van het berekenen van geluidbelastingkaarten zijn
 een aparte set van gegevens. Deze moeten, naast geluidgegevens voor monitoring,
@@ -72,7 +69,7 @@ geëxporteerd conform het END Datamodel in geopackage formaat. Uit de interviews
 is gebleken dat dit voor geluidexperts niet voor problemen zal zorgen. Het idee
 is dat de verschillende stakeholders dit bestand vervolgens via het
 uploadportaal van de CVGG uploaden. Echter staat het nog niet vast wat precies
-[de rol van de CVGG](link naar verdieping) gaat worden, aangezien hier met de
+de rol van de CVGG gaat worden, aangezien hier met de
 CVGG nog geen afspraken over zijn vastgelegd.
 
 Centraal aanleveren van kaarten en tabellen aan europa/het publiek
