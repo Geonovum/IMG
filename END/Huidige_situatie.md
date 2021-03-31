@@ -1,5 +1,9 @@
 # Huidige situatie: geluidbelastingkaarten en -tabellen
-**FIGUUR x**
+
+<figure id="Figuur_3">
+<img src="media/figuur3.png" alt="">
+<figcaption>Figuur 3. Huidige situatie rondom rapportage van END geluidbelastingkaarten en-tabellen gevisualiseerd.</figcaption>
+</figure>
 
 Om een beeld te schetsen van de huidige situatie zal de situatie worden
 omschreven van de laatste rapportage van geluidgegevens aan de Europese
@@ -8,7 +12,7 @@ rapportage te doen op basis van de Europese richtlijn omgevingslawaai [bron]. Op
 basis van de uitgevoerde analyse [interviews], kan worden opgemaakt dat het
 huidige proces rondom de rapportage van geluidbelastingkaarten aan Europa, valt
 op te delen in drie deelprocessen. Deze drie deelprocessen staan ook
-gevisualiseerd in figuur **x** van links naar rechts.
+gevisualiseerd in [**Figuur 3**](Figuur_3) van links naar rechts.
 
 1.  Het verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en
     tabellen.
@@ -20,12 +24,13 @@ gevisualiseerd in figuur **x** van links naar rechts.
 Binnen deze deelprocessen worden de informatiestromen zichtbaar gemaakt. In dit
 hoofdstuk zal per deelproces hier aandacht aan worden besteed.
 
-Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en tabellen
+Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en -tabellen
 ---------------------------------------------------------------------------------------
 
-![](media/86e73d0e51d8ad451a2e514813f39a11.png)
-
-**FIGUUR x**
+<figure id="Figuur_4">
+<img src="media/figuur4.png" alt="">
+<figcaption>Figuur 4. Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en -tabellen.</figcaption>
+</figure>
 
 De eerste stap in de het huidige proces voor de rapportage van
 geluidbelastingkaarten aan de Europese Commissie, is het verzamelen van de
@@ -48,7 +53,7 @@ gemeente die hoort bij een agglomeratie de plicht om zelfstandige een
 geluidbelastingkaart en -tabel op te stellen. Samenwerking en onderlinge
 uitwisseling van gegevens tussen agglomeratiegemeenten, kan voorkomen op lokaal
 initiatief, maar wordt niet door het Rijk gestimuleerd. Dit wordt weergegeven in
-de **figuur.x** aan de hand van verschillende kleuren en kaartjes. Daarnaast
+de [**Figuur 4**](Figuur_4) aan de hand van verschillende kleuren en kaartjes. Daarnaast
 bestaan er ook geen vaste afspraken op landelijk niveau rondom de
 beschikbaarstelling van geluidgegevens voor geluidbelastingkaarten. Een
 agglomeratiegemeente heeft hierom bijvoorbeeld geen duidelijkheid over het
@@ -57,12 +62,12 @@ Formeel worden er ook geen eisen gesteld aan het formaat waarin
 geluidbelastingkaarten worden berekend. Een agglomeratiegemeente is hierom vrij
 de kaart in bijvoorbeeld PDF [link] of shape [link] formaat te documenteren.
 
-centraal aanleveren van kaarten aan infomil
+Centraal aanleveren van kaarten aan infomil
 -------------------------------------------
-
-![](media/57d1facedc233ab6389a1c1cf9c0280a.png)
-
-**FIGUUR x**
+<figure id="Figuur_5">
+<img src="media/figuur5.png" alt="">
+<figcaption>Figuur 5. Centraal aanleveren van kaarten aan infomil.</figcaption>
+</figure>
 
 Wanneer de geluidbelastingkaarten en -tabellen berekend zijn, worden deze
 gerapporteerd aan Infomil. In het geval van luchthavens van nationaal belang en
@@ -74,12 +79,13 @@ Alle agglomeratiegemeenten rapporteren zelfstandig geluidbelastingkaarten en
 kaarten voor Europa, is dat op bijvoorbeeld de publieke kaart voor Rijkswegen
 ook de wegen binnen agglomeratiegrenzen zijn meegenomen.
 
-output prepareren van een rapportage aan de Europese commissie
+Output prepareren van een rapportage aan de Europese commissie
 --------------------------------------------------------------
 
-![](media/bd90e1f36be3e9847d4671e022e27fe6.png)
-
-**FIGUUR x**
+<figure id="Figuur_6">
+<img src="media/figuur6.png" alt="">
+<figcaption>Figuur 6. Output prepareren van een rapportage aan de Europese commissie.</figcaption>
+</figure>
 
 In het laatste deelproces zorgt Infomil ervoor dat de door bronhouders
 aangeleverde gegevens worden verwerkt tot een rapport aan de Europese Unie.
