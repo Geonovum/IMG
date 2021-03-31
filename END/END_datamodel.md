@@ -116,10 +116,11 @@ END informatiemodelleringsproces
 >   dus niet om de, meestal meer gedetailleerde en precieze, gegevens die worden
 >   gebruikt in het geluidsmodelleringsproces.
 
-![](media/41b5e304f3d14d106aa0e329b203541b.png)
+<figure id="Figuur_1">
+<img src="media/figuur1.png" alt="">
+<figcaption>Figuur 1. Proces van content matching tussen END en INSPIRE om END informatiemodel te ontwikkelen</figcaption>
+</figure>
 
->   Figuur 1. Proces van content matching tussen END en INSPIRE om END
->   informatiemodel te ontwikkelen
 
 END informatiemodel en informatiemodel geluid (imgeluid)
 --------------------------------------------------------
@@ -175,9 +176,12 @@ ontwikkeld via het INSPIRE *Maintenance and Implementation* (MIG)
 -werkprogramma, bijvoorbeeld identificatoren, geharmoniseerde datatypen of
 voorgestelde alternatieve vereenvoudigde gegevenstypen.
 
-![](media/dc065b8af20104ce4361a82a90c61275.png)
+<figure id="Figuur_2">
+<img src="media/figuur2.png" alt="">
+<figcaption>Figuur 2. Combinatie van data flows in het END-informatiemodel</figcaption>
+</figure>
 
->   Figuur 2. Combinatie van data flows in het END-informatiemodel
+>   
 
 >   Het END-informatiemodel omvat alle rapportageverplichtingen op grond van de
 >   END. In het model zijn al deze verplichtingen aangemerkt als domeinen. Ieder
