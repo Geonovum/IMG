@@ -61,7 +61,6 @@ meetvoorschrift.
 Het IMGeluid kan zowel input- als outputbestanden bevatten. Het hoeft echter
 niet per difinitie
 
-HIER AFBEELDING VAN DIT PROCES INVOEGEN
 
 Verschil tussen berekeningen t.b.v geluidmonitoring en -belasting
 -----------------------------------------------------------------
