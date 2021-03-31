@@ -2,7 +2,7 @@ Conceptueel Informatiemodel Geluidbelasting specificatie (CIMGeluidbelasting)
 ========================================================
 <figure id="Figuur_10">
 <img src="media/CIMGeluidbelasting.png" alt="">
-<figcaption>Figuur 10. Conceptueel informatiemodel geluidbelasting.</figcaption>
+<figcaption>Conceptueel informatiemodel geluidbelasting.</figcaption>
 </figure>
 
 Het conceptuele model geluidbelasting (CIMGeluidbelasting) is een kijk op de
