@@ -3,7 +3,7 @@ Toekomstvisie: geluidbelastingkaarten en -tabellen
 
 <figure id="Figuur_7">
 <img src="media/figuur7.png" alt="">
-<figcaption>Figuur 7. Toekomstvisie rondom rapportage van geluidbelastingkaarten en -tabellen gevisualiseerd.</figcaption>
+<figcaption>Toekomstvisie rondom rapportage van geluidbelastingkaarten en -tabellen gevisualiseerd.</figcaption>
 </figure>
 
 In de toekomstvisie doet Geonovum een voorzet om invulling te geven aan de
@@ -34,7 +34,7 @@ Input Verzamelen van geluidgegevens volgens IMGeluid
 
 <figure id="Figuur_8">
 <img src="media/figuur8.png" alt="">
-<figcaption>Figuur 8. Input Verzamelen van geluidgegevens volgens IMGeluid.</figcaption>
+<figcaption>Input Verzamelen van geluidgegevens volgens IMGeluid.</figcaption>
 </figure>
 
 Op de linker plaat valt te zien dat agglomeratie-gemeenten de CVGG kunnen
@@ -63,7 +63,7 @@ Centraal aanleveren van kaarten aan de CVGG
 
 <figure id="Figuur_9">
 <img src="media/figuur9.png" alt="">
-<figcaption>Figuur 9. Centraal aanleveren van kaarten aan de CVGG.</figcaption>
+<figcaption>Centraal aanleveren van kaarten aan de CVGG.</figcaption>
 </figure>
 
 De geluidbelastingkaarten worden berekend door de bronhouders. Het rekenpakket
