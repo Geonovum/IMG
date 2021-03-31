@@ -106,7 +106,7 @@ var respecConfig =
         company:    "eventueel naam van bedrijf",
     },
     MIM: {
-      id: "mim11",
+      id: "MIM",
       title: "MIM - Metamodel Informatie Modellering",
       href: "https://docs.geostandaarden.nl/mim/mim10/",
       status: "Definitief",
