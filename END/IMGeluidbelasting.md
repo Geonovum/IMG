@@ -143,15 +143,14 @@ Definities CIM-Geluidbelasting
 Stellingen ten grondslag aan het CIMGeluidbelasting
 ---------------------------------------------------
 
-Het CIMGeluidbelasting, geeft het toekomstbeeld weer op basis van de afwegingen
-van Geonovum. Dit beeld zal tijdens de werkgroepen getoetst worden aan het
-werkveld, waarna de begeleidingsgroep een beslissing zal maken. Het besluit van
+Het CIMGeluidbelasting, geeft het toekomstbeeld weer op basis van de interviews. Dit beeld zal tijdens de klankbordsessie getoetst worden aan het
+werkveld, waarna de begeleidingsgroep een beslissing zal nemen. Het besluit van
 de begeleidingsgroep zal ter zijne tijd aan deze paragraaf worden toegevoegd.
-Geonovum heeft een aantal stellingen omschreven die aan de grondslag van dit
+In deze paragraaf staan een aantal stellingen omschreven die aan de grondslag van dit
 model liggen. Over deze stellingen is nog geen beslissing genomen door de
 begeleidingsgroep.
 
-Bij het maken van de stellingen, heeft Geonovum zijn de volgende uitgangspunten
+Bij het maken van de stellingen, zijn de volgende uitgangspunten
 gehanteerd:
 
 1.  Het achterliggende doel van de uitbreiding van het IMGeluid, is om de
@@ -204,9 +203,8 @@ binnen een agglomeratie afwijken .
 
 Wanneer agglomeraties worden verplicht om deze lokale geluidgegevens m.b.t.
 geluidbelasting aan te leveren aan de CVGG, dan zorgt dit voor extra
-complexiteit. Geonovum schat op basis van de interviews in dat de toegevoegde
-waarde van deze gegevens voor andere afnemers van de CVGG minimaal is. Geonovum
-schat ook in dat het hier gaat om het grootste volume aan geluidgegevens, wat de
+complexiteit. Op basis van de interviews wordt ingeschat, dat de toegevoegde
+waarde van deze gegevens voor andere afnemers van de CVGG minimaal is. Daarnaast blijkt uit de interviews dat het hier gaat om het grootste volume aan geluidgegevens, wat de
 complexiteit alleen maar groter maakt.
 
 Met de komst van het END datamodel zullen kaarten van agglomeraties makkelijker
@@ -218,15 +216,11 @@ Daarnaast, zullen waarschijnlijk nog aanvullende softwaremodules moeten worden
 gemaakt, om bijvoorbeeld de kaarten van agglomeratie gemeente samen te voegen
 tot 1 kaart. Wat de impact hiervan is op de Centrale Voorziening, moet nog
 blijken uit de impact analyse van de CVGG. Op basis van uitgangspunten [1] en
-[2] komt Geonovum tot de stelling:
+[2] luidt stelling:
 
-> *Agglomeratie-gemeenten hoeven, in ieder geval initieel, geen geluidgegevens aan
+> **Agglomeratie-gemeenten hoeven, in ieder geval initieel, geen geluidgegevens aan
 > te leveren aan de CVGG t.b.v. geluidbelastingkaarten. (wel
-> geluidbelastingkaarten & -tabellen)*
-
-Bij deze stelling is Geonovum ervan uitgegaan dat het aanleveren van
-geluidbelastingkaarten via de CVGG, niet leidt tot onacceptabel veel extra
-complexiteit.
+> geluidbelastingkaarten & -tabellen)**
 
 ### Geluidgevoellige gebouwen
 
@@ -274,11 +268,10 @@ op te slaan binnen verschillende informatieproducten zou op termijn kunnen
 leiden tot inefficiëntie. Er is bijvoorbeeld een situatie denkbaar waarbij een
 bronhouder vergelijkbare gegevens over gebouwen moet aanleveren aan meerdere
 “informatieproducten” binnen het Digitaal Stelsel Omgevingswet. Op basis van
-uitgangspunten [1] en [2] komt Geonovum tot de stelling:
+uitgangspunten [1] en [2] luidt de stelling:
 
-> *Stelling: Een uitbreiding op de BAG is de beste plek om gegevens over
-> geluidgevoelige gebouwen aan het werkveld beschikbaar te stellen aan het
-> werkveld*.
+> **Stelling: Een uitbreiding op de BAG is de beste plek om gegevens over
+> geluidgevoelige gebouwen aan het werkveld beschikbaar te stellen**.
 
 Deze stelling wil Geonovum graag verder onderzoeken door in gesprek te gaan met
 het werkveld tijdens de eerste klankbordsessie en met Kadaster.
