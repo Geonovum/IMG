@@ -1,9 +1,10 @@
 Toekomstvisie: geluidbelastingkaarten en -tabellen
 =============
 
-![](media/d5e529fdd1ad09462c6384e4464907cf.png)
-
-**FIGUUR x**
+<figure id="Figuur_7">
+<img src="media/figuur7.png" alt="">
+<figcaption>Figuur 7. Toekomstvisie rondom rapportage van geluidbelastingkaarten en -tabellen gevisualiseerd.</figcaption>
+</figure>
 
 In de toekomstvisie doet Geonovum een voorzet om invulling te geven aan de
 situatie na de komst van het END Datamodel. In dit beeld zijn de wensen van de
@@ -17,7 +18,7 @@ bijvoorbeeld ook voor veel extra kosten zorgen. In dit hoofdstuk zal de
 toekomstvisie worden omscheven. De afwegingen die Geonovum heeft gemaakt, zullen
 in het [CIMGeluidbelasting](Link naar paragraaf) verder worden toegelicht.
 
-In **figuur x** staat de toekomstvisie afgebeeld zoals Geonovum deze ziet. Het
+In [**Figuur 7**](Figuur_7) staat de toekomstvisie afgebeeld zoals Geonovum deze ziet. Het
 proces voor het aanleveren van geluidbelastingkaarten valt op te delen in drie
 deelprocessen:
 
@@ -31,9 +32,10 @@ deelprocessen:
 Input Verzamelen van geluidgegevens volgens IMGeluid
 ----------------------------------------------------
 
-![](media/d518372a67ab5709cedb72b8b0ece362.png)
-
-**FIGUUR x**
+<figure id="Figuur_8">
+<img src="media/figuur8.png" alt="">
+<figcaption>Figuur 8. Input Verzamelen van geluidgegevens volgens IMGeluid.</figcaption>
+</figure>
 
 Op de linker plaat valt te zien dat agglomeratie-gemeenten de CVGG kunnen
 gebruiken om geluidgegevens af te nemen die dienen als input voor het berekenen
@@ -59,9 +61,10 @@ rekkenpakket.
 Centraal aanleveren van kaarten aan de CVGG
 -------------------------------------------
 
-![](media/c8a40ac605470393988c846357cf775c.png)
-
-**FIGUUR x**
+<figure id="Figuur_9">
+<img src="media/figuur9.png" alt="">
+<figcaption>Figuur 9. Centraal aanleveren van kaarten aan de CVGG.</figcaption>
+</figure>
 
 De geluidbelastingkaarten worden berekend door de bronhouders. Het rekenpakket
 zorgt ervoor dat de output van een geluidbelastingberekening kan worden
