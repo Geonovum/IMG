@@ -115,7 +115,7 @@ het geluidsmodelleringsproces.
 
 <figure id="Figuur_1">
 <img src="media/figuur1.png" alt="">
-<figcaption>Proces van content matching tussen END en INSPIRE om END informatiemodel te ontwikkelen</figcaption>
+<figcaption>Proces van content matching tussen END en INSPIRE om END informatiemodel te ontwikkelen [4]</figcaption>
 </figure>
 
 
@@ -138,7 +138,7 @@ voorgestelde alternatieve vereenvoudigde gegevenstypen.
 
 <figure id="Figuur_2">
 <img src="media/figuur2.png" alt="">
-<figcaption>Combinatie van data flows in het END-informatiemodel</figcaption>
+<figcaption>Combinatie van data flows in het END-informatiemodel [4]</figcaption>
 </figure>
 
 Het END-informatiemodel omvat alle rapportageverplichtingen op grond van de END.
