@@ -1,7 +1,7 @@
 Conceptueel informatiemodel geluidbelasting specificatie
 ========================================================
 <figure id="Figuur_10">
-<img src="media/figuur10.png" alt="">
+<img src="media/CIMGeluidbelasting.png" alt="">
 <figcaption>Figuur 10. Conceptueel informatiemodel geluidbelasting.</figcaption>
 </figure>
 
