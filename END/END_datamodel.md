@@ -119,41 +119,6 @@ het geluidsmodelleringsproces.
 </figure>
 
 
-END informatiemodel en informatiemodel geluid (imgeluid)
---------------------------------------------------------
-
-Het END-datamodel is ontwikkeld om te voldoen aan de rapportageverplichtingen
-gespecificeerd in de richtlijn voor de lidstaten van de Europese Unie. Het
-huidige rapportagemechanisme waarin lidstaten gegevens rapporteren, is niet in
-overeenstemming met de INSPIRE-richtlijn. Daarom wordt door het Europees
-Milieuagentschap[^1] een nieuw datamodel ontwikkeld dat zowel aan de END- als
-aan de INSPIRE-eisen voldoet.
-
-[^1]: European Environment Agency (EEA)
-
-Het informatiemodel Geluid (IMGeluid) beschrijft de semantiek van digitale
-bestanden voor de Centrale Voorziening Geluidgegevens. De Centrale Voorziening
-Geluidgegevens (CVGG) is een centraal punt voor het eenduidig uitwisselen van
-akoestische gegevens tussen bronhouders en gebruikers voor verschillende
-geluiddomeinen. In IMGeluid staan de afspraken en technische eisen waaraan de
-geluidbrongegevens en berekende geluidwaarden, zoals geluidproductieplafonds en
-monitoringswaarden, moeten voldoen. Deze gegevens geven de juridische
-werkelijkheid weer en worden gebruikt voor vergunningen en monitoring. IMGeluid
-is gemodelleerd conform het Metamodel Informatie Modellering (MIM).
-
-Terwijl de brongegevens voor geluidberekeningen voor rapportage aan EU (volgens
-END informatiemodel) en aan CVGG (volgens IMGeluid) veel overlap vertonen, is er
-een fundamenteel verschil tussen de reikwijdte van deze twee geluidberekeningen.
-Voor de rapportage aan de EU wordt geluidsimissie berekend, die geeft de
-geluidbelasting op een ontvanger (bijv. geluidbelasting op de gevel van een
-huis) aan. De geluidsgegevens voor het aanleveren aan CVGG geven echter
-geluidsemissie aan, wat een uitstoot aan de geluidsbron betekent. Daarom voor
-immissie berekeningen rekening wordt gehouden met het omgevingsmodel, (3D)
-informatie van de omliggende gebouwen en terrein, wat bij emissie berekeningen
-niet het geval is. Verder kunnen de karteringscriteria voor geluidbrongegevens
-(bijv. verkeersintensiteit criteria) voor de rapportage aan EU en aan CVGG soms
-verschillen, waardoor het niet altijd mogelijk is om één dataset direct te
-gebruiken in de berekeningen voor zowel EU- als CVGG-rapportage.
 
 END rapportage informatiemodel overzicht
 ----------------------------------------
