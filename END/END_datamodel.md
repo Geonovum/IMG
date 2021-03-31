@@ -162,7 +162,7 @@ Het nieuwe END-informatiemodel omvat voor elke rapportageverplichting een apart
 informatiemodel data flow[^2]. Een schematisch overzicht van het volledige
 END-informatiemodel geeft het gebruik van ruimtelijke data en gestructureerde
 tabelgegevens aan met relaties tussen individuele informatiemodellen (en
-rapportage data flows): zie Figuur 2.
+rapportage data flows): zie [Figuur 2](#Figuur_2).
 
 [^2]: De informatiemodellen, die ruimtelijke informatie bevatten, zijn ontworpen
 de INSPIRE-informatiemodellen en specifieke END-vereisten te combineren. Andere
