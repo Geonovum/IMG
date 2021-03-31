@@ -22,13 +22,13 @@ var respecConfig =
   //-- specType is verplicht! (activeer 1 van de volgende) ----------------------------
   //specType: "NO",                   // Norm
   //specType: "ST",                   // Standaard
-specType: "IM",                   // Informatie Model
+//specType: "IM",                   // Informatie Model
   //specType: "PR",                   // Praktijk Richtlijn
   //specType: "HR",                   // HandReiking
   //specType: "WA",                   // Werkafspraak
   //specType: "US",                   // Uitwisselings standaard
   //specType: "PS",                   // Presentatie standaard
-//  specType: "AL",                   // Algemeen document
+  specType: "AL",                   // Algemeen document
   //specType: "BD",                   // Beheer documentatie
   //-- format is verplicht! -----------------------------------------------------------
   //format: "markdown",                 // altijd "markdown"     
