@@ -113,7 +113,7 @@ geluiddomeinen. In IMGeluid staan de afspraken en technische eisen waaraan de
 geluidbrongegevens en berekende geluidwaarden, zoals geluidproductieplafonds en
 monitoringswaarden, moeten voldoen. Deze gegevens geven de juridische
 werkelijkheid weer en worden gebruikt voor vergunningen en monitoring. IMGeluid
-is gemodelleerd conform het Metamodel Informatie Modellering [[[?mim11]]].
+is gemodelleerd conform het Metamodel Informatie Modellering [[MIM]].
 
 Terwijl de brongegevens voor geluidberekeningen voor rapportage aan EU (volgens
 END informatiemodel) en aan CVGG (volgens IMGeluid) veel overlap vertonen, is er
