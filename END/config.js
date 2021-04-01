@@ -22,7 +22,7 @@ var respecConfig =
   //-- specType is verplicht! (activeer 1 van de volgende) ----------------------------
   //specType: "NO",                   // Norm
   //specType: "ST",                   // Standaard
-  //specType: "IM",                   // Informatie Model
+//specType: "IM",                   // Informatie Model
   //specType: "PR",                   // Praktijk Richtlijn
   specType: "HR",                   // HandReiking
   //specType: "WA",                   // Werkafspraak
@@ -34,7 +34,7 @@ var respecConfig =
   //format: "markdown",                 // altijd "markdown"     
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  publishDate: "2020-09-22",  	      // Format is "YYY-MM-DD"
+  // publishDate: "2020-09-22",  	      // Format is "YYY-MM-DD"
   //-- de namen van de Editor(s) ------------------------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors: 
@@ -66,7 +66,7 @@ var respecConfig =
     }, 
   ],
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
-  shortName: "END", 	            // Wordt gebruikt in de document URL
+  shortName: "end", 	            // Wordt gebruikt in de document URL
   //-- pubDomain is verplicht! (komt in de URL: Activeer 1 van de volgende) ------------
   pubDomain: "cvgg", 	              // Informatiemodel Geluid
   //pubDomain: "mim", 	            // Metamodel Informatie Modellering
@@ -83,7 +83,7 @@ var respecConfig =
   //pubDomain: "visu", 	            // Visualisatie
   //pubDomain: "wp", 	              // White Paper
   //-- Repositorynaam op GitHub -------------------------------------------------------
-  github: "https://github.com/Geonovum/IMG/",
+  github: "https://github.com/Geonovum/IMG/END",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
   issueBase: "https://github.com/Geonovum/IMG/issues/",
   //-- edDraftURI: de URI van de werkversie van het document
@@ -95,7 +95,8 @@ var respecConfig =
   
   //-- localBiblio: lokale bibliografie, voor verwijzigingen
   //-- NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging 
-  localBiblio: 
+  
+  localBiblio:
   {
     "CITAAT":
       {
@@ -112,6 +113,20 @@ var respecConfig =
       status: "Definitief",
       publisher: "Geonovum",
       date: "2017-06-14"
+    },
+    "Directive_2002/49/EC": {
+      id: "Directive_2002/49/EC",
+      title: "Directive 2002/49/EC of the European Parliament and of the Council of 25 June 2002 relating to the assessment and management of environmental noise",
+      status: "Definitief",
+      publisher: "the Commission in the Conciliation Committee on the Directive relating to the assessment and management of environmental noise",
+      date: "2002-06-25"
+    },
+    "Directive_2007/2/EC": {
+      id: "Directive_2007/2/EC",
+      title: "Directive 2007/2/EC of the European Parliament and of the Council of 14 March 2007 establishing an Infrastructure for Spatial Information in the European Community",
+      status: "Definitief",
+      publisher: "European Parliament and of the Council",
+      date: "2007-03-14"
     },
     "ISO19108-2005": {
       "href": "https://www.iso.org/standard/39891.html",

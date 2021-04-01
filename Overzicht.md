@@ -170,7 +170,7 @@ attribuutsoort bevat (zie [MIM Patroon](https://geonovum.github.io/MIM-Werkomgev
 definitie). De waarde van een attribuutsoort mag niet buiten de kaders vallen van de
 structuur, zoals vastgesteld in het patroon. Om dit te valideren zal de
 voorziening gebruik maken van de machine-leesbare variant van dit patroon, het
-MIM metagegeven Formeel Patroon(Zie [MIM formeel patroon](https://geonovum.github.io/MIM-Werkomgeving/#metagegeven-formeel-patroon) voor
+MIM metagegeven Formeel Patroon (zie [MIM formeel patroon](https://geonovum.github.io/MIM-Werkomgeving/#metagegeven-formeel-patroon) voor
 definitie). Een formeel patroon is uitgedrukt als regular expression (RegEx).
 
 #### Meeteenheid
@@ -359,5 +359,7 @@ Gegevensuitwisseling met GML
 --------------------------------------
 
 Om op basis van het informatiemodel Geluid gegevens te kunnen uitwisselen, is een GML application schema gedefinieerd. Dit schema is gebaseerd op XML en meer specifiek op [Geography Markup Language](https://www.geonovum.nl/geo-standaarden/geography-markup-language-gml) (GML), het standaard uitwisselingsformaat voor geografische bestanden. 
+
+Het GML applicatie schema behorend bij deze versie van de standaard is het schema dat is te vinden in: [https://register.geostandaarden.nl/gmlapplicatieschema/img/1.1.0/].
 
 Het GML application schema is uit het informatiemodel Geluid afgeleid conform [[ISO19118-2011]] en annex E van de GML standaard [[gml]]. 
