@@ -2,7 +2,7 @@
 
 ## Inleiding END Datamodel
 
-De richtlijn omgevingslawaai 2002/49/ EG (END) [[Directive_2002/49/EC]] definieert
+De richtlijn omgevingslawaai 2002/49/ EG (END) [[Directive_2002_49_EC]] definieert
 rapportageverplichtingen voor de beoordeling en beheersing van omgevingslawaai.
 Met de introductie van de ‘INSPIRE-richtlijn’ [2] en de nieuwe ‘Verordening
 2019/1010 van de Europese Unie (EU) [3], zullen de lidstaten gegevens zoals
