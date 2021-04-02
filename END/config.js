@@ -116,7 +116,7 @@ var respecConfig =
     },
    // "Directive_2002/49/EC": {
     Directive_2002_49_EC: {
-      id: "Directive_2002/49/EC",
+      id: "Directive_2002_49_EC",
       title: "Directive 2002/49/EC of the European Parliament and of the Council of 25 June 2002 relating to the assessment and management of environmental noise",
       status: "Definitief",
       publisher: "the Commission in the Conciliation Committee on the Directive relating to the assessment and management of environmental noise",
