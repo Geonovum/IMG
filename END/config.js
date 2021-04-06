@@ -83,7 +83,7 @@ var respecConfig =
   //pubDomain: "visu", 	            // Visualisatie
   //pubDomain: "wp", 	              // White Paper
   //-- Repositorynaam op GitHub -------------------------------------------------------
-  github: "https://github.com/Geonovum/IMG/END",
+  github: "https://github.com/Geonovum/IMG/tree/gh-pages/END",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
   issueBase: "https://github.com/Geonovum/IMG/issues/",
   //-- edDraftURI: de URI van de werkversie van het document
