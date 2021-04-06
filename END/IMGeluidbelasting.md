@@ -276,8 +276,7 @@ uitgangspunten [1] en [2] luidt de stelling:
 Deze stelling wil Geonovum graag verder onderzoeken door in gesprek te gaan met
 het werkveld tijdens de eerste klankbordsessie en met Kadaster.
 
-De rol van de CVGG
-------------------
+### De rol van de CVGG
 
 > **Stelling: De CVGG is ondersteunend in de rol die Infomil heeft bij het
 > verzamelen van gegevens en het aanleveren aan de EC.**
