@@ -24,7 +24,7 @@ ingevolge de INSPIRE richtlijn en de daarbij behorende dataspecificaties [4].
  Doel en Definitie
 ==================
 
-Het belangrijkste doel van de richtlijn omgevingslawaai is de niveaus van
+Het belangrijkste doel van de richtlijn omgevingslawaai is het niveau van
 geluidshinder vast te stellen en de nodige maatregelen te treffen, zowel op
 lidstaat- als EU-niveau.
 
@@ -44,10 +44,6 @@ Het is niet van toepassing op geluid dat wordt veroorzaakt door de blootgestelde
 persoon zelf, geluid van huishoudelijke activiteiten, geluid van buren, geluid
 op werkplekken, of geluid binnen vervoermiddelen of door militaire activiteiten
 in militaire gebieden.
-
-Het belangrijkste doel van de richtlijn omgevingslawaai is de niveaus van
-geluidshinder vast te stellen en de nodige maatregelen te treffen, zowel op
-lidstaat- als EU-niveau.
 
 De Richtlijn omgevingslawaai (END) - Richtlijn 2002/49/ EG [1], bevat
 verschillende bepalingen die de lidstaten verplichten om informatie aan de
@@ -288,8 +284,6 @@ No 995/2010 of the European Parliament and of the Council, Directives
 2002/49/EC, 2004/35/EC, 2007/2/EC, 2009/147/EC and 2010/63/EU of the European
 Parliament and of the Council, Council Regulations (EC) No 338/97 and (EC) No
 2173/2005, and Council Directive 86/278/EEC (Text with EEA relevance)
-
-Link naar END document
 
  Algemene Termen en definities
 ------------------------------
