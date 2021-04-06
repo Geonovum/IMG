@@ -275,3 +275,40 @@ uitgangspunten [1] en [2] luidt de stelling:
 
 Deze stelling wil Geonovum graag verder onderzoeken door in gesprek te gaan met
 het werkveld tijdens de eerste klankbordsessie en met Kadaster.
+
+De rol van de CVGG
+------------------
+
+> **Stelling: De CVGG is ondersteunend in de rol die Infomil heeft bij het
+> verzamelen van gegevens en het aanleveren aan de EC.**
+
+Tijdens de interviews zijn al een aantal vragen gesteld over de wensen rondom de
+rol voor van de CVGG bij de aanlevering van gegevens aan de Europese Commissie.
+Tijdens de klankbordsessie wordt de mogelijkheid geboden aan belanghebbende hun
+visie hierover te delen.
+
+Voorziene veranderingen aan IMGeluid
+------------------------------------
+
+Op basis van het conceptueel informatiemodel is een overzicht gemaakt van de
+uitbreidingen die nodig zijn voor IMGeluid. Op basis van de stellingen zullen
+een aantal wijzigingen wel of niet nodig zijn. Deze afhankelijkheid wordt
+aangegeven via een verwijzing. De stellingen zijn als volgt genummerd:
+
+1.  Agglomeratie-gemeenten hoeven, in ieder geval initieel, geen geluidgegevens
+    aan te leveren aan de CVGG t.b.v. geluidbelastingkaarten. (wel
+    geluidbelastingkaarten & -tabellen)
+
+2.  Een uitbreiding op de BAG is de beste plek om gegevens over geluidgevoelige
+    gebouwen aan het werkveld beschikbaar te stellen aan het werkveld.
+
+3.  De CVGG is ondersteunend in de rol die Infomil heeft bij het verzamelen van
+    gegevens en het aanleveren aan de EC.
+
+Over het algemeen zijn dit wijzigingen die te maken hebben met het eerder
+benoemde verschil tussen de CNOSSOS rekenmethode en het Nederlandse reken en
+meet voorschrift. In [Bijlage 1](https://geonovum.github.io/IMG/END/#bijlage-1) is een tabel opgenomen met daarin dit
+overzicht op conceptueel niveau. Een meer gedetailleerde lijst met
+wijzigingsvoorstellen zal na verdere analyse worden gemaakt. Wat belangrijk is
+om bij deze analyse te bekijken staat ook kort toegelicht.
+
