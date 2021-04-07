@@ -238,7 +238,7 @@ De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
 
 -   RIVM: PSA Centrale Voorziening Geluidgegevens 1.04
 
--   AREG - Aanvullingsregeling geluid 8 juni 2020
+-   Geconsolideerde versies Omgevingswet, AMvB's en Omgevingsregeling, versie december 2020
 
 Mapping met INSPIRE
 -------------------------------------
