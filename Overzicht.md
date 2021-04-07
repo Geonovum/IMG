@@ -175,9 +175,8 @@ definitie). Een formeel patroon is uitgedrukt als regular expression (RegEx).
 
 #### Meeteenheid
 
-Bij een attribuutwaarde met het formaat `Measure` is een specifieke
-meeteenheid vereist. Deze meeteenheid wordt gespecificeerd op attribuutniveau
-in de metagegeventabel achter de tagged value “Meeteenheid”.
+Er wordt geen gebruik gemaakt van het Type `Measure` waarbij het mogelijk is om de meeteenheid op te geven. 
+De meeteenheid zal daarom opgenomen worden in de definitie van de attributen.
 
 #### Regels
 
