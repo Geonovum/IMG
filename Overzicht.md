@@ -215,13 +215,7 @@ RD New (2D) | `EPSG:28992`
 RD New + NAP (3D) | `EPSG:7415`
 
 #### Datum en tijd
-Het informatiemodel Geluid hanteert de ISO 8601 norm [[ISO8601]] voor het beschrijven van tijdsaspecten. De notatie van de tijd is overeenkomstig de ISO-regelgeving: `jjjj-mm-ddTuu:mm:ss`. De hoofdletter `T` wordt gebruikt om de datum- en tijdcomponent te scheiden. Een voorbeeld: `2011-10-13T10:47:48` betekent dus 13 oktober 2011 om 10 uur 47 minuten en 48 seconden. Hierbij is de tijdzone voor Nederland, de Midden-Europese tijdzone, van kracht.
-
-Meer in detail geldt: 
-- Bij attributen met het datatype `DatumTijd` is het formaat `jjjj-mm-ddTuu:mm:ss`.
-- Bij attributen met het datatype `Datum` is het formaat `jjjj-mm-dd`.
-
-Daarnaast is er op een aantal plekken sprake van een tijds*periode*. Dit wordt aangegeven met het datatype `TM_Period`, dat is gedefinieerd in de norm NEN-en-ISO 19108 [[ISO19108-2005]]. Een TM_Period bestaat altijd uit een tijdstip dat het begin van de periode aanduidt, en een tijdstip dat het einde van de periode aanduidt, waarbij het einde een later tijdstip moet zijn dan het begin. De tijdstippen worden ook hier genoteerd volgens ISO 8601.
+Uitwisseling van datum en tijd objecten in het informatiemodel Geluid gebeurt via GML. In de uitwisseling wordt geen tijdzone informatie meegegeven en wordt altijd de in Nederland geldende tijdszone bedoeld.
 
 Normatieve referenties
 ----------------------------
