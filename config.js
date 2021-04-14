@@ -31,7 +31,7 @@ var respecConfig =
   //format: "markdown",                 // altijd "markdown"     
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  publishDate: "2021-03-19",  	      // Format is "YYY-MM-DD"
+  publishDate: "2021-04-16",  	      // Format is "YYY-MM-DD"
   //-- de namen van de Editor(s) ------------------------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors: 
@@ -70,7 +70,17 @@ var respecConfig =
       name:       "Wilko Quak",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
-    }, 
+    },
+    {
+      name:       "Pieter Bresters",
+      company:    "Geonovum",
+      companyURL: "https://www.geonovum.nl"
+    },
+    {
+      name:       "Arnoud de Boer",
+      company:    "Geonovum",
+      companyURL: "https://www.geonovum.nl"
+    },
   ],
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
   shortName: "img", 	            // Wordt gebruikt in de document URL
