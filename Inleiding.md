@@ -1,4 +1,4 @@
-Inleiding en leeswijzer.
+Inleiding en leeswijzer
 ==========================
 
 Inleiding informatiemodel
@@ -63,4 +63,4 @@ Objecttypen worden binnen IMGeluid gecategoriseert als Administratief objecttype
 | Geluidberekening objecttype | Het objecttype heeft te maken met de uitkomst van een geluidberekening.                                                                                               |
 | Geluidgegevens objecttype   | Het objecttype heeft te maken met akoestische gegevens die gebruikt kunnen worden bij een geluidberekening.                                                           |
 
-![Legenda IMGeluid](media/Legenda1.png "Legenda IMGeluid")
+![Legenda IMGeluid](media/Legenda.png "Legenda IMGeluid")
