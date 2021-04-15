@@ -251,8 +251,8 @@ INSPIRE | IMGeluid
 ManagementRestrictionAndRegulationZone | Geluidaandachtsgebied
 &nbsp;&nbsp;inspireId | identificatie (NEN3610ID)
 &nbsp;&nbsp;geometry | geometrie
-&nbsp;&nbsp;zoneType | vaste waarde `noise restriction zone`
-&nbsp;&nbsp;environmentalDomain | vaste waarde `noise`
+&nbsp;&nbsp;zoneType | vaste waarde: `noise restriction zone`
+&nbsp;&nbsp;environmentalDomain | vaste waarde: `noise`
 &nbsp;&nbsp;designationPerdiod | Unpopulated
 &nbsp;&nbsp;competentAuthority | Geluidgegevenscolectie.bronhouder
 &nbsp;&nbsp;beginLifespanVersion | Geluidgegevenscollectie.tijdstipRegistratie
@@ -262,7 +262,7 @@ DocumentCitation | Documentverwijzing
 &nbsp;&nbsp;link | locatie
 &nbsp;&nbsp;specialisedZoneType | geluidbronsoort
 LegislationCitation | ontbreekt in IMGeluid, vaste verwijzing naar gerelateerde wet/regelgeving
-&nbsp;&nbsp;level | vaste waarde `national` 
+&nbsp;&nbsp;level | vaste waarde: `national` 
 
 Algemene Termen en definities
 -----------------------------------
