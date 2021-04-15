@@ -165,10 +165,10 @@ attribuutniveau in de tabel met metagegevens.
 
 #### Patroon/formeel patroon
 
-Het MIM metagegeven “Patroon” omschrijft de structuur van de waarde die het
-attribuutsoort bevat (zie [MIM Patroon](https://geonovum.github.io/MIM-Werkomgeving/#metagegeven-patroon) voor
-definitie). De waarde van een attribuutsoort mag niet buiten de kaders vallen van de
-structuur, zoals vastgesteld in het patroon. Om dit te valideren zal de
+Het MIM metagegeven “Patroon” geeft een nadere specificering van de toegestane waardes binnen het opgegeven type in mens-leesbare tekst
+(zie [MIM Patroon](https://geonovum.github.io/MIM-Werkomgeving/#metagegeven-patroon) voor
+definitie). Vaak wordt een patroon gebruikt om aan te geven dat een getal niet groter mag zijn dan een bepaalde waarde of dat er een maximum aantal decimalen is toegestaan.
+Om dit te valideren zal de
 voorziening gebruik maken van de machine-leesbare variant van dit patroon, het
 MIM metagegeven Formeel Patroon (zie [MIM formeel patroon](https://geonovum.github.io/MIM-Werkomgeving/#metagegeven-formeel-patroon) voor
 definitie). Een formeel patroon is uitgedrukt als regular expression (RegEx).
