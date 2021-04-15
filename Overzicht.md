@@ -215,7 +215,9 @@ RD New (2D) | `EPSG:28992`
 RD New + NAP (3D) | `EPSG:7415`
 
 #### Datum en tijd
-Uitwisseling van datum en tijd objecten in het informatiemodel Geluid gebeurt via GML. In de uitwisseling wordt geen tijdzone informatie meegegeven en wordt altijd de in Nederland geldende tijdszone bedoeld.
+Uitwisseling van datum en tijd objecten in het informatiemodel Geluid gebeurt
+via GML. In de uitwisseling wordt geen tijdzone informatie meegegeven en wordt
+altijd de in Nederland geldende tijdszone bedoeld.
 
 Normatieve referenties
 ----------------------------
@@ -351,8 +353,17 @@ dataspecificatie.
 Gegevensuitwisseling met GML
 --------------------------------------
 
-Om op basis van het informatiemodel Geluid gegevens te kunnen uitwisselen, is een GML application schema gedefinieerd. Dit schema is gebaseerd op XML en meer specifiek op [Geography Markup Language](https://www.geonovum.nl/geo-standaarden/geography-markup-language-gml) (GML), het standaard uitwisselingsformaat voor geografische bestanden. 
+Om op basis van het informatiemodel Geluid gegevens te kunnen uitwisselen, is
+een XML application schema afgeleid, volgende de methode zola beschreven in de
+[Geography Markup
+Language](https://www.geonovum.nl/geo-standaarden/geography-markup-language-gml)
+(GML) standaard, het standaard uitwisselingsformaat voor geografische bestanden. 
 
-Het GML applicatie schema behorend bij deze versie van de standaard is het schema dat is te vinden in: [https://register.geostandaarden.nl/gmlapplicatieschema/img/1.1.0/].
+Het GML applicatie schema behorend bij deze versie van de standaard is het
+schema dat is te vinden in:
+[https://register.geostandaarden.nl/gmlapplicatieschema/img/1.1.0/]. Dit schema
+maakt gebruik van versie 3.2.2 van het GML schema. (Let op: om historische
+redenen staat het 3.2.2 schema van GML in een folder met de naam 3.2.1 echter
+het schema van IMGeluid is gebaseerd op versie 3.2.2 van de standaard.
 
 Het GML application schema is uit het informatiemodel Geluid afgeleid conform [[ISO19118-2011]] en annex E van de GML standaard [[gml]]. 
