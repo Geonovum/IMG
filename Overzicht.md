@@ -462,7 +462,7 @@ Language](https://www.geonovum.nl/geo-standaarden/geography-markup-language-gml)
 
 Het GML applicatie schema behorend bij deze versie van de standaard is het
 schema dat is te vinden in:
-[<https://register.geostandaarden.nl/gmlapplicatieschema/img/1.1.0/>]. Dit
+[[<https://register.geostandaarden.nl/gmlapplicatieschema/img/1.1.0/>]]. Dit
 schema maakt gebruik van versie 3.2.2 van het GML schema. (Let op: om
 historische redenen staat het 3.2.2 schema van GML in een folder met de naam
 3.2.1 echter het schema van IMGeluid is gebaseerd op versie 3.2.2 van de
