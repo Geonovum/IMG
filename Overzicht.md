@@ -123,9 +123,9 @@ Dit objecttype heeft een attribuutsoort `naam` met kardinaliteit `[0..1]`, dat w
 In het domein GPP Industrie is een objecttype <code>GeluidbronIndustrie</code> gedefinieerd dat een specialisatie is van <code>Geluidemissieobject</code>. Als specialisatie erft het alle eigenschappen van <code>Geluidemissieobject</code>, inclusief de attribuutsoort <code>naam</code> en bijbehorende kardinaliteit. Ook in het domein GPP Industrie is de <code>naam</code> dus optioneel.
 </aside>
 
-Als iets in sommige gevallen wel, en in andere gevallen niet verplicht is, dan is dit aangegeven in hoofdstuk 5 bij het desbetreffende gegeven onder het kopje **Regels**. 
+Als iets in sommige gevallen wel, en in andere gevallen niet verplicht is, dan is dit aangegeven in hoofdstuk 4 bij het desbetreffende gegeven onder het kopje **Regels**. 
 
-Bij alle gegevens is aangegeven in hoofdstuk 5 dat `mogelijk geen waarde = Nee`. Dit is een metagegeven dat conform MIM moet worden ingevuld. Het geeft aan of het is toegestaan om een waarde weg te laten die formeel verplicht is,  waarbij dan moet worden aangegeven wat de reden is van het weglaten. Dit wordt voor IMGeluid niet van belang geacht, maar moet wel worden ingevuld conform MIM.
+Bij alle gegevens is aangegeven in hoofdstuk 4 dat `mogelijk geen waarde = Nee`. Dit is een metagegeven dat conform MIM moet worden ingevuld. Het geeft aan of het is toegestaan om een waarde weg te laten die formeel verplicht is,  waarbij dan moet worden aangegeven wat de reden is van het weglaten. Dit wordt voor IMGeluid niet van belang geacht, maar moet wel worden ingevuld conform MIM.
 
 #### Identificatie binnen het informatiemodel
 
@@ -192,13 +192,13 @@ patronen.
 #### Hoogte en geometrie
 In geluidmodellen is het bij het merendeel van de gemodelleerde objecten van belang om de hoogte te weten. Voor alle objecttypen in IMGeluid is bepaald of de hoogte van belang is en moet worden opgenomen. Als de hoogte wordt opgenomen, gebeurt dit als onderdeel van de geometrie. We spreken dan van een 3D geometrie. Als de hoogte niet is opgenomen is dit een 2D geometrie. 
 
-Hoogte wordt in 3D geometrie opgenomen als derde coördinaat, de `z`, in elk coördinatenpaar van de geometrie. In hoofdstuk 5 is bij elk objecttype dat een geometrie als eigenschap heeft, bij deze eigenschap voorgeschreven of het om een 2D of 3D geometrie gaat.
+Hoogte wordt in 3D geometrie opgenomen als derde coördinaat, de `z`, in elk coördinatenpaar van de geometrie. In hoofdstuk 4 is bij elk objecttype dat een geometrie als eigenschap heeft, bij deze eigenschap voorgeschreven of het om een 2D of 3D geometrie gaat.
 
-Hoogte is bij 3D geometrieën aangegeven in meters. Afhankeljik van het coordinaatsysteem is dit ten opzichte van NAP (in het geval van RD New) of ten opzichte van de ellipsoid (in het geval van ETRS98). Zie ook de volgende paragraaf voor uitleg over deze coordinaatsystemen. In sommige gevallen is het van belang om daarnaast te weten wat de relatieve hoogte is van het object ten opzichte van het maaiveld ter plaatse. Het IMGeluid maakt het mogelijk om deze informatie op te nemen als een lijst van hoogtegetallen die correspondeert met de lijst van coordinaten, i.e. voor elk coördinatenpaar (`x,y,z`) een getal dat de relatieve hoogte uitdrukt. De lijst van hoogtegetallen moet even lang zijn als de lijst met coördinatenparen, en dezelfde volgorde hanteren, zodat te zien is welk relatieve hoogtegetal correspondeert met welk coördinatenpaar. 
+Hoogte is bij 3D geometrieën aangegeven in meters. Afhankeljik van het coordinaatsysteem is dit ten opzichte van NAP (in het geval van RD New) of ten opzichte van de ellipsoid (in het geval van ETRS98). Zie ook de volgende paragraaf voor uitleg over deze coördinaatsystemen. In sommige gevallen is het van belang om daarnaast te weten wat de relatieve hoogte is van het object ten opzichte van het maaiveld ter plaatse. Het IMGeluid maakt het mogelijk om deze informatie op te nemen als een lijst van hoogtegetallen die correspondeert met de lijst van coördinaten, i.e. voor elk coördinatenpaar (`x,y,z`) een getal dat de relatieve hoogte uitdrukt. De lijst van hoogtegetallen moet even lang zijn als de lijst met coördinatenparen, en dezelfde volgorde hanteren, zodat te zien is welk relatieve hoogtegetal correspondeert met welk coördinatenpaar. 
 
 Indien nodig is het daarnaast mogelijk om aan te geven dat een object zwevend is ten opzichte van het maaiveld.
 
-In sommige gevallen is het relevant om te weten of een object uit een geluidmodel links of rechts staat van een ander object, danwel voorover of achterover helt. Dit soort aanduidingen zijn altijd relatief aan de richting van de lijn die het object representeert. Het startpunt van een lijn is het eerste coordinatenpaar van de lijn.
+In sommige gevallen is het relevant om te weten of een object uit een geluidmodel links of rechts staat van een ander object, danwel voorover of achterover helt. Dit soort aanduidingen zijn altijd relatief aan de richting van de lijn die het object representeert. Het startpunt van een lijn is het eerste coördinatenpaar van de lijn.
 
 #### Coördinaatsystemen
 Het IMGeluid ondersteunt zowel het ruimtelijk referentiesysteem RD New + NAP, als ETRS89. RD New is een geprojecteerd CRS dat voor het laatst is herzien op 26 oktober 2019. Het is geschikt voor gebruik in Nederland, op land inclusief de Waddenzee, de Waddeneilanden en 12 mijl uit de kust. RD New vervangt EPSG28991 (RD Oud).  RD + NAP betekent dat wordt uitgegaan van Normaal Amsterdams Peil voor de hoogte.
@@ -342,7 +342,7 @@ dataspecificatie.
 | **CVGG**        | Centrale Voorziening Geluidgegevens               |
 | **GML**         | Geography Markup Language                         |
 | **GPP**         | Geluidproductieplafond                            |
-| **INSPIRE**     | Infrastructure for Spatial Information in Europe. |
+| **INSPIRE**     | Infrastructure for Spatial Information in Europe  |
 | **MIM**         | Metamodel Informatie Modellering                  |
 | **RIVM**        | Rijksinstituut voor Volksgezondheid en Milieu     |
 | **UML**         | Unified Modeling Language                         |
