@@ -1,6 +1,6 @@
 # Wijzigingen in het Informatiemodel Geluid
 
-In de tabel hieronder Staan de wijzigingen die in deze versie hebben
+In de tabel hieronder staan de wijzigingen die in deze versie hebben
 plaatsgevonden na release 1.0. Er worden hoofdzakelijk wezenlijke veranderingen
 genoemd. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
 
