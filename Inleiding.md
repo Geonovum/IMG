@@ -28,14 +28,12 @@ onderzoek. Het doel van het Informatiemodel Geluid is dat:
 -   gegevens op een eenduidige geautomatiseerde wijze ontsloten kunnen worden
     naar de afnemers, waaronder geluidexperts en belanghebbenden.
 
-De afspraken uit het IMGeluid zijn vastgelegd in dit document, de IMGeluid
-catalogus. In deze catalogus is de laatste versie van het informatiemodel te
-vinden. Dit informatiemodel bestaat uit objecten die in relatie staan met
+De afspraken uit het IMGeluid zijn vastgelegd in dit document. Dit informatiemodel bestaat uit objecten die in relatie staan met
 elkaar. Voor ieder object worden alle eigenschappen (attributen), die in de
 werkelijkheid relevant zijn, opgenomen in het informatiemodel. Het
-informatiemodel in deze catalogus is gemodelleerd conform het Metamodel
+informatiemodel is gemodelleerd conform het Metamodel
 Informatie Modellering [[MIM]] met behulp van de modelleertaal UML [[uml]]. Het
-MIM bevat modelleerregels waar het IMGeluid aan moet voldoen. Daarnaast sluit IMGeluid ook aan op het Basismodel Geo-informatie [[NEN3610]]. In deze catalogus zijn de objecttypen en attribuutsoorten
+MIM bevat modelleerregels waar het IMGeluid aan moet voldoen. Daarnaast sluit IMGeluid ook aan op het Basismodel Geo-informatie [[NEN3610]]. In dit document zijn de objecttypen en attribuutsoorten
 voorzien van definities, en waar nodig nadere toelichtingen, zodat het
 informatiemodel ook te begrijpen is zonder kennis van UML.
 
@@ -43,9 +41,9 @@ Leeswijzer
 ----------------
 
 Dit document is gestructureerd in 5 hoofdstukken. Hoofdstuk 2
-beschrijft het toepassingsgebied of onderwerp waar deze catalogus op van
+beschrijft het toepassingsgebied of onderwerp waar dit informatiemodel op van
 toepassing is. Hoofdstuk 3 geeft een beschrijving van dit
-toepassingsgebied en hoe deze catalogus wordt toegepast in een
+toepassingsgebied en hoe dit informatiemodel wordt toegepast in een
 informatie- en data-uitwisselingsproces. In dit hoofdstuk zijn ook de normatieve
 referenties opgenomen en de lijst met algemene termen, definities en
 afkortingen. In hoofdstuk 4 is het Informatiemodel Geluid gespecificeerd in UML. Vanaf paragraaf 4.1 tot en met 4.7 staan eerst alle diagrammen. Door op objecttypen in de diagrammen te klikken, kan meer gedetailleerde informatie in tabelvorm worden weergegeven. Hoofdstuk 5 bevat de inhoud van alle bij de gegevensuitwisseling gebruikte waardenlijsten.
@@ -54,7 +52,7 @@ De bijlage geeft een overzicht van de wijzigingen in het informatiemodel ten opz
 
 ### Diagram leeswijzer
 
-Hoe deze catalogus kan worden gelezen wordt [in deze video verder toegelicht](https://www.youtube.com/watch?v=2UiJ38_QdRU). 
+Hoe dit document kan worden gelezen wordt [in deze video verder toegelicht](https://www.youtube.com/watch?v=2UiJ38_QdRU). 
 Objecttypen worden binnen IMGeluid gecategoriseert als Administratief objecttype, Geluidberekening objecttype of Geluidgegevens objecttype. Deze categorisering wordt aangegeven in het diagram aan de hand van de kleuren in de legenda. 
 
 | Categorie              | Omschrijving                                                                                                                                                             |
