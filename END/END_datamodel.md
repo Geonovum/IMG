@@ -105,9 +105,7 @@ END-informatiemodel:
     INSPIRE-netwerkdiensten (nog in ontwikkeling).
 
 De scope van het END informatiemodel betreft een ​​reeks gegevens die op grond van
-de END aan de Europese Commissie moeten worden gerapporteerd. Het gaat dus niet
-om de, meestal meer gedetailleerde en precieze, gegevens die worden gebruikt in
-het geluidsmodelleringsproces.
+de END aan de Europese Commissie moeten worden gerapporteerd.
 
 <figure id="Figuur_1">
 <img src="media/figuur1.png" alt="">
