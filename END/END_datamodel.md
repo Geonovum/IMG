@@ -87,12 +87,12 @@ omgevingslawaai, inclusief de rapportage in het kader van END. Daarom zijn
 verschillende overwegingen in acht genomen bij de ontwikkeling van het nieuwe
 END-informatiemodel:
 
--   Om te zorgen voor overeenstemming met beide richtlijnen die de
-    END-rapportagecycli respecteren en de INSPIRE-richtlijn volledige
-    implementatie-routekaart,
+-   Om te zorgen voor overeenstemming met beide richtlijnen, betreffende de
+    END-rapportagecycli en de volledige
+    implementatie-routekaart van de INSPIRE-richtlijn,
 
--   Om meervoudige verstrekking van ruimtelijke gegevens te voorkomen of op zijn
-    minst te minimaliseren sets? Onder de END- en INSPIRE-richtlijn en zorgen
+-   Om een meervoudige verstrekking van ruimtelijke gegevens op grond van de END- en INSPIRE-richtlijn te voorkomen of op zijn
+    minst te minimaliseren en zorgen
     voor een beter gebruik van nationale infrastructuur voor ruimtelijke
     informatie,
 
