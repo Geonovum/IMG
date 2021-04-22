@@ -28,7 +28,7 @@ onderzoek. Het doel van het Informatiemodel Geluid is dat:
 -   gegevens op een eenduidige geautomatiseerde wijze ontsloten kunnen worden
     naar de afnemers, waaronder geluidexperts en belanghebbenden.
 
-De afspraken uit het IMGeluid zijn vastgelegd in dit document. Dit informatiemodel bestaat uit objecten die in relatie staan met
+De afspraken uit het IMGeluid zijn vastgelegd in dit document. Het document wordt ook wel aangeduid als de IMGeluid catalogus. Dit informatiemodel bestaat uit objecten die in relatie staan met
 elkaar. Voor ieder object worden alle eigenschappen (attributen), die in de
 werkelijkheid relevant zijn, opgenomen in het informatiemodel. Het
 informatiemodel is gemodelleerd conform het Metamodel
