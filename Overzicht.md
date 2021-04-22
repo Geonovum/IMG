@@ -67,11 +67,6 @@ objecttypen niet redundant in de dataspecificatie hoeven worden opgenomen.
 -   IMGeluid is gemodelleerd conform het Metamodel Informatie Modellering
     (versie 1.1).
 
--   In aanvulling op de in MIM gedefinieerde constructies zoals objecttype en
-    relatiesoorten, is in IMGeluid diagrammen gebruik gemaakt van zogenaamde
-    *dependency relaties*. Deze zijn slechts bedoeld om aan de lezer weer te
-    geven dat bepaalde objecttypen in een collectie kunnen worden opgenomen.
-
 -   In de IMGeluid catalogus worden attribuutsoorten afkomstig uit een MIM
     Gegevensgroep aangegeven met een "-" voor de naam van de attribuutsoort.
 
