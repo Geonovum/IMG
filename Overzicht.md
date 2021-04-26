@@ -244,7 +244,8 @@ omgaan met regels, multipliciteit en patronen.
 In geluidmodellen is het bij het merendeel van de gemodelleerde objecten van
 belang om de hoogte te weten. Voor alle objecttypen in IMGeluid is bepaald of de
 hoogte van belang is en moet worden opgenomen. Als de hoogte wordt opgenomen,
-gebeurt dit als onderdeel van de geometrie. We spreken dan van een 3D geometrie.
+gebeurt dit als onderdeel van de geometrie. 
+Formeel zouden we van 2,5D moeten spreken, omdat in IMGeluid het niet voor kan komen dat er 2 punten zijn met dezelfde X- en Y-coördinaat. Voor het gemak spreken in dit document dan toch van 3D geometrie.
 Als de hoogte niet is opgenomen is dit een 2D geometrie.
 
 Hoogte wordt in 3D geometrie opgenomen als derde coördinaat, de `z`, in elk
