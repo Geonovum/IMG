@@ -87,12 +87,12 @@ omgevingslawaai, inclusief de rapportage in het kader van END. Daarom zijn
 verschillende overwegingen in acht genomen bij de ontwikkeling van het nieuwe
 END-informatiemodel:
 
--   Om te zorgen voor overeenstemming met beide richtlijnen die de
-    END-rapportagecycli respecteren en de INSPIRE-richtlijn volledige
-    implementatie-routekaart,
+-   Om te zorgen voor overeenstemming met beide richtlijnen, betreffende de
+    END-rapportagecycli en de volledige
+    implementatie-routekaart van de INSPIRE-richtlijn,
 
--   Om meervoudige verstrekking van ruimtelijke gegevens te voorkomen of op zijn
-    minst te minimaliseren sets? Onder de END- en INSPIRE-richtlijn en zorgen
+-   Om een meervoudige verstrekking van ruimtelijke gegevens op grond van de END- en INSPIRE-richtlijn te voorkomen of op zijn
+    minst te minimaliseren en zorgen
     voor een beter gebruik van nationale infrastructuur voor ruimtelijke
     informatie,
 
@@ -105,9 +105,7 @@ END-informatiemodel:
     INSPIRE-netwerkdiensten (nog in ontwikkeling).
 
 De scope van het END informatiemodel betreft een ​​reeks gegevens die op grond van
-de END aan de Europese Commissie moeten worden gerapporteerd. Het gaat dus niet
-om de, meestal meer gedetailleerde en precieze, gegevens die worden gebruikt in
-het geluidsmodelleringsproces.
+de END aan de Europese Commissie moeten worden gerapporteerd.
 
 <figure id="Figuur_1">
 <img src="media/figuur1.png" alt="">
@@ -147,7 +145,7 @@ noemen we een domeinmodel. De volgende domeinenmodellen zijn gedefinieerd:
 -   Noise Sources (DF1_5): hoofdwegen, grote spoorwegen, grote luchthavens en
     agglomeraties, zoals gedefinieerd in de END;
 
--   Competent Authority (DF2): informatie over bevoegd gezagen, en/of andere
+-   Competent Authority (DF2): informatie over bevoegde autoriteiten, en/of andere
     instanties die verantwoordelijk zijn voor de uitvoering van de richtlijn
     omgevingslawaai;
 
@@ -186,9 +184,9 @@ Voor de rapportage van *competent authorities* (DF_2) zijn geen ruimtelijke
 gegevens nodig. De bevoegde autoriteiten van wegen en spoorwegen, die
 verantwoordelijk zijn voor de geluidsbelastingkaarten en/of de actieplanning,
 kunnen worden gerapporteerd op landniveau of op weg- / spoorsegmentniveau[^2]
-(door middel van identificatoren). Bevoegde gezagen van grote luchthavens moeten
-worden geïdentificeerd met behulp van ICAO-codes en bevoegd gezag van
-agglomeraties met behulp van agglomeratie-identificatoren. Bevoegd gezag dat
+(door middel van identificatoren). Bevoegde autoriteiten van grote luchthavens moeten
+worden geïdentificeerd met behulp van ICAO-codes en bevoegde autoriteit van
+agglomeraties met behulp van agglomeratie-identificatoren. Bevoegde autoriteit dat
 belast is met de bescherming van stille gebieden mag optioneel worden
 aangeleverd, maar het wordt aanbevolen om dit te rapporteren door stilte
 gebiedsidentificaties te gebruiken.
@@ -295,7 +293,7 @@ gesorteerd op alfabetische volgorde.
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Agglomeratie (Agglomeration)**                                | Deel van een grondgebied, afgebakend door de lidstaat, met een bevolking van meer dan 100.000 personen en een bevolkingsdichtheid zodanig dat de lidstaat het als een verstedelijkt gebied beschouwt [END]. De Nederlandse Agglomeraties zijn in de Omgevingsregeling aangewezen.                                                                                                                                                                                                                                                                         |
 | **Omgevingslawaai (Environmental noise)**                       | Ongewenst of schadelijk buitengeluid veroorzaakt door menselijke activiteiten, met inbegrip van geluid afkomstig van transportmiddelen, wegverkeer, treinverkeer, luchtverkeer en van locaties van industriële activiteit zoals gedefinieerd in bijlage I bij Richtlijn 96/61/ EG van de Raad van 24 September 1996 betreffende geïntegreerde preventie en bestrijding van verontreiniging [END].                                                                                                                                                         |
-| **Data flows**                                                  | Datastromen gerapporteerd door EEA-leden en samenwerkende landen                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Data flows**                                                  | Datastromen gerapporteerd door EEA-lidstaten en samenwerkende landen                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Eurostat**                                                    | Het statistiekbureau van de Europese Unie. https://ec.europa.eu/eurostat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | **Belangrijke luchthavens (Major airport)**                     | Een door de lidstaat aangewezen burgerluchthaven met meer dan 50.000 bewegingen per jaar (een beweging zijnde een start of een landing), exclusief die voor trainingsdoeleinden op lichte vliegtuigen [END].                                                                                                                                                                                                                                                                                                                                              |
 | **Belangrijke spoorwegen (Major railway)**                      | Een spoorweg, aangewezen door de lidstaat, die meer dan 30.000 treinpassages per jaar heeft [END].                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -303,9 +301,9 @@ gesorteerd op alfabetische volgorde.
 | **Geluidactieplan (Noise action plan**                          | Een plan om geluidsproblemen en -effecten te beheersen, inclusief geluidsreductie indien nodig [END]. In de END-scope kunnen geluidsactieplannen verwijzen naar geïdentificeerde grote geluidsbronnen, agglomeraties, stille gebieden of andere specifieke geluidssituaties. De verwijzing wordt geleverd door object-ID's of rechtstreeks als ruimtelijke gegevens.                                                                                                                                                                                      |
 | **Geluid contourkaart (Noise contour map)**                     | Presenteert de gegevens over een bestaande of voorspelde geluidssituatie in termen van een geluidsbelasting indicator, met vermelding van overschrijding van een relevante geldende grenswaarde, het aantal getroffen mensen in een bepaald gebied of het aantal woningen dat wordt blootgesteld aan bepaalde waarden van een geluidsbelasting indicator in een bepaald gebied. Geluidscontouren maken deel uit van de strategische geluidsbelastingkaarten. In de END-scope kunnen geluidscontourkaarten worden gepresenteerd als gebieden of isolijnen. |
 | **Stil gebied in agglomeratie(Quiet area in an agglomeration)** | Een gebied, afgebakend door de bevoegde autoriteit, bijvoorbeeld dat niet wordt blootgesteld aan een waarde van Lden of van een andere geschikte geluidsbelasting indicator die hoger is dan een bepaalde waarde die door de lidstaat is vastgesteld, afkomstig van enige geluidsbron [END].                                                                                                                                                                                                                                                              |
-| **Stil gebied in buitengebied (Quiet area in open country)**    | Een door het bevoegd gezag afgebakend gebied dat niet wordt gestoord door verkeerslawaai, industrie of recreatie [END].                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Stil gebied in buitengebied (Quiet area in open country)**    | Een door het bevoegde autoriteit afgebakend gebied dat niet wordt gestoord door verkeerslawaai, industrie of recreatie [END].                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | **Strategische geluidskaart (Strategic noise map)**             | Een kaart die is ontworpen voor de algemene beoordeling van de blootstelling aan lawaai in een bepaald gebied als gevolg van verschillende geluidsbronnen of voor algemene voorspellingen voor een dergelijk gebied [END].                                                                                                                                                                                                                                                                                                                                |
-| **Bevoegd gezag (Competent authority)**                         | Organisatie (s) verantwoordelijk voor het beheren, beperken of reguleren van maatregelen of activiteiten met betrekking tot omgevingslawaai binnen aangewezen agglomeraties, volgens de definitie in de INSPIRE ' Implementing Rules on Interoperability' [END].                                                                                                                                                                                                                                                                                          |
+| **Bevoegde autoriteit (Competent authority)**                         | Organisatie (s) verantwoordelijk voor het beheren, beperken of reguleren van maatregelen of activiteiten met betrekking tot omgevingslawaai binnen aangewezen agglomeraties, volgens de definitie in de INSPIRE ' Implementing Rules on Interoperability' [END].                                                                                                                                                                                                                                                                                          |
 | **Voidable**                                                    | Voor een attribuut- of associatierol kan de waarde ‘void’ ingevuld worden als er geen overeenkomstige waarde is opgenomen in de dataset die door de lidstaten worden bijgehouden of als er geen overeenkomstige waarde kan worden afgeleid uit bestaande waarden tegen redelijke kosten. Als een attribuut- of associatierol niet voidable is, wordt de tabelcel die de voidability specificeert leeg gelaten [INSPIRE].                                                                                                                                  |
 
  Algemene Symbolen en afkortingen

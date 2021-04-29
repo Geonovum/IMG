@@ -1,7 +1,7 @@
 Scope 
 ========
 
-Het toepassingsdomein is beheersing van het geluid van wegen, spoorwegen, en industrieterreinen; en gegevensuitwisseling ten behoeve van akoestisch onderzoek. Dit wordt geoperationaliseerd in de CVGG. IMGeluid geeft een beschrijving van de structuur, inhoud en technische kwaliteit van de gegevens in de CVGG
+Het toepassingsdomein is beheersing van het geluid van wegen, spoorwegen, en industrieterreinen; en gegevensuitwisseling ten behoeve van akoestisch onderzoek. Dit wordt geoperationaliseerd in de CVGG. IMGeluid geeft een beschrijving van de betekenis, structuur en inhoud van de gegevens in de CVGG
  en dient als basis voor de realisatie en ontsluiting van CVGG services.
 
 ### Achtergrond
