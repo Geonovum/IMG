@@ -243,10 +243,22 @@ omgaan met regels, multipliciteit en patronen.
 
 In geluidmodellen is het bij het merendeel van de gemodelleerde objecten van
 belang om de hoogte te weten. Voor alle objecttypen in IMGeluid is bepaald of de
-hoogte van belang is en moet worden opgenomen. Als de hoogte wordt opgenomen,
-gebeurt dit als onderdeel van de geometrie. 
-Formeel zouden we van 2,5D moeten spreken, omdat in IMGeluid het niet voor kan komen dat er 2 punten zijn met dezelfde X- en Y-coördinaat. Voor het gemak spreken in dit document dan toch van 3D geometrie.
-Als de hoogte niet is opgenomen is dit een 2D geometrie.
+hoogte van belang is en moet worden opgenomen.
+
+Als de hoogte wordt opgenomen, gebeurt dit als onderdeel van de geometrie.
+Coördinaten zijn een x,y en z waarde, waarbij de z-waarde de hoogte is t.o.v.
+het Normaal Amsterdams Peil (NAP). Bij elk x,y-locatie is er maximaal één
+z-waarde beschikbaar. Dat betekent dat tweedimensionale (2D) geometrieën zich in
+een driedimensionale (3D) ruimte (x,y,z) bevinden maar dat de geometrieën
+zichzelf of elkaar niet mogen overlappen in de horizontale projectie. Eigenlijk
+is dit een 2,5D geometrie (zie
+<https://www.geonovum.nl/over-geonovum/actueel/handreiking-geometrie-in-model-en-gml>),
+maar voor de begrijpelijkheid en leesbaarheid noemen we dit binnen IMGeluid
+3D-geometrie. Als de hoogte niet is opgenomen, spreken we van een 2D-geometrie.
+
+In geluidmodellen is het bij het merendeel van de gemodelleerde objecten van
+belang om de hoogte te weten. Voor alle objecttypen in IMGeluid is bepaald of de
+hoogte van belang is en moet worden opgenomen.
 
 Hoogte wordt in 3D geometrie opgenomen als derde coördinaat, de `z`, in elk
 coördinatenpaar van de geometrie. In hoofdstuk 4 is bij elk objecttype dat een
