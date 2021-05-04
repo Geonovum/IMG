@@ -48,7 +48,7 @@ informatiemodel wordt verwezen naar [MIM hoofdstuk 2: Metamodel
 Algemeen](https://docs.geostandaarden.nl/mim/mim/#metamodel-algemeen).
 
 Binnen de scope van de CVGG vallen verschillende geluiddomeinen. Om technische
-en informatiekundige redenen, zijn in de dataspecificatie deze 6 domeinen
+en informatiekundige redenen, zijn in de dataspecificatie deze domeinen
 samengevoegd. De domeinen staan hieronder beschreven en hebben elk een apart
 diagram binnen de dataspecificatie (zie [Hoofdstuk 4 Gegevensdefinitie](#cat)).
 Deze diagrammen staan onder elkaar in paragraaf 4.0.
