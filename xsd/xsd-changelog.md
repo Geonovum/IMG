@@ -1,7 +1,7 @@
 # Wijzigingen in de IMGeluid XML Schema's 
 ## Tussen versie 1.0 en 1.1.0
 - Inhoudelijke wijzigingen in het xsd zijn af te leiden uit de changelog van het UML omdat het xsd is afgeleid uit het UML.
-- Namespace van schema bevat nu MAJOR/MINOR versienummer.
+- Namespace van schema bevat nu MAJOR/MINOR versienummer: http://www.geluidgegevens.nl/IMGeluid/1.1
 - Het repository bevat nu geen kopie meer van de xsd's van de GML standaard zodat duidelijk is dat deze niet bij een oplevering horen.
 
 ## Tussen versie 22-09-2020 (0.9) en 29-10-2020 (1.0)
