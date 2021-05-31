@@ -1,7 +1,7 @@
 # Wijzigingen in het Informatiemodel Geluid
 
 In de tabel hieronder staan de wijzigingen die in deze versie hebben
-plaatsgevonden na release 1.0. Er worden alleen wezenlijke veranderingen
+plaatsgevonden na release 1.0, versie 29 oktober 2020. Er worden alleen wezenlijke veranderingen
 genoemd. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
 
 | **wijzigingsnummer** | **Onderwerp**                                             | **Wijziging**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
