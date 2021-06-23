@@ -1,4 +1,4 @@
-Toekomstvisie: geluidbelastingkaarten en -tabellen
+Toekomstperspectief: geluidbelastingkaarten en -tabellen
 =============
 
 <figure id="Figuur_7">
@@ -6,28 +6,36 @@ Toekomstvisie: geluidbelastingkaarten en -tabellen
 <figcaption>Toekomstvisie rondom rapportage van geluidbelastingkaarten en -tabellen gevisualiseerd.</figcaption>
 </figure>
 
-In de toekomstvisie wordt op basis van de interviews een invulling gegeven aan de
-situatie na de komst van het END Datamodel. In dit beeld zijn de wensen van de
-opdrachtgever I&W en geïnterviewde stakeholders meegenomen. Onder deze toekomstvisie liggen een aantal afwegingen. Bij deze afwegingen wordt er gestreefd naar een
-zo effectief mogelijke uitkomst, waarbij zowel technische als bestuurskundige
-aspecten zijn meegenomen. Technische aspecten en bestuurskundige aspecten hangen
-vaak met elkaar samen. Zo kan een standaard die complex is in beheer,
-bijvoorbeeld ook voor veel extra kosten zorgen. In dit hoofdstuk zal de
-toekomstvisie worden omscheven. De rationale achter deze afwegingen, is te vinden
-in het [CIMGeluidbelasting](#IMGeluidbelasting).
+De opdrachtgever I&W heeft verschillende scenario’s voor de toekomst van
+geluidberekeningen met betrekking tot geluidbelastingkaarten uitgewerkt. Het
+gaat hier om scenario’s waar centraal rekenen bij de CVGG in verschillende mate
+een rol speelt. In het toekomstperspectief wordt op basis van de interviews een
+invulling gegeven aan de situatie na de komst van het END Datamodel. In dit
+perspectief ligt de nadruk op het scenario waar decentraal wordt gerekend, maar
+dit betekent niet dat centraal rekenen geen denkbaar scenario blijft voor de
+toekomst. In dit beeld zijn de wensen van de opdrachtgever I&W en geïnterviewde
+stakeholders meegenomen. Onder dit toekomstperspectief ligt een aantal
+afwegingen. Bij deze afwegingen wordt er gestreefd naar een zo effectief
+mogelijke uitkomst, waarbij zowel technische als bestuurskundige aspecten zijn
+meegenomen. Technische aspecten en bestuurskundige aspecten hangen vaak met
+elkaar samen. Zo kan een standaard die complex is in beheer, bijvoorbeeld ook
+voor veel extra kosten zorgen. In dit hoofdstuk zal het toekomstperspectief
+worden omschreven. De rationale achter deze afwegingen, is te vinden in het
+[CMGeluidbelasting](VERWIJZING].
 
-In [**Figuur 7**](#Figuur_7) staat de toekomstvisie afgebeeld zoals uit interviews naar voren is gekomen. Het
-proces voor het aanleveren van geluidbelastingkaarten en -tabellen valt op te delen in drie
-deelprocessen:
+In [**Figuur 7**](\#Figuur_7) staat een toekomstperspectief afgebeeld
+zoals uit interviews naar voren is gekomen. Het proces voor het aanleveren van
+geluidbelastingkaarten en -tabellen valt op te delen in drie deelprocessen:
 
 1.  Het verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en
     tabellen.
 
 2.  Het centraal aanleveren van geluidbelastingkaarten aan de CVGG.
 
-3.  Het aanleveren van een rapportage aan de Europese commissie door de CVGG.
+3.  Het aanleveren van een rapportage aan de Europese commissie door de CVGG en
+    InfoMil.
 
-Input Verzamelen van geluidgegevens volgens IMGeluid
+Input verzamelen van geluidgegevens volgens IMGeluid
 ----------------------------------------------------
 
 <figure id="Figuur_8">
@@ -35,27 +43,34 @@ Input Verzamelen van geluidgegevens volgens IMGeluid
 <figcaption>Input Verzamelen van geluidgegevens volgens IMGeluid.</figcaption>
 </figure>
 
-Op de linker plaat valt te zien dat agglomeratie-gemeenten de CVGG kunnen
-gebruiken om geluidgegevens af te nemen die dienen als input voor het berekenen
-van geluidbelastingkaarten. Deze gegevens worden conform IMGeluid aangeleverd
-door ProRail, Rijkswaterstaat, de provincies en I&W. Het gaat hierbij
-respectievelijk om geluidgegevens t.b.v. hoofdspoor, rijkswegen, provinciale
-wegen en luchthavens. Wanneer agglomeratie gemeenten de enige afnemer hiervan
-zijn, hoeven alleen de geluidgegevens, die zich binnen de agglomeratiegrenzen
-bevinden te worden aangeleverd aan de CVGG. Uit de interviews blijkt dat het voor agglometatie gemeenten een beperkt voordeel oplevert, wanneer alle geluidgegevens t.b.v. geluidbelastingkaarten aan de CVGG kunnen worden aangeleverd. De afweging die
-hierachter ligt wordt nader toegelicht in [afwegingen ten grondslag aan het
-CIMGeluidbelasting](#stellingen-ten-grondslag-aan-het-cimgeluidbelasting).
+ProRail, Rijkswaterstaat, de provincies en I&W verzamelen gegevens voor het
+berekeningen van geluidbelastingkaarten en tabellen. Daarnaast, zoals op de
+linker plaat valt te zien, leveren ze deze gegevens ook aan CVGG. De
+agglomeratie-gemeenten kunnen de CVGG gebruiken om geluidgegevens af te nemen
+die, naast hun eigen verzamelde gegevens, dienen als input voor het berekenen
+van geluidbelastingkaarten. Het gaat hierbij respectievelijk om geluidgegevens
+t.b.v. hoofdspoor, rijkswegen, provinciale wegen en luchthavens. De partijen die
+agglomeraties vertegenwoordigden in de interviews, gaven de indicatie dat het
+centraal aanleveren van geluidbrongegevens t.b.v. geluidbelastingkaarten een
+beperkt voordeel voor agglomeratie gemeenten oplevert. Daarentegen vergt het
+weer een extra inspanning van de rijksbronbeheerder om de geluidbrongegevens op
+te moeten “knippen”, met de kans op fouten. Het hele netwerk uitleveren kost
+volgens de rijksbronbeheerder de minste moeite. De afwegingen hierachter, worden
+nader toegelicht in [de memo in hoofdstuk 6](VERWIJZING).
 
 De geluidgegevens ten behoeve van het berekenen van geluidbelastingkaarten zijn
-een aparte set van gegevens. Deze moeten, naast geluidgegevens voor monitoring,
-apart worden aangeleverd door bronhouders. Dit is noodzakelijk aangezien twee
-verschillende rekenmethode hiervoor worden gebruikt. Het IMGeluid zal worden
-uitgebreid om deze aparte aanlevering te ondersteunen. De geluidgegevens die
-door de agglomeratie-gemeenten worden gebruikt, kunnen in een formaat conform
-IMGeluid uit de CVGG worden gehaald om vervolgens te importeren in hun
-rekkenpakket.
+een aparte verzameling van gegevens met een eigen geluidmodel. Voor het grootste
+deel is de opbouw van deze brongegevens hetzelfde als voor monitoring, maar er
+zijn verschillen. [Bijlage x](VERWIJZING) geeft een samenvatting van deze
+verschillen. Wanneer er in de toekomst voor een optie wordt gekozen met centraal
+aanleveren, moeten deze geluidbrongegevens apart worden aangeleverd. Dit is
+noodzakelijk aangezien twee verschillende rekenmethode hiervoor worden gebruikt.
+Het IMGeluid zal in dit geval kunnen worden uitgebreid om deze aparte
+aanlevering te ondersteunen. De geluidgegevens die door de agglomeratiegemeenten
+worden gebruikt, kunnen in een formaat volgens, in overeenstemming met IMGeluid
+uit de CVGG worden gehaald om vervolgens te importeren in hun rekenpakket.
 
-Centraal aanleveren van kaarten aan de CVGG
+Centraal rapporteren van kaarten aan de CVGG
 -------------------------------------------
 
 <figure id="Figuur_9">
@@ -65,35 +80,30 @@ Centraal aanleveren van kaarten aan de CVGG
 
 De geluidbelastingkaarten worden berekend door de bronhouders. Het rekenpakket
 zorgt ervoor dat de output van een geluidbelastingberekening kan worden
-geëxporteerd conform het END Datamodel in geopackage formaat. Uit de interviews
-is gebleken dat dit voor geluidexperts niet voor problemen zal zorgen. Het idee
-is dat de verschillende stakeholders dit bestand vervolgens via het
-uploadportaal van de CVGG uploaden. Echter staat het nog niet vast wat precies
-de rol van de CVGG gaat worden, aangezien hier met de
-CVGG nog geen afspraken over zijn vastgelegd.
+geëxporteerd volgens, in overeenstemming met het END Datamodel in GeoPackage
+formaat. Het idee is dat de verschillende bronhouders dit bestand vervolgens via
+het uploadportaal van de CVGG uploaden.
 
-Centraal aanleveren van kaarten en tabellen aan europa/het publiek
+
+Centraal rapporteren van kaarten en tabellen aan de EEA en het publiek
 ------------------------------------------------------------------
 
-Er is een belangrijk verschil tussen de geluidbelastingkaarten die voor de
-burgers worden gemaakt en de geluidbelastingkaarten die voor de EU worden
-gemaakt: het rijk en de provincies nemen in de kaarten voor burgers ook de
-gegevens op van de (spoor)wegen die liggen in agglomeraties, maar in de kaarten
-voor de EU worden deze gegevens weggelaten om dubbelingen te voorkomen. Of dit
-ook betekent of er twee kaarten aan de CVGG zullen moeten worden aangeleverd, of
-dat de CVGG dit doet door de voorziening door te ontwikkelen, moet nog worden
-afgesproken.
+Er zijn belangrijke verschillen tussen de geluidbelastingkaarten die richting
+het publiek worden ontsloten en de geluidbelastingkaarten die aan de EEA worden
+gerapporteerd. Het rijk en de provincies nemen in de kaarten voor het ook de
+gegevens op van de (spoor)wegen die liggen in agglomeraties, maar in de
+geluidbelastingtabellen voor de EEA worden deze gegevens weggelaten om dubbele
+waarden te voorkomen. Dit zou in de toekomst vanuit een enkele
+geluidbelastingkaart gedaan worden, door de agglomeraties automatisch uit de
+kaarten van de rijksbronbeheerder te knippen. Daarnaast hebben kaarten voor het
+publiek meer duiding en context nodig. Hoe deze context goed in beeld kan worden
+gebracht, wordt geduid vanuit de wetgeving. Zie [bijlage x](VERWIJZING) voor een
+duiding van deze gegevens/
 
 Mogelijk zou het van toegevoegde waarde kunnen zijn om achter het uploadportaal
 een systeem te bouwen, dat geautomatiseerd volgens het END Datamodel de output
-geluidgegevens, in de vorm van Geluidbelastingkaarten en-tabellen (en misschien
-zelfs Major Noise sources), omzet tot een rapportage aan de Europa. Echter is er
-niet voldoende onderzoek gedaan naar de impact hiervan op de CVGG om hier
-uitspraken over te kunnen doen.
-
-Uit de interviews kwam naar voren, dat er vraag is naar meer duidelijke
-afspraken over wanneer welke geluidgegevens beschikbaar moeten zijn. Daarnaast
-is er vraag naar meer communicatie tussen overheden. De CVGG werd aangewezen als
-een potentieel geschikte organisator hiervoor, aangezien hier ook de benodigde
-kennis over geluidsimulaties zit. Uit gesprekken met de CVGG is gebleken dat er
-momenteel geen opdracht is om deze landelijke geluid community te organiseren.
+geluidgegevens, in de vorm van Geluidbelastingkaarten en-tabellen, omzet tot de
+benodigde gegevens die vervolgens zijn samengevoegd door InfoMil voor de
+rapportage aan Europa. Echter is er in het kader van deze opdracht niet
+voldoende onderzoek gedaan naar de impact hiervan op de CVGG om hier uitspraken
+over te kunnen doen.
