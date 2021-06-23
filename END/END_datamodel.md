@@ -1,7 +1,7 @@
 END-Datamodel 
 =======================
 
-HET nieuwe END-Datamodel
+Het nieuwe END-Datamodel
 ----------------------------
 
 Het END-Datamodel is ontwikkeld om te voldoen aan de rapportageverplichtingen
@@ -45,7 +45,7 @@ methodologie voor datamodellering en definities van INSPIRE-concepten.
 <figcaption>Proces van content matching tussen END en INSPIRE om END informatiemodel te ontwikkelen</figcaption>
 </figure>
 
-3.2 END datamodel rapportage overzicht
+END datamodel rapportage overzicht
 --------------------------------------
 
 Het nieuwe END-informatiemodel omvat voor elke rapportageverplichting een apart
@@ -174,7 +174,7 @@ agglomeraties tot nu toe nog geen stille gebieden aangewezen. De stille gebieden
 in open gebied, ook wel stiltegebieden genoemd, worden door provincies
 aangewezen.
 
-3.3 END mapping naar INSPIRE thema's
+END mapping naar INSPIRE thema's
 ------------------------------------
 
 De INSPIRE-thema’s en bijbehorende dataspecificaties richten zich op de algemene
