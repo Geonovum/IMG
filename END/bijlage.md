@@ -44,7 +44,7 @@
 
 ## Bijlage 2: Verschillen CNOSSOS en Nederlandse RMG
 
-Voor een meer uitgebreide omschrijving van de verschillen zie [het interviewverslag]()
+Voor een meer uitgebreide omschrijving van de verschillen zie [het interviewverslag](https://geonovum.github.io/IMG/END/#bijlage-4-verslag-van-de-interviews-met-geluidexperts)
 
 |                                                      | CNOSSOS                                                                                                                                                                                                                                                                       | Nederlandse reken- en meetvoorschrift geluid (RMG)                                                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -62,4 +62,10 @@ Voor een meer uitgebreide omschrijving van de verschillen zie [het interviewvers
 
 ## Bijlage 3: Wijzigingsvoorstellen IMGeluid
 
+Op basis van een eerdere lijst van geïdentificeerde verschillen met CNOSSOS, is een lijst met wijzigingsvoorstellen samengesteld in [deze excel](). 
+
+Later zijn ook de verschillen voor industrie en lokaal spoor toegevoegd aan de lijst zoals te lezen in [Bijlage 2](https://geonovum.github.io/IMG/END/#bijlage-2-verschillen-cnossos-en-nederlandse-rmg). Deze zijn nog niet verwerkt in de lijst met wijzigingsvoorstellen, omdat op dit punt al besloten was het IMGeluid op het moment niet uit te breiden.
+
 ## Bijlage 4: Verslag van de interviews met geluidexperts
+
+Geonovum heeft in maart 2021 interviews afgenomen met verschillende belanghebbenden op rijks, provincie en gemeentelijk niveau over de geluidrapportage aan de EU. Geonovum wilde de huidige processen, aandachtspunten en de perspectief van de stakeholders voor toekomstige verbeteringen begrijpen voor de uitbreiding van het informatiemodel. Een verslag van de interviews valt [hier te lezen]. 
