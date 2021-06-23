@@ -24,11 +24,11 @@ var respecConfig =
   //specType: "ST",                   // Standaard
 //specType: "IM",                   // Informatie Model
   //specType: "PR",                   // Praktijk Richtlijn
-  specType: "HR",                   // HandReiking
+  //specType: "HR",                   // HandReiking
   //specType: "WA",                   // Werkafspraak
   //specType: "US",                   // Uitwisselings standaard
   //specType: "PS",                   // Presentatie standaard
-  //specType: "AL",                   // Algemeen document
+  specType: "AL",                   // Algemeen document
   //specType: "BD",                   // Beheer documentatie
   //-- format is verplicht! -----------------------------------------------------------
   //format: "markdown",                 // altijd "markdown"     
@@ -64,9 +64,14 @@ var respecConfig =
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
     }, 
+        {
+      name:       "Arnoud de Boer",
+      company:    "Geonovum",
+      companyURL: "https://www.geonovum.nl"
+    }, 
   ],
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
-  shortName: "end", 	            // Wordt gebruikt in de document URL
+  shortName: "geluidbelasting", 	            // Wordt gebruikt in de document URL
   //-- pubDomain is verplicht! (komt in de URL: Activeer 1 van de volgende) ------------
   pubDomain: "cvgg", 	              // Informatiemodel Geluid
   //pubDomain: "mim", 	            // Metamodel Informatie Modellering
