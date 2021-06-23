@@ -186,7 +186,7 @@ terminologie van het [MIM]( <https://docs.geostandaarden.nl/mim/mim/>) en
 | **Bevoegde instantie (Competent authority)**                    | Organisatie(s) verantwoordelijk voor het beheren, beperken of reguleren van maatregelen of activiteiten met betrekking tot omgevingslawaai binnen aangewezen agglomeraties, volgens de definitie in de INSPIRE ' Implementing Rules on Interoperability' [END].                                                                                                                                                                                                                                                                                     |
 | **Voidable**                                                    | Voor een attribuut- of associatierol kan de waarde ‘void’ ingevuld worden als er geen overeenkomstige waarde is opgenomen in de dataset die door de lidstaten worden bijgehouden of als er geen overeenkomstige waarde kan worden afgeleid uit bestaande waarden tegen redelijke kosten. Als een attribuut- of associatierol niet voidable is, wordt de tabelcel die de voidability specificeert leeg gelaten [INSPIRE].                                                                                                                            |
 
-2.7 Algemene Symbolen en afkortingen
+Algemene Symbolen en afkortingen
 ------------------------------------
 
 | **Afkortingen**       | **Betekenissen**                                 |
