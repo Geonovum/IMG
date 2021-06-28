@@ -81,16 +81,18 @@ Centraal rapporteren van kaarten aan de CVGG
 De geluidbelastingkaarten worden berekend door de bronhouders. Het rekenpakket
 zorgt ervoor dat de output van een geluidbelastingberekening kan worden
 geëxporteerd volgens, in overeenstemming met het END Datamodel in GeoPackage
-formaat. Het idee is dat de verschillende bronhouders dit bestand vervolgens via
-het uploadportaal van de CVGG uploaden.
+formaat. Het idee was dat de verschillende bronhouders dit bestand vervolgens
+via het uploadportaal van de CVGG uploaden. Echter bleek uit een impactanalyse
+van het RIVM, dat deze uitbreiding van de CVGG voor de huidige tranche niet
+realiseerbaar is.
 
 
 Centraal rapporteren van kaarten en tabellen aan de EEA en het publiek
 ------------------------------------------------------------------
 
-Er zijn belangrijke verschillen tussen de geluidbelastingkaarten die richting
-het publiek worden ontsloten en de geluidbelastingkaarten die aan de EEA worden
-gerapporteerd. Het rijk en de provincies nemen in de kaarten voor het ook de
+Er is een belangrijk verschil tussen de geluidbelastingkaarten die voor de
+burgers worden gemaakt en de geluidbelastingkaarten die voor de EU worden
+gemaakt: het rijk en de provincies nemen in de kaarten voor burgers ook de
 gegevens op van de (spoor)wegen die liggen in agglomeraties, maar in de
 geluidbelastingtabellen voor de EEA worden deze gegevens weggelaten om dubbele
 waarden te voorkomen. Dit zou in de toekomst vanuit een enkele
@@ -100,10 +102,7 @@ publiek meer duiding en context nodig. Hoe deze context goed in beeld kan worden
 gebracht, wordt geduid vanuit de wetgeving. Zie [bijlage x](VERWIJZING) voor een
 duiding van deze gegevens/
 
-Mogelijk zou het van toegevoegde waarde kunnen zijn om achter het uploadportaal
-een systeem te bouwen, dat geautomatiseerd volgens het END Datamodel de output
-geluidgegevens, in de vorm van Geluidbelastingkaarten en-tabellen, omzet tot de
-benodigde gegevens die vervolgens zijn samengevoegd door InfoMil voor de
-rapportage aan Europa. Echter is er in het kader van deze opdracht niet
-voldoende onderzoek gedaan naar de impact hiervan op de CVGG om hier uitspraken
-over te kunnen doen.
+Mogelijk kan de CVGG InfoMil gaan ondersteunen bij het rapportageproces van
+geluidbelastingkaarten. Dit zou kunnen door het uploadportaal van de CVGG
+geschikt te maken voor het END-Datamodel. Op het moment van publicatie van dit
+rapport moet de CVGG stuurgroep hier nog een besluit over nemen.
