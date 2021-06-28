@@ -374,9 +374,7 @@ agglomeratiegemeenten zijn:
     centraal rekenen.
 
 2.  Centraal aanleveren c.q. beschikbaarstellen van lokale geluidgegevens biedt
-    mogelijkheden tot samenwerking zonder onderlinge [informatiestromen/uitwisseling][Bij onderlinge informatiestromen tussen agglomeratiegemeenten en andere organisaties zijn er onderlinge afspraken over formaat en methode van uitwisselen. Er is geen landelijk gestandaardiseerd proces wat de uitwisseling van gegevens niet-uniform en mogelijk duur maakt door maatwerkkoppelvlakken en dataconversies.].
-
-
+    mogelijkheden tot samenwerking zonder onderlinge <span title="informatiestromen/uitwisseling">Bij onderlinge informatiestromen tussen agglomeratiegemeenten en andere organisaties zijn er onderlinge afspraken over formaat en methode van uitwisselen. Er is geen landelijk gestandaardiseerd proces wat de uitwisseling van gegevens niet-uniform en mogelijk duur maakt door maatwerkkoppelvlakken en dataconversies.</span>.
     
 3.  De inname van lokale geluidgegevens moet technisch ingericht worden in de
     centrale voorziening.
