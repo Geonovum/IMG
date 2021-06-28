@@ -374,27 +374,22 @@ agglomeratiegemeenten zijn:
     centraal rekenen.
 
 2.  Centraal aanleveren c.q. beschikbaarstellen van lokale geluidgegevens biedt
-    mogelijkheden tot samenwerking zonder onderlinge <span title="Bij onderlinge informatiestromen tussen agglomeratiegemeenten en andere organisaties zijn er onderlinge afspraken over formaat en methode van uitwisselen. Er is geen landelijk gestandaardiseerd proces wat de uitwisseling van gegevens niet-uniform en mogelijk duur maakt door maatwerkkoppelvlakken en dataconversies.">informatiestromen/uitwisseling [1]</span>.
+    mogelijkheden tot samenwerking zonder onderlinge <span title="Bij onderlinge informatiestromen tussen agglomeratiegemeenten en andere organisaties zijn er onderlinge afspraken over formaat en methode van uitwisselen. Er is geen landelijk gestandaardiseerd proces wat de uitwisseling van gegevens niet-uniform en mogelijk duur maakt door maatwerkkoppelvlakken en dataconversies.">**informatiestromen/uitwisseling [1]**</span>.
     
 3.  De inname van lokale geluidgegevens moet technisch ingericht worden in de
     centrale voorziening.
 
-4.  Lokale geluidgegevens zijn niet-uniform[^2], waardoor de inhoud en kwaliteit
+4.  Lokale geluidgegevens zijn <span title="Er is nu weinig uniformiteit door een gebrek aan standaardisatie op het gebied van verkeersmodellen. Elke gemeente organiseert zich nu zelf: er is geen landelijk gestandaardiseerd formaat en gestandaardiseerd proces.">**niet-uniform [2]**</span>, waardoor de inhoud en kwaliteit
     van de gegevens die centraal aangeleverd en beschikbaargesteld worden,
     wisselend zijn.
 
-    [^2]: Er is nu weinig uniformiteit door een gebrek aan standaardisatie op
-    het gebied van verkeersmodellen. Elke gemeente organiseert zich nu zelf: er
-    is geen landelijk gestandaardiseerd formaat en gestandaardiseerd proces.
-
-5.  Er lijkt weinig draagvlak onder agglomeratiegemeenten voor het centraal
-    aanleveren.[^3]
-
-    [^3]: Uit een eerder gehouden klankbordsessie met een select gezelschap van
+5.  Er lijkt <span title="Uit een eerder gehouden klankbordsessie met een select gezelschap van
     agglomeratiegemeenten bleek dat 80% niet voor een verplichting is voor het
     centraal aanleveren van lokale geluidgegevens. Dit betekent dat er een hoop
     werk ligt in de communicatie om agglomeratiegemeenten mee te krijgen in het
-    alternatief ‘centraal aanleveren’.
+    alternatief ‘centraal aanleveren’.">**weinig draagvlak [3]**</span> onder agglomeratiegemeenten voor het centraal
+    aanleveren.
+
 
 6.  De toegevoegde gebruikerswaarde is niet bekend.
 
