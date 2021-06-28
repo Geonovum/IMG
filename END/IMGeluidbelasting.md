@@ -320,166 +320,290 @@ Oplossingsrichtingen ten grondslag aan het CMGeluidbelasting
 
 In deze paragraaf staan een aantal oplossingsrichtingen omschreven die aan de
 grondslag van het CMGeluidbelasting liggen. In de oplossingsrichtingen is de
-opgehaalde input vanuit het werkveld opgenomen.
+opgehaalde input vanuit het werkveld opgenomen. De oplossingsrichtingen zijn omschreven in de vorm van twee memo's.
 
->   Bij het maken van de oplossingsrichtingen, zijn de volgende uitgangspunten
->   gehanteerd:
+### Memo: Centraal aanleveren van lokale geluidgegevens van agglomeratiegemeenten
 
-1.  Het achterliggende doel van de uitbreiding van het IMGeluid, is om de
-    uitwisseling van geluidgegevens m.b.t. het opstellen van
-    geluidbelastingkaarten zo efficiënt mogelijk te maken.
+**Huidige situatie**
 
-2.  Om de uitwisseling zo efficiënt mogelijk te maken, moet de uitbreidingen van
-    het IMGeluid en de CVGG zorgen voor zo min mogelijk extra complexiteit.
-    [REFERENCE The IT Complexity Crisis: Danger and Opportunity door Roger
-    Sessions. November 8, 2009.]
+Voor het samenstellen van een geluidmodel moeten vooral agglomeratiegemeenten
+veel stappen ondernemen. Agglomeraties zijn volgens de Europese Richtlijn
+Omgevingslawaai [bron] verplicht om geluidbelastingkaarten en -tabellen te
+berekenen. In deze kaarten en tabellen moet de geluidbelasting afkomstig van
+industrie, provinciale wegen, hoofdspoorwegen, lokale wegen, hoofdwegen en de
+luchtvaart worden meegenomen. Deze gegevens zijn voor een groot deel in beheer
+bij andere bronhouders, waardoor er veel informatiestromen ontstaan.
 
-    1.  Hierbij moet ook rekening worden gehouden met de Governance van het
-        IMGeluid en de CVGG. Een complex beheerproces zorgt voor exponentieel
-        meer kosten en meer kans op fouten.
+**Gewenste situatie**
 
->   In de rest van deze paragraaf zal aan deze uitgangspunten gerefereerd worden
->   met uitgangspunt [1] en uitgangspunt [2] respectievelijk.
+De gegevens over geluidbelasting zijn landelijk gestandaardiseerd en worden
+efficiënt en eenvoudig via een landelijk gestandaardiseerd proces uitgewisseld.
+Hiermee bedoelen we dat gegevens over geluidbelasting uniform zijn zodat de
+informatieproducten als resultaat uit de berekeningen met deze gegevens, o.m.
+geluidbelastingkaarten, uniform in inhoud en kwaliteit zijn. De gegevens over
+geluidbelasting worden met zo min mogelijk informatiestromen uitgewisseld.
 
-### Geluidgeggevens voor agglomeratie gemeenten
+**Uitgangspunten**
 
-Relevante geluidgegevens voor agglomeratie gemeenten m.b.t. hoofdwegen,
-provinciale wegen, spoorwegen en luchthavens, kunnen uit de CVGG worden gehaald.
-Vervolgens kunnen de gemeenten deze gebruiken importeren binnen hun
-geluidberekening software. Deze zullen worden gecombineerd met lokale
-geluidgegevens tot een model geschikt voor geluidsimulaties met CNOSSOS. Onder
-lokale geluidgegevens verstaan we gegevens met betrekking op geluidbelastende
-activiteiten en verzamelingen van activiteiten zoals:
+1.  Agglomeratie gemeenten zijn bronhouder van lokale geluidgegevens.
 
--   Activiteiten op industrieterreinen met gpp’s waarvoor het geluid van dat
-    industrieterrein meer is dan 55 dB Lden of 50 dB Lnight
+2.  Lokale geluidgegevens bestaan uit de volgende gegevens over geluidsbelasting
+    afkomstig van industrie, provinciale wegen, hoofdspoorwegen, lokale wegen,
+    hoofdwegen en de luchtvaart.
 
--   Activiteiten in gebieden met een hogere waarde voor geluid, waarvoor de
-    geluidbelasting door die activiteiten op omliggende geluidgevoelige gebouwen
-    meer kan zijn dan 55 dB Lden of 50 dB Lnight;
+3.  Voor ‘centraal rekenen’ aan geluidbelastingkaarten zijn lokale
+    geluidsgegegevens van agglomeratiegemeenten nodig.
 
--   Activiteiten buiten industrieterreinen met gpp’s met een ten hoogste
-    toegelaten geluidbelasting door de activiteit meer is dan 55 dB Lden of 50
-    dB Lnight
+4.  Onder ‘centraal aanleveren’ verstaan we het leveren van gegevens aan de
+    CVGG.
 
-Deze afbakening van lokale geluidgegevens is breed. Uit de interviews is
-gebleken dat lokale geluidgegevens zich lastig laten generaliseren. Het is sterk
-afhankelijk van lokale experts om te bepalen welke activiteiten een hogere
-geluidbelasting dan 55 dB Lden of 50 dB Lnight veroorzaken. Ook is gebleken dat
-deze gegevens maar in enkele gevallen tussen agglomeratie-gemeenten wordt
-uitgewisseld. In de gevallen dat dit wel het geval is, dan is er al een lokaal
-systeem om deze gegevens uit te wisselen. Ook werd duidelijk dat samenwerking
-voor geluidbelastingkaarten op agglomeratie niveau niet verplicht is. Als gevolg
-hiervan kan het beleid op het gebied van geluidbelastingkaarten, per gemeente
-binnen een agglomeratie afwijken .
+**Alternatieven en keuzes**
 
-Wanneer agglomeraties worden verplicht om deze lokale geluidgegevens m.b.t.
-geluidbelasting aan te leveren aan de CVGG, dan zorgt dit voor extra
-complexiteit. Op basis van de interviews wordt ingeschat, dat de toegevoegde
-waarde van deze gegevens voor andere afnemers van de CVGG minimaal is. Daarnaast blijkt uit de interviews dat het hier gaat om het grootste volume aan geluidgegevens, wat de
-complexiteit alleen maar groter maakt.
+Lokale geluidgegevens worden door agglomeratiegemeenten:
 
-Met de komst van het END datamodel zullen kaarten van agglomeraties makkelijker
-te combineren worden. Dit datamodel hoeft niet voor extra complexiteit te
-zorgen, wanneer de softwareleveranciers exporteren naar END formaat mogelijk
-maken. De CVGG zou vervolgens de opdracht kunnen krijgen om aanleveren volgens
-het END datamodel te ondersteunen als module binnen het uploadportaal.
-Daarnaast, zullen waarschijnlijk nog aanvullende softwaremodules moeten worden
-gemaakt, om bijvoorbeeld de kaarten van agglomeratie gemeente samen te voegen
-tot 1 kaart. Wat de impact hiervan is op de Centrale Voorziening, moet nog
-blijken uit de impact analyse van de CVGG. Op basis van uitgangspunten [1] en
-[2] luidt stelling:
+>   Alternatief 1. *niet* centraal aangeleverd.
 
-> **Agglomeratie-gemeenten hoeven, in ieder geval initieel, geen geluidgegevens aan
-> te leveren aan de CVGG t.b.v. geluidbelastingkaarten. (wel
-> geluidbelastingkaarten & -tabellen)**
+>   Alternatief 2. *optioneel* centraal aangeleverd.
 
-### Geluidgevoellige gebouwen
+>   Alternatief 3. *verplicht* centraal aangeleverd.
 
-Met een koppeling tussen de contouren en de BAG kunnen de aantallen
-geluidgevoelige gebouwen binnen de contouren worden bepaald. Hiervoor moet een
-gegeven uit het BAG worden gebruikt dat niet geheel overeenkomt met de functies
-die volgens artikel 3.20 Bkl geluidgevoelig zijn:
+Kansen en risico’s van centraal aanleveren van lokale geluidgegevens door
+agglomeratiegemeenten zijn:
 
->   Artikel 3.20 Bkl (voorjaarsversie Aanvullingsbesluit geluid)
->
->   1. Een geluidgevoelig gebouw is een gebouw of een gedeelte van een gebouw met
->   een:
->
->   a. woonfunctie en nevengebruiksfuncties daarvan;
->
->   b. onderwijsfunctie en nevengebruiksfuncties daarvan;
->
->   c. gezondheidszorgfunctie met bedgebied en nevengebruiksfuncties daarvan; of
->
->   d. bijeenkomstfunctie voor kinderopvang met bedgebied en
->   nevengebruiksfuncties daarvan.
->   
->   2. Het eerste lid geldt niet voor een gedeelte van een gebouw als het
->   omgevingsplan in dat gedeelte van het gebouw geen geluidgevoelige ruimten
->   toelaat, tenzij het gebouw een woonschip of woonwagen is.
->   
->   3. Onder een geluidgevoelig gebouw wordt ook verstaan een geluidgevoelig gebouw
->   dat nog niet aanwezig is, maar op grond van het omgevingsplan of een
->   omgevingsvergunning voor een omgevingsplanactiviteit mag worden gebouwd.
+1.  Met het centraal aanleveren van lokale geluidgegevens zijn we voorbereid op
+    centraal rekenen.
 
-In de BAG is het gegeven ‘Gebruiksdoel’ opgenomen. Voor de
-gezondheidszorgfunctie wordt daarin echter niet opgenomen of die met of zonder
-bedgebied is, en voor een bijeenkomst-functie wordt niet opgenomen of dit voor
-kinderopvang met bedgebied is. Voor externe veiligheid bestaat er een bestand
-waar dit type gebouwen wel wordt onderscheiden. RWS heeft daaruit een bestand
-gemaakt met de geluidgevoelige gebouwen met gezondheidszorgfunctie en
-bijeenkomstfunctie voor kinderopvang.
+2.  Centraal aanleveren c.q. beschikbaarstellen van lokale geluidgegevens biedt
+    mogelijkheden tot samenwerking zonder <dfn
+  data-lt="Bij onderlinge informatiestromen tussen agglomeratiegemeenten en
+    andere organisaties zijn er onderlinge afspraken over formaat en methode van
+    uitwisselen. Er is geen landelijk gestandaardiseerd proces wat de
+    uitwisseling van gegevens niet-uniform en mogelijk duur maakt door
+    maatwerkkoppelvlakken en dataconversies.">
+onderlinge
+    informatiestromen/uitwisseling.
+</dfn>
 
-Het IMGeluid zou de plek kunnen zijn waar gegevens uit de BAG gecombineerd
-worden met andere meer gedetailleerde gegevens over het Gebruiksdoel. Echter
-wordt iets vergelijkbaars ook al bij het Register Externe Veiligheid gedaan. Met
-de komst van de omgevingswet is het niet ondenkbaar dat er meer vergelijkbare
-uitbreidingen op de BAG mogelijk zijn. Om al deze uitbreidingen dan decentraal
-op te slaan binnen verschillende informatieproducten zou op termijn kunnen
-leiden tot inefficiëntie. Er is bijvoorbeeld een situatie denkbaar waarbij een
-bronhouder vergelijkbare gegevens over gebouwen moet aanleveren aan meerdere
-“informatieproducten” binnen het Digitaal Stelsel Omgevingswet. Op basis van
-uitgangspunten [1] en [2] luidt de stelling:
+3.  De inname van lokale geluidgegevens moet technisch ingericht worden in de
+    centrale voorziening.
 
-> **Stelling: Een uitbreiding op de BAG is de beste plek om gegevens over
-> geluidgevoelige gebouwen aan het werkveld beschikbaar te stellen**.
+4.  Lokale geluidgegevens zijn niet-uniform[^2], waardoor de inhoud en kwaliteit
+    van de gegevens die centraal aangeleverd en beschikbaargesteld worden,
+    wisselend zijn.
 
-Deze stelling wil Geonovum graag verder onderzoeken door in gesprek te gaan met
-het werkveld tijdens de eerste klankbordsessie en met Kadaster.
+    [^2]: Er is nu weinig uniformiteit door een gebrek aan standaardisatie op
+    het gebied van verkeersmodellen. Elke gemeente organiseert zich nu zelf: er
+    is geen landelijk gestandaardiseerd formaat en gestandaardiseerd proces.
 
-### De rol van de CVGG
+5.  Er lijkt weinig draagvlak onder agglomeratiegemeenten voor het centraal
+    aanleveren.[^3]
 
-> **Stelling: De CVGG is ondersteunend in de rol die Infomil heeft bij het
-> verzamelen van gegevens en het aanleveren aan de EC.**
+    [^3]: Uit een eerder gehouden klankbordsessie met een select gezelschap van
+    agglomeratiegemeenten bleek dat 80% niet voor een verplichting is voor het
+    centraal aanleveren van lokale geluidgegevens. Dit betekent dat er een hoop
+    werk ligt in de communicatie om agglomeratiegemeenten mee te krijgen in het
+    alternatief ‘centraal aanleveren’.
 
-Tijdens de interviews zijn al een aantal vragen gesteld over de wensen rondom de
-rol voor van de CVGG bij de aanlevering van gegevens aan de Europese Commissie.
-Tijdens de klankbordsessie wordt de mogelijkheid geboden aan belanghebbende hun
-visie hierover te delen.
+6.  De toegevoegde gebruikerswaarde is niet bekend.
 
-Voorziene veranderingen aan IMGeluid
-------------------------------------
+**Advies 1. Optioneel beginnen met centraal aanleveren en later verplichten.**
 
-Op basis van het conceptueel informatiemodel is een overzicht gemaakt van de
-uitbreidingen die nodig zijn voor IMGeluid. Op basis van de stellingen zullen
-een aantal wijzigingen wel of niet nodig zijn. Deze afhankelijkheid wordt
-aangegeven via een verwijzing. De stellingen zijn als volgt genummerd:
+Het advies is om de CVGG voor te bereiden op de inname van lokale geluidgegevens
+en agglomeratiegemeenten de keuze te geven om lokale geluidgegevens optioneel
+(alternatief 2) te mogen laten aanleveren aan de CVGG.[^4] Dit om meer
+samenwerking en een reductie van informatiestromen te bereiken. Aandachtspunt is
+de communicatie richting agglomeratie om de toegevoegde waarde van centraal
+aanleveren en beschikbaarstellen te duiden. Op een later moment kan beoordeeld
+worden in hoeverre een verplichting moet gaan gelden voor het centraal
+aanleveren van lokale geluidgegevens (alternatief 3).
 
-1.  Agglomeratie-gemeenten hoeven, in ieder geval initieel, geen geluidgegevens
-    aan te leveren aan de CVGG t.b.v. geluidbelastingkaarten. (wel
-    geluidbelastingkaarten & -tabellen)
+[^4]: Bij Basisregistratie Grootschalige Topografie (BGT) bestaat het
+informatiemodel uit een verplicht deel, de BGT, en een optioneel deel, IMGeo. In
+2011 is de keuze gemaakt om om de Landelijke Voorziening BGT uit te breiden met
+de inname van optionele gegevens van IMGeo. De ervaring hiermee is dat
+bronhouders bij onder meer wegen en terreinen vrijwillig aanvullende gegevens
+over de functie en het fysieke voorkomen aanleveren, alsook dat bronhouders
+vrijwillig extra gegevens over bomen, straatmeubilair, speeltuinen e.d. leveren.
+In de doorontwikkeling van de BGT wordt bekeken welke optionele gegevens naar
+het verplichte deel gehaald kunnen en moeten worden. Deze beoordeling gebeurd op
+basis van de huidige vulling en de toegevoegde gebruikerswaarde.
 
-2.  Een uitbreiding op de BAG is de beste plek om gegevens over geluidgevoelige
-    gebouwen aan het werkveld beschikbaar te stellen aan het werkveld.
+**Advies 2. Lokale geluidgegevens uniformeren**
 
-3.  De CVGG is ondersteunend in de rol die Infomil heeft bij het verzamelen van
-    gegevens en het aanleveren aan de EC.
+Het advies is om vooraf of tegelijkertijd met het inregelen van de inname van
+lokale geluidsgegevens, te onderzoeken in hoeverre deze gegevens en het proces
+rond de inwinning/totstandkoming van deze gegevens gestandaardiseerd kan worden,
+bijvoorbeeld op het gebied van (rekenen met) verkeersmodellen. Dit om meer
+uniformiteit in inhoud en kwaliteit in de brongegevens en afgeleide
+informatieproducten (geluidbelastingkaarten) te bereiken.
 
-Over het algemeen zijn dit wijzigingen die te maken hebben met het eerder
-benoemde verschil tussen de CNOSSOS rekenmethode en het Nederlandse reken en
-meet voorschrift. In [Bijlage 1](https://geonovum.github.io/IMG/END/#bijlage-1) is een tabel opgenomen met daarin dit
-overzicht op conceptueel niveau. Een meer gedetailleerde lijst met
-wijzigingsvoorstellen zal na verdere analyse worden gemaakt. Wat belangrijk is
-om bij deze analyse te bekijken staat ook kort toegelicht.
+
+### Memo: Geluidgevoelige gebouwen en geluidbelastingkaarten
+
+**Huidige situatie**
+
+Voor het maken van geluidbelastingkaarten zijn onder meer gegevens nodig over
+geluidgevoelige gebouwen[^1].
+
+[^1]: Om het aantal gevoelige gebouwen binnen een contour, en het betreffende
+aantal personen dat verblijft binnen deze contour te kunnen bepalen.
+
+Een geluidgevoelig gebouw[^2] is gedefinieerd in de Artikel 3.20 van het Besluit
+kwaliteit leefomgeving (Bkl).
+
+[^2]: Gevoelig gebouw is (een deel van) een gebouw met een gebruiksfunctie
+zijnde woonfunctie, onderwijsfunctie, bijeenkomstfunctie van het type
+kinderopvang met bedgebied, of gezondheidszorgfunctie met bedgebied.
+
+Om het aantal geluidgevoelige objecten te bepalen, gebruiken overheden vaak
+BAG-bestanden[^3]. BAG-bestanden bevatten niet alle gegevens die nodig zijn om
+alle geluidgevoelige gebouwen te identificeren[^4].
+
+[^3]: In de BAG worden één of meer functies van het Bouwbesluit als gebruiksdoel
+bij een Verblijfsobject opgenomen; een Verblijfsobject maakt onderdeel uit van
+een Pand.
+
+[^4]: In de BAG wordt bij een Pand/Verblijfsobject niet vastgelegd of het object
+in gebruik is als ‘kinderopvang met bedfunctie’ of ‘gezondheidszorg met
+bedfunctie’.
+
+Combinatie met andere bronnen[^5] is noodzakelijk om alle geluidgevoelige
+gebouwen te bepalen.
+
+[^5]: Voorbeelden van aanvullende hulpbronnen zijn bijvoorbeeld het Landelijk
+Register Kinderopvang (LRK), Basisregistratie Topografie (BRT), Digitaal
+Topografisch Bestand RWS (DTB RWS)
+
+Rijkswaterstaat en ProRail hebben een eigen bestand (voor hun interessegebied)
+met geluidgevoelige gebouwen, en stellen die op verzoek beschikbaar aan
+gemeenten en provincies.[^6]
+
+[^6]: https://www.infomil.nl/onderwerpen/geluid/nieuws/2017/tabellen/
+
+**Gewenste situatie**
+
+Het maken van geluidbelastingkaarten is efficiënt. Overheden kunnen eenvoudig en
+eenduidig een bestand met geluidgevoelige gebouwen samenstellen of afnemen.
+
+**Uitgangspunten**
+
+1.  De informatie over geluidgevoelige gebouwen moet eerder beschikbaar zijn dan
+    de geluidbelastingkaarten, zodat de gegevens ook door de beheerders van
+    belangrijke geluidbronnen kunnen worden gebruikt.
+
+2.  De gegevens over geluidgevoelige gebouwen moeten worden aangeleverd door
+    gemeenten, omdat in hun omgevingsplannen is bepaald welke functies zijn
+    toegestaan en zij de lokale kennis hebben over details als bedgebied en
+    kinderopvang.[^7]
+
+    [^7]: Met dit uitgangspunt vervalt het alternatief om buiten de BAG en
+    IMGeluid om een landsdekkend bestand met geluidgevoelige gebouwen samen te
+    stellen, welke los van de LV-BAG of CVGG beschikbaargesteld wordt aan andere
+    overheden.
+
+3.  Gegevens daar opslaan waar ze verzameld, opgeslagen, en beheerd worden. De
+    bronhouders van de BAG zijn de gemeenten. Bronhouders voor de
+    Geluidbelastingkaarten zijn ook de gemeenten.
+
+4.  De populatie geluidgevoelige gebouwen binnen Geluid is kleiner dan de
+    populatie kwetsbare gebouwen binnen Externe Veiligheid[^8].
+
+    [^8]: https://www.infomil.nl/onderwerpen/veiligheid/bevi-revi/\@110701/kwetsbare-obecten/
+
+5.  De geluidbelastingkaarten hebben een actualisatie frequentie van 5 jaar. Met
+    dat specifieke doel voor ogen hebben, moet er dus 5-jaarlijks een actueel
+    bestand met geluidgevoelige gebouwen zijn. [^9]
+
+    [^9]: Tenzij het doel is om de geluidgevoelige gebouwen dataset structureel
+    up-to-date te houden, waardoor die ook voor andere geluidberekeningen
+    gebruikt kan worden.
+
+6.  Voor END kaarten zijn totale aantallen gebouwen en gehinderden binnen een
+    geluidcontour nodig. Het is niet nodig gegevens over de geluidgevoelige
+    gebouwen zelf op te nemen in END kaarten.
+
+**Alternatief 1 Opnemen gegevens geluidgevoelige gebouwen in de BAG**
+
+Het kenmerk ‘is geluidgevoelig’ wordt als verplicht gegeven toegevoegd aan de
+BAG[^10].
+
+[^10]: Het informatiemodel BAG is in beheer bij het Kadaster, opdrachtgever voor
+de BAG is min. BZK.
+
+1.  Bronhouders van de BAG (gemeenten) wordt gevraagd om hun werkproces en
+    software hierop aan te passen, en de gegevens in te winnen en aan te leveren
+    aan de LV-BAG.
+
+2.  De gegevens over geluidgevoelige gebouwen zijn hiermee actueel en
+    landsdekkend beschikbaar voor meerdere toepassingen. Met levering aan de BAG
+    kan dit gegeven ook meegenomen worden in het 3D Omgevingsmodel voor Geluid.
+
+3.  Bronhouder voor BAG en geluidbelastingkaarten zijn gemeenten; gegevens daar
+    opslaan waar ze verzameld, opgeslagen, en beheerd worden.
+
+4.  Door gegevens over geluidgevoelige gebouwen mee te nemen in proces van de
+    BAG wordt dit werkproces meteen binnen de gemeente geregeld.
+
+**Alternatief 2 Opnemen gegevens geluidgevoelige gebouwen in IMGeluid**
+
+Het IMGeluid wordt uitgebreid met het object Geluidgevoelig gebouw. Dit is een
+uitbreiding op het informatiemodel Geluid, dus een Y-wijziging.
+
+1.  De populatie van geluidgevoelige gebouwen binnen IMGeluid is een subset van
+    de panden in de BAG o.b.v. de criteria van de Bkl.
+
+2.  Leveren van gegevens aan CVGG is een apart werkproces voor de gemeenten. In
+    principe komt er dan een extra verplichting / taak bij voor de gemeenten om
+    in het geval een wijzigingen in de BAG, ook steeds een bijgewerkte versie
+    aan te leveren aan CVGG.
+
+3.  Borging van de actualiteit is een aandachtspunt. In het kader van END zou
+    eens per 5 jaar geactualiseerd hoeven worden.
+
+**Alternatief 3 Opnemen kenmerk ‘is geluidgevoelig’ in het 3D geluidbestand NL**
+
+Het 3D geluidbestand NL bevat een beschrijving van het hoogteverloop van het
+terrein, de eigenschappen van het bodemoppervlak en de geometrie van gebouwen.
+De modelinformatie van de fysieke ruimte die nodig is voor het uitvoeren van
+geluidssimulaties wordt gegenereerd aan de hand van landsdekkende
+gegevensbronnen BGT, BAG en AHN.
+
+1.  De eigenschap ‘geluidgevoelig gebouw’ wordt op basis van aanvullende bronnen
+    (welke?) toegevoegd aan het 3D geluidbestand NL, dus een Y-wijziging.
+
+2.  Het 3D geluidbestand NL is momenteel beschikbaar als bèta-bestand als
+    resultaat uit een samenwerking tussen Kadaster, RWS, TU Delft, RIVM en IPO.
+
+**Alternatief 4 Methode EV kwetsbare objecten**
+
+In het Besluit kwaliteit leefomgeving (Bkl) staan 3 categorieën voor de
+bescherming voor verschillende soorten gebouwen en locaties: zeer kwetsbaar,
+kwetsbaar en beperkt kwetsbaar. De gemeente moet regels opnemen in het
+omgevingsplan om deze gebouwen en locaties te beschermen vanwege externe
+veiligheidsrisico's.
+
+De gegevens van EV kwetsbare objecten zijn opgenomen in de risicokaart.
+Provincies maken en beheren de risicokaart op basis van aangeleverde gegevens
+door gemeenten, Rijk en provincies zelf[^11]. De gegevens worden o.m. als
+WFS[^12] beschikbaar gesteld[^13]. De populatie kwetsbare objecten voor Externe
+Veiligheid is ruimer dan de populatie van geluidgevoelige gebouwen voor domein
+Geluid[^14]. Toepassing van het bestand Kwetsbare objecten van EV voor
+geluidberekeningen rekent dus met iets ruimere populatie. Het is onbekend in
+hoeverre de nauwkeurigheid van de geluidbelastingkaarten hierdoor wordt
+beïnvloed.
+
+[^11]: Zie atlas van de Leefomgeving:
+<https://www.atlasleefomgeving.nl/kwetsbare-objecten>
+
+[^12]: Zie
+<http://servicespub.risicokaart.nl/rk_services_pub/services/WFS-risicokaart>.
+
+[^13]: In meerdere lagen met verschillende type kwetsbare objecten, onder meer
+gebouwen met gezondheidszorgfunctie, onderwijsfunctie, woonfunctie of overige
+functie.
+
+[^14]: Zie <https://iplo.nl/thema/externe-veiligheid/kwetsbare-gebouwen/>, voor
+Geluid worden een subset van de gezondheidszorg- en kinderopvanglocaties
+gehanteerd, namelijk enkel die gebouwen met een bedfunctie.
+
 
