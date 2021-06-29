@@ -1,7 +1,7 @@
 # Huidige situatie: geluidbelastingkaarten en -tabellen
 
 <figure id="Figuur_3">
-<img src="media/figuur3.png" alt="">
+<img src="media/figuur3.1.png" alt="">
 <figcaption>Huidige situatie rondom rapportage van END geluidbelastingkaarten en-tabellen gevisualiseerd.</figcaption>
 </figure>
 
@@ -27,7 +27,7 @@ hoofdstuk zal per deelproces hier aandacht aan worden besteed.
 Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en tabellen
 -------------------------------------------------------------------------------------------
 
-<figure id="Figuur_4">
+<figure id="Figuur_4.1">
 <img src="media/figuur4.png" alt="">
 <figcaption>Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en -tabellen.</figcaption>
 </figure>
@@ -84,7 +84,7 @@ tevoren wanneer deze gegevens klaar zullen zijn om te worden gedeeld.
 Centraal rapporteren van kaarten aan InfoMil
 ------------------------------------------------
 <figure id="Figuur_5">
-<img src="media/figuur5.png" alt="">
+<img src="media/figuur5.1.png" alt="">
 <figcaption>Centraal aanleveren van kaarten aan InfoMil.</figcaption>
 </figure>
 
@@ -115,7 +115,7 @@ te vinden in [Bijlage X](VERWIJZING).
 Output prepareren van een rapportage aan de Europese commissie
 ------------------------------------------------------------------
 
-<figure id="Figuur_6">
+<figure id="Figuur_6.1">
 <img src="media/figuur6.png" alt="">
 <figcaption>Output prepareren van een rapportage aan de EEA.</figcaption>
 </figure>
