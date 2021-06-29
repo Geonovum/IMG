@@ -1,7 +1,7 @@
 Conceptueel Informatiemodel Geluidbelasting specificatie (CIMGeluidbelasting)
 ========================================================
 <figure id="Figuur_10">
-<img src="media/CIMGeluidbelasting.png" alt="">
+<img src="media/CMGeluidbelasting1.png" alt="">
 <figcaption>Conceptueel model geluidbelasting.</figcaption>
 </figure>
 
@@ -86,7 +86,7 @@ afbakening van een stil gebied.
 
 
 <figure id="Figuur_11">
-<img src="media/CIMGeluidbelastingvoorbeeld.png" alt="">
+<img src="media/CMGeluidbelastingvb.png" alt="">
 <figcaption>Voorbeeld uitwerking van het Conceptueel model geluidbelasting.</figcaption>
 </figure>
 
