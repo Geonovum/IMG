@@ -4,13 +4,13 @@ Achtergrond richtlijnen
 Inleiding 
 --------------
 
-De richtlijn omgevingslawaai 2002/49/ EG (END) definieert
+De [richtlijn omgevingslawaai](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ%3AL%3A2002%3A189%3A0012%3A0025%3ANL%3APDF) 2002/49/ EG (END) definieert
 rapportageverplichtingen voor de beoordeling en beheersing van omgevingslawaai.
 Met de introductie van de nieuwe ‘Verordening 2019/1010 van de Europese Unie
 (EU) [3] moeten de lidstaten de gegevens ter beschikking stellen zoals vereist
 op grond van de END-richtlijn en volgens, in overeenstemming met de
 INSPIRE-uitvoeringsbepalingen zoals verwoord in de INSPIRE-richtlijn 2007/2/EG
-(zie [Richtlijn INSPIRE](VERWIJZING)). Het huidige rapportagemechanisme waarin
+(zie [Richtlijn INSPIRE](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32007L0002&from=NL)). Het huidige rapportagemechanisme waarin
 de lidstaten gegevens aanleveren, is niet in overeenstemming met de
 INSPIRE-richtlijn. Daarom is door het Europees Milieuagentschap een nieuw
 datamodel ontwikkeld dat voldoet aan zowel de END- als de INSPIRE-vereisten.
@@ -19,10 +19,10 @@ Dit hoofdstuk geeft een korte toelichting over de richtlijn omgevingslawaai, de
 INSPIRE-richtlijn en geeft een overzicht van het nieuwe datamodel dat is
 ontwikkeld voor de richtlijn omgevingslawaai om te voldoen aan de vereisten
 volgens de INSPIRE-richtlijn en de daarbij behorende [INSPIRE
-dataspecificaties](VERWIJZING). In [2.3](VERWIJZING) en [2.4](VERWIJZING) worden
+dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892). In [2.3](#richtlijn-omgevingslawaai) en [2.4](#richtlijn-inspire) worden
 de richtlijn omgevingslawaai (END) en richtlijn INSPIRE toegelicht. In
-[2.5](VERWIJZING) staat het nieuwe datamodel dat voor de richtlijn
-omgevingslawaai (END) ontwikkeld is beschreven. Paragraaf [2.6]((VERWIJZING)
+[hoofdstuk 3](#end_datamodel) staat het nieuwe datamodel dat voor de richtlijn
+omgevingslawaai (END) ontwikkeld is beschreven. Paragraaf [3.3](#end-mapping-naar-inspire-thema-s)
 bevat een mapping van ruimtelijke data uit het END Datamodel op INSPIRE
 ruimtelijke thema's.
 
@@ -96,9 +96,9 @@ INSPIRE verplicht de Europese lidstaten om ruimtelijke gegevens over 34 thema’
 digitaal vindbaar, bruikbaar en uitwisselbaar te maken. Om dit mogelijk te maken
 worden de datasets en diensten gestandaardiseerd en voorzien van metadata. Voor
 de vindbaarheid van de gegevens realiseren de Commissie en de lidstaten een
-netwerk dat bestaat uit een [Europees INSPIRE Geoportal](VERWIJZING) dat
+netwerk dat bestaat uit een [Europees INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu/) dat
 verbonden is met nationale portalen met netwerkdiensten. In Nederland is het
-[Nationaal Georegister](VERWIJZING) (NGR) het nationale portaal.
+[Nationaal Georegister](https://www.nationaalgeoregister.nl/) (NGR) het nationale portaal.
 
 In 2017 heeft de Europese Commissie een fitness check afgerond over
 Environmental Monitoring en Reporting. Daarbij is de INSPIRE-richtlijn
@@ -122,9 +122,9 @@ netwerkservice worden ontsloten.
 Elke dataset en netwerkservice dient te worden voorzien van metadata waarmee de
 dataset c.q. netwerkservice wordt beschreven. Deze metadata wordt gepubliceerd
 in het nationale portaal, het NGR. INSPIRE heeft [juridisch bindende
-eisen](VERWIJZING) die aan de inhoud en structuur van de metadata worden
+eisen](https://inspire.ec.europa.eu/metadata/6541) die aan de inhoud en structuur van de metadata worden
 gesteld. In Nederland zijn deze INSPIRE vereisten voor metadata verwerkt in de
-[Nederlandse metadataprofielen voor data en services](VERWIJZING).
+[Nederlandse metadataprofielen voor data en services](https://www.geonovum.nl/geo-standaarden/metadata).
 
 #### Netwerkservices
 
@@ -140,7 +140,7 @@ Er zijn verschillende typen view- en downloadservices mogelijk, afhankelijk van
 de data en de voorkeuren van de dataprovider. Aanvullend op de internationale
 OGC-standaarden voor deze services, zijn er vanuit INSPIRE specifieke juridisch
 bindende vereisten waaraan deze services moeten voldoen. Deze vereisten zijn
-uitgewerkt in [technische specificaties](VERWIJZING), waarmee deze vereisten
+uitgewerkt in [technische specificaties](https://inspire.ec.europa.eu/Technical-Guidelines/Data-Specifications/2892), waarmee deze vereisten
 geïmplementeerd kunnen worden. In Nederland is afgesproken dat de dataproviders
 services implementeren, in overeenstemming met deze technische specificaties.
 
@@ -157,7 +157,7 @@ vastgelegd.
 Er zijn ook afspraken over identifier management, de manier waarop geometrie kan
 worden vastgelegd en hoe er wordt omgegaan met tijdelijkheid. Ook zijn er
 aanwijzingen over thema specifieke metadata. In de 34
-[dataspecificaties](VERWIJZING) is uitgewerkt hoe deze vereisten geïmplementeerd
+[dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892) is uitgewerkt hoe deze vereisten geïmplementeerd
 kunnen worden. In Nederland is afgesproken dat de dataproviders de data
 harmoniseren volgens, in overeenstemming met deze technische specificaties.
 
@@ -166,7 +166,7 @@ Algemene Termen en definities
 
 Lijst van termen en definities die in deze beschrijving worden gehanteerd,
 gesorteerd op alfabetische volgorde. Verder aanvullend hierop wordt de
-terminologie van het [MIM]( <https://docs.geostandaarden.nl/mim/mim/>) en
+terminologie van het [MIM](https://docs.geostandaarden.nl/mim/mim/) en
 [IMGeluid](https://docs.geostandaarden.nl/cvgg/img/) gevolgd.
 
 | **Term**                                                        | **Definitie**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
