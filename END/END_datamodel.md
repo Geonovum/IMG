@@ -114,12 +114,13 @@ uitsluitend de jaarlijkse verkeersstroom in DF1_5 worden gerapporteerd. Voor
 wegverkeer behoren verkeerssamenstelling, snelheden en wegdeksoort daar niet toe
 en voor spoorwegen en luchthavens geldt iets soortgelijks. Het verschil tussen
 de geluidbronnen (DF1_5) en de geluidgegevens met betrekking tot monitoring in
-IMGeluid is uitgelegd in [1.4](VERWIJZING).
+IMGeluid is uitgelegd in [1.3](#verschil-tussen-berekeningen-t-b-v-geluidmonitoring-en-belasting).
 
 Voor de rapportage van bevoegde instanties (DF_2) zijn geen ruimtelijke gegevens
 nodig. De bevoegde instanties van wegen en spoorwegen, die verantwoordelijk zijn
 voor de geluidbelastingkaarten en/of de actieplanning, kunnen worden
-gerapporteerd op landniveau of op weg-/ spoorsegmentniveau[\^2VERWIJZING] (door
+gerapporteerd op landniveau of op <span title="De segmenten van hoofdwegen en spoorwegen zijn ontworpen om te
+voldoen aan de END-criteria van de jaarlijkse verkeersstroom.">**weg-/ spoorsegmentniveau [1]**</span> (door
 middel van identificatoren). Bevoegde instanties van grote luchthavens moeten
 worden geïdentificeerd met behulp van ICAO-codes en bevoegde instantie van
 agglomeraties met behulp van agglomeratie-identificatoren. Bevoegde instantie
@@ -127,8 +128,6 @@ die belast is met de bescherming van stille gebieden mag optioneel worden
 aangeleverd, maar het wordt aanbevolen om dit te rapporteren door stilte
 gebiedsidentificaties te gebruiken.
 
-[\^2VERWIJZING]: De segmenten van hoofdwegen en spoorwegen zijn ontworpen om te
-voldoen aan de END-criteria van de jaarlijkse verkeersstroom.
 
 De grenswaarden van een land of een gedefinieerde rapporteringsregio (DF3)
 vereisen geen ruimtelijke informatie. De grenswaarden kunnen op landenniveau
@@ -193,7 +192,7 @@ met de basis INSPIRE-informatiemodellen voor ruimtelijke data.
 
 De lijst met geïdentificeerde ruimtelijke data in het toepassingsgebied van de
 END-richtlijn heeft betrekking op de volgende INSPIRE-thema’s, zie onderstaande
-tabel. Deze ruimtelijke data dienen ook volgens INSPIRE-vereisten (zie 2.4)
+tabel. Deze ruimtelijke data dienen ook volgens INSPIRE-vereisten [zie 2.4](#wat-zijn-inspire-verplichtingen)
 ontsloten te worden.
 
 
