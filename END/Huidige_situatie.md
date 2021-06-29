@@ -45,7 +45,7 @@ spoorwegen en luchthavens buiten agglomeraties. Daarnaast leveren zij een deel
 van de input-geluidgegevens voor het genereren van geluidcontouren en tabellen
 binnen agglomeraties. Voor het samenstellen van een geluidmodel moeten
 agglomeratie-gemeenten veel stappen ondernemen. Agglomeraties hebben volgens de
-Europese richtlijn omgevingslawaai [1VERWIJZING] de plicht om
+[Europese richtlijn omgevingslawaai](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ%3AL%3A2002%3A189%3A0012%3A0025%3ANL%3APDF) de plicht om
 geluidbelastingkaarten en -tabellen te berekenen. In deze kaarten en tabellen
 moet de geluidbelasting afkomstig van industrie, provinciale wegen,
 hoofdspoorwegen, lokale wegen, hoofdwegen en de luchtvaart worden meegenomen.
@@ -65,7 +65,7 @@ heeft iedere gemeente die hoort bij een agglomeratie de plicht om zelfstandig
 een geluidbelastingkaart en -tabel voor haar grondgebied op te stellen.
 Samenwerking en onderlinge uitwisseling van gegevens tussen
 agglomeratiegemeenten onderling en met provincies, komen voor op lokaal
-initiatief. Dit wordt weergegeven in [**Figuur 4**](Figuur_4) aan de hand
+initiatief. Dit wordt weergegeven in [**Figuur 4**](#Figuur_4) aan de hand
 van verschillende kleuren en kaartjes. Op dit moment werkt het rijk aan
 harmonisatie van gegevens door een 3D-omgevingsmodel voor geluid, het Nationaal
 Wegenbestand (NWB), en onderzoek of een landelijk bestand met
