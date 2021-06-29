@@ -3,7 +3,7 @@ Aanleiding
 
 Aanleiding voor dit document was de wens van IenW/DLCE om het IMGeluid uit te
 breiden met een onderdeel voor geluidbelastingkaarten, ter voorbereiding op een
-mogelijke uitbreiding van de Centrale voorziening geluidgegevens (CVGG). Dit
+mogelijke uitbreiding van de [Centrale voorziening geluidgegevens](https://www.rivm.nl/cvgg) (CVGG). Dit
 betreft een uitbreiding die niet noodzakelijk is voor het in werking kunnen
 treden van de Omgevingswet, met nieuwe geluidregels, maar die wel de volgende
 ronde van geluidbelastingkaarten kan ondersteunen, waarbij een nieuw datamodel
