@@ -21,7 +21,7 @@ meegenomen. Technische aspecten en bestuurskundige aspecten hangen vaak met
 elkaar samen. Zo kan een standaard die complex is in beheer, bijvoorbeeld ook
 voor veel extra kosten zorgen. In dit hoofdstuk zal het toekomstperspectief
 worden omschreven. De rationale achter deze afwegingen, is te vinden in het
-[CMGeluidbelasting](VERWIJZING].
+[CMGeluidbelasting](#IMGeluidbelasting).
 
 In [**Figuur 7**](\#Figuur_7) staat een toekomstperspectief afgebeeld
 zoals uit interviews naar voren is gekomen. Het proces voor het aanleveren van
@@ -56,12 +56,12 @@ beperkt voordeel voor agglomeratie gemeenten oplevert. Daarentegen vergt het
 weer een extra inspanning van de rijksbronbeheerder om de geluidbrongegevens op
 te moeten “knippen”, met de kans op fouten. Het hele netwerk uitleveren kost
 volgens de rijksbronbeheerder de minste moeite. De afwegingen hierachter, worden
-nader toegelicht in [de memo in hoofdstuk 6](VERWIJZING).
+nader toegelicht in [de memo in hoofdstuk 6](#memo-centraal-aanleveren-van-lokale-geluidgegevens-van-agglomeratiegemeenten).
 
 De geluidgegevens ten behoeve van het berekenen van geluidbelastingkaarten zijn
 een aparte verzameling van gegevens met een eigen geluidmodel. Voor het grootste
 deel is de opbouw van deze brongegevens hetzelfde als voor monitoring, maar er
-zijn verschillen. [Bijlage x](VERWIJZING) geeft een samenvatting van deze
+zijn verschillen. [Bijlage 2](#bijlage-2-verschillen-cnossos-en-nederlandse-rmg) geeft een samenvatting van deze
 verschillen. Wanneer er in de toekomst voor een optie wordt gekozen met centraal
 aanleveren, moeten deze geluidbrongegevens apart worden aangeleverd. Dit is
 noodzakelijk aangezien twee verschillende rekenmethode hiervoor worden gebruikt.
@@ -99,8 +99,8 @@ waarden te voorkomen. Dit zou in de toekomst vanuit een enkele
 geluidbelastingkaart gedaan worden, door de agglomeraties automatisch uit de
 kaarten van de rijksbronbeheerder te knippen. Daarnaast hebben kaarten voor het
 publiek meer duiding en context nodig. Hoe deze context goed in beeld kan worden
-gebracht, wordt geduid vanuit de wetgeving. Zie [bijlage x](VERWIJZING) voor een
-duiding van deze gegevens/
+gebracht, wordt geduid vanuit de wetgeving. Zie [bijlage 1](#bijlage-1-de-inhoud-van-geluidbelastingkaarten-volgens-de-omgevingsregeling) voor een
+duiding van deze gegevens.
 
 Mogelijk kan de CVGG InfoMil gaan ondersteunen bij het rapportageproces van
 geluidbelastingkaarten. Dit zou kunnen door het uploadportaal van de CVGG
