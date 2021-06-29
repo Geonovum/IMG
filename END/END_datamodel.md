@@ -199,6 +199,7 @@ ontsloten te worden.
 
 **Tabel 1. Overzicht van het mapping van ruimtelijke data van END naar de
 INSPIRE-thema’s**
+
 | Basis for END spatial data                                   | INSPIRE spatial data thema                                                      | INSPIRE spatial object type            |
 |--------------------------------------------------------------|---------------------------------------------------------------------------------|----------------------------------------|
 | Belangrijke wegen (DF1_5)                                    | INSPIRE Transport networks (TN) and specific Road Transport Network             | RoadLink                               |
@@ -208,6 +209,7 @@ INSPIRE-thema’s**
 | Geluid contourkaart (DF4_8)                                  | INSPIRE Human health and safety (HH)                                            | EnvHealthDeterminantMeasure (\*)       |
 | Stille gebieden in agglomeraties of in buitengebied (DF7_10) | INSPIRE Area management / restriction / regulation zones & reporting units (AM) | ManagementRestrictionOrRegu lationZone |
 | Geluid actieplannen (DF7_10)                                 | INSPIRE Area management / restriction / regulation zones & reporting units (AM) | ManagementRestrictionOrRegu lationZone |
+
 
 \* Het INSPIRE-Datamodel is opgenomen in de herziening van de uitvoeringsregels
 inzake interoperabiliteit.
