@@ -20,7 +20,7 @@ Wat opvalt is dat het model vanuit een hoger
 [niveau](https://docs.geostandaarden.nl/mim/mim/\\\#typen-informatiemodellen)
 naar de informatie kijkt dan het IMGeluid. Voor het doel van dit model is het
 niet nodig om meer gedetailleerd te kijken naar de verschillende objecttypen.
-Zie [**figuur 10](\# Figuur_10)** voor een UML weergave van het
+Zie [**figuur 10](#Figuur_10)** voor een UML weergave van het
 CMGeluidbelasting.
 
 Toelichting op CM Geluidbelasting
@@ -45,7 +45,7 @@ bijvoorbeeld hoogtelijnen en geluidgevoelige gebouwen. Deze kunnen door de maker
 van het geluidmodel zelf gemodelleerd worden of op een andere manier worden
 ingewonnen. Een oplossingsrichting is om een lijst met geluidgevoelige gebouwen
 op te nemen in het IMGeluid. Zie voor andere oplossingsrichtingen de Memo over
-[geluidgevoelige gebouwen](VERWIJZING).
+[geluidgevoelige gebouwen](#memo-geluidgevoelige-gebouwen-en-geluidbelastingkaarten).
 
 De cijfers die bij pijlen (relaties) van het type \<\<Relatiesoort\>\> staan in
 de vorm [0…\*] (Multipliciteiten), maken het mogelijk om het model op
@@ -59,8 +59,8 @@ andere. Een geluidgegeven Rijksweg is bijvoorbeeld een specifiek soort
 Input-geluidgegeven.
 
 Om deze principes toe te lichten zullen we het CM Geluidbelasting een keer
-geheel doorlopen voor de geluidbelastingkaarten van Rijkswegen. Zie **Figuur**
-11 voor een visualisatie hiervan. We beginnen linksboven in het model bij het
+geheel doorlopen voor de geluidbelastingkaarten van Rijkswegen. Zie [**Figuur 11**](#Figuur_11)
+ voor een visualisatie hiervan. We beginnen linksboven in het model bij het
 Objecttype Geluidgegeven Rijksweg. Laten we er voor dit voorbeeld vanuit gaan
 dat we een geluidbelastingkaart willen maken van 100 wegdelen. Om te bepalen hoe
 deze wegdelen eruitzien, kijken we naar het IMGeluid object WegdeelGPP in dit
@@ -374,12 +374,12 @@ agglomeratiegemeenten zijn:
     centraal rekenen.
 
 2.  Centraal aanleveren c.q. beschikbaarstellen van lokale geluidgegevens biedt
-    mogelijkheden tot samenwerking zonder onderlinge <span title="Bij onderlinge informatiestromen tussen agglomeratiegemeenten en andere organisaties zijn er onderlinge afspraken over formaat en methode van uitwisselen. Er is geen landelijk gestandaardiseerd proces wat de uitwisseling van gegevens niet-uniform en mogelijk duur maakt door maatwerkkoppelvlakken en dataconversies.">**informatiestromen/uitwisseling [1]**</span>.
+    mogelijkheden tot samenwerking zonder onderlinge <span title="Bij onderlinge informatiestromen tussen agglomeratiegemeenten en andere organisaties zijn er onderlinge afspraken over formaat en methode van uitwisselen. Er is geen landelijk gestandaardiseerd proces wat de uitwisseling van gegevens niet-uniform en mogelijk duur maakt door maatwerkkoppelvlakken en dataconversies.">**informatiestromen/uitwisseling [opmerking 1]**</span>.
     
 3.  De inname van lokale geluidgegevens moet technisch ingericht worden in de
     centrale voorziening.
 
-4.  Lokale geluidgegevens zijn <span title="Er is nu weinig uniformiteit door een gebrek aan standaardisatie op het gebied van verkeersmodellen. Elke gemeente organiseert zich nu zelf: er is geen landelijk gestandaardiseerd formaat en gestandaardiseerd proces.">**niet-uniform [2]**</span>, waardoor de inhoud en kwaliteit
+4.  Lokale geluidgegevens zijn <span title="Er is nu weinig uniformiteit door een gebrek aan standaardisatie op het gebied van verkeersmodellen. Elke gemeente organiseert zich nu zelf: er is geen landelijk gestandaardiseerd formaat en gestandaardiseerd proces.">**niet-uniform [opmerking 2]**</span>, waardoor de inhoud en kwaliteit
     van de gegevens die centraal aangeleverd en beschikbaargesteld worden,
     wisselend zijn.
 
@@ -387,7 +387,7 @@ agglomeratiegemeenten zijn:
     agglomeratiegemeenten bleek dat 80% niet voor een verplichting is voor het
     centraal aanleveren van lokale geluidgegevens. Dit betekent dat er een hoop
     werk ligt in de communicatie om agglomeratiegemeenten mee te krijgen in het
-    alternatief ‘centraal aanleveren’.">**weinig draagvlak [3]**</span> onder agglomeratiegemeenten voor het centraal
+    alternatief ‘centraal aanleveren’.">**weinig draagvlak [opmerking 3]**</span> onder agglomeratiegemeenten voor het centraal
     aanleveren.
 
 
@@ -397,14 +397,7 @@ agglomeratiegemeenten zijn:
 
 Het advies is om de CVGG voor te bereiden op de inname van lokale geluidgegevens
 en agglomeratiegemeenten de keuze te geven om lokale geluidgegevens optioneel
-(alternatief 2) te mogen laten aanleveren aan de CVGG.[^4] Dit om meer
-samenwerking en een reductie van informatiestromen te bereiken. Aandachtspunt is
-de communicatie richting agglomeratie om de toegevoegde waarde van centraal
-aanleveren en beschikbaarstellen te duiden. Op een later moment kan beoordeeld
-worden in hoeverre een verplichting moet gaan gelden voor het centraal
-aanleveren van lokale geluidgegevens (alternatief 3).
-
-[^4]: Bij Basisregistratie Grootschalige Topografie (BGT) bestaat het
+(alternatief 2) te mogen laten aanleveren aan de CVGG. <span title="Bij Basisregistratie Grootschalige Topografie (BGT) bestaat het
 informatiemodel uit een verplicht deel, de BGT, en een optioneel deel, IMGeo. In
 2011 is de keuze gemaakt om om de Landelijke Voorziening BGT uit te breiden met
 de inname van optionele gegevens van IMGeo. De ervaring hiermee is dat
@@ -413,7 +406,13 @@ over de functie en het fysieke voorkomen aanleveren, alsook dat bronhouders
 vrijwillig extra gegevens over bomen, straatmeubilair, speeltuinen e.d. leveren.
 In de doorontwikkeling van de BGT wordt bekeken welke optionele gegevens naar
 het verplichte deel gehaald kunnen en moeten worden. Deze beoordeling gebeurd op
-basis van de huidige vulling en de toegevoegde gebruikerswaarde.
+basis van de huidige vulling en de toegevoegde gebruikerswaarde.">**[opmerking 4]**</span> Dit om meer
+samenwerking en een reductie van informatiestromen te bereiken. Aandachtspunt is
+de communicatie richting agglomeratie om de toegevoegde waarde van centraal
+aanleveren en beschikbaarstellen te duiden. Op een later moment kan beoordeeld
+worden in hoeverre een verplichting moet gaan gelden voor het centraal
+aanleveren van lokale geluidgegevens (alternatief 3).
+
 
 **Advies 2. Lokale geluidgegevens uniformeren**
 
@@ -430,42 +429,30 @@ informatieproducten (geluidbelastingkaarten) te bereiken.
 **Huidige situatie**
 
 Voor het maken van geluidbelastingkaarten zijn onder meer gegevens nodig over
-geluidgevoelige gebouwen[^1].
+geluidgevoelige gebouwen <span title="Om het aantal gevoelige gebouwen binnen een contour, en het betreffende
+aantal personen dat verblijft binnen deze contour te kunnen bepalen.">**[opmerking 5]**</span>.
 
-[^1]: Om het aantal gevoelige gebouwen binnen een contour, en het betreffende
-aantal personen dat verblijft binnen deze contour te kunnen bepalen.
-
-Een geluidgevoelig gebouw[^2] is gedefinieerd in de Artikel 3.20 van het Besluit
+Een <span title="Gevoelig gebouw is (een deel van) een gebouw met een gebruiksfunctie
+zijnde woonfunctie, onderwijsfunctie, bijeenkomstfunctie van het type
+kinderopvang met bedgebied, of gezondheidszorgfunctie met bedgebied.">**geluidgevoelig gebouw [opmerking 6]**</span> is gedefinieerd in de Artikel 3.20 van het Besluit
 kwaliteit leefomgeving (Bkl).
 
-[^2]: Gevoelig gebouw is (een deel van) een gebouw met een gebruiksfunctie
-zijnde woonfunctie, onderwijsfunctie, bijeenkomstfunctie van het type
-kinderopvang met bedgebied, of gezondheidszorgfunctie met bedgebied.
-
 Om het aantal geluidgevoelige objecten te bepalen, gebruiken overheden vaak
-BAG-bestanden[^3]. BAG-bestanden bevatten niet alle gegevens die nodig zijn om
-alle geluidgevoelige gebouwen te identificeren[^4].
-
-[^3]: In de BAG worden één of meer functies van het Bouwbesluit als gebruiksdoel
+<span title="In de BAG worden één of meer functies van het Bouwbesluit als gebruiksdoel
 bij een Verblijfsobject opgenomen; een Verblijfsobject maakt onderdeel uit van
-een Pand.
-
-[^4]: In de BAG wordt bij een Pand/Verblijfsobject niet vastgelegd of het object
+een Pand.">**BAG-bestanden [opmerking 7]**</span>. BAG-bestanden bevatten niet alle gegevens die nodig zijn om
+alle geluidgevoelige gebouwen te identificeren <span title="In de BAG wordt bij een Pand/Verblijfsobject niet vastgelegd of het object
 in gebruik is als ‘kinderopvang met bedfunctie’ of ‘gezondheidszorg met
-bedfunctie’.
+bedfunctie’.">**[opmerking 8]**</span>.
 
-Combinatie met andere bronnen[^5] is noodzakelijk om alle geluidgevoelige
+Combinatie met <span title="Voorbeelden van aanvullende hulpbronnen zijn bijvoorbeeld het Landelijk
+Register Kinderopvang (LRK), Basisregistratie Topografie (BRT), Digitaal
+Topografisch Bestand RWS (DTB RWS)">**andere bronnen [opmerking 9]**</span>. is noodzakelijk om alle geluidgevoelige
 gebouwen te bepalen.
 
-[^5]: Voorbeelden van aanvullende hulpbronnen zijn bijvoorbeeld het Landelijk
-Register Kinderopvang (LRK), Basisregistratie Topografie (BRT), Digitaal
-Topografisch Bestand RWS (DTB RWS)
-
-Rijkswaterstaat en ProRail hebben een eigen bestand (voor hun interessegebied)
+Rijkswaterstaat en ProRail hebben een [eigen bestand](https://www.infomil.nl/onderwerpen/geluid/nieuws/2017/tabellen/) (voor hun interessegebied)
 met geluidgevoelige gebouwen, en stellen die op verzoek beschikbaar aan
-gemeenten en provincies.[^6]
-
-[^6]: https://www.infomil.nl/onderwerpen/geluid/nieuws/2017/tabellen/
+gemeenten en provincies.
 
 **Gewenste situatie**
 
@@ -481,29 +468,23 @@ eenduidig een bestand met geluidgevoelige gebouwen samenstellen of afnemen.
 2.  De gegevens over geluidgevoelige gebouwen moeten worden aangeleverd door
     gemeenten, omdat in hun omgevingsplannen is bepaald welke functies zijn
     toegestaan en zij de lokale kennis hebben over details als bedgebied en
-    kinderopvang.[^7]
-
-    [^7]: Met dit uitgangspunt vervalt het alternatief om buiten de BAG en
+    kinderopvang.<span title="Met dit uitgangspunt vervalt het alternatief om buiten de BAG en
     IMGeluid om een landsdekkend bestand met geluidgevoelige gebouwen samen te
     stellen, welke los van de LV-BAG of CVGG beschikbaargesteld wordt aan andere
-    overheden.
+    overheden.">**[opmerking 10]**</span>
 
 3.  Gegevens daar opslaan waar ze verzameld, opgeslagen, en beheerd worden. De
     bronhouders van de BAG zijn de gemeenten. Bronhouders voor de
     Geluidbelastingkaarten zijn ook de gemeenten.
 
 4.  De populatie geluidgevoelige gebouwen binnen Geluid is kleiner dan de
-    populatie kwetsbare gebouwen binnen Externe Veiligheid[^8].
-
-    [^8]: https://www.infomil.nl/onderwerpen/veiligheid/bevi-revi/\@110701/kwetsbare-obecten/
+    populatie [kwetsbare gebouwen binnen Externe Veiligheid](https://www.infomil.nl/onderwerpen/veiligheid/bevi-revi/\@110701/kwetsbare-obecten/).
 
 5.  De geluidbelastingkaarten hebben een actualisatie frequentie van 5 jaar. Met
     dat specifieke doel voor ogen hebben, moet er dus 5-jaarlijks een actueel
-    bestand met geluidgevoelige gebouwen zijn. [^9]
-
-    [^9]: Tenzij het doel is om de geluidgevoelige gebouwen dataset structureel
+    bestand met geluidgevoelige gebouwen zijn. <span title="Tenzij het doel is om de geluidgevoelige gebouwen dataset structureel
     up-to-date te houden, waardoor die ook voor andere geluidberekeningen
-    gebruikt kan worden.
+    gebruikt kan worden.">**[opmerking 11]**</span>
 
 6.  Voor END kaarten zijn totale aantallen gebouwen en gehinderden binnen een
     geluidcontour nodig. Het is niet nodig gegevens over de geluidgevoelige
@@ -512,10 +493,8 @@ eenduidig een bestand met geluidgevoelige gebouwen samenstellen of afnemen.
 **Alternatief 1 Opnemen gegevens geluidgevoelige gebouwen in de BAG**
 
 Het kenmerk ‘is geluidgevoelig’ wordt als verplicht gegeven toegevoegd aan de
-BAG[^10].
-
-[^10]: Het informatiemodel BAG is in beheer bij het Kadaster, opdrachtgever voor
-de BAG is min. BZK.
+<span title="Het informatiemodel BAG is in beheer bij het Kadaster, opdrachtgever voor
+de BAG is min. BZK.">**BAG [opmerking 12]**</span>.
 
 1.  Bronhouders van de BAG (gemeenten) wordt gevraagd om hun werkproces en
     software hierop aan te passen, en de gegevens in te winnen en aan te leveren
@@ -571,26 +550,14 @@ veiligheidsrisico's.
 
 De gegevens van EV kwetsbare objecten zijn opgenomen in de risicokaart.
 Provincies maken en beheren de risicokaart op basis van aangeleverde gegevens
-door gemeenten, Rijk en provincies zelf[^11]. De gegevens worden o.m. als
-WFS[^12] beschikbaar gesteld[^13]. De populatie kwetsbare objecten voor Externe
-Veiligheid is ruimer dan de populatie van geluidgevoelige gebouwen voor domein
-Geluid[^14]. Toepassing van het bestand Kwetsbare objecten van EV voor
+door gemeenten, Rijk en provincies zelf [(Zie atlas van de Leefomgeving)](https://www.atlasleefomgeving.nl/kwetsbare-objecten) De gegevens worden o.m. als
+[WFS](http://servicespub.risicokaart.nl/rk_services_pub/services/WFS-risicokaart) <span title="In meerdere lagen met verschillende type kwetsbare objecten, onder meer
+gebouwen met gezondheidszorgfunctie, onderwijsfunctie, woonfunctie of overige
+functie.">**beschikbaar gesteld [opmerking 13]**</span>. De populatie [kwetsbare objecten voor Externe
+Veiligheid](https://iplo.nl/thema/externe-veiligheid/kwetsbare-gebouwen/) is ruimer dan de populatie van <span title="Voor
+Geluid worden een subset van de gezondheidszorg- en kinderopvanglocaties
+gehanteerd, namelijk enkel die gebouwen met een bedfunctie.">**geluidgevoelige gebouwen voor domein Geluid [opmerking 14]**</span>. Toepassing van het bestand Kwetsbare objecten van EV voor
 geluidberekeningen rekent dus met iets ruimere populatie. Het is onbekend in
 hoeverre de nauwkeurigheid van de geluidbelastingkaarten hierdoor wordt
 beïnvloed.
-
-[^11]: Zie atlas van de Leefomgeving:
-<https://www.atlasleefomgeving.nl/kwetsbare-objecten>
-
-[^12]: Zie
-<http://servicespub.risicokaart.nl/rk_services_pub/services/WFS-risicokaart>.
-
-[^13]: In meerdere lagen met verschillende type kwetsbare objecten, onder meer
-gebouwen met gezondheidszorgfunctie, onderwijsfunctie, woonfunctie of overige
-functie.
-
-[^14]: Zie <https://iplo.nl/thema/externe-veiligheid/kwetsbare-gebouwen/>, voor
-Geluid worden een subset van de gezondheidszorg- en kinderopvanglocaties
-gehanteerd, namelijk enkel die gebouwen met een bedfunctie.
-
 
