@@ -89,7 +89,7 @@ gebouwen, het bevorderen van bronbeleid, het eenvoudiger maken van het
 normenkader en het stroomlijnen en makkelijker maken van de instructieregels.
 Daarnaast bevat de aanvullingsregeling ook nieuwe regels m.b.t. het hoofdspoor.
 (Bron: [Informatiepunt
-leefomgeving](<https://iplo.nl/regelgeving/stelsel-omgevingswet/omgevingswet-in-ontwikkeling/hoofdlijnen-aanvullingsspoor-geluid/?_ga=2.129871372.1064692739.1619698411-1642760836.1595589321>)
+leefomgeving](https://iplo.nl/regelgeving/stelsel-omgevingswet/omgevingswet-in-ontwikkeling/hoofdlijnen-aanvullingsspoor-geluid/?_ga=2.129871372.1064692739.1619698411-1642760836.1595589321)
 )
 
 Om de geluidbelasting voor het maken van geluidbelastingkaarten te berekenen
@@ -98,7 +98,7 @@ geluidbelastingkaarten worden opgesteld t.b.v. de Europese richtlijn
 omgevingslawaai. Het doel van de richtlijn omgevingslawaai is, om op basis van
 prioriteiten, de schadelijke gevolgen (inclusief hinder) van blootstelling aan
 omgevingslawaai te vermijden, voorkomen of verminderen. (Bron: [richtlijn
-omgevingslawaai 2002l](<https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ%3AL%3A2002%3A189%3A0012%3A0025%3ANL%3APDF>) )
+omgevingslawaai 2002l](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ%3AL%3A2002%3A189%3A0012%3A0025%3ANL%3APDF) )
 
 Geluidproductieplafonds en de basisgeluidemissie zijn instrumenten om de
 geluidemissie, oftewel de geluidproductie van geluidbronnen te monitoren.
@@ -136,7 +136,7 @@ werkelijkheid weer en worden gebruikt voor vergunningen en monitoring. IMGeluid
 is gemodelleerd conform het Nederlandse Metamodel Informatie Modellering [MIM](
 <https://docs.geostandaarden.nl/mim/mim/> ) en volgt daarmee niet het [INSPIRE
 Generic Conceptual
-Model](<https://inspire.ec.europa.eu/documents/Data_Specifications/D2.5_v3.4rc3.pdf>)
+Model](https://inspire.ec.europa.eu/documents/Data_Specifications/D2.5_v3.4rc3.pdf)
 
 Hoewel de geluidgegevens voor rapportage aan EU (Noise Sources DF1_5 volgens END
 datamodel) en t.b.v. monitoring in het kader van geluidproductieplafonds
