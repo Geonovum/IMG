@@ -1,11 +1,17 @@
-# Handreiking aanleveren volgens de European Noise Directive (END)
+# Geluidbelastingkaarten in kaart; De richtlijnen, de informatiestromen en een toekomstperspectief
 
-In deze folder staat het in ontwikkeling zijnde document met daarin een impact analyse en proces uitwerking met betrekking op de komst van het nieuwe END logische informatiemodel.
+In deze folder staat het in ontwikkeling zijnde document met daarin het document Geluidbelastingkaarten in kaart.
 
-De scope van dit document omvat:
-* Toelichtende teksten over de hernieuwde aanleverplicht volgens het END datamodel.
-* Een omschrijving van de huidige processen rondom de aanlevering van geluidsgegevens aan Europa.
-* De architectuur van de toekomstige situatie met betrekking tot op het proces voor aanleveren van geluidgegevens conform het END datamodel.
-* Een impact analyse van deze toekomstige situatie op de Centrale Voorziening Geluidgegevens (CVGG) en het IMGeluid.
+Doel van dit document: De samenhang tussen informatiestromen met betrekking op het opstellen en rapporteren van geluidbelastingkaarten in kaart brengen.
+
+In scope van dit document is:
+
+* Een analyse van informatiestromen tussen de verschillende overheden die een rol spelen bij de aanlevering van geluidbelastingkaarten ten behoeve van de richtlijn omgevingslawaai.
+* Wanneer er in het algemeen over geluidbelastingkaarten wordt gesproken in dit document, wordt gedoeld op de geluidbelastingkaarten en – tabellen zoals bedoeld in de richtlijn omgevingslawaai.
+* Een analyse van de informatiestromen voor de bewerkingsstappen (berekeningen, samenvoegen).
+* Een samenvatting van het END Datamodel en de verschillen met de bestaande formats, waarbij ook de link wordt uitgelegd met INSPIRE.
+* Een omschrijving van de huidige en toekomstige situatie.
+* Een omschrijving van een conceptueel model geluidbelasting dat inzicht geeft in informatiestromen en de rol en herkomst van geluidgegevens met betrekking op geluidbelastingkaarten en -tabellen.
+* Actieplannen vallen buiten de scope.
 
 Bekijk het document via [deze link](https://geonovum.github.io/IMG/END/)
