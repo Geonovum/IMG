@@ -38,7 +38,7 @@ staan deze groepen stakeholders omschreven.
 | Leveranciers geluidberekening software               | Deze leveranciers ontwikkelen en beheren de software ter ondersteuning van het uitvoeren van geluidberekeningen. Hiermee voeren de akoestische experts in opdracht van de bestuursorganen geluidberekeningen uit. De twee grootste leveranciers zijn WinHavik en Geomilieu.                                                                                                                                                                                                                                                                                                                                                                                                        | De leveranciers zorgen ervoor dat hun software de geluid rekenregels toepast en dat de geluidbelastingkaarten in het gewenste formaat komen te staan.                                                                                                                                                                                                                                                                                |
 
 
-**Tabel 1. geluidbelastingkaarten en -tabellen stakeholders **
+**Tabel 1. geluidbelastingkaarten en -tabellen stakeholders**
 
 Het beeld dat uit deze interviews is voortgekomen, is in afstemming met het
 ministerie van I&W en het RIVM tot stand gekomen. In het volgende hoofdstuk zal
