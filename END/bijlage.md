@@ -62,10 +62,10 @@ Voor een meer uitgebreide omschrijving van de verschillen zie [het interviewvers
 
 ## Bijlage 3: Wijzigingsvoorstellen IMGeluid
 
-Op basis van een eerdere lijst van geïdentificeerde verschillen met CNOSSOS, is een lijst met wijzigingsvoorstellen samengesteld in [deze excel](). 
+Op basis van een eerdere lijst van geïdentificeerde verschillen met CNOSSOS, is een lijst met wijzigingsvoorstellen samengesteld in [deze excel](https://github.com/Geonovum/IMG/raw/gh-pages/END/media/20210430%20Wijzingsvoorstellen%20uitbreiding%20IMGeluid.xlsx). 
 
-Later zijn ook de verschillen voor industrie en lokaal spoor toegevoegd aan de lijst zoals te lezen in [Bijlage 2](https://geonovum.github.io/IMG/END/#bijlage-2-verschillen-cnossos-en-nederlandse-rmg). Deze zijn nog niet verwerkt in de lijst met wijzigingsvoorstellen, omdat op dit punt al besloten was het IMGeluid op het moment niet uit te breiden.
+Later zijn ook de verschillen voor industrie en lokaal spoor toegevoegd aan de lijst zoals te lezen in [Bijlage 2](#bijlage-2-verschillen-cnossos-en-nederlandse-rmg). Deze zijn nog niet verwerkt in de lijst met wijzigingsvoorstellen, omdat op dit punt al besloten was het IMGeluid op het moment niet uit te breiden.
 
 ## Bijlage 4: Verslag van de interviews met geluidexperts
 
-Geonovum heeft in maart 2021 interviews afgenomen met verschillende belanghebbenden op rijks, provincie en gemeentelijk niveau over de geluidrapportage aan de EU. Geonovum wilde de huidige processen, aandachtspunten en de perspectief van de stakeholders voor toekomstige verbeteringen begrijpen voor de uitbreiding van het informatiemodel. Een verslag van de interviews valt [hier te lezen]. 
+Geonovum heeft in maart 2021 interviews afgenomen met verschillende belanghebbenden op rijks, provincie en gemeentelijk niveau over de geluidrapportage aan de EU. Geonovum wilde de huidige processen, aandachtspunten en de perspectief van de stakeholders voor toekomstige verbeteringen begrijpen voor de uitbreiding van het informatiemodel. Een verslag van de interviews valt [hier te lezen](https://github.com/Geonovum/IMG/raw/gh-pages/END/media/Verslag%20interviews%20maart%202021%20v1.0rc1.pdf). 
