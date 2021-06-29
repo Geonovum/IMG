@@ -9,8 +9,8 @@ Om een beeld te schetsen van de huidige situatie zal de situatie worden
 omschreven van de laatste rapportage van geluidgegevens aan de Europese
 commissie. Zoals eerder vermeld, is iedere Europese lidstaat verplicht deze
 rapportage te doen op basis van de [Europese richtlijn
-omgevingslawaai](1VERWIJZING). Op basis van de uitgevoerde analyse
-[bureauonderzoek en interviews] kan worden opgemaakt dat het huidige proces
+omgevingslawaai](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ%3AL%3A2002%3A189%3A0012%3A0025%3ANL%3APDF). Op basis van de uitgevoerde analyse,
+bureauonderzoek en [interviews](#bijlage-4-verslag-van-de-interviews-met-geluidexperts) kan worden opgemaakt dat het huidige proces
 rondom de rapportage van geluidbelastingkaarten aan Europa op te delen is in
 drie deelprocessen. Deze drie deelprocessen staan ook gevisualiseerd in [**Figuur 3**](Figuur_3) van links naar rechts.
 
@@ -37,8 +37,7 @@ geluidbelastingkaarten aan de Europese Commissie, is het verzamelen van de
 juiste gegevens om een geluidmodel mee te kunnen maken. Wat de juiste gegevens
 zijn wordt bepaald door akoestisch adviseurs in dienst van de bronhouder, een
 adviesbureau of een omgevingsdienst binnen de kaders van de Nederlandse
-rekenmethodieken voor het uitvoeren van geluidberekeningen [verwijzing naar
-rekenmethoden].
+rekenmethodieken voor het uitvoeren van geluidberekeningen. Deze zullen vanaf ingang vanaf de omgevingswet te vinden zijn in [Bijlage IV van de omgevingsregeling](https://www.omgevingsweb.nl/wp-content/uploads/po-assets/379191.pdf).
 
 ProRail, het Ministerie van Infrastructuur en Waterstaat, Rijkswaterstaat en
 provincies genereren de geluidcontouren en tabellen voor belangrijke wegen,
@@ -94,11 +93,8 @@ hoofdspoorwegen buiten agglomeratiegrenzen, draagt het Ministerie van I&W de
 verantwoordelijkheid over de rapportage aan InfoMil. De geografische kaarten
 worden door de bevoegde autoriteit publiek beschikbaar gesteld. Alle
 agglomeratiegemeenten rapporteren zelfstandig geluidbelastingkaarten en
--tabellen aan InfoMil. In (Artikel 8 van besluit geluid milieubeheer)
-[https://wetten.overheid.nl/jci1.3:c:BWBR0031477&hoofdstuk=3&paragraaf=1&artikel=8&z=2012-07-01&g=2012-07-01]
-staat dat geluidbelastingkaarten bestaan uit tabellen en geografische kaarten.
-In (artikel 11.9 van de Wet Milieubeheer)
-[https://wetten.overheid.nl/jci1.3:c:BWBR0003245&hoofdstuk=11&titeldeel=11.2&paragraaf=11.2.2&artikel=11.9&z=2021-01-01&g=2021-01-01]
+-tabellen aan InfoMil. In [Artikel 8 van besluit geluid milieubeheer](https://wetten.overheid.nl/jci1.3:c:BWBR0031477&hoofdstuk=3&paragraaf=1&artikel=8&z=2012-07-01&g=2012-07-01) staat dat geluidbelastingkaarten bestaan uit tabellen en geografische kaarten.
+In [artikel 11.9 van de Wet Milieubeheer]([https://wetten.overheid.nl/jci1.3:c:BWBR0003245&hoofdstuk=11&titeldeel=11.2&paragraaf=11.2.2&artikel=11.9&z=2021-01-01&g=2021-01-01)
 staat de aanleverplicht voor deze geluidbelastingkaarten omschreven. De
 aanleverplicht moet nog worden verankerd in de Omgevingswet. Een verschil tussen
 publieke geluidbelastingtabellen en de tabellen voor de EEA, is dat op
@@ -110,7 +106,7 @@ spoorwegen en luchthavens van nationaal belang om geografische
 geluidbelastingkaarten te rapporteren. Voor de geluidbelastingkaarten voor het
 publiek, gelden een aantal aanvullende eisen vanuit Nederlandse wetgeving boven
 op de eisen uit de richtlijn omgevingslawaai. Een overzicht van deze eisen valt
-te vinden in [Bijlage X](VERWIJZING).
+te vinden in [Bijlage 1](#bijlage-1-de-inhoud-van-geluidbelastingkaarten-volgens-de-omgevingsregeling).
 
 Output prepareren van een rapportage aan de Europese commissie
 ------------------------------------------------------------------
