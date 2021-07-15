@@ -1,0 +1,2381 @@
+<!DOCTYPE html><html lang="nl"><!-- HTML-Header ------------------------------------------------------------------------------><head><meta charset="utf-8"><meta name="generator" content="ReSpec 24.5.2"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+<!--------------------------------------------------------------------------------------------------
+//-- File. . . :  index.html
+//-- Bevat . . :  Template voor de index.html die verplicht is voor respec  
+//--              Gebaseerd op https://github.com/Geonovum/respec/wiki
+//--              Deze file moet worden neergezet in de root-directory van de 
+//--              betreffende standaard. 
+//-- Door. . . :  Jan van Gelder
+//--------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+//-- Log . . . :  20181015 - JvG - Initiele versie 
+//
+----------------------------------------------------------------------------------------------------
+0        1         2         3         4         5         6         7         8         9         0
+1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+--------------------------------------------------------------------------------------------------->
+        <!-- Invullen: de titel van de standaard of het document ---------------------------------->
+        <title>Geluidbelastingkaarten in kaart</title>
+        <!-- Invullen: de naam van de lokale CSS file --------------------------------------------->
+        <link rel="stylesheet" type="text/css" href="./media/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico">
+        
+        
+    <style id="respec-mainstyle">/*****************************************************************
+ * ReSpec 3 CSS
+ * Robin Berjon - http://berjon.com/
+ *****************************************************************/
+
+/* Override code highlighter background */
+.hljs {
+  background: transparent !important;
+}
+
+/* --- INLINES --- */
+h1 abbr,
+h2 abbr,
+h3 abbr,
+h4 abbr,
+h5 abbr,
+h6 abbr,
+a abbr {
+  border: none;
+}
+
+dfn {
+  font-weight: bold;
+}
+
+a.internalDFN {
+  color: inherit;
+  border-bottom: 1px solid #99c;
+  text-decoration: none;
+}
+
+a.externalDFN {
+  color: inherit;
+  border-bottom: 1px dotted #ccc;
+  text-decoration: none;
+}
+
+a.bibref {
+  text-decoration: none;
+}
+
+#references :target {
+  background: #eaf3ff;
+}
+
+cite .bibref {
+  font-style: normal;
+}
+
+code {
+  color: #c83500;
+}
+
+th code {
+  color: inherit;
+}
+
+/* --- TOC --- */
+
+.toc a,
+.tof a {
+  text-decoration: none;
+}
+
+a .secno,
+a .figno {
+  color: #000;
+}
+
+ul.tof,
+ol.tof {
+  list-style: none outside none;
+}
+
+.caption {
+  margin-top: 0.5em;
+  font-style: italic;
+}
+
+/* --- TABLE --- */
+
+table.simple {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-bottom: 3px solid #005a9c;
+}
+
+.simple th {
+  background: #005a9c;
+  color: #fff;
+  padding: 3px 5px;
+  text-align: left;
+}
+
+.simple th[scope="row"] {
+  background: inherit;
+  color: inherit;
+  border-top: 1px solid #ddd;
+}
+
+.simple td {
+  padding: 3px 10px;
+  border-top: 1px solid #ddd;
+}
+
+.simple tr:nth-child(even) {
+  background: #f0f6ff;
+}
+
+/* --- DL --- */
+
+.section dd>p:first-child {
+  margin-top: 0;
+}
+
+.section dd>p:last-child {
+  margin-bottom: 0;
+}
+
+.section dd {
+  margin-bottom: 1em;
+}
+
+.section dl.attrs dd,
+.section dl.eldef dd {
+  margin-bottom: 0;
+}
+
+#issue-summary>ul,
+.respec-dfn-list {
+  column-count: 2;
+}
+
+#issue-summary li,
+.respec-dfn-list li {
+  list-style: none;
+}
+
+details.respec-tests-details {
+  margin-left: 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+details.respec-tests-details>* {
+  padding-right: 2em;
+}
+
+details.respec-tests-details[open] {
+  z-index: 999999;
+  position: absolute;
+  border: thin solid #cad3e2;
+  border-radius: 0.3em;
+  background-color: white;
+  padding-bottom: 0.5em;
+}
+
+details.respec-tests-details[open]>summary {
+  border-bottom: thin solid #cad3e2;
+  padding-left: 1em;
+  margin-bottom: 1em;
+  line-height: 2em;
+}
+
+details.respec-tests-details>ul {
+  width: 100%;
+  margin-top: -0.3em;
+}
+
+details.respec-tests-details>li {
+  padding-left: 1em;
+}
+
+a[href].self-link:hover {
+  opacity: 1;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+}
+
+aside.example .marker > a.self-link {
+  color: inherit;
+}
+
+h2>a.self-link,
+h3>a.self-link,
+h4>a.self-link,
+h5>a.self-link,
+h6>a.self-link {
+  border: none;
+  color: inherit;
+  font-size: 83%;
+  height: 2em;
+  left: -1.6em;
+  opacity: .5;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  transition: opacity .2s;
+  width: 2em;
+}
+
+h2>a.self-link::before,
+h3>a.self-link::before,
+h4>a.self-link::before,
+h5>a.self-link::before,
+h6>a.self-link::before {
+  content: "§";
+  display: block;
+}
+
+@media (max-width: 767px) {
+  dd {
+    margin-left: 0;
+  }
+
+  /* Don't position self-link in headings off-screen */
+  h2>a.self-link,
+  h3>a.self-link,
+  h4>a.self-link,
+  h5>a.self-link,
+  h6>a.self-link {
+    left: auto;
+    top: auto;
+  }
+}
+
+@media print {
+  .removeOnSave {
+    display: none;
+  }
+}
+</style><link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/GN-VV.css"><link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico"><script id="initialUserConfig" type="application/json">{
+  "specStatus": "GN-VV",
+  "specType": "AL",
+  "editors": [
+    {
+      "name": "Azarakhsh Rafiee",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    },
+    {
+      "name": "Joeri van Es",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Joeri van Es",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    },
+    {
+      "name": "Azarakhsh Rafiee",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    },
+    {
+      "name": "Arnoud de Boer",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    }
+  ],
+  "shortName": "geluidbelasting",
+  "pubDomain": "cvgg",
+  "github": "https://github.com/Geonovum/IMG/tree/gh-pages/END",
+  "issueBase": "https://github.com/Geonovum/IMG/issues/",
+  "edDraftURI": "https://geonovum.github.io/IMG/END",
+  "licence": "cc-by-nd",
+  "localBiblio": {
+    "CITAAT": {
+      "title": "Titel van het Citaat",
+      "href": "http://url van de publicatie",
+      "status": "versie van de publicatie",
+      "publisher": "naam van de publiceerder",
+      "company": "eventueel naam van bedrijf"
+    },
+    "MIM": {
+      "id": "MIM",
+      "title": "MIM - Metamodel Informatie Modellering",
+      "href": "https://docs.geostandaarden.nl/mim/mim10/",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2017-06-14"
+    },
+    "Directive_2002/49/EC": {
+      "id": "Directive_2002/49/EC",
+      "title": "Directive 2002/49/EC of the European Parliament and of the Council of 25 June 2002 relating to the assessment and management of environmental noise",
+      "status": "Definitief",
+      "publisher": "the Commission in the Conciliation Committee on the Directive relating to the assessment and management of environmental noise",
+      "date": "2002-06-25"
+    },
+    "Directive_2007/2/EC": {
+      "id": "Directive_2007/2/EC",
+      "title": "Directive 2007/2/EC of the European Parliament and of the Council of 14 March 2007 establishing an Infrastructure for Spatial Information in the European Community",
+      "status": "Definitief",
+      "publisher": "European Parliament and of the Council",
+      "date": "2007-03-14"
+    },
+    "ISO19108-2005": {
+      "href": "https://www.iso.org/standard/39891.html",
+      "title": "Geographic information -- Rules for application schema",
+      "date": "2005-06",
+      "publisher": "International Organization for Standardization"
+    }
+  },
+  "publishISODate": "2021-07-15T00:00:00.000Z",
+  "generatedSubtitle": "Versie ter vaststelling 15 juli 2021"
+}</script><meta name="description" content="Aanleiding voor dit document was de wens van IenW/DLCE om het IMGeluid uit te
+breiden met een onderdeel voor geluidbelastingkaarten, ter voorbereiding op een
+mogelijke uitbreiding van de Centrale voorziening geluidgegevens (CVGG). Dit
+betreft een uitbreiding die niet noodzakelijk is voor het in werking kunnen
+treden van de Omgevingswet, met nieuwe geluidregels, maar die wel de volgende
+ronde van geluidbelastingkaarten kan ondersteunen, waarbij een nieuw datamodel
+door de EU verplicht wordt gesteld, evenals het voldoen aan de Europese
+richtlijn INSPIRE. Geluidbelastingkaarten moeten elke vijf jaar worden opgesteld
+door het rijk, provincies en een deel van de gemeenten. Dit komt voort uit de
+Europese richtlijn omgevingslawaai. De volgende ronde vindt plaats in 2022, met
+geluidgegevens over het kalenderjaar 2021. Gedurende het project is gebleken dat
+het beter bij de behoefte van de opdrachtgever past om een Conceptueel
+model op te stellen, dat kan dienen als basis voor enerzijds het
+gebruik van het nieuwe END-datamodel door betrokken partijen, en anderzijds
+eventuele uitbreidingen van het IMG, die naar verwachting beperkt of niet nodig
+zullen zijn."><script type="application/ld+json">{
+  "@context": [
+    "http://schema.org",
+    {
+      "@vocab": "http://schema.org/",
+      "@language": "nl",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "datePublished": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "inLanguage": {
+        "@language": null
+      },
+      "isBasedOn": {
+        "@type": "@id"
+      },
+      "license": {
+        "@type": "@id"
+      }
+    }
+  ],
+  "id": "https://docs.geostandaarden.nl/cvgg/vv-al-geluidbelasting-20210715/",
+  "type": [
+    "TechArticle"
+  ],
+  "name": "Geluidbelastingkaarten in kaart",
+  "inLanguage": "nl",
+  "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+  "datePublished": "2021-07-15",
+  "copyrightHolder": {
+    "name": "Geonovum",
+    "url": "https://www.geonovum.nl/"
+  },
+  "discussionUrl": "https://github.com/Geonovum/IMG/issues/",
+  "alternativeHeadline": "",
+  "description": "Aanleiding voor dit document was de wens van IenW/DLCE om het IMGeluid uit te\nbreiden met een onderdeel voor geluidbelastingkaarten, ter voorbereiding op een\nmogelijke uitbreiding van de Centrale voorziening geluidgegevens (CVGG). Dit\nbetreft een uitbreiding die niet noodzakelijk is voor het in werking kunnen\ntreden van de Omgevingswet, met nieuwe geluidregels, maar die wel de volgende\nronde van geluidbelastingkaarten kan ondersteunen, waarbij een nieuw datamodel\ndoor de EU verplicht wordt gesteld, evenals het voldoen aan de Europese\nrichtlijn INSPIRE. Geluidbelastingkaarten moeten elke vijf jaar worden opgesteld\ndoor het rijk, provincies en een deel van de gemeenten. Dit komt voort uit de\nEuropese richtlijn omgevingslawaai. De volgende ronde vindt plaats in 2022, met\ngeluidgegevens over het kalenderjaar 2021. Gedurende het project is gebleken dat\nhet beter bij de behoefte van de opdrachtgever past om een Conceptueel\nmodel op te stellen, dat kan dienen als basis voor enerzijds het\ngebruik van het nieuwe END-datamodel door betrokken partijen, en anderzijds\neventuele uitbreidingen van het IMG, die naar verwachting beperkt of niet nodig\nzullen zijn.",
+  "editor": [
+    {
+      "type": "Person",
+      "name": "Azarakhsh Rafiee",
+      "worksFor": {
+        "name": "Geonovum",
+        "url": "https://www.geonovum.nl"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Joeri van Es",
+      "worksFor": {
+        "name": "Geonovum",
+        "url": "https://www.geonovum.nl"
+      }
+    }
+  ],
+  "contributor": [
+    {
+      "type": "Person",
+      "name": "Joeri van Es",
+      "worksFor": {
+        "name": "Geonovum",
+        "url": "https://www.geonovum.nl"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Azarakhsh Rafiee",
+      "worksFor": {
+        "name": "Geonovum",
+        "url": "https://www.geonovum.nl"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Arnoud de Boer",
+      "worksFor": {
+        "name": "Geonovum",
+        "url": "https://www.geonovum.nl"
+      }
+    }
+  ],
+  "citation": []
+}</script></head>
+    <!-- HTML-Body -------------------------------------------------------------------------------->
+    <body class="h-entry"><div class="head">
+  <a href="https://www.geonovum.nl/" class="logo"><img id="Geonovum" alt="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132" height="67"></a>
+  <h1 class="title p-name" id="title">Geluidbelastingkaarten in kaart</h1>
+  
+  <h2>Geonovum Algemeen<br>
+  Versie ter vaststelling <time class="dt-published" datetime="2021-07-15">15 juli 2021</time></h2>
+  <dl>
+    <dt>Deze versie:</dt><dd><a class="u-url" href="https://docs.geostandaarden.nl/cvgg/vv-al-geluidbelasting-20210715/">https://docs.geostandaarden.nl/cvgg/vv-al-geluidbelasting-20210715/</a></dd><dt>Laatst gepubliceerde versie:</dt><dd>geen</dd>
+    
+    
+    <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/IMG/END">https://geonovum.github.io/IMG/END</a></dd>
+    <dt>Redacteurs:</dt>
+    <dd class="p-author h-card vcard"><span class="p-name fn">Azarakhsh Rafiee</span>, <a class="p-org org h-org h-card" href="https://www.geonovum.nl">Geonovum</a></dd><dd class="p-author h-card vcard"><span class="p-name fn">Joeri van Es</span>, <a class="p-org org h-org h-card" href="https://www.geonovum.nl">Geonovum</a></dd>
+    <dt>Auteurs:</dt><dd class="p-author h-card vcard"><span class="p-name fn">Joeri van Es</span>, <a class="p-org org h-org h-card" href="https://www.geonovum.nl">Geonovum</a></dd><dd class="p-author h-card vcard"><span class="p-name fn">Azarakhsh Rafiee</span>, <a class="p-org org h-org h-card" href="https://www.geonovum.nl">Geonovum</a></dd><dd class="p-author h-card vcard"><span class="p-name fn">Arnoud de Boer</span>, <a class="p-org org h-org h-card" href="https://www.geonovum.nl">Geonovum</a></dd>
+    <dt>Doe mee:</dt><dd>
+      <a href="https://github.com/Geonovum/IMG/tree/gh-pages/END/">GitHub Geonovum/IMG</a>
+    </dd><dd>
+      <a href="https://github.com/Geonovum/IMG/tree/gh-pages/END/issues/">Dien een melding in</a>
+    </dd><dd>
+      <a href="https://github.com/Geonovum/IMG/tree/gh-pages/END/commits/gh-pages">Revisiehistorie</a>
+    </dd><dd>
+      <a href="https://github.com/Geonovum/IMG/tree/gh-pages/END/pulls/">Pull requests</a>
+    </dd>
+  </dl>
+  
+  
+    <dl>
+          <dt>Rechtenbeleid:</dt>
+          <dd>
+            <div class="copyright" style="margin: 0.25em 0;">
+              <abbr title="Creative Commons Attribution 4.0 International Public License">
+              <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg" alt="Creative Commons Attribution 4.0 International Public License" width="115" height="40"></a>
+            </abbr>
+              <div style="display:inline-block; vertical-align:top">
+                <p style="font-size: small;">Creative Commons Attribution 4.0 International Public License<br>(CC-BY)</p>
+              </div>
+            </div>
+          </dd>
+        </dl>
+  <hr title="Separator for header">
+</div>
+        <h1 id="title">Geluidbelastingkaarten in kaart</h1>
+        <h2 id="subtitle">De richtlijnen, de informatiestromen en een toekomstperspectief</h2>
+        <section id="abstract" data-format="markdown" aria-busy="false" class="introductory"><h2>Samenvatting</h2><h1>Aanleiding</h1><p>Aanleiding voor dit document was de wens van IenW/DLCE om het IMGeluid uit te
+breiden met een onderdeel voor geluidbelastingkaarten, ter voorbereiding op een
+mogelijke uitbreiding van de <a href="https://www.rivm.nl/cvgg">Centrale voorziening geluidgegevens</a> (CVGG). Dit
+betreft een uitbreiding die niet noodzakelijk is voor het in werking kunnen
+treden van de Omgevingswet, met nieuwe geluidregels, maar die wel de volgende
+ronde van geluidbelastingkaarten kan ondersteunen, waarbij een nieuw datamodel
+door de EU verplicht wordt gesteld, evenals het voldoen aan de Europese
+richtlijn INSPIRE. Geluidbelastingkaarten moeten elke vijf jaar worden opgesteld
+door het rijk, provincies en een deel van de gemeenten. Dit komt voort uit de
+Europese richtlijn omgevingslawaai. De volgende ronde vindt plaats in 2022, met
+geluidgegevens over het kalenderjaar 2021. Gedurende het project is gebleken dat
+het beter bij de behoefte van de opdrachtgever past om een Conceptueel
+model op te stellen, dat kan dienen als basis voor enerzijds het
+gebruik van het nieuwe END-datamodel door betrokken partijen, en anderzijds
+eventuele uitbreidingen van het IMG, die naar verwachting beperkt of niet nodig
+zullen zijn.</p><p>Om de geluidbelastingkaarten te kunnen maken, worden er tussen verschillende
+overheden geluidbrongegevens uitgewisseld en worden bewerkingen op de gegevens
+uitgevoerd. Deze informatiestromen van geluidbrongegevens moeten in kaart worden
+gebracht. Wanneer dit nodig is om de gegevensuitwisseling optimaal te
+ondersteunen, krijgen deze geluidbrongegevens een plek binnen het IMGeluid. Dit
+document omvat een verslag van de gedurende het project opgehaalde informatie en
+omschrijft de informatiestromen. In het Conceptueel model
+Geluidbelasting geeft ook een overzicht van waar relevante informatie voor het
+maken van een geluidbelastingkaart vandaan kan worden gehaald.</p><section><h3 id="scope">Scope</h3><p><strong>Doel van dit document:</strong> <em>De samenhang tussen informatiestromen met betrekking
+op het opstellen en rapporteren van geluidbelastingkaarten in kaart brengen.</em></p><p>In scope van dit document is:</p><ul>
+<li><p>Een analyse van informatiestromen tussen de verschillende overheden die een
+rol spelen bij de aanlevering van geluidbelastingkaarten ten behoeve van de
+richtlijn omgevingslawaai.</p>
+</li>
+<li><p>Wanneer er in het algemeen over geluidbelastingkaarten wordt gesproken in
+dit document, wordt gedoeld op de geluidbelastingkaarten en – tabellen zoals
+bedoeld in de richtlijn omgevingslawaai.</p>
+</li>
+<li><p>Een analyse van de informatiestromen voor de bewerkingsstappen
+(berekeningen, samenvoegen).</p>
+</li>
+<li><p>Een samenvatting van het END Datamodel en de verschillen met de bestaande
+formats, waarbij ook de link wordt uitgelegd met INSPIRE.</p>
+</li>
+<li><p>Een omschrijving van de huidige en toekomstige situatie.</p>
+</li>
+<li><p>Een omschrijving van een conceptueel model geluidbelasting dat inzicht geeft
+in informatiestromen en de rol en herkomst van geluidgegevens met betrekking
+op geluidbelastingkaarten en -tabellen.</p>
+</li>
+<li><p>Actieplannen vallen buiten de scope.</p>
+</li>
+</ul></section></section>        
+        <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>
+    <em>Deze paragraaf beschrijft de status van dit document ten tijde van publicatie. Het is mogelijk dat er actuelere versies van dit document bestaan. Een lijst van Geonovum publicaties en de laatste gepubliceerde versie van dit document zijn te vinden op <a href="https://www.geonovum.nl/geo-standaarden/alle-standaarden">https://www.geonovum.nl/geo-standaarden/alle-standaarden</a>.</em>
+  </p><p>
+
+
+
+
+  Dit is een definitief concept van de nieuwe versie van de algemeen. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.
+
+
+
+
+
+</p><p></p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding"><span class="secno">1. </span>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#positie-van-het-imgeluid"><span class="secno">1.1 </span>Positie van het IMGeluid</a></li><li class="tocline"><a class="tocxref" href="#onderscheid-input-en-output"><span class="secno">1.2 </span>Onderscheid input en output</a></li><li class="tocline"><a class="tocxref" href="#verschil-tussen-berekeningen-t-b-v-geluidmonitoring-en-belasting"><span class="secno">1.3 </span>Verschil tussen berekeningen t.b.v geluidmonitoring en -belasting</a></li><li class="tocline"><a class="tocxref" href="#environmental-noise-directive-end-datamodel-en-informatiemodel-geluid-imgeluid"><span class="secno">1.4 </span>Environmental Noise Directive (END) Datamodel en informatiemodel geluid (imgeluid)</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><span class="secno">1.5 </span>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#achtergrond_richtlijnen"><span class="secno">2. </span>Achtergrond richtlijnen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding-0"><span class="secno">2.1 </span>Inleiding </a></li><li class="tocline"><a class="tocxref" href="#naam-en-acroniemen"><span class="secno">2.2 </span>Naam en Acroniemen</a></li><li class="tocline"><a class="tocxref" href="#richtlijn-omgevingslawaai"><span class="secno">2.3 </span>Richtlijn omgevingslawaai</a></li><li class="tocline"><a class="tocxref" href="#richtlijn-inspire"><span class="secno">2.4 </span>Richtlijn INSPIRE</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-zijn-inspire-verplichtingen"><span class="secno">2.4.1 </span>Wat zijn INSPIRE-verplichtingen?</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#metadata"><span class="secno">2.4.1.1 </span>Metadata</a></li><li class="tocline"><a class="tocxref" href="#netwerkservices"><span class="secno">2.4.1.2 </span>Netwerkservices</a></li></ol></li><li class="tocline"><a class="tocxref" href="#inspire-datamodellen-over-inhoud-en-uitwisseling-van-data"><span class="secno">2.4.2 </span>INSPIRE datamodellen over inhoud en uitwisseling van data</a></li></ol></li><li class="tocline"><a class="tocxref" href="#algemene-termen-en-definities"><span class="secno">2.5 </span>Algemene Termen en definities</a></li><li class="tocline"><a class="tocxref" href="#algemene-symbolen-en-afkortingen"><span class="secno">2.6 </span>Algemene Symbolen en afkortingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#end_datamodel"><span class="secno">3. </span>END-Datamodel </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#het-nieuwe-end-datamodel"><span class="secno">3.1 </span>Het nieuwe END-Datamodel</a></li><li class="tocline"><a class="tocxref" href="#end-datamodel-rapportage-overzicht"><span class="secno">3.2 </span>END datamodel rapportage overzicht</a></li><li class="tocline"><a class="tocxref" href="#end-mapping-naar-inspire-thema-s"><span class="secno">3.3 </span>END mapping naar INSPIRE thema's</a></li></ol></li><li class="tocline"><a class="tocxref" href="#huidige_situatie"><span class="secno">4. </span>Huidige situatie: geluidbelastingkaarten en -tabellen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#input-verzamelen-van-geluidgegevens-en-berekenen-van-geluidbelastingkaarten-en-tabellen"><span class="secno">4.1 </span>Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en tabellen</a></li><li class="tocline"><a class="tocxref" href="#centraal-rapporteren-van-kaarten-aan-infomil"><span class="secno">4.2 </span>Centraal rapporteren van kaarten aan InfoMil</a></li><li class="tocline"><a class="tocxref" href="#output-prepareren-van-een-rapportage-aan-de-europese-commissie"><span class="secno">4.3 </span>Output prepareren van een rapportage aan de Europese commissie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#toekomstige_situatie"><span class="secno">5. </span>Toekomstperspectief: geluidbelastingkaarten en -tabellen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#input-verzamelen-van-geluidgegevens-volgens-imgeluid"><span class="secno">5.1 </span>Input verzamelen van geluidgegevens volgens IMGeluid</a></li><li class="tocline"><a class="tocxref" href="#centraal-rapporteren-van-kaarten-aan-de-cvgg"><span class="secno">5.2 </span>Centraal rapporteren van kaarten aan de CVGG</a></li><li class="tocline"><a class="tocxref" href="#centraal-rapporteren-van-kaarten-en-tabellen-aan-de-eea-en-het-publiek"><span class="secno">5.3 </span>Centraal rapporteren van kaarten en tabellen aan de EEA en het publiek</a></li></ol></li><li class="tocline"><a class="tocxref" href="#IMGeluidbelasting"><span class="secno">6. </span>Conceptueel Informatiemodel Geluidbelasting specificatie (CIMGeluidbelasting)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toelichting-op-cm-geluidbelasting"><span class="secno">6.1 </span>Toelichting op CM Geluidbelasting</a></li><li class="tocline"><a class="tocxref" href="#het-inwinningsvraagstuk-voor-aanvullende-informatie-op-publieke-geluidbelastingkaarten"><span class="secno">6.2 </span>Het inwinningsvraagstuk voor aanvullende informatie op publieke geluidbelastingkaarten</a></li><li class="tocline"><a class="tocxref" href="#definities-cmgeluidbelasting"><span class="secno">6.3 </span>Definities CMGeluidbelasting</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-cvgg-input-geluidgegeven"><span class="secno">6.3.1 </span>Objecttype CVGG Input Geluidgegeven</a></li><li class="tocline"><a class="tocxref" href="#objecttype-cvgg-input-geluidgegeven-0"><span class="secno">6.3.2 </span>Objecttype CVGG Input Geluidgegeven</a></li><li class="tocline"><a class="tocxref" href="#objecttype-geluidgegeven-rijksweg"><span class="secno">6.3.3 </span>Objecttype Geluidgegeven rijksweg</a></li><li class="tocline"><a class="tocxref" href="#objecttype-geluidgegeven-provinciale-weg"><span class="secno">6.3.4 </span>Objecttype Geluidgegeven Provinciale Weg</a></li><li class="tocline"><a class="tocxref" href="#objecttype-geluidgegeven-spoorweg"><span class="secno">6.3.5 </span>Objecttype Geluidgegeven spoorweg</a></li><li class="tocline"><a class="tocxref" href="#objecttype-geluidcontour-luchtvaart"><span class="secno">6.3.6 </span>Objecttype Geluidcontour Luchtvaart</a></li><li class="tocline"><a class="tocxref" href="#objecttype-geluidmodel-geluidbelastingkaart"><span class="secno">6.3.7 </span>Objecttype Geluidmodel Geluidbelastingkaart</a></li><li class="tocline"><a class="tocxref" href="#objecttype-lokaal-input-geluidgegeven"><span class="secno">6.3.8 </span>Objecttype Lokaal input-geluidgegeven</a></li><li class="tocline"><a class="tocxref" href="#objecttype-industrie-geluidgegeven"><span class="secno">6.3.9 </span>Objecttype Industrie geluidgegeven</a></li><li class="tocline"><a class="tocxref" href="#objecttype-gegeven-gezoneerde-industrie"><span class="secno">6.3.10 </span>Objecttype Gegeven gezoneerde industrie</a></li><li class="tocline"><a class="tocxref" href="#objecttype-gegeven-aangewezen-gebieden"><span class="secno">6.3.11 </span>Objecttype Gegeven aangewezen gebieden</a></li><li class="tocline"><a class="tocxref" href="#objecttype-industrie-geluidgegeven-0"><span class="secno">6.3.12 </span>Objecttype Industrie geluidgegeven</a></li><li class="tocline"><a class="tocxref" href="#objecttype-lokale-weg-spoorweg-geluidgegeven"><span class="secno">6.3.13 </span>Objecttype Lokale weg / spoorweg geluidgegeven</a></li><li class="tocline"><a class="tocxref" href="#objecttype-omgevingsmodel-objecttype"><span class="secno">6.3.14 </span>Objecttype Omgevingsmodel Objecttype</a></li><li class="tocline"><a class="tocxref" href="#objecttype-imgeluid-objecttype"><span class="secno">6.3.15 </span>Objecttype IMGeluid Objecttype</a></li><li class="tocline"><a class="tocxref" href="#objecttype-end-datamodel-objecttype"><span class="secno">6.3.16 </span>Objecttype END Datamodel Objecttype</a></li><li class="tocline"><a class="tocxref" href="#objecttype-geluidgevoellig-gebouw-objecttype"><span class="secno">6.3.17 </span>Objecttype Geluidgevoellig Gebouw Objecttype</a></li><li class="tocline"><a class="tocxref" href="#objecttype-geluidbelastingkaart"><span class="secno">6.3.18 </span>Objecttype Geluidbelastingkaart</a></li><li class="tocline"><a class="tocxref" href="#objecttype-referentie-geluidbron"><span class="secno">6.3.19 </span>Objecttype Referentie geluidbron</a></li><li class="tocline"><a class="tocxref" href="#objecttype-end-datamodel-df1_5-objecttype"><span class="secno">6.3.20 </span>Objecttype END Datamodel DF1_5 Objecttype</a></li><li class="tocline"><a class="tocxref" href="#objecttype-stil-gebied"><span class="secno">6.3.21 </span>Objecttype Stil gebied</a></li></ol></li><li class="tocline"><a class="tocxref" href="#oplossingsrichtingen-ten-grondslag-aan-het-cmgeluidbelasting"><span class="secno">6.4 </span>Oplossingsrichtingen ten grondslag aan het CMGeluidbelasting</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#memo-centraal-aanleveren-van-lokale-geluidgegevens-van-agglomeratiegemeenten"><span class="secno">6.4.1 </span>Memo: Centraal aanleveren van lokale geluidgegevens van agglomeratiegemeenten</a></li><li class="tocline"><a class="tocxref" href="#memo-geluidgevoelige-gebouwen-en-geluidbelastingkaarten"><span class="secno">6.4.2 </span>Memo: Geluidgevoelige gebouwen en geluidbelastingkaarten</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#bijlage"><span class="secno">A. </span>Bijlage</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bijlage-1-de-inhoud-van-geluidbelastingkaarten-volgens-de-omgevingsregeling"><span class="secno">A.1 </span>Bijlage 1: de inhoud van geluidbelastingkaarten volgens de omgevingsregeling</a></li><li class="tocline"><a class="tocxref" href="#bijlage-2-verschillen-cnossos-en-nederlandse-rmg"><span class="secno">A.2 </span>Bijlage 2: Verschillen CNOSSOS en Nederlandse RMG</a></li><li class="tocline"><a class="tocxref" href="#bijlage-3-wijzigingsvoorstellen-imgeluid"><span class="secno">A.3 </span>Bijlage 3: Wijzigingsvoorstellen IMGeluid</a></li><li class="tocline"><a class="tocxref" href="#bijlage-4-verslag-van-de-interviews-met-geluidexperts"><span class="secno">A.4 </span>Bijlage 4: Verslag van de interviews met geluidexperts</a></li></ol></li></ol></nav>
+
+        <!-- vanaf hier per hoofdstuk een sectie of een div in het document ----------------------->
+        <!-- Secties komen in de inhoudsopgave div's niet ----------------------------------------->
+        <!-- Secties hebben verplicht <h2> tags, div's niet --------------------------------------->
+
+        <!-- Voorbeelden: ------------------------------------------------------------------------->
+        <!-- <div id='H00' data-format="markdown" data-include="filenaam.md"></div> --------------->
+        <!-- voor een nieuw hoofdstuk kopieer je een regel, en voegt die toe ---------------------->
+        <section id="inleiding" data-format="markdown" aria-busy="false"><!--OddPage--><h2 id="x1-inleiding"><span class="secno">1. </span>Inleiding</h2><section id="positie-van-het-imgeluid"><h3 id="x1-1-positie-van-het-imgeluid"><span class="secno">1.1 </span>Positie van het IMGeluid</h3><p>In de toekomst is het mogelijk wenselijk om ook geluidgegevens ten behoeve van
+geluidbelastingkaarten en tabellen te kunnen uitwisselen via de CVGG. Het
+IMGeluid is een <a href="https://docs.geostandaarden.nl/mim/mim/#niveau-3-logisch-informatie-of-gegevensmodel">logisch informatiemodel</a>
+dat onlosmakelijk verbonden is met de CVGG. Wanneer besloten wordt dat de CVGG
+geschikt moet zijn voor uitwisseling van deze gegevens, zal het IMGeluid moeten
+worden uitgebreid. Om de precieze uitbreiding van het IMGeluid te kunnen
+bepalen, is het nodig om het Informatiemodel Geluid te positioneren binnen de
+informatiestromen voor het rapporteren van geluidbelastingkaarten aan de
+Europese commissie. Om hierbij de juiste afwegingen te kunnen maken, zal eerst
+de huidige situatie in kaart worden gebracht. Dit is gedaan op basis van input
+opgehaald uit een reeks interviews.</p><p>Deze interviews omvatten het perspectief van alle groepen belanghebbenden die
+door het Ministerie van Infrastructuur en Waterstaat (I&amp;W) geïdentificeerd zijn.
+Sommige van deze groepen komen overeen met het aangemerkte bestuursorgaan.
+Andere groepen komen overeen met de <a href="https://www.begrippenxl.nl/dso/en/page/Bronhouder?clang=nl">bronhouders van geluigegevens</a>. In <strong>Tabel 1</strong>
+staan deze groepen stakeholders omschreven.</p><table>
+<thead>
+<tr>
+<th>Naam groep stakeholders</th>
+<th>Omschrijving</th>
+<th>Rolomschrijving binnen de END</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Rijkswaterstaat (RWS)</td>
+<td>Rijkswaterstaat is het uitvoerende agentschap van het Ministerie van Infrastructuur en Waterstaat. RWS beheert onder andere de Rijkswegen.</td>
+<td>RWS is bronhouder m.b.t. geluidgegevens voor Rijkswegen. Daarnaast heeft het RWS onderdeel InfoMil de opdracht van I&amp;W om de rapportage aan Europa te regelen.</td>
+</tr>
+<tr>
+<td>ProRail</td>
+<td>ProRail is de spoorwegbeheerder van Nederland. ProRail is daarbij verantwoordelijk voor het gehele spoorwegnet: aanleg, onderhoud, beheer en veiligheid.</td>
+<td>ProRail is bronhouder m.b.t. geluidgegevens voor hoofdspoorwegen.</td>
+</tr>
+<tr>
+<td>Provincies</td>
+<td>De Nederlandse provincies vormen de bestuurslaag tussen de rijksoverheid en de Nederlandse gemeenten. Het Europese deel van Nederland is verdeeld in twaalf provincies die elk hun eigen volksvertegenwoordiging en bestuur hebben.</td>
+<td>De provincies zijn bestuursorgaan en bronhouder m.b.t. Provinciale wegen, luchthavens van regionale betekenis en lokale spoorwegen met een verkeersintensiteit van meer dan 30.000 treinen per jaar.</td>
+</tr>
+<tr>
+<td>Agglomeratie-gemeenten</td>
+<td>Agglomeraties zijn verzamelingen van gemeenten zoals bedoeld in art. 2.40 Omgevingsregeling. Een Agglomeratie-gemeente is een gemeente die onderdeel uitmaakt van een agglomeratie.</td>
+<td>Agglomeratie-gemeenten zijn bestuursorgaan m.b.t. geluidgegevens t.b.v. voor wegen, spoorwegen, activiteiten, verzamelingen van activiteiten en luchthavens. (zoals bedoeld in artikel 10.22 en 10.23 van Bkl) Voor een deel van deze gegevens is de Gemeente geen bronhouder. Deze gegevens moeten worden opgevraagd bij andere bronhouders.</td>
+</tr>
+<tr>
+<td>Ministerie van Infrastructuur en Waterstaat. (I&amp;W)</td>
+<td>Het ministerie van Infrastructuur en Waterstaat (IenW) is verantwoordelijk voor verkeer en waterstaat, ruimtelijke ordening en leefbaarheid. Het thema geluid valt hier onder. I&amp;W is de opdrachtgever voor de Centrale Voorziening Geluidgegevens en voor de uitbreiding van het IMGeluid.</td>
+<td>Afdeling DG Luchtvaart en Maritieme Zaken is bestuursorgaan op het gebied van de END verplichtingen rondom luchthavens van <em>nationale betekenis</em>. Daarnaast is I&amp;W bestuursorgaan voor hoofdspoorwegen en rijkswegen. Daarnaast is I&amp;W eigenaar van de CVGG.</td>
+</tr>
+<tr>
+<td>Rijksinstituut voor Volksgezondheid en Milieu (RIVM)</td>
+<td>Het Rijksinstituut voor Volksgezondheid en Milieu is een kennis- en onderzoeksinstituut in Nederland, gericht op de bevordering van de volksgezondheid en een gezond en veilig leefmilieu. Het RIVM heeft ook een afdeling gespecialiseerd in omgevingslawaai en is beheerder van de Centrale Voorziening Geluidgegevens (CVGG).</td>
+<td></td>
+</tr>
+<tr>
+<td>Adviesbureaus / Omgevingsdiensten</td>
+<td>Adviesbureaus en omgevingsdiensten hebben experts in dienst op het gebied van geluidberekeningen en kunnen worden ingehuurd door bronhouders.</td>
+<td>De adviesbureaus en omgevingsdiensten maken de geluidmodellen in opdracht van bronhouders en berekenen de geluidbelastingkaarten.</td>
+</tr>
+<tr>
+<td>InfoMil</td>
+<td>Kenniscentrum InfoMil is de plaats waar de informatie over omgevingsrecht en omgevingsregelgeving wordt gebundeld en verspreid. Het is de plaats voor informatievoorziening en kennisuitwisseling tussen de beleidsmakers van ministeries en de beleidsuitvoerders bij provincies, gemeenten, waterschappen en milieudiensten. Het biedt praktische ondersteuning bij uitvoering van omgevingsbeleid. Met inwerkingtreding van de Omgevingswet gaat InfoMil op in Informatiepunt Leefomgeving</td>
+<td>Kenniscentrum InfoMil verzorgt in opdracht van het ministerie IenW de rapportage aan Europa volgens, in overeenstemming met de END. Voor dat doel biedt InfoMil gemeenten en provincies handvatten voor het opstellen van de geluidbelastingkaarten en actieplannen. InfoMil bewaakt ook de voortgang bij het voldoen aan deze deadlines. In de huidige situatie verzamelt InfoMil ook de informatie over de geluidbelastingkaarten.</td>
+</tr>
+<tr>
+<td>Centrale Voorziening Geluidgegevens</td>
+<td>Het Rijksinstituut voor Volksgezondheid en Milieu (RIVM Rijksinstituut voor Volksgezondheid en Milieu) werkt aan de Centrale Voorziening Geluidgegevens (CVGG). Dit wordt vanaf 1 januari 2022 het digitale systeem voor het uitwisselen van geluidgegevens. Het rijk, provincies, gemeenten en waterschappen zullen via de CVGG hun geluidgegevens gaan delen. De gegevens in de CVGG zijn in eerste instantie vooral geschikt voor professionele gebruikers ter ondersteuning van akoestisch onderzoek. Het uiteindelijk doel is om samen met bronhouders en andere belanghebbenden geluidgegevens voor iedereen op één plaats, laagdrempelig en uniform beschikbaar te stellen.</td>
+<td>Geluidbelastingkaarten en – tabellen zijn tot op heden buiten scope van de CVGG. Het RIVM is bezig met een impact analyse om een mogelijke scope verbreding te verkennen.</td>
+</tr>
+<tr>
+<td>Leveranciers geluidberekening software</td>
+<td>Deze leveranciers ontwikkelen en beheren de software ter ondersteuning van het uitvoeren van geluidberekeningen. Hiermee voeren de akoestische experts in opdracht van de bestuursorganen geluidberekeningen uit. De twee grootste leveranciers zijn WinHavik en Geomilieu.</td>
+<td>De leveranciers zorgen ervoor dat hun software de geluid rekenregels toepast en dat de geluidbelastingkaarten in het gewenste formaat komen te staan.</td>
+</tr>
+</tbody></table><p><strong>Tabel 1. geluidbelastingkaarten en -tabellen stakeholders</strong></p><p>Het beeld dat uit deze interviews is voortgekomen, is in afstemming met het
+ministerie van I&amp;W en het RIVM tot stand gekomen. In het volgende hoofdstuk zal
+eerst de huidige situatie worden toegelicht. Vervolgens zullen enkele relevante
+scenario’s voor de toekomst worden toegelicht. Een verdere uitwerking van de
+informatiestromen die bij deze toekomstvisie horen zullen worden omschreven in
+het <a href="#IMGeluidbelasting">Conceptueel Model Geluidbelastingkaarten</a>. (CMGeluidbelasting) In het
+CMGeluidbelasting zal ook een globaal beeld worden geschetst welke aanpassingen
+er worden voorzien in het IMGeluid.</p></section><section id="onderscheid-input-en-output"><h3 id="x1-2-onderscheid-input-en-output"><span class="secno">1.2 </span>Onderscheid input en output</h3><p>Binnen het domein van geluidberekeningen kan een onderscheid gemaakt worden
+tussen input- en output-geluidgegevens. De geluidberekeningen worden uitgevoerd
+binnen rekenpakketten met de mogelijkheid om verschillende bestandsformaten te
+importeren en exporteren. De softwareleveranciers van de twee meest gebruikte
+softwarepakketten Geomileu en WinHavik, ondersteunen het importeren en
+exporteren van IMGeluid bestanden. Hiermee worden andere bestandsformaten echter
+niet uitgesloten. Zo zou het bijvoorbeeld ook mogelijk zijn een optie in te
+bouwen te exporteren naar pdf of een shapes formaat. Om deze reden kunnen de
+formaten van input en output van geluidberekeningen apart worden bekeken.</p><p>Met het formaat van de input bedoelen we bijvoorbeeld de volgorde waarop
+verkeersintensiteiten zijn gerangschikt. De geluidsoftware weet niet uit
+zichzelf de juiste verkeersintensiteit te herkennen, daarom moet alles op een
+vaste plek te vinden zijn. Met de output bedoelen we bijvoorbeeld de
+geluidbelastingkaarten. Deze geluidbelastingkaarten kunnen voor ontsluiting naar
+het publiek worden geëxporteerd als bijvoorbeeld een pdf of shape formaat. Voor
+rapportage aan de EEA (European Environmental Agency) moet dit formaat voldoen
+aan het END-Datamodel.</p><p>Het rekenhart van de geluidsoftware zorgt ervoor dat van een correcte input een
+correcte output wordt gemaakt. Met een “correcte output” bedoelen we
+bijvoorbeeld een geluidbelastingkaart die berekend is volgens de CNOSSOS-EU
+rekenmethode (Bijlage VII Reken- en meetvoorschrift geluid 2012, Bijlage XXXIII
+Omgevingsregeling). Het IMGeluid kan zowel input- als outputbestanden bevatten.</p></section><section id="verschil-tussen-berekeningen-t-b-v-geluidmonitoring-en-belasting"><h3 id="x1-3-verschil-tussen-berekeningen-t-b-v-geluidmonitoring-en-belasting"><span class="secno">1.3 </span>Verschil tussen berekeningen t.b.v geluidmonitoring en -belasting</h3><p>Voor geluidmonitoring in het kader van de naleving van geluidproductieplafonds
+en de basisgeluidemissie zal gebruik worden gemaakt van de Nederlandse
+rekenmethode voor geluid zoals omschreven in de bijlagen van de
+aanvullingsregeling geluid. De doelen van de aanvullingsregeling geluid zijn:
+het voorkomen van de onbeheerste groei van geluidbelastingen op geluidgevoelige
+gebouwen, het verlagen van bestaande hoge geluidbelastingen op geluidgevoelige
+gebouwen, het bevorderen van bronbeleid, het eenvoudiger maken van het
+normenkader en het stroomlijnen en makkelijker maken van de instructieregels.
+Daarnaast bevat de aanvullingsregeling ook nieuwe regels m.b.t. het hoofdspoor.
+(Bron: <a href="https://iplo.nl/regelgeving/stelsel-omgevingswet/omgevingswet-in-ontwikkeling/hoofdlijnen-aanvullingsspoor-geluid/?_ga=2.129871372.1064692739.1619698411-1642760836.1595589321">Informatiepunt
+leefomgeving</a>)</p><p>Om de geluidbelasting voor het maken van geluidbelastingkaarten te berekenen
+gaat gebruik worden gemaakt van de Europese CNOSSOS rekenmethode. Deze
+geluidbelastingkaarten worden opgesteld t.b.v. de Europese richtlijn
+omgevingslawaai. Het doel van de richtlijn omgevingslawaai is, om op basis van
+prioriteiten, de schadelijke gevolgen (inclusief hinder) van blootstelling aan
+omgevingslawaai te vermijden, voorkomen of verminderen. (Bron: <a href="https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ%3AL%3A2002%3A189%3A0012%3A0025%3ANL%3APDF">richtlijn
+omgevingslawaai 2002l</a>)</p><p>Geluidproductieplafonds en de basisgeluidemissie zijn instrumenten om de
+geluidemissie, oftewel de geluidproductie van geluidbronnen te monitoren.
+Geluidbelastingkaarten zijn een instrument om zicht te krijgen op de
+geluidbelasting, de geluidimmissie, van de omgeving. Deze instrumenten maken
+gebruik van verschillende waarden. Geluidemissie en -immissiewaarden hebben
+ieder een eigen bepalingsmethode. Daarnaast, zal een geluidmodel t.b.v.
+geluidproductieplafonds en de basisgeluidemissie, de vergunde situatie
+weergeven, terwijl een geluidbelastingkaart of een geluidmodel voor monitoring
+van de geluidproductieplafonds, de gerealiseerde situatie weergeeft. Dit kan als
+gevolg hebben dat de geluidbrongegevens verschillen per bepalingsmethode.
+Aangezien de CVGG voor verschillende doelen informatie moet kunnen verstrekken,
+kan de CVGG ook geluidbrongegevens voor verschillende bepalingsmethoden
+bevatten. Wel moet dan traceerbaar zijn bij welke bepalingsmethode de
+geluidbrongegevens horen.</p></section><section id="environmental-noise-directive-end-datamodel-en-informatiemodel-geluid-imgeluid"><h3 id="x1-4-environmental-noise-directive-end-datamodel-en-informatiemodel-geluid-imgeluid"><span class="secno">1.4 </span>Environmental Noise Directive (END) Datamodel en informatiemodel geluid (imgeluid)</h3><p>Het END Datamodel is ontwikkeld om te voldoen aan de rapportageverplichtingen
+gespecificeerd in de richtlijn omgevingslawaai voor de lidstaten van de Europese
+Unie. Het huidige rapportagemechanisme waarin lidstaten gegevens rapporteren, is
+niet in overeenstemming met de INSPIRE-richtlijn. Daarom wordt door het Europees
+Milieuagentschap (European Environment Agency) een nieuw Datamodel ontwikkeld
+dat zowel aan de END- als aan de INSPIRE-eisen voldoet.</p><p>Het informatiemodel Geluid (IMGeluid) beschrijft de semantiek van digitale
+bestanden voor de Centrale Voorziening Geluidgegevens. De Centrale Voorziening
+Geluidgegevens (CVGG) is een centraal punt voor het eenduidig uitwisselen van
+akoestische gegevens tussen bronhouders en gebruikers voor verschillende
+geluiddomeinen. In IMGeluid staan de afspraken en technische eisen waaraan de
+geluidbrongegevens en berekende geluidwaarden, zoals geluidproductieplafonds en
+monitoringswaarden, moeten voldoen. Deze gegevens geven de juridische
+werkelijkheid weer en worden gebruikt voor vergunningen en monitoring. IMGeluid
+is gemodelleerd conform het Nederlandse Metamodel Informatie Modellering [MIM](
+&lt;https: docs.geostandaarden.nl="" mim=""&gt;) en volgt daarmee niet het <a href="https://inspire.ec.europa.eu/documents/Data_Specifications/D2.5_v3.4rc3.pdf">INSPIRE
+Generic Conceptual
+Model</a></p><p>Hoewel de geluidgegevens voor rapportage aan EU (Noise Sources DF1_5 volgens END
+datamodel) en t.b.v. monitoring in het kader van geluidproductieplafonds
+(volgens IMGeluid) veel op elkaar lijken, is er een fundamenteel verschil. Het
+volgende hoofdstuk zullen de Noise Sources nader worden toegelicht. Dit
+fundamentele verschil bestaat omdat Noise Sources hoeven niet te worden gebruikt
+als input voor het berekenen van geluidbelastingkaarten. De Noise sources zijn
+bedoeld om een idee te geven van de ligging en intensiteit van de fysieke
+geluidbron, bijvoorbeeld in de vorm van een weg. Bij de geluidgegevens met
+betrekking tot monitoring gaat het niet om de fysieke geluidbron, maar de
+akoestische eigenschappen van de geluidbron. Zo wordt bijvoorbeeld het IMGeluid
+objecttype WegdeelGPP opgedeeld op basis van homogene akoestische eigenschappen
+van het verkeer op een weg, terwijl de ligging van een Major Road Source hier
+niet van afhankelijk is. Daarnaast kan WegdeelGPP kan ook wegen bevatten
+waarvoor wel een projectbesluit is genomen, maar die feitelijk nog niet bestaan
+(zoals de Blankenburgverbinding en de A13A16 Rotterdam). De twee zullen veelal
+bij elkaar in de buurt liggen, maar een semantische relatie tussen de twee
+bestaat niet. Hier ook aangeven dat er wel een relatie is tussen de gegevens
+voor monitoring en de gegevens die RWS, ProRail en provincies moeten aanleveren
+aan agglomeratiegemeenten voor hun berekening van de geluidbelastingkaarten.
+Voor de geluidbelastingkaarten wordt geluidimmissie berekend, dit geeft de
+geluidbelasting op een ontvanger (bijv. geluidbelasting op de gevel van een
+huis) aan. In het kader van geluidproductieplafond- en
+basisgeluidemissieberekeningen is de geluidemissie, de geluidproductie van de
+geluidbron, het belangrijkst. Daarom wordt de omgeving maar beperkt meegenomen.
+Bij het berekenen van geluidbelastingkaarten wordt een meer gedetailleerd
+omgevingsmodel gebruikt. Dit omgevingsmodel bevat (3D) informatie over de
+omliggende gebouwen en het terrein.</p></section><section id="leeswijzer"><h3 id="x1-5-leeswijzer"><span class="secno">1.5 </span>Leeswijzer</h3><p>Dit document is gestructureerd in 6 hoofdstukken. </p><ul>
+<li><a href="#achtergrond_richtlijnen">Hoofdstuk 2</a> bevat achtergrondinformatie over de verschillende richtlijnen. </li>
+<li><a href="#end_datamodel">Hoofdstuk 3</a> bevat een overzicht van het nieuwe END Datamodel.</li>
+<li><a href="#huidige_situatie">Hoofdstuk 4</a> omschrijft de huidige situatie rondom de rapportage van geluidbelastingkaarten en tabellen.</li>
+<li><a href="#toekomstige_situatie">Hoofdstuk 5</a> omschrijft een toekomstperspectief rondom de rapportage van geluidbelastingkaarten en -tabellen.</li>
+<li><a href="#IMGeluidbelasting">Hoofdstuk 6</a> bevat het Conceptueel Model Geluidbelasting en een aantal oplossingsrichtingen die daaraan ten grondslag liggen.</li>
+<li><a href="#bijlage">Bijlage</a> bevat grote tabellen en links naar losse bestanden zoals het <a href="">interviewverslag</a>.
+</li>
+</ul></section></section>
+        <section id="achtergrond_richtlijnen" data-format="markdown" aria-busy="false"><!--OddPage--><h2 id="x2-achtergrond-richtlijnen"><span class="secno">2. </span>Achtergrond richtlijnen</h2><section id="inleiding-0"><h3 id="x2-1-inleiding"><span class="secno">2.1 </span>Inleiding </h3><p>De <a href="https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ%3AL%3A2002%3A189%3A0012%3A0025%3ANL%3APDF">richtlijn omgevingslawaai</a> 2002/49/ EG (END) definieert
+rapportageverplichtingen voor de beoordeling en beheersing van omgevingslawaai.
+Met de introductie van de nieuwe ‘Verordening 2019/1010 van de Europese Unie
+(EU) [3] moeten de lidstaten de gegevens ter beschikking stellen zoals vereist
+op grond van de END-richtlijn en volgens, in overeenstemming met de
+INSPIRE-uitvoeringsbepalingen zoals verwoord in de INSPIRE-richtlijn 2007/2/EG
+(zie <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32007L0002&amp;from=NL">Richtlijn INSPIRE</a>). Het huidige rapportagemechanisme waarin
+de lidstaten gegevens aanleveren, is niet in overeenstemming met de
+INSPIRE-richtlijn. Daarom is door het Europees Milieuagentschap een nieuw
+datamodel ontwikkeld dat voldoet aan zowel de END- als de INSPIRE-vereisten.</p><p>Dit hoofdstuk geeft een korte toelichting over de richtlijn omgevingslawaai, de
+INSPIRE-richtlijn en geeft een overzicht van het nieuwe datamodel dat is
+ontwikkeld voor de richtlijn omgevingslawaai om te voldoen aan de vereisten
+volgens de INSPIRE-richtlijn en de daarbij behorende <a href="https://inspire.ec.europa.eu/data-specifications/2892">INSPIRE
+dataspecificaties</a>. In <a href="#richtlijn-omgevingslawaai">2.3</a> en <a href="#richtlijn-inspire">2.4</a> worden
+de richtlijn omgevingslawaai (END) en richtlijn INSPIRE toegelicht. In
+<a href="#end_datamodel">hoofdstuk 3</a> staat het nieuwe datamodel dat voor de richtlijn
+omgevingslawaai (END) ontwikkeld is beschreven. Paragraaf <a href="#end-mapping-naar-inspire-thema-s">3.3</a>
+bevat een mapping van ruimtelijke data uit het END Datamodel op INSPIRE
+ruimtelijke thema's.</p></section><section id="naam-en-acroniemen"><h3 id="x2-2-naam-en-acroniemen"><span class="secno">2.2 </span>Naam en Acroniemen</h3><p><strong>END</strong> - Environmental Noise Directive: dit is de richtlijn inzake de evaluatie
+en beheersing van omgevingslawaai. (richtlijn omgevingslawaai)</p><p><strong>INSPIRE</strong> - INfrastructure for SPatial InfoRmation in Europe: dit is de
+richtlijn tot oprichting van een infrastructuur voor ruimtelijke informatie in
+de Gemeenschap. (Inspire)</p></section><section id="richtlijn-omgevingslawaai"><h3 id="x2-3-richtlijn-omgevingslawaai"><span class="secno">2.3 </span>Richtlijn omgevingslawaai</h3><p>Het doel van de richtlijn omgevingslawaai is: “een gemeenschappelijke aanpak te
+bepalen om op basis van prioriteiten de schadelijke gevolgen en hinder van
+blootstelling aan omgevingslawaai te vermijden, te voorkomen of te verminderen
+”. Om dat te bereiken, moet het niveau van geluidhinder vastgesteld worden en de
+nodige maatregelen getroffen worden, zowel op lidstaat- als EU-niveau.</p><p>Het nieuwe END-Datamodel is ontwikkeld om de rapportage door de lidstaten in een
+gemeenschappelijk formaat te vergemakkelijken en ervoor te zorgen dat zowel aan
+de rapportagevereisten van het END als aan INSPIRE wordt voldaan.</p><p>De richtlijn omgevingslawaai is van toepassing op geluid waaraan mensen worden
+blootgesteld, met name in de bebouwde kom, in openbare parken of andere stille
+gebieden in een agglomeratie, in stille gebieden in het open gebied, in de buurt
+van scholen, ziekenhuizen en andere geluidgevoelige gebouwen en gebieden.</p><p>Het is niet van toepassing op geluid dat wordt veroorzaakt door de blootgestelde
+persoon zelf, geluid van huishoudelijke activiteiten, geluid van buren, geluid
+op werkplekken, of geluid binnen vervoermiddelen of door militaire activiteiten
+in militaire gebieden.</p><p>De richtlijn omgevingslawaai bevat verschillende bepalingen die de lidstaten
+verplichten om informatie aan de Europese Commissie (EC) te verstrekken over
+o.a. de voorbereiding en publicatie van strategische geluidbelastingkaarten en
+actieplannen voor geluidbeheer voor:</p><ul>
+<li><p>Alle wegen, spoorwegen, luchthavens en industrieterreinen binnen
+agglomeraties met meer dan 100.000 inwoners</p>
+</li>
+<li><p>Belangrijke wegen (meer dan 3 miljoen voertuigen per jaar)</p>
+</li>
+<li><p>Belangrijke spoorwegen (meer dan 30.000 treinen per jaar)</p>
+</li>
+<li><p>Belangrijke luchthavens (meer dan 50.000 bewegingen handelsverkeer per
+jaar).</p>
+</li>
+</ul><p>Om de gestelde doelen uit de richtlijn omgevingslawaai na te streven, richt de
+END zich in het bijzonder op het bepalen van de blootstelling aan
+omgevingslawaai, het waarborgen van informatie over omgevingslawaai en de
+effecten ervan voor het publiek, het voorkomen en verminderen van
+omgevingslawaai waar nodig, en het behouden van de kwaliteit van het
+omgevingslawaai waar het goed is.</p></section><section id="richtlijn-inspire"><h3 id="x2-4-richtlijn-inspire"><span class="secno">2.4 </span>Richtlijn INSPIRE</h3><p>Met de komst van ‘INfrastructure for SPatial Information in Europe’ (INSPIRE) in
+2007 wordt op Europees niveau gewerkt aan de beschikbaarheid en
+uitwisselbaarheid van geo-informatie voor het sneller en beter ondersteunen van
+milieuvraagstukken. De Europese richtlijn INSPIRE leidt tot een Europese
+geo-informatie infrastructuur welke onder andere bijdraagt aan verbeterde
+informatievoorziening in grens overstijgende beleids- en
+dienstverleningsprocessen.</p><p>INSPIRE verplicht de Europese lidstaten om ruimtelijke gegevens over 34 thema’s
+digitaal vindbaar, bruikbaar en uitwisselbaar te maken. Om dit mogelijk te maken
+worden de datasets en diensten gestandaardiseerd en voorzien van metadata. Voor
+de vindbaarheid van de gegevens realiseren de Commissie en de lidstaten een
+netwerk dat bestaat uit een <a href="https://inspire-geoportal.ec.europa.eu/">Europees INSPIRE Geoportal</a> dat
+verbonden is met nationale portalen met netwerkdiensten. In Nederland is het
+<a href="https://www.nationaalgeoregister.nl/">Nationaal Georegister</a> (NGR) het nationale portaal.</p><p>In 2017 heeft de Europese Commissie een fitness check afgerond over
+Environmental Monitoring en Reporting. Daarbij is de INSPIRE-richtlijn
+aangewezen als instrument met een groot potentieel om het rapportageproces over
+milieurichtlijnen te stroomlijnen. Vanuit INSPIRE is vervolgens aan de lidstaten
+gevraagd om ervoor te zorgen dat voor e-reporting relevante datasets via INSPIRE
+beschikbaar komen. De Europese Commissie heeft samen met de EEA een lijst
+opgesteld van prioritaire datasets rondom e-reporting. De lijst bevat o.a. de
+ruimtelijke data met betrekking tot en gerapporteerd onder de richtlijn
+omgevingslawaai.</p><section id="wat-zijn-inspire-verplichtingen"><h4 id="x2-4-1-wat-zijn-inspire-verplichtingen"><span class="secno">2.4.1 </span>Wat zijn INSPIRE-verplichtingen?</h4><p>De INSPIRE-dataproviders moeten ervoor zorgen dat de ruimtelijke gegevens
+(dataset) van de juiste beschrijvingen zijn voorzien (metadata), dat ze conform
+de INSPIRE datamodellen (geharmoniseerd) beschikbaar zijn en dat ze als
+netwerkservice worden ontsloten.</p><section id="metadata"><h5 id="x2-4-1-1-metadata"><span class="secno">2.4.1.1 </span>Metadata</h5><p>Elke dataset en netwerkservice dient te worden voorzien van metadata waarmee de
+dataset c.q. netwerkservice wordt beschreven. Deze metadata wordt gepubliceerd
+in het nationale portaal, het NGR. INSPIRE heeft <a href="https://inspire.ec.europa.eu/metadata/6541">juridisch bindende
+eisen</a> die aan de inhoud en structuur van de metadata worden
+gesteld. In Nederland zijn deze INSPIRE vereisten voor metadata verwerkt in de
+<a href="https://www.geonovum.nl/geo-standaarden/metadata">Nederlandse metadataprofielen voor data en services</a>.</p></section><section id="netwerkservices"><h5 id="x2-4-1-2-netwerkservices"><span class="secno">2.4.1.2 </span>Netwerkservices</h5><p>De netwerkservices dienen voor de ontsluiting van de INSPIRE-datasets. Er dienen
+minimaal twee netwerkservices beschikbaar te komen voor de INSPIRE-datasets:</p><ul>
+<li><p>Een Viewservice, waarmee de gegevens op een kaart op het web kunnen worden
+getoond.</p>
+</li>
+<li><p>Een Downloadservice, waarmee de gegevens via het web zijn uit te wisselen.</p>
+</li>
+</ul><p>Er zijn verschillende typen view- en downloadservices mogelijk, afhankelijk van
+de data en de voorkeuren van de dataprovider. Aanvullend op de internationale
+OGC-standaarden voor deze services, zijn er vanuit INSPIRE specifieke juridisch
+bindende vereisten waaraan deze services moeten voldoen. Deze vereisten zijn
+uitgewerkt in <a href="https://inspire.ec.europa.eu/Technical-Guidelines/Data-Specifications/2892">technische specificaties</a>, waarmee deze vereisten
+geïmplementeerd kunnen worden. In Nederland is afgesproken dat de dataproviders
+services implementeren, in overeenstemming met deze technische specificaties.</p></section></section><section id="inspire-datamodellen-over-inhoud-en-uitwisseling-van-data"><h4 id="x2-4-2-inspire-datamodellen-over-inhoud-en-uitwisseling-van-data"><span class="secno">2.4.2 </span>INSPIRE datamodellen over inhoud en uitwisseling van data</h4><p>Voor alle 34 INSPIRE thema’s is in juridisch bindende vereisten vastgelegd,
+welke data op welke wijze moeten worden uitgewisseld. Voor elk thema is een
+bindend datamodel opgesteld met objecten (featuretypes), attributen, datatypes,
+waarde lijsten etc. Daarnaast zijn er bindende afspraken over het formaat waarin
+uitgewisseld wordt, de encoding1 en het te gebruiken coördinaat referentie
+systeem. Ook zijn de laagnamen en stijlen voor de verbeelding in de viewservice
+vastgelegd.</p><p>Er zijn ook afspraken over identifier management, de manier waarop geometrie kan
+worden vastgelegd en hoe er wordt omgegaan met tijdelijkheid. Ook zijn er
+aanwijzingen over thema specifieke metadata. In de 34
+<a href="https://inspire.ec.europa.eu/data-specifications/2892">dataspecificaties</a> is uitgewerkt hoe deze vereisten geïmplementeerd
+kunnen worden. In Nederland is afgesproken dat de dataproviders de data
+harmoniseren volgens, in overeenstemming met deze technische specificaties.</p></section></section><section id="algemene-termen-en-definities"><h3 id="x2-5-algemene-termen-en-definities"><span class="secno">2.5 </span>Algemene Termen en definities</h3><p>Lijst van termen en definities die in deze beschrijving worden gehanteerd,
+gesorteerd op alfabetische volgorde. Verder aanvullend hierop wordt de
+terminologie van het <a href="https://docs.geostandaarden.nl/mim/mim/">MIM</a> en
+<a href="https://docs.geostandaarden.nl/cvgg/img/">IMGeluid</a> gevolgd.</p><table>
+<thead>
+<tr>
+<th><strong>Term</strong></th>
+<th><strong>Definitie</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Agglomeratie (Agglomeration)</strong></td>
+<td>Deel van een grondgebied, afgebakend door de lidstaat, met een bevolking van meer dan 100.000 personen en een bevolkingsdichtheid zodanig dat de lidstaat het als een verstedelijkt gebied beschouwt [END]. De Nederlandse Agglomeraties zijn in de Omgevingsregeling aangewezen.</td>
+</tr>
+<tr>
+<td><strong>Omgevingslawaai (Environmental noise)</strong></td>
+<td>Ongewenst of schadelijk buitengeluid veroorzaakt door menselijke activiteiten, met inbegrip van geluid afkomstig van transportmiddelen, wegverkeer, treinverkeer, luchtverkeer en van locaties van industriële activiteit zoals gedefinieerd in bijlage I bij Richtlijn 96/61/ EG van de Raad van 24 September 1996 betreffende geïntegreerde preventie en bestrijding van verontreiniging [END].</td>
+</tr>
+<tr>
+<td><strong>Data flows</strong></td>
+<td>Datastromen gerapporteerd door EEA-leden en samenwerkende landen</td>
+</tr>
+<tr>
+<td><strong>Eurostat</strong></td>
+<td>Het statistiekbureau van de Europese Unie. <a href="https://ec.europa.eu/eurostat">https://ec.europa.eu/eurostat</a></td>
+</tr>
+<tr>
+<td><strong>Belangrijke luchthavens (Major airport)</strong></td>
+<td>Een door de lidstaat aangewezen burgerluchthaven met meer dan 50.000 bewegingen per jaar (een beweging zijnde een start of een landing), exclusief die voor trainingsdoeleinden op lichte vliegtuigen [END].</td>
+</tr>
+<tr>
+<td><strong>Belangrijke spoorwegen (Major railway)</strong></td>
+<td>Een spoorweg, aangewezen door de lidstaat, die meer dan 30.000 treinpassages per jaar heeft [END].</td>
+</tr>
+<tr>
+<td><strong>Belangrijke wegen (Major road)</strong></td>
+<td>Een door de lidstaat aangewezen regionale, nationale of internationale weg waarop jaarlijks meer dan drie miljoen voertuigen passeren [END].</td>
+</tr>
+<tr>
+<td><strong>Geluidactieplan (Noise action plan</strong></td>
+<td>Een plan om geluidproblemen en -effecten te beheersen, inclusief geluidreductie indien nodig [END]. In de END-scope kunnen geluidactieplannen verwijzen naar geïdentificeerde grote geluidbronnen, agglomeraties, stille gebieden of andere specifieke geluidsituaties. De verwijzing wordt geleverd door object-ID's of rechtstreeks als ruimtelijke gegevens.</td>
+</tr>
+<tr>
+<td><strong>Stil gebied in agglomeratie(Quiet area in an agglomeration)</strong></td>
+<td>Een gebied, afgebakend door de bevoegde instantie, bijvoorbeeld dat niet wordt blootgesteld aan een waarde van Lden of van een andere geschikte geluidbelasting indicator die hoger is dan een bepaalde waarde die door de lidstaat is vastgesteld, afkomstig van enige geluidbron [END].</td>
+</tr>
+<tr>
+<td><strong>Stil gebied in buitengebied (Quiet area in open country)</strong></td>
+<td>Een door het bestuursorgaan afgebakend gebied dat niet wordt gestoord door verkeerslawaai, industrie of recreatie [END].</td>
+</tr>
+<tr>
+<td><strong>Strategische geluidkaart (Strategic noise map)</strong></td>
+<td>Een kaart die is ontworpen voor de algemene beoordeling van de blootstelling aan lawaai in een bepaald gebied als gevolg van verschillende geluidbronnen of voor algemene voorspellingen voor een dergelijk gebied [END].</td>
+</tr>
+<tr>
+<td><strong>Geluid contourkaart (Noise contour map)</strong></td>
+<td>Presenteert de gegevens over een bestaande of voorspelde geluidsituatie in termen van een geluidbelasting indicator, met vermelding van overschrijding van een relevante geldende grenswaarde, het aantal getroffen mensen in een bepaald gebied of het aantal woningen dat wordt blootgesteld aan bepaalde waarden van een geluidbelasting indicator in een bepaald gebied. Geluidcontouren maken deel uit van de strategische geluidbelastingkaarten. In de END-scope kunnen geluidcontourkaarten worden gepresenteerd als gebieden of isolijnen.</td>
+</tr>
+<tr>
+<td><strong>Bevoegde instantie (Competent authority)</strong></td>
+<td>Organisatie(s) verantwoordelijk voor het beheren, beperken of reguleren van maatregelen of activiteiten met betrekking tot omgevingslawaai binnen aangewezen agglomeraties, volgens de definitie in de INSPIRE ' Implementing Rules on Interoperability' [END].</td>
+</tr>
+<tr>
+<td><strong>Voidable</strong></td>
+<td>Voor een attribuut- of associatierol kan de waarde ‘void’ ingevuld worden als er geen overeenkomstige waarde is opgenomen in de dataset die door de lidstaten worden bijgehouden of als er geen overeenkomstige waarde kan worden afgeleid uit bestaande waarden tegen redelijke kosten. Als een attribuut- of associatierol niet voidable is, wordt de tabelcel die de voidability specificeert leeg gelaten [INSPIRE].</td>
+</tr>
+</tbody></table></section><section id="algemene-symbolen-en-afkortingen"><h3 id="x2-6-algemene-symbolen-en-afkortingen"><span class="secno">2.6 </span>Algemene Symbolen en afkortingen</h3><table>
+<thead>
+<tr>
+<th><strong>Afkortingen</strong></th>
+<th><strong>Betekenissen</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>AM</strong></td>
+<td>Area Management</td>
+</tr>
+<tr>
+<td><strong>CMGeluidbelasting</strong></td>
+<td>Conceptueel Model Geluidbelasting</td>
+</tr>
+<tr>
+<td><strong>DF</strong></td>
+<td>Data flow</td>
+</tr>
+<tr>
+<td><strong>EEA</strong></td>
+<td>European Environment Agency</td>
+</tr>
+<tr>
+<td><strong>END</strong></td>
+<td>Environmental Noise Directive</td>
+</tr>
+<tr>
+<td><strong>HH</strong></td>
+<td>Human Health</td>
+</tr>
+<tr>
+<td><strong>IATA</strong></td>
+<td>International Air Transport Association</td>
+</tr>
+<tr>
+<td><strong>ICAO</strong></td>
+<td>The International Civil Aviation Organization</td>
+</tr>
+<tr>
+<td><strong>LAU</strong></td>
+<td>Lokale administratieve eenheden</td>
+</tr>
+<tr>
+<td><strong>LBE</strong></td>
+<td>Lokale bestuurlijke eenheden</td>
+</tr>
+<tr>
+<td><strong>MS</strong></td>
+<td>Member State</td>
+</tr>
+<tr>
+<td><strong>NAP</strong></td>
+<td>Noise Action Plan</td>
+</tr>
+<tr>
+<td><strong>NUTS</strong></td>
+<td>Nomenclature of Territorial Units for Statistics</td>
+</tr>
+<tr>
+<td><strong>TN</strong></td>
+<td>Transport networks</td>
+</tr>
+</tbody></table></section></section>
+        <section id="end_datamodel" data-format="markdown" aria-busy="false"><!--OddPage--><h2 id="x3-end-datamodel"><span class="secno">3. </span>END-Datamodel </h2><section id="het-nieuwe-end-datamodel"><h3 id="x3-1-het-nieuwe-end-datamodel"><span class="secno">3.1 </span>Het nieuwe END-Datamodel</h3><p>Het END-Datamodel is ontwikkeld om te voldoen aan de rapportageverplichtingen
+die in de END richtlijn zijn gespecificeerd. Het is ontwikkeld om de rapportage
+door de lidstaten in een gemeenschappelijk formaat te vergemakkelijken.
+Tegelijkertijd verwijzen verschillende INSPIRE-thema’s naar use-cases rondom
+omgevingslawaai, waaronder de rapportage in kader van de END. Daarom zijn
+verschillende overwegingen in acht genomen bij de ontwikkeling van het nieuwe
+END-datamodel:</p><ul>
+<li><p>Om te zorgen voor overeenstemming met beide richtlijnen, betreffende de
+END-rapportagecycli en de volledige implementatie-routekaart van de
+INSPIRE-richtlijn,</p>
+</li>
+<li><p>Om een meervoudige verstrekking van ruimtelijke gegevens op grond van de
+END- en INSPIRE-richtlijn te voorkomen of op zijn minst te minimaliseren en
+zorgen voor een beter gebruik van nationale infrastructuur voor ruimtelijke
+informatie,</p>
+</li>
+<li><p>Om de harmonisatie en het hergebruik van gegevens te vergroten, fragmentatie
+van gegevensstromen te verminderen,</p>
+</li>
+<li><p>En om nieuwe functionaliteiten van het Reportnet 3.0-platform volledig te
+benutten, zoals een mogelijkheid voor rapportage op regionaal niveau of voor
+gegevensverzameling, bijvoorbeeld door gebruik te maken van
+INSPIRE-netwerkdiensten (nog in ontwikkeling).</p>
+</li>
+</ul><p>De scope van het END-datamodel betreft een reeks gegevens die op grond van de
+END aan de Europese Commissie moeten worden gerapporteerd. Tegelijkertijd omvat
+het datamodelmodel ruimtelijke data die conceptueel overeenkomen met diverse
+INSPIRE-thema’s.</p><p>Daarom is om te komen tot het nieuwe END-datamodel het eerdere END-datamodel en
+rapportagemechanisme gebruikt als uitgangspunt voor de gegevensmodellering en
+als bron van definities van de END-specifieke gegevensvereisten. De
+INSPIRE-dataspecificaties zijn gebruikt als bron van een gemeenschappelijke
+methodologie voor datamodellering en definities van INSPIRE-concepten.</p><figure id="Figuur_1">
+<img src="media/figuur1.png" alt="" width="527" height="262">
+<figcaption>Figuur <span class="figno">1</span> <span class="fig-title">Proces van content matching tussen END en INSPIRE om END informatiemodel te ontwikkelen</span></figcaption>
+</figure></section><section id="end-datamodel-rapportage-overzicht"><h3 id="x3-2-end-datamodel-rapportage-overzicht"><span class="secno">3.2 </span>END datamodel rapportage overzicht</h3><p>Het nieuwe END-informatiemodel omvat voor elke rapportageverplichting een apart
+informatiemodel. De informatiemodellen, die ruimtelijke informatie bevatten,
+zijn een combinatie van de INSPIRE-datamodellen en de specifieke END-vereisten.
+Daarnaast zijn enkele andere modelconcepten, o.a. uit de
+INSPIRE-dataspecificaties, gebruikt in verschillende informatiemodellen, zoals
+bijvoorbeeld identificatoren, geharmoniseerde datatypen of voorgestelde
+alternatieve vereenvoudigde gegevenstypen.</p><p>Een schematisch overzicht van het volledige END-datamodel (zie figuur 2) geeft
+het gebruik en de combinatie van ruimtelijke data en de gestructureerde
+tabelgegevens aan met basisrelaties tussen individuele datamodellen (en de
+rapportage gegevensstromen).</p><figure id="Figuur_2">
+<img src="media/figuur2.png" alt="" width="575" height="316">
+<figcaption>Figuur <span class="figno">2</span> <span class="fig-title">Combinatie van data flows in het END-informatiemodel [4]</span></figcaption>
+</figure><p>Het END-Datamodel omvat alle rapportageverplichtingen op grond van de END. In
+het model zijn al deze verplichtingen aangemerkt als domeinen. Ieder domein
+heeft een eigen UML-diagram (UML: Unified Modeling Language). Een UML-diagram
+voor een specifiek domein noemen we een domeinmodel.</p><p>De volgende domeinenmodellen zijn gedefinieerd:</p><ul>
+<li><p>Geluidbronnen (DF1_5): hoofdwegen, grote spoorwegen, grote luchthavens en
+agglomeraties, zoals gedefinieerd in de END;</p>
+</li>
+<li><p>Bevoegde instantie (DF2): informatie over bevoegde autoriteiten, en/of
+andere instanties die verantwoordelijk zijn voor de uitvoering van de
+richtlijn omgevingslawaai;</p>
+</li>
+<li><p>Grenswaarden (DF3): bepaling van eventuele nationale of lokale grenswaarden
+voor geluid;</p>
+</li>
+<li><p>Strategische geluidbelastingkaart (DF4_8): met informatie over:</p>
+</li>
+<li><p>Gegevens over blootstelling aan lawaai: geschat aantal mensen dat in
+gebieden woont die de END-geluidrapportagedrempels overschrijden;</p>
+</li>
+<li><p>Geluidcontouren: geven de ruimtelijke omvang van de geluidniveaus weer voor
+verschillende geluidbelasting indicatoren;</p>
+</li>
+<li><p>Lawaaibeheersing programma’s (DF6_9): informatie over
+geluidbeheersingsprogramma's die in het verleden zijn uitgevoerd en
+getroffen geluidmaatregelen</p>
+</li>
+<li><p>Geluid actieplannen en Stille gebieden (DF7_10): informatie over</p>
+</li>
+<li><p>Actieplannen om geluidproblemen en de gevolgen daarvan te verminderen en te
+beheersen;</p>
+</li>
+<li><p>Bescherming en behoud van stille gebieden in agglomeraties of in open
+gebied.</p>
+</li>
+</ul><p>De domeinmodellen zijn met elkaar verbonden en maken het mogelijk om de data uit
+de verschillende rapportageverplichtingen te combineren.</p><p>Voor de <em>geluidbronnen</em> (DF1_5) moet de ligging van wegen, spoorwegen,
+luchthavens en agglomeraties van elk land in geografisch formaat worden
+gerapporteerd, inclusief een aantal akoestische eigenschappen die invloed hebben
+op de totale geluidproductie. Van alle akoestische eigenschappen moet
+uitsluitend de jaarlijkse verkeersstroom in DF1_5 worden gerapporteerd. Voor
+wegverkeer behoren verkeerssamenstelling, snelheden en wegdeksoort daar niet toe
+en voor spoorwegen en luchthavens geldt iets soortgelijks. Het verschil tussen
+de geluidbronnen (DF1_5) en de geluidgegevens met betrekking tot monitoring in
+IMGeluid is uitgelegd in <a href="#verschil-tussen-berekeningen-t-b-v-geluidmonitoring-en-belasting">1.3</a>.</p><p>Voor de rapportage van bevoegde instanties (DF_2) zijn geen ruimtelijke gegevens
+nodig. De bevoegde instanties van wegen en spoorwegen, die verantwoordelijk zijn
+voor de geluidbelastingkaarten en/of de actieplanning, kunnen worden
+gerapporteerd op landniveau of op <span title="De segmenten van hoofdwegen en spoorwegen zijn ontworpen om te
+voldoen aan de END-criteria van de jaarlijkse verkeersstroom."><strong>weg-/ spoorsegmentniveau [1]</strong></span> (door
+middel van identificatoren). Bevoegde instanties van grote luchthavens moeten
+worden geïdentificeerd met behulp van ICAO-codes en bevoegde instantie van
+agglomeraties met behulp van agglomeratie-identificatoren. Bevoegde instantie
+die belast is met de bescherming van stille gebieden mag optioneel worden
+aangeleverd, maar het wordt aanbevolen om dit te rapporteren door stilte
+gebiedsidentificaties te gebruiken.</p><p>De grenswaarden van een land of een gedefinieerde rapporteringsregio (DF3)
+vereisen geen ruimtelijke informatie. De grenswaarden kunnen op landenniveau
+gerapporteerd worden en het is mogelijk om deze grenswaarden apart voor elke
+geluidbron of gezamenlijk voor alle bronnen te rapporteren.</p><p>De strategische geluidbelastingkaarten (DF4_8) bestaan uit twee soorten
+gegevens. De geluidcontouren worden aangeleverd als ruimtelijke data en dienen
+aangeleverd te worden met een gesloten lijngeometrie of een polygoon. De
+gegevens over de blootstelling van de bevolking aan een verhoogd geluidniveau,
+zijn gekoppeld aan ruimtelijke eenheden en kunnen op verschillende
+rapportageniveaus worden verstrekt: voor hoofdwegen en spoorwegen kan worden
+gerapporteerd op landniveau of met behulp van kleinere territoriale eenheden.
+Voor grote luchthavens moeten de gegevens worden gerapporteerd door middel van
+de ICAO-code met de mogelijkheid om de blootstelling van de bevolking op lokale
+administratieve eenheden (LAU)-niveau weer te geven. De informatie over de
+blootstelling van de bevolking binnen agglomeraties voor wegen, spoorwegen,
+industrie, hoofdwegen binnen een agglomeratie of grote spoorwegen binnen een
+agglomeratie, kan worden gerapporteerd op agglomeratieniveau of door middel van
+gebruikmaking van LAU-eenheden. De blootstelling van de bevolking voor
+luchthavens of grote luchthavens binnen agglomeraties, kan op agglomeratieniveau
+of op LBE-niveau worden gerapporteerd, samen met de respectieve ICAO-code
+wanneer informatie over grote luchthavens wordt gerapporteerd.</p><p>Lawaaibeheersing programma’s (DF6_9) vereisen geen ruimtelijke gegevens en
+kunnen via verschillende rapportageniveaus worden ingediend.</p><p>De geluid actieplannen (DF7_10) vereisen de rapportage van ruimtelijke
+informatie in de vorm van een polygoon. De informatie van het actieplan moet
+worden ingevuld voor elke polygoon of multipolygoon waarvoor het actieplan wordt
+opgesteld. Voor grote luchthavens is de ICAO-code ook vereist. Voor belangrijke
+wegen en belangrijke spoorwegen is dit een polygoon van Nederland. Voor Schiphol
+zou dat misschien ook de meest logische keuze zijn als de koppeling met de
+ICAO-code dan kan worden gemaakt.</p><p>Stille gebieden zijn opgenomen in de gegevensrapportage DF7_10 en vereisen
+rapportage van een polygoon van het gebied dat wordt beschermd tegen
+omgevingslawaai. Op nationaal niveau bestaan er twee verschillende stille
+gebieden. Dit zijn stille gebieden binnen agglomeraties en stille gebieden in
+open gebied. Voor stille gebieden binnen agglomeraties is het vereist om de
+agglomeratie-identificatiecode te specificeren. In de praktijk hebben de
+agglomeraties tot nu toe nog geen stille gebieden aangewezen. De stille gebieden
+in open gebied, ook wel stiltegebieden genoemd, worden door provincies
+aangewezen.</p></section><section id="end-mapping-naar-inspire-thema-s"><h3 id="x3-3-end-mapping-naar-inspire-thema-s"><span class="secno">3.3 </span>END mapping naar INSPIRE thema's</h3><p>De INSPIRE-thema’s en bijbehorende dataspecificaties richten zich op de algemene
+kenmerken van ruimtelijke data, die toepasbaar kunnen zijn voor verschillende
+use cases. Rapportageverplichtingen zijn daar slechts een voorbeeld van. Daarin
+bevatten de INSPIRE-informatiemodellen, gespecifieerd in de dataspecificaties,
+meestal algemene informatie, zoals unieke identificatoren en de geometrie van
+ruimtelijke objecten, informatie over de levenscyclus van ruimtelijke objecten
+met betrekking tot datamanagementprincipes en een reeks andere basiskenmerken
+die ruimtelijke objecten beschrijven, zoals naam of specifieke categorie.</p><p>Aan de andere kant zijn de gerapporteerde gegevens onder de END-richtlijn
+specifiek ontworpen om te voldoen aan de rapportageverplichtingen en -criteria
+die door de END zijn gedefinieerd. Deze eisen dienen goed te worden gecombineerd
+met de basis INSPIRE-informatiemodellen voor ruimtelijke data.</p><p>De lijst met geïdentificeerde ruimtelijke data in het toepassingsgebied van de
+END-richtlijn heeft betrekking op de volgende INSPIRE-thema’s, zie onderstaande
+tabel. Deze ruimtelijke data dienen ook volgens INSPIRE-vereisten <a href="#wat-zijn-inspire-verplichtingen">zie 2.4</a>
+ontsloten te worden.</p><p><strong>Tabel 1. Overzicht van het mapping van ruimtelijke data van END naar de
+INSPIRE-thema’s</strong></p><table>
+<thead>
+<tr>
+<th>Basis for END spatial data</th>
+<th>INSPIRE spatial data thema</th>
+<th>INSPIRE spatial object type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Belangrijke wegen (DF1_5)</td>
+<td>INSPIRE Transport networks (TN) and specific Road Transport Network</td>
+<td>RoadLink</td>
+</tr>
+<tr>
+<td>Belangrijke spoorwegen (DF1_5)</td>
+<td>INSPIRE Transport networks (TN) and specific Railway Transport Network</td>
+<td>RailwayLink</td>
+</tr>
+<tr>
+<td>Belangrijke luchthavens (DF1_5)</td>
+<td>INSPIRE Transport networks (TN) and specific Air Transport Network</td>
+<td>AerodromeNode</td>
+</tr>
+<tr>
+<td>Agglomeraties (DF1_5)</td>
+<td>INSPIRE Area management / restriction / regulation zones &amp; reporting units (AM)</td>
+<td>ManagementRestrictionOrRegu lationZone</td>
+</tr>
+<tr>
+<td>Geluid contourkaart (DF4_8)</td>
+<td>INSPIRE Human health and safety (HH)</td>
+<td>EnvHealthDeterminantMeasure (*)</td>
+</tr>
+<tr>
+<td>Stille gebieden in agglomeraties of in buitengebied (DF7_10)</td>
+<td>INSPIRE Area management / restriction / regulation zones &amp; reporting units (AM)</td>
+<td>ManagementRestrictionOrRegu lationZone</td>
+</tr>
+<tr>
+<td>Geluid actieplannen (DF7_10)</td>
+<td>INSPIRE Area management / restriction / regulation zones &amp; reporting units (AM)</td>
+<td>ManagementRestrictionOrRegu lationZone</td>
+</tr>
+</tbody></table><p>* Het INSPIRE-Datamodel is opgenomen in de herziening van de uitvoeringsregels
+inzake interoperabiliteit.</p></section></section>
+        <section id="huidige_situatie" data-format="markdown" aria-busy="false"><!--OddPage--><h2 id="x4-huidige-situatie-geluidbelastingkaarten-en-tabellen"><span class="secno">4. </span>Huidige situatie: geluidbelastingkaarten en -tabellen</h2><figure id="Figuur_3">
+<img src="media/figuur3.1.png" alt="" width="8000" height="3907">
+<figcaption>Figuur <span class="figno">3</span> <span class="fig-title">Huidige situatie rondom rapportage van END geluidbelastingkaarten en-tabellen gevisualiseerd.</span></figcaption>
+</figure><p>Om een beeld te schetsen van de huidige situatie zal de situatie worden
+omschreven van de laatste rapportage van geluidgegevens aan de Europese
+commissie. Zoals eerder vermeld, is iedere Europese lidstaat verplicht deze
+rapportage te doen op basis van de <a href="https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ%3AL%3A2002%3A189%3A0012%3A0025%3ANL%3APDF">Europese richtlijn
+omgevingslawaai</a>. Op basis van de uitgevoerde analyse,
+bureauonderzoek en <a href="#bijlage-4-verslag-van-de-interviews-met-geluidexperts">interviews</a> kan worden opgemaakt dat het huidige proces
+rondom de rapportage van geluidbelastingkaarten aan Europa op te delen is in
+drie deelprocessen. Deze drie deelprocessen staan ook gevisualiseerd in <a href="Figuur_3"><strong>Figuur 3</strong></a> van links naar rechts.</p><ol>
+<li><p>Het verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en
+tabellen.</p>
+</li>
+<li><p>Het centraal aanleveren van geluidbelastingkaarten aan InfoMil.</p>
+</li>
+<li><p>Het prepareren van een rapportage aan de Europese commissie door InfoMil.</p>
+</li>
+</ol><p>Binnen deze deelprocessen worden de informatiestromen zichtbaar gemaakt. In dit
+hoofdstuk zal per deelproces hier aandacht aan worden besteed.</p><section id="input-verzamelen-van-geluidgegevens-en-berekenen-van-geluidbelastingkaarten-en-tabellen"><h3 id="x4-1-input-verzamelen-van-geluidgegevens-en-berekenen-van-geluidbelastingkaarten-en-tabellen"><span class="secno">4.1 </span>Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en tabellen</h3><figure id="Figuur_4.1">
+<img src="media/figuur4.png" alt="" width="825" height="691">
+<figcaption>Figuur <span class="figno">4</span> <span class="fig-title">Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en -tabellen.</span></figcaption>
+</figure><p>De eerste stap in de het huidige proces voor de rapportage van
+geluidbelastingkaarten aan de Europese Commissie, is het verzamelen van de
+juiste gegevens om een geluidmodel mee te kunnen maken. Wat de juiste gegevens
+zijn wordt bepaald door akoestisch adviseurs in dienst van de bronhouder, een
+adviesbureau of een omgevingsdienst binnen de kaders van de Nederlandse
+rekenmethodieken voor het uitvoeren van geluidberekeningen. Deze zullen vanaf ingang vanaf de omgevingswet te vinden zijn in <a href="https://www.omgevingsweb.nl/wp-content/uploads/po-assets/379191.pdf">Bijlage IV van de omgevingsregeling</a>.</p><p>ProRail, het Ministerie van Infrastructuur en Waterstaat, Rijkswaterstaat en
+provincies genereren de geluidcontouren en tabellen voor belangrijke wegen,
+spoorwegen en luchthavens buiten agglomeraties. Daarnaast leveren zij een deel
+van de input-geluidgegevens voor het genereren van geluidcontouren en tabellen
+binnen agglomeraties. Voor het samenstellen van een geluidmodel moeten
+agglomeratie-gemeenten veel stappen ondernemen. Agglomeraties hebben volgens de
+<a href="https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ%3AL%3A2002%3A189%3A0012%3A0025%3ANL%3APDF">Europese richtlijn omgevingslawaai</a> de plicht om
+geluidbelastingkaarten en -tabellen te berekenen. In deze kaarten en tabellen
+moet de geluidbelasting afkomstig van industrie, provinciale wegen,
+hoofdspoorwegen, lokale wegen, hoofdwegen en de luchtvaart worden meegenomen.
+Deze gegevens zijn voor een groot deel in beheer bij andere bronhouders,
+waardoor er veel informatiestromen ontstaan. Echter, niet voor alle
+geluidbelastingkaarten is gegevensuitwisseling vereist. ProRail en RWS
+beschikken bijvoorbeeld zelf over de meeste benodigde geluidbrongegevens om
+geluidbelastingkaarten op te stellen. Naast de gegevens waar ProRail en RWS zelf
+over beschikken, moet er ook een omgevingsmodel worden gemaakt in een strook van
+ongeveer 1 km langs het netwerk. Om dit omgevingsmodel te kunnen samenstellen,
+zijn ook gegevens over de ligging van stille gebieden en geluidgevoelige
+gebouwen nodig.</p><p>Het aantal informatiestromen wordt ook beïnvloed door het feit dat er
+organisatorisch geen agglomeratiebestuur bestaat in Nederland. In Nederland
+heeft iedere gemeente die hoort bij een agglomeratie de plicht om zelfstandig
+een geluidbelastingkaart en -tabel voor haar grondgebied op te stellen.
+Samenwerking en onderlinge uitwisseling van gegevens tussen
+agglomeratiegemeenten onderling en met provincies, komen voor op lokaal
+initiatief. Dit wordt weergegeven in <a href="#Figuur_4"><strong>Figuur 4</strong></a> aan de hand
+van verschillende kleuren en kaartjes. Op dit moment werkt het rijk aan
+harmonisatie van gegevens door een 3D-omgevingsmodel voor geluid, het Nationaal
+Wegenbestand (NWB), en onderzoek of een landelijk bestand met
+verkeersintensiteiten haalbaar is. Formeel zijn er tot nog toe geen vaste
+afspraken op landelijk niveau rondom de beschikbaarstelling van geluidgegevens
+voor geluidbelastingkaarten. In de praktijk worden op initiatief van InfoMil
+werkafspraken gemaakt rondom het beschikbaar stellen van geluidgegevens.
+Daarnaast is er contact tussen de RWS-bronbeheerder en agglomeratie-gemeenten
+wanneer er informatiebehoeften zijn. Wanneer een agglomeratie-gemeente
+bijvoorbeeld de informatiebehoefte heeft Rijkswegen toe te voegen aan het
+geluidmodel, wisselt RWS deze gegevens op aanvraag in Geomileu-formaat uit. Door
+het ontbreken van formele afspraken, weet een agglomeratiegemeente niet van
+tevoren wanneer deze gegevens klaar zullen zijn om te worden gedeeld.</p></section><section id="centraal-rapporteren-van-kaarten-aan-infomil"><h3 id="x4-2-centraal-rapporteren-van-kaarten-aan-infomil"><span class="secno">4.2 </span>Centraal rapporteren van kaarten aan InfoMil</h3><figure id="Figuur_5">
+<img src="media/figuur5.1.png" alt="" width="2634" height="2628">
+<figcaption>Figuur <span class="figno">5</span> <span class="fig-title">Centraal aanleveren van kaarten aan InfoMil.</span></figcaption>
+</figure><p>Wanneer de geluidbelastingkaarten berekend zijn, worden deze gerapporteerd aan
+InfoMil. In het geval van luchthavens van nationaal belang, rijkswegen en
+hoofdspoorwegen buiten agglomeratiegrenzen, draagt het Ministerie van I&amp;W de
+verantwoordelijkheid over de rapportage aan InfoMil. De geografische kaarten
+worden door de bevoegde autoriteit publiek beschikbaar gesteld. Alle
+agglomeratiegemeenten rapporteren zelfstandig geluidbelastingkaarten en
+-tabellen aan InfoMil. In <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0031477&amp;hoofdstuk=3%C2%B6graaf=1&amp;artikel=8&amp;z=2012-07-01&amp;g=2012-07-01">Artikel 8 van besluit geluid milieubeheer</a> staat dat geluidbelastingkaarten bestaan uit tabellen en geografische kaarten.
+In <a href="%5Bhttps://wetten.overheid.nl/jci1.3:c:BWBR0003245&amp;hoofdstuk=11&amp;titeldeel=11.2%C2%B6graaf=11.2.2&amp;artikel=11.9&amp;z=2021-01-01&amp;g=2021-01-01">artikel 11.9 van de Wet Milieubeheer</a>
+staat de aanleverplicht voor deze geluidbelastingkaarten omschreven. De
+aanleverplicht moet nog worden verankerd in de Omgevingswet. Een verschil tussen
+publieke geluidbelastingtabellen en de tabellen voor de EEA, is dat op
+bijvoorbeeld de publieke tabel voor Rijkswegen ook de geluidbelasting binnen
+agglomeratiegrenzen is meegenomen. Op de geografische geluidbelastingkaarten
+voor de EEA worden ook Rijkswegen binnen agglomeratiegrenzen meegenomen. Volgens
+de richtlijn omgevingslawaai is het alleen verplicht voor belangrijke wegen,
+spoorwegen en luchthavens van nationaal belang om geografische
+geluidbelastingkaarten te rapporteren. Voor de geluidbelastingkaarten voor het
+publiek, gelden een aantal aanvullende eisen vanuit Nederlandse wetgeving boven
+op de eisen uit de richtlijn omgevingslawaai. Een overzicht van deze eisen valt
+te vinden in <a href="#bijlage-1-de-inhoud-van-geluidbelastingkaarten-volgens-de-omgevingsregeling">Bijlage 1</a>.</p></section><section id="output-prepareren-van-een-rapportage-aan-de-europese-commissie"><h3 id="x4-3-output-prepareren-van-een-rapportage-aan-de-europese-commissie"><span class="secno">4.3 </span>Output prepareren van een rapportage aan de Europese commissie</h3><figure id="Figuur_6.1">
+<img src="media/figuur6.png" alt="" width="787" height="500">
+<figcaption>Figuur <span class="figno">6</span> <span class="fig-title">Output prepareren van een rapportage aan de EEA.</span></figcaption>
+</figure><p>In het laatste deelproces zorgt Infomil ervoor dat de door bronhouders
+aangeleverde gegevens worden verwerkt tot een rapport aan de Europese Unie.
+Hierbij moeten de verschillende geluidbelastingtabellen van
+agglomeratiegemeenten worden samengevoegd tot een enkele tabel per agglomeratie.
+De geluidbelastingkaarten worden zo goed als mogelijk samengevoegd en
+gerapporteerd, maar deze kan nooit geheel compleet zijn, aangezien niet ieder
+formaat geluidbelastingkaart met een ander kan worden samengevoegd.</p></section></section>
+        <section id="toekomstige_situatie" data-format="markdown" aria-busy="false"><!--OddPage--><h2 id="x5-toekomstperspectief-geluidbelastingkaarten-en-tabellen"><span class="secno">5. </span>Toekomstperspectief: geluidbelastingkaarten en -tabellen</h2><figure id="Figuur_7">
+<img src="media/figuur7.1.png" alt="" width="8001" height="3908">
+<figcaption>Figuur <span class="figno">7</span> <span class="fig-title">Toekomstvisie rondom rapportage van geluidbelastingkaarten en -tabellen gevisualiseerd.</span></figcaption>
+</figure><p>De opdrachtgever I&amp;W heeft verschillende scenario’s voor de toekomst van
+geluidberekeningen met betrekking tot geluidbelastingkaarten uitgewerkt. Het
+gaat hier om scenario’s waar centraal rekenen bij de CVGG in verschillende mate
+een rol speelt. In het toekomstperspectief wordt op basis van de interviews een
+invulling gegeven aan de situatie na de komst van het END Datamodel. In dit
+perspectief ligt de nadruk op het scenario waar decentraal wordt gerekend, maar
+dit betekent niet dat centraal rekenen geen denkbaar scenario blijft voor de
+toekomst. In dit beeld zijn de wensen van de opdrachtgever I&amp;W en geïnterviewde
+stakeholders meegenomen. Onder dit toekomstperspectief ligt een aantal
+afwegingen. Bij deze afwegingen wordt er gestreefd naar een zo effectief
+mogelijke uitkomst, waarbij zowel technische als bestuurskundige aspecten zijn
+meegenomen. Technische aspecten en bestuurskundige aspecten hangen vaak met
+elkaar samen. Zo kan een standaard die complex is in beheer, bijvoorbeeld ook
+voor veel extra kosten zorgen. In dit hoofdstuk zal het toekomstperspectief
+worden omschreven. De rationale achter deze afwegingen, is te vinden in het
+<a href="#IMGeluidbelasting">CMGeluidbelasting</a>.</p><p>In <a href="#Figuur_7" class="fig-ref"><strong>Figuur 7</strong></a> staat een toekomstperspectief afgebeeld
+zoals uit interviews naar voren is gekomen. Het proces voor het aanleveren van
+geluidbelastingkaarten en -tabellen valt op te delen in drie deelprocessen:</p><ol>
+<li><p>Het verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en
+tabellen.</p>
+</li>
+<li><p>Het centraal aanleveren van geluidbelastingkaarten aan de CVGG.</p>
+</li>
+<li><p>Het aanleveren van een rapportage aan de Europese commissie door de CVGG en
+InfoMil.</p>
+</li>
+</ol><section id="input-verzamelen-van-geluidgegevens-volgens-imgeluid"><h3 id="x5-1-input-verzamelen-van-geluidgegevens-volgens-imgeluid"><span class="secno">5.1 </span>Input verzamelen van geluidgegevens volgens IMGeluid</h3><figure id="Figuur_8">
+<img src="media/figuur8.1.png" alt="" width="3972" height="2825">
+<figcaption>Figuur <span class="figno">8</span> <span class="fig-title">Input Verzamelen van geluidgegevens volgens IMGeluid.</span></figcaption>
+</figure><p>ProRail, Rijkswaterstaat, de provincies en I&amp;W verzamelen gegevens voor het
+berekeningen van geluidbelastingkaarten en tabellen. Daarnaast, zoals op de
+linker plaat valt te zien, leveren ze deze gegevens ook aan CVGG. De
+agglomeratie-gemeenten kunnen de CVGG gebruiken om geluidgegevens af te nemen
+die, naast hun eigen verzamelde gegevens, dienen als input voor het berekenen
+van geluidbelastingkaarten. Het gaat hierbij respectievelijk om geluidgegevens
+t.b.v. hoofdspoor, rijkswegen, provinciale wegen en luchthavens. De partijen die
+agglomeraties vertegenwoordigden in de interviews, gaven de indicatie dat het
+centraal aanleveren van geluidbrongegevens t.b.v. geluidbelastingkaarten een
+beperkt voordeel voor agglomeratie gemeenten oplevert. Daarentegen vergt het
+weer een extra inspanning van de rijksbronbeheerder om de geluidbrongegevens op
+te moeten “knippen”, met de kans op fouten. Het hele netwerk uitleveren kost
+volgens de rijksbronbeheerder de minste moeite. De afwegingen hierachter, worden
+nader toegelicht in <a href="#memo-centraal-aanleveren-van-lokale-geluidgegevens-van-agglomeratiegemeenten">de memo in hoofdstuk 6</a>.</p><p>De geluidgegevens ten behoeve van het berekenen van geluidbelastingkaarten zijn
+een aparte verzameling van gegevens met een eigen geluidmodel. Voor het grootste
+deel is de opbouw van deze brongegevens hetzelfde als voor monitoring, maar er
+zijn verschillen. <a href="#bijlage-2-verschillen-cnossos-en-nederlandse-rmg">Bijlage 2</a> geeft een samenvatting van deze
+verschillen. Wanneer er in de toekomst voor een optie wordt gekozen met centraal
+aanleveren, moeten deze geluidbrongegevens apart worden aangeleverd. Dit is
+noodzakelijk aangezien twee verschillende rekenmethode hiervoor worden gebruikt.
+Het IMGeluid zal in dit geval kunnen worden uitgebreid om deze aparte
+aanlevering te ondersteunen. De geluidgegevens die door de agglomeratiegemeenten
+worden gebruikt, kunnen in een formaat volgens, in overeenstemming met IMGeluid
+uit de CVGG worden gehaald om vervolgens te importeren in hun rekenpakket.</p></section><section id="centraal-rapporteren-van-kaarten-aan-de-cvgg"><h3 id="x5-2-centraal-rapporteren-van-kaarten-aan-de-cvgg"><span class="secno">5.2 </span>Centraal rapporteren van kaarten aan de CVGG</h3><figure id="Figuur_9.1">
+<img src="media/figuur9.png" alt="" width="1094" height="834">
+<figcaption>Figuur <span class="figno">9</span> <span class="fig-title">Centraal aanleveren van kaarten aan de CVGG.</span></figcaption>
+</figure><p>De geluidbelastingkaarten worden berekend door de bronhouders. Het rekenpakket
+zorgt ervoor dat de output van een geluidbelastingberekening kan worden
+geëxporteerd volgens, in overeenstemming met het END Datamodel in GeoPackage
+formaat. Het idee was dat de verschillende bronhouders dit bestand vervolgens
+via het uploadportaal van de CVGG uploaden. Echter bleek uit een impactanalyse
+van het RIVM, dat deze uitbreiding van de CVGG voor de huidige tranche niet
+realiseerbaar is.</p></section><section id="centraal-rapporteren-van-kaarten-en-tabellen-aan-de-eea-en-het-publiek"><h3 id="x5-3-centraal-rapporteren-van-kaarten-en-tabellen-aan-de-eea-en-het-publiek"><span class="secno">5.3 </span>Centraal rapporteren van kaarten en tabellen aan de EEA en het publiek</h3><p>Er is een belangrijk verschil tussen de geluidbelastingkaarten die voor de
+burgers worden gemaakt en de geluidbelastingkaarten die voor de EU worden
+gemaakt: het rijk en de provincies nemen in de kaarten voor burgers ook de
+gegevens op van de (spoor)wegen die liggen in agglomeraties, maar in de
+geluidbelastingtabellen voor de EEA worden deze gegevens weggelaten om dubbele
+waarden te voorkomen. Dit zou in de toekomst vanuit een enkele
+geluidbelastingkaart gedaan worden, door de agglomeraties automatisch uit de
+kaarten van de rijksbronbeheerder te knippen. Daarnaast hebben kaarten voor het
+publiek meer duiding en context nodig. Hoe deze context goed in beeld kan worden
+gebracht, wordt geduid vanuit de wetgeving. Zie <a href="#bijlage-1-de-inhoud-van-geluidbelastingkaarten-volgens-de-omgevingsregeling">bijlage 1</a> voor een
+duiding van deze gegevens.</p><p>Mogelijk kan de CVGG InfoMil gaan ondersteunen bij het rapportageproces van
+geluidbelastingkaarten. Dit zou kunnen door het uploadportaal van de CVGG
+geschikt te maken voor het END-Datamodel. Op het moment van publicatie van dit
+rapport moet de CVGG stuurgroep hier nog een besluit over nemen.</p></section></section>
+        <section id="IMGeluidbelasting" data-format="markdown" aria-busy="false"><!--OddPage--><h2 id="x6-conceptueel-informatiemodel-geluidbelasting-specificatie-cimgeluidbelasting"><span class="secno">6. </span>Conceptueel Informatiemodel Geluidbelasting specificatie (CIMGeluidbelasting)</h2><figure id="Figuur_10">
+<img src="media/CMGeluidbelasting1.png" alt="" width="7964" height="5048">
+<figcaption>Figuur <span class="figno">10</span> <span class="fig-title">Conceptueel model geluidbelasting.</span></figcaption>
+</figure><p>Het conceptuele model geluidbelasting (CMGeluidbelasting) brengt in kaart welke
+gegevens een rol kunnen gaan spelen in de toekomstige situatie. Ook positioneert
+het CMGeluidbelasting de Objecttypen uit het END-Datamodel en IMGeluid. Voor dit
+model zijn twee aannames gemaakt. De mogelijke opties staan toegelicht in
+paragraaf 6.2. In dit hoofdstuk worden de objecttypen gedefinieerd en
+toegelicht. Het CMGeluidbelasting is een concept kijk op de toekomst. Het doel
+van het model is om een overzicht te geven op waar relevante informatie voor het
+maken van een geluidbelastingkaart vandaan kan worden gehaald. Dit model wordt
+gebruikt om de specifieke uitbreidingen die nodig zijn voor het IMGeluid te
+bepalen.</p><p>Wat opvalt is dat het model vanuit een hoger
+<a href="https://docs.geostandaarden.nl/mim/mim/%5C#typen-informatiemodellen">niveau</a>
+naar de informatie kijkt dan het IMGeluid. Voor het doel van dit model is het
+niet nodig om meer gedetailleerd te kijken naar de verschillende objecttypen.
+Zie <a href="#Figuur_10" class="fig-ref">**figuur 10</a>** voor een UML weergave van het
+CMGeluidbelasting.</p><section id="toelichting-op-cm-geluidbelasting"><h3 id="x6-1-toelichting-op-cm-geluidbelasting"><span class="secno">6.1 </span>Toelichting op CM Geluidbelasting</h3><p>In het CM Geluidbelasting staat het Geluidmodel centraal. Op basis van dit model
+wordt een geluidbelastingkaart en -tabel berekend. De structuur van deze
+geluidbelastingkaart of -tabel, wordt bepaald door DF4 en DF8 van het END
+Datamodel. In de geschetste situatie bevat een geluidmodel minstens één
+geluidgegeven. Dit geluidgegeven zou uit de CVGG kunnen worden gehaald, wanneer
+er op termijn wordt besloten deze ook via de CVGG uit te wisselen. De structuur
+van dit Input-geluidgegeven kan in dit geval bepaald worden door IMGeluid. Dit
+Input-geluidgegeven kan in deze situatie afkomstig zijn van een rijksweg, een
+provinciale weg, een spoorweg, van een agglomeratie-gemeente of van een
+luchthaven.</p><p>Wanneer het geluidmodel betrekking heeft op een agglomeratie gemeente, zullen
+lokale geluidgegeven over wegen, spoorwegen, industrie en overige
+geluidbelastende activiteiten worden gebruikt in het geluidmodel. Het
+geluidmodel bevat ook een model van de omgeving. In dit omgevingsmodel zitten
+bijvoorbeeld hoogtelijnen en geluidgevoelige gebouwen. Deze kunnen door de maker
+van het geluidmodel zelf gemodelleerd worden of op een andere manier worden
+ingewonnen. Een oplossingsrichting is om een lijst met geluidgevoelige gebouwen
+op te nemen in het IMGeluid. Zie voor andere oplossingsrichtingen de Memo over
+<a href="#memo-geluidgevoelige-gebouwen-en-geluidbelastingkaarten">geluidgevoelige gebouwen</a>.</p><p>De cijfers die bij pijlen (relaties) van het type &amp;lt;&lt;relatiesoort&gt;&gt; staan in
+de vorm [0…*] (Multipliciteiten), maken het mogelijk om het model op
+verschillende manieren te doorlopen. Deze Multipliciteiten geven grenzen aan van
+hoe vaak het ene object mag verwijzen naar het andere object in de relatie.
+Bijvoorbeeld: 1 of meerdere [1..*] input geluidgegeven(s) worden gebruikt in 0
+of meerdere [0..*] Geluidmodellen. Het andere type relatie dat wordt gebruikt
+in het CMGeluidbelasting is de &amp;lt;&lt;generalisatie&gt;&gt;. Deze relatie wordt gelegd
+tussen twee Objecttypen om aan te geven dat het ene object generaliseerd in het
+andere. Een geluidgegeven Rijksweg is bijvoorbeeld een specifiek soort
+Input-geluidgegeven.</p><p>Om deze principes toe te lichten zullen we het CM Geluidbelasting een keer
+geheel doorlopen voor de geluidbelastingkaarten van Rijkswegen. Zie <a href="#Figuur_11" class="fig-ref"><strong>Figuur 11</strong></a>
+voor een visualisatie hiervan. We beginnen linksboven in het model bij het
+Objecttype Geluidgegeven Rijksweg. Laten we er voor dit voorbeeld vanuit gaan
+dat we een geluidbelastingkaart willen maken van 100 wegdelen. Om te bepalen hoe
+deze wegdelen eruitzien, kijken we naar het IMGeluid object WegdeelGPP in dit
+hypothetische geval. In dit geval is ieder WegdeelGPP een Input-geluidgegeven
+dat wordt gebruikt in een geluidmodel. De relatiesoort tussen de objecttypen
+Input-geluidgegeven en Geluidmodel geluidbelastingkaart geeft nu aan dat 100
+wegdelen worden gebruikt in 1 geluidmodel. De Multipliciteiten die hier gelden
+staan dit toe. Vervolgens worden er 5 geluidgevoelige gebouwen toegevoegd aan
+het omgevingsmodel en 5 omgevingsmodel objecten (dit zouden bijvoorbeeld
+hoogtelijnen kunnen zijn) om de omgeving te modelleren. Deze 10 objecten worden
+toegevoegd aan het geluidmodel. Uit dit ene geluidmodel worden 2 verschillende
+kaarten berekend. Eén kaart is voor de Lden situatie en één voor de Lnight
+situatie. De geluidcontouren op beide kaarten worden opgeslagen volgens, in
+overeenstemming met het Objecttype (featureType) met de naam
+“EnvHealthDeterminantMeasure” afkomstig uit het END Datamodel (zie figure 41.
+Streamlined data model for noise contour maps (DF4_8)). Bij een
+geluidbelastingkaart horen ook gegevens over blootstelling aan lawaai. De kaart
+voor het publiek wordt door Rijkswaterstaat nog aangevuld met een aantal
+Referentie geluidbronnen. Deze referentie geluidbronnen bevatten extra
+informatie over de context die handig is voor het publiek. De ligging van 49
+major Road Source Objecttypen wordt op de kaart afgebeeld samen met de
+afbakening van een stil gebied.</p><figure id="Figuur_11">
+<img src="media/CMGeluidbelastingvb.png" alt="" width="7960" height="5048">
+<figcaption>Figuur <span class="figno">11</span> <span class="fig-title">Voorbeeld uitwerking van het Conceptueel model geluidbelasting.</span></figcaption>
+</figure></section><section id="het-inwinningsvraagstuk-voor-aanvullende-informatie-op-publieke-geluidbelastingkaarten"><h3 id="x6-2-het-inwinningsvraagstuk-voor-aanvullende-informatie-op-publieke-geluidbelastingkaarten"><span class="secno">6.2 </span>Het inwinningsvraagstuk voor aanvullende informatie op publieke geluidbelastingkaarten</h3><p>In hoofdstuk 5 werd al genoemd dat I&amp;W meerdere denkbare scenario’s heeft
+uitgewerkt voor de toekomst van geluidberekeningen met betrekking tot
+geluidbelastingkaarten. Een scenario waar in dit rapport nog minder aandacht aan
+is besteed, is het centraal berekenen van geluidbelastingkaarten. In dit
+scenario kan de CVGG centraal geluidbelastingkaarten berekenen. In dit scenario
+hoeven de bronhouders alleen de geluidgegevens waarover zij zelf beschikken aan
+te leveren en doet de CVGG de rest. Maar deze geluidgegevens moeten dan wel
+volledig en precies volgens het IMGeluid worden aangeleverd. Het belangrijkste
+werk is daarmee al verricht. Dit scenario zal aantrekkelijk worden, wanneer het
+met forse besparing op de rekentijden gepaard zal gaan, of met besparing op
+licentiekosten voor rekensoftware. Dit scenario betekent ook dat de CVGG over
+voldoende informatie moet beschikken, om geluidbelastingkaarten voor het publiek
+op te stellen.</p><p>Geluidbelastingkaarten voor het publiek bevatten vaak nog aanvullende gegevens
+om de kaart beter leesbaar te maken. Dit zijn bijvoorbeeld gegevens over de
+ligging van industrieterreinen of andere geluidbelastende activiteiten. Wanneer
+in de toekomst voor dit scenario wordt gekozen, is het daarom ook belangrijk om
+na te denken over het inwinningsvraagstuk dat achter deze gegevens zit. Mogelijk
+kunnen alle aanvullende gegevens uit het DSO (Digitaal Stelsel Omgevingswet)
+worden ingewonnen, maar dit is tot op heden onzeker. Het blijft daarom een optie
+dat deze ontbrekende gegevens, optioneel worden opgenomen in het IMGeluid.</p></section><section id="definities-cmgeluidbelasting"><h3 id="x6-3-definities-cmgeluidbelasting"><span class="secno">6.3 </span>Definities CMGeluidbelasting</h3><section id="objecttype-cvgg-input-geluidgegeven"><h4 id="x6-3-1-objecttype-cvgg-input-geluidgegeven"><span class="secno">6.3.1 </span>Objecttype CVGG Input Geluidgegeven</h4></section><section id="objecttype-cvgg-input-geluidgegeven-0"><h4 id="x6-3-2-objecttype-cvgg-input-geluidgegeven"><span class="secno">6.3.2 </span>Objecttype CVGG Input Geluidgegeven</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>Input-geluidgegeven</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Geluidgegeven dat wordt gebruikt in een geluidmodel voor geluidbelastingkaarten te berekenen, dat kan worden afgenomen vanuit de CVGG.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Het gaat hier om geluidgegevens m.b.t. rijkswegen, provinciale wegen, lokale wegen, spoorwegen, industrie en Luchtvaart. De structuur van deze gegevens wordt binnen de uitbreiding van het IMGeluid gespecificeerd.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Ja</strong>. Dit betekent dat dit modelelement niet op zichzelf bestaat, maar dat het altijd een GeluidgegevenRijksweg, GeluidgegevenProvincialeWeg, GeluidgegevenHoofdpoorweg of een GeluidcontourLuchtvaart betreft.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table></section><section id="objecttype-geluidgegeven-rijksweg"><h4 id="x6-3-3-objecttype-geluidgegeven-rijksweg"><span class="secno">6.3.3 </span>Objecttype Geluidgegeven rijksweg</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>Geluidgegeven Rijksweg</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Geluidgegeven afkomstig van een stukje rijksweg met een verkeersintensiteit van meer dan 3 miljoen motorvoertuigen per jaar, dat wordt gebruikt in een geluidmodel voor geluidbelastingkaarten te berekenen.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Het gaat hier om geluidgegevens die Rijkswaterstaat in beheer heeft. Deze gegevens zijn wat betreft betekenis (semantiek) anders dan de gegevens in WegdeelGPP uit IMGeluid, dus zullen een eigen objecttype moeten krijgen binnen IMGeluid. Dit zal waarschijnlijk gaan om een aangepaste versie van GPPWegdeel. Dit objecttype heeft een aangepaste definitie en bevat een aantal extra attribuutsoorten om te kunnen rekenen met de CNOSSOS rekenmethode.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td>Nee.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table></section><section id="objecttype-geluidgegeven-provinciale-weg"><h4 id="x6-3-4-objecttype-geluidgegeven-provinciale-weg"><span class="secno">6.3.4 </span>Objecttype Geluidgegeven Provinciale Weg</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>Geluidgegeven provinciale weg</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Geluidgegeven afkomstig van een stukje provinciale weg met een verkeersintensiteit van meer dan 3 miljoen motorvoertuigen per jaar, dat wordt gebruikt in een geluidmodel voor geluidbelastingkaarten te berekenen.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Het gaat hier om geluidgegevens die een Provincie in beheer heeft. Deze gegevens zijn wat betreft betekenis (semantiek) anders dan de gegevens in WegdeelGPP uit IMGeluid, dus zullen een eigen objecttype moeten krijgen binnen IMGeluid. Dit zal waarschijnlijk gaan om een aangepaste versie van GPPWegdeel. Dit objecttype heeft een aangepaste definitie en bevat een aantal extra attribuutsoorten om te kunnen rekenen met de CNOSSOS rekenmethode.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Nee</strong>.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table></section><section id="objecttype-geluidgegeven-spoorweg"><h4 id="x6-3-5-objecttype-geluidgegeven-spoorweg"><span class="secno">6.3.5 </span>Objecttype Geluidgegeven spoorweg</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>GeluidgegevenSpoorweg</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Geluidgegeven afkomstig van een stukje hoofdspoorweg, of een Lokale spoorwegen met een verkeersintensiteit van meer dan 30.000 treinen per jaar, dat wordt gebruikt in een geluidmodel voor geluidbelastingkaarten te berekenen.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Het gaat hier om geluidgegevens die ProRail in beheer heeft in het geval van Hoofdspoorwegen. De provincies beheren Lokale spoorwegen met een verkeersintensiteit van meer dan 30.000 treinen per jaar. Deze gegevens zijn wat betreft betekenis (semantiek) anders dan de gegevens in SpoordeelGPP uit IMGeluid, dus zullen een eigen objecttype moeten krijgen binnen IMGeluid. Dit zal waarschijnlijk gaan om een aangepaste versie van SpoordeelGPP. Dit objecttype heeft een aangepaste definitie en bevat een aantal extra attribuutsoorten om te kunnen rekenen met de CNOSSOS-rekenmethode.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Nee.</strong></td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table></section><section id="objecttype-geluidcontour-luchtvaart"><h4 id="x6-3-6-objecttype-geluidcontour-luchtvaart"><span class="secno">6.3.6 </span>Objecttype Geluidcontour Luchtvaart</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>GeluidcontourLuchtvaart</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Geluidcontour afkomstig van burgerluchthavens van nationale betekenis met meer dan 50.000 vliegtuigbewegingen, oefenvluchten met lichte vliegtuigen niet meegerekend.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Het gaat hier om geluidcontouren opgevraagd door afdeling DG Luchtvaart en Maritieme Zaken van het Ministerie van Infrastructuur en Waterstaat, bij burgerluchthavens met nationale betekenis. Aangezien het bij geluidbrongegevens voor luchtvaart vaak gaat om commercieel gevoelige informatie, hoeven alleen de contouren gebruikt te worden als input voor een geluidberekening. Deze contouren kunnen worden opgeslagen in de CVGG als een nieuwe aanlevering in overeenstemming met IMGeluid. Een nieuwe aanlevering is nodig omdat het in dit geval gaat om het gerealiseerde aantal vluchten en niet om een vergunde situatie.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Nee</strong>.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table></section><section id="objecttype-geluidmodel-geluidbelastingkaart"><h4 id="x6-3-7-objecttype-geluidmodel-geluidbelastingkaart"><span class="secno">6.3.7 </span>Objecttype Geluidmodel Geluidbelastingkaart</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>GeluidmodelGeluidbelastingkaart</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Een geluidmodel van een bepaald gebied, bestaande uit Input-geluidgegevens, dat wordt gebruikt om geluidbelastingkaarten mee te bereken.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Het geluidmodel wordt samengesteld door akoestisch experts volgens, in overeenstemming met de CNOSSOS-rekenmethode. Het doel van het geluidmodel is om zo goed mogelijk de geluidbelasting in een bepaald gebied te simuleren. Welk gebied dit betreft is afhankelijk van het bestuursorgaan dat de opdracht geeft om een geluidmodel te maken. Dit zou bijvoorbeeld het geluidmodel van een agglomeratie-gemeente kunnen zijn</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Nee</strong>.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table></section><section id="objecttype-lokaal-input-geluidgegeven"><h4 id="x6-3-8-objecttype-lokaal-input-geluidgegeven"><span class="secno">6.3.8 </span>Objecttype Lokaal input-geluidgegeven</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>Lokaal input-geluidgegeven</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Geluidgegeven dat wordt gebruikt in een geluidmodel voor geluidbelastingkaarten te berekenen, opgehaald door een agglomeratie-gemeente vanuit lokale bronnen.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Niet alle geluidgegevens worden door agglomeraties opgevraagd bij andere overheden. Over de meeste lokale gegevens over geluidbelastende activiteiten, beschikt de gemeente zelf. In een beperkt volume vindt soms uitwisseling tussen agglomeratie-gemeenten plaats. Wanneer een agglomeratie-gemeente een geluidbelastingkaart of -tabel gaat berekenen worden deze geluidgegevens gebruikt in een geluidmodel.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Ja</strong>. Dit betekent dat dit modelelement niet op zichzelf bestaat, maar dat het altijd wordt ingevuld door een meer specifiek objecttype. In dit geval zijn de specifiekere Objecttypen met de Generalisatie relatie zichtbaar in het model.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table></section><section id="objecttype-industrie-geluidgegeven"><h4 id="x6-3-9-objecttype-industrie-geluidgegeven"><span class="secno">6.3.9 </span>Objecttype Industrie geluidgegeven</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>Industrie geluidgegeven</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Een lokaal input-geluidgegeven met betrekking tot geluidbelastende activiteiten die te maken hebben met industrielawaai.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Het gaat hier om geluidbelastende activiteiten en verzamelingen van activiteiten: Activiteiten op industrieterreinen met gpp’s waarvoor het geluid van dat industrieterrein meer is dan 55 dB Lden of 50 dB Lnight Activiteiten in gebieden met een hogere waarde voor geluid, waarvoor de geluidbelasting door die activiteiten op omliggende geluidgevoelige gebouwen meer kan zijn dan 55 dB Lden of 50 dB Lnight; Activiteiten buiten industrieterreinen met gpp’s met een ten hoogste toegelaten geluidbelasting door de activiteit meer is dan 55 dB Lden of 50 dB Lnight Wanneer een agglomeratie-gemeente een geluidbelastingkaart of -tabel gaat berekenen worden deze geluidgegevens gebruikt in een geluidmodel.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Ja</strong> Dit betekent dat dit modelelement niet op zichzelf bestaat, maar dat het altijd wordt ingevuld door een meer specifiek objecttype. In dit geval zijn de specifiekere Objecttypen met de Generalisatie relatie zichtbaar in het model.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table></section><section id="objecttype-gegeven-gezoneerde-industrie"><h4 id="x6-3-10-objecttype-gegeven-gezoneerde-industrie"><span class="secno">6.3.10 </span>Objecttype Gegeven gezoneerde industrie</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>Gegeven gezoneerde industrie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Een geluidgegeven met betrekking op activiteiten op industrieterreinen met gpp’s waarvoor het geluid van dat industrieterrein meer is dan 55 dB Lden of 50 dB Lnight.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Tot deze gegevens behoren bijvoorbeeld geluidbronnen binnen een industrieterrein met GPP’s. Het gaat hier wel om een andere situatie dan die in de CVGG staat geregistreerd. In de CVGG staat namelijk de vergunde situatie.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Nee</strong>.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table></section><section id="objecttype-gegeven-aangewezen-gebieden"><h4 id="x6-3-11-objecttype-gegeven-aangewezen-gebieden"><span class="secno">6.3.11 </span>Objecttype Gegeven aangewezen gebieden</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>Gegeven aangewezen gebieden</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Een geluidgegeven met betrekking op activiteiten in gebieden met een hogere waarde voor geluid, waarvoor de geluidbelasting door die activiteiten op omliggende geluidgevoelige gebouwen meer kan zijn dan 55 dB Lden of 50 dB Lnight.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Het beeld is dat tot deze aangewezen gebieden voornamelijk horeca concentratiegebieden behoren. Echter is het toegestaan als gemeente zelf invulling te geven aan deze categorie. Het is daarom enige mate van onzekerheid over welke andere soorten aangewezen gebieden precies worden gebruikt in het werkveld.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Nee</strong>.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table></section><section id="objecttype-industrie-geluidgegeven-0"><h4 id="x6-3-12-objecttype-industrie-geluidgegeven"><span class="secno">6.3.12 </span>Objecttype Industrie geluidgegeven</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>Gegeven groot bedrijf</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Een geluidgegeven met betrekking op activiteiten buiten industrieterreinen met gpp’s met een ten hoogste toegelaten geluidbelasting door de activiteit meer is dan 55 dB Lden of 50 dB Lnight.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Het gaat hier om grote bedrijven die buiten een gezoneerd industrieterrein met GPP’s liggen. Grote bedrijven die mogelijk meer geluid produceren dan is toegestaan, moeten voor een vergunningaanvraag akoestisch onderzoek laten uitvoeren. Het beeld van I&amp;W hierbij is daarom dat de precieze invulling van deze categorie bekend is bij de agglomeratie-gemeenten.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Ja</strong></td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table></section><section id="objecttype-lokale-weg-spoorweg-geluidgegeven"><h4 id="x6-3-13-objecttype-lokale-weg-spoorweg-geluidgegeven"><span class="secno">6.3.13 </span>Objecttype Lokale weg / spoorweg geluidgegeven</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>Lokale weg / spoorweg geluidgegeven</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Lokaal input-geluidgegeven over geluidbelastende activiteiten die te maken hebben met lokale wegen of spoorwegen.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Het gaat hier om geluidgegevens met betrekking tot lokale wegen en spoorwegen waarvan een agglomeratie-gemeente bronhouder is. Deze gegevens zijn wat betreft betekenis (semantiek) anders dan de gegevens in WegdeelBGE en SpoordeelBGE uit IMGeluid, dus zullen een eigen objecttype moeten krijgen binnen IMGeluid. Dit zal waarschijnlijk gaan om aangepaste versies van SpoordeelBGE en WegdeelBGE. Deze objecttypen hebben een aangepaste definitie en bevat een aantal extra attribuutsoorten om te kunnen rekenen met CNOSSOS-rekenmethode.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Nee</strong>.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table></section><section id="objecttype-omgevingsmodel-objecttype"><h4 id="x6-3-14-objecttype-omgevingsmodel-objecttype"><span class="secno">6.3.14 </span>Objecttype Omgevingsmodel Objecttype</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>OmgevingsmodelObjecttype</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Objecttype afkomstig uit een omgevingsmodel geschikt voor geluidberekeningen.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Dit omgevingsmodel kan gemaakt zijn door het bestuursorgaan of er kan gebruik worden gemaakt van een landelijk model, zoals bijvoorbeeld het 3D omgevingsmodel geluid. Dit omgevingsmodel bevat ook geluidgevoellige gebouwen zoals bedoeld in Artikel 3.20 van BKL.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Nee</strong>.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table></section><section id="objecttype-imgeluid-objecttype"><h4 id="x6-3-15-objecttype-imgeluid-objecttype"><span class="secno">6.3.15 </span>Objecttype IMGeluid Objecttype</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>IMGeluid Objecttype</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Een objecttype afkomstig uit het Informatiemodel Geluid.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Dit is een objecttype uit het IMGeluid dat mogelijk kan worden gebruikt om de structuur van de input-geluidgegevens te bepalen. Deze input-geluidgegevens kunnen worden gebruikt om een geluidbelastingkaart te berekenen. Niet elk objecttype uit het IMGeluid is hiervoor geschikt. Het is afhankelijk van een keuze</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Ja</strong>. Dit betekent dat dit modelelement niet op zichzelf bestaat, maar dat het altijd een objecttype is afkomstig uit het IMGeluid.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>IMGeluid</td>
+</tr>
+</tbody></table></section><section id="objecttype-end-datamodel-objecttype"><h4 id="x6-3-16-objecttype-end-datamodel-objecttype"><span class="secno">6.3.16 </span>Objecttype END Datamodel Objecttype</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>END Datamodel DF_4_8 Objecttype</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Een objecttype afkomstig uit het datamodel van de Environmental Noise Directive.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>In de specifieke relatie die hier zichtbaar is zou dit hier gaan om verschillende objecttypen uit de DF4_8 domeinmodellen van het END Datamodel.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Ja</strong>. Dit betekent dat dit modelelement niet op zichzelf bestaat, maar dat het altijd een objecttype is afkomstig uit het END Datamodel.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>END Datamodel</td>
+</tr>
+</tbody></table></section><section id="objecttype-geluidgevoellig-gebouw-objecttype"><h4 id="x6-3-17-objecttype-geluidgevoellig-gebouw-objecttype"><span class="secno">6.3.17 </span>Objecttype Geluidgevoellig Gebouw Objecttype</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>GeluidgevoelligGebouwObjecttype</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Een objecttype dat een geluidgevoellig gebouw, zoals bedoeld in artikel 3.20 van BKL representeert, inclusief alle in de regelgeving bepaalde eigenschappen.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Voor de geluidgevoelige gebouwen kan de BAG als uitgangspunt worden genomen. Echter kan niet alle informatie uit de BAG worden gehaald. Waar deze informatie wel vandaan kan worden gehaald wordt omschreven in <a href="VERWIJZING">de memo</a>.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Nee</strong>.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table></section><section id="objecttype-geluidbelastingkaart"><h4 id="x6-3-18-objecttype-geluidbelastingkaart"><span class="secno">6.3.18 </span>Objecttype Geluidbelastingkaart</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>Geluidbelastingkaart</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Een geluidbelastingkaart zoals bedoeld in de Environmental Noise Directive in overeenstemming met het END Datamodel.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>De geluidbelastingkaart wordt berekend uit een GeluidmodelGeluidbelastingkaart in opdracht van bestuursorgaan. Een geluidbelastingkaart bevat de volgende gegevens:</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Nee</strong>.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table><ul>
+<li><p>De geluidbelasting Lden en de geluidbelasting Lnight door de geluidbronnen
+in het kalenderjaar voorafgaand aan dat van de vaststelling van een
+geluidbelastingkaart, weer te geven met 5 dB-contouren; en</p>
+</li>
+<li><p>Het aantal geluidgevoelige gebouwen en bewoners van woningen dat aan bij
+ministeriele regeling vastgestelde waarden van de geluidbelasting Lden en de
+geluidbelasting Lnight wordt blootgesteld, weer te geven in tabellen met
+geluidbelastingklassen van telkens 5 dB.</p>
+</li>
+</ul><p>Los van de verplichte geluidbelastingkaarten en -tabellen die aan Europa moeten
+worden gerapporteerd, worden er ook kaarten gemaakt om het publiek te
+informeren. Voor deze kaarten voor het publiek is soms aanvullende informatie
+vereist.</p></section><section id="objecttype-referentie-geluidbron"><h4 id="x6-3-19-objecttype-referentie-geluidbron"><span class="secno">6.3.19 </span>Objecttype Referentie geluidbron</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>Referentie geluidbron</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Een geometrische afbakening van een gebied of locatie die relevante informatie toevoegt over de geluidbron aan geluidbelastingkaarten voor het publiek.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Dit Objecttype bevat bijvoorbeeld de afbakening van een Industrieterrein, een horeca concentratiegebied of een ander aangewezen gebied. Een referentie gebiedsafbakening kent mogelijke een stuk meer invullingen. Binnen een geluidbelastingkaart bedoeld voor het publiek, vervult deze afbakening een informerende rol. In de geluidbelastingkaarten die aan de EEA gerapporteerd worden, spelen deze gebiedsafbakeningen geen rol. Een Referentie geluidbron is <strong>niet per se</strong> hetzelfde als een input-geluidgegeven of een geluidbrongegeven. Het gaat in dit geval namelijk niet om een geluidgegeven dat wordt gebruikt in een geluidberekening, maar om een afbakening die voor het publiek betekenisvolle informatie toevoegt over de geluidbron.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Ja</strong>. Dit betekent dat dit modelelement niet op zichzelf bestaat, maar dat het altijd wordt ingevuld door een meer specifiek objecttype. In dit geval is het nog niet precies bekend welke specifieke referentie gebiedsaanwijzingen er worden gebruikt in het werkveld.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>CMGeluidbelasting</td>
+</tr>
+</tbody></table></section><section id="objecttype-end-datamodel-df1_5-objecttype"><h4 id="x6-3-20-objecttype-end-datamodel-df1_5-objecttype"><span class="secno">6.3.20 </span>Objecttype END Datamodel DF1_5 Objecttype</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>END Datamodel DF1_5 Objecttype</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Objecttype afkomstig uit het END Datamodel dat extra bruikbare informatie toevoegt voor het publiek.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>De “Noise sources” (DF1_5) zijn objecttype afkomstig uit het END Datamodel. De Nederlandse vertaling hiervan, “geluidbronnen”, gebruiken we hier niet om verwarring te voorkomen met de input-geluidgegevens die worden gebruikt voor het berekenen van de geluidbelastingkaart.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Nee</strong></td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>END Datamodel</td>
+</tr>
+</tbody></table></section><section id="objecttype-stil-gebied"><h4 id="x6-3-21-objecttype-stil-gebied"><span class="secno">6.3.21 </span>Objecttype Stil gebied</h4><table>
+<thead>
+<tr>
+<th><strong>Naam</strong></th>
+<th>Stil gebied</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Definitie</strong></td>
+<td>Afbakening van een stil gebied zoals bedoeld in de Europese richtlijn omgevingslawaai.</td>
+</tr>
+<tr>
+<td><strong>Toelichting</strong></td>
+<td>Deze stille gebieden worden ook als DF7_10 gerapporteerd aan de EEA. In deze context zijn alleen de afbakening en het type stil gebied (<strong>quietAreaType)</strong> relevant voor de kaart voor het publiek.</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td><strong>Nee</strong>.</td>
+</tr>
+<tr>
+<td><strong>Herkomst</strong></td>
+<td>END Datamodel</td>
+</tr>
+</tbody></table></section></section><section id="oplossingsrichtingen-ten-grondslag-aan-het-cmgeluidbelasting"><h3 id="x6-4-oplossingsrichtingen-ten-grondslag-aan-het-cmgeluidbelasting"><span class="secno">6.4 </span>Oplossingsrichtingen ten grondslag aan het CMGeluidbelasting</h3><p>In deze paragraaf staan een aantal oplossingsrichtingen omschreven die aan de
+grondslag van het CMGeluidbelasting liggen. In de oplossingsrichtingen is de
+opgehaalde input vanuit het werkveld opgenomen. De oplossingsrichtingen zijn omschreven in de vorm van twee memo's.</p><section id="memo-centraal-aanleveren-van-lokale-geluidgegevens-van-agglomeratiegemeenten"><h4 id="x6-4-1-memo-centraal-aanleveren-van-lokale-geluidgegevens-van-agglomeratiegemeenten"><span class="secno">6.4.1 </span>Memo: Centraal aanleveren van lokale geluidgegevens van agglomeratiegemeenten</h4><p><strong>Huidige situatie</strong></p><p>Voor het samenstellen van een geluidmodel moeten vooral agglomeratiegemeenten
+veel stappen ondernemen. Agglomeraties zijn volgens de Europese Richtlijn
+Omgevingslawaai [bron] verplicht om geluidbelastingkaarten en -tabellen te
+berekenen. In deze kaarten en tabellen moet de geluidbelasting afkomstig van
+industrie, provinciale wegen, hoofdspoorwegen, lokale wegen, hoofdwegen en de
+luchtvaart worden meegenomen. Deze gegevens zijn voor een groot deel in beheer
+bij andere bronhouders, waardoor er veel informatiestromen ontstaan.</p><p><strong>Gewenste situatie</strong></p><p>De gegevens over geluidbelasting zijn landelijk gestandaardiseerd en worden
+efficiënt en eenvoudig via een landelijk gestandaardiseerd proces uitgewisseld.
+Hiermee bedoelen we dat gegevens over geluidbelasting uniform zijn zodat de
+informatieproducten als resultaat uit de berekeningen met deze gegevens, o.m.
+geluidbelastingkaarten, uniform in inhoud en kwaliteit zijn. De gegevens over
+geluidbelasting worden met zo min mogelijk informatiestromen uitgewisseld.</p><p><strong>Uitgangspunten</strong></p><ol>
+<li><p>Agglomeratie gemeenten zijn bronhouder van lokale geluidgegevens.</p>
+</li>
+<li><p>Lokale geluidgegevens bestaan uit de volgende gegevens over geluidsbelasting
+afkomstig van industrie, provinciale wegen, hoofdspoorwegen, lokale wegen,
+hoofdwegen en de luchtvaart.</p>
+</li>
+<li><p>Voor ‘centraal rekenen’ aan geluidbelastingkaarten zijn lokale
+geluidsgegegevens van agglomeratiegemeenten nodig.</p>
+</li>
+<li><p>Onder ‘centraal aanleveren’ verstaan we het leveren van gegevens aan de
+CVGG.</p>
+</li>
+</ol><p><strong>Alternatieven en keuzes</strong></p><p>Lokale geluidgegevens worden door agglomeratiegemeenten:</p><blockquote>
+<p>  Alternatief 1. <em>niet</em> centraal aangeleverd.</p>
+</blockquote><blockquote>
+<p>  Alternatief 2. <em>optioneel</em> centraal aangeleverd.</p>
+</blockquote><blockquote>
+<p>  Alternatief 3. <em>verplicht</em> centraal aangeleverd.</p>
+</blockquote><p>Kansen en risico’s van centraal aanleveren van lokale geluidgegevens door
+agglomeratiegemeenten zijn:</p><ol>
+<li><p>Met het centraal aanleveren van lokale geluidgegevens zijn we voorbereid op
+centraal rekenen.</p>
+</li>
+<li><p>Centraal aanleveren c.q. beschikbaarstellen van lokale geluidgegevens biedt
+mogelijkheden tot samenwerking zonder onderlinge <span title="Bij onderlinge informatiestromen tussen agglomeratiegemeenten en andere organisaties zijn er onderlinge afspraken over formaat en methode van uitwisselen. Er is geen landelijk gestandaardiseerd proces wat de uitwisseling van gegevens niet-uniform en mogelijk duur maakt door maatwerkkoppelvlakken en dataconversies."><strong>informatiestromen/uitwisseling [opmerking 1]</strong></span>.</p>
+</li>
+<li><p>De inname van lokale geluidgegevens moet technisch ingericht worden in de
+centrale voorziening.</p>
+</li>
+<li><p>Lokale geluidgegevens zijn <span title="Er is nu weinig uniformiteit door een gebrek aan standaardisatie op het gebied van verkeersmodellen. Elke gemeente organiseert zich nu zelf: er is geen landelijk gestandaardiseerd formaat en gestandaardiseerd proces."><strong>niet-uniform [opmerking 2]</strong></span>, waardoor de inhoud en kwaliteit
+van de gegevens die centraal aangeleverd en beschikbaargesteld worden,
+wisselend zijn.</p>
+</li>
+<li><p>Er lijkt <span title="Uit een eerder gehouden klankbordsessie met een select gezelschap van
+agglomeratiegemeenten bleek dat 80% niet voor een verplichting is voor het
+centraal aanleveren van lokale geluidgegevens. Dit betekent dat er een hoop
+werk ligt in de communicatie om agglomeratiegemeenten mee te krijgen in het
+alternatief ‘centraal aanleveren’."><strong>weinig draagvlak [opmerking 3]</strong></span> onder agglomeratiegemeenten voor het centraal
+aanleveren.</p>
+</li>
+</ol><ol start="6">
+<li>De toegevoegde gebruikerswaarde is niet bekend.</li>
+</ol><p><strong>Advies 1. Optioneel beginnen met centraal aanleveren en later verplichten.</strong></p><p>Het advies is om de CVGG voor te bereiden op de inname van lokale geluidgegevens
+en agglomeratiegemeenten de keuze te geven om lokale geluidgegevens optioneel
+(alternatief 2) te mogen laten aanleveren aan de CVGG. <span title="Bij Basisregistratie Grootschalige Topografie (BGT) bestaat het
+informatiemodel uit een verplicht deel, de BGT, en een optioneel deel, IMGeo. In
+2011 is de keuze gemaakt om om de Landelijke Voorziening BGT uit te breiden met
+de inname van optionele gegevens van IMGeo. De ervaring hiermee is dat
+bronhouders bij onder meer wegen en terreinen vrijwillig aanvullende gegevens
+over de functie en het fysieke voorkomen aanleveren, alsook dat bronhouders
+vrijwillig extra gegevens over bomen, straatmeubilair, speeltuinen e.d. leveren.
+In de doorontwikkeling van de BGT wordt bekeken welke optionele gegevens naar
+het verplichte deel gehaald kunnen en moeten worden. Deze beoordeling gebeurd op
+basis van de huidige vulling en de toegevoegde gebruikerswaarde."><strong>[opmerking 4]</strong></span> Dit om meer
+samenwerking en een reductie van informatiestromen te bereiken. Aandachtspunt is
+de communicatie richting agglomeratie om de toegevoegde waarde van centraal
+aanleveren en beschikbaarstellen te duiden. Op een later moment kan beoordeeld
+worden in hoeverre een verplichting moet gaan gelden voor het centraal
+aanleveren van lokale geluidgegevens (alternatief 3).</p><p><strong>Advies 2. Lokale geluidgegevens uniformeren</strong></p><p>Het advies is om vooraf of tegelijkertijd met het inregelen van de inname van
+lokale geluidsgegevens, te onderzoeken in hoeverre deze gegevens en het proces
+rond de inwinning/totstandkoming van deze gegevens gestandaardiseerd kan worden,
+bijvoorbeeld op het gebied van (rekenen met) verkeersmodellen. Dit om meer
+uniformiteit in inhoud en kwaliteit in de brongegevens en afgeleide
+informatieproducten (geluidbelastingkaarten) te bereiken.</p></section><section id="memo-geluidgevoelige-gebouwen-en-geluidbelastingkaarten"><h4 id="x6-4-2-memo-geluidgevoelige-gebouwen-en-geluidbelastingkaarten"><span class="secno">6.4.2 </span>Memo: Geluidgevoelige gebouwen en geluidbelastingkaarten</h4><p><strong>Huidige situatie</strong></p><p>Voor het maken van geluidbelastingkaarten zijn onder meer gegevens nodig over
+geluidgevoelige gebouwen <span title="Om het aantal gevoelige gebouwen binnen een contour, en het betreffende
+aantal personen dat verblijft binnen deze contour te kunnen bepalen."><strong>[opmerking 5]</strong></span>.</p><p>Een <span title="Gevoelig gebouw is (een deel van) een gebouw met een gebruiksfunctie
+zijnde woonfunctie, onderwijsfunctie, bijeenkomstfunctie van het type
+kinderopvang met bedgebied, of gezondheidszorgfunctie met bedgebied."><strong>geluidgevoelig gebouw [opmerking 6]</strong></span> is gedefinieerd in de Artikel 3.20 van het Besluit
+kwaliteit leefomgeving (Bkl).</p><p>Om het aantal geluidgevoelige objecten te bepalen, gebruiken overheden vaak
+<span title="In de BAG worden één of meer functies van het Bouwbesluit als gebruiksdoel
+bij een Verblijfsobject opgenomen; een Verblijfsobject maakt onderdeel uit van
+een Pand."><strong>BAG-bestanden [opmerking 7]</strong></span>. BAG-bestanden bevatten niet alle gegevens die nodig zijn om
+alle geluidgevoelige gebouwen te identificeren <span title="In de BAG wordt bij een Pand/Verblijfsobject niet vastgelegd of het object
+in gebruik is als ‘kinderopvang met bedfunctie’ of ‘gezondheidszorg met
+bedfunctie’."><strong>[opmerking 8]</strong></span>.</p><p>Combinatie met <span title="Voorbeelden van aanvullende hulpbronnen zijn bijvoorbeeld het Landelijk
+Register Kinderopvang (LRK), Basisregistratie Topografie (BRT), Digitaal
+Topografisch Bestand RWS (DTB RWS)"><strong>andere bronnen [opmerking 9]</strong></span>. is noodzakelijk om alle geluidgevoelige
+gebouwen te bepalen.</p><p>Rijkswaterstaat en ProRail hebben een <a href="https://www.infomil.nl/onderwerpen/geluid/nieuws/2017/tabellen/">eigen bestand</a> (voor hun interessegebied)
+met geluidgevoelige gebouwen, en stellen die op verzoek beschikbaar aan
+gemeenten en provincies.</p><p><strong>Gewenste situatie</strong></p><p>Het maken van geluidbelastingkaarten is efficiënt. Overheden kunnen eenvoudig en
+eenduidig een bestand met geluidgevoelige gebouwen samenstellen of afnemen.</p><p><strong>Uitgangspunten</strong></p><ol>
+<li><p>De informatie over geluidgevoelige gebouwen moet eerder beschikbaar zijn dan
+de geluidbelastingkaarten, zodat de gegevens ook door de beheerders van
+belangrijke geluidbronnen kunnen worden gebruikt.</p>
+</li>
+<li><p>De gegevens over geluidgevoelige gebouwen moeten worden aangeleverd door
+gemeenten, omdat in hun omgevingsplannen is bepaald welke functies zijn
+toegestaan en zij de lokale kennis hebben over details als bedgebied en
+kinderopvang.<span title="Met dit uitgangspunt vervalt het alternatief om buiten de BAG en
+IMGeluid om een landsdekkend bestand met geluidgevoelige gebouwen samen te
+stellen, welke los van de LV-BAG of CVGG beschikbaargesteld wordt aan andere
+overheden."><strong>[opmerking 10]</strong></span></p>
+</li>
+<li><p>Gegevens daar opslaan waar ze verzameld, opgeslagen, en beheerd worden. De
+bronhouders van de BAG zijn de gemeenten. Bronhouders voor de
+Geluidbelastingkaarten zijn ook de gemeenten.</p>
+</li>
+<li><p>De populatie geluidgevoelige gebouwen binnen Geluid is kleiner dan de
+populatie <a href="https://www.infomil.nl/onderwerpen/veiligheid/bevi-revi/@110701/kwetsbare-obecten/">kwetsbare gebouwen binnen Externe Veiligheid</a>.</p>
+</li>
+<li><p>De geluidbelastingkaarten hebben een actualisatie frequentie van 5 jaar. Met
+dat specifieke doel voor ogen hebben, moet er dus 5-jaarlijks een actueel
+bestand met geluidgevoelige gebouwen zijn. <span title="Tenzij het doel is om de geluidgevoelige gebouwen dataset structureel
+up-to-date te houden, waardoor die ook voor andere geluidberekeningen
+gebruikt kan worden."><strong>[opmerking 11]</strong></span></p>
+</li>
+<li><p>Voor END kaarten zijn totale aantallen gebouwen en gehinderden binnen een
+geluidcontour nodig. Het is niet nodig gegevens over de geluidgevoelige
+gebouwen zelf op te nemen in END kaarten.</p>
+</li>
+</ol><p><strong>Alternatief 1 Opnemen gegevens geluidgevoelige gebouwen in de BAG</strong></p><p>Het kenmerk ‘is geluidgevoelig’ wordt als verplicht gegeven toegevoegd aan de
+<span title="Het informatiemodel BAG is in beheer bij het Kadaster, opdrachtgever voor
+de BAG is min. BZK."><strong>BAG [opmerking 12]</strong></span>.</p><ol>
+<li><p>Bronhouders van de BAG (gemeenten) wordt gevraagd om hun werkproces en
+software hierop aan te passen, en de gegevens in te winnen en aan te leveren
+aan de LV-BAG.</p>
+</li>
+<li><p>De gegevens over geluidgevoelige gebouwen zijn hiermee actueel en
+landsdekkend beschikbaar voor meerdere toepassingen. Met levering aan de BAG
+kan dit gegeven ook meegenomen worden in het 3D Omgevingsmodel voor Geluid.</p>
+</li>
+<li><p>Bronhouder voor BAG en geluidbelastingkaarten zijn gemeenten; gegevens daar
+opslaan waar ze verzameld, opgeslagen, en beheerd worden.</p>
+</li>
+<li><p>Door gegevens over geluidgevoelige gebouwen mee te nemen in proces van de
+BAG wordt dit werkproces meteen binnen de gemeente geregeld.</p>
+</li>
+</ol><p><strong>Alternatief 2 Opnemen gegevens geluidgevoelige gebouwen in IMGeluid</strong></p><p>Het IMGeluid wordt uitgebreid met het object Geluidgevoelig gebouw. Dit is een
+uitbreiding op het informatiemodel Geluid, dus een Y-wijziging.</p><ol>
+<li><p>De populatie van geluidgevoelige gebouwen binnen IMGeluid is een subset van
+de panden in de BAG o.b.v. de criteria van de Bkl.</p>
+</li>
+<li><p>Leveren van gegevens aan CVGG is een apart werkproces voor de gemeenten. In
+principe komt er dan een extra verplichting / taak bij voor de gemeenten om
+in het geval een wijzigingen in de BAG, ook steeds een bijgewerkte versie
+aan te leveren aan CVGG.</p>
+</li>
+<li><p>Borging van de actualiteit is een aandachtspunt. In het kader van END zou
+eens per 5 jaar geactualiseerd hoeven worden.</p>
+</li>
+</ol><p><strong>Alternatief 3 Opnemen kenmerk ‘is geluidgevoelig’ in het 3D geluidbestand NL</strong></p><p>Het 3D geluidbestand NL bevat een beschrijving van het hoogteverloop van het
+terrein, de eigenschappen van het bodemoppervlak en de geometrie van gebouwen.
+De modelinformatie van de fysieke ruimte die nodig is voor het uitvoeren van
+geluidssimulaties wordt gegenereerd aan de hand van landsdekkende
+gegevensbronnen BGT, BAG en AHN.</p><ol>
+<li><p>De eigenschap ‘geluidgevoelig gebouw’ wordt op basis van aanvullende bronnen
+(welke?) toegevoegd aan het 3D geluidbestand NL, dus een Y-wijziging.</p>
+</li>
+<li><p>Het 3D geluidbestand NL is momenteel beschikbaar als bèta-bestand als
+resultaat uit een samenwerking tussen Kadaster, RWS, TU Delft, RIVM en IPO.</p>
+</li>
+</ol><p><strong>Alternatief 4 Methode EV kwetsbare objecten</strong></p><p>In het Besluit kwaliteit leefomgeving (Bkl) staan 3 categorieën voor de
+bescherming voor verschillende soorten gebouwen en locaties: zeer kwetsbaar,
+kwetsbaar en beperkt kwetsbaar. De gemeente moet regels opnemen in het
+omgevingsplan om deze gebouwen en locaties te beschermen vanwege externe
+veiligheidsrisico's.</p><p>De gegevens van EV kwetsbare objecten zijn opgenomen in de risicokaart.
+Provincies maken en beheren de risicokaart op basis van aangeleverde gegevens
+door gemeenten, Rijk en provincies zelf <a href="https://www.atlasleefomgeving.nl/kwetsbare-objecten">(Zie atlas van de Leefomgeving)</a> De gegevens worden o.m. als
+<a href="http://servicespub.risicokaart.nl/rk_services_pub/services/WFS-risicokaart">WFS</a> <span title="In meerdere lagen met verschillende type kwetsbare objecten, onder meer
+gebouwen met gezondheidszorgfunctie, onderwijsfunctie, woonfunctie of overige
+functie."><strong>beschikbaar gesteld [opmerking 13]</strong></span>. De populatie <a href="https://iplo.nl/thema/externe-veiligheid/kwetsbare-gebouwen/">kwetsbare objecten voor Externe
+Veiligheid</a> is ruimer dan de populatie van <span title="Voor
+Geluid worden een subset van de gezondheidszorg- en kinderopvanglocaties
+gehanteerd, namelijk enkel die gebouwen met een bedfunctie."><strong>geluidgevoelige gebouwen voor domein Geluid [opmerking 14]</strong></span>. Toepassing van het bestand Kwetsbare objecten van EV voor
+geluidberekeningen rekent dus met iets ruimere populatie. Het is onbekend in
+hoeverre de nauwkeurigheid van de geluidbelastingkaarten hierdoor wordt
+beïnvloed.
+&lt;/generalisatie&gt;
+&lt;/relatiesoort&gt;</p></section></section></section>
+        <section id="bijlage" data-format="markdown" class="appendix" aria-busy="false"><!--OddPage--><h2 id="a-bijlage"><span class="secno">A. </span>Bijlage</h2><section id="bijlage-1-de-inhoud-van-geluidbelastingkaarten-volgens-de-omgevingsregeling"><h3 id="a-1-bijlage-1-de-inhoud-van-geluidbelastingkaarten-volgens-de-omgevingsregeling"><span class="secno">A.1 </span>Bijlage 1: de inhoud van geluidbelastingkaarten volgens de omgevingsregeling</h3><table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Artikel uit de Omgevingsregeling</strong></th>
+<th><strong>Gegeven</strong></th>
+<th><strong>Soort gegeven</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td><strong>Contouren voor wegen, spoorwegen, luchthavens en industrieterreinen</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>12.76b, 12.77, eerste lid onder c, 12.78 onder c, 12.83</td>
+<td>De geografische kaarten geven per bron aan: de geluidbelasting Lden en de geluidbelasting Lnight veroorzaakt door de bron, met de volgende contouren:</td>
+<td></td>
+</tr>
+<tr>
+<td>1a</td>
+<td></td>
+<td>55, 60, 65, 70 en 75&nbsp;dB Lden;</td>
+<td>contouren</td>
+</tr>
+<tr>
+<td>1b</td>
+<td></td>
+<td>50, 55, 60, 65 en 70&nbsp;dB Lnight;</td>
+<td>contouren</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Overige gegevens</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2a</td>
+<td>Art. 12.75, 12.83</td>
+<td>de grenzen van gemeenten</td>
+<td>Open data</td>
+</tr>
+<tr>
+<td>2b</td>
+<td>Art. 12.83</td>
+<td>de grenzen van agglomeraties</td>
+<td>Open data</td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td>de grenzen van de stille gebieden, bedoeld in de artikelen 4.23, derde lid, en 4.24, tweede lid, van het Besluit kwaliteit leefomgeving</td>
+<td>Gebied / vlak</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Wegen en spoorwegen</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Art. 12.76, 12.83</td>
+<td>de ligging van de wegen en spoorwegen</td>
+<td>Lijnen</td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td>de geluidgevoelige gebouwen die liggen binnen de contouren</td>
+<td>Gebouwen uit het BAG</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Luchthavens</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>12.77, eerste lid: burgerluchthavens excl Schiphol; 12.83</td>
+<td>de ligging van de luchthaven met het banenstelsel</td>
+<td>Vlak / lijnen</td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td>een beperkingengebied als bedoeld in hoofdstuk&nbsp;8 of artikel 10.17 van de Wet luchtvaart</td>
+<td>vlak</td>
+</tr>
+<tr>
+<td>8</td>
+<td></td>
+<td>de geluidgevoelige gebouwen die liggen binnen de contouren</td>
+<td>Gebouwen uit het BAG</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>12.77, tweede lid: Schiphol; 12.83</td>
+<td>de ligging van de luchthaven met het banenstelsel</td>
+<td>Vlak / lijnen</td>
+</tr>
+<tr>
+<td>10</td>
+<td></td>
+<td>de waarde of waarden van de ten hoogste toelaatbare geluidbelasting;</td>
+<td>Waarden bij de punten</td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+<td>de punten buiten de luchthaven waar de ten hoogste toelaatbare geluidbelasting door de luchthaven is bepaald; en</td>
+<td>punt</td>
+</tr>
+<tr>
+<td>12</td>
+<td></td>
+<td>de geluidgevoelige gebouwen die de ten hoogste toelaatbare geluidbelasting door de luchthaven ondervinden.</td>
+<td>Gebouwen uit het BAG</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Industrieterreinen</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>12.78</td>
+<td>de grenzen van het industrieterrein;</td>
+<td>contour</td>
+</tr>
+<tr>
+<td>14</td>
+<td></td>
+<td>het geluidaandachtsgebied rond een industrieterrein, vastgesteld op grond van artikel 3.29 van het Besluit kwaliteit leefomgeving;</td>
+<td>Gebied / vlak</td>
+</tr>
+<tr>
+<td>15</td>
+<td></td>
+<td>de geluidgevoelige gebouwen die liggen binnen de contouren.</td>
+<td>Gebouwen uit het BAG</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Gebieden met een hogere waarde</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>12.79</td>
+<td>de grenzen van het gebied waarvoor een hogere waarde is vastgesteld;</td>
+<td>Gebied / vlak</td>
+</tr>
+<tr>
+<td>17</td>
+<td></td>
+<td>de ten hoogste toelaatbare geluidbelasting Lden en geluidbelasting Lnight door de activiteiten op omliggende geluidgevoelige gebouwen; en</td>
+<td>Waarde bij het gebied</td>
+</tr>
+<tr>
+<td>18</td>
+<td></td>
+<td>de geluidgevoelige gebouwen die liggen binnen het gebied, bedoeld onder a.</td>
+<td>Gebouwen uit het BAG</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Individuele activiteiten</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td>12.80</td>
+<td>de locatie waar de activiteit wordt verricht;</td>
+<td>Gebouw uit het BAG</td>
+</tr>
+<tr>
+<td>20</td>
+<td></td>
+<td>de waarde van de ten hoogste toelaatbare geluidbelasting;</td>
+<td>Waarden bij de punten</td>
+</tr>
+<tr>
+<td>21</td>
+<td></td>
+<td>de punten buiten de begrenzing van de locatie waar de ten hoogste toelaatbare geluidbelasting door de activiteit is bepaald; en</td>
+<td>punt</td>
+</tr>
+<tr>
+<td>22</td>
+<td></td>
+<td>de geluidgevoelige gebouwen die de ten hoogste toelaatbare geluidbelasting door de activiteit ondervinden.</td>
+<td>Gebouwen uit het BAG</td>
+</tr>
+</tbody></table></section><section id="bijlage-2-verschillen-cnossos-en-nederlandse-rmg"><h3 id="a-2-bijlage-2-verschillen-cnossos-en-nederlandse-rmg"><span class="secno">A.2 </span>Bijlage 2: Verschillen CNOSSOS en Nederlandse RMG</h3><p>Voor een meer uitgebreide omschrijving van de verschillen zie <a href="https://geonovum.github.io/IMG/END/#bijlage-4-verslag-van-de-interviews-met-geluidexperts">het interviewverslag</a></p><table>
+<thead>
+<tr>
+<th></th>
+<th>CNOSSOS</th>
+<th>Nederlandse reken- en meetvoorschrift geluid (RMG)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Kruispunt toeslag</td>
+<td>In CNOSSOS kruispunttoeslag is een soort emissietoeslag op een weg deel</td>
+<td>In bijlage V RMG en bijlage IVg Or is dit uitdrukkelijk uitgesloten, en dat was ook zo voor de voorgaande karteringsrondes (bijlage VII RMG).</td>
+</tr>
+<tr>
+<td>Hellingscorrectie</td>
+<td>In CNOSSOS voor de berekening van hellingcorrectie, snelheid is ook meegenomen (naast het hellingpercentage).</td>
+<td>In bijlage V RMG en bijlage IVg Or is dit uitdrukkelijk uitgesloten, en dat was ook zo voor de voorgaande karteringsrondes (bijlage VII reken en meetvoorschrift).</td>
+</tr>
+<tr>
+<td>Booggeluid</td>
+<td>Booggeluid kent een toeslag afhankelijk van de boogstraal en lengte van de spoorbaan en afhankelijk van de vraag of het een gewone boog is of een wisselboog</td>
+<td>Dit bestaat (nog) niet in de RMG.</td>
+</tr>
+<tr>
+<td>Voertuig categorieën</td>
+<td>In CNOSSOS vallen bussen en touring cars met drie of meer assen onder zware motorvoertuigen</td>
+<td>In het Nederlandse reken en meet voorschrift vallen bussen (en touring cars met drie of meer assen) onder middel zware motorvoertuigen. Het aantal dat binnen deze categorie valt zou verwaarloosbaar kunnen zijn ten opzichte van het totaal. Met RIVM en wegbeheerders moeten nog afspraken worden gemaakt over hoe hier mee om zal worden gegaan.</td>
+</tr>
+<tr>
+<td>Reflecterende schermen bij spoorwegen</td>
+<td>Voor spoorwegen worden bij CNOSSOS met specifieke meermaals weerkaatsende reflecties gerekend (die heen en weer gaan). Volgens het Nederlandse reken- en meetvoorschrift is een scherm altijd absorberend, maar bij CNOSSOS moet je weten of iets een reflecterend scherm is.</td>
+<td>In Nederland rekenen wij standaard niet met reflectie van een scherm. Alleen als er een reflecterend scherm is, dan krijgt die een vervangende hoogte. Dit gaat specifiek over de schermen die langs sporen liggen. In het Nederlandse voorschrift hebben wij een aanpassing om het scherm te verlagen.</td>
+</tr>
+<tr>
+<td>Profielcorrectiewaarde industrie</td>
+<td>De profielcorrectie in geluidschermen en Bouwwerken speelt geen rol in CNOSSOS.</td>
+<td>In de Nederlandse reken en meetvoorschriften wordt de profielcorrectiewaarde gebruikt om de afschermende werking van een overdrachtobject aan te passen,</td>
+</tr>
+<tr>
+<td>Procesinstallatiegebied en vegetatiegebied industrie</td>
+<td>Het procesinstallatie- en vegetatiegebied worden niet gebruikt in CNOSSOS.</td>
+<td>Volgens de Nederlandse Reken- en meetvoorschriften kunnen een vegetatiegebied en procesinstallatiegebied gebruikt worden.</td>
+</tr>
+<tr>
+<td>Luchtdempingswaarde bij industrie</td>
+<td>CNOSSOS hanteert een standaard luchtdemping, dus je mag geen eigen luchtdempingswaarden aanleveren.</td>
+<td>De Nederlandse reken- en meetvoorschriften staan het toe om nieuwe luchtdempingswaarden aan te leveren.</td>
+</tr>
+<tr>
+<td>Bovenbouwconstructies trams</td>
+<td>CNOSSOS hanteert 5 specifieke bovenbouw categorieën voor trams. Een trambaandeel zou dus waarschijnlijk een specifiek object zijn in CNOSSOS.</td>
+<td>Trams in Nederland vallen binnen categorie 10. Deze categorie heeft andere bovenbouwvarianten dan CNOSSOS.</td>
+</tr>
+<tr>
+<td>Motorvoertuigen tweewielers</td>
+<td>In CNOSSOS wordt er onderscheid gemaakt tussen brommers en motoren met de categorie “Powered two wheelers” (cat 4).</td>
+<td>In de Nederlandse reken- en meetvoorschriften bestaat er geen onderscheid tussen brommers en motoren. Met RIVM en wegbeheerders moeten nog afspraken worden gemaakt over hoe hier mee om zal worden gegaan.</td>
+</tr>
+</tbody></table></section><section id="bijlage-3-wijzigingsvoorstellen-imgeluid"><h3 id="a-3-bijlage-3-wijzigingsvoorstellen-imgeluid"><span class="secno">A.3 </span>Bijlage 3: Wijzigingsvoorstellen IMGeluid</h3><p>Op basis van een eerdere lijst van geïdentificeerde verschillen met CNOSSOS, is een lijst met wijzigingsvoorstellen samengesteld in <a href="https://github.com/Geonovum/IMG/raw/gh-pages/END/media/20210430%20Wijzingsvoorstellen%20uitbreiding%20IMGeluid.xlsx">deze excel</a>. </p><p>Later zijn ook de verschillen voor industrie en lokaal spoor toegevoegd aan de lijst zoals te lezen in <a href="#bijlage-2-verschillen-cnossos-en-nederlandse-rmg">Bijlage 2</a>. Deze zijn nog niet verwerkt in de lijst met wijzigingsvoorstellen, omdat op dit punt al besloten was het IMGeluid op het moment niet uit te breiden.</p></section><section id="bijlage-4-verslag-van-de-interviews-met-geluidexperts"><h3 id="a-4-bijlage-4-verslag-van-de-interviews-met-geluidexperts"><span class="secno">A.4 </span>Bijlage 4: Verslag van de interviews met geluidexperts</h3><p>Geonovum heeft in maart 2021 interviews afgenomen met verschillende belanghebbenden op rijks, provincie en gemeentelijk niveau over de geluidrapportage aan de EU. Geonovum wilde de huidige processen, aandachtspunten en de perspectief van de stakeholders voor toekomstige verbeteringen begrijpen voor de uitbreiding van het informatiemodel. Een verslag van de interviews valt <a href="https://github.com/Geonovum/IMG/raw/gh-pages/END/media/Verslag%20interviews%20maart%202021%20v1.0rc1.pdf">hier te lezen</a>.</p></section></section>
+    
+
+<p role="navigation" id="back-to-top"><a href="#title">
+  <abbr title="Naar begin">↑</abbr></a></p><script src="https://www.w3.org/scripts/TR/2016/fixup.js"></script></body></html>
