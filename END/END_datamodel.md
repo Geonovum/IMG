@@ -4,13 +4,7 @@ END-Datamodel
 Het nieuwe END-Datamodel
 ----------------------------
 
-Het END-Datamodel is ontwikkeld om te voldoen aan de rapportageverplichtingen
-die in de END richtlijn zijn gespecificeerd. Het is ontwikkeld om de rapportage
-door de lidstaten in een gemeenschappelijk formaat te vergemakkelijken.
-Tegelijkertijd verwijzen verschillende INSPIRE-thema’s naar use-cases rondom
-omgevingslawaai, waaronder de rapportage in kader van de END. Daarom zijn
-verschillende overwegingen in acht genomen bij de ontwikkeling van het nieuwe
-END-datamodel:
+Het END-Datamodel is ontwikkeld om te voldoen aan de rapportageverplichtingen die in de END richtlijn zijn gespecificeerd. Het is ontwikkeld om de rapportage door de lidstaten in een gemeenschappelijk formaat te vergemakkelijken. Tegelijkertijd verwijzen verschillende INSPIRE-thema’s naar use-cases rondom omgevingslawaai, waaronder de rapportage van geluidbelastingkaarten aan de EEA. Daarom zijn verschillende overwegingen in acht genomen bij de ontwikkeling van het nieuwe END-datamodel:
 
 -   Om te zorgen voor overeenstemming met beide richtlijnen, betreffende de
     END-rapportagecycli en de volledige implementatie-routekaart van de
