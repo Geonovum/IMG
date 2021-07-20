@@ -166,11 +166,3 @@ Bij het berekenen van geluidbelastingkaarten wordt een meer gedetailleerd
 omgevingsmodel gebruikt. Dit omgevingsmodel bevat (3D) informatie over de
 omliggende gebouwen en het terrein.
 
-## Leeswijzer
-Dit document is gestructureerd in 6 hoofdstukken. 
-- [Hoofdstuk 2](#achtergrond_richtlijnen) bevat achtergrondinformatie over de verschillende richtlijnen. 
-- [Hoofdstuk 3](#end_datamodel) bevat een overzicht van het nieuwe END Datamodel.
-- [Hoofdstuk 4](#huidige_situatie) omschrijft de huidige situatie rondom de rapportage van geluidbelastingkaarten en tabellen.
-- [Hoofdstuk 5](#toekomstige_situatie) omschrijft een toekomstperspectief rondom de rapportage van geluidbelastingkaarten en -tabellen.
-- [Hoofdstuk 6](#IMGeluidbelasting) bevat het Conceptueel Model Geluidbelasting en een aantal oplossingsrichtingen die daaraan ten grondslag liggen.
-- [Bijlage](#bijlage) bevat grote tabellen en links naar losse bestanden zoals het [interviewverslag]().
