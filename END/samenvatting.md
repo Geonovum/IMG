@@ -64,3 +64,13 @@ In scope van dit document is:
 
 -   Actieplannen vallen buiten de scope.
 
+## Leeswijzer
+Dit document is gestructureerd in 6 hoofdstukken. 
+- [Hoofdstuk 1](#inleiding) introduceert een aantal fundamentele concepten.
+- [Hoofdstuk 2](#achtergrond_richtlijnen) beschrijft de relevante Europese richtlijnen. 
+- [Hoofdstuk 3](#end_datamodel) bevat een overzicht van het nieuwe END Datamodel.
+- [Hoofdstuk 4](#huidige_situatie) geeft een beschrijving van t de huidige situatie rondom de rapportage van geluidbelastingkaarten en -tabellen. 
+- [Hoofdstuk 5](#toekomstige_situatie) omschrijft de toekomstvisie rondom de rapportage van geluidbelastingkaarten en -tabellen.
+- [Hoofdstuk 6](#IMGeluidbelasting) bevat het Conceptueel Model Geluidbelastingkaarten.
+- [Bijlage](#bijlage) bevat grote tabellen en links naar losse bestanden zoals het [interviewverslag](#bijlage-4-verslag-van-de-interviews-met-geluidexperts).
+
