@@ -101,8 +101,8 @@ var respecConfig =
   //pubDomain: "wp", 	              // White Paper
   //-- Repositorynaam op GitHub -------------------------------------------------------
   github: "https://github.com/Geonovum/IMG",
-  //-- Repositorynaam/issues op GitHub ------------------------------------------------
-  issueBase: "mailto:img@geonovum.nl",
+  //-- Repositorynaam/issues op GitHub veranderd naar Jira helpdesk ------------------------------------------------
+  issueBase: "mailto:img%40geonovum%2E.nl",
   //-- edDraftURI: de URI van de werkversie van het document
   edDraftURI: "https://geonovum.github.io/IMG",
   //-- license: voor de geldende gebruiksvoorwaarden
