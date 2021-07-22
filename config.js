@@ -146,7 +146,7 @@ var respecConfig =
     "NEN3610": {
       id: "NEN 3610:2011 nl",
       title: "NEN 3610:2011 nl - Basismodel geo-informatie - Termen, definities, relaties en algemene regels voor de uitwisseling van informatie over aan de aarde gerelateerde ruimtelijke objecten",
-      href: "https://www.nen.nl/NEN-Shop/Norm/NEN-36102011-nl.htm",
+      href: "https://www.geonovum.nl/geo-standaarden/nen-3610-basismodel-voor-informatiemodellen",
       status: "Definitief",
       publisher: "NEN",
       date: "2011-03-01"
