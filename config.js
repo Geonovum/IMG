@@ -103,7 +103,7 @@ var respecConfig =
   github: "https://github.com/Geonovum/IMG",
   //-- Repositorynaam/issues op GitHub veranderd naar Jira helpdesk ------------------------------------------------
   // issueBase: "mailto:img%40geonovum%2E.nl",
-  issueBase: "https://www.geonovum.nl/geo-standaarden/informatiemodel-geluid?search?text=Helpdesk#helpdesk",
+  // issueBase: "https://www.geonovum.nl/geo-standaarden/informatiemodel-geluid?search?text=Helpdesk#helpdesk",
   //-- edDraftURI: de URI van de werkversie van het document
   edDraftURI: "https://geonovum.github.io/IMG",
   //-- license: voor de geldende gebruiksvoorwaarden
