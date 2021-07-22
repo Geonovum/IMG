@@ -102,7 +102,7 @@ var respecConfig =
   //-- Repositorynaam op GitHub -------------------------------------------------------
   github: "https://github.com/Geonovum/IMG",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
-  issueBase: "https://github.com/Geonovum/IMG/issues/",
+  issueBase: "mailto:img@geonovum.nl",
   //-- edDraftURI: de URI van de werkversie van het document
   edDraftURI: "https://geonovum.github.io/IMG",
   //-- license: voor de geldende gebruiksvoorwaarden
