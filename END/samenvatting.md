@@ -17,9 +17,9 @@ is het gebruik van een nieuw datamodel verplicht en gelden de eisen vanuit
 Europese richtlijn INSPIRE.
 
 Om de geluidbelastingkaarten te kunnen maken, worden er tussen verschillende
-overheden geluidbrongegevens uitgewisseld en worden bewerkingen op de gegevens
-uitgevoerd. Deze informatiestromen van geluidbrongegevens zijn in dit document
-in kaart gebracht. Aanpassing van het model, door deze geluidbrongegevens aan
+overheden geluidgegevens uitgewisseld en worden bewerkingen op de gegevens
+uitgevoerd. Deze informatiestromen van geluidgegevens zijn in dit document
+in kaart gebracht. Aanpassing van het model, door deze geluidgegevens aan
 het model toe te voegen, kan aan de orde zijn, wanneer dit bijdraagt aan een
 optimale gegevensuitwisseling.
 
@@ -57,7 +57,7 @@ In scope van dit document is:
 
 -   Een omschrijving van een conceptueel model geluidbelastingkaarten dat
     inzicht geeft in informatiestromen en de rol en herkomst van geluidgegevens
-    met betrekking op geluidbelastingkaarten en -tabellen;
+    met betrekking op geluidbelastingkaarten;
 
 -   In dit document is bovendien een verslag opgenomen, van de, gedurende het
     project opgehaalde informatie;
@@ -67,10 +67,18 @@ In scope van dit document is:
 ## Leeswijzer
 Dit document is gestructureerd in 6 hoofdstukken. 
 - [Hoofdstuk 1](#inleiding) introduceert een aantal fundamentele concepten.
-- [Hoofdstuk 2](#achtergrond_richtlijnen) beschrijft de relevante Europese richtlijnen. 
-- [Hoofdstuk 3](#end_datamodel) bevat een overzicht van het nieuwe END Datamodel.
-- [Hoofdstuk 4](#huidige_situatie) geeft een beschrijving van t de huidige situatie rondom de rapportage van geluidbelastingkaarten en -tabellen. 
-- [Hoofdstuk 5](#toekomstige_situatie) omschrijft de toekomstvisie rondom de rapportage van geluidbelastingkaarten en -tabellen.
-- [Hoofdstuk 6](#IMGeluidbelasting) bevat het Conceptueel Model Geluidbelasting.
+- [Hoofdstuk 2](#achtergrond_richtlijnen) beschrijft de relevante Europese richtlijnen. Dit hoofdstuk geeft een korte toelichting over de richtlijn omgevingslawaai, de
+INSPIRE-richtlijn en geeft een overzicht van het nieuwe datamodel dat is
+ontwikkeld voor de richtlijn omgevingslawaai om te voldoen aan de vereisten
+volgens de INSPIRE-richtlijn en de daarbij behorende [INSPIRE
+dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892). In [2.3](#richtlijn-omgevingslawaai) en [2.4](#richtlijn-inspire) worden
+de richtlijn omgevingslawaai (END) en richtlijn INSPIRE toegelicht. In
+- [Hoofdstuk 3](#end_datamodel) bevat een overzicht van het nieuwe END Datamodel. [hoofdstuk 3](#end_datamodel) staat het nieuwe datamodel dat voor de richtlijn
+omgevingslawaai (END) ontwikkeld is beschreven. Paragraaf [3.3](#end-mapping-naar-inspire-thema-s)
+bevat een mapping van ruimtelijke data uit het END Datamodel op INSPIRE
+ruimtelijke thema's.
+- [Hoofdstuk 4](#huidige_situatie) geeft een beschrijving van de huidige situatie rondom de rapportage van geluidbelastingkaarten. 
+- [Hoofdstuk 5](#toekomstige_situatie) omschrijft de toekomstperspectief rondom de rapportage van geluidbelastingkaarten.
+- [Hoofdstuk 6](#IMGeluidbelasting) bevat het Conceptueel Model Geluidbelastingkaarten.
 - [Bijlage](#bijlage) bevat grote tabellen en links naar losse bestanden zoals het [interviewverslag](#bijlage-4-verslag-van-de-interviews-met-geluidexperts).
 

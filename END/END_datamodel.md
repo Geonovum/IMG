@@ -79,10 +79,10 @@ De volgende domeinenmodellen zijn gedefinieerd:
 
 -   Strategische geluidbelastingkaart (DF4_8): met informatie over:
 
--   Gegevens over blootstelling aan lawaai: geschat aantal mensen dat in
+    -   Gegevens over blootstelling aan lawaai: geschat aantal mensen dat in
     gebieden woont die de END-geluidrapportagedrempels overschrijden;
 
--   Geluidcontouren: geven de ruimtelijke omvang van de geluidniveaus weer voor
+    -   Geluidcontouren: geven de ruimtelijke omvang van de geluidniveaus weer voor
     verschillende geluidbelasting indicatoren;
 
 -   Lawaaibeheersing programma’s (DF6_9): informatie over
@@ -91,10 +91,10 @@ De volgende domeinenmodellen zijn gedefinieerd:
 
 -   Geluid actieplannen en Stille gebieden (DF7_10): informatie over
 
--   Actieplannen om geluidproblemen en de gevolgen daarvan te verminderen en te
+    -   Actieplannen om geluidproblemen en de gevolgen daarvan te verminderen en te
     beheersen;
 
--   Bescherming en behoud van stille gebieden in agglomeraties of in open
+    -   Bescherming en behoud van stille gebieden in agglomeraties of in open
     gebied.
 
 De domeinmodellen zijn met elkaar verbonden en maken het mogelijk om de data uit
@@ -108,7 +108,7 @@ uitsluitend de jaarlijkse verkeersstroom in DF1_5 worden gerapporteerd. Voor
 wegverkeer behoren verkeerssamenstelling, snelheden en wegdeksoort daar niet toe
 en voor spoorwegen en luchthavens geldt iets soortgelijks. Het verschil tussen
 de geluidbronnen (DF1_5) en de geluidgegevens met betrekking tot monitoring in
-IMGeluid is uitgelegd in [1.3](#verschil-tussen-berekeningen-t-b-v-geluidmonitoring-en-belasting).
+IMGeluid is uitgelegd in [1.4](#environmental-noise-directive-end-datamodel-en-informatiemodel-geluid-imgeluid).
 
 Voor de rapportage van bevoegde instanties (DF_2) zijn geen ruimtelijke gegevens
 nodig. De bevoegde instanties van wegen en spoorwegen, die verantwoordelijk zijn

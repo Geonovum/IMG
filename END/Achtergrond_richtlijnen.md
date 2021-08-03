@@ -15,16 +15,6 @@ de lidstaten gegevens aanleveren, is niet in overeenstemming met de
 INSPIRE-richtlijn. Daarom is door het Europees Milieuagentschap een nieuw
 datamodel ontwikkeld dat voldoet aan zowel de END- als de INSPIRE-vereisten.
 
-Dit hoofdstuk geeft een korte toelichting over de richtlijn omgevingslawaai, de
-INSPIRE-richtlijn en geeft een overzicht van het nieuwe datamodel dat is
-ontwikkeld voor de richtlijn omgevingslawaai om te voldoen aan de vereisten
-volgens de INSPIRE-richtlijn en de daarbij behorende [INSPIRE
-dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892). In [2.3](#richtlijn-omgevingslawaai) en [2.4](#richtlijn-inspire) worden
-de richtlijn omgevingslawaai (END) en richtlijn INSPIRE toegelicht. In
-[hoofdstuk 3](#end_datamodel) staat het nieuwe datamodel dat voor de richtlijn
-omgevingslawaai (END) ontwikkeld is beschreven. Paragraaf [3.3](#end-mapping-naar-inspire-thema-s)
-bevat een mapping van ruimtelijke data uit het END Datamodel op INSPIRE
-ruimtelijke thema's.
 
 Naam en Acroniemen
 ----------------------
@@ -150,7 +140,7 @@ Voor alle 34 INSPIRE thema’s is in juridisch bindende vereisten vastgelegd,
 welke data op welke wijze moeten worden uitgewisseld. Voor elk thema is een
 bindend datamodel opgesteld met objecten (featuretypes), attributen, datatypes,
 waarde lijsten etc. Daarnaast zijn er bindende afspraken over het formaat waarin
-uitgewisseld wordt, de encoding1 en het te gebruiken coördinaat referentie
+uitgewisseld wordt, de encoding en het te gebruiken coördinaat referentie
 systeem. Ook zijn de laagnamen en stijlen voor de verbeelding in de viewservice
 vastgelegd.
 
@@ -164,8 +154,7 @@ harmoniseren volgens, in overeenstemming met deze technische specificaties.
 Algemene Termen en definities
 ---------------------------------
 
-Lijst van termen en definities die in deze beschrijving worden gehanteerd,
-gesorteerd op alfabetische volgorde. Verder aanvullend hierop wordt de
+Lijst van termen en definities die in deze beschrijving worden gehanteerd. Verder aanvullend hierop wordt de
 terminologie van het [MIM](https://docs.geostandaarden.nl/mim/mim/) en
 [IMGeluid](https://docs.geostandaarden.nl/cvgg/img/) gevolgd.
 
@@ -192,7 +181,7 @@ Algemene Symbolen en afkortingen
 | **Afkortingen**       | **Betekenissen**                                 |
 |-----------------------|--------------------------------------------------|
 | **AM**                | Area Management                                  |
-| **CMGeluidbelasting** | Conceptueel Model Geluidbelasting                |
+| **CMGeluidbelastingkaarten** | Conceptueel Model Geluidbelastingkaarten                |
 | **DF**                | Data flow                                        |
 | **EEA**               | European Environment Agency                      |
 | **END**               | Environmental Noise Directive                    |

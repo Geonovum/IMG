@@ -4,7 +4,7 @@ Inleiding
 Positie van het IMGeluid
 ------------------------
 
-In de toekomst is het mogelijk wenselijk om ook geluidgegevens ten behoeve van geluidbelastingkaarten  te kunnen uitwisselen via de CVGG. Voor het uitwisselen van geluidgegevens tussen bronhouders en de CVGG is een informatiemodel ontwikkeld: het Informatiemodel Geluid (IMGeluid).
+Voor het uitwisselen van geluidgegevens tussen bronhouders en de CVGG is een informatiemodel ontwikkeld: het Informatiemodel Geluid (IMGeluid). De Cvgg ondersteunt de monitoring van geluid van (spoor)wegen en industrie met de instrumenten geluidproductieplafonds en de basisgeluidemissie. In de toekomst is het mogelijk wenselijk om ook geluidgegevens ten behoeve van geluidbelastingkaarten  te kunnen uitwisselen via de CVGG. 
 
 Het IMGeluid is een [logisch informatiemodel](https://docs.geostandaarden.nl/mim/mim/#niveau-3-logisch-informatie-of-gegevensmodel) dat onlosmakelijk verbonden is met de CVGG. Wanneer besloten wordt dat de CVGG geschikt moet zijn voor uitwisseling van deze gegevens, zal het IMGeluid op onderdelen moeten worden uitgebreid. Om de precieze uitbreiding van het IMGeluid te kunnen bepalen, is het nodig om het Informatiemodel Geluid te positioneren binnen de informatiestromen voor het rapporteren van geluidbelastingkaarten aan de Europese Commissie. Het helpt dan om ten eerste  de huidige situatie in kaart te brengen. Hiervoor zijn diverse interviews gehouden met belanghebbenden/bronhouders. 
 Deze interviews omvatten het perspectief van alle groepen belanghebbenden die door het Ministerie van Infrastructuur en Waterstaat (I&W) geïdentificeerd zijn. Sommige van deze groepen komen overeen met het aangemerkte bestuursorgaan. Andere groepen komen overeen met de [bronhouders van geluidgegevens]( https://www.begrippenxl.nl/dso/en/page/Bronhouder?clang=nl). In Tabel 1 staan deze groepen stakeholders omschreven.
@@ -16,14 +16,14 @@ Deze interviews omvatten het perspectief van alle groepen belanghebbenden die do
 | Provincies                                           | De provincies vormen de bestuurslaag tussen de rijksoverheid en de Nederlandse gemeenten. Het Europese deel van Nederland is verdeeld in twaalf provincies die elk hun eigen volksvertegenwoordiging en bestuur hebben.                                                                                                                                                                                                                                                                                                                                                                                                                                                            | De provincies zijn bestuursorgaan en bronhouder m.b.t. Provinciale wegen, luchthavens van regionale betekenis en lokale spoorwegen met een verkeersintensiteit van meer dan 30.000 treinen per jaar.                                                                                                                                                                                                                                                                                   |
 | Agglomeratie-gemeenten                               | Agglomeraties zijn verzamelingen van gemeenten zoals bedoeld in art. 2.40 Omgevingsregeling, en art. 3 sub k van de richtlijn voor omgevingslawaai. Een agglomeratie-gemeente is een gemeente die onderdeel uitmaakt van een agglomeratie.                                                                                                                                                                                                                                                                                                                                                                                                                                         | Agglomeratie-gemeenten vormen een gebiedmet een bevolking van meer dan 100 000 personen en een zodanige bevolkingsdichtheid dat de lidstaat het als een stedelijk gebied beschouwt; m.b.t. geluidgegevens t.b.v. voor wegen, spoorwegen, activiteiten, verzamelingen van activiteiten en luchthavens. (zoals bedoeld in artikel 10.22 en 10.23 van Bkl) Voor een deel van deze gegevens is de Gemeente geen bronhouder. Deze gegevens moeten worden opgevraagd bij andere bronhouders. |
 | Ministerie van Infrastructuur en Waterstaat. (I&W)   | Het Ministerie van Infrastructuur en Waterstaat (IenW) is verantwoordelijk voor verkeer en waterstaat, ruimtelijke ordening en leefbaarheid. Het thema geluid valt hier onder. I&W is de opdrachtgever voor de Centrale Voorziening Geluidgegevens en voor de uitbreiding van het IMGeluid.                                                                                                                                                                                                                                                                                                                                                                                        | Het ministerie is het bevoegde gezag voor de luchthavens van *nationale betekenis,* hoofdspoorwegen, en rijkswegen. Daarnaast is I&W eigenaar van de CVGG.                                                                                                                                                                                                                                                                                                                             |
-| Rijksinstituut voor Volksgezondheid en Milieu (RIVM) | Het Rijksinstituut voor Volksgezondheid en Milieu is een kennis- en onderzoeksinstituut in Nederland, gericht op de bevordering van de volksgezondheid en een gezond en veilig leefmilieu. Het RIVM heeft ook een afdeling gespecialiseerd in omgevingslawaai en is beheerder van de Centrale Voorziening Geluidgegevens (CVGG).                                                                                                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Rijksinstituut voor Volksgezondheid en Milieu (RIVM) | Het Rijksinstituut voor Volksgezondheid en Milieu is een kennis- en onderzoeksinstituut in Nederland, gericht op de bevordering van de volksgezondheid en een gezond en veilig leefmilieu. Het RIVM heeft ook een afdeling gespecialiseerd in omgevingslawaai en is beheerder van de Centrale Voorziening Geluidgegevens (CVGG). Daarnaast is het RIVM beheerder van het reken- en meetvoorschrift waarin beschreven staat hoe de geluidberekeningen gebeuren (met CNOSSOS).                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Adviesbureaus / Omgevingsdiensten                    | Adviesbureaus en omgevingsdiensten hebben experts in dienst op het gebied van geluidberekeningen en kunnen worden ingehuurd door bronhouders.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | De adviesbureaus en omgevingsdiensten maken de geluidmodellen in opdracht van bronhouders en berekenen de geluidbelastingkaarten.                                                                                                                                                                                                                                                                                                                                                      |
-| InfoMil                                              | Kenniscentrum InfoMil is de plaats waar de informatie over omgevingsrecht en omgevingsregelgeving wordt gebundeld en verspreid. Het is de plaats voor informatievoorziening en kennisuitwisseling tussen de beleidsmakers van ministeries en de beleidsuitvoerders bij provincies, gemeenten, waterschappen en milieudiensten. Het biedt praktische ondersteuning bij uitvoering van omgevingsbeleid. Met inwerkingtreding van de Omgevingswet gaat InfoMil op in Informatiepunt Leefomgeving                                                                                                                                                                                      | Kenniscentrum InfoMil verzorgt in opdracht van het ministerie IenW de rapportage aan Europa en ondersteunt de bronhouders hierbij. Voor dat doel biedt InfoMil gemeenten en provincies handvatten voor het opstellen van de geluidbelastingkaarten en actieplannen. InfoMil bewaakt ook de voortgang bij het voldoen aan deze deadlines. In de huidige situatie verzamelt InfoMil ook de informatie over de geluidbelastingkaarten.                                                    |
+| InfoMil                                              | Kenniscentrum InfoMil is de plaats waar de informatie over omgevingsrecht en omgevingsregelgeving wordt gebundeld en verspreid. Het is de plaats voor informatievoorziening en kennisuitwisseling tussen de beleidsmakers van ministeries en de beleidsuitvoerders bij provincies, gemeenten, waterschappen en milieudiensten. Het biedt praktische ondersteuning bij uitvoering van omgevingsbeleid. Met inwerkingtreding van de Omgevingswet gaat InfoMil op in Informatiepunt Leefomgeving                                                                                                                                                                                      | Kenniscentrum InfoMil verzorgt in opdracht van het ministerie IenW de rapportage aan Europa. Voor dat doel biedt InfoMil gemeenten en provincies handvatten voor het opstellen van de geluidbelastingkaarten en actieplannen. InfoMil bewaakt ook de voortgang bij het voldoen aan de gestelde termijnen. In de huidige situatie verzamelt InfoMil ook de informatie over de geluidbelastingkaarten.                                                    |
 | Centrale Voorziening Geluidgegevens                  | Het Rijksinstituut voor Volksgezondheid en Milieu (RIVM Rijksinstituut voor Volksgezondheid en Milieu) werkt aan de Centrale Voorziening Geluidgegevens (CVGG). Dit wordt vanaf 1 januari 2022 het digitale systeem voor het uitwisselen van geluidgegevens. Het rijk, provincies, gemeenten en waterschappen zullen via de CVGG hun geluidgegevens gaan delen. De gegevens in de CVGG zijn in eerste instantie vooral geschikt voor professionele gebruikers ter ondersteuning van akoestisch onderzoek. Het uiteindelijk doel is om samen met bronhouders en andere belanghebbenden geluidgegevens voor iedereen op één plaats, laagdrempelig en uniform beschikbaar te stellen. | Geluidbelastingkaarten en – tabellen zijn tot op heden buiten scope van de CVGG. Het RIVM heeft een een impact analyse uitgevoerd om een mogelijke scope verbreding te verkennen.                                                                                                                                                                                                                                                                                                      |
 | Leveranciers geluidberekening software               | Deze leveranciers ontwikkelen en beheren de software ter ondersteuning van het uitvoeren van geluidberekeningen. Hiermee voeren de akoestische experts in opdracht van de bestuursorganen geluidberekeningen uit. De twee grootste leveranciers zijn WinHavik en Geomilieu.                                                                                                                                                                                                                                                                                                                                                                                                        | De leveranciers zorgen ervoor dat hun software de geluid rekenregels toepast en dat de geluidbelastingkaarten in het gewenste formaat komen te staan.                                                                                                                                                                                                                                                                                                                                  |
 
 
-**Tabel 1. geluidbelastingkaarten en -tabellen stakeholders**
+**Tabel 1. geluidbelastingkaarten stakeholders**
 
 
 Onderscheid input en output
@@ -33,8 +33,8 @@ Binnen het domein van geluidberekeningen kan een onderscheid gemaakt worden
 tussen input- en output-geluidgegevens. De geluidberekeningen worden uitgevoerd
 binnen rekenpakketten met de mogelijkheid om verschillende bestandsformaten te
 importeren en exporteren. De softwareleveranciers van de twee meest gebruikte
-softwarepakketten Geomileu en WinHavik, ondersteunen het importeren en
-exporteren van IMGeluid bestanden. Hiermee worden andere bestandsformaten echter
+softwarepakketten Geomilieu en WinHavik, gaan het importeren en
+exporteren van IMGeluid bestanden ondersteunen. Hiermee worden andere bestandsformaten echter
 niet uitgesloten. Zo zou het bijvoorbeeld ook mogelijk zijn een optie in te
 bouwen te exporteren naar pdf of een shapes formaat. Om deze reden kunnen de
 formaten van input en output van geluidberekeningen apart worden bekeken.
@@ -54,18 +54,17 @@ bijvoorbeeld een geluidbelastingkaart die berekend is volgens de CNOSSOS-EU
 rekenmethode (Bijlage VII Reken- en meetvoorschrift geluid 2012, Bijlage XXXIII
 Omgevingsregeling). Het IMGeluid kan zowel input- als outputbestanden bevatten.
 
-Verschil tussen berekeningen t.b.v geluidmonitoring en -belasting
+Verschil tussen berekeningen t.b.v. geluidmonitoring en -belasting
 -----------------------------------------------------------------
 
 Voor geluidmonitoring in het kader van de naleving van geluidproductieplafonds
 en de basisgeluidemissie zal gebruik worden gemaakt van de Nederlandse
 rekenmethode voor geluid zoals omschreven in de bijlagen van de
-aanvullingsregeling geluid. De doelen van de aanvullingsregeling geluid zijn:
+Aanvullingsregeling geluid. De doelen van de Aanvullingsspoor geluid zijn:
 het voorkomen van de onbeheerste groei van geluidbelastingen op geluidgevoelige
 gebouwen, het verlagen van bestaande hoge geluidbelastingen op geluidgevoelige
 gebouwen, het bevorderen van bronbeleid, het eenvoudiger maken van het
 normenkader en het stroomlijnen en makkelijker maken van de instructieregels.
-Daarnaast bevat de aanvullingsregeling ook nieuwe regels m.b.t. het hoofdspoor.
 (Bron: [Informatiepunt
 leefomgeving](https://iplo.nl/regelgeving/stelsel-omgevingswet/omgevingswet-in-ontwikkeling/hoofdlijnen-aanvullingsspoor-geluid/?_ga=2.129871372.1064692739.1619698411-1642760836.1595589321)
 ). De bepalingen van de Aanvullingsregeling zijn in de Omgevingsregeling opgenomen.
@@ -81,17 +80,8 @@ omgevingslawaai 2002l](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ
 Geluidproductieplafonds en de basisgeluidemissie zijn instrumenten om de
 geluidemissie, oftewel de geluidproductie van geluidbronnen te monitoren.
 Geluidbelastingkaarten zijn een instrument om zicht te krijgen op de
-geluidbelasting, de geluidimmissie, van de omgeving. Deze instrumenten maken
-gebruik van verschillende waarden. Geluidemissie en -immissiewaarden hebben
-ieder een eigen bepalingsmethode. Daarnaast, zal een geluidmodel t.b.v.
-geluidproductieplafonds en de basisgeluidemissie, de vergunde situatie
-weergeven, terwijl een geluidbelastingkaart of een geluidmodel voor monitoring
-van de geluidproductieplafonds, de gerealiseerde situatie weergeeft. Dit kan als
-gevolg hebben dat de geluidbrongegevens verschillen per bepalingsmethode.
-Aangezien de CVGG voor verschillende doelen informatie moet kunnen verstrekken,
-kan de CVGG ook geluidbrongegevens voor verschillende bepalingsmethoden
-bevatten. Wel moet dan traceerbaar zijn bij welke bepalingsmethode de
-geluidbrongegevens horen.
+geluidbelasting, de geluidimmissie, van de omgeving. De CVGG bevat geluidgegevens t.b.v. geluidmonitoring, maar zal ook gegevens t.b.v. geluidbelasting kunnen bevatten. Wel moet dan traceerbaar zijn waar de
+geluidgegevens bij horen.
 
 Environmental Noise Directive (END) Datamodel en informatiemodel geluid (imgeluid)
 ----------------------------------------------------------------------------------
@@ -108,7 +98,7 @@ bestanden voor de Centrale Voorziening Geluidgegevens. De Centrale Voorziening
 Geluidgegevens (CVGG) is een centraal punt voor het eenduidig uitwisselen van
 akoestische gegevens tussen bronhouders en gebruikers voor verschillende
 geluiddomeinen. In IMGeluid staan de afspraken en technische eisen waaraan de
-geluidbrongegevens en berekende geluidwaarden, zoals geluidproductieplafonds en
+geluidgegevens en berekende geluidwaarden, zoals geluidproductieplafonds en
 monitoringswaarden, moeten voldoen. Deze gegevens geven de juridische
 werkelijkheid weer en worden gebruikt voor vergunningen en monitoring. IMGeluid
 is gemodelleerd conform het Nederlandse Metamodel Informatie Modellering [MIM](
@@ -132,15 +122,12 @@ niet van afhankelijk is. Daarnaast kan WegdeelGPP kan ook wegen bevatten
 waarvoor wel een projectbesluit is genomen, maar die feitelijk nog niet bestaan
 (zoals de Blankenburgverbinding en de A13A16 Rotterdam). De twee zullen veelal
 bij elkaar in de buurt liggen, maar een semantische relatie tussen de twee
-bestaat niet. Hier ook aangeven dat er wel een relatie is tussen de gegevens
-voor monitoring en de gegevens die RWS, ProRail en provincies moeten aanleveren
-aan agglomeratiegemeenten voor hun berekening van de geluidbelastingkaarten.
-Voor de geluidbelastingkaarten wordt geluidimmissie berekend, dit geeft de
+bestaat niet. Voor de geluidbelastingkaarten wordt geluidimmissie berekend, dit geeft de
 geluidbelasting op een ontvanger (bijv. geluidbelasting op de gevel van een
 huis) aan. In het kader van geluidproductieplafond- en
 basisgeluidemissieberekeningen is de geluidemissie, de geluidproductie van de
 geluidbron, het belangrijkst. Daarom wordt de omgeving maar beperkt meegenomen.
 Bij het berekenen van geluidbelastingkaarten wordt een meer gedetailleerd
 omgevingsmodel gebruikt. Dit omgevingsmodel bevat (3D) informatie over de
-omliggende gebouwen en het terrein.
+omliggende gebouwen en het terrein. Om uitwisseling van geluidgegevens voor geluidbelastingkaarten mogelijk te maken, moeten er dus aparte objecttypen aan het IMGeluid worden toegevoegd.
 
