@@ -8,7 +8,7 @@ De [richtlijn omgevingslawaai](https://eur-lex.europa.eu/LexUriServ/LexUriServ.d
 rapportageverplichtingen voor de beoordeling en beheersing van omgevingslawaai.
 Met de introductie van de nieuwe ‘Verordening 2019/1010 van de Europese Unie
 (EU) [3] moeten de lidstaten de gegevens ter beschikking stellen zoals vereist
-op grond van de END-richtlijn en volgens, in overeenstemming met de
+op grond van de END-richtlijn en in overeenstemming met de
 INSPIRE-uitvoeringsbepalingen zoals verwoord in de INSPIRE-richtlijn 2007/2/EG
 (zie [Richtlijn INSPIRE](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32007L0002&from=NL)). Het huidige rapportagemechanisme waarin
 de lidstaten gegevens aanleveren, is niet in overeenstemming met de
@@ -149,7 +149,7 @@ worden vastgelegd en hoe er wordt omgegaan met tijdelijkheid. Ook zijn er
 aanwijzingen over thema specifieke metadata. In de 34
 [dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892) is uitgewerkt hoe deze vereisten geïmplementeerd
 kunnen worden. In Nederland is afgesproken dat de dataproviders de data
-harmoniseren volgens, in overeenstemming met deze technische specificaties.
+harmoniseren in overeenstemming met deze technische specificaties.
 
 Algemene Termen en definities
 ---------------------------------

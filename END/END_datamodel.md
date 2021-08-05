@@ -4,7 +4,9 @@ END-Datamodel
 Het nieuwe END-Datamodel
 ----------------------------
 
-Het END-Datamodel is ontwikkeld om te voldoen aan de rapportageverplichtingen die in de END richtlijn zijn gespecificeerd. Het is ontwikkeld om de rapportage door de lidstaten in een gemeenschappelijk formaat te vergemakkelijken. Tegelijkertijd verwijzen verschillende INSPIRE-thema’s naar use-cases rondom omgevingslawaai, waaronder de rapportage van geluidbelastingkaarten aan de EEA. Daarom zijn verschillende overwegingen in acht genomen bij de ontwikkeling van het nieuwe END-datamodel:
+Het END-Datamodel is ontwikkeld om te voldoen aan de rapportageverplichtingen die in de END richtlijn zijn gespecificeerd. Het is ontwikkeld om de rapportage door de lidstaten in een gemeenschappelijk formaat te vergemakkelijken. Tegelijkertijd verwijzen verschillende INSPIRE-thema’s naar use-cases rondom omgevingslawaai, waaronder de rapportage van geluidbelastingkaarten aan de EEA. 
+
+De volgende overwegingen zijn nieuw in het nieuwe END-datamodel:
 
 -   Om te zorgen voor overeenstemming met beide richtlijnen, betreffende de
     END-rapportagecycli en de volledige implementatie-routekaart van de
@@ -23,6 +25,8 @@ Het END-Datamodel is ontwikkeld om te voldoen aan de rapportageverplichtingen di
     gegevensverzameling, bijvoorbeeld door gebruik te maken van
     INSPIRE-netwerkdiensten (nog in ontwikkeling).
 
+Geluidbelastingkaarten worden met het nieuwe END-Datamodel een INSPIRE dataset. Dit betekent dat een rapportage moet voldoen aan de eisen die INSPIRE stelt aan een Dataset. Inhoudelijk blijft de rapportage grotendeels hetzelfde, maar INSPIRE stelt wel eisen op het gebied van metadata. In [Bijlage 5](VERWIJZING) staat een tabel waarin de metadata eisen voor een rapportage van geografische geluidbelastingkaarten uit de Guidelines Annex DF4_DF8 van 2012, worden vergeleken met de INSPIRE metadata eisen zoals verwerkt in het Nederlands metadata profiel op ISO 19115. In deze tabel staan alleen algemene INSPIRE metadata. Deze vergelijking geeft een indicatie van welke metadata nieuw zijn met de volgende tranche van geluidbelastingkaarten. In de richtlijnen voor een END rapportage van 2012 staat dat de [EEA metadata standaard]( https://www.eionet.europa.eu/workspace/gis) ook gebaseerd is op ISO 19115. Hier komen nog de specifieke EEA metadata bij. Bekijk het gehele EEA metadataprofiel voor statische kaarten [hier]( https://www.eionet.europa.eu/workspace/docs/metadata-template-for-static-maps.xlsx).
+
 De scope van het END-datamodel betreft een reeks gegevens die op grond van de
 END aan de Europese Commissie moeten worden gerapporteerd. Tegelijkertijd omvat
 het datamodelmodel ruimtelijke data die conceptueel overeenkomen met diverse
@@ -33,6 +37,7 @@ rapportagemechanisme gebruikt als uitgangspunt voor de gegevensmodellering en
 als bron van definities van de END-specifieke gegevensvereisten. De
 INSPIRE-dataspecificaties zijn gebruikt als bron van een gemeenschappelijke
 methodologie voor datamodellering en definities van INSPIRE-concepten.
+
 
 <figure id="Figuur_1">
 <img src="media/figuur1.png" alt="">
@@ -172,7 +177,7 @@ END mapping naar INSPIRE thema's
 
 De INSPIRE-thema’s en bijbehorende dataspecificaties richten zich op de algemene
 kenmerken van ruimtelijke data, die toepasbaar kunnen zijn voor verschillende
-use cases. Rapportageverplichtingen zijn daar slechts een voorbeeld van. Daarin
+gebruiksscenario's. Rapportageverplichtingen zijn daar slechts een voorbeeld van. Daarin
 bevatten de INSPIRE-informatiemodellen, gespecifieerd in de dataspecificaties,
 meestal algemene informatie, zoals unieke identificatoren en de geometrie van
 ruimtelijke objecten, informatie over de levenscyclus van ruimtelijke objecten

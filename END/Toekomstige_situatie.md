@@ -21,7 +21,7 @@ meegenomen. Technische aspecten en bestuurskundige aspecten hangen vaak met
 elkaar samen. Zo kan een standaard die complex is in beheer, bijvoorbeeld ook
 voor veel extra kosten zorgen. In dit hoofdstuk zal het toekomstperspectief
 worden omschreven. De rationale achter deze afwegingen, is te vinden in het
-[CMGeluidbelasting](#IMGeluidbelasting).
+[CMGeluidbelastingkaarten](#IMGeluidbelasting).
 
 In [**Figuur 7**](\#Figuur_7) staat een toekomstperspectief afgebeeld
 zoals uit interviews naar voren is gekomen. Het proces voor het aanleveren van
@@ -44,19 +44,17 @@ Input verzamelen van geluidgegevens volgens IMGeluid
 </figure>
 
 ProRail, Rijkswaterstaat, de provincies en I&W verzamelen gegevens voor het
-berekeningen van geluidbelastingkaarten en tabellen. Daarnaast, zoals op de
+berekeningen van geluidbelastingkaarten. Daarnaast, zoals op de
 linker plaat valt te zien, leveren ze deze gegevens ook aan CVGG. De
 agglomeratie-gemeenten kunnen de CVGG gebruiken om geluidgegevens af te nemen
 die, naast hun eigen verzamelde gegevens, dienen als input voor het berekenen
 van geluidbelastingkaarten. Het gaat hierbij respectievelijk om geluidgegevens
 t.b.v. hoofdspoor, rijkswegen, provinciale wegen en luchthavens. De partijen die
 agglomeraties vertegenwoordigden in de interviews, gaven de indicatie dat het
-centraal aanleveren van geluidbrongegevens t.b.v. geluidbelastingkaarten een
-beperkt voordeel voor agglomeratie gemeenten oplevert. Daarentegen vergt het
-weer een extra inspanning van de rijksbronbeheerder om de geluidbrongegevens op
-te moeten “knippen”, met de kans op fouten. Het hele netwerk uitleveren kost
-volgens de rijksbronbeheerder de minste moeite. De afwegingen hierachter, worden
-nader toegelicht in [de memo in hoofdstuk 6](#memo-centraal-aanleveren-van-lokale-geluidgegevens-van-agglomeratiegemeenten).
+centraal aanleveren van geluidbrongegevens t.b.v. geluidbelastingkaarten geen voordeel voor agglomeratiegemeenten oplevert. Daarentegen vergt het
+weer een extra inspanning van de rijksbronbeheerders om de geluidbrongegevens op
+te moeten “knippen” voor iedere agglomeratiegemeente, met de kans op fouten. Iedere agglomeratiegemeente moet immers ook de rijkswegen, provinciale wegen en spoorwegen opnemen in geluidbelastingkaarten. Het hele netwerk uitleveren is
+volgens de rijksbronbeheerder de efficiëntste oplossing.
 
 De geluidgegevens ten behoeve van het berekenen van geluidbelastingkaarten zijn
 een aparte verzameling van gegevens met een eigen geluidmodel. Voor het grootste
@@ -67,8 +65,8 @@ aanleveren, moeten deze geluidbrongegevens apart worden aangeleverd. Dit is
 noodzakelijk aangezien twee verschillende rekenmethode hiervoor worden gebruikt.
 Het IMGeluid zal in dit geval kunnen worden uitgebreid om deze aparte
 aanlevering te ondersteunen. De geluidgegevens die door de agglomeratiegemeenten
-worden gebruikt, kunnen in een formaat volgens, in overeenstemming met IMGeluid
-uit de CVGG worden gehaald om vervolgens te importeren in hun rekenpakket.
+worden gebruikt, kunnen in een formaat in overeenstemming met IMGeluid
+uit de CVGG worden gehaald om vervolgens te importeren in hun rekenpakket. Op basis van een impactanalyse van het RIVM is besloten om de CVGG voorlopig niet te gebruiken om deze uitwisseling te ondersteunen. 
 
 Centraal rapporteren van kaarten aan de CVGG
 -------------------------------------------
@@ -80,11 +78,8 @@ Centraal rapporteren van kaarten aan de CVGG
 
 De geluidbelastingkaarten worden berekend door de bronhouders. Het rekenpakket
 zorgt ervoor dat de output van een geluidbelastingberekening kan worden
-geëxporteerd volgens, in overeenstemming met het END Datamodel in GeoPackage
-formaat. Het idee was dat de verschillende bronhouders dit bestand vervolgens
-via het uploadportaal van de CVGG uploaden. Echter bleek uit een impactanalyse
-van het RIVM, dat deze uitbreiding van de CVGG voor de huidige tranche niet
-realiseerbaar is.
+geëxporteerd in overeenstemming met het END Datamodel in GeoPackage
+formaat. Uit de interviews is gebleken dat dit voor geluidexperts niet voor problemen zal zorgen. Het idee is dat de verschillende stakeholders dit bestand vervolgens via het uploadportaal van de CVGG uploaden.
 
 
 Centraal rapporteren van kaarten en tabellen aan de EEA en het publiek
@@ -102,7 +97,26 @@ publiek meer duiding en context nodig. Hoe deze context goed in beeld kan worden
 gebracht, wordt geduid vanuit de wetgeving. Zie [bijlage 1](#bijlage-1-de-inhoud-van-geluidbelastingkaarten-volgens-de-omgevingsregeling) voor een
 duiding van deze gegevens.
 
-Mogelijk kan de CVGG InfoMil gaan ondersteunen bij het rapportageproces van
+De CVGG kan InfoMil gaan ondersteunen bij het rapportageproces van
 geluidbelastingkaarten. Dit zou kunnen door het uploadportaal van de CVGG
 geschikt te maken voor het END-Datamodel. Op het moment van publicatie van dit
-rapport moet de CVGG stuurgroep hier nog een besluit over nemen.
+rapport heeft de CVGG hier de opdracht voor gekregen.
+
+Landelijk bestand met geluidgevoelige gebouwen
+--------------------------------------------------------------
+In het Besluit kwaliteit leefomgeving (Bkl) staan 3 categorieën voor de
+bescherming voor verschillende soorten gebouwen en locaties: zeer kwetsbaar,
+kwetsbaar en beperkt kwetsbaar. De gemeente moet regels opnemen in het
+omgevingsplan om deze gebouwen en locaties te beschermen vanwege externe
+veiligheidsrisico's.
+
+De gegevens van EV kwetsbare objecten zijn opgenomen in de risicokaart.
+Provincies maken en beheren de risicokaart op basis van aangeleverde gegevens
+door gemeenten, Rijk en provincies zelf [(Zie atlas van de Leefomgeving)](https://www.atlasleefomgeving.nl/kwetsbare-objecten) De gegevens worden o.m. als
+[WFS](http://servicespub.risicokaart.nl/rk_services_pub/services/WFS-risicokaart) <span title="In meerdere lagen met verschillende type kwetsbare objecten, onder meer
+gebouwen met gezondheidszorgfunctie, onderwijsfunctie, woonfunctie of overige
+functie.">**beschikbaar gesteld [opmerking 13]**</span>. De populatie [kwetsbare objecten voor Externe
+Veiligheid](https://iplo.nl/thema/externe-veiligheid/kwetsbare-gebouwen/) is ruimer dan de populatie van <span title="Voor
+Geluid worden een subset van de gezondheidszorg- en kinderopvanglocaties
+gehanteerd, namelijk enkel die gebouwen met een bedfunctie.">**geluidgevoelige gebouwen voor domein Geluid [opmerking 14]**</span>. Toepassing van het bestand Kwetsbare objecten van EV voor
+geluidberekeningen rekent dus met iets ruimere populatie. IenW wil op basis van een deelverzameling van kwetsbare gebouwen uit het REV en het Landelijk Register Kinderopvang een eigen bestand maken. Dit bestand wordt beschikbaar gesteld aan de bronhouders.
