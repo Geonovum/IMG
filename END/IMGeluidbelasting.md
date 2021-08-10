@@ -2,7 +2,7 @@ Conceptueel Model Geluidbelastingkaarten specificatie (CMGeluidbelastingkaarten)
 ========================================================
 <figure id="Figuur_10">
 <img src="media/CMGeluidbelasting1.png" alt="">
-<figcaption>Conceptueel model geluidbelastingkaarten.</figcaption>
+<figcaption>Conceptueel model geluidbelastingkaarten. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
 
 Het Conceptueel Model Geluidbelastingkaarten (CMGeluidbelastingkaarten) brengt in kaart welke
@@ -84,7 +84,7 @@ afbakening van een stil gebied.
 
 <figure id="Figuur_11">
 <img src="media/CMGeluidbelastingvb.png" alt="">
-<figcaption>Voorbeeld uitwerking van het Conceptueel model Geluidbelastingkaarten.</figcaption>
+<figcaption>Voorbeeld uitwerking van het Conceptueel model Geluidbelastingkaarten. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
 
 Centraal rekenen en publieke geluidbelastingkaarten

@@ -3,7 +3,7 @@ Toekomstperspectief: geluidbelastingkaarten en -tabellen
 
 <figure id="Figuur_7">
 <img src="media/figuur7.1.png" alt="">
-<figcaption>Toekomstvisie rondom rapportage van geluidbelastingkaarten en -tabellen gevisualiseerd.</figcaption>
+<figcaption>Toekomstvisie rondom rapportage van geluidbelastingkaarten en -tabellen gevisualiseerd. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
 
 De opdrachtgever I&W heeft verschillende scenario’s voor de toekomst van
@@ -40,7 +40,7 @@ Input verzamelen van geluidgegevens volgens IMGeluid
 
 <figure id="Figuur_8">
 <img src="media/figuur8.1.png" alt="">
-<figcaption>Input Verzamelen van geluidgegevens volgens IMGeluid.</figcaption>
+<figcaption>Input Verzamelen van geluidgegevens volgens IMGeluid. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
 
 ProRail, Rijkswaterstaat, de provincies en I&W verzamelen gegevens voor het
@@ -73,7 +73,7 @@ Centraal rapporteren van kaarten aan de CVGG
 
 <figure id="Figuur_9.1">
 <img src="media/figuur9.png" alt="">
-<figcaption>Centraal aanleveren van kaarten aan de CVGG.</figcaption>
+<figcaption>Centraal aanleveren van kaarten aan de CVGG. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
 
 De geluidbelastingkaarten worden berekend door de bronhouders. Het rekenpakket

@@ -41,7 +41,7 @@ methodologie voor datamodellering en definities van INSPIRE-concepten.
 
 <figure id="Figuur_1">
 <img src="media/figuur1.png" alt="">
-<figcaption>Proces van content matching tussen END en INSPIRE om END informatiemodel te ontwikkelen</figcaption>
+<figcaption>Proces van content matching tussen END en INSPIRE om END informatiemodel te ontwikkelen. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
 
 END datamodel rapportage overzicht
@@ -62,7 +62,7 @@ rapportage gegevensstromen).
 
 <figure id="Figuur_2">
 <img src="media/figuur2.png" alt="">
-<figcaption>Combinatie van data flows in het END-informatiemodel [4]</figcaption>
+<figcaption>Combinatie van data flows in het END-informatiemodel [4]. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
 
 Het END-Datamodel omvat alle rapportageverplichtingen op grond van de END. In
