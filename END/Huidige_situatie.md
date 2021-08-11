@@ -27,8 +27,8 @@ hoofdstuk zal per deelproces hier aandacht aan worden besteed.
 Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en tabellen
 -------------------------------------------------------------------------------------------
 
-<figure id="Figuur_4.1">
-<img src="media/figuur4.png" alt="">
+<figure id="Figuur_4.">
+<img src="media/figuur4.2.png" alt="">
 <figcaption>Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
 
@@ -83,7 +83,7 @@ tevoren wanneer deze gegevens klaar zullen zijn om te worden gedeeld.
 Centraal rapporteren van kaarten aan InfoMil
 ------------------------------------------------
 <figure id="Figuur_5">
-<img src="media/figuur5.1.png" alt="">
+<img src="media/figuur5.2.png" alt="">
 <figcaption>Centraal aanleveren van kaarten aan InfoMil. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
 
@@ -109,8 +109,8 @@ te vinden in [Bijlage 1](#bijlage-1-de-inhoud-van-geluidbelastingkaarten-volgens
 Output prepareren van een rapportage aan de Europese commissie
 ------------------------------------------------------------------
 
-<figure id="Figuur_6.1">
-<img src="media/figuur6.png" alt="">
+<figure id="Figuur_6">
+<img src="media/figuur6.2.png" alt="">
 <figcaption>Output prepareren van een rapportage aan de EEA. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
 

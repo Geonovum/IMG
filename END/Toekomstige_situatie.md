@@ -2,7 +2,7 @@ Toekomstperspectief: geluidbelastingkaarten en -tabellen
 =============
 
 <figure id="Figuur_7">
-<img src="media/figuur7.1.png" alt="">
+<img src="media/figuur7.2.png" alt="">
 <figcaption>Toekomstvisie rondom rapportage van geluidbelastingkaarten en -tabellen gevisualiseerd. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ Input verzamelen van geluidgegevens volgens IMGeluid
 ----------------------------------------------------
 
 <figure id="Figuur_8">
-<img src="media/figuur8.1.png" alt="">
+<img src="media/figuur8.2.png" alt="">
 <figcaption>Input Verzamelen van geluidgegevens volgens IMGeluid. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
 
@@ -71,8 +71,8 @@ uit de CVGG worden gehaald om vervolgens te importeren in hun rekenpakket. Op ba
 Centraal rapporteren van kaarten aan de CVGG
 -------------------------------------------
 
-<figure id="Figuur_9.1">
-<img src="media/figuur9.png" alt="">
+<figure id="Figuur_9">
+<img src="media/figuur9.2.png" alt="">
 <figcaption>Centraal aanleveren van kaarten aan de CVGG. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
 
