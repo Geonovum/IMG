@@ -1,9 +1,12 @@
 Toekomstperspectief: geluidbelastingkaarten en -tabellen
 ========================================================
 
-Toekomstvisie rondom rapportage van geluidbelastingkaarten en -tabellen
+<figure id="Figuur_7">
+    <img src="media/figuur7.2.png" alt="">
+    <figcaption>Toekomstvisie rondom rapportage van geluidbelastingkaarten en -tabellen
 gevisualiseerd. Open afbeelding in een nieuw tabblad om de afbeelding groter te
-zien.
+        zien.</figcaption>
+</figure>
 
 De opdrachtgever I&W heeft verschillende scenario’s voor de toekomst van
 geluidberekeningen met betrekking tot geluidbelastingkaarten uitgewerkt. Het
@@ -22,7 +25,7 @@ voor veel extra kosten zorgen. In dit hoofdstuk zal het toekomstperspectief
 worden omschreven. De rationale achter deze afwegingen, is te vinden in het
 [CMGeluidbelastingkaarten](#IMGeluidbelasting).
 
-In [Figuur 7](#Figuur_7) staat een toekomstperspectief afgebeeld zoals uit
+In [**Figuur 7**](\#Figuur_7) staat een toekomstperspectief afgebeeld zoals uit
 interviews naar voren is gekomen. Het proces voor het aanleveren van
 geluidbelastingkaarten en -tabellen valt op te delen in drie deelprocessen:
 
@@ -36,9 +39,11 @@ geluidbelastingkaarten en -tabellen valt op te delen in drie deelprocessen:
 
 Input verzamelen van geluidgegevens volgens IMGeluid
 ----------------------------------------------------
-
-Input Verzamelen van geluidgegevens volgens IMGeluid. Open afbeelding in een
-nieuw tabblad om de afbeelding groter te zien.
+<figure id="Figuur_8">
+    <img src="media/figuur8.2.png" alt="">
+    <figcaption>Input Verzamelen van geluidgegevens volgens IMGeluid. Open afbeelding in een
+nieuw tabblad om de afbeelding groter te zien.</figcaption>
+</figure>
 
 ProRail, Rijkswaterstaat, de provincies en I&W verzamelen gegevens voor het
 berekeningen van geluidbelastingkaarten. Daarnaast, zoals op de linker plaat
@@ -73,9 +78,11 @@ ondersteunen.
 
 Centraal rapporteren van kaarten aan de CVGG
 --------------------------------------------
-
-Centraal aanleveren van kaarten aan de CVGG. Open afbeelding in een nieuw
-tabblad om de afbeelding groter te zien.
+<figure id="Figuur_9">
+    <img src="media/figuur9.2.png" alt="">
+    <figcaption>Centraal aanleveren van kaarten aan de CVGG. Open afbeelding in een nieuw
+tabblad om de afbeelding groter te zien.</figcaption>
+</figure>
 
 De geluidbelastingkaarten worden berekend door de bronhouders. Het rekenpakket
 zorgt ervoor dat de output van een geluidbelastingberekening kan worden
@@ -85,7 +92,7 @@ zorgen. Het idee is dat de verschillende stakeholders dit bestand vervolgens via
 het uploadportaal van de CVGG uploaden.
 
 Centraal rapporteren van kaarten en tabellen aan de EEA en het publiek
-----------------------------------------------------------------------
+---------------------------------------------------------------------
 
 Er is een belangrijk verschil tussen de geluidbelastingkaarten die voor de
 burgers worden gemaakt en de geluidbelastingkaarten die voor de EU worden
