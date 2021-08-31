@@ -1,10 +1,14 @@
-END-Datamodel 
-=======================
+END-Datamodel
+=============
 
 Het nieuwe END-Datamodel
-----------------------------
+------------------------
 
-Het END-Datamodel is ontwikkeld om te voldoen aan de rapportageverplichtingen die in de END richtlijn zijn gespecificeerd. Het is ontwikkeld om de rapportage door de lidstaten in een gemeenschappelijk formaat te vergemakkelijken. Tegelijkertijd verwijzen verschillende INSPIRE-thema’s naar use-cases rondom omgevingslawaai, waaronder de rapportage van geluidbelastingkaarten aan de EEA. 
+Het END-Datamodel is ontwikkeld om te voldoen aan de rapportageverplichtingen
+die in de END richtlijn zijn gespecificeerd. Het is ontwikkeld om de rapportage
+door de lidstaten in een gemeenschappelijk formaat te vergemakkelijken.
+Tegelijkertijd verwijzen verschillende INSPIRE-thema’s naar use-cases rondom
+omgevingslawaai, waaronder de rapportage van geluidbelastingkaarten aan de EEA.
 
 De volgende overwegingen zijn nieuw in het nieuwe END-datamodel:
 
@@ -25,7 +29,22 @@ De volgende overwegingen zijn nieuw in het nieuwe END-datamodel:
     gegevensverzameling, bijvoorbeeld door gebruik te maken van
     INSPIRE-netwerkdiensten (nog in ontwikkeling).
 
-Geluidbelastingkaarten worden met het nieuwe END-Datamodel een INSPIRE dataset. Dit betekent dat een rapportage moet voldoen aan de eisen die INSPIRE stelt aan een Dataset. Inhoudelijk blijft de rapportage grotendeels hetzelfde, maar INSPIRE stelt wel eisen op het gebied van metadata. In [Bijlage 5](#bijlage-5-vergelijking-nieuwe-metadata-voor-end-rapportage) staat een tabel waarin de metadata eisen voor een rapportage van geografische geluidbelastingkaarten uit de Guidelines Annex DF4_DF8 van 2012, worden vergeleken met de INSPIRE metadata eisen zoals verwerkt in het Nederlands metadata profiel op ISO 19115. In deze tabel staan alleen algemene INSPIRE metadata. Deze vergelijking geeft een indicatie van welke metadata nieuw zijn met de volgende tranche van geluidbelastingkaarten. In de richtlijnen voor een END rapportage van 2012 staat dat de [EEA metadata standaard]( https://www.eionet.europa.eu/workspace/gis) ook gebaseerd is op ISO 19115. Hier komen nog de specifieke EEA metadata bij. Bekijk het gehele EEA metadataprofiel voor statische kaarten [hier]( https://www.eionet.europa.eu/workspace/docs/metadata-template-for-static-maps.xlsx).
+Geluidbelastingkaarten worden met het nieuwe END-Datamodel een INSPIRE dataset.
+Dit betekent dat een rapportage moet voldoen aan de eisen die INSPIRE stelt aan
+een Dataset. Inhoudelijk blijft de rapportage grotendeels hetzelfde, maar
+INSPIRE stelt wel eisen op het gebied van metadata. In [Bijlage
+5](#bijlage-5-vergelijking-nieuwe-metadata-voor-end-rapportage) staat een tabel
+waarin de metadata eisen voor een rapportage van geografische
+geluidbelastingkaarten uit de Guidelines Annex DF4_DF8 van 2012, worden
+vergeleken met de INSPIRE metadata eisen zoals verwerkt in het Nederlands
+metadata profiel op ISO 19115. In deze tabel staan alleen algemene INSPIRE
+metadata. Deze vergelijking geeft een indicatie van welke metadata nieuw zijn
+met de volgende tranche van geluidbelastingkaarten. In de richtlijnen voor een
+END rapportage van 2012 staat dat de [EEA metadata
+standaard](https://www.eionet.europa.eu/workspace/gis) ook gebaseerd is op ISO
+19115. Hier komen nog de specifieke EEA metadata bij. Bekijk het gehele EEA
+metadataprofiel voor statische kaarten
+[hier](https://www.eionet.europa.eu/workspace/docs/metadata-template-for-static-maps.xlsx).
 
 De scope van het END-datamodel betreft een reeks gegevens die op grond van de
 END aan de Europese Commissie moeten worden gerapporteerd. Tegelijkertijd omvat
@@ -38,14 +57,12 @@ als bron van definities van de END-specifieke gegevensvereisten. De
 INSPIRE-dataspecificaties zijn gebruikt als bron van een gemeenschappelijke
 methodologie voor datamodellering en definities van INSPIRE-concepten.
 
-
-<figure id="Figuur_1">
-<img src="media/figuur1.png" alt="">
-<figcaption>Proces van content matching tussen END en INSPIRE om END informatiemodel te ontwikkelen. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
-</figure>
+Proces van content matching tussen END en INSPIRE om END informatiemodel te
+ontwikkelen. Open afbeelding in een nieuw tabblad om de afbeelding groter te
+zien.
 
 END datamodel rapportage overzicht
---------------------------------------
+----------------------------------
 
 Het nieuwe END-informatiemodel omvat voor elke rapportageverplichting een apart
 informatiemodel. De informatiemodellen, die ruimtelijke informatie bevatten,
@@ -60,10 +77,8 @@ het gebruik en de combinatie van ruimtelijke data en de gestructureerde
 tabelgegevens aan met basisrelaties tussen individuele datamodellen (en de
 rapportage gegevensstromen).
 
-<figure id="Figuur_2">
-<img src="media/figuur2.png" alt="">
-<figcaption>Combinatie van data flows in het END-informatiemodel [4]. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
-</figure>
+Combinatie van data flows in het END-informatiemodel [4]. Open afbeelding in een
+nieuw tabblad om de afbeelding groter te zien.
 
 Het END-Datamodel omvat alle rapportageverplichtingen op grond van de END. In
 het model zijn al deze verplichtingen aangemerkt als domeinen. Ieder domein
@@ -72,35 +87,35 @@ voor een specifiek domein noemen we een domeinmodel.
 
 De volgende domeinenmodellen zijn gedefinieerd:
 
--   Geluidbronnen (DF1_5): hoofdwegen, grote spoorwegen, grote luchthavens en
+1.  Geluidbronnen (DF1_5): hoofdwegen, grote spoorwegen, grote luchthavens en
     agglomeraties, zoals gedefinieerd in de END;
 
--   Bevoegde instantie (DF2): informatie over bevoegde autoriteiten, en/of
+2.  Bevoegde instantie (DF2): informatie over bevoegde autoriteiten, en/of
     andere instanties die verantwoordelijk zijn voor de uitvoering van de
     richtlijn omgevingslawaai;
 
--   Grenswaarden (DF3): bepaling van eventuele nationale of lokale grenswaarden
+3.  Grenswaarden (DF3): bepaling van eventuele nationale of lokale grenswaarden
     voor geluid;
 
--   Strategische geluidbelastingkaart (DF4_8): met informatie over:
+4.  Strategische geluidbelastingkaart (DF4_8): met informatie over:
 
     -   Gegevens over blootstelling aan lawaai: geschat aantal mensen dat in
-    gebieden woont die de END-geluidrapportagedrempels overschrijden;
+        gebieden woont die de END-geluidrapportagedrempels overschrijden;
 
-    -   Geluidcontouren: geven de ruimtelijke omvang van de geluidniveaus weer voor
-    verschillende geluidbelasting indicatoren;
+    -   Geluidcontouren: geven de ruimtelijke omvang van de geluidniveaus weer
+        voor verschillende geluidbelasting indicatoren;
 
--   Lawaaibeheersing programma’s (DF6_9): informatie over
+5.  Lawaaibeheersing programma’s (DF6_9): informatie over
     geluidbeheersingsprogramma's die in het verleden zijn uitgevoerd en
     getroffen geluidmaatregelen
 
--   Geluid actieplannen en Stille gebieden (DF7_10): informatie over
+6.  Geluid actieplannen en Stille gebieden (DF7_10) met informatie over
 
-    -   Actieplannen om geluidproblemen en de gevolgen daarvan te verminderen en te
-    beheersen;
+    -   Actieplannen om geluidproblemen en de gevolgen daarvan te verminderen en
+        te beheersen;
 
     -   Bescherming en behoud van stille gebieden in agglomeraties of in open
-    gebied.
+        gebied.
 
 De domeinmodellen zijn met elkaar verbonden en maken het mogelijk om de data uit
 de verschillende rapportageverplichtingen te combineren.
@@ -113,20 +128,19 @@ uitsluitend de jaarlijkse verkeersstroom in DF1_5 worden gerapporteerd. Voor
 wegverkeer behoren verkeerssamenstelling, snelheden en wegdeksoort daar niet toe
 en voor spoorwegen en luchthavens geldt iets soortgelijks. Het verschil tussen
 de geluidbronnen (DF1_5) en de geluidgegevens met betrekking tot monitoring in
-IMGeluid is uitgelegd in [1.4](#environmental-noise-directive-end-datamodel-en-informatiemodel-geluid-imgeluid).
+IMGeluid is uitgelegd in
+[1.4](#environmental-noise-directive-end-datamodel-en-informatiemodel-geluid-imgeluid).
 
 Voor de rapportage van bevoegde instanties (DF_2) zijn geen ruimtelijke gegevens
 nodig. De bevoegde instanties van wegen en spoorwegen, die verantwoordelijk zijn
 voor de geluidbelastingkaarten en/of de actieplanning, kunnen worden
-gerapporteerd op landniveau of op <span title="De segmenten van hoofdwegen en spoorwegen zijn ontworpen om te
-voldoen aan de END-criteria van de jaarlijkse verkeersstroom.">**weg-/ spoorsegmentniveau [1]**</span> (door
-middel van identificatoren). Bevoegde instanties van grote luchthavens moeten
-worden geïdentificeerd met behulp van ICAO-codes en bevoegde instantie van
+gerapporteerd op landniveau of op **weg-/ spoorsegmentniveau [1]** (door middel
+van identificatoren). Bevoegde instanties van grote luchthavens moeten worden
+geïdentificeerd met behulp van ICAO-codes en bevoegde instantie van
 agglomeraties met behulp van agglomeratie-identificatoren. Bevoegde instantie
 die belast is met de bescherming van stille gebieden mag optioneel worden
 aangeleverd, maar het wordt aanbevolen om dit te rapporteren door stilte
 gebiedsidentificaties te gebruiken.
-
 
 De grenswaarden van een land of een gedefinieerde rapporteringsregio (DF3)
 vereisen geen ruimtelijke informatie. De grenswaarden kunnen op landenniveau
@@ -173,16 +187,17 @@ in open gebied, ook wel stiltegebieden genoemd, worden door provincies
 aangewezen.
 
 END mapping naar INSPIRE thema's
-------------------------------------
+--------------------------------
 
 De INSPIRE-thema’s en bijbehorende dataspecificaties richten zich op de algemene
 kenmerken van ruimtelijke data, die toepasbaar kunnen zijn voor verschillende
-gebruiksscenario's. Rapportageverplichtingen zijn daar slechts een voorbeeld van. Daarin
-bevatten de INSPIRE-informatiemodellen, gespecifieerd in de dataspecificaties,
-meestal algemene informatie, zoals unieke identificatoren en de geometrie van
-ruimtelijke objecten, informatie over de levenscyclus van ruimtelijke objecten
-met betrekking tot datamanagementprincipes en een reeks andere basiskenmerken
-die ruimtelijke objecten beschrijven, zoals naam of specifieke categorie.
+gebruiksscenario's. Rapportageverplichtingen zijn daar slechts een voorbeeld
+van. Daarin bevatten de INSPIRE-informatiemodellen, gespecifieerd in de
+dataspecificaties, meestal algemene informatie, zoals unieke identificatoren en
+de geometrie van ruimtelijke objecten, informatie over de levenscyclus van
+ruimtelijke objecten met betrekking tot datamanagementprincipes en een reeks
+andere basiskenmerken die ruimtelijke objecten beschrijven, zoals naam of
+specifieke categorie.
 
 Aan de andere kant zijn de gerapporteerde gegevens onder de END-richtlijn
 specifiek ontworpen om te voldoen aan de rapportageverplichtingen en -criteria
@@ -191,9 +206,8 @@ met de basis INSPIRE-informatiemodellen voor ruimtelijke data.
 
 De lijst met geïdentificeerde ruimtelijke data in het toepassingsgebied van de
 END-richtlijn heeft betrekking op de volgende INSPIRE-thema’s, zie onderstaande
-tabel. Deze ruimtelijke data dienen ook volgens INSPIRE-vereisten [zie 2.4](#wat-zijn-inspire-verplichtingen)
-ontsloten te worden.
-
+tabel. Deze ruimtelijke data dienen ook volgens INSPIRE-vereisten [zie
+2.4](#wat-zijn-inspire-verplichtingen) ontsloten te worden.
 
 **Tabel 1. Overzicht van het mapping van ruimtelijke data van END naar de
 INSPIRE-thema’s**
@@ -208,7 +222,5 @@ INSPIRE-thema’s**
 | Stille gebieden in agglomeraties of in buitengebied (DF7_10) | INSPIRE Area management / restriction / regulation zones & reporting units (AM) | ManagementRestrictionOrRegu lationZone |
 | Geluid actieplannen (DF7_10)                                 | INSPIRE Area management / restriction / regulation zones & reporting units (AM) | ManagementRestrictionOrRegu lationZone |
 
-
 \* Het INSPIRE-Datamodel is opgenomen in de herziening van de uitvoeringsregels
 inzake interoperabiliteit.
-
