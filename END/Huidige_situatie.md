@@ -8,6 +8,7 @@ gevisualiseerd. Open afbeelding in een nieuw tabblad om de afbeelding groter te
 zien.</figcaption>
 </figure>
 
+
 Om een beeld te schetsen van de huidige situatie zal de situatie worden
 omschreven van de laatste rapportage van geluidgegevens aan de Europese
 commissie. Zoals eerder vermeld, is iedere Europese lidstaat verplicht deze
@@ -37,6 +38,7 @@ Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en t
     <figcaption>Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten.
 Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
+
 
 De eerste stap in de het huidige proces voor de rapportage van
 geluidbelastingkaarten aan de Europese Commissie, is het verzamelen van de
@@ -130,6 +132,7 @@ Output prepareren van een rapportage aan de Europese commissie
     <figcaption>Output prepareren van een rapportage aan de EEA. Open afbeelding in een nieuw
 tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
+
 
 In het laatste deelproces zorgt Infomil ervoor dat de door bronhouders
 aangeleverde gegevens worden verwerkt tot een rapport aan de Europese Unie.
