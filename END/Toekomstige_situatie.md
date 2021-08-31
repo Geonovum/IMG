@@ -3,7 +3,7 @@ Toekomstperspectief: geluidbelastingkaarten en -tabellen
 
 <figure id="Figuur_7">
     <img src="media/figuur7.2.png" alt="">
-    <figcaption>Toekomstvisie rondom rapportage van geluidbelastingkaarten en -tabellen
+    <figcaption>Toekomstperspectief rondom rapportage van geluidbelastingkaarten en -tabellen
 gevisualiseerd. Open afbeelding in een nieuw tabblad om de afbeelding groter te
         zien.</figcaption>
 </figure>
