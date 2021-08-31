@@ -1,9 +1,12 @@
 Huidige situatie: geluidbelastingkaarten
 ========================================
 
-Huidige situatie rondom rapportage van END geluidbelastingkaarten
+<figure id="Figuur_3">
+    <img src="media/figuur3.1.png" alt="">
+    <figcaption>Huidige situatie rondom rapportage van END geluidbelastingkaarten
 gevisualiseerd. Open afbeelding in een nieuw tabblad om de afbeelding groter te
-zien.
+zien.</figcaption>
+</figure>
 
 Om een beeld te schetsen van de huidige situatie zal de situatie worden
 omschreven van de laatste rapportage van geluidgegevens aan de Europese
@@ -14,7 +17,7 @@ Op basis van de uitgevoerde analyse, bureauonderzoek en
 [interviews](#bijlage-4-verslag-van-de-interviews-met-geluidexperts) kan worden
 opgemaakt dat het huidige proces rondom de rapportage van geluidbelastingkaarten
 aan Europa op te delen is in drie deelprocessen. Deze drie deelprocessen staan
-ook gevisualiseerd in [Figuur 3](Figuur_3) van links naar rechts.
+ook gevisualiseerd in [**Figuur 3**](Figuur_3) van links naar rechts.
 
 1.  Het verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en
     tabellen.
@@ -29,8 +32,11 @@ hoofdstuk zal per deelproces hier aandacht aan worden besteed.
 Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en tabellen
 ---------------------------------------------------------------------------------------
 
-Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten.
-Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.
+<figure id="Figuur_4">
+    <img src="media/figuur4.2.png" alt="">
+    <figcaption>Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten.
+Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
+</figure>
 
 De eerste stap in de het huidige proces voor de rapportage van
 geluidbelastingkaarten aan de Europese Commissie, is het verzamelen van de
@@ -68,7 +74,7 @@ heeft iedere gemeente die hoort bij een agglomeratie de plicht om zelfstandig
 een geluidbelastingkaart en -tabel voor haar grondgebied op te stellen.
 Samenwerking en onderlinge uitwisseling van gegevens tussen
 agglomeratiegemeenten onderling en met provincies, komen voor op lokaal
-initiatief. Dit wordt weergegeven in [Figuur 4](#Figuur_4) aan de hand van
+initiatief. Dit wordt weergegeven in [**Figuur 4**](#Figuur_4) aan de hand van
 verschillende kleuren en kaartjes. Op dit moment werkt het rijk aan harmonisatie
 van gegevens door een 3D-omgevingsmodel voor geluid, het Nationaal Wegenbestand
 (NWB), en onderzoek of een landelijk bestand met verkeersintensiteiten haalbaar
@@ -86,8 +92,12 @@ zullen zijn om te worden gedeeld.
 Centraal rapporteren van kaarten aan InfoMil
 --------------------------------------------
 
-Centraal aanleveren van kaarten aan InfoMil. Open afbeelding in een nieuw
-tabblad om de afbeelding groter te zien.
+<figure id="Figuur_5">
+    <img src="media/figuur5.2.png" alt="">
+    <figcaption>Centraal aanleveren van kaarten aan InfoMil. Open afbeelding in een nieuw
+tabblad om de afbeelding groter te zien.</figcaption>
+</figure>
+
 
 Wanneer de geluidbelastingkaarten berekend zijn, worden deze gerapporteerd aan
 InfoMil. In het geval van luchthavens van nationaal belang, rijkswegen en
@@ -115,8 +125,11 @@ Een overzicht van deze eisen valt te vinden in [Bijlage
 Output prepareren van een rapportage aan de Europese commissie
 --------------------------------------------------------------
 
-Output prepareren van een rapportage aan de EEA. Open afbeelding in een nieuw
-tabblad om de afbeelding groter te zien.
+<figure id="Figuur_6">
+    <img src="media/figuur6.2.png" alt="">
+    <figcaption>Output prepareren van een rapportage aan de EEA. Open afbeelding in een nieuw
+tabblad om de afbeelding groter te zien.</figcaption>
+</figure>
 
 In het laatste deelproces zorgt Infomil ervoor dat de door bronhouders
 aangeleverde gegevens worden verwerkt tot een rapport aan de Europese Unie.
