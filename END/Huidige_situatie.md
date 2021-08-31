@@ -1,18 +1,20 @@
-# Huidige situatie: geluidbelastingkaarten
+Huidige situatie: geluidbelastingkaarten
+========================================
 
-<figure id="Figuur_3">
-<img src="media/figuur3.1.png" alt="">
-<figcaption>Huidige situatie rondom rapportage van END geluidbelastingkaarten gevisualiseerd. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
-</figure>
+Huidige situatie rondom rapportage van END geluidbelastingkaarten
+gevisualiseerd. Open afbeelding in een nieuw tabblad om de afbeelding groter te
+zien.
 
 Om een beeld te schetsen van de huidige situatie zal de situatie worden
 omschreven van de laatste rapportage van geluidgegevens aan de Europese
 commissie. Zoals eerder vermeld, is iedere Europese lidstaat verplicht deze
 rapportage te doen op basis van de [Europese richtlijn
-omgevingslawaai](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ%3AL%3A2002%3A189%3A0012%3A0025%3ANL%3APDF). Op basis van de uitgevoerde analyse,
-bureauonderzoek en [interviews](#bijlage-4-verslag-van-de-interviews-met-geluidexperts) kan worden opgemaakt dat het huidige proces
-rondom de rapportage van geluidbelastingkaarten aan Europa op te delen is in
-drie deelprocessen. Deze drie deelprocessen staan ook gevisualiseerd in [**Figuur 3**](Figuur_3) van links naar rechts.
+omgevingslawaai](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ%3AL%3A2002%3A189%3A0012%3A0025%3ANL%3APDF).
+Op basis van de uitgevoerde analyse, bureauonderzoek en
+[interviews](#bijlage-4-verslag-van-de-interviews-met-geluidexperts) kan worden
+opgemaakt dat het huidige proces rondom de rapportage van geluidbelastingkaarten
+aan Europa op te delen is in drie deelprocessen. Deze drie deelprocessen staan
+ook gevisualiseerd in [Figuur 3](Figuur_3) van links naar rechts.
 
 1.  Het verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en
     tabellen.
@@ -25,19 +27,19 @@ Binnen deze deelprocessen worden de informatiestromen zichtbaar gemaakt. In dit
 hoofdstuk zal per deelproces hier aandacht aan worden besteed.
 
 Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten en tabellen
--------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
 
-<figure id="Figuur_4.">
-<img src="media/figuur4.2.png" alt="">
-<figcaption>Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
-</figure>
+Input Verzamelen van geluidgegevens en berekenen van geluidbelastingkaarten.
+Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.
 
 De eerste stap in de het huidige proces voor de rapportage van
 geluidbelastingkaarten aan de Europese Commissie, is het verzamelen van de
 juiste gegevens om een geluidmodel mee te kunnen maken. Wat de juiste gegevens
 zijn wordt bepaald door akoestisch adviseurs in dienst van de bronhouder, een
 adviesbureau of een omgevingsdienst binnen de kaders van de Nederlandse
-rekenmethodieken voor het uitvoeren van geluidberekeningen. Voor de vorige ronde geluidbelastingkaarten betreft dit de rekenmethode van Bijlage VII van het Reken- en meetvoorschrift geluid 2012.
+rekenmethodieken voor het uitvoeren van geluidberekeningen. Voor de vorige ronde
+geluidbelastingkaarten betreft dit de rekenmethode van Bijlage VII van het
+Reken- en meetvoorschrift geluid 2012.
 
 ProRail, het Ministerie van Infrastructuur en Waterstaat, Rijkswaterstaat en
 provincies genereren de geluidcontouren en tabellen voor belangrijke wegen,
@@ -45,8 +47,9 @@ spoorwegen en luchthavens buiten agglomeraties. Daarnaast leveren zij een deel
 van de input-geluidgegevens voor het genereren van geluidcontouren en tabellen
 binnen agglomeraties. Voor het samenstellen van een geluidmodel moeten
 agglomeratie-gemeenten veel stappen ondernemen. Agglomeraties hebben volgens de
-[Europese richtlijn omgevingslawaai](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ%3AL%3A2002%3A189%3A0012%3A0025%3ANL%3APDF) de plicht om
-geluidbelastingkaarten te berekenen. In deze kaarten en tabellen
+[Europese richtlijn
+omgevingslawaai](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ%3AL%3A2002%3A189%3A0012%3A0025%3ANL%3APDF)
+de plicht om geluidbelastingkaarten te berekenen. In deze kaarten en tabellen
 moet de geluidbelasting afkomstig van industrie, provinciale wegen,
 hoofdspoorwegen, lokale wegen, hoofdwegen en de luchtvaart worden meegenomen.
 Deze gegevens zijn voor een groot deel in beheer bij andere bronhouders,
@@ -65,79 +68,93 @@ heeft iedere gemeente die hoort bij een agglomeratie de plicht om zelfstandig
 een geluidbelastingkaart en -tabel voor haar grondgebied op te stellen.
 Samenwerking en onderlinge uitwisseling van gegevens tussen
 agglomeratiegemeenten onderling en met provincies, komen voor op lokaal
-initiatief. Dit wordt weergegeven in [**Figuur 4**](#Figuur_4) aan de hand
-van verschillende kleuren en kaartjes. Op dit moment werkt het rijk aan
-harmonisatie van gegevens door een 3D-omgevingsmodel voor geluid, het Nationaal
-Wegenbestand (NWB), en onderzoek of een landelijk bestand met
-verkeersintensiteiten haalbaar is. Formeel zijn er tot nog toe geen vaste
-afspraken op landelijk niveau rondom de beschikbaarstelling van geluidgegevens
-voor geluidbelastingkaarten. In de praktijk worden op initiatief van InfoMil
-werkafspraken gemaakt rondom het beschikbaar stellen van geluidgegevens.
-Daarnaast is er contact tussen de RWS-bronbeheerder en agglomeratie-gemeenten
-wanneer er informatiebehoeften zijn. Wanneer een agglomeratie-gemeente
-bijvoorbeeld de informatiebehoefte heeft Rijkswegen toe te voegen aan het
-geluidmodel, wisselt RWS deze gegevens op aanvraag in Geomilieu-formaat uit. Door
-het ontbreken van formele afspraken, weet een agglomeratiegemeente niet van
-tevoren wanneer deze gegevens klaar zullen zijn om te worden gedeeld.
+initiatief. Dit wordt weergegeven in [Figuur 4](#Figuur_4) aan de hand van
+verschillende kleuren en kaartjes. Op dit moment werkt het rijk aan harmonisatie
+van gegevens door een 3D-omgevingsmodel voor geluid, het Nationaal Wegenbestand
+(NWB), en onderzoek of een landelijk bestand met verkeersintensiteiten haalbaar
+is. Formeel zijn er tot nog toe geen vaste afspraken op landelijk niveau rondom
+de beschikbaarstelling van geluidgegevens voor geluidbelastingkaarten. In de
+praktijk worden op initiatief van InfoMil werkafspraken gemaakt rondom het
+beschikbaar stellen van geluidgegevens. Daarnaast is er contact tussen de
+RWS-bronbeheerder en agglomeratie-gemeenten wanneer er informatiebehoeften zijn.
+Wanneer een agglomeratie-gemeente bijvoorbeeld de informatiebehoefte heeft
+Rijkswegen toe te voegen aan het geluidmodel, wisselt RWS deze gegevens op
+aanvraag in Geomilieu-formaat uit. Door het ontbreken van formele afspraken,
+weet een agglomeratiegemeente niet van tevoren wanneer deze gegevens klaar
+zullen zijn om te worden gedeeld.
 
 Centraal rapporteren van kaarten aan InfoMil
-------------------------------------------------
-<figure id="Figuur_5">
-<img src="media/figuur5.2.png" alt="">
-<figcaption>Centraal aanleveren van kaarten aan InfoMil. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
-</figure>
+--------------------------------------------
+
+Centraal aanleveren van kaarten aan InfoMil. Open afbeelding in een nieuw
+tabblad om de afbeelding groter te zien.
 
 Wanneer de geluidbelastingkaarten berekend zijn, worden deze gerapporteerd aan
 InfoMil. In het geval van luchthavens van nationaal belang, rijkswegen en
 hoofdspoorwegen buiten agglomeratiegrenzen, draagt het Ministerie van I&W de
 verantwoordelijkheid over de rapportage aan InfoMil. De geografische kaarten
 worden door de bevoegde autoriteit publiek beschikbaar gesteld. Alle
-agglomeratiegemeenten rapporteren zelfstandig geluidbelastingkaarten aan InfoMil. In [Artikel 8 van Besluit geluid milieubeheer](https://wetten.overheid.nl/jci1.3:c:BWBR0031477&hoofdstuk=3&paragraaf=1&artikel=8&z=2012-07-01&g=2012-07-01) staat dat geluidbelastingkaarten bestaan uit tabellen en geografische kaarten.
-In [artikel 11.9 van de Wet milieubeheer]([https://wetten.overheid.nl/jci1.3:c:BWBR0003245&hoofdstuk=11&titeldeel=11.2&paragraaf=11.2.2&artikel=11.9&z=2021-01-01&g=2021-01-01)
+agglomeratiegemeenten rapporteren zelfstandig geluidbelastingkaarten aan
+InfoMil. In [Artikel 8 van Besluit geluid
+milieubeheer](https://wetten.overheid.nl/jci1.3:c:BWBR0031477&hoofdstuk=3&paragraaf=1&artikel=8&z=2012-07-01&g=2012-07-01)
+staat dat geluidbelastingkaarten bestaan uit tabellen en geografische kaarten.
+In [artikel 11.9 van de Wet
+milieubeheer](%5Bhttps://wetten.overheid.nl/jci1.3:c:BWBR0003245&hoofdstuk=11&titeldeel=11.2&paragraaf=11.2.2&artikel=11.9&z=2021-01-01&g=2021-01-01)
 staat de aanleverplicht voor deze geluidbelastingkaarten omschreven. De
 aanleverplicht moet nog worden verankerd in de Omgevingswet. Een verschil tussen
 publieke geluidbelastingtabellen en de tabellen voor de EEA, is dat op
 bijvoorbeeld de publieke tabel voor Rijkswegen ook de geluidbelasting binnen
-agglomeratiegrenzen is meegenomen. Volgens
-de richtlijn omgevingslawaai is het alleen verplicht voor belangrijke wegen,
-spoorwegen en luchthavens van nationaal belang om geografische
-geluidbelastingkaarten te rapporteren. Voor de geluidbelastingkaarten voor het
-publiek, gelden een aantal aanvullende eisen vanuit Nederlandse wetgeving boven
-op de eisen uit de richtlijn omgevingslawaai. Een overzicht van deze eisen valt
-te vinden in [Bijlage 1](#bijlage-1-de-inhoud-van-geluidbelastingkaarten-volgens-de-omgevingsregeling).
+agglomeratiegrenzen is meegenomen. Volgens de richtlijn omgevingslawaai is het
+alleen verplicht voor belangrijke wegen, spoorwegen en luchthavens van nationaal
+belang om geografische geluidbelastingkaarten te rapporteren. Voor de
+geluidbelastingkaarten voor het publiek, gelden een aantal aanvullende eisen
+vanuit Nederlandse wetgeving boven op de eisen uit de richtlijn omgevingslawaai.
+Een overzicht van deze eisen valt te vinden in [Bijlage
+1](#bijlage-1-de-inhoud-van-geluidbelastingkaarten-volgens-de-omgevingsregeling).
 
 Output prepareren van een rapportage aan de Europese commissie
-------------------------------------------------------------------
+--------------------------------------------------------------
 
-<figure id="Figuur_6">
-<img src="media/figuur6.2.png" alt="">
-<figcaption>Output prepareren van een rapportage aan de EEA. Open afbeelding in een nieuw tabblad om de afbeelding groter te zien.</figcaption>
-</figure>
+Output prepareren van een rapportage aan de EEA. Open afbeelding in een nieuw
+tabblad om de afbeelding groter te zien.
 
 In het laatste deelproces zorgt Infomil ervoor dat de door bronhouders
 aangeleverde gegevens worden verwerkt tot een rapport aan de Europese Unie.
 Hierbij moeten de verschillende geluidbelastingtabellen van
-agglomeratiegemeenten worden samengevoegd tot een tabel. In deze tabel heeft elke agglomeratiegemeente één tabelrij per geluidbron.
-De geluidbelastingkaarten van agglomeratiegemeenten worden zo goed als mogelijk samengevoegd en
+agglomeratiegemeenten worden samengevoegd tot een tabel. In deze tabel heeft
+elke agglomeratiegemeente één tabelrij per geluidbron. De geluidbelastingkaarten
+van agglomeratiegemeenten worden zo goed als mogelijk samengevoegd en
 gerapporteerd, maar deze kan nooit geheel compleet zijn, aangezien niet ieder
 formaat geluidbelastingkaart met een ander kan worden samengevoegd.
 
 Geluidgevoelige gebouwen
---------------------------------------------------------------
+------------------------
+
 Voor het maken van geluidbelastingkaarten zijn onder meer gegevens nodig over
-geluidgevoelige gebouwen <span title="Om het aantal gevoelige gebouwen binnen een contour, en het betreffende
-aantal personen dat verblijft binnen deze contour te kunnen bepalen.">**[opmerking 5]**</span>. Een <span title="Gevoelig gebouw is (een deel van) een gebouw met een gebruiksfunctie
-zijnde woonfunctie, onderwijsfunctie, bijeenkomstfunctie van het type
-kinderopvang met bedgebied, of gezondheidszorgfunctie met bedgebied.">**geluidgevoelig gebouw [opmerking 6]**</span> is gedefinieerd in de Artikel 3.20 van het Besluit
-kwaliteit leefomgeving (Bkl). Om het aantal geluidgevoelige objecten te bepalen, gebruiken overheden vaak
-<span title="In de BAG worden één of meer functies van het Bouwbesluit als gebruiksdoel
-bij een Verblijfsobject opgenomen; een Verblijfsobject maakt onderdeel uit van
-een Pand.">**BAG-bestanden [opmerking 7]**</span>. BAG-bestanden bevatten niet alle gegevens die nodig zijn om
-alle geluidgevoelige gebouwen te identificeren <span title="In de BAG wordt bij een Pand/Verblijfsobject niet vastgelegd of het object
-in gebruik is als ‘kinderopvang met bedfunctie’ of ‘gezondheidszorg met
-bedfunctie’.">**[opmerking 8]**</span>. Combinatie met <span title="Voorbeelden van aanvullende hulpbronnen zijn bijvoorbeeld het Landelijk
-Register Kinderopvang (LRK), Basisregistratie Topografie (BRT), Digitaal
-Topografisch Bestand RWS (DTB RWS)">**andere bronnen [opmerking 9]**</span>. is noodzakelijk om alle geluidgevoelige
-gebouwen te bepalen. Rijkswaterstaat en ProRail hebben een [eigen bestand](https://www.infomil.nl/onderwerpen/geluid/nieuws/2017/tabellen/) (voor hun interessegebied)
-met geluidgevoelige gebouwen, en stellen die op verzoek beschikbaar aan
-gemeenten en provincies.
+geluidgevoelige gebouwen. Om het aantal gevoelige gebouwen binnen een contour,
+en het betreffende aantal personen dat verblijft binnen deze contour te kunnen
+bepalen. Een **geluidgevoelig gebouw** is gedefinieerd in de Artikel 3.20 van
+het Besluit kwaliteit leefomgeving (Bkl):
+
+>   Gevoelig gebouw is (een deel van) een gebouw met een gebruiksfunctie zijnde
+>   woonfunctie, onderwijsfunctie, bijeenkomstfunctie van het type kinderopvang
+>   met bedgebied, of gezondheidszorgfunctie met bedgebied.
+
+Om het aantal geluidgevoelige objecten te bepalen, gebruiken overheden vaak
+**BAG-bestanden.** In de Basisregistratie Adressen en Gebouwen (BAG) worden één
+of meer functies van het Bouwbesluit als gebruiksdoel bij een Verblijfsobject
+opgenomen; een Verblijfsobject maakt onderdeel uit van een Pand. BAG-bestanden
+bevatten niet alle gegevens die nodig zijn om alle geluidgevoelige gebouwen te
+identificeren. In de BAG wordt bij een Pand/Verblijfsobject niet vastgelegd of
+het object in gebruik is als ‘kinderopvang met bedfunctie’ of ‘gezondheidszorg
+met bedfunctie’.
+
+Combinatie met **andere bronnen** is noodzakelijk om alle geluidgevoelige
+gebouwen te bepalen. Voorbeelden van aanvullende hulpbronnen zijn bijvoorbeeld
+het Landelijk Register Kinderopvang (LRK) en de Basisregistratie Topografie
+(BRT).
+
+Rijkswaterstaat en ProRail hebben een [eigen
+bestand](https://www.infomil.nl/onderwerpen/geluid/nieuws/2017/tabellen/) (voor
+hun interessegebied) met geluidgevoelige gebouwen, en stellen die op verzoek
+beschikbaar aan gemeenten en provincies.
