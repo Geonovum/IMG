@@ -256,12 +256,8 @@ is dit een 2,5D geometrie (zie
 maar voor de begrijpelijkheid en leesbaarheid noemen we dit binnen IMGeluid
 3D-geometrie. Als de hoogte niet is opgenomen, spreken we van een 2D-geometrie.
 
-In geluidmodellen is het bij het merendeel van de gemodelleerde objecten van
-belang om de hoogte te weten. Voor alle objecttypen in IMGeluid is bepaald of de
-hoogte van belang is en moet worden opgenomen.
-
-Hoogte wordt in 3D geometrie opgenomen als derde coördinaat, de `z`, in elk
-coördinatenpaar van de geometrie. In hoofdstuk 4 is bij elk objecttype dat een
+Hoogte wordt in 3D geometrie opgenomen als derde coördinaat, de `z`-coordinaat.
+In hoofdstuk 4 is bij elk objecttype dat een
 geometrie als eigenschap heeft, bij deze eigenschap voorgeschreven of het om een
 2D of 3D geometrie gaat.
 
