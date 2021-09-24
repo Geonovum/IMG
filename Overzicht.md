@@ -101,7 +101,7 @@ geleverd.
 
 Vervolgens is optionaliteit op objecttype niveau aangegeven. Een objecttype is
 een klasse, een groep, van gelijksoortige objecten. Bijvoorbeeld het objecttype
-`Geluidoverdrachtsobject` of het meer specifieke objecttype `Bodemvlak`.
+Geluidoverdrachtsobject of het meer specifieke objecttype 'Bodemvlak'.
 
 In de regelgeving is vastgelegd welke geluidgegevens in het geluidregister
 moeten staan. Daaronder vallen ook de zogenaamde geluidbrongegevens (bij
@@ -117,7 +117,7 @@ oranje kader om het desbetreffende objecttype heen. Daarnaast kan op het niveau
 van attribuutsoorten gekeken worden naar de kardinaliteit.
 
 Elk objecttype heeft eigenschappen en relaties. In bovenstaand voorbeeld is
-bijvoorbeeld `absorptiefractie` een eigenschap van `Bodemvlak`. Deze
+bijvoorbeeld 'absorptiefractie' een eigenschap van 'Bodemvlak'. Deze
 eigenschappen noemen we attribuutsoort. Relaties zijn in dit voorbeeld niet te
 zien maar worden in de diagrammen getoond als een pijl van het ene naar het
 andere objecttype.
@@ -127,18 +127,18 @@ gegeven verplicht of optioneel is, en of het één of meer keer voor kan komen
 binnen een object, door middel van de *kardinaliteit*, in de vorm van een
 aanduiding tussen blokhaken.
 
--   `[1]` betekent: verplicht en mag maximaal één keer voorkomen. Deze
+-   '[1]' betekent: verplicht en mag maximaal één keer voorkomen. Deze
     kardinaliteit wordt meestal weggelaten. Als er bij een attribuutsoort of
-    relatie niets is aangegeven tussen blokhaken, betekent dit `[1]`.
+    relatie niets is aangegeven tussen blokhaken, betekent dit '[1]'.
 
--   `[0..1]` betekent: optioneel en mag maximaal één keer voorkomen.
+-   '[0..1]' betekent: optioneel en mag maximaal één keer voorkomen.
 
--   `[1..*]` betekent: verplicht en mag meer dan één keer voorkomen.
+-   '[1..\*]' betekent: verplicht en mag meer dan één keer voorkomen.
 
--   `[0..*]` betekent: optioneel en mag meer dan één keer voorkomen.
+-   '[0..\*]' betekent: optioneel en mag meer dan één keer voorkomen.
 
-In het bovenstaande voorbeeld mogen dus de `hellingshoek` en `schermhoogte` van
-elk `Geluidsschermdeel` worden weggelaten.
+In het bovenstaande voorbeeld mogen dus de 'hellingshoek' en 'schermhoogte' van
+elk 'Geluidsschermdeel' worden weggelaten.
 
 Het IMGeluid bestaat zoals in de vorige paragraaf is uitgelegd, uit een aantal
 modules, waarvan sommige generieker (algemener) zijn en andere specifieker. Als
@@ -147,7 +147,7 @@ geldt dit ook in de specifiekere modules die gebruik maken van dit objecttype.
 Met andere woorden, de kardinaliteit die een attribuutsoort of relatiesoort in
 een generieke module van IMGeluid heeft, geldt ook voor de specifiekere modules.
 
-Dit objecttype heeft een attribuutsoort `naam` met kardinaliteit `[0..1]`, dat
+Dit objecttype heeft een attribuutsoort 'naam' met kardinaliteit '[0..1]', dat
 wil zeggen het is optioneel: het mag worden aangeleverd, maar het hoeft niet.
 
 In het domein GPP Industrie is een objecttype GeluidbronIndustrie gedefinieerd
@@ -160,7 +160,7 @@ Als iets in sommige gevallen wel, en in andere gevallen niet verplicht is, dan
 is dit aangegeven in hoofdstuk 4 bij het desbetreffende gegeven onder het kopje
 **Regels**.
 
-Bij alle gegevens is aangegeven in hoofdstuk 4 dat `mogelijk geen waarde = Nee`.
+Bij alle gegevens is aangegeven in hoofdstuk 4 dat 'mogelijk geen waarde = Nee'.
 Dit is een metagegeven dat conform MIM moet worden ingevuld. Het geeft aan of
 het is toegestaan om een waarde weg te laten die formeel verplicht is, waarbij
 dan moet worden aangegeven wat de reden is van het weglaten. Dit wordt voor
@@ -177,7 +177,7 @@ geluidgegevens:
 De unieke code van de bronhouder is het KvK-nummer van de organisatie. De lengte
 van de lokale identificatie staat toe dat bronhouders gebruik maken van
 UUID's/GUID’s als identificatie. Een lokale identificatie kan de volgende
-karakters bevatten: `{“A”… “Z”, “a”… “z”, “0”… “9”, “_”, “-”}`.
+karakters bevatten: '{"A"… "Z", "a"… "z", "0"… "9", "\_", “-”}'.
 
 Het versienummer wordt in de CVGG gebruikt ten behoeve van formele historie. Als
 een object in een aanlevering een gewijzigde versie is van een object in een
@@ -193,12 +193,12 @@ lokaalID is maximaal 255 karakters lang.
 
 Voor invulling van het [MIM metagegegeven
 Authentiek](https://geonovum.github.io/MIM-Werkomgeving/#authentieke-gegevens),
-zal aan attributen het label `wettelijk kerngegeven` of `overig` worden
+zal aan attributen het label 'wettelijk kerngegeven' of 'overig' worden
 toegekend. Daar is voor gekozen omdat de CVGG geen basisregistratie is, maar wel
 een grondslag heeft in de wet. Indien er voor een attribuutsoort binnen iedere
-context een geluidbrongegeven is, wordt het label `wettelijk kerngegeven`
+context een geluidbrongegeven is, wordt het label 'wettelijk kerngegeven'
 toegekend. Wanneer een attribuutsoort niet of alleen in een specifieke context
-een geluidbrongegeven is, zal het label `overig` worden toegepast.
+een geluidbrongegeven is, zal het label 'overig' worden toegepast.
 
 #### Validatie van attribuutwaardes
 
@@ -224,7 +224,7 @@ voor definitie). Een formeel patroon is uitgedrukt als regular expression
 
 #### Meeteenheid
 
-Er wordt geen gebruik gemaakt van het Type `Measure` waarbij het mogelijk is om
+Er wordt geen gebruik gemaakt van het Type 'Measure' waarbij het mogelijk is om
 de meeteenheid op te geven. De meeteenheid zal daarom opgenomen worden in de
 definitie van de attributen.
 
@@ -235,7 +235,7 @@ aan dat er aanvullende eisen zijn aan het voorkomen of de inhoud van gegevens.
 
 Een mogelijke toepassing van regels is om te bepalen of een attribuutwaarde in
 een specifieke situatie verplicht is. Dit kan ervoor zorgen dat attributen met
-een multipliciteit van `[0..1]` wel verplicht zijn wanneer de condities uit de
+een multipliciteit van '[0..1]' wel verplicht zijn wanneer de condities uit de
 regel geldig zijn. De voorziening zal zorgen voor een validatiesysteem dat kan
 omgaan met regels, multipliciteit en patronen.
 
@@ -255,7 +255,7 @@ is dit een 2,5D geometrie (zie [Handreiking Geometrie](https://www.geonovum.nl/o
 maar voor de begrijpelijkheid en leesbaarheid noemen we dit binnen IMGeluid
 3D-geometrie. Als de hoogte niet is opgenomen, spreken we van een 2D-geometrie.
 
-Hoogte wordt in 3D geometrie opgenomen als derde coördinaat, de `z`-coordinaat.
+Hoogte wordt in 3D geometrie opgenomen als derde coördinaat, de 'z'-coordinaat.
 In hoofdstuk 4 is bij elk objecttype dat een
 geometrie als eigenschap heeft, bij deze eigenschap voorgeschreven of het om een
 2D of 3D geometrie gaat.
@@ -267,7 +267,7 @@ paragraaf voor uitleg over deze coördinaatsystemen. In sommige gevallen is het
 van belang om daarnaast te weten wat de relatieve hoogte is van het object ten
 opzichte van het maaiveld ter plaatse. Het IMGeluid maakt het mogelijk om deze
 informatie op te nemen als een lijst van hoogtegetallen die correspondeert met
-de lijst van coördinaten, i.e. voor elk coördinatenpaar (`x,y,z`) een getal dat
+de lijst van coördinaten, i.e. voor elk coördinatenpaar ('x,y,z') een getal dat
 de relatieve hoogte uitdrukt. De lijst van hoogtegetallen moet even lang zijn
 als de lijst met coördinatenparen, en dezelfde volgorde hanteren, zodat te zien
 is welk relatieve hoogtegetal correspondeert met welk coördinatenpaar.
@@ -306,10 +306,10 @@ vermelden van de EPSG code. Toegestane EPSG codes zijn:
 
 | Referentiesysteem | EPSG code    |
 |-------------------|--------------|
-| ETRS89 (2D)       | `EPSG:4258`  |
-| ETRS89 (3D)       | `EPSG:4937`  |
-| RD New (2D)       | `EPSG:28992` |
-| RD New + NAP (3D) | `EPSG:7415`  |
+| ETRS89 (2D)       | 'EPSG:4258'  |
+| ETRS89 (3D)       | 'EPSG:4937'  |
+| RD New (2D)       | 'EPSG:28992' |
+| RD New + NAP (3D) | 'EPSG:7415'  |
 
 #### Datum en tijd
 
@@ -356,8 +356,8 @@ De mapping is als volgt:
 | ManagementRestrictionAndRegulationZone | Geluidaandachtsgebied                                                     |
 | &nbsp;&nbsp;inspireId                  | identificatie (NEN3610ID)                                                 |
 | &nbsp;&nbsp;geometry                   | geometrie                                                                 |
-| &nbsp;&nbsp;zoneType                   | vaste waarde: `noise restriction zone`                                    |
-| &nbsp;&nbsp;environmentalDomain        | vaste waarde: `noise`                                                     |
+| &nbsp;&nbsp;zoneType                   | vaste waarde: 'noise restriction zone'                                    |
+| &nbsp;&nbsp;environmentalDomain        | vaste waarde: 'noise'                                                     |
 | &nbsp;&nbsp;designationPerdiod         | Unpopulated                                                               |
 | &nbsp;&nbsp;competentAuthority         | Geluidgegevenscolectie.bronhouder                                         |
 | &nbsp;&nbsp;beginLifespanVersion       | Geluidgegevenscollectie.tijdstipRegistratie                               |
@@ -367,7 +367,7 @@ De mapping is als volgt:
 | &nbsp;&nbsp;link                       | locatie                                                                   |
 | &nbsp;&nbsp;specialisedZoneType        | geluidbronsoort                                                           |
 | LegislationCitation                    | ontbreekt in IMGeluid, vaste verwijzing naar gerelateerde wet/regelgeving |
-| &nbsp;&nbsp;level                      | vaste waarde: `national`                                                  |
+| &nbsp;&nbsp;level                      | vaste waarde: 'national'                                                  |
 
 ## Algemene Termen en definities
 
@@ -462,7 +462,7 @@ Language](https://www.geonovum.nl/geo-standaarden/geography-markup-language-gml)
 
 Het GML applicatie schema behorend bij deze versie van de standaard is het
 schema dat is te vinden in:
-https://register.geostandaarden.nl/gmlapplicatieschema/img/1.1.0/
+https://register.geostandaarden.nl/gmlapplicatieschema/img/1.2.0/
 
 Dit schema maakt gebruik van versie 3.2.2 van het GML schema. (Let op: om
 historische redenen staat het 3.2.2 schema van GML in een folder met de naam
