@@ -135,7 +135,7 @@ de data en de voorkeuren van de dataprovider. Aanvullend op de internationale
 OGC-standaarden voor deze services, zijn er vanuit INSPIRE specifieke juridisch
 bindende vereisten waaraan deze services moeten voldoen. Deze vereisten zijn
 uitgewerkt in [technische
-specificaties](https://inspire.ec.europa.eu/Technical-Guidelines/Data-Specifications/2892),
+specificaties](https://inspire.ec.europa.eu/Technical-Guidelines2/Network-Services/41),
 waarmee deze vereisten geïmplementeerd kunnen worden. In Nederland is
 afgesproken dat de dataproviders services implementeren, in overeenstemming met
 deze technische specificaties.
