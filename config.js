@@ -14,10 +14,10 @@
 var respecConfig = 
 {
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-  specStatus: "GN-WV",                // Werk Versie
+  //specStatus: "GN-WV",                // Werk Versie
   //specStatus: "GN-CV",              // Consultatie Versie
   //specStatus: "GN-VV",              // Vaststellings Versie
-  //specStatus: "GN-DEF",             // Definitieve Versie
+  specStatus: "GN-DEF",             // Definitieve Versie
   //-- specType is verplicht! (activeer 1 van de volgende) ----------------------------
   //specType: "NO",                   // Norm
   //specType: "ST",                     // Standaard
@@ -31,7 +31,7 @@ var respecConfig =
   //format: "markdown",                 // altijd "markdown"     
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  //publishDate: "2021-05-21",  	      // Format is "YYY-MM-DD"
+  publishDate: "2021-11-15",  	      // Format is "YYY-MM-DD"
   //-- de namen van de Editor(s) ------------------------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors: 
@@ -100,7 +100,7 @@ var respecConfig =
   //pubDomain: "visu", 	            // Visualisatie
   //pubDomain: "wp", 	              // White Paper
   //-- Repositorynaam op GitHub -------------------------------------------------------
-  github: "https://github.com/Geonovum/IMG",
+  //github: "https://github.com/Geonovum/IMG",
   //-- Repositorynaam/issues op GitHub veranderd naar Jira helpdesk ------------------------------------------------
   // issueBase: "mailto:img%40geonovum%2E.nl",
   issueBase: "https://www.geonovum.nl/geo-standaarden/informatiemodel-geluid?search?text=Helpdesk#helpdesk",
