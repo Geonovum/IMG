@@ -1,5 +1,7 @@
 # Wijzigingen in het Informatiemodel Geluid
 
+Let op! er is nog een wijziging die niet is genoemd in de definitieve versie. Het gaat om relatierol "geluid**af**schermspoor" die nu "geluidschermspoor" heet.
+
 In de tabel hieronder staan de wijzigingen die in deze versie hebben
 plaatsgevonden na release 1.1, versie 21 mei 2021. Er worden alleen wezenlijke veranderingen
 genoemd. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
