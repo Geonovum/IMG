@@ -12,5 +12,6 @@ genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv gee
 | 5        | 145             | relatie verwijderd                     | De relatie tussen de objecttypes Geluidaandachtgebied en Geluidberekeningobject is overal in het model verwijderd.|
 | 6        | 144             | attribuut verplaatst                   | Het attribuut standaarBodemabsorptiefractie is verplaatst van het Objecttype Industrierekeninstellingen naar het Objecttype Terrein.|
 | 7        | 151             | volgorde attributen                    | De volgorde is overal aangepast naar: ID – naam – omschrijving – geometrie – attribuutsoorten die vaker voorkomen – rest. Attribuutsoorten uit overerving staan altijd bovenaan. |
-| 8        | 149			 | naamswijziging	                      | Wijziging van de enumeratiewaarde 'luchthaventerrein' naar 'luchthavengebied'. Tevens een toelichting toegevoegd. |
+| 8        | 149	      		 | naamswijziging	                        | Wijziging van de enumeratiewaarde 'luchthaventerrein' naar 'luchthavengebied'. Tevens een toelichting toegevoegd. |
 | 9        | 158             | nieuw object + relatie toegevoegd      | Object 'Geluidcontour' opgesplits in twee objecten 'GeluidcontourSet' en 'Geluidcontour'. Tevens definitie en toelichting toegevoegd aan 'GeluidcontourSet'|
+| 10       | 159             | definities aangepast                   | De definities van enumeratiewaarden "Besluit" en "Melding" in Documenttype zijn aangepast| 
