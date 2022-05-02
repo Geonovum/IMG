@@ -3,7 +3,7 @@
 In de tabel hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versie 1.3 van maart 2022. Er worden alleen wezenlijke veranderingen
 genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
 
-|**nummer**|**Github issue** | **Onderwerp**                          | **Wijziging** |
+|**nummer**|**Github issue** | **Soort wijziging**                    | **Wijziging** |
 |----------|-----------------|----------------------------------------|-----------------|
 | 1        | geen            | naamswijziging                         | Er is een wijziging die niet is genoemd in de changelog voor definitieve versie 1.2. Het gaat om relatierol "geluid**af**schermspoor" die nu "geluidschermspoor" heet.|
 | 2        | 155             | extra attributen voor Optrektoeslagvlak| De attribuutsoorten naam en omschrijving zijn met kardinaliteit [0..1] toegevoegd aan het Objecttype Optrektoeslagvlak. |
@@ -15,8 +15,8 @@ genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv gee
 | 8        | 149	     | naamswijziging	                      | Wijziging van de enumeratiewaarde 'luchthaventerrein' naar 'luchthavengebied'. Tevens een toelichting toegevoegd. |
 | 9        | 158             | nieuw object + relatie toegevoegd      | Object 'Geluidcontour' opgesplits in twee objecten 'GeluidcontourSet' en 'Geluidcontour'. Tevens definitie en toelichting toegevoegd aan 'GeluidcontourSet'|
 | 10       | 159             | definities aangepast                   | De definities van enumeratiewaarden "Besluit" en "Melding" in Documenttype zijn aangepast| 
-| 11       | 147             | SnelheidgegevensSpoor                  | dagdeel toegevoegd aan SnelheidgegevensSpoor.|
-| 12       | 160             | Documentverwijzing                     | Om regels te verminderen, zijn 2 regels omgezet in een toelichting|
-| 13       | 161             | Terein                                 | Om regels te verminderen, is het subtype Industrieterrein toegevoegd en hoeft geometrie alleen nog voor dit subtype opgegegeven te worden|
-| 14       | 162             | gegevensgroep "VerkeersgegevensWeg"    | Om regels te verminderen, zijn alle combinaties van dagdelen en motorvoertuigklassen aparte attributen in de gegevensgroep geworden|
-| 15       | 163             | attribuut verplicht gesteld            | Om regels te verminderen, is het attribuut uitstralingsrichting van GeluidbronIndustrie verplichtgesteld|
+| 11       | 147             | extra attribuut bij gegevensgroep      | dagdeel toegevoegd aan SnelheidgegevensSpoor.|
+| 12       | 160             | regels verplaatst naar toelichting     | Om regels te verminderen, zijn 2 regels omgezet in een toelichting.|
+| 13       | 161             | nieuw subtype                          | Om regels te verminderen, is het subtype Industrieterrein toegevoegd aan het objecttype Terrein en hoeft geometrie alleen nog voor dit subtype opgegegeven te worden.|
+| 14       | 162             | gegevensgroep geherstructureerd        | Om regels te verminderen, zijn alle combinaties van dagdelen en motorvoertuigklassen in de gegevensgroep "VerkeersgegevensWeg" aparte attributen in de gegevensgroep geworden.|
+| 15       | 163             | attribuut verplicht gesteld            | Om regels te verminderen, is het attribuut uitstralingsrichting van GeluidbronIndustrie verplichtgesteld.|
