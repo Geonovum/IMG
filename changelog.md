@@ -16,3 +16,7 @@ genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv gee
 | 9        | 158             | nieuw object + relatie toegevoegd      | Object 'Geluidcontour' opgesplits in twee objecten 'GeluidcontourSet' en 'Geluidcontour'. Tevens definitie en toelichting toegevoegd aan 'GeluidcontourSet'|
 | 10       | 159             | definities aangepast                   | De definities van enumeratiewaarden "Besluit" en "Melding" in Documenttype zijn aangepast| 
 | 11       | 147             | SnelheidgegevensSpoor                  | dagdeel toegevoegd aan SnelheidgegevensSpoor.|
+| 12       | 160             | Documentverwijzing                     | Om regels te verminderen, zijn 2 regels omgezet in een toelichting|
+| 13       | 161             | Terein                                 | Om regels te verminderen, is het subtype Industrieterrein toegevoegd en hoeft geometrie alleen nog voor dit subtype opgegegeven te worden|
+| 14       | 162             | gegevensgroep "VerkeersgegevensWeg"    | Om regels te verminderen, zijn alle combinaties van dagdelen en motorvoertuigklassen aparte attributen in de gegevensgroep geworden|
+| 15       | 163             | attribuut verplicht gesteld            | Om regels te verminderen, is het attribuut uitstralingsrichting van GeluidbronIndustrie verplichtgesteld|
