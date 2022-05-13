@@ -325,7 +325,7 @@ De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
 
 -   [Raamwerk van geo-standaarden 3.0](https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf)
 
--   [NEN 3610:2011/A1:2016 Basismodel Geo-informatie](https://geonovum.github.io/bmgi/docs/#dataproductspecificatie-nl)
+-   [NEN 3610:2011/A1:2016 Basismodel Geo-informatie](https://www.geonovum.nl/geo-standaarden/nen-3610-basismodel-voor-informatiemodellen)
 
 -   [[iso-19107-2003]] ISO19107: Geographic information – Spatial schema
 
