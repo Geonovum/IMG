@@ -1,6 +1,6 @@
 # Wijzigingen in het Informatiemodel Geluid
 
-In de tabel hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versie 1.3 van maart 2022. Er worden alleen wezenlijke veranderingen
+In de tabel hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versie 2.0. Er worden alleen wezenlijke veranderingen
 genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
 
 |**nummer**|**Github issue** | **Soort wijziging**                    | **Wijziging** |
@@ -21,3 +21,4 @@ genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv gee
 | 14       | [162](https://github.com/Geonovum/IMG/issues/162)             | gegevensgroep geherstructureerd        | Om regels te verminderen, zijn alle combinaties van dagdelen en motorvoertuigklassen in de gegevensgroep "VerkeersgegevensWeg" aparte attributen in de gegevensgroep geworden.|
 | 15       | [163](https://github.com/Geonovum/IMG/issues/163)             | attribuut verplicht gesteld            | Om regels te verminderen, is het attribuut uitstralingsrichting van GeluidbronIndustrie verplichtgesteld.|
 | 16       | [124](https://github.com/Geonovum/IMG/issues/124) | klasse verwijderd | De klasse GeluidschermSpoor is samengevoegd met de klasse Geluidscherm |
+| 17       | [157](https://github.com/Geonovum/IMG/issues/157) | Titel aangepast | Versienummer toegevoegd aan titel |
