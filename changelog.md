@@ -22,3 +22,4 @@ genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv gee
 | 15       | [163](https://github.com/Geonovum/IMG/issues/163)             | attribuut verplicht gesteld            | Om regels te verminderen, is het attribuut uitstralingsrichting van GeluidbronIndustrie verplichtgesteld.|
 | 16       | [124](https://github.com/Geonovum/IMG/issues/124) | klasse verwijderd | De klasse GeluidschermSpoor is samengevoegd met de klasse Geluidscherm |
 | 17       | [157](https://github.com/Geonovum/IMG/issues/157) | Titel aangepast | Versienummer toegevoegd aan titel |
+| 18       | [167](https://github.com/Geonovum/IMG/issues/167) | attribuut verwijderd | Monitoringresultaat.kwalitatieveOnderbouwing verwijderd |
