@@ -253,7 +253,8 @@ een driedimensionale (3D) ruimte (x,y,z) bevinden maar dat de geometrieën
 zichzelf of elkaar niet mogen overlappen in de horizontale projectie. Eigenlijk
 is dit een 2,5D geometrie (zie [Handreiking Geometrie](https://docs.geostandaarden.nl/nen3610/gimeg/),
 maar voor de begrijpelijkheid en leesbaarheid noemen we dit binnen IMGeluid
-3D-geometrie. Als de hoogte niet is opgenomen, spreken we van een 2D-geometrie.
+3D-geometrie. Op deze regel is om implementatie technische redenen één uitzondering gemaakt in het IMG voor het objecttype Geluidschermdeel.
+Als de hoogte niet is opgenomen, spreken we van een 2D-geometrie.
 
 Hoogte wordt in 3D geometrie opgenomen als derde coördinaat, de 'z'-coordinaat.
 In hoofdstuk 4 is bij elk objecttype dat een
