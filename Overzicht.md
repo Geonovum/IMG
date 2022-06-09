@@ -463,7 +463,10 @@ Language](https://www.geonovum.nl/geo-standaarden/geography-markup-language-gml)
 
 Het GML applicatie schema behorend bij deze versie van de standaard is het
 schema dat is te vinden in:
-https://register.geostandaarden.nl/gmlapplicatieschema/img/1.2.0/
+https://register.geostandaarden.nl/gmlapplicatieschema/img/2.0.0/
+
+Noot: In GML uitwisseling zijn twee manieren beschreven voor het coderen van relaties: inLine en byReference. Het huidige GML applicatie schema staat beide manieren toe maar in uitwisseling is slechts byReference toegestaan.
+ - **Regel:** In de uitwisseling moeten relaties altijd als byReference gecodeerd zijn.
 
 Dit schema maakt gebruik van versie 3.2.2 van het GML schema. (Let op: om
 historische redenen staat het 3.2.2 schema van GML in een folder met de naam
