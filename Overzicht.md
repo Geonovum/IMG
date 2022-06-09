@@ -224,9 +224,8 @@ voor definitie). Een formeel patroon is uitgedrukt als regular expression
 
 #### Meeteenheid
 
-Er wordt geen gebruik gemaakt van het Type 'Measure' waarbij het mogelijk is om
-de meeteenheid op te geven. De meeteenheid zal daarom opgenomen worden in de
-definitie van de attributen.
+Wanneer voor de waarde van een attribuutsoort een meeteenheid gebruikt 
+wordt is deze opgenomen in het veld 'Meeteenheid' bij de details van de attribuutsoort.
 
 #### Regels
 
