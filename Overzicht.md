@@ -127,25 +127,22 @@ gegeven verplicht of optioneel is, en of het één of meer keer voor kan komen
 binnen een object, door middel van de *kardinaliteit*, in de vorm van een
 aanduiding tussen blokhaken.
 
--   '[1]' betekent: verplicht en mag maximaal één keer voorkomen. Deze
+-   '[1]' betekent: verplicht en moet precies één keer voorkomen. Deze
     kardinaliteit wordt meestal weggelaten. Als er bij een attribuutsoort of
     relatie niets is aangegeven tussen blokhaken, betekent dit '[1]'.
 
 -   '[0..1]' betekent: optioneel en mag maximaal één keer voorkomen.
 
--   '[1..\*]' betekent: verplicht en mag meer dan één keer voorkomen.
+-   '[1..\*]' betekent: verplicht en moet eén of meer keer voorkomen.
 
 -   '[0..\*]' betekent: optioneel en mag meer dan één keer voorkomen.
-
-In het bovenstaande voorbeeld mogen dus de 'hellingshoek' en 'schermhoogte' van
-elk 'Geluidsschermdeel' worden weggelaten.
 
 Het IMGeluid bestaat zoals in de vorige paragraaf is uitgelegd, uit een aantal
 modules, waarvan sommige generieker (algemener) zijn en andere specifieker. Als
 een objecttype in een algemener deel van IMGeluid optioneel is verklaard, dan
 geldt dit ook in de specifiekere modules die gebruik maken van dit objecttype.
 Met andere woorden, de kardinaliteit die een attribuutsoort of relatiesoort in
-een generieke module van IMGeluid heeft, geldt ook voor de specifiekere modules.
+een generieke module van IMGeluid heeft, geldt ook voor de meer specifieker modules.
 
 Dit objecttype heeft een attribuutsoort 'naam' met kardinaliteit '[0..1]', dat
 wil zeggen het is optioneel: het mag worden aangeleverd, maar het hoeft niet.
@@ -163,8 +160,8 @@ is dit aangegeven in hoofdstuk 4 bij het desbetreffende gegeven onder het kopje
 Bij alle gegevens is aangegeven in hoofdstuk 4 dat 'mogelijk geen waarde = Nee'.
 Dit is een metagegeven dat conform MIM moet worden ingevuld. Het geeft aan of
 het is toegestaan om een waarde weg te laten die formeel verplicht is, waarbij
-dan moet worden aangegeven wat de reden is van het weglaten. Dit wordt voor
-IMGeluid niet van belang geacht, maar moet wel worden ingevuld conform MIM.
+dan moet worden aangegeven wat de reden is van het weglaten. Dit is voor
+IMGeluid niet van belang, maar moet wel worden ingevuld conform MIM.
 
 #### Identificatie binnen het informatiemodel
 
