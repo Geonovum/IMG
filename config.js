@@ -37,10 +37,15 @@ var respecConfig =
   editors: 
   [
     {
-      name:       "Gerard Trouborst",
+      name:       "Pieter Bresters",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
-    }, 
+    },
+    {
+      name:       "Wilko Quak",
+      company:    "Geonovum",
+      companyURL: "https://www.geonovum.nl"
+    },
   ],
   //-- de namen van de Author(s) ------------------------------------------------------
   //-- vul in: per Author: name:, company:, companyURL: -------------------------------
