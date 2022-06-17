@@ -461,8 +461,8 @@ Het GML applicatie schema behorend bij deze versie van de standaard is het
 schema dat is te vinden in:
 https://register.geostandaarden.nl/gmlapplicatieschema/img/2.0.0/
 
-Noot: In GML uitwisseling zijn twee manieren beschreven voor het coderen van relaties: inLine en byReference. Het huidige GML applicatie schema staat beide manieren toe maar in uitwisseling is slechts byReference toegestaan.
- - **Regel:** In de uitwisseling moeten relaties altijd als byReference gecodeerd zijn.
+Noot: In GML uitwisseling zijn twee manieren beschreven voor het coderen van relaties: inline en byReference. Bij inline word het gerelateerde object ingekapseld in de XML codering, terwijl bij byReference een link naar het gerelateerde object word opgenomen, waarbij dat gerelateerde object elders in het uitwisselbestand staat. Het huidige GML applicatie schema staat beide manieren toe maar in uitwisseling is slechts byReference toegestaan.
+ - **Regel:** In de uitwisseling moeten relaties altijd als byReference gecodeerd zijn. Het inkapselen van een gerelateerd object is verboden.
 
 Dit schema maakt gebruik van versie 3.2.2 van het GML schema. (Let op: om
 historische redenen staat het 3.2.2 schema van GML in een folder met de naam
