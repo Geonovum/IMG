@@ -258,7 +258,7 @@ geometrie als eigenschap heeft, bij deze eigenschap voorgeschreven of het om een
 
 Hoogte is bij 3D geometrieën aangegeven in meters. Afhankeljik van het
 coordinaatsysteem is dit ten opzichte van NAP (in het geval van RD New) of ten
-opzichte van de ellipsoid (in het geval van ETRS98). Zie ook de volgende
+opzichte van de ellipsoid (in het geval van ETRS89). Zie ook de volgende
 paragraaf voor uitleg over deze coördinaatsystemen. In sommige gevallen is het
 van belang om daarnaast te weten wat de relatieve hoogte is van het object ten
 opzichte van het maaiveld ter plaatse. Het IMGeluid maakt het mogelijk om deze
@@ -266,7 +266,10 @@ informatie op te nemen als een lijst van hoogtegetallen die correspondeert met
 de lijst van coördinaten, i.e. voor elk coördinatenpaar ('x,y,z') een getal dat
 de relatieve hoogte uitdrukt. De lijst van hoogtegetallen moet even lang zijn
 als de lijst met coördinatenparen, en dezelfde volgorde hanteren, zodat te zien
-is welk relatieve hoogtegetal correspondeert met welk coördinatenpaar.
+is welk relatieve hoogtegetal correspondeert met welk coördinatenpaar. Bij 
+Geluidschermdeel is hiervoor een andere oplossing gekozen waarbij een extra 
+geometrie, een lijn die langs de onderkant van het scherm loopt, als eigenschap
+aan het Geluidschermdeel is toegevoegd.
 
 Indien nodig is het daarnaast mogelijk om aan te geven dat een object zwevend is
 ten opzichte van het maaiveld.
