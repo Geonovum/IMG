@@ -1,6 +1,6 @@
 ---
-name: Wijzigingsvoorstel
-about: Template voor het indienen van een wijzigingsvoorstel
+name: Wijzigingsverzoek
+about: Template voor het indienen van een wijzigingsverzoek
 title: ''
 labels: ''
 assignees: ''
