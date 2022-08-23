@@ -1,7 +1,15 @@
 # Wijzigingen in het Informatiemodel Geluid
 
-In de tabel hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versie 2.0. Er worden alleen wezenlijke veranderingen
+Hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versie 2.0. Er worden alleen wezenlijke veranderingen
 genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
+
+## wijzigingen in versie 2.1
+
+|**Github issue** | **Wijziging** |
+|-----------------|---------------|
+|[175](https://github.com/Geonovum/IMG/issues/175)   | Attribuut identificatie is toegevoegd aan Geluidcontour.|
+
+## Wijzigingen in versie 2.0
 
 |**nummer**|**Github issue**                                   | **Soort wijziging**                       | **Wijziging** |
 |----------|---------------------------------------------------|-------------------------------------------|---------------|
