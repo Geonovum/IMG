@@ -16,7 +16,7 @@ Beschrijf hier wat er gewijzigd moet worden aan de standaard
 # Impactanalyse
 Geef hier een indicatie van de impact van de wijziging:
 - Wie gaat er wat van merken?
-- Verandert de semantiek van de standaard?
+- Veranderen definities van objecten in de standaard zodanig dat de wijziging impact heeft op de uit te wisselen gegevens?
 - Heeft het impact op het xml-schema?
 
 # Toelichting
