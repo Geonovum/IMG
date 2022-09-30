@@ -155,7 +155,14 @@ optioneel.
 
 Als iets in sommige gevallen wel, en in andere gevallen niet verplicht is, dan
 is dit aangegeven in hoofdstuk 4 bij het desbetreffende gegeven onder het kopje
-**Regels**.
+**Regels**. Ook voor regels geldt dat als ze voor de algemene klasse gelden 
+ze ook voor alle specialisaties van die klasse gelden.
+
+In sommige gevallen staat in het diagram de naam van de generieke klasse _cursief_ gescheven.
+De betekent dat de klasse abstract is en objecten van dat type niet voorkomen in de 
+uitwisseling. In de uitwissel zul je bijvoorbeeld nooit objecten van het type
+_Geluidoverdrachtobject_ tegenkomen, maar alleen instanties van de specieke
+subklasses zoals Geluidschermdeel, Bodemvlak of Hoogtelijn.
 
 Bij alle gegevens is aangegeven in hoofdstuk 4 dat 'mogelijk geen waarde = Nee'.
 Dit is een metagegeven dat conform MIM moet worden ingevuld. Het geeft aan of
