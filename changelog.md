@@ -11,8 +11,8 @@ genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv gee
 |[175](https://github.com/Geonovum/IMG/issues/175)   | Attribuut identificatie is toegevoegd aan Geluidcontour.|
 |[176](https://github.com/Geonovum/IMG/issues/176)   | Verwijzing naar het GML Simple Feature profile opgenomen in de standaard.|
 |[178](https://github.com/Geonovum/IMG/issues/178)   | UML constructies overerving van regels en abstracte klasse beter uitgelegd.|
-|[179](https://github.com/Geonovum/IMG/issues/179)   | Toegestane waarden Industrieterrein.standaard­Bodemabsorptiefractie attribuut op juist plaats gezet.|
-|[180](https://github.com/Geonovum/IMG/issues/180)   | Bij Geluidschermdeel.onderkantScherm  regels verplaatst van toelichtingved naar het regels veld van Geluidschermdeel.|
+|[179](https://github.com/Geonovum/IMG/issues/179)   | Toegestane waarden Industrieterrein.standaard­Bodemabsorptiefractie attribuut op juiste plaats gezet.|
+|[180](https://github.com/Geonovum/IMG/issues/180)   | Bij Geluidschermdeel.onderkantScherm  regels verplaatst van toelichtingveld naar het regels veld van Geluidschermdeel.|
 
 
 ## Wijzigingen in versie 2.0
