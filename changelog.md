@@ -8,7 +8,9 @@ genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv gee
 |**Github issue** | **Wijziging** |
 |-----------------|---------------|
 |[72](https://github.com/Geonovum/IMG/issues/72)     | Regel toegevoegd die zegt dat bij zwevende geluidschermen onderkantScherm verplicht is.|
-|[175](https://github.com/Geonovum/IMG/issues/175)   | Attribuut identificatie is toegevoegd aan Geluidcontour.|
+|[143](https://github.com/Geonovum/IMG/issues/143)   | Ook de kardinaliteit van Monitoringresultaat.geluidberekingobject op [1..2] gezet. Deze wijziging resulteert in een wijziging van het XSD.|
+|[161](https://github.com/Geonovum/IMG/issues/161)   | Regel toegevoegd aan Terrein zodat een gewoon terrein niet als industrieterrein mag worden gelabelled.|
+|[175](https://github.com/Geonovum/IMG/issues/175)   | Attribuut identificatie is toegevoegd aan Geluidcontour. Deze wijziging resulteert in een wijziging van het XSD.|
 |[176](https://github.com/Geonovum/IMG/issues/176)   | Verwijzing naar het GML Simple Feature profile opgenomen in de standaard.|
 |[178](https://github.com/Geonovum/IMG/issues/178)   | UML constructies overerving van regels en abstracte klasse beter uitgelegd.|
 |[179](https://github.com/Geonovum/IMG/issues/179)   | Toegestane waarden Industrieterrein.standaard­Bodemabsorptiefractie attribuut op juiste plaats gezet.|
