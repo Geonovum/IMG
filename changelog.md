@@ -1,20 +1,20 @@
 # Wijzigingen in het Informatiemodel Geluid
 
-Hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versie 2.0. Er worden alleen wezenlijke veranderingen
-genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
+Hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versie 2.0 en versie 2.1. Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
 
-## wijzigingen in versie 2.1
+## Wijzigingen in versie 2.1
 
-|**Github issue** | **Wijziging** |
-|-----------------|---------------|
-|[72](https://github.com/Geonovum/IMG/issues/72)     | Regel toegevoegd die zegt dat bij zwevende geluidschermen onderkantScherm verplicht is.|
-|[143](https://github.com/Geonovum/IMG/issues/143)   | Ook de kardinaliteit van Monitoringresultaat.geluidberekingobject op [1..2] gezet. Deze wijziging resulteert in een wijziging van het XSD.|
-|[161](https://github.com/Geonovum/IMG/issues/161)   | Regel toegevoegd aan Terrein zodat een gewoon terrein niet als industrieterrein mag worden gelabelled.|
-|[175](https://github.com/Geonovum/IMG/issues/175)   | Attribuut identificatie is toegevoegd aan Geluidcontour. Deze wijziging resulteert in een wijziging van het XSD.|
-|[176](https://github.com/Geonovum/IMG/issues/176)   | Verwijzing naar het GML Simple Feature profile opgenomen in de standaard.|
-|[178](https://github.com/Geonovum/IMG/issues/178)   | UML constructies overerving van regels en abstracte klasse beter uitgelegd.|
-|[179](https://github.com/Geonovum/IMG/issues/179)   | Toegestane waarden Industrieterrein.standaard­Bodemabsorptiefractie attribuut op juiste plaats gezet.|
-|[180](https://github.com/Geonovum/IMG/issues/180)   | Bij Geluidschermdeel.onderkantScherm  regels verplaatst van toelichtingveld naar het regels veld van Geluidschermdeel.|
+|**nummer**|**Github issue** | **Soort wijziging** | **Wijziging**|
+|----------|-----------------|---------------------|--------------|
+| 1        |[72](https://github.com/Geonovum/IMG/issues/72)     |regel| Regel toegevoegd die zegt dat bij zwevende geluidschermen onderkantScherm verplicht is.|
+| 2        |[143](https://github.com/Geonovum/IMG/issues/143)   |kardinaliteit| Ook de kardinaliteit van Monitoringresultaat.geluidberekingobject op [1..2] gezet. Deze wijziging resulteert in een wijziging van het XSD.|
+| 3        |[161](https://github.com/Geonovum/IMG/issues/161)   |regel| Regel toegevoegd aan Terrein zodat een gewoon terrein niet als industrieterrein mag worden gelabelled.|
+| 4        |[175](https://github.com/Geonovum/IMG/issues/175)   |attribuut toegevoegd| Attribuut identificatie is toegevoegd aan Geluidcontour. Deze wijziging resulteert in een wijziging van het XSD.|
+| 5        |[176](https://github.com/Geonovum/IMG/issues/176)   |toelichting| Verwijzing naar het GML Simple Feature profile opgenomen in de standaard.|
+| 6        |[177](https://github.com/Geonovum/IMG/issues/177)   |regel| 3 Regels betreffende Geluidgegevenscollectie.type zijn aangepast|
+| 7        |[178](https://github.com/Geonovum/IMG/issues/178)   |toelichting| UML constructies overerving van regels en abstracte klasse beter uitgelegd.|
+| 8        |[179](https://github.com/Geonovum/IMG/issues/179)   |regel| Toegestane waarden Industrieterrein.standaard­Bodemabsorptiefractie attribuut op juiste plaats gezet.|
+| 9        |[180](https://github.com/Geonovum/IMG/issues/180)   |regel| Bij Geluidschermdeel.onderkantScherm  regels verplaatst van toelichtingveld naar het regels veld van Geluidschermdeel.|
 
 
 ## Wijzigingen in versie 2.0
