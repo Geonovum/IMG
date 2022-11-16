@@ -159,7 +159,10 @@ var respecConfig =
   },
 
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
-  previousPublishDate: "20221025",    	    // Format is "YYYYMMDD"
+  // 2022-11-16: Het is even onduidelijk of er nu wel of geen streepjes in de datum moeten. Respec moppert in
+  //    ieder geval als ze er niet staan. Ik zet ze even neer en misschien moeten ze ook wel in de tag bij het doen
+  //    van een release.
+  previousPublishDate: "2022-10-25",    	    // Format is "YYYY-MM-DD"
   //previousMaturity: "GN-VV",                 // kies 1 van deze 3 regels
   //previousMaturity: "GN-CV",                   // kies 1 van deze 3 regels  	  
   previousMaturity: "GN-DEF",  	                // kies 1 van deze 3 regels
