@@ -1,6 +1,6 @@
 ---
 name: Wijzigingsverzoek
-about: Template voor het indienen van een wijzigingsverzoek
+about: Template voor wijzigingsverzoek  (meld eerst via IMG@geonovum.nl)
 title: ''
 labels: 9 enhancement
 assignees: ''

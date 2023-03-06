@@ -1,6 +1,6 @@
 ---
 name: Foutmelding
-about: Template voor het melden van een fout in de standaard
+about: Template voor een fout  (meld eerst via IMG@geonovum.nl)
 title: ''
 labels: 9 bug
 assignees: ''
