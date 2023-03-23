@@ -1,7 +1,7 @@
 ---
 name: Wijzigingsverzoek
 about: Template voor wijzigingsverzoek  (meld eerst via IMG@geonovum.nl)
-title: ''
+title: titel (SDIMG-xxx, WELT-yyy)
 labels: 9 enhancement
 assignees: ''
 
@@ -17,10 +17,11 @@ Beschrijf hier wat er gewijzigd moet worden aan de standaard
 Geef hier een indicatie van de impact van de wijziging:
 -Wie gaat er wat van merken? **Data providers, softwareleveranciers**
 -Veranderen definities van objecten in de standaard zodanig dat de wijziging impact heeft op de uit te wisselen gegevens? **Ja/Nee**
--Is er een herlevering nodig naar de CVGG? **Ja/Nee**
+-Is er een herlevering nodig naar de CVGG? **Ja/Nee, Als nieuwe data herleidbaar is, is geen herlevering nodig.**
 -Heeft het impact op het xml-schema? **Ja/Nee**
 -Is het backward compatible in de zin van validatie op het schema? **Ja/Nee**
--Heeft het impact op de validatieregels in IMG? **Ja/Nee**
+-Heeft het impact op de regels in IMG? **Ja/Nee**
+-Heeft het impact op de validatieregels voor de CVGG? **Ja/Nee**
 -Heeft het impact op de omgevingsregeling? **Ja/Nee**
 -Is het een X, Y, of Z wijziging? **X, Y of Z**
 
