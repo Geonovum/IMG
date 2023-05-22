@@ -2,6 +2,13 @@
 
 Hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versie 2.0 en versie 2.1. Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
 
+## Wijzigingen in versie 3.0
+
+| **Github issue**                                  | **Soort wijziging** | **Wijziging**                                |
+| ------------------------------------------------- | ------------------- | -------------------------------------------- |
+| [191](https://github.com/Geonovum/IMG/issues/191) | Klasse verplaats   | Klasse Terrein uit Geluidgegevenscollectie gehaald en los neergezet |
+| [193](https://github.com/Geonovum/IMG/issues/193) | Klasse toegevoegd   | Abstracte klasse GemonitordObject toegevoegd |
+
 ## Wijzigingen in versie 2.1
 
 |**nummer**|**Github issue** | **Soort wijziging** | **Wijziging**|
