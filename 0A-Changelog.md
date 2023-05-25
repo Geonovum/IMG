@@ -1,13 +1,25 @@
 # Wijzigingen in het Informatiemodel Geluid
 
-Hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versie 2.0 en versie 2.1. Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
+Hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versie 2.0, versie 2.1 en versie 3.0. 
+Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
 
 ## Wijzigingen in versie 3.0
 
-| **Github issue**                                  | **Soort wijziging** | **Wijziging**                                |
-| ------------------------------------------------- | ------------------- | -------------------------------------------- |
-| [191](https://github.com/Geonovum/IMG/issues/191) | Klasse verplaats   | Klasse Terrein uit Geluidgegevenscollectie gehaald en los neergezet |
-| [193](https://github.com/Geonovum/IMG/issues/193) | Klasse toegevoegd   | Abstracte klasse GemonitordObject toegevoegd |
+|**nummer**| **Github issue**                                 | **Soort wijziging**                  | **Wijziging**                                |
+| ---------|------------------------------------------------- | ------------------------------------ | -------------------------------------------- |
+| 1        |[181](https://github.com/Geonovum/IMG/issues/181) | Toelichting toegevoegd               | Bij LijnbronIndustrie en VlakbronIndustrie is een toelichting toegevoegd dat ze geen onderdeel zijn van Geluidsgegevenscollectie, maar wel te vinden zijn via GeluidsbronIndustrie.|
+| 2        |[182](https://github.com/Geonovum/IMG/issues/182) | Subtype toegevoegd                   | GeluidschermMetDiffractor is toegevoegd als subtype van Geluidoverdrachtsobject. |
+| 3        |[183](https://github.com/Geonovum/IMG/issues/183) | Doublelist vervangen door geometrie  | Daar waar in versie 2.1 nog het optionele veld om de hoogte via een doublelist aan te geven is dat vervangen door een optionele 2e geometrie. |
+| 4        |[184](https://github.com/Geonovum/IMG/issues/184) | Symbool afgeleid attribuut verwijderd| Regel toegevoegd bij Geluidgegevenscollectie.jaar |
+| 5        |[185](https://github.com/Geonovum/IMG/issues/185) | Links in datatype toegevoegd         | Op meerdere plekken is de link naar datatypes toegevoegd.  |
+| 6        |[186](https://github.com/Geonovum/IMG/issues/186) | Definities aangepast                 | Bij Optrektoeslagpunt.geometrie en Contourvlak.contourVlak is aangegeven of het om 2D of 3D geometrie gaat.|
+| 7        |[187](https://github.com/Geonovum/IMG/issues/187) | Patroon teruggezet                   | Het tussen versie 1.2 en 2.0 weggevallen patroon bij verkeersgegevensWeg is teruggezet.|
+| 8        |[188](https://github.com/Geonovum/IMG/issues/188) | Gegevensgroepen samengevoegd         | spoorgegevensblokken intensiteit en snelheid zijn samengevoegd.|
+| 9        |[189](https://github.com/Geonovum/IMG/issues/189) | Regel toegevoegd                     | Regel toegevoegd bij Geluidgegevenscollectie.jaar.|
+| 10       |[190](https://github.com/Geonovum/IMG/issues/190) | Relatie verplaats                    | Relatie tussen Geluidproductieplafondobject en Terrein verplaatsen naar subtypen voor industrie. |
+| 11       |[191](https://github.com/Geonovum/IMG/issues/191) | Klasse verplaats                     | Klasse Terrein uit Geluidgegevenscollectie gehaald en los neergezet. |
+| 12       |[191](https://github.com/Geonovum/IMG/issues/192) | Regels aangepast                     | Er zijn 53 regels aangepast waardoor ze nu eenduidiger zijn en tevens volgens de regels van [Rulespeak](https://www.rulespeak.com/en/).|
+| 13       |[193](https://github.com/Geonovum/IMG/issues/193) | Klasse toegevoegd                    | Abstracte klasse GemonitordObject toegevoegd.|
 
 ## Wijzigingen in versie 2.1
 
