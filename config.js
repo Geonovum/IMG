@@ -18,15 +18,9 @@ var respecConfig =
   //specStatus: "GN-CV",              // Consultatie Versie
   //specStatus: "GN-VV",              // Vaststellings Versie
   //specStatus: "GN-DEF",             // Definitieve Versie
-  //-- specType is verplicht! (activeer 1 van de volgende) ----------------------------
-  //specType: "NO",                   // Norm
-  //specType: "ST",                     // Standaard
+  //-- specType is verplicht! 
   specType: "IM",                   // Informatie Model
-  //specType: "PR",                   // Praktijk Richtlijn
-  //specType: "HR",                   // HandReiking
-  //specType: "WA",                   // Werkafspraak
-  //specType: "US",                   // Uitwisselings standaard
-  //specType: "PS",                   // Presentatie sstandaard
+
   //-- format is verplicht! -----------------------------------------------------------
   //format: "markdown",                 // altijd "markdown"     
   //-- publishDate is verplicht -------------------------------------------------------
@@ -91,19 +85,7 @@ var respecConfig =
   shortName: "img", 	            // Wordt gebruikt in de document URL
   //-- pubDomain is verplicht! (komt in de URL: Activeer 1 van de volgende) ------------
   pubDomain: "cvgg", 	              // Informatiemodel Geluid
-  //pubDomain: "mim", 	            // Metamodel Informatie Modellering
-  //pubDomain: "bor", 	            // Beheer Openbare Ruimte
-  //pubDomain: "bro", 	            // Basisregistratie Ondergrond
-  //pubDomain: "imgeo", 	          // IMGeo / BGT
-  //pubDomain: "kl", 	              // Kabels en Leidingen
-  //pubDomain: "liv", 	            // Landelijke Informatievoorziening Vastgoedgebruik
-  //pubDomain: "md", 	              // Metadata
-  //pubDomain: "nen3610", 	        // Basismodel NEN3610
-  //pubDomain: "oov", 	            // Openbare Orde en Veiligheid
-  //pubDomain: "ro", 	              // Ruimtelijke Ordening
-  //pubDomain: "serv", 	            // Services
-  //pubDomain: "visu", 	            // Visualisatie
-  //pubDomain: "wp", 	              // White Paper
+
   //-- Repositorynaam op GitHub -------------------------------------------------------
   //github: "https://github.com/Geonovum/IMG",
   //-- Repositorynaam/issues op GitHub veranderd naar Jira helpdesk ------------------------------------------------
@@ -113,8 +95,7 @@ var respecConfig =
   edDraftURI: "https://geonovum.github.io/IMG",
   //-- license: voor de geldende gebruiksvoorwaarden
   licence: "cc-by-nd",              //-- bronvermelding, geen afgeleide werken (default)
-  // licence: "cc0",                //-- Public Domain Dedication
-  // licence: "cc-by",              //-- Attribution, met bronvermelding
+
   
   //-- localBiblio: lokale bibliografie, voor verwijzigingen
   //-- NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging 
@@ -168,7 +149,6 @@ var respecConfig =
   previousMaturity: "GN-DEF",  	                // kies 1 van deze 3 regels
 
   //-- Optionele parameters:
-  //emailComments: "mim@geonovum.nl",         // reactie mailadres, alleen bij CV!
   //subtitle: "iets",                         // Subtitel van het document
   //maxTocLevel: 3,                           // Aantal niveau's ToC, default is 0
 };
