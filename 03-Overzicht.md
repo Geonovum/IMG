@@ -177,6 +177,16 @@ Het informatiemodel maakt ook gebruik van dergelijke identificaties. Een
 NEN3610ID is opgebouwd uit drie delen: een namespace, lokaalID en versienummer.
 De volgende richtlijnen gelden voor het vullen van het NEN3610ID voor
 geluidgegevens:
+<ul>
+<li>De namespace is altijd “NL.img”;</li>
+<li>De lokaalID is opgebouwd uit:
+<ul>
+<li>Een unieke code van de bronhouder;</li>
+<li>Een punt (“.”);</li>
+<li>Een lokale identificatie zoals gebruikt door de bronhouder;</li>
+</ul></li>
+<li>Het versienummer</li>
+</ul>
 
 De unieke code van de bronhouder is het KvK-nummer van de organisatie. De lengte
 van de lokale identificatie staat toe dat bronhouders gebruik maken van
