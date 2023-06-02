@@ -477,7 +477,7 @@ schema dat is te vinden in:
 https://register.geostandaarden.nl/gmlapplicatieschema/img/3.0.0/
 
 Noot: In GML uitwisseling zijn twee manieren beschreven voor het coderen van relaties: inline en byReference. Bij inline word het gerelateerde object ingekapseld in de XML codering, terwijl bij byReference een link naar het gerelateerde object word opgenomen, waarbij dat gerelateerde object elders in het uitwisselbestand staat. 
- - **Regel:** In de uitwisseling moeten relaties altijd als byReference gecodeerd zijn. Het inkapselen van een gerelateerd object is verboden.
+ - **Regel:** In de uitwisseling moeten relaties altijd als byReference gecodeerd zijn. Het inkapselen van een gerelateerd object is verboden. Elementen die als attribuut zijn opgenomen moeten in de uitwisseling wel worden ingekapseld.
 
 Dit schema maakt gebruik van versie 3.2.2 van het GML schema. (Let op: om
 historische redenen staat het 3.2.2 schema van GML in een folder met de naam
