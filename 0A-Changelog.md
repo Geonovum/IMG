@@ -18,7 +18,7 @@ Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokke
 | 9        |[189](https://github.com/Geonovum/IMG/issues/189) | Regel toegevoegd                     | Regel toegevoegd bij Geluidgegevenscollectie.jaar.|
 | 10       |[190](https://github.com/Geonovum/IMG/issues/190) | Relatie verplaats                    | Relatie tussen Geluidproductieplafondobject en Terrein verplaatst naar subtypen voor industrie. |
 | 11       |[191](https://github.com/Geonovum/IMG/issues/191) | Klasse verplaats                     | Klasse Terrein uit Geluidgegevenscollectie gehaald en los neergezet. |
-| 12       |[191](https://github.com/Geonovum/IMG/issues/192) | Regels aangepast                     | Er zijn 53 regels aangepast waardoor ze nu eenduidiger zijn en tevens volgens de regels van [Rulespeak](https://www.rulespeak.com/en/).|
+| 12       |[192](https://github.com/Geonovum/IMG/issues/192) | Regels aangepast                     | Er zijn 53 regels aangepast waardoor ze nu eenduidiger zijn en tevens volgens de regels van [Rulespeak](https://www.rulespeak.com/en/).|
 | 13       |[193](https://github.com/Geonovum/IMG/issues/193) | Klasse toegevoegd                    | Abstracte klasse GemonitordObject toegevoegd.|
 | 14       |[195](https://github.com/Geonovum/IMG/issues/195) | Tekst toegevoegd                     | Uitleg over NEN3610ID die ten onrechte was verdwenen weer toegevoegd. |
 
