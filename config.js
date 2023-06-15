@@ -18,14 +18,14 @@ var respecConfig =
   //specStatus: "GN-CV",              // Consultatie Versie
   //specStatus: "GN-VV",              // Vaststellings Versie
   //specStatus: "GN-DEF",             // Definitieve Versie
-  //-- specType is verplicht! 
+
   specType: "IM",                   // Informatie Model
 
   //-- format is verplicht! -----------------------------------------------------------
   //format: "markdown",                 // altijd "markdown"     
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  //publishDate: "2022-10-25",  	      // Format is "YYY-MM-DD"
+  //publishDate: "2023-06-15",  	      // Format is "YYY-MM-DD"
   //-- de namen van de Editor(s) ------------------------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors: 
