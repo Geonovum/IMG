@@ -16,7 +16,7 @@ voort uit verschillende wet- en regelgevingen. Deze zijn:
     omgevingskwaliteit en (b) het doelmatig beheren, gebruiken en ontwikkelen
     van de fysieke leefomgeving ter vervulling van maatschappelijke behoeften.
     De Omgevingswet bundelt en moderniseert in één wet alle wetten voor de
-    leefomgeving. Vanaf 2021 treedt de wet in werking.
+    leefomgeving. In 2024 treedt de wet in werking.
 
 -   **Aanvullingsspoor geluid:** De nieuwe geluidregelgeving onder de Omgevingswet wordt vormgegeven via het Aanvullingsspoor geluid onder de Omgevingswet. Het Aanvullingsspoor     geluid bestaat uit een Aanvullingswet, een Aanvullingsbesluit, en een Aanvullingsregeling. De belangrijkste regels over de beheersing van geluid afkomstig van infrastructuur     (wegen en spoorwegen) en industrieterreinen staat in het Aanvullingsbesluit geluid Omgevingswet. Regels voor deze geluidbronnen zijn tot
     dusver gesteld in en op grond van hoofdstuk 11 van de Wet milieubeheer voor
