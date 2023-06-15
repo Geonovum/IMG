@@ -1,7 +1,7 @@
 
 <!DOCTYPE HTML><section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
-   <!--MIMLM-InformatiemodelGeluid-2.1-0-20221025-20230615-101829 imvertor 1.67.1-->
+   <!--MIMLM-InformatiemodelGeluid-2.1-0-20221025-20230615-145920 imvertor 1.67.1-->
    <section id="EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F">
       <h3>   Basismodel - overzicht</h3>
       <div class="imageinfo overview"><img src="data/Images/EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F.png" usemap="#imagemap-EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F" alt="Diagram &#xA;                        Het Basismodel vormt de samenhang tussen alle domeinen van het IMGeluid. Alle objecttypen en relaties uit het IMGeluid komen samen in een Geluidgegevenscollectie.&#xA;Binnen het IMGeluid worden geluidbrongegevens die gebruikt worden voor GPP en BGE berekeningen, gemodelleerd als een Geluidemissie of Geluidoverdrachtobject. De resultaten van GPP of BGE berekeningen worden opgeslagen in een Geluidgegevenscollectie. De onderliggende juridische vastleggingen, vaststellingen, of monitoringsverslagen van deze omgevings- of monitoringswaarden, worden ook opgeslagen in dezelfde Geluidgegevenscollectie.&#xA;Per geluidbron per toepassing kan er een Geluidgegevenscollectie bestaan. Deze kan geassocieerd worden met maximaal 1 Geluidaandachtsgebied. Wanneer geluidgegevens met betrekking tot cumulatieberekeningen worden aangeleverd, bevat een Geluidgegevenscollectie geen Geluidaandachtsgebied.&#xA;Klik met de rechtermuisknop op het diagram om de afbeelding op volledige grootte in een nieuw tabblad te openen.&#xA;                     "><map name="imagemap-EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F"><area shape="rect" alt="GemonitordObject" coords="864,436,987,491" href="#graph_EAID_5DD80772_ECDE_480d_9FC2_E806D8FD565E"><area shape="rect" alt="GeluidgegevenscollectieElement" coords="49,98,286,202" href="#graph_EAID_924BD078_D715_461a_B7E9_D7176A7406E0"><area shape="rect" alt="Monitoringresultaat" coords="349,575,597,689" href="#graph_EAID_BA00B77B_D408_4590_8185_CE59E5838F1E"><area shape="rect" alt="Basisgeluidemissieobject" coords="646,633,876,734" href="#graph_EAID_9AD15457_4880_42e5_8C72_4E5EFAC91B15"><area shape="rect" alt="Geluidproductieplafondobject" coords="898,633,1173,881" href="#graph_EAID_237408F8_8CE9_4828_B8FB_1A5B8C917622"><area shape="rect" alt="Geluidberekeningobject" coords="429,857,701,1050" href="#graph_EAID_97ED59FE_9FCA_49a6_8F07_214E48000B76"><area shape="rect" alt="Documentverwijzing" coords="390,313,608,474" href="#graph_EAID_7E137496_1028_4af5_9367_569358A2167B"><area shape="rect" alt="Geluidaandachtsgebied" coords="921,81,1148,220" href="#graph_EAID_B06128AC_518C_4e26_88E5_14ED5A050A19"><area shape="rect" alt="Geluidgegevenscollectie" coords="454,14,723,242" href="#graph_EAID_313C5AF9_49B8_4860_9E65_DE7C70084864"><area shape="rect" alt="Geluidemissieobject" coords="14,622,242,765" href="#graph_EAID_361C96BA_A638_494e_80BA_590ED481A81B"><area shape="rect" alt="Geluidoverdrachtobject" coords="68,320,318,441" href="#graph_EAID_2FEA326B_B7E7_48a4_B50F_00CCB2694677"></map><p><b>Basismodel - overzicht</b>
@@ -191,6 +191,10 @@
                            en de herkomst van de Geluidgegevenscollectie wordt ook aangegeven met welke juridische
                            werkelijkheid de gegevenscollectie te maken heeft.</li>
                         
+                        <li>Wanneer we in de tekst spreken over de objecten die een Geluidgegevenscollectie bevat
+                           bedoelen we daarmee alle Objecten die in een aanlevering bevat zijn en die direct
+                           of indirect een relatie hebben met de Geluidgegevenscollectie.</li>
+                        
                         <li>Aangezien iedere geluidbron aan andere regels moet voldoen, is de geluidbron bepalend
                            voor de juridische werkelijkheid waaraan de Geluidgegevenscollectie moet conformeren.</li>
                         </ul>
@@ -202,12 +206,13 @@
                      
                      <ul>
                         
-                        <li>Er MOET een Geluidaandachtsgebied in een Geluidgegevenscollectie zitten indien (Geluidgegevenscollectie.systematiek="GPP"
-                           of Geluidgegevenscollectie.systematiek="BGE"), EN het Geluidgegevenscollectie.type="vaststelling";</li>
+                        <li>Er MOET een Geluidaandachtsgebied in een Geluidgegevenscollectie bevat zijn indien
+                           (Geluidgegevenscollectie.systematiek="GPP" of Geluidgegevenscollectie.systematiek="BGE"),
+                           EN het Geluidgegevenscollectie.type="vaststelling";</li>
                         
-                        <li>Er MAG geen Geluidaandachtsgebied in een Geluidgegevenscollectie zitten indien Geluidgegevenscollectie.systematiek="anders"
-                           OF Geluidgegevenscollectie.type="monitoringresultaat" OF Geluidgegevenscollectie.type="brongegevens
-                           monitoring" OF Geluidgegevenscollectie.type="prognose";</li>
+                        <li>Er MAG geen Geluidaandachtsgebied in een Geluidgegevenscollectie bevat zijn indien
+                           Geluidgegevenscollectie.systematiek="anders" OF Geluidgegevenscollectie.type="monitoringresultaat"
+                           OF Geluidgegevenscollectie.type="brongegevens monitoring" OF Geluidgegevenscollectie.type="prognose";</li>
                         
                         <li>Wanneer Geluidgegevenscollectie.geluidbron = "industrieterrein" OF "luchtvaart" OF
                            "schiet- of springterrein", moet de Geluidgegevenscollectie een relatie hebben naar
@@ -216,7 +221,8 @@
                         <li>Wanneer Geluidgegevenscollectie.type = "vaststelling", mag de Geluidgegevenscollectie
                            alleen de volgende objecttypen (of een specialisatie daarvan) bevatten: Geluidemissieobject,
                            Geluidoverdrachtobject, Gemonitord­Object, Geluidaandachtsgebied, Documentverwijzing,
-                           Geluidcontour­Set, Spoorstaafruwheid­Waarde;</li>
+                           Geluidcontour­Set, Spoorstaafruwheid­Waarde, Lijnbron­Industrie, Vlakbron­Industrie,
+                           Optrektoeslag­Vlak;</li>
                         
                         <li>Wanneer Geluidgegevenscollectie.type = "brongegevens monitoring", mag de Geluidgegevenscollectie
                            alleen de volgende objecttypen (of een specialisatie daarvan) bevatten: Geluidemissieobject,
@@ -228,9 +234,6 @@
                         <li>Wanneer Geluidgegevenscollectie.type = "monitoringresultaat", mag de Geluidgegevenscollectie
                            alleen de volgende objecttypen (of een specialisatie daarvan) bevatten: Monitoringresultaat
                            en Documentverwijzing;</li>
-                        
-                        <li>Wanneer Geluidgegevenscollectie.geluidbron="Lokale spoorweg" EN Geluidgegevenscollectie.systematiek
-                           ="GPP" dan moeten de niet facultatieve Geluidoverdrachtsobjecten meegeleverd worden;</li>
                         
                         <li>Wanneer Geluidgegevenscollectie.geluidbron="lokale spoorweg" EN Geluidgegevenscollectie.systematiek
                            ="BGE" mag geen Geluidoverdrachtsobject voorkomen in de Geluidgegevenscollectie;</li>
@@ -244,7 +247,7 @@
                            bevatten;</li>
                         
                         <li>Wanneer Geluidgegevenscollectie.type = “vaststelling” en het betreft een terrein dan
-                           moet de relatie terrein een link naar een nieuw aangeleverd Terrein bevatten.</li>
+                           moet de relatie terrein een link naar een meegeleverd Terrein bevatten.</li>
                         </ul>
                      </td>
                </tr>
@@ -762,8 +765,8 @@
                      </td>
                   <td>
                      
-                     <p>Basiselement om aan te geven dat een object deel kan uitmaken van een Geluidgegevenscollectie.
-                        </p>
+                     <p>Basiselement om aan te geven dat een object direct deel kan uitmaken van een Geluidgegevenscollectie
+                        via de relatie feature­Member.</p>
                      </td>
                </tr>
             </tbody>
@@ -816,7 +819,10 @@
                         <li>Geluidproductieplafondobject mag voorkomen indien Geluidgegevenscollectie.systematiek="GPP"
                            en Geluidgegevenscollectie.type="vaststelling" en Geluidgegevenscollectie.geluidbron
                            = "rijksweg", OF "provinciale weg", OF "hoofdspoor", OF "lokale spoorweg". In alle
-                           overige gevallen mag Geluidproductieplafondobject niet voorkomen. </li>
+                           overige gevallen mag Geluidproductieplafondobject niet voorkomen.</li>
+                        
+                        <li>Als de subklasse Geluidproductieplafondobject­Industrie van toepassing is mag de superklasse
+                           Geluidproductieplafondobject niet gebruikt worden.</li>
                         </ul>
                      </td>
                </tr>
@@ -1067,8 +1073,8 @@
                      <ul>
                         
                         <li>Geluidproductieplafondobject­Industrie mag voorkomen als Geluidgegevenscollectie.geluidbron="industrieterrein"
-                           en Geluidgegevenscollectie.type="monitoringresultaat". In alle overige gevallen mag
-                           Geluidproductieplafondobject­Industrie niet voorkomen.</li>
+                           en Geluidgegevenscollectie.type="vaststelling". In alle overige gevallen mag Geluidproductieplafondobject­Industrie
+                           niet voorkomen.</li>
                         </ul>
                      </td>
                </tr>
@@ -1354,14 +1360,13 @@
                      <ul>
                         
                         <li>Als Geluidgegevenscollectie.geluidbron = "gemeenteweg" dan mag het Basisgeluidemissieobject
-                           alleen Wegdeel­BGE en Spoordeel­BGE bevatten als gerelateerde specialisatie van Geluidemissieobject;</li>
+                           alleen Wegdeel­BGE en Spoordeel­BGE bevatten als geluidemissieobject;</li>
                         
                         <li>Als Geluidgegevenscollectie.geluidbron = "waterschapsweg" dan mag het Basisgeluidemissieobject
-                           alleen Wegdeel­BGE als gerelateerde specialisatie van Geluidemissieobjectbevatten;</li>
+                           alleen Wegdeel­BGE bevatten als geluidemissieobject;</li>
                         
                         <li>Als Geluidgegevenscollectie.geluidbron = "lokale spoorweg" dan mag het Basisgeluidemissieobject
-                           alleen een geluidemissieobject relatie hebben naar een Spoordeel­BGE als specialisatie
-                           van Geluidemissieobject.</li>
+                           alleen een geluidemissieobject relatie hebben naar een Spoordeel­BGE.</li>
                         </ul>
                      </td>
                </tr>
@@ -1636,8 +1641,8 @@
                      </td>
                   <td>
                      
-                     <p>Basiselement om aan te geven dat een object deel kan uitmaken van een Geluidgegevenscollectie.
-                        </p>
+                     <p>Basiselement om aan te geven dat een object direct deel kan uitmaken van een Geluidgegevenscollectie
+                        via de relatie feature­Member.</p>
                      </td>
                </tr>
             </tbody>
@@ -1798,7 +1803,7 @@
                      <ul>
                         
                         <li>Wanneer Geluidgegevenscollectie.geluidbron = "industrieterrein" OF "luchtvaart" OF
-                           "schiet- of springterrein", moet de Geluidgegevenscollectie een relatie met 1 terrein
+                           "schiet- of springterrein", moet de Geluidgegevenscollectie een relatie met een terrein
                            bevatten, anders geen;</li>
                         
                         <li>Bij subklasse Industrieterrein moet Terrein.type­Terrein gelijk zijn aan "industrieterrein".
@@ -2433,8 +2438,8 @@
                      </td>
                   <td>
                      
-                     <p>Basiselement om aan te geven dat een object deel kan uitmaken van een Geluidgegevenscollectie.
-                        </p>
+                     <p>Basiselement om aan te geven dat een object direct deel kan uitmaken van een Geluidgegevenscollectie
+                        via de relatie feature­Member.</p>
                      </td>
                </tr>
             </tbody>
@@ -2602,8 +2607,8 @@
                      </td>
                   <td>
                      
-                     <p>Basiselement om aan te geven dat een object deel kan uitmaken van een Geluidgegevenscollectie.
-                        </p>
+                     <p>Basiselement om aan te geven dat een object direct deel kan uitmaken van een Geluidgegevenscollectie
+                        via de relatie feature­Member.</p>
                      </td>
                </tr>
             </tbody>
@@ -4915,8 +4920,8 @@
                      </td>
                   <td>
                      
-                     <p>Basiselement om aan te geven dat een object deel kan uitmaken van een Geluidgegevenscollectie.
-                        </p>
+                     <p>Basiselement om aan te geven dat een object direct deel kan uitmaken van een Geluidgegevenscollectie
+                        via de relatie feature­Member.</p>
                      </td>
                </tr>
             </tbody>
@@ -6729,8 +6734,8 @@
                      </td>
                   <td>
                      
-                     <p>Basiselement om aan te geven dat een object deel kan uitmaken van een Geluidgegevenscollectie.
-                        </p>
+                     <p>Basiselement om aan te geven dat een object direct deel kan uitmaken van een Geluidgegevenscollectie
+                        via de relatie feature­Member.</p>
                      </td>
                </tr>
             </tbody>
@@ -6885,8 +6890,8 @@
                   <th>Definitie</th>
                   <td>
                      
-                     <p>Basiselement om aan te geven dat een object deel kan uitmaken van een Geluidgegevenscollectie.
-                        </p>
+                     <p>Basiselement om aan te geven dat een object direct deel kan uitmaken van een Geluidgegevenscollectie
+                        via de relatie feature­Member.</p>
                      </td>
                </tr>
                <tr>
@@ -7686,8 +7691,8 @@
                      </td>
                   <td>
                      
-                     <p>Basiselement om aan te geven dat een object deel kan uitmaken van een Geluidgegevenscollectie.
-                        </p>
+                     <p>Basiselement om aan te geven dat een object direct deel kan uitmaken van een Geluidgegevenscollectie
+                        via de relatie feature­Member.</p>
                      </td>
                </tr>
             </tbody>
@@ -18813,10 +18818,11 @@
                            
                            <ul>
                               
-                              <li>Als onderkant­Scherm gevuld is heeft de geometrie evenveel punten als bovenkant­Scherm
-                                 met dezelfde x- en y-coordinaten in dezelfde volgorde.</li>
+                              <li>Als onderkant­Scherm gevuld is moet de geometrie van de onderkant­Scherm evenveel
+                                 punten bevatten als bovenkant­Scherm met dezelfde x- en y-coordinaten in dezelfde
+                                 volgorde.</li>
                               
-                              <li>Als status­Zwevend de waarde true heeft dan moet onderkant­Scherm ingevuld zijn.</li>
+                              <li>Als status­Zwevend de waarde "true" heeft dan moet onderkant­Scherm ingevuld zijn.</li>
                               </ul>
                            </td>
                      </tr>
@@ -20410,7 +20416,7 @@
                            
                            <ul>
                               
-                              <li>Alle z-coördinaten in Bouwwerk.geometrie moeten hetzelfde zijn.</li>
+                              <li>Alle z-coördinaten in Procesinstallatiegebied.geometrie moeten dezelfde waarde hebben.</li>
                               </ul>
                            </td>
                      </tr>
@@ -26107,7 +26113,7 @@
 </section>
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
-   <!--MIMLM-InformatiemodelGeluid-2.1-0-20221025-20230615-101829 imvertor 1.67.1--><a class="anchor" id="graph_EAID_C9ACE184_6E2B_40c1_ACE0_A7C5EE554EF9"></a><a class="anchor" id="detail_class_IMGeluidAlgemeen_Schermtype"></a><section id="detail_class_IMGeluidAlgemeen_Schermtype">
+   <!--MIMLM-InformatiemodelGeluid-2.1-0-20221025-20230615-145920 imvertor 1.67.1--><a class="anchor" id="graph_EAID_C9ACE184_6E2B_40c1_ACE0_A7C5EE554EF9"></a><a class="anchor" id="detail_class_IMGeluidAlgemeen_Schermtype"></a><section id="detail_class_IMGeluidAlgemeen_Schermtype">
       <h3>Enumeratie details  Schermtype</h3>
       
       <table style="width: 100%;" class="list">
