@@ -7,16 +7,16 @@ Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokke
 
 |**nummer**| **Github issue**                                 | **Soort wijziging**                  | **Wijziging**                                |
 | ---------|------------------------------------------------- | ------------------------------------ | -------------------------------------------- |
-| 1        |[194](https://github.com/Geonovum/IMG/issues/194) | Tagged values bijgewerkt             | Bij een aantal elementen binnen de VerkeersgegevensWeg bleken de tagged values zoals fractiondigits en minimumwaardes niet goed ingevuld. Dit is bijgewerkt.|
+| 1        |[194](https://github.com/Geonovum/IMG/issues/194) | XML-Schema Restriction verbeterd     | Bij een aantal elementen binnen de VerkeersgegevensWeg was het fractionDigits element niet aanwezig. Deze zijn nu wel ingevuld.|
 | 2        |[196](https://github.com/Geonovum/IMG/issues/196) | Attribuut verwijderd                 | Net als bij WegdeelGPP (#183) is ook bij SpoordeelGPP het attribuut maaiveld ook verwijderd.|
 | 3        |[197](https://github.com/Geonovum/IMG/issues/197) | Regel verwijderd                     | De regel dat Geluidproductieplafondobject.eindVrijstelling in het verleden moet liggen is verwijderd.|
-| 4        |[198](https://github.com/Geonovum/IMG/issues/198) | Regel verwijderd                     | De regel dat Geluidbron.Industrie.brontype niet gelijk mag zijn aan "normale puntbron" als er sprake is van een relatie met een Vlakbron.Industrie of Lijnbron.Industrie is verwijderd.|
+| 4        |[198](https://github.com/Geonovum/IMG/issues/198) | Regel verwijderd                     | De regel dat Geluidbron.Industrie.brontype niet gelijk mag zijn aan "normale puntbron" als er sprake is van een relatie met een VlakbronIndustrie of LijnbronIndustrie is verwijderd.|
 | 5        |[199](https://github.com/Geonovum/IMG/issues/199) | Regel verwijderd                     | De regel dat alle z-coördinaten in VlakbronIndustrie.geometrie dezelfde waarde moeten hebben is verwijderd.|
 | 6        |[200](https://github.com/Geonovum/IMG/issues/200) | Regel verwijderd                     | De regel dat alle z-coördinaten in Brug.geometrie dezelfde waarde moeten hebben is verwijderd.|
 | 7        |[201](https://github.com/Geonovum/IMG/issues/201) | Maximumwaarde aangepast              | De maximumwaarde van een BGEwaarde is verhoogd van 99.9 naar naar 199.9 .|
 | 8        |[203](https://github.com/Geonovum/IMG/issues/203) | Regel verwijderd                     | De regel "Een gemeente of waterschap mag de basisgeluidsemissie (BGE) ook schriftelijk onderbouwen. In dat geval hoeft geen monitoringswaarde opgegeven te worden." is verwijderd bij het objecttype Monitoringresultaat.|
 | 8        |[203](https://github.com/Geonovum/IMG/issues/203) | Definitie aangepast                  | Bij Monitoringresultaat en bij het attribuut Monitoringresultaat.monitoringwaarde is de definitie aangepast.|
-| 8        |[203](https://github.com/Geonovum/IMG/issues/203) | Minimum en maximumwaarde aangepast   | Bij het attribuut Monitoringresultaat.monitoringwaarde zijn de minimum en maximumwaarde aangepast naar -199.9 en 199.9|
+| 8        |[203](https://github.com/Geonovum/IMG/issues/203) | Minimum en maximumwaarde aangepast   | Bij het attribuut Monitoringresultaat.monitoringwaarde zijn de minimum- en maximumwaarde aangepast naar -199.9 en 199.9|
 | 9        |                                                  | Redactionele wijzigingen             | In de toelichting van documentverwijzijng en een regel bij Bodemvlak stond nog een s te veel in monitoring**s**resultaat. |
 | 10       |                                                  | Redactionele wijzigingen             | Bij gegevensgroeptype Geluidtoeslag is het patroon verwijderd.|
 
