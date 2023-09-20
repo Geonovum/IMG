@@ -3,7 +3,7 @@
 Hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versie 2.0, versie 2.1, versie 3.0 en versie 3.1. 
 Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
 
-## Wijzigingen in versie 3.0
+## Wijzigingen in versie 3.1
 
 |**nummer**| **Github issue**                                 | **Soort wijziging**                  | **Wijziging**                                |
 | ---------|------------------------------------------------- | ------------------------------------ | -------------------------------------------- |
@@ -17,7 +17,7 @@ Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokke
 | 8        |[203](https://github.com/Geonovum/IMG/issues/203) | Regel verwijderd                     | De regel "Een gemeente of waterschap mag de basisgeluidsemissie (BGE) ook schriftelijk onderbouwen. In dat geval hoeft geen monitoringswaarde opgegeven te worden." is verwijderd bij het objecttype Monitoringresultaat.|
 | 8        |[203](https://github.com/Geonovum/IMG/issues/203) | Definitie aangepast                  | Bij Monitoringresultaat en bij het attribuut Monitoringresultaat.monitoringwaarde is de definitie aangepast.|
 | 8        |[203](https://github.com/Geonovum/IMG/issues/203) | Minimum en maximumwaarde aangepast   | Bij het attribuut Monitoringresultaat.monitoringwaarde zijn de minimum- en maximumwaarde aangepast naar -199.9 en 199.9|
-| 9        |                                                  | Redactionele wijzigingen             | In de toelichting van documentverwijzijng en een regel bij Bodemvlak stond nog een s te veel in monitoring**s**resultaat. |
+| 9        |                                                  | Redactionele wijzigingen             | In de toelichting van documentverwijzijng, in een regel bij Bodemvlak en in de definitie van relatierol geluidberekeningobject stond nog een s te veel in monitoring**s**resultaat. |
 | 10       |                                                  | Redactionele wijzigingen             | Bij gegevensgroeptype Geluidtoeslag is het patroon verwijderd.|
 
 ## Wijzigingen in versie 3.0
