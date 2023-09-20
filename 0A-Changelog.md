@@ -15,10 +15,10 @@ Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokke
 | 6        |[200](https://github.com/Geonovum/IMG/issues/200) | Regel verwijderd                     | De regel dat alle z-coördinaten in Brug.geometrie dezelfde waarde moeten hebben, is verwijderd.|
 | 7        |[201](https://github.com/Geonovum/IMG/issues/201) | Maximumwaarde aangepast              | De maximumwaarde van een BGEwaarde is verhoogd van 99.9 naar naar 199.9.|
 | 8        |[203](https://github.com/Geonovum/IMG/issues/203) | Regel verwijderd                     | De regel "Een gemeente of waterschap mag de basisgeluidsemissie (BGE) ook schriftelijk onderbouwen. In dat geval hoeft geen monitoringswaarde opgegeven te worden." is verwijderd bij het objecttype Monitoringresultaat.|
-| 8        |[203](https://github.com/Geonovum/IMG/issues/203) | Definitie aangepast                  | Bij Monitoringresultaat en bij het attribuut Monitoringresultaat.monitoringwaarde is de definitie aangepast.|
-| 8        |[203](https://github.com/Geonovum/IMG/issues/203) | Minimum en maximumwaarde aangepast   | Bij het attribuut Monitoringresultaat.monitoringwaarde zijn de minimum- en maximumwaarde aangepast naar -199.9 en 199.9.|
-| 9        |                                                  | Redactionele wijzigingen             | In de toelichting van documentverwijzijng, in een regel bij Bodemvlak en in de definitie van relatierol geluidberekeningobject stond nog een s te veel in monitoring**s**resultaat. |
-| 10       |                                                  | Redactionele wijzigingen             | Bij gegevensgroeptype Geluidtoeslag is het patroon verwijderd.|
+| 9        |[203](https://github.com/Geonovum/IMG/issues/203) | Definitie aangepast                  | Bij Monitoringresultaat en bij het attribuut Monitoringresultaat.monitoringwaarde is de definitie aangepast.|
+| 10       |[203](https://github.com/Geonovum/IMG/issues/203) | Minimum en maximumwaarde aangepast   | Bij het attribuut Monitoringresultaat.monitoringwaarde zijn de minimum- en maximumwaarde aangepast naar -199.9 en 199.9.|
+| 11       |                                                  | Redactionele wijzigingen             | In de toelichting van documentverwijzijng, in een regel bij Bodemvlak en in de definitie van relatierol geluidberekeningobject stond nog een s te veel in monitoring**s**resultaat. |
+| 12       |                                                  | Redactionele wijzigingen             | Bij gegevensgroeptype Geluidtoeslag is het patroon verwijderd.|
 
 ## Wijzigingen in versie 3.0
 
