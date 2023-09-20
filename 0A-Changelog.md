@@ -18,7 +18,7 @@ Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokke
 | 9        |[203](https://github.com/Geonovum/IMG/issues/203) | Definitie aangepast                  | Bij Monitoringresultaat en bij het attribuut Monitoringresultaat.monitoringwaarde is de definitie aangepast.|
 | 10       |[203](https://github.com/Geonovum/IMG/issues/203) | Minimum en maximumwaarde aangepast   | Bij het attribuut Monitoringresultaat.monitoringwaarde zijn de minimum- en maximumwaarde aangepast naar -199.9 en 199.9.|
 | 11       |                                                  | Redactionele wijzigingen             | In de toelichting van documentverwijzijng, in een regel bij Bodemvlak en in de definitie van relatierol geluidberekeningobject stond nog een s te veel in monitoring**s**resultaat. |
-| 12       |                                                  | Redactionele wijzigingen             | Bij gegevensgroeptype Geluidtoeslag is het patroon verwijderd.|
+| 12       |                                                  | Redactionele wijzigingen             | Bij attribuut Geluidtoeslag.toeslag is het patroon verwijderd omdat het om een gestructureerd datatype gaat (WaardePerOctaafband) waarbij dit niet relevant is.|
 
 ## Wijzigingen in versie 3.0
 
