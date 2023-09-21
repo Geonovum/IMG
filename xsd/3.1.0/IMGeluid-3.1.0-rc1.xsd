@@ -9,8 +9,9 @@
            version="3.1.0-rc1">
    <xs:annotation>
       <xs:appinfo source="http://www.imvertor.org/model-info/application">Informatiemodel Geluid</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generated">September 20, 2023 at 10:35:08</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generated">September 21, 2023 at 15:38:57</xs:appinfo>
       <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generator">1.67.1</xs:appinfo>
+      <xs:documentation source="http://www.imvertor.org/schema-info/file-location">Informatiemodel%20Geluid/unknown/v20230920/Informatiemodel%20Geluid_IMGeluid%20Algemeen_v3_1.xsd</xs:documentation>
       <xs:documentation source="http://www.imvertor.org/schema-info/conversion">
         This schema is based on an UML specification, which is transformed by the Imvertor software. Imvertor modules are in the public domain, see http://www.imvertor.org.
     </xs:documentation>
@@ -745,18 +746,18 @@ Explanation: Dit object wordt zowel voor binnen het domein GPP-industrie als GPP
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3D-punt gemodelleerde meetkundige representatie van een geluidbronindustrie.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="reflectiepuntHoogte" minOccurs="0" nillable="true">
+               <xs:element name="reflectiepuntHoogte" minOccurs="0">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Hoogte van een punt (in meters met 1 cijfer achter de komma) ten opzichte van NAP waarop eerste reflectie van een GeluidbronIndustrie op een oppervlak plaatsvindt.
 Explanation: Voor een GeluidbronIndustrie binnen het industriedomein, is het relevant om te weten wat het hoogteverschil is tussen de bron en het eerste punt waarop reflectie zal plaatsvinden.</xs:documentation>
                   </xs:annotation>
-                  <xs:complexType>
-                     <xs:simpleContent>
-                        <xs:extension base="img:Basetype_GeluidbronIndustrie_reflectiepuntHoogte">
-                           <xs:attribute name="nilReason" type="xs:string" use="optional"/>
-                        </xs:extension>
-                     </xs:simpleContent>
-                  </xs:complexType>
+                  <xs:simpleType>
+                     <xs:restriction base="xs:decimal">
+                        <xs:minInclusive value="-100"/>
+                        <xs:maxInclusive value="1000"/>
+                        <xs:fractionDigits value="1"/>
+                     </xs:restriction>
+                  </xs:simpleType>
                </xs:element>
                <xs:element name="relevanteBronsterkte"
                            type="img:WaardePerOctaafbandPropertyType">
@@ -997,6 +998,7 @@ Explanation: De plafondcorrectiewaarde is de toeslag die wordt toegepast bij ber
                   <xs:simpleType>
                      <xs:restriction base="xs:decimal">
                         <xs:minInclusive value="-9.9"/>
+                        <xs:maxInclusive value="9.9"/>
                         <xs:fractionDigits value="1"/>
                      </xs:restriction>
                   </xs:simpleType>
@@ -2947,6 +2949,7 @@ Explanation: De minimaal gehanteerde snelheid in de rekenmodellen bedraagt 40 km
             </xs:annotation>
             <xs:simpleType>
                <xs:restriction base="xs:decimal">
+                  <xs:minInclusive value="0"/>
                   <xs:maxInclusive value="1000"/>
                   <xs:fractionDigits value="0"/>
                </xs:restriction>
@@ -2958,6 +2961,7 @@ Explanation: De minimaal gehanteerde snelheid in de rekenmodellen bedraagt 40 km
             </xs:annotation>
             <xs:simpleType>
                <xs:restriction base="xs:decimal">
+                  <xs:minInclusive value="0"/>
                   <xs:maxInclusive value="1000"/>
                   <xs:fractionDigits value="0"/>
                </xs:restriction>
@@ -3776,18 +3780,6 @@ Explanation: Een middenbememscherm heeft geen profielcorrectie: correctie = 0).<
 Explanation: Een t-top heeft geen profielcorrectie, maar gegeven de constrcutie hoort het bij een scherm met correctie 0</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:simpleType name="Basetype_GeluidbronIndustrie_reflectiepuntHoogte">
-      <xs:annotation>
-         <xs:documentation>
-            <p>Generated class. Introduced because the identified attribute is voidable and is a restriction of a simple type.</p>
-         </xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:decimal">
-         <xs:minInclusive value="-100"/>
-         <xs:maxInclusive value="1000"/>
-         <xs:fractionDigits value="1"/>
       </xs:restriction>
    </xs:simpleType>
 </xs:schema>
