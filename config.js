@@ -14,9 +14,9 @@
 var respecConfig = 
 {
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-  specStatus: "GN-WV",                // Werk Versie
+  //specStatus: "GN-WV",                // Werk Versie
   //specStatus: "GN-CV",              // Consultatie Versie
-  //specStatus: "GN-VV",              // Vaststellings Versie
+  specStatus: "GN-VV",              // Vaststellings Versie
   //specStatus: "GN-DEF",             // Definitieve Versie
 
   specType: "IM",                   // Informatie Model
@@ -143,7 +143,7 @@ var respecConfig =
   // 2022-11-16: Het is even onduidelijk of er nu wel of geen streepjes in de datum moeten. Respec moppert in
   //    ieder geval als ze er niet staan. Ik zet ze even neer en misschien moeten ze ook wel in de tag bij het doen
   //    van een release.
-  previousPublishDate: "2022-10-25",    	    // Format is "YYYY-MM-DD"
+  previousPublishDate: "2023-06-23",     	    // Format is "YYYY-MM-DD"
   //previousMaturity: "GN-VV",                 // kies 1 van deze 3 regels
   //previousMaturity: "GN-CV",                   // kies 1 van deze 3 regels  	  
   previousMaturity: "GN-DEF",  	                // kies 1 van deze 3 regels
