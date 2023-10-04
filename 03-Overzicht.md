@@ -450,7 +450,7 @@ dataspecificatie.
 ## Gegevensuitwisseling met GML
 
 Om op basis van het informatiemodel Geluid gegevens te kunnen uitwisselen, is
-een XML application schema afgeleid, volgende de methode zola beschreven in de
+een XML application schema afgeleid, volgende de methode zoals beschreven in de
 [Geography Markup
 Language](https://www.geonovum.nl/geo-standaarden/geography-markup-language-gml)
 (GML) standaard, het standaard uitwisselingsformaat voor geografische bestanden. Daarnaast voldoet het GML applicatie schema aan het [Simple Features Profile](http://portal.opengeospatial.org/files/?artifact_id=42729) Level 2.
