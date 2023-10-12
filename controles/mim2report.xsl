@@ -28,6 +28,7 @@
           <td><b>kard</b></td>
           <td><b>lengte</b></td>
           <td><b>patroon</b></td>
+          <td><b>formeel patroon</b></td>
           <td><b>meeteenheid</b></td>
           <td><b>min</b></td>
           <td><b>max</b></td>
@@ -49,7 +50,8 @@
   <td><xsl:value-of select="mim:kardinaliteit"/></td>
   <td><xsl:value-of select="mim:lengte"/></td>
   <td><xsl:value-of select="mim:patroon"/></td>
-  <td><xsl:value-of select="mim-ext:kenmerken/mim-ext:kenmerk[@naam='Meeteenheid']"/> </td>
+  <td><xsl:value-of select="mim:formeelPatroon"/></td>
+  <td><xsl:value-of select="mim-ext:kenmerken/mim-ext:kenmerk[@naam='Meeteenheid' or @naam='meeteenheid']"/> </td>
   <td><xsl:value-of select="mim-ext:kenmerken/mim-ext:kenmerk[@naam='Minimumwaarde' or @naam='minimumwaarde']"/> </td>
   <td><xsl:value-of select="mim-ext:kenmerken/mim-ext:kenmerk[@naam='Maximumwaarde' or @naam='maximumwaarde']"/></td>
 </tr>
