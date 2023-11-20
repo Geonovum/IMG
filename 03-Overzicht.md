@@ -336,7 +336,7 @@ in het informatiemodel Geluid onder de EU-richtlijn INSPIRE te vallen. Dit geldt
 niet voor alle gegevens, maar voor een specifiek deel dat we in deze paragraaf
 beschrijven.
 
-Het [Geluidaandachtsgebied](#global_class_Algemeen_Geluidaandachtsgebied) valt
+Het [Geluidaandachtsgebied](#detail_class_IMGeluidAlgemeen_Geluidaandachtsgebied) valt
 onder de INSPIRE-verplichting. De CVGG is hiervoor de authentieke bron. Het
 INSPIRE thema waaronder het Geluidaandachtsgebied valt is [Area
 Management](https://inspire.ec.europa.eu/theme/am).
