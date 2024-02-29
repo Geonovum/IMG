@@ -3,6 +3,12 @@
 Hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versie 2.0, versie 2.1, versie 3.0 en versie 3.1. 
 Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
 
+## Wijzigingen in versie 3.x
+
+|**nummer**| **Github issue**                                 | **Soort wijziging**                  | **Wijziging**                                |
+| ---------|------------------------------------------------- | ------------------------------------ | -------------------------------------------- |
+| 1        | geen| redactioneel | overgestapt op de nieuewe versie van ReSpec | 
+
 ## Wijzigingen in versie 3.1
 
 |**nummer**| **Github issue**                                 | **Soort wijziging**                  | **Wijziging**                                |
