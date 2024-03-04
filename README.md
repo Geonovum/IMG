@@ -1,6 +1,6 @@
 # IMG
 
-Dit repository bevat het Informatie Model Geluid
+Deze repository bevat het Informatie Model Geluid.
 
 De laatste officieel gepubliceerde versie van het model is te vinden via
 <https://docs.geostandaarden.nl/cvgg/img/>
