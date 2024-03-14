@@ -87,14 +87,6 @@ let respecConfig = {
   //-- NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging 
   localBiblio: 
   {
-    "CITAAT":
-      {
-        title:      "Titel van het Citaat",
-        href:       "http://url van de publicatie",
-        status:     "versie van de publicatie",
-        publisher:  "naam van de publiceerder",
-        company:    "eventueel naam van bedrijf",
-    },
     MIM: {
       id: "mim10",
       title: "MIM - Metamodel Informatie Modellering",
@@ -122,6 +114,23 @@ let respecConfig = {
       status: "Definitief",
       publisher: "NEN",
       date: "2011-03-01"
+    },
+    "GML": {
+      "href": "https://www.opengeospatial.org/standards/gml",
+      "title": "Geography Markup Language (GML) Encoding Standard",
+      "publisher": "Open Geospatial Consortium Inc.",
+      "deliveredBy": [ { "url": "https://www.opengeospatial.org", "shortname": "ogc" } ],
+      "versions": [ "gml-20070827" ],
+      "id": "gml"
+    },
+    "UML": {
+      "authors": [ "Open Management Group" ],
+      "href": "https://www.omg.org/spec/UML/",
+      "publisher": "OMG",
+      "status": "Normative",
+      "title": "OMG Unified Modeling Language",
+      "id": "uml",
+      "date": "1 March 2015"
     },
   },
   //neem hier de URL van de github repository op waar het respec document in staat
