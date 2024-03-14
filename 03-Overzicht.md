@@ -468,4 +468,4 @@ historische redenen staat het 3.2.2 schema van GML in een folder met de naam
 standaard.
 
 Het GML application schema is uit het informatiemodel Geluid afgeleid conform
-[[ISO19118-2011]] en annex E van de GML standaard [[gml]].
+[[ISO19118-2011]] en annex E van de GML standaard [[GML]].

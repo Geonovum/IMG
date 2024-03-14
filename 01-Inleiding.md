@@ -32,7 +32,7 @@ De afspraken uit het IMGeluid zijn vastgelegd in dit document. Het document word
 elkaar. Voor ieder object worden alle eigenschappen (attributen), die in de
 werkelijkheid relevant zijn, opgenomen in het informatiemodel. Het
 informatiemodel is gemodelleerd conform het Metamodel
-Informatie Modellering [[MIM]] met behulp van de modelleertaal UML [[uml]]. Het
+Informatie Modellering [[MIM]] met behulp van de modelleertaal UML [[UML]]. Het
 MIM bevat modelleerregels waar het IMGeluid aan moet voldoen. Daarnaast sluit IMGeluid ook aan op het Basismodel Geo-informatie [[NEN3610]]. In dit document zijn de objecttypen en attribuutsoorten
 voorzien van definities, en waar nodig nadere toelichtingen, zodat het
 informatiemodel ook te begrijpen is zonder kennis van UML.
