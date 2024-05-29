@@ -1,10 +1,8 @@
 <?xml version="1.0" ?>
-<!-- LET OP Dit is een voorbeeldbestand.
- Doel is om te laten zien hoe een GML-bestand er uit moet komen te zien volgens de structuur van het IMgeluid,
- en conform de uitwisselstandaard. De inhoud is dan ook fictief, en komt niet overeen met de akoestische werkelijkheid.
- Dit voorbeeldbestand is een voorbeeld voor de geluidbron hoofdspoor, van het type vaststelling.-->
+<!-- LET OP Dit is een testbestand.
+ Dit bestand moet 5 validatiefouten geven voor missende eigenschappen.-->
 <gml:FeatureCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.opengis.net/gml/3.2 ../xsd/3.1.1/IMGeluid-3.1.1-rc1.xsd"
+ xsi:schemaLocation="http://www.opengis.net/gml/3.2 https://register.geostandaarden.nl/gmlapplicatieschema/img/3.1.1/IMGeluid-3.1.1-rc1.xsd"
  xmlns:img="http://www.geluidgegevens.nl/IMGeluid/3.1" xmlns:gco="http://www.isotc211.org/2005/gco"
  xmlns:hfp="http://www.w3.org/2001/XMLSchema-hasFacetAndProperty"
  xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gml="http://www.opengis.net/gml/3.2"
