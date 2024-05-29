@@ -16,10 +16,10 @@
         This schema is based on an UML specification, which is transformed by the Imvertor software. Imvertor modules are in the public domain, see http://www.imvertor.org.
 
         Schemawijzigingen in 3.1.1-rc1:
-	De volgende wijzigingen zijn handmatig doorgevoerd vooruitlopend op een
-	permanente oplossing die voor een grootschaliger wijziging in het xsd
-	zal zorgen. Zie hervoor issue: https://github.com/Imvertor/Imvertor-Maven/issues/393
-	     - xs:complexType name="NEN3610IDPropertyType"> minOccurs="0" --> minOccurs="1". (https://github.com/Geonovum/IMG/issues/214)
+        De volgende wijzigingen zijn handmatig doorgevoerd vooruitlopend op een
+        permanente oplossing die voor een grootschaliger wijziging in het xsd
+        zal zorgen. Zie hervoor issue: https://github.com/Imvertor/Imvertor-Maven/issues/393
+        - xs:complexType name="NEN3610IDPropertyType"> minOccurs="0" --> minOccurs="1". (https://github.com/Geonovum/IMG/issues/214)
         - xs:complexType name="WaardePerOctaafbandPropertyType"> minOccurs="0" --> minOccurs="1". (https://github.com/Geonovum/IMG/issues/214)
         - xs:complexType name="FactorPerOctaafbandPropertyType"> minOccurs="0" --> minOccurs="1". (https://github.com/Geonovum/IMG/issues/214)
         - xs:complexType name="BedrijfsduurcorrectieWaardePropertyType"> --> minOccurs="1". (https://github.com/Geonovum/IMG/issues/214)
