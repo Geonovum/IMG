@@ -5,8 +5,7 @@ let respecConfig = {
   title: "Informatie Model Geluid (IMGeluid) versie 3.1.1",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   //specStatus: "wv",                   // Werkversie
-  specStatus: "rc",                   // Release Candidate
-  //specStatus: "cv",               // Consultatieversie
+  specStatus: "cv",               // Consultatieversie
   //specStatus: "vv",               // Versie ter vaststelling
   //specStatus: "def",              // Vastgestelde versie
   //specStatus: "basis",            // Basis Document
