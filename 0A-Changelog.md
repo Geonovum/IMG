@@ -7,7 +7,7 @@ Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokke
 
 |**nummer**| **Github issue**                                 | **Soort wijziging**                  | **Wijziging**                                |
 | ---------|------------------------------------------------- | ------------------------------------ | -------------------------------------------- |
-| 1        |geen                                              | redactioneel                         | Overgestapt op de nieuewe versie van ReSpec | 
+| 1        |geen                                              | redactioneel                         | Overgestapt op de nieuwe versie van ReSpec waardoor de layout is gewijzigd.| 
 | 2        |[204](https://github.com/Geonovum/IMG/issues/204) | Definities aangepast                 | De definitie van objecttype Brug is aangepast, omdat die niet overeen kwam met hoe die bedoeld was.|
 | 3        |[213](https://github.com/Geonovum/IMG/issues/213) | Regels toegevoegd                    | Er zijn 2 regels toegevoegd bij het attribuut terrein.typeTerrein om te inconsistentie met Geluidgegevenscollectie.geluidbron te voorkomen.|
 | 4        |[215](https://github.com/Geonovum/IMG/issues/215) | Toelichting aangepast                | Verduidelijken toegevoegd waar de z-hoogte in de geometrie van een spoor naar verwijst.|
