@@ -1,15 +1,18 @@
 # Wijzigingen in het Informatiemodel Geluid
 
-Hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versie 2.0, versie 2.1, versie 3.0 en versie 3.1. 
+Hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versies 2.0, 2.1, 3.0, 3.1. en 3.1.1.  
 Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
 
-## Wijzigingen in versie 3.x
+## Wijzigingen doorgevoerd in versie 3.1.1
 
 |**nummer**| **Github issue**                                 | **Soort wijziging**                  | **Wijziging**                                |
 | ---------|------------------------------------------------- | ------------------------------------ | -------------------------------------------- |
-| 1        | geen| redactioneel | overgestapt op de nieuewe versie van ReSpec | 
+| 1        |geen                                              | redactioneel                         | Overgestapt op de nieuewe versie van ReSpec | 
+| 2        |[204](https://github.com/Geonovum/IMG/issues/204) | Definities aangepast                 | De definitie van objecttype Brug is aangepast, omdat die niet overeen kwam met hoe die bedoeld was.|
+| 3        |[213](https://github.com/Geonovum/IMG/issues/213) | Regels toegevoegd                    | Er zijn 2 regels toegevoegd bij het attribuut terrein.typeTerrein om te inconsistentie met Geluidgegevenscollectie.geluidbron te voorkomen.|
+| 4        |[215](https://github.com/Geonovum/IMG/issues/215) | Toelichting aangepast                | Verduidelijken toegevoegd waar de z-hoogte in de geometrie van een spoor naar verwijst.|
 
-## Wijzigingen in versie 3.1
+## Wijzigingen doorgevoerd in versie 3.1
 
 |**nummer**| **Github issue**                                 | **Soort wijziging**                  | **Wijziging**                                |
 | ---------|------------------------------------------------- | ------------------------------------ | -------------------------------------------- |
@@ -26,10 +29,10 @@ Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokke
 | 11       |[207](https://github.com/Geonovum/IMG/issues/207) | XML-Schema Restriction verbeterd     | Bij SpoordeelGPP en WegdeelGPP zijn bij attribuut plafondcorrectie de de minimum- en maximumwaarde aangepast naar -199.9 en 199.9. (Zie ook [194](https://github.com/Geonovum/IMG/issues/194))|
 | 12       |[209](https://github.com/Geonovum/IMG/issues/209) | XML-Schema Restriction verbeterd     | Bij een aantal elementen binnen de VerkeersgegevensWeg was minimumwaarde (=0) niet ingevuld. Deze zijn nu overal wel ingevuld. (Zie ook [194](https://github.com/Geonovum/IMG/issues/194))|
 | 13       |[210](https://github.com/Geonovum/IMG/issues/210) | XML-Schema Restriction verbeterd     | Bij GeluidbronIndustrie.reflectiepuntHoogte stond "mogelijk geen waarde" op "Ja". Deze is op "Nee" gezet, net als bij alle andere attributen in IMG. (Zie ook [194](https://github.com/Geonovum/IMG/issues/194))|
-| 14       |                                                  | Redactionele wijzigingen             | In de toelichting van documentverwijzijng, in een regel bij Bodemvlak en in de definitie van relatierol geluidberekeningobject stond nog een s te veel in monitoring**s**resultaat. |
-| 15       |                                                  | Redactionele wijzigingen             | Bij attribuut Geluidtoeslag.toeslag is het patroon verwijderd omdat het om een gestructureerd datatype gaat (WaardePerOctaafband) waarbij dit niet relevant is.|
+| 14       |geen                                              | Redactionele wijzigingen             | In de toelichting van documentverwijzijng, in een regel bij Bodemvlak en in de definitie van relatierol geluidberekeningobject stond nog een s te veel in monitoring**s**resultaat. |
+| 15       |geen                                              | Redactionele wijzigingen             | Bij attribuut Geluidtoeslag.toeslag is het patroon verwijderd omdat het om een gestructureerd datatype gaat (WaardePerOctaafband) waarbij dit niet relevant is.|
 
-## Wijzigingen in versie 3.0
+## Wijzigingen doorgevoerd in versie 3.0
 
 |**nummer**| **Github issue**                                 | **Soort wijziging**                  | **Wijziging**                                |
 | ---------|------------------------------------------------- | ------------------------------------ | -------------------------------------------- |
@@ -48,7 +51,7 @@ Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokke
 | 13       |[193](https://github.com/Geonovum/IMG/issues/193) | Klasse toegevoegd                    | Abstracte klasse GemonitordObject toegevoegd.|
 | 14       |[195](https://github.com/Geonovum/IMG/issues/195) | Tekst toegevoegd                     | Uitleg over NEN3610ID die ten onrechte was verdwenen weer toegevoegd. |
 
-## Wijzigingen in versie 2.1
+## Wijzigingen doorgevoerd in versie 2.1
 
 |**nummer**|**Github issue** | **Soort wijziging** | **Wijziging**|
 |----------|-----------------|---------------------|--------------|
@@ -62,34 +65,34 @@ Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokke
 | 8        |[179](https://github.com/Geonovum/IMG/issues/179)   |patroon| Toegestane waarden Industrieterrein.standaard­Bodemabsorptiefractie attribuut op juiste plaats gezet.|
 | 9        |[180](https://github.com/Geonovum/IMG/issues/180)   |regel| Bij Geluidschermdeel.onderkantScherm  regels verplaatst van toelichtingveld naar het regels veld van Geluidschermdeel.|
 
-## Wijzigingen in versie 2.0
+## Wijzigingen doorgevoerd in versie 2.0
 
 |**nummer**|**Github issue**                                   | **Soort wijziging**                       | **Wijziging** |
 |----------|---------------------------------------------------|-------------------------------------------|---------------|
-| 1        | [72](https://github.com/Geonovum/IMG/issues/72)   | attributen aangepast                      | Attribuut Geluidschermdeel.geometrie heet nu bovenkantScherm. Geluidschermdeel.schermhoogte is vervangen door Geluidschermdeel.onderkantScherm van het type GM_Curve. Het attribuut geluidwerendeMaatregel is verwijderd.|
-| 2        | [124](https://github.com/Geonovum/IMG/issues/124) | klasse verwijderd                         | De subklasse GeluidschermSpoor is samengevoegd met de klasse Geluidscherm en de relaties met Overkapping, Tunnelbak en Brug zijn verwijderd. Ook de regels die hierin stonden over deze relatie zijn vewijderd.|
-| 3        | [143](https://github.com/Geonovum/IMG/issues/143) | kardinaliteit                             | Kardinaliteit van de relatierol "berekening" tussen Geluidproductieplafondobject en Geluidberekeningobject is [1..2] geworden.|
-| 4        | [144](https://github.com/Geonovum/IMG/issues/144) | attribuut verplaatst                      | Het attribuut standaarBodemabsorptiefractie is verplaatst van het Objecttype Industrierekeninstellingen naar het Objecttype Terrein.|
-| 5        | [145](https://github.com/Geonovum/IMG/issues/145) | relatie verwijderd                        | De relatie tussen de objecttypes Geluidaandachtgebied en Geluidberekeningobject is overal in het model verwijderd.|
-| 6        | [147](https://github.com/Geonovum/IMG/issues/147) | extra attribuut bij gegevensgroep         | Attribuut dagdeel toegevoegd aan SnelheidgegevensSpoor.|
-| 7        | [148](https://github.com/Geonovum/IMG/issues/148) | geometrietype                             | Voor geluidbronIndustrie is het geometrietype van GM\_POINT naar GM\_MultiPoint gezet.|
-| 8        | [149](https://github.com/Geonovum/IMG/issues/149) | naamswijziging	                           | Wijziging van de enumeratiewaarde 'luchthaventerrein' naar 'luchthavengebied'. Tevens een toelichting toegevoegd. |
-| 9        | [151](https://github.com/Geonovum/IMG/issues/151) | volgorde attributen                       | De volgorde is overal aangepast naar: ID – naam – omschrijving – geometrie – attribuutsoorten die vaker voorkomen – rest. Attribuutsoorten uit overerving staan altijd bovenaan. |
-| 10       | [152](https://github.com/Geonovum/IMG/issues/152) | Inkapselen verboden                       | Het inkapselen van relaties in de uitwisseling is verboden. De encoding van GML relaties is nu altijd byReference (dit is ook verwerkt in het XSD) |
-| 11       | [154](https://github.com/Geonovum/IMG/issues/154) | naamswijziging                            | Er is een wijziging die niet is genoemd in de changelog voor definitieve versie 1.2. Het gaat om relatierol "Brug.geluid**af**schermspoor" die nu "geluidschermspoor" heet.|
-| 12       | [155](https://github.com/Geonovum/IMG/issues/155) | extra attributen voor Optrektoeslagvlak   | De attribuutsoorten naam en omschrijving zijn met kardinaliteit [0..1] toegevoegd aan het Objecttype Optrektoeslagvlak. |
-| 13       | [157](https://github.com/Geonovum/IMG/issues/157) | titel aangepast                           | Versienummer toegevoegd aan titel |
-| 14       | [158](https://github.com/Geonovum/IMG/issues/158) | nieuw object + relatie toegevoegd         | Object 'Geluidcontour' opgesplits in twee objecten 'GeluidcontourSet' en 'Geluidcontour'. Tevens definitie en toelichting toegevoegd aan 'GeluidcontourSet'|
-| 15       | [159](https://github.com/Geonovum/IMG/issues/159) | definities aangepast                      | De definities van enumeratiewaarden "Besluit" en "Melding" in Documenttype zijn aangepast| 
-| 16       | [160](https://github.com/Geonovum/IMG/issues/160) | regels verplaatst naar toelichting        | Om regels te verminderen, zijn 2 regels bij de documentverwijzing omgezet in een toelichting.|
-| 17       | [161](https://github.com/Geonovum/IMG/issues/161) | nieuw subtype                             | Om regels te verminderen, is het subtype Industrieterrein toegevoegd aan het objecttype Terrein en hoeft geometrie alleen nog voor dit subtype opgegegeven te worden.|
-| 18       | [162](https://github.com/Geonovum/IMG/issues/162) | gegevensgroep geherstructureerd           | Om regels te verminderen, zijn alle combinaties van dagdelen en motorvoertuigklassen in de gegevensgroep "VerkeersgegevensWeg" aparte attributen in de gegevensgroep geworden.|
-| 19       | [163](https://github.com/Geonovum/IMG/issues/163) | attribuut verplicht gesteld               | Om regels te verminderen, is het attribuut uitstralingsrichting van GeluidbronIndustrie verplichtgesteld.|
-| 20       | [164](https://github.com/Geonovum/IMG/issues/164) | attribuut verplaatst en object verwijderd | Om regels te verminderen, is het attribuut hoogtelijntype verplaatst naar objecttype Hoogtelijn en is objecttype Hoogtelijnspecificatie verwijderd. Ook is enumeratie Hoogtelijnobjecttype verwijderd omdat die alleen in Hoogtelijnspecificatie gebruikt werd.|
-| 21       | [165](https://github.com/Geonovum/IMG/issues/165) | regel verwijderd                          | Een regel bij attribuut absorptiefractie betreffende kardinaliteit is verwijderd omdat dit al afgedwongen wordt via de tagged valuses en het schema.|
-| 22       | [167](https://github.com/Geonovum/IMG/issues/167) | attribuut verwijderd                      | Monitoringresultaat.kwalitatieveOnderbouwing verwijderd |
-| 23       | [168](https://github.com/Geonovum/IMG/issues/168) | regel verwijderd                          | De regel bij Geluidschermdeel.reflectiefactorRechts en reflectiefactorLinks dat deze bij spoor gelijk zouden moeten zijn is verwijderd.|
-| 24       | [170](https://github.com/Geonovum/IMG/issues/170) | gegevensgroep vervangen door 3 attributen | Om regels te verminderen, is er voor elk dagdeel een attribuut jaargemiddeldeGeluidemissie toegevoegd aan objecttype Windturbine. De gegevensgroep EmissiePerDagdeel is verwijderd.|
-| 25       | [171](https://github.com/Geonovum/IMG/issues/171) | nieuw subtype                             | Om regels te verminderen, is aan objecttype Optrektoeslagpunt het subtypes OptrektoeslagKruispunt toegevoegd.|
-| 26       |                                                   | Redactionele wijzigingen                  | Omwille van de leesbaarheid diagrammen aangepast. Bij Hoogtelijn en Documentverwijzing regels verwijderd omdat deze al uit de modellering volgen.|
-| 27       | [172](https://github.com/Geonovum/IMG/issues/172) | nieuwe klasse                             | Nieuwe klasse FlyoverZijkant toegevoegd aan GPP Weg.|
+| 1        |[72](https://github.com/Geonovum/IMG/issues/72)   | attributen aangepast                      | Attribuut Geluidschermdeel.geometrie heet nu bovenkantScherm. Geluidschermdeel.schermhoogte is vervangen door Geluidschermdeel.onderkantScherm van het type GM_Curve. Het attribuut geluidwerendeMaatregel is verwijderd.|
+| 2        |[124](https://github.com/Geonovum/IMG/issues/124) | klasse verwijderd                         | De subklasse GeluidschermSpoor is samengevoegd met de klasse Geluidscherm en de relaties met Overkapping, Tunnelbak en Brug zijn verwijderd. Ook de regels die hierin stonden over deze relatie zijn vewijderd.|
+| 3        |[143](https://github.com/Geonovum/IMG/issues/143) | kardinaliteit                             | Kardinaliteit van de relatierol "berekening" tussen Geluidproductieplafondobject en Geluidberekeningobject is [1..2] geworden.|
+| 4        |[144](https://github.com/Geonovum/IMG/issues/144) | attribuut verplaatst                      | Het attribuut standaarBodemabsorptiefractie is verplaatst van het Objecttype Industrierekeninstellingen naar het Objecttype Terrein.|
+| 5        |[145](https://github.com/Geonovum/IMG/issues/145) | relatie verwijderd                        | De relatie tussen de objecttypes Geluidaandachtgebied en Geluidberekeningobject is overal in het model verwijderd.|
+| 6        |[147](https://github.com/Geonovum/IMG/issues/147) | extra attribuut bij gegevensgroep         | Attribuut dagdeel toegevoegd aan SnelheidgegevensSpoor.|
+| 7        |[148](https://github.com/Geonovum/IMG/issues/148) | geometrietype                             | Voor geluidbronIndustrie is het geometrietype van GM\_POINT naar GM\_MultiPoint gezet.|
+| 8        |[149](https://github.com/Geonovum/IMG/issues/149) | naamswijziging	                           | Wijziging van de enumeratiewaarde 'luchthaventerrein' naar 'luchthavengebied'. Tevens een toelichting toegevoegd. |
+| 9        |[151](https://github.com/Geonovum/IMG/issues/151) | volgorde attributen                       | De volgorde is overal aangepast naar: ID – naam – omschrijving – geometrie – attribuutsoorten die vaker voorkomen – rest. Attribuutsoorten uit overerving staan altijd bovenaan. |
+| 10       |[152](https://github.com/Geonovum/IMG/issues/152) | Inkapselen verboden                       | Het inkapselen van relaties in de uitwisseling is verboden. De encoding van GML relaties is nu altijd byReference (dit is ook verwerkt in het XSD) |
+| 11       |[154](https://github.com/Geonovum/IMG/issues/154) | naamswijziging                            | Er is een wijziging die niet is genoemd in de changelog voor definitieve versie 1.2. Het gaat om relatierol "Brug.geluid**af**schermspoor" die nu "geluidschermspoor" heet.|
+| 12       |[155](https://github.com/Geonovum/IMG/issues/155) | extra attributen voor Optrektoeslagvlak   | De attribuutsoorten naam en omschrijving zijn met kardinaliteit [0..1] toegevoegd aan het Objecttype Optrektoeslagvlak. |
+| 13       |[157](https://github.com/Geonovum/IMG/issues/157) | titel aangepast                           | Versienummer toegevoegd aan titel |
+| 14       |[158](https://github.com/Geonovum/IMG/issues/158) | nieuw object + relatie toegevoegd         | Object 'Geluidcontour' opgesplits in twee objecten 'GeluidcontourSet' en 'Geluidcontour'. Tevens definitie en toelichting toegevoegd aan 'GeluidcontourSet'|
+| 15       |[159](https://github.com/Geonovum/IMG/issues/159) | definities aangepast                      | De definities van enumeratiewaarden "Besluit" en "Melding" in Documenttype zijn aangepast| 
+| 16       |[160](https://github.com/Geonovum/IMG/issues/160) | regels verplaatst naar toelichting        | Om regels te verminderen, zijn 2 regels bij de documentverwijzing omgezet in een toelichting.|
+| 17       |[161](https://github.com/Geonovum/IMG/issues/161) | nieuw subtype                             | Om regels te verminderen, is het subtype Industrieterrein toegevoegd aan het objecttype Terrein en hoeft geometrie alleen nog voor dit subtype opgegegeven te worden.|
+| 18       |[162](https://github.com/Geonovum/IMG/issues/162) | gegevensgroep geherstructureerd           | Om regels te verminderen, zijn alle combinaties van dagdelen en motorvoertuigklassen in de gegevensgroep "VerkeersgegevensWeg" aparte attributen in de gegevensgroep geworden.|
+| 19       |[163](https://github.com/Geonovum/IMG/issues/163) | attribuut verplicht gesteld               | Om regels te verminderen, is het attribuut uitstralingsrichting van GeluidbronIndustrie verplichtgesteld.|
+| 20       |[164](https://github.com/Geonovum/IMG/issues/164) | attribuut verplaatst en object verwijderd | Om regels te verminderen, is het attribuut hoogtelijntype verplaatst naar objecttype Hoogtelijn en is objecttype Hoogtelijnspecificatie verwijderd. Ook is enumeratie Hoogtelijnobjecttype verwijderd omdat die alleen in Hoogtelijnspecificatie gebruikt werd.|
+| 21       |[165](https://github.com/Geonovum/IMG/issues/165) | regel verwijderd                          | Een regel bij attribuut absorptiefractie betreffende kardinaliteit is verwijderd omdat dit al afgedwongen wordt via de tagged valuses en het schema.|
+| 22       |[167](https://github.com/Geonovum/IMG/issues/167) | attribuut verwijderd                      | Monitoringresultaat.kwalitatieveOnderbouwing verwijderd |
+| 23       |[168](https://github.com/Geonovum/IMG/issues/168) | regel verwijderd                          | De regel bij Geluidschermdeel.reflectiefactorRechts en reflectiefactorLinks dat deze bij spoor gelijk zouden moeten zijn is verwijderd.|
+| 24       |[170](https://github.com/Geonovum/IMG/issues/170) | gegevensgroep vervangen door 3 attributen | Om regels te verminderen, is er voor elk dagdeel een attribuut jaargemiddeldeGeluidemissie toegevoegd aan objecttype Windturbine. De gegevensgroep EmissiePerDagdeel is verwijderd.|
+| 25       |[171](https://github.com/Geonovum/IMG/issues/171) | nieuw subtype                             | Om regels te verminderen, is aan objecttype Optrektoeslagpunt het subtypes OptrektoeslagKruispunt toegevoegd.|
+| 26       |geen                                              | Redactionele wijzigingen                  | Omwille van de leesbaarheid diagrammen aangepast. Bij Hoogtelijn en Documentverwijzing regels verwijderd omdat deze al uit de modellering volgen.|
+| 27       |[172](https://github.com/Geonovum/IMG/issues/172) | nieuwe klasse                             | Nieuwe klasse FlyoverZijkant toegevoegd aan GPP Weg.|
