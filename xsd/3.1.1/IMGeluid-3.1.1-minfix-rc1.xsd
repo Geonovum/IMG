@@ -6,7 +6,7 @@
            targetNamespace="http://www.geluidgegevens.nl/IMGeluid/3.1"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="3.1.1-rc1">
+           version="3.1.1-minfix-rc1">
    <xs:annotation>
       <xs:appinfo source="http://www.imvertor.org/model-info/application">IMGeluid</xs:appinfo>
       <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generated">August 15, 2024 at 07:46:19</xs:appinfo>
@@ -14,6 +14,16 @@
       <xs:documentation source="http://www.imvertor.org/schema-info/file-location">IMGeluid/unknown/v20230920/IMGeluid_IMGeluid_v3_1.xsd</xs:documentation>
       <xs:documentation source="http://www.imvertor.org/schema-info/conversion">
         This schema is based on an UML specification, which is transformed by the Imvertor software. Imvertor modules are in the public domain, see http://www.imvertor.org.
+
+        Schemawijzigingen in 3.1.1-minfix-rc1:
+        De volgende wijzigingen zijn handmatig doorgevoerd vooruitlopend op een
+        permanente oplossing die voor een grootschaliger wijziging in het xsd
+        zal zorgen. Zie hervoor issue: https://github.com/Imvertor/Imvertor-Maven/issues/393
+        - xs:complexType name="NEN3610IDPropertyType"> minOccurs="0" --> minOccurs="1". (https://github.com/Geonovum/IMG/issues/214)
+        - xs:complexType name="WaardePerOctaafbandPropertyType"> minOccurs="0" --> minOccurs="1". (https://github.com/Geonovum/IMG/issues/214)
+        - xs:complexType name="FactorPerOctaafbandPropertyType"> minOccurs="0" --> minOccurs="1". (https://github.com/Geonovum/IMG/issues/214)
+        - xs:complexType name="BedrijfsduurcorrectieWaardePropertyType"> --> minOccurs="1". (https://github.com/Geonovum/IMG/issues/214)
+        - xs:complexType name="UitstralingsrichtingwaardePropertyType"> --> minOccurs="1". (https://github.com/Geonovum/IMG/issues/214)
 
         Schemawijzigingen sinds 3.1.0:
 	- Defintie brug aangepast (https://github.com/Geonovum/IMG/issues/204)
@@ -2456,7 +2466,7 @@ Explanation: Wanneer er gesproken wordt over links en rechts, dan is dit relatie
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="FactorPerOctaafbandPropertyType">
-      <xs:sequence minOccurs="0">
+      <xs:sequence minOccurs="1">
          <xs:element ref="img:FactorPerOctaafband"/>
       </xs:sequence>
    </xs:complexType>
@@ -2488,7 +2498,7 @@ Explanation: De attribuutsoort versie maakt geen deel uit van de identificatie v
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="NEN3610IDPropertyType">
-      <xs:sequence minOccurs="0">
+      <xs:sequence minOccurs="1">
          <xs:element ref="img:NEN3610ID"/>
       </xs:sequence>
    </xs:complexType>
@@ -2611,7 +2621,7 @@ Explanation: In Nederland wordt veelal gebruik gemaakt van de volgende octaafban
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="WaardePerOctaafbandPropertyType">
-      <xs:sequence minOccurs="0">
+      <xs:sequence minOccurs="1">
          <xs:element ref="img:WaardePerOctaafband"/>
       </xs:sequence>
    </xs:complexType>
@@ -2653,7 +2663,7 @@ Explanation: Uitgedrukt in graden volgens kompasrichtingen.</xs:documentation>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="UitstralingsrichtingwaardePropertyType">
-      <xs:sequence minOccurs="0">
+      <xs:sequence minOccurs="1">
          <xs:element ref="img:Uitstralingsrichtingwaarde"/>
       </xs:sequence>
    </xs:complexType>
@@ -2686,7 +2696,7 @@ Explanation: Maximaal 1 cijfer achter de komma.</xs:documentation>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="BedrijfsduurcorrectieWaardePropertyType">
-      <xs:sequence minOccurs="0">
+      <xs:sequence minOccurs="1">
          <xs:element ref="img:BedrijfsduurcorrectieWaarde"/>
       </xs:sequence>
    </xs:complexType>
