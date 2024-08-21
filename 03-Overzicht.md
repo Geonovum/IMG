@@ -455,9 +455,8 @@ een XML application schema afgeleid, volgende de methode zoals beschreven in de
 Language](https://www.geonovum.nl/geo-standaarden/geography-markup-language-gml)
 (GML) standaard, het standaard uitwisselingsformaat voor geografische bestanden. Daarnaast voldoet het GML applicatie schema aan het [Simple Features Profile](https://portal.opengeospatial.org/files/?artifact_id=42729) Level 2.
 
-Het GML applicatie schema behorend bij deze versie van de standaard is het
-schema dat is te vinden in:
-https://register.geostandaarden.nl/gmlapplicatieschema/img/3.1.0/
+Het GML applicatie schema behorend bij deze versie van de standaar is:
+<https://register.geostandaarden.nl/gmlapplicatieschema/img/3.1.1/IMGeluid.xsd>
 
 Noot: In GML uitwisseling zijn twee manieren beschreven voor het coderen van relaties: inline en byReference. Bij inline word het gerelateerde object ingekapseld in de XML codering, terwijl bij byReference een link naar het gerelateerde object word opgenomen, waarbij dat gerelateerde object elders in het uitwisselbestand staat. 
  - **Regel:** In de uitwisseling moeten relaties altijd als byReference gecodeerd zijn. Het inkapselen van een gerelateerd object is verboden. Elementen die als attribuut zijn opgenomen moeten in de uitwisseling wel worden ingekapseld.
