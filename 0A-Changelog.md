@@ -8,8 +8,8 @@ Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokke
 |**nummer**| **Github issue**                                 | **Soort wijziging**                  | **Wijziging**                                |
 | ---------|------------------------------------------------- | ------------------------------------ | -------------------------------------------- |
 | 1        |[204](https://github.com/Geonovum/IMG/issues/204) | Definities aangepast                 | De definitie van objecttype Brug is aangepast, omdat die niet overeen kwam met hoe die bedoeld was.|
-| 2        |[213](https://github.com/Geonovum/IMG/issues/213) | Regels toegevoegd                    | Er zijn 2 regels toegevoegd bij het attribuut terrein.typeTerrein om te inconsistentie met Geluidgegevenscollectie.geluidbron te voorkomen.|
-| 3        |[215](https://github.com/Geonovum/IMG/issues/215) | Toelichting aangepast                | Verduidelijken toegevoegd waar de z-hoogte in de geometrie van een spoor naar verwijst.|
+| 2        |[213](https://github.com/Geonovum/IMG/issues/213) | Regels toegevoegd                    | Er zijn 2 regels toegevoegd bij het attribuut terrein.typeTerrein om de inconsistentie met Geluidgegevenscollectie.geluidbron te voorkomen.|
+| 3        |[215](https://github.com/Geonovum/IMG/issues/215) | Toelichting aangepast                | Verduidelijking toegevoegd waar de z-hoogte in de geometrie van een spoor naar verwijst.|
 
 ## Wijzigingen doorgevoerd in versie 3.1
 
