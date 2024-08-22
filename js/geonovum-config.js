@@ -2,7 +2,7 @@
 var organisationConfig = {
     nl_organisationName: "Geonovum",
     // werkt nog niet 
-    nl_organisationStylesURL: "../style/",
+    nl_organisationStylesURL: "https://tools.geostandaarden.nl/respec/img/style/",
     // bv styles url voor ander GN publicatiedomein met eigen stijlen zoals DSO of BRO:
     // nl_organisationStylesURL: "https://tools.geostandaarden.nl/respec/dso/style/",
     // nl_organisationStylesURL: "https://tools.geostandaarden.nl/respec/bro/style/",
