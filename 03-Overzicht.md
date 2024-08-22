@@ -267,7 +267,7 @@ geometrie als eigenschap heeft, bij deze eigenschap voorgeschreven of het om een
 2D of 3D geometrie gaat.
 
 Hoogte is bij 3D geometrieën aangegeven in meters. Afhankeljik van het
-coordinaatsysteem is dit ten opzichte van NAP (in het geval van RD New) of ten
+coördinaatsysteem is dit ten opzichte van NAP (in het geval van RD New) of ten
 opzichte van de ellipsoid (in het geval van ETRS89). Zie ook de volgende
 paragraaf voor uitleg over deze coördinaatsystemen. 
 
