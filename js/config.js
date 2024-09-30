@@ -14,7 +14,7 @@ let respecConfig = {
   //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
   pubDomain: "cvgg",
   
-  licence: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
+  license: "cc-by",            // met deze licentie is het gepubliceerd terwijl cc-by-nd de bedoeling was
 
   //-- shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
   shortName: "img",
