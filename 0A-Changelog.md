@@ -3,6 +3,8 @@
 Hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versies 2.0, 2.1, 3.0, 3.1. en 3.1.1.  
 Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
 
+Afwegingen en onderbouwing die ten grondslag liggen aan de inhoud van deze catalogus zijn te vinden in de [Issues](https://github.com/Geonovum/IMG/issues/) sectie van de Github repository.
+
 ## Wijzigingen doorgevoerd in versie 3.1.1
 
 |**nummer**| **Github issue**                                 | **Soort wijziging**                  | **Wijziging**                                |
