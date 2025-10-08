@@ -2,7 +2,7 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   // TODO: title is verplicht! Neem hieronder de titel van het document op
-  title: "Informatie Model Geluid (IMGeluid) versie 3.1.1",
+  title: "Informatie Model Geluid (IMGeluid)",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   specStatus: "wv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
@@ -25,10 +25,10 @@ let respecConfig = {
   
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  //publishDate: "",
+  publishDate: "2025-01-01",
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
-  //publishVersion: "0.0.2",
-  //previousVersion: "0.0.1",
+  publishVersion: "3.1.1",
+  previousPublishVersion: "3.1.0",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
   previousPublishDate: "2024-08-22",
   previousMaturity: "DEF",
@@ -96,12 +96,12 @@ let respecConfig = {
 
   // Create PDF and link to file in header (optional):
   // TODO: Change the filename as preferred.
-  alternateFormats: [
-      {
-          label: "pdf",
-          uri: "static/IMGeluid.pdf",
-      },
-  ],
+  //alternateFormats: [
+  //    {
+  //        label: "pdf",
+  //        uri: "static/IMGeluid.pdf",
+  //    },
+  //],
   // Lokale lijst voor bibliografie
   // - Kijk eerst naar de beschikbare www.specref.org .
   // - Kijk daarna in de organisatieconfig.
