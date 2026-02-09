@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Prepare directories
         run: |
@@ -18,20 +18,40 @@ jobs:
       - name: Generate HTML snapshot
         run: npx respec --localhost --src index.html --out snapshot.html
 
-      - name: Validate HTML
-        continue-on-error: true
+      - name: Prepare HTML for validation
         run: |
-          npm install -g nu-html-checker
-          nu-html-checker snapshot.html
+          mkdir -p $CHECK_DIR/site
+          cp snapshot.html $CHECK_DIR/site/
+          if [ -d media ]; then
+            cp -R media $CHECK_DIR/site/
+          fi
 
-      - name: Check for alternateFormats
+      - name: Validate HTML
+        uses: anishathalye/proof-html@v2
+        continue-on-error: true
+        with:
+          directory: ${{ env.CHECK_DIR }}/site
+          check_html: true
+          check_css: false
+          disable_external: true
+          check_external_hash: false
+          enforce_https: false
+
+      - name: Check for alternateFormats via Node
         id: config
         run: |
-          echo "grep=false" >> $GITHUB_OUTPUT
-          if grep -q 'alternateFormats' ./js/config.js; then
-            if grep -Pzoq 'alternateFormats:\s*\[\s*\{\s*label:\s*".+?",\s*uri:\s*".+?"\s*\}\s*\]' ./js/config.js; then
-              echo "grep=true" >> $GITHUB_OUTPUT
-            fi
+          # Maak config require-baar
+          cp ./js/config.js config.js
+          echo "module.exports = { respecConfig };" >> config.js
+
+          # Laat Node bepalen of er een PDF entry is (en exitcode gebruiken)
+          if node -e "const {respecConfig}=require('./config.js');
+            const ok = Array.isArray(respecConfig.alternateFormats)
+              && respecConfig.alternateFormats.some(f => f && f.label==='pdf' && f.uri);
+            if (!ok) process.exit(1);" ; then
+            echo "grep=true" >> $GITHUB_OUTPUT
+          else
+            echo "grep=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Copy pdf.js if needed
@@ -45,17 +65,18 @@ jobs:
           echo "module.exports = { respecConfig };" >> config.js
           echo "var window = {respecMermaid:{createFigures:null}};" | cat - config.js > temp && mv temp config.js
           npm install puppeteer
-          python3 -m http.server 8080 &
+          python3 -m http.server 8081 >/dev/null 2>&1 &
+          # wacht tot de lokale server draait
+          for i in {1..30}; do
+            if curl -sf http://localhost:8081/snapshot.html > /dev/null; then
+              break
+            fi
+            sleep 1
+          done
+          curl -sf http://localhost:8081/snapshot.html > /dev/null || (echo "Local HTTP server on 8081 not reachable"; exit 1)
           rm -f *.pdf
-          node pdf.js
+          PDF_SNAPSHOT_URL=http://localhost:8081/snapshot.html node pdf.js
           mv *.pdf static/
-
-      - name: Run WCAG2AA check
-        run: |
-          npm install -g pa11y
-          pa11y snapshot.html \
-            --ignore WCAG2AA.Principle4.Guideline4_1.4_1_1.F77 \
-            > $CHECK_DIR/wcag-report.txt 2>&1 || echo "Geen WCAG-fouten gevonden." > $CHECK_DIR/wcag-report.txt
 
       - name: Serve snapshot over HTTP
         uses: Eun/http-server-action@v1
@@ -77,9 +98,55 @@ jobs:
               "xml": "text/xml"
             }
 
-      - name: Run link check with Muffet
+      - name: Ensure latest Chrome for WCAG check
         run: |
           sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+          google-chrome --version
+
+      - name: Run WCAG 2.2 check
+        run: |
+          for i in {1..30}; do
+            if curl -sf http://localhost:8080/snapshot.html > /dev/null; then
+              break
+            fi
+            sleep 1
+          done
+          curl -sf http://localhost:8080/snapshot.html > /dev/null || (echo "Local HTTP server on 8080 not reachable"; exit 1)
+
+          set -o pipefail
+          if npx --yes @axe-core/cli@latest --stdout \
+            --tags wcag2a,wcag2aa,wcag21a,wcag21aa,wcag22a,wcag22aa \
+            http://localhost:8080/snapshot.html \
+            | jq '
+                [
+                  .[] as $page |
+                  $page.violations[] |
+                  {
+                    url: $page.url,
+                    id,
+                    impact,
+                    description,
+                    helpUrl,
+                    nodes: [
+                      .nodes[] |
+                      {
+                        target,
+                        html,
+                        failureSummary
+                      }
+                    ]
+                  }
+                ]
+              ' > $CHECK_DIR/wcag-report.json; then
+            echo "WCAG output saved to $CHECK_DIR/wcag-report.json"
+          else
+            echo "{\"error\":\"WCAG-check mislukt (axe-cli). Zie logs voor details.\"}" > $CHECK_DIR/wcag-report.json
+            echo "WCAG output saved to $CHECK_DIR/wcag-report.json (error)"
+          fi
+
+      - name: Run link check with Muffet
+        run: |
           sudo apt-get install -y golang-go
           go install github.com/raviqqe/muffet@latest
           echo "${HOME}/go/bin" >> $GITHUB_PATH
@@ -95,22 +162,29 @@ jobs:
             --buffer-size 8192 > $CHECK_DIR/link-check.txt 2>&1 || echo "Geen linkfouten gevonden." > $CHECK_DIR/link-check.txt
 
       - name: Commit all results
-        if: ${{ github.event_name == 'push' }}
+        if: >
+          github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Verplaats PDFs naar root (optioneel)
+
           if [[ "${{ steps.config.outputs.grep }}" == "true" ]] && ls static/*.pdf 1>/dev/null 2>&1; then
             mv static/*.pdf .
           fi
 
-          git add snapshot.html *.pdf $CHECK_DIR/*.txt
+          git add snapshot.html $CHECK_DIR/*.txt $CHECK_DIR/*.json
+
+          if compgen -G "*.pdf" > /dev/null; then
+            git add *.pdf
+          fi
+
           git commit -m "Snapshot + checks gegenereerd" || echo "No changes to commit"
-          git push --force-with-lease origin HEAD:main
+
+          BRANCH=${GITHUB_REF#refs/heads/}
+          git push --force-with-lease origin HEAD:"$BRANCH"
 
       - name: Upload snapshot artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: snapshot
           path: |
