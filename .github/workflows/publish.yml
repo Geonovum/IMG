@@ -212,7 +212,7 @@ jobs:
         run: |
           cd docs.geostandaarden.nl
           git add .
-          git commit -m "Automatische pre-release update van ${{ github.repository }}"
+          git commit -m "Automatische pre-release update van ${{ github.repository }} (triggered by ${{ github.actor }})"
           git push origin develop
 
       - name: Create PR naar main bij release
@@ -224,8 +224,12 @@ jobs:
           branch: auto-update-${{ github.run_id }}
           base: main
           author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+          committer: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+          commit-message: "Automated update from ${{ github.repository }} (triggered by ${{ github.actor }})"
           title: "Automated update from ${{ github.repository }} to main"
           body: |
+            Triggered by: @${{ github.actor }}  
+            Release: `${{ github.event.release.tag_name }}`  
             Update vanuit workflow voor domein ${{ steps.metadata.outputs.pubdomain }}  
             Folder: `${{ steps.metadata.outputs.folderPath }}`
             To branch: `main`
