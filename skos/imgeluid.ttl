@@ -10,7 +10,7 @@
 
 <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid>
    a skos:ConceptScheme ;
-   skos:prefLabel "IMGeluid"@nl ;
+   skos:prefLabel "Informatiemodel Geluid"@nl ;
 .
 
 # ## Package IMGeluid
@@ -18,8 +18,6 @@
 <http://definities.geostandaarden.nl/img/id/concept/Geluidgegevenscollectie>
    a skos:Concept ;
    skos:prefLabel "Geluidgegevenscollectie"@nl ;
-   dct:created "2019-07-17"^^xsd:date ;
-   dct:modified "2023-06-23"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Informatieobject dat gegevens specificeert over alle geluidproductieplafonds of basisgeluidemissies, de voor de berekening daarvan gebruikte geluidbrongegevens (geluidemissie- en geluidoverdrachtsobjecten), de onderliggende (juridische) documententatie, de monitoringsgegevens, de cumulatie bronnen en het geluidaandachtsgebied, die gezamenlijk deel uitmaken van hetzelfde type geluidbron.'''@nl ;
    skos:scopeNote '''
@@ -35,8 +33,6 @@
 <http://definities.geostandaarden.nl/img/id/concept/Geluidaandachtsgebied>
    a skos:Concept ;
    skos:prefLabel "Geluidaandachtsgebied"@nl ;
-   dct:created "2019-09-12"^^xsd:date ;
-   dct:modified "2024-08-14"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Gebied rondom een industrieterrein of langs een weg of spoorweg, waarbinnen de geluidproductie hoger kan zijn dan de standaardwaarde.'''@nl ;
    skos:scopeNote '''
@@ -50,8 +46,6 @@
 <http://definities.geostandaarden.nl/img/id/concept/Documentverwijzing>
    a skos:Concept ;
    skos:prefLabel "Documentverwijzing"@nl ;
-   dct:created "2019-09-12"^^xsd:date ;
-   dct:modified "2023-09-20"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/GeluidgegevenscollectieElement> ;
    skos:definition '''Verwijzing naar het onderliggende besluit voor GPP, onderliggende bepaling voor BGE of onderliggende monitoringsrapportage voor een Monitoringswaarde of overige besluiten of meldingen.'''@nl ;
@@ -65,8 +59,6 @@ Een documentverwijzing kan verbonden zijn aan een monitoringresultaat dat toebeh
 <http://definities.geostandaarden.nl/img/id/concept/Geluidproductieplafondobject>
    a skos:Concept ;
    skos:prefLabel "Geluidproductieplafondobject"@nl ;
-   dct:created "2019-09-12"^^xsd:date ;
-   dct:modified "2023-06-15"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/GemonitordObject> ;
    skos:definition '''Een punt in Nederland waar ter referentie is vastgesteld wat de maximale toegstane geluidbelasting per etmaalperiode mag zijn die geproduceerd wordt door een Rijksweg, een provinciale weg, een industrieterrein, of het hoofdspoor.'''@nl ;
@@ -78,8 +70,6 @@ Een documentverwijzing kan verbonden zijn aan een monitoringresultaat dat toebeh
 <http://definities.geostandaarden.nl/img/id/concept/GeluidproductieplafondobjectIndustrie>
    a skos:Concept ;
    skos:prefLabel "GeluidproductieplafondobjectIndustrie"@nl ;
-   dct:created "2020-01-07"^^xsd:date ;
-   dct:modified "2023-06-15"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidproductieplafondobject> ;
    skos:definition '''Lokaal Geluidproductieplafondobject voor industrie.'''@nl ;
@@ -90,8 +80,6 @@ Een documentverwijzing kan verbonden zijn aan een monitoringresultaat dat toebeh
 <http://definities.geostandaarden.nl/img/id/concept/MonitoringresultaatIndustrie>
    a skos:Concept ;
    skos:prefLabel "MonitoringresultaatIndustrie"@nl ;
-   dct:created "2021-03-10"^^xsd:date ;
-   dct:modified "2023-05-25"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Monitoringresultaat> ;
    skos:definition '''Monitoringresultaat voor industrie.'''@nl ;
@@ -102,8 +90,6 @@ Een documentverwijzing kan verbonden zijn aan een monitoringresultaat dat toebeh
 <http://definities.geostandaarden.nl/img/id/concept/Basisgeluidemissieobject>
    a skos:Concept ;
    skos:prefLabel "Basisgeluidemissieobject"@nl ;
-   dct:created "2019-10-30"^^xsd:date ;
-   dct:modified "2023-06-15"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/GemonitordObject> ;
    skos:definition '''Een verzamelobject van de basisgeluidemissiewaarde en de Geluidemissieobjecten waarop deze waarde betrekking heeft. '''@nl ;
@@ -118,8 +104,6 @@ Een documentverwijzing kan verbonden zijn aan een monitoringresultaat dat toebeh
 <http://definities.geostandaarden.nl/img/id/concept/Monitoringresultaat>
    a skos:Concept ;
    skos:prefLabel "Monitoringresultaat"@nl ;
-   dct:created "2020-02-11"^^xsd:date ;
-   dct:modified "2024-08-14"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/GeluidgegevenscollectieElement> ;
    skos:definition '''Monitoringgegevens voor geluidproductieplafonds of basisgeluidemissie zoals opgenomen in het meest recente openbare verslag over de monitoring.'''@nl ;
@@ -134,8 +118,6 @@ Een documentverwijzing kan verbonden zijn aan een monitoringresultaat dat toebeh
 <http://definities.geostandaarden.nl/img/id/concept/Industrieterrein>
    a skos:Concept ;
    skos:prefLabel "Industrieterrein"@nl ;
-   dct:created "2022-05-02"^^xsd:date ;
-   dct:modified "2023-05-25"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Terrein> ;
    skos:definition '''Industrieterrein is een subtype van objecttype Terrein.'''@nl ;
@@ -146,8 +128,6 @@ Een documentverwijzing kan verbonden zijn aan een monitoringresultaat dat toebeh
 <http://definities.geostandaarden.nl/img/id/concept/Terrein>
    a skos:Concept ;
    skos:prefLabel "Terrein"@nl ;
-   dct:created "2019-10-22"^^xsd:date ;
-   dct:modified "2023-06-15"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Terreinen waar bij algemene maatregel van bestuur aangewezen
 activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroorzaken.'''@nl ;
@@ -158,8 +138,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Geluidberekeningobject>
    a skos:Concept ;
    skos:prefLabel "Geluidberekeningobject"@nl ;
-   dct:created "2019-10-23"^^xsd:date ;
-   dct:modified "2024-08-14"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Object met achtergrondinformatie over een geluidberekening die van toepassing is voor een Geluidgegevenscollectie. '''@nl ;
    skos:scopeNote '''
@@ -174,8 +152,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/IndustrieRekeninstellingen>
    a skos:Concept ;
    skos:prefLabel "IndustrieRekeninstellingen"@nl ;
-   dct:created "2019-09-12"^^xsd:date ;
-   dct:modified "2021-06-24"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidberekeningobject> ;
    skos:definition '''Standaard rekeninstellingen die zijn gebruikt bij een berekening gerelateerd aan een industrieterrein.'''@nl ;
@@ -187,8 +163,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/GeluidcontourSet>
    a skos:Concept ;
    skos:prefLabel "GeluidcontourSet"@nl ;
-   dct:created "2019-11-13"^^xsd:date ;
-   dct:modified "2022-03-15"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/GeluidgegevenscollectieElement> ;
    skos:definition '''Een verzameling van geluidcontouren met één gemeenschappelijke geluidbron'''@nl ;
@@ -200,8 +174,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Geluidemissieobject>
    a skos:Concept ;
    skos:prefLabel "Geluidemissieobject"@nl ;
-   dct:created "2020-01-07"^^xsd:date ;
-   dct:modified "2023-06-08"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/GeluidgegevenscollectieElement> ;
    skos:definition '''Abstractie van alle volgens wet- en regelgeving relevante infrastructurele- en industrieterrein-objecten uit de werkelijkheid die geluid produceren.'''@nl ;
@@ -217,8 +189,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/GeluidbronIndustrie>
    a skos:Concept ;
    skos:prefLabel "GeluidbronIndustrie"@nl ;
-   dct:created "2019-09-11"^^xsd:date ;
-   dct:modified "2023-05-24"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidemissieobject> ;
    skos:definition '''Geluidafstralend toestel, apparaat, gebouw of activiteit, dan wel een combinatie hiervan, binnen een inrichting of industrieterrein.'''@nl ;
@@ -230,8 +200,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/LijnbronIndustrie>
    a skos:Concept ;
    skos:prefLabel "LijnbronIndustrie"@nl ;
-   dct:created "2019-10-23"^^xsd:date ;
-   dct:modified "2023-06-01"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Object dat aangeeft op basis van welke lijnbron de geluidbronindustrie tot stand gekomen is.'''@nl ;
    skos:scopeNote '''
@@ -246,8 +214,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/VlakbronIndustrie>
    a skos:Concept ;
    skos:prefLabel "VlakbronIndustrie"@nl ;
-   dct:created "2019-10-24"^^xsd:date ;
-   dct:modified "2023-06-01"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Object dat aangeeft op basis van welke vlakbron de geluidbronindustrie tot stand gekomen is.'''@nl ;
    skos:scopeNote '''
@@ -262,8 +228,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/WegdeelGPP>
    a skos:Concept ;
    skos:prefLabel "WegdeelGPP"@nl ;
-   dct:created "2019-06-17"^^xsd:date ;
-   dct:modified "2022-05-02"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidemissieobject> ;
    skos:definition '''Kleinste functioneel onafhankelijk stukje van een NEN 3610 Weg met gelijkblijvende, homogene akoestische eigenschappen en relaties en primair bedoeld voor het representeren van akoestische eigenschappen van wegverkeer op rijkswegen of provinciale wegen.'''@nl ;
@@ -274,8 +238,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/SpoordeelGPP>
    a skos:Concept ;
    skos:prefLabel "SpoordeelGPP"@nl ;
-   dct:created "2019-10-30"^^xsd:date ;
-   dct:modified "2021-11-08"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidemissieobject> ;
    skos:definition '''Gedeelte van een spoorbaan met homogene akoestische eigenschappen.'''@nl ;
@@ -291,8 +253,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/WegdeelBGE>
    a skos:Concept ;
    skos:prefLabel "WegdeelBGE"@nl ;
-   dct:created "2019-11-19"^^xsd:date ;
-   dct:modified "2022-05-02"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidemissieobject> ;
    skos:definition '''Kleinste functioneel onafhankelijk stukje van een NEN 3610 Weg waarover de geluidemissie van wegverkeer constant kan worden verondersteld, gelet op het type wegdek, gemiddelde snelheid en verkeersintensiteiten. '''@nl ;
@@ -306,8 +266,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/SpoordeelBGE>
    a skos:Concept ;
    skos:prefLabel "SpoordeelBGE"@nl ;
-   dct:created "2019-11-19"^^xsd:date ;
-   dct:modified "2023-05-25"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidemissieobject> ;
    skos:definition '''Kleinste functioneel onafhankelijk stukje van een NEN 3610 Weg met gelijkblijvende, homogene akoestische eigenschappen en relaties en primair bedoeld voor het representeren van akoestische eigenschappen van lokaal spoorverkeer, zoals een metro, tram of lightrail.'''@nl ;
@@ -321,8 +279,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Windturbine>
    a skos:Concept ;
    skos:prefLabel "Windturbine"@nl ;
-   dct:created "2019-11-13"^^xsd:date ;
-   dct:modified "2022-06-15"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidemissieobject> ;
    skos:definition '''Een verzameling van geluidbrongegevens die gebruikt word om de geluid productie van een windturbine in de werkelijkheid te simuleren.'''@nl ;
@@ -334,8 +290,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Geluidoverdrachtobject>
    a skos:Concept ;
    skos:prefLabel "Geluidoverdrachtobject"@nl ;
-   dct:created "2020-01-07"^^xsd:date ;
-   dct:modified "2023-06-01"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/GeluidgegevenscollectieElement> ;
    skos:definition '''Object met een geluid reflecterende, afschermende of absorberende werking.'''@nl ;
@@ -347,8 +301,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/GeluidschermdeelMetDiffractor>
    a skos:Concept ;
    skos:prefLabel "GeluidschermdeelMetDiffractor"@nl ;
-   dct:created "2022-12-22"^^xsd:date ;
-   dct:modified "2024-08-14"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidoverdrachtobject> ;
    skos:definition '''Deel van een geluidscherm of wal met een diffractor dat geplaatst is als een geluidwerende maatregel binnen een geluidaandachtsgebied (zie Omgevingswet) is.'''@nl ;
@@ -365,8 +317,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Geluidschermdeel>
    a skos:Concept ;
    skos:prefLabel "Geluidschermdeel"@nl ;
-   dct:created "2019-06-05"^^xsd:date ;
-   dct:modified "2024-08-14"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidoverdrachtobject> ;
    skos:definition '''Deel van een geluidscherm of wal dat geplaatst is als een geluidwerende maatregel binnen een geluidaandachtsgebied (zie Omgevingswet) is.'''@nl ;
@@ -382,8 +332,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Hoogtelijn>
    a skos:Concept ;
    skos:prefLabel "Hoogtelijn"@nl ;
-   dct:created "2019-07-01"^^xsd:date ;
-   dct:modified "2022-06-15"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidoverdrachtobject> ;
    skos:definition '''Breuklijn om het hoogteverloop van het terrein te modelleren'''@nl ;
@@ -395,8 +343,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Bodemvlak>
    a skos:Concept ;
    skos:prefLabel "Bodemvlak"@nl ;
-   dct:created "2019-06-26"^^xsd:date ;
-   dct:modified "2024-08-14"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidoverdrachtobject> ;
    skos:definition '''Object dat de geluid-absorberende werking van een vlak hardere of zachtere bodem simuleert.'''@nl ;
@@ -406,8 +352,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Bouwwerk>
    a skos:Concept ;
    skos:prefLabel "Bouwwerk"@nl ;
-   dct:created "2019-09-12"^^xsd:date ;
-   dct:modified "2020-09-15"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidoverdrachtobject> ;
    skos:definition '''Geluidoverdrachtobject dat de absorberende en reflecterende akoestische werking van een statisch fysiek object modelleert.'''@nl ;
@@ -422,8 +366,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Procesinstallatiegebied>
    a skos:Concept ;
    skos:prefLabel "Procesinstallatiegebied"@nl ;
-   dct:created "2019-09-17"^^xsd:date ;
-   dct:modified "2024-08-14"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidoverdrachtobject> ;
    skos:definition '''Gebied dat een dempende invloed heeft op de geluidemissie van bronnen. '''@nl ;
@@ -434,8 +376,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Vegetatiegebied>
    a skos:Concept ;
    skos:prefLabel "Vegetatiegebied"@nl ;
-   dct:created "2019-09-17"^^xsd:date ;
-   dct:modified "2020-09-02"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidoverdrachtobject> ;
    skos:definition '''Overdracht object dat een gebied afbakent, waarin door vegetatie de overdracht van geluid wordt beperkt met een vast waarde .'''@nl ;
@@ -446,8 +386,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Diffractor>
    a skos:Concept ;
    skos:prefLabel "Diffractor"@nl ;
-   dct:created "2019-11-20"^^xsd:date ;
-   dct:modified "2024-08-14"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidoverdrachtobject> ;
    skos:definition '''Een geluidgoot of geluidafbuiger is een experimentele geluidsreducerende maatregel langs (spoor)wegen.'''@nl ;
@@ -461,8 +399,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Kunstwerk>
    a skos:Concept ;
    skos:prefLabel "Kunstwerk"@nl ;
-   dct:created "2020-01-23"^^xsd:date ;
-   dct:modified "2024-08-14"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidoverdrachtobject> ;
    skos:definition '''Een civiel-technisch werk voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen.'''@nl ;
@@ -473,8 +409,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Brug>
    a skos:Concept ;
    skos:prefLabel "Brug"@nl ;
-   dct:created "2020-01-22"^^xsd:date ;
-   dct:modified "2024-07-10"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Kunstwerk> ;
    skos:definition '''Een brug is een vaste of beweegbare verbinding voor het verkeer over een obstakel.'''@nl ;
@@ -489,8 +423,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Overkapping>
    a skos:Concept ;
    skos:prefLabel "Overkapping"@nl ;
-   dct:created "2020-01-23"^^xsd:date ;
-   dct:modified "2022-06-15"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Kunstwerk> ;
    skos:definition '''Geluidoverdrachtsobject met tegenhoudende en absorberende werking, dat zich typisch boven een Spoordeel bevind.'''@nl ;
@@ -502,8 +434,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Tunnel>
    a skos:Concept ;
    skos:prefLabel "Tunnel"@nl ;
-   dct:created "2020-01-23"^^xsd:date ;
-   dct:modified "2020-09-02"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Kunstwerk> ;
    skos:definition '''Onderdeel van een kunstmatig aangelegde, kokervormige onderdoorgang dat essentieel is voor de constructie.'''@nl ;
@@ -515,8 +445,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Tunnelbak>
    a skos:Concept ;
    skos:prefLabel "Tunnelbak"@nl ;
-   dct:created "2020-01-23"^^xsd:date ;
-   dct:modified "2022-07-01"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Kunstwerk> ;
    skos:definition '''Het bodemvlak (vloer) van de niet overkapte helling die een tunnel verbindt met het maaiveld.'''@nl ;
@@ -531,8 +459,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/OptrektoeslagKruispunt>
    a skos:Concept ;
    skos:prefLabel "OptrektoeslagKruispunt"@nl ;
-   dct:created "2022-06-02"^^xsd:date ;
-   dct:modified "2022-06-02"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Optrektoeslagpunt> ;
    skos:definition '''Punt waarvoor een toeslag wordt berekend ten gevolge van het optrekken omdat er een kruispunt ligt.'''@nl ;
@@ -542,8 +468,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/GemonitordObject>
    a skos:Concept ;
    skos:prefLabel "GemonitordObject"@nl ;
-   dct:created "2023-02-28"^^xsd:date ;
-   dct:modified "2023-05-22"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/GeluidgegevenscollectieElement> ;
 .
@@ -552,8 +476,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Optrektoeslagvlak>
    a skos:Concept ;
    skos:prefLabel "Optrektoeslagvlak"@nl ;
-   dct:created "2021-04-13"^^xsd:date ;
-   dct:modified "2021-04-26"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Vlak waarbinnen een kruising of ander obstakel zich bevindt, dat dient voor de berekening van de bijbehorende optrektoeslagpunten. '''@nl ;
    dct:source "IMGeluid" ;
@@ -563,8 +485,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/GeluidgegevenscollectieElement>
    a skos:Concept ;
    skos:prefLabel "GeluidgegevenscollectieElement"@nl ;
-   dct:created "2021-04-13"^^xsd:date ;
-   dct:modified "2023-06-15"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Basiselement om aan te geven dat een object direct deel kan uitmaken van een Geluidgegevenscollectie via de relatie featureMember.'''@nl ;
    dct:source "IMGeluid" ;
@@ -574,8 +494,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Optrektoeslagpunt>
    a skos:Concept ;
    skos:prefLabel "Optrektoeslagpunt"@nl ;
-   dct:created "2021-04-13"^^xsd:date ;
-   dct:modified "2022-06-02"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidemissieobject> ;
    skos:definition '''Punt waarvoor een toeslag wordt berekend ten gevolge van het optrekken omdat er een kruispunt of obstakel ligt.'''@nl ;
@@ -587,8 +505,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Geluidcontour>
    a skos:Concept ;
    skos:prefLabel "Geluidcontour"@nl ;
-   dct:created "2022-03-15"^^xsd:date ;
-   dct:modified "2022-03-15"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Een lijn die punten met een gelijke geluidbelasting verbindt.'''@nl ;
    skos:scopeNote '''
@@ -602,8 +518,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/SpoorstaafruwheidWaarde>
    a skos:Concept ;
    skos:prefLabel "SpoorstaafruwheidWaarde"@nl ;
-   dct:created "2021-10-26"^^xsd:date ;
-   dct:modified "2021-10-26"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/GeluidgegevenscollectieElement> ;
    skos:definition '''Gemeten amplitude per golflengte van de oneffenheden in een spoorstaaf.'''@nl ;
@@ -614,8 +528,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/FlyoverZijkant>
    a skos:Concept ;
    skos:prefLabel "FlyoverZijkant"@nl ;
-   dct:created "2022-07-08"^^xsd:date ;
-   dct:modified "2022-07-11"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidoverdrachtobject> ;
    skos:definition '''Zijkant van een fly-over.'''@nl ;
@@ -626,8 +538,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/FactorPerOctaafband>
    a skos:Concept ;
    skos:prefLabel "FactorPerOctaafband"@nl ;
-   dct:created "2019-10-16"^^xsd:date ;
-   dct:modified "2024-08-14"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Fractiewaarde per octaafband.'''@nl ;
    dct:source "IMGeluid" ;
@@ -637,8 +547,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/NEN3610ID>
    a skos:Concept ;
    skos:prefLabel "NEN3610ID"@nl ;
-   dct:created "2020-04-21"^^xsd:date ;
-   dct:modified "2020-08-25"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''identificatiegegevens voor de universeel unieke identificatie van een object'''@nl ;
    skos:scopeNote '''De combinatie van namespace van een registratie, lokale identificatie en versie informatie maken een object uniek identificeerbaar. Met de informatie van deze klasse kan daardoor met zekerheid worden verwezen naar het geïdentificeerde object.'''@nl ;
@@ -649,8 +557,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/WaardePerOctaafband>
    a skos:Concept ;
    skos:prefLabel "WaardePerOctaafband"@nl ;
-   dct:created "2019-09-11"^^xsd:date ;
-   dct:modified "2020-03-19"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Gedeelte van het geluidspectrum waarbij de hoogste frequentie twee keer de laagste frequentie bezit.'''@nl ;
    skos:scopeNote '''In Nederland  wordt veelal gebruik gemaakt van de volgende octaafbanden met midden frequenties van: 31,5;63;125;250;500;1000;2000;4000 en 8000 Hz.'''@nl ;
@@ -661,8 +567,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/KvKNummer>
    a skos:Concept ;
    skos:prefLabel "KvKNummer"@nl ;
-   dct:created "2020-05-06"^^xsd:date ;
-   dct:modified "2020-09-15"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''String met het nummer dat door de Kamer van Koophandel is toegekend aan een organisatie om deze uniek te identificeren.'''@nl ;
 .
@@ -671,8 +575,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Uitstralingsrichtingwaarde>
    a skos:Concept ;
    skos:prefLabel "Uitstralingsrichtingwaarde"@nl ;
-   dct:created "2019-09-11"^^xsd:date ;
-   dct:modified "2023-02-27"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Bepaalt de breedte en richting van geluidsemissie vanaf een \'normale puntbron\', \'uitstralende gevel\' of een \'uitstralend dak\'.'''@nl ;
    skos:scopeNote '''
@@ -687,8 +589,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/BedrijfsduurcorrectieWaarde>
    a skos:Concept ;
    skos:prefLabel "BedrijfsduurcorrectieWaarde"@nl ;
-   dct:created "2019-09-11"^^xsd:date ;
-   dct:modified "2021-06-24"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Tijd in uren per dagdeel waar geluidbron actief is.'''@nl ;
    dct:source "IMGeluid" ;
@@ -698,8 +598,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/HerkomstCollectie>
    a skos:Concept ;
    skos:prefLabel "HerkomstCollectie"@nl ;
-   dct:created "2019-12-02"^^xsd:date ;
-   dct:modified "2020-04-07"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Identificatie van de leverancier en bronhouder van een \"Geluidgegevenscollectie\".'''@nl ;
 .
@@ -708,8 +606,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/Geluidtoeslag>
    a skos:Concept ;
    skos:prefLabel "Geluidtoeslag"@nl ;
-   dct:created "2019-11-11"^^xsd:date ;
-   dct:modified "2024-08-14"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Verzameling van geluidtoeslaggegevens van treinvoertuigen per octaafband die zich over een brug verplaatsen.'''@nl ;
    skos:scopeNote '''
@@ -721,8 +617,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/BovenbouwgegevensSpoor>
    a skos:Concept ;
    skos:prefLabel "BovenbouwgegevensSpoor"@nl ;
-   dct:created "2019-12-18"^^xsd:date ;
-   dct:modified "2023-05-25"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''De constructie die het dragen en geleiden van spoorvoertuigen verzorgt en gelegen is op de onderbouw (het geheel van aardebaan en kunstwerken. Dit is de dragende constructie voor de bovenbouw).'''@nl ;
    skos:scopeNote '''Het geheel van spoorconstructie: (dikte van) ballastbed, dwarsligger, bevestiging, voegen en railruwheid. Er bestaan 2 bovenbouwconstructies, te weten:\n
@@ -736,8 +630,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/IntensiteitgegevensSpoor>
    a skos:Concept ;
    skos:prefLabel "IntensiteitgegevensSpoor"@nl ;
-   dct:created "2019-10-30"^^xsd:date ;
-   dct:modified "2020-08-19"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Verzameling van intensiteitgegevens van treinvoertuigen die zich per etmaalperiode over een Spoordeel verplaatsen.'''@nl ;
    skos:scopeNote '''
@@ -757,8 +649,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 <http://definities.geostandaarden.nl/img/id/concept/VerkeersgegevensWeg>
    a skos:Concept ;
    skos:prefLabel "VerkeersgegevensWeg"@nl ;
-   dct:created "2019-10-28"^^xsd:date ;
-   dct:modified "2022-05-02"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Verkeersgegevens met betrekking op een wegdeel, bestaande uit de gemiddelde intensiteit en snelheid voor iedere motorvoertuigklasse tijdens een dagdeel.
 De intensiteit is gegeven als het aantal motorvoertuigen, per dagdeel, per motorvoertuigklasse, dat gemiddeld over een kalenderjaar per uur  passeert.
@@ -779,8 +669,6 @@ De gegeven snelheid is de representatief te achten snelheid in kilometer per uur
 <http://definities.geostandaarden.nl/img/id/collection/Schermtype>
    a skos:Collection ;
    skos:prefLabel "Schermtype"@nl ;
-   dct:created "2020-01-22"^^xsd:date ;
-   dct:modified "2022-06-13"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''De gehanteerde categorisering van de type geluidschermen.'''@nl ;
    skos:scopeNote '''De schermwerking is voor ieder type hetzelfde, maar het is voor adviesbureaus en andere partijen waardevol om de herkomst van het scherm op basis van de typering te kunnen herleiden.'''@nl ;
@@ -857,8 +745,6 @@ De gegeven snelheid is de representatief te achten snelheid in kilometer per uur
 <http://definities.geostandaarden.nl/img/id/collection/Hoogtelijntype>
    a skos:Collection ;
    skos:prefLabel "Hoogtelijntype"@nl ;
-   dct:created "2020-01-22"^^xsd:date ;
-   dct:modified "2020-09-02"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Classificatie van het soort hoogtelijn.'''@nl ;
    skos:scopeNote '''
@@ -924,8 +810,6 @@ https://github.com/Geonovum/IMG/issues/239   skos:definition '''Hoogteligging va
 <http://definities.geostandaarden.nl/img/id/collection/Spoorvoertuigcategorie>
    a skos:Collection ;
    skos:prefLabel "Spoorvoertuigcategorie"@nl ;
-   dct:created "2019-11-11"^^xsd:date ;
-   dct:modified "2020-04-07"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Categorie-indeling van spoorvoertuigtypen.'''@nl ;
    skos:member <http://definities.geostandaarden.nl/img/id/concept/1> ;
@@ -1054,8 +938,6 @@ https://github.com/Geonovum/IMG/issues/239   skos:definition '''Hoogteligging va
 <http://definities.geostandaarden.nl/img/id/collection/IndexSpoorstaafonderbreking>
    a skos:Collection ;
    skos:prefLabel "IndexSpoorstaafonderbreking"@nl ;
-   dct:created "2020-09-21"^^xsd:date ;
-   dct:modified "2020-09-21"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Enumeratie met mogelijke waarden voor de spoorstaafonderbreking index (m).'''@nl ;
    skos:member <http://definities.geostandaarden.nl/img/id/concept/1> ;
@@ -1104,8 +986,6 @@ https://github.com/Geonovum/IMG/issues/239   skos:definition '''Hoogteligging va
 <http://definities.geostandaarden.nl/img/id/collection/Dagdeel>
    a skos:Collection ;
    skos:prefLabel "Dagdeel"@nl ;
-   dct:created "2019-09-11"^^xsd:date ;
-   dct:modified "2020-02-18"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Het gedeelte van een etmaal waarover het equivalent geluidsniveau wordt bepaald, ook wel: etmaalperiode.'''@nl ;
    skos:scopeNote '''
@@ -1149,8 +1029,6 @@ https://github.com/Geonovum/IMG/issues/239   skos:definition '''Hoogteligging va
 <http://definities.geostandaarden.nl/img/id/collection/Spoorstaafruwheidcategorie>
    a skos:Collection ;
    skos:prefLabel "Spoorstaafruwheidcategorie"@nl ;
-   dct:created "2020-08-31"^^xsd:date ;
-   dct:modified "2021-10-26"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Enumeratie met de 3 categorieen voor spoorstaafruwheid zoals te vinden in de spoorstaafruwheidtabel van het reken- en meetvoorschrift voor treinen plus 2 categorieen voor trams.'''@nl ;
    skos:member <http://definities.geostandaarden.nl/img/id/concept/referentie> ;
@@ -1209,8 +1087,6 @@ https://github.com/Geonovum/IMG/issues/239   skos:definition '''Hoogteligging va
 <http://definities.geostandaarden.nl/img/id/collection/Wegdektype>
    a skos:Collection ;
    skos:prefLabel "Wegdektype"@nl ;
-   dct:created "2021-03-09"^^xsd:date ;
-   dct:modified "2024-08-14"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Waardelijst met vastgestelde aanduidingen voor wegdekcorrectietypen.'''@nl ;
    dct:source "IMGeluid" ;
@@ -1373,8 +1249,6 @@ https://github.com/Geonovum/IMG/issues/239   skos:definition '''Hoogteligging va
 <http://definities.geostandaarden.nl/img/id/collection/Treintype>
    a skos:Collection ;
    skos:prefLabel "Treintype"@nl ;
-   dct:created "2019-11-11"^^xsd:date ;
-   dct:modified "2020-02-19"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Een algemene classificering van een spoorvoertuig.'''@nl ;
    skos:scopeNote '''Er zijn twee hoofdtypen:\n
@@ -1407,8 +1281,6 @@ https://github.com/Geonovum/IMG/issues/239   skos:definition '''Hoogteligging va
 <http://definities.geostandaarden.nl/img/id/collection/Geluidbronsoort>
    a skos:Collection ;
    skos:prefLabel "Geluidbronsoort"@nl ;
-   dct:created "2019-06-26"^^xsd:date ;
-   dct:modified "2020-08-12"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Enumeratie van domeinen waarbij een geregistreerd object kan horen. '''@nl ;
    skos:member <http://definities.geostandaarden.nl/img/id/concept/rijkswegen> ;
@@ -1497,8 +1369,6 @@ https://github.com/Geonovum/IMG/issues/239   skos:definition '''Hoogteligging va
 <http://definities.geostandaarden.nl/img/id/collection/Systematiek>
    a skos:Collection ;
    skos:prefLabel "Systematiek"@nl ;
-   dct:created "2021-03-10"^^xsd:date ;
-   dct:modified "2021-04-13"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Geeft aan of het bij aanlevering sprake is van GPP, BGE of nvt (bijv cummulatie) '''@nl ;
    skos:scopeNote '''Dit bepaalt welke soorten gegevens deel kunnen uitmaken van een aanlevering. Bij de geluidbron Lokaal Spoor kan immers sprake zijn van een BGE of GPP. Bij lokaal spoor GPP moeten bijv ook overdrachtsobjecten meegeleverd worden en de bronregisterlijn met x,y,z cöordinaten.  Bij lokaal spoor juist geen overdachtsobjecten en bronregisterlijn alleen x,y coördinaten. '''@nl ;
@@ -1537,8 +1407,6 @@ https://github.com/Geonovum/IMG/issues/239   skos:definition '''Hoogteligging va
 <http://definities.geostandaarden.nl/img/id/collection/ProfieltypeSnelheid>
    a skos:Collection ;
    skos:prefLabel "ProfieltypeSnelheid"@nl ;
-   dct:created "2019-11-11"^^xsd:date ;
-   dct:modified "2020-05-06"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Indicatie van het snelheidsverloop op het betreffende Spoordeel.'''@nl ;
    skos:scopeNote '''Er kan sprake zijn van doorgaand, stoppend of rangerend materieel.'''@nl ;
@@ -1581,8 +1449,6 @@ https://github.com/Geonovum/IMG/issues/239   skos:definition '''Hoogteligging va
 <http://definities.geostandaarden.nl/img/id/collection/Documenttype>
    a skos:Collection ;
    skos:prefLabel "Documenttype"@nl ;
-   dct:created "2020-02-10"^^xsd:date ;
-   dct:modified "2020-05-06"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Lijst van mogelijke type documenten waarnaar verwezen kan worden vanuit het geluidregister.'''@nl ;
    skos:member <http://definities.geostandaarden.nl/img/id/concept/besluit> ;
@@ -1633,8 +1499,6 @@ Tijdelijke afspraak voor Schiphol: het MER van december 2020 waarin de geluidcon
 <http://definities.geostandaarden.nl/img/id/collection/BronTypeWaarde>
    a skos:Collection ;
    skos:prefLabel "BronTypeWaarde"@nl ;
-   dct:created "2020-01-22"^^xsd:date ;
-   dct:modified "2021-07-12"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Enumeratie met mogelijke waarden voor bron type. '''@nl ;
    skos:scopeNote '''Wanneer bron type ontbreekt kan deze lijst worden aangevuld.'''@nl ;
@@ -1674,8 +1538,6 @@ Tijdelijke afspraak voor Schiphol: het MER van december 2020 waarin de geluidcon
 <http://definities.geostandaarden.nl/img/id/collection/Geluidbron>
    a skos:Collection ;
    skos:prefLabel "Geluidbron"@nl ;
-   dct:created "2019-10-08"^^xsd:date ;
-   dct:modified "2020-01-29"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Enumeratie van mogelijke domeinen waaruit de geluidemissie afkomstig is.'''@nl ;
    skos:member <http://definities.geostandaarden.nl/img/id/concept/rijksweg> ;
@@ -1784,8 +1646,6 @@ Tijdelijke afspraak voor Schiphol: het MER van december 2020 waarin de geluidcon
 <http://definities.geostandaarden.nl/img/id/collection/Terreintype>
    a skos:Collection ;
    skos:prefLabel "Terreintype"@nl ;
-   dct:created "2020-09-14"^^xsd:date ;
-   dct:modified "2020-09-14"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Lijst met mogelijke type terreinen waarvan geluidgegevens worden geregistreerd.'''@nl ;
    skos:member <http://definities.geostandaarden.nl/img/id/concept/industrieterrein> ;
@@ -1825,8 +1685,6 @@ Tijdelijke afspraak voor Schiphol: het MER van december 2020 waarin de geluidcon
 <http://definities.geostandaarden.nl/img/id/collection/Rijrichting>
    a skos:Collection ;
    skos:prefLabel "Rijrichting"@nl ;
-   dct:created "2019-11-11"^^xsd:date ;
-   dct:modified "2021-08-19"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Geeft aan of het Spoordeel in de richting van oplopende (O) dan wel aflopende (A) kilometerwaardes bereden wordt, wanneer van het eerste naar het tweede dienstregelpunt van het ConversieTraject gereden wordt, kijkend naar de geldende kilometrering.'''@nl ;
    skos:scopeNote '''De verwerkingssystematiek van de rijrichting is afhankelijk van het aantal evenwijdige sporen ter plaatse:\n
@@ -1860,8 +1718,6 @@ Tijdelijke afspraak voor Schiphol: het MER van december 2020 waarin de geluidcon
 <http://definities.geostandaarden.nl/img/id/collection/Kruispuntkental>
    a skos:Collection ;
    skos:prefLabel "Kruispuntkental"@nl ;
-   dct:created "2021-04-13"^^xsd:date ;
-   dct:modified "2021-09-23"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Getal dat gebruikt wordt als factor in de berekening van de optrektoeslag. '''@nl ;
    skos:member <http://definities.geostandaarden.nl/img/id/concept/1%2F2> ;
@@ -1900,8 +1756,6 @@ Tijdelijke afspraak voor Schiphol: het MER van december 2020 waarin de geluidcon
 <http://definities.geostandaarden.nl/img/id/collection/ProfielcorrectieWaarde>
    a skos:Collection ;
    skos:prefLabel "ProfielcorrectieWaarde"@nl ;
-   dct:created "2019-09-12"^^xsd:date ;
-   dct:modified "2021-07-12"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''De enumeratie met mogelijke profielcorrectie waardes binnen domein industrie.'''@nl ;
    skos:member <http://definities.geostandaarden.nl/img/id/concept/0dB> ;
@@ -1930,8 +1784,6 @@ Tijdelijke afspraak voor Schiphol: het MER van december 2020 waarin de geluidcon
 <http://definities.geostandaarden.nl/img/id/collection/Gegevenscollectietype>
    a skos:Collection ;
    skos:prefLabel "Gegevenscollectietype"@nl ;
-   dct:created "2020-02-20"^^xsd:date ;
-   dct:modified "2021-04-26"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Indicatie van het type geluidgegevenscollectie'''@nl ;
    skos:scopeNote '''Een geluidgegevenscollectie dient verschillende toepassingen: ter vaststelling van een geluidproductieplafond of basisgeluidemissie, het monitoren van de vastgestelde gleuidproductieplafonds of basisgeluidemissies of een prognose op een basisgeluidemissie.'''@nl ;
@@ -1981,8 +1833,6 @@ Tijdelijke afspraak voor Schiphol: het MER van december 2020 waarin de geluidcon
 <http://definities.geostandaarden.nl/img/id/collection/Bovenbouwcode>
    a skos:Collection ;
    skos:prefLabel "Bovenbouwcode"@nl ;
-   dct:created "2020-02-03"^^xsd:date ;
-   dct:modified "2021-07-12"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Categorie-indeling van de bovenbouw.'''@nl ;
    skos:scopeNote '''
@@ -2156,8 +2006,6 @@ Tijdelijke afspraak voor Schiphol: het MER van december 2020 waarin de geluidcon
 <http://definities.geostandaarden.nl/img/id/collection/ContourMaatType>
    a skos:Collection ;
    skos:prefLabel "ContourMaatType"@nl ;
-   dct:created "2019-11-13"^^xsd:date ;
-   dct:modified "2021-04-16"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Lijst van bestaande contour types in categorie overig waarvoor een geluidcontour kan worden opgenomen.'''@nl ;
    skos:scopeNote '''Er zijn verschillende maten om geluidcontouren te berekenen. Verschillende type maten voor het berekenen van contouren staan in deze enumeratie. '''@nl ;
@@ -2197,8 +2045,6 @@ Tijdelijke afspraak voor Schiphol: het MER van december 2020 waarin de geluidcon
 <http://definities.geostandaarden.nl/img/id/collection/ProfieltypeGeluidscherm>
    a skos:Collection ;
    skos:prefLabel "ProfieltypeGeluidscherm"@nl ;
-   dct:created "2019-07-22"^^xsd:date ;
-   dct:modified "2021-07-12"^^xsd:date ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Vormaanduiding van het type geluidscherm'''@nl ;
    skos:scopeNote '''Deze klassen corresponderen met vaste profielcorrectiewaarden van 0,0 dB, 2,0 dB of 5,0 dB.'''@nl ;
