@@ -791,7 +791,7 @@ De gegeven snelheid is de representatief te achten snelheid in kilometer per uur
    skos:prefLabel "referentiepuntenlijn"@nl ;
    skos:altLabel "referentiepuntenlijn (Hoogtelijntype)"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-https://github.com/Geonovum/IMG/issues/239   skos:definition '''Hoogteligging van de referentiepunten'''@nl ;
+   skos:definition '''Hoogteligging van de referentiepunten'''@nl ;
 .
 
 # Construct: IMGeluid::Hoogtelijntype.tunnelbaklijn (attrib) (ENUMERATIEWAARDE)
