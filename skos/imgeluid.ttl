@@ -4,7 +4,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -29,10 +28,10 @@
 .
 
 
-# Construct: IMGeluid::Geluidaandachtsgebied (OBJECTTYPE)
-<http://definities.geostandaarden.nl/img/id/concept/Geluidaandachtsgebied>
+# Construct: IMGeluid::geluidaandachtsgebied (OBJECTTYPE)
+<http://definities.geostandaarden.nl/img/id/concept/geluidaandachtsgebied>
    a skos:Concept ;
-   skos:prefLabel "Geluidaandachtsgebied"@nl ;
+   skos:prefLabel "geluidaandachtsgebied"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Gebied rondom een industrieterrein of langs een weg of spoorweg, waarbinnen de geluidproductie hoger kan zijn dan de standaardwaarde.'''@nl ;
    skos:scopeNote '''
@@ -40,50 +39,65 @@
                         Geluidaandachtsgebieden kunnen zowel per bronhouder, per geluidbronsoort of landelijk voorkomen.
                      '''@nl ;
    dct:source "IMGeluid" ;
+   skos:note "2026-03-07:WQ: ik verwacht dus ook bronhouder en geluidbronsoort als begrip." ;
 .
 
 # Construct: IMGeluid::Documentverwijzing (OBJECTTYPE)
 <http://definities.geostandaarden.nl/img/id/concept/Documentverwijzing>
    a skos:Concept ;
-   skos:prefLabel "Documentverwijzing"@nl ;
+   skos:prefLabel "documentverwijzing"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:broader <http://definities.geostandaarden.nl/img/id/concept/GeluidgegevenscollectieElement> ;
    skos:definition '''Verwijzing naar het onderliggende besluit voor GPP, onderliggende bepaling voor BGE of onderliggende monitoringsrapportage voor een Monitoringswaarde of overige besluiten of meldingen.'''@nl ;
    skos:scopeNote '''De bronhouder is verantwoordelijk voor het onderhouden van een stabiele verwijzing. 
 Het is toegestaan om meerdere besluiten bij een GPP op te nemen, inclusief een tijdelijk ontheffingsbesluit.
 Een documentverwijzing kan verbonden zijn aan een monitoringresultaat dat toebehooort aan een basisgeluidemissieobject. Om die reden heeft een documentverwijzing geen of meerdere geluidproductieplafondobjecten [0..*].'''@nl ;
    dct:source "IMGeluid" ;
+   skos:note "2026-03-07:WQ: Dit hele begrip wil ik schrappen omdat het een generiek begrip is." ;
 .
 
 # Construct: IMGeluid::Geluidproductieplafondobject (OBJECTTYPE)
 <http://definities.geostandaarden.nl/img/id/concept/Geluidproductieplafondobject>
    a skos:Concept ;
-   skos:prefLabel "Geluidproductieplafondobject"@nl ;
+   skos:prefLabel "geluidproductieplafond"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/GemonitordObject> ;
    skos:definition '''Een punt in Nederland waar ter referentie is vastgesteld wat de maximale toegstane geluidbelasting per etmaalperiode mag zijn die geproduceerd wordt door een Rijksweg, een provinciale weg, een industrieterrein, of het hoofdspoor.'''@nl ;
-   skos:scopeNote '''Het geluidproductieplafondobject is een verzamelobject dat de in een besluit vastgestelde  GPP-waarde op een referentiepunt opslaat, samen met informatie over een eventueel van toepassing zijnde ontheffing of een vrijstelling.'''@nl ;
    dct:source "IMGeluid" ;
 .
 
 # Construct: IMGeluid::GeluidproductieplafondobjectIndustrie (OBJECTTYPE)
 <http://definities.geostandaarden.nl/img/id/concept/GeluidproductieplafondobjectIndustrie>
    a skos:Concept ;
-   skos:prefLabel "GeluidproductieplafondobjectIndustrie"@nl ;
+   skos:prefLabel "geluidproductieplafond industrie"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidproductieplafondobject> ;
    skos:definition '''Lokaal Geluidproductieplafondobject voor industrie.'''@nl ;
+   dct:source "IMGeluid" ;
+   skos:note "2026-03-07:WQ: Hier moet uit de wet een ondscheid komen waarom industrie anders is." ;
+.
+
+# Construct: IMGeluid::Monitoringresultaat (OBJECTTYPE)
+<http://definities.geostandaarden.nl/img/id/concept/Monitoringresultaat>
+   a skos:Concept ;
+   skos:prefLabel "Monitoringresultaat"@nl ;
+   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
+   skos:definition '''Monitoringgegevens voor geluidproductieplafonds of basisgeluidemissie zoals opgenomen in het meest recente openbare verslag over de monitoring.'''@nl ;
+   skos:scopeNote '''
+                        Monitoring voor geluidproductieplafonds als omgevingswaarden vindt plaats door de geluidproductie te berekenen.
+                        Monitoring van de basisgeluidemissie vindt plaats door het verschil tussen de gemiddelde geluidemissie in een kalenderjaar en de basisgeluidemissie zoals opgenomen in het meest recente openbare verslag over de monitoring te berekenen of te schatten.
+                     '''@nl ;
    dct:source "IMGeluid" ;
 .
 
 # Construct: IMGeluid::MonitoringresultaatIndustrie (OBJECTTYPE)
 <http://definities.geostandaarden.nl/img/id/concept/MonitoringresultaatIndustrie>
    a skos:Concept ;
-   skos:prefLabel "MonitoringresultaatIndustrie"@nl ;
+   skos:prefLabel "monitoringresultaat voor industrie"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Monitoringresultaat> ;
    skos:definition '''Monitoringresultaat voor industrie.'''@nl ;
    dct:source "IMGeluid" ;
+   skos:note "2026-03-07:WQ: is deze wel nodig als je weet wat een monitoring resultaat is en wat industrie is?" ;
 .
 
 # Construct: IMGeluid::Basisgeluidemissieobject (OBJECTTYPE)
@@ -100,28 +114,15 @@ Een documentverwijzing kan verbonden zijn aan een monitoringresultaat dat toebeh
    dct:source "IMGeluid" ;
 .
 
-# Construct: IMGeluid::Monitoringresultaat (OBJECTTYPE)
-<http://definities.geostandaarden.nl/img/id/concept/Monitoringresultaat>
-   a skos:Concept ;
-   skos:prefLabel "Monitoringresultaat"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:broader <http://definities.geostandaarden.nl/img/id/concept/GeluidgegevenscollectieElement> ;
-   skos:definition '''Monitoringgegevens voor geluidproductieplafonds of basisgeluidemissie zoals opgenomen in het meest recente openbare verslag over de monitoring.'''@nl ;
-   skos:scopeNote '''
-                        Monitoring voor geluidproductieplafonds als omgevingswaarden vindt plaats door de geluidproductie te berekenen.
-                        Monitoring van de basisgeluidemissie vindt plaats door het verschil tussen de gemiddelde geluidemissie in een kalenderjaar en de basisgeluidemissie zoals opgenomen in het meest recente openbare verslag over de monitoring te berekenen of te schatten.
-                     '''@nl ;
-   dct:source "IMGeluid" ;
-.
-
 # Construct: IMGeluid::Industrieterrein (OBJECTTYPE)
 <http://definities.geostandaarden.nl/img/id/concept/Industrieterrein>
    a skos:Concept ;
-   skos:prefLabel "Industrieterrein"@nl ;
+   skos:prefLabel "industrieterrein"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Terrein> ;
    skos:definition '''Industrieterrein is een subtype van objecttype Terrein.'''@nl ;
    dct:source "IMGeluid" ;
+   skos:note "2026-03-07:WQ: dit is geen definitie. Op zoek naar de bron" ;
 .
 
 # Construct: IMGeluid::Terrein (OBJECTTYPE)
@@ -132,6 +133,7 @@ Een documentverwijzing kan verbonden zijn aan een monitoringresultaat dat toebeh
    skos:definition '''Terreinen waar bij algemene maatregel van bestuur aangewezen
 activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroorzaken.'''@nl ;
    dct:source "IMGeluid" ;
+   skos:note "2026-03-07:WQ: hier heb ik ook het vermoeden dat er in de wet wel iets beters staat" ;
 .
 
 # Construct: IMGeluid::Geluidberekeningobject (OBJECTTYPE)
@@ -164,7 +166,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
    a skos:Concept ;
    skos:prefLabel "GeluidcontourSet"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:broader <http://definities.geostandaarden.nl/img/id/concept/GeluidgegevenscollectieElement> ;
    skos:definition '''Een verzameling van geluidcontouren met één gemeenschappelijke geluidbron'''@nl ;
    skos:scopeNote '''Door het invoeren van de GeluidcontourSet, kunnen attributen die per set gelden daar aan gekoppeld worden. Attributen die per geluidcontour gelden, blijven bij de geluidcontour. Daarmee wordt minder informatie dubbel opgeslagen.'''@nl ;
    dct:source "IMGeluid" ;
@@ -173,10 +174,9 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 # Construct: IMGeluid::Geluidemissieobject (OBJECTTYPE)
 <http://definities.geostandaarden.nl/img/id/concept/Geluidemissieobject>
    a skos:Concept ;
-   skos:prefLabel "Geluidemissieobject"@nl ;
+   skos:prefLabel "geluidemissieobject"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:broader <http://definities.geostandaarden.nl/img/id/concept/GeluidgegevenscollectieElement> ;
-   skos:definition '''Abstractie van alle volgens wet- en regelgeving relevante infrastructurele- en industrieterrein-objecten uit de werkelijkheid die geluid produceren.'''@nl ;
+   skos:definition '''Alle volgens wet- en regelgeving relevante infrastructurele- en industrieterrein-objecten uit de werkelijkheid die geluid produceren.'''@nl ;
    skos:scopeNote '''Een geluidemissieobject heeft verschillende functies:\n
                         Het kan een object zijn dat gebruikt is voor de bepaling van de hoogte van een geluidproductieplafond of basisgeluidemissie;
                         Het kan ook gebruikt zijn in de berekening van de monitoringswaarde in van een bepaald jaar. Indien een bevoegd gezag ervoor kiest om de emissieobjecten die ten grondslag liggen aan de monitoringsberekening mee te leveren, is het noodzakelijk om deze te koppelen aan het monitoringsjaar waarop ze betrekking hebben;
@@ -278,7 +278,7 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 # Construct: IMGeluid::Windturbine (OBJECTTYPE)
 <http://definities.geostandaarden.nl/img/id/concept/Windturbine>
    a skos:Concept ;
-   skos:prefLabel "Windturbine"@nl ;
+   skos:prefLabel "windturbine"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidemissieobject> ;
    skos:definition '''Een verzameling van geluidbrongegevens die gebruikt word om de geluid productie van een windturbine in de werkelijkheid te simuleren.'''@nl ;
@@ -289,9 +289,8 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 # Construct: IMGeluid::Geluidoverdrachtobject (OBJECTTYPE)
 <http://definities.geostandaarden.nl/img/id/concept/Geluidoverdrachtobject>
    a skos:Concept ;
-   skos:prefLabel "Geluidoverdrachtobject"@nl ;
+   skos:prefLabel "geluidoverdrachtobject"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:broader <http://definities.geostandaarden.nl/img/id/concept/GeluidgegevenscollectieElement> ;
    skos:definition '''Object met een geluid reflecterende, afschermende of absorberende werking.'''@nl ;
    skos:scopeNote '''Een geluidoverdrachtsobject kan gebruikt zijn in de berekening van de monitoringswaarde in van een bepaald jaar. Indien een bevoegd gezag ervoor kiest om de overdrachtsobjecten die ten grondslag liggen aan de monitoringsberekening mee te leveren, is het noodzakelijk om deze te koppelen aan het monitoringsjaar waarop ze betrekking hebben.'''@nl ;
    dct:source "IMGeluid" ;
@@ -331,11 +330,10 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 # Construct: IMGeluid::Hoogtelijn (OBJECTTYPE)
 <http://definities.geostandaarden.nl/img/id/concept/Hoogtelijn>
    a skos:Concept ;
-   skos:prefLabel "Hoogtelijn"@nl ;
+   skos:prefLabel "hoogtelijn"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidoverdrachtobject> ;
    skos:definition '''Breuklijn om het hoogteverloop van het terrein te modelleren'''@nl ;
-   skos:scopeNote '''Het object Hoogtelijn is optioneel. Het is niet verplicht om hoogtelijnen in de berekening van het GPP gebruiken, behalve als deze binnen de grenzen van een industrieterrein ligt.'''@nl ;
    dct:source "IMGeluid" ;
 .
 
@@ -385,7 +383,7 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 # Construct: IMGeluid::Diffractor (OBJECTTYPE)
 <http://definities.geostandaarden.nl/img/id/concept/Diffractor>
    a skos:Concept ;
-   skos:prefLabel "Diffractor"@nl ;
+   skos:prefLabel "diffractor"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidoverdrachtobject> ;
    skos:definition '''Een geluidgoot of geluidafbuiger is een experimentele geluidsreducerende maatregel langs (spoor)wegen.'''@nl ;
@@ -398,7 +396,7 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 # Construct: IMGeluid::Kunstwerk (OBJECTTYPE)
 <http://definities.geostandaarden.nl/img/id/concept/Kunstwerk>
    a skos:Concept ;
-   skos:prefLabel "Kunstwerk"@nl ;
+   skos:prefLabel "kunstwerk"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Geluidoverdrachtobject> ;
    skos:definition '''Een civiel-technisch werk voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen.'''@nl ;
@@ -469,7 +467,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
    a skos:Concept ;
    skos:prefLabel "GemonitordObject"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:broader <http://definities.geostandaarden.nl/img/id/concept/GeluidgegevenscollectieElement> ;
 .
 
 # Construct: IMGeluid::Optrektoeslagvlak (OBJECTTYPE)
@@ -504,7 +501,7 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
 # Construct: IMGeluid::Geluidcontour (OBJECTTYPE)
 <http://definities.geostandaarden.nl/img/id/concept/Geluidcontour>
    a skos:Concept ;
-   skos:prefLabel "Geluidcontour"@nl ;
+   skos:prefLabel "geluidcontour"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Een lijn die punten met een gelijke geluidbelasting verbindt.'''@nl ;
    skos:scopeNote '''
@@ -519,7 +516,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
    a skos:Concept ;
    skos:prefLabel "SpoorstaafruwheidWaarde"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:broader <http://definities.geostandaarden.nl/img/id/concept/GeluidgegevenscollectieElement> ;
    skos:definition '''Gemeten amplitude per golflengte van de oneffenheden in een spoorstaaf.'''@nl ;
    skos:scopeNote '''Golflengtes zijn in mm en worden aflopend ingevoerd.'''@nl ;
 .
@@ -643,6 +639,7 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
                         Nachtperiode (23.00-7.00 uur)
                      '''@nl ;
    dct:source "IMGeluid" ;
+   skos:note "2026-03-07:WQ: ik verwacht dus intensiteitsgegeven als begrip." ;
 .
 
 # Construct: IMGeluid::VerkeersgegevensWeg (GEGEVENSGROEPTYPE)
