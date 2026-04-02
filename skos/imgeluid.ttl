@@ -1897,7 +1897,7 @@ Tijdelijke afspraak voor Schiphol: het MER van december 2020 waarin de geluidcon
    skos:prefLabel "5"@nl ;
    skos:altLabel "5 (Bovenbouwcode)"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   shttps://github.com/Geonovum/IMG/issues/239kos:definition '''Baan met blokkenspoor en ballastbed (index bb = 5)'''@nl ;
+   skos:definition '''Baan met blokkenspoor en ballastbed (index bb = 5)'''@nl ;
 .
 
 # Construct: IMGeluid::Bovenbouwcode.6 (attrib) (ENUMERATIEWAARDE)
