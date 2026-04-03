@@ -9,7 +9,7 @@
 
 <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid>
    a skos:ConceptScheme ;
-   skos:prefLabel "Informatiemodel Geluid"@nl ;
+   dct:title "Informatiemodel Geluid"@nl ;
 .
 
 # ## Package IMGeluid
@@ -460,13 +460,6 @@ activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroo
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:broader <http://definities.geostandaarden.nl/img/id/concept/Optrektoeslagpunt> ;
    skos:definition '''Punt waarvoor een toeslag wordt berekend ten gevolge van het optrekken omdat er een kruispunt ligt.'''@nl ;
-.
-
-# Construct: IMGeluid::GemonitordObject (OBJECTTYPE)
-<http://definities.geostandaarden.nl/img/id/concept/GemonitordObject>
-   a skos:Concept ;
-   skos:prefLabel "GemonitordObject"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
 .
 
 # Construct: IMGeluid::Optrektoeslagvlak (OBJECTTYPE)
@@ -1080,200 +1073,6 @@ De gegeven snelheid is de representatief te achten snelheid in kilometer per uur
    skos:definition '''C_spoorconditie = 3 dB'''@nl ;
 .
 
-# Construct: IMGeluid::Wegdektype (ENUMERATIE)
-<http://definities.geostandaarden.nl/img/id/collection/Wegdektype>
-   a skos:Collection ;
-   skos:prefLabel "Wegdektype"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Waardelijst met vastgestelde aanduidingen voor wegdekcorrectietypen.'''@nl ;
-   dct:source "IMGeluid" ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/referentiewegdek> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/1L%20ZOAB> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/akoestisch%20geoptimaliseerd%201L%20ZOAB> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/2L%20ZOAB> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/2L%20ZOAB%20fijn> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/SMA%200%2F5> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/SMA%200%2F8> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/akoestisch%20geoptimaliseerd%20SMA> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/uitgeborsteld%20beton> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/geoptimaliseerd%20uitgeborsteld%20beton> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/fijngebezemd%20beton> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/oppervlakbewerking> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/elementenverharding%20keperverband> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/elementenverharding%20niet%20in%20keperverband> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/stille%20elementenverharding> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/dunne%20deklagen%20A> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/dunne%20deklagen%20B> ;
-.
-
-# Construct: IMGeluid::Wegdektype.referentiewegdek (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/referentiewegdek>
-   a skos:Concept ;
-   skos:prefLabel "referentiewegdek"@nl ;
-   skos:altLabel "referentiewegdek (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.1L ZOAB (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/1L%20ZOAB>
-   a skos:Concept ;
-   skos:prefLabel "1L ZOAB"@nl ;
-   skos:altLabel "1L ZOAB (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.akoestisch geoptimaliseerd 1L ZOAB (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/akoestisch%20geoptimaliseerd%201L%20ZOAB>
-   a skos:Concept ;
-   skos:prefLabel "akoestisch geoptimaliseerd 1L ZOAB"@nl ;
-   skos:altLabel "akoestisch geoptimaliseerd 1L ZOAB (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.2L ZOAB (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/2L%20ZOAB>
-   a skos:Concept ;
-   skos:prefLabel "2L ZOAB"@nl ;
-   skos:altLabel "2L ZOAB (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.2L ZOAB fijn (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/2L%20ZOAB%20fijn>
-   a skos:Concept ;
-   skos:prefLabel "2L ZOAB fijn"@nl ;
-   skos:altLabel "2L ZOAB fijn (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.SMA 0/5 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/SMA%200%2F5>
-   a skos:Concept ;
-   skos:prefLabel "SMA 0/5"@nl ;
-   skos:altLabel "SMA 0/5 (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.SMA 0/8 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/SMA%200%2F8>
-   a skos:Concept ;
-   skos:prefLabel "SMA 0/8"@nl ;
-   skos:altLabel "SMA 0/8 (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.akoestisch geoptimaliseerd SMA (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/akoestisch%20geoptimaliseerd%20SMA>
-   a skos:Concept ;
-   skos:prefLabel "akoestisch geoptimaliseerd SMA"@nl ;
-   skos:altLabel "akoestisch geoptimaliseerd SMA (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.uitgeborsteld beton (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/uitgeborsteld%20beton>
-   a skos:Concept ;
-   skos:prefLabel "uitgeborsteld beton"@nl ;
-   skos:altLabel "uitgeborsteld beton (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.geoptimaliseerd uitgeborsteld beton (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/geoptimaliseerd%20uitgeborsteld%20beton>
-   a skos:Concept ;
-   skos:prefLabel "geoptimaliseerd uitgeborsteld beton"@nl ;
-   skos:altLabel "geoptimaliseerd uitgeborsteld beton (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.fijngebezemd beton (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/fijngebezemd%20beton>
-   a skos:Concept ;
-   skos:prefLabel "fijngebezemd beton"@nl ;
-   skos:altLabel "fijngebezemd beton (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.oppervlakbewerking (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/oppervlakbewerking>
-   a skos:Concept ;
-   skos:prefLabel "oppervlakbewerking"@nl ;
-   skos:altLabel "oppervlakbewerking (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.elementenverharding keperverband (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/elementenverharding%20keperverband>
-   a skos:Concept ;
-   skos:prefLabel "elementenverharding keperverband"@nl ;
-   skos:altLabel "elementenverharding keperverband (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.elementenverharding niet in keperverband (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/elementenverharding%20niet%20in%20keperverband>
-   a skos:Concept ;
-   skos:prefLabel "elementenverharding niet in keperverband"@nl ;
-   skos:altLabel "elementenverharding niet in keperverband (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.stille elementenverharding (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/stille%20elementenverharding>
-   a skos:Concept ;
-   skos:prefLabel "stille elementenverharding"@nl ;
-   skos:altLabel "stille elementenverharding (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.dunne deklagen A (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/dunne%20deklagen%20A>
-   a skos:Concept ;
-   skos:prefLabel "dunne deklagen A"@nl ;
-   skos:altLabel "dunne deklagen A (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Wegdektype.dunne deklagen B (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/dunne%20deklagen%20B>
-   a skos:Concept ;
-   skos:prefLabel "dunne deklagen B"@nl ;
-   skos:altLabel "dunne deklagen B (Wegdektype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-.
-
-# Construct: IMGeluid::Treintype (ENUMERATIE)
-<http://definities.geostandaarden.nl/img/id/collection/Treintype>
-   a skos:Collection ;
-   skos:prefLabel "Treintype"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Een algemene classificering van een spoorvoertuig.'''@nl ;
-   skos:scopeNote '''Er zijn twee hoofdtypen:\n
-                        goederentrein
-                        reizigerstrein.
-                     '''@nl ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/reizigers> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/goederen> ;
-.
-
-# Construct: IMGeluid::Treintype.reizigers (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/reizigers>
-   a skos:Concept ;
-   skos:prefLabel "reizigers"@nl ;
-   skos:altLabel "reizigers (Treintype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''De typering van een reizigerstrein.'''@nl ;
-.
-
-# Construct: IMGeluid::Treintype.goederen (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/goederen>
-   a skos:Concept ;
-   skos:prefLabel "goederen"@nl ;
-   skos:altLabel "goederen (Treintype)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''De typering van een goederentrein.'''@nl ;
-.
-
 # Construct: IMGeluid::Geluidbronsoort (ENUMERATIE)
 <http://definities.geostandaarden.nl/img/id/collection/Geluidbronsoort>
    a skos:Collection ;
@@ -1390,14 +1189,6 @@ De gegeven snelheid is de representatief te achten snelheid in kilometer per uur
    skos:altLabel "BGE (Systematiek)"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Basisgeluidemissie'''@nl ;
-.
-
-# Construct: IMGeluid::Systematiek.anders (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/anders>
-   a skos:Concept ;
-   skos:prefLabel "anders"@nl ;
-   skos:altLabel "anders (Systematiek)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
 .
 
 # Construct: IMGeluid::ProfieltypeSnelheid (ENUMERATIE)
