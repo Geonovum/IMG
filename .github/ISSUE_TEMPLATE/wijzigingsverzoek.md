@@ -4,7 +4,9 @@ about: Template voor wijzigingsverzoek  (meld eerst via IMG@geonovum.nl)
 title: Deze titel beschrijft vooral kort wat veranderd moet worden.
 labels: 9 enhancement
 assignees: ''
+
 ---
+
 # Aanleiding wijziging
 
 Beschrijf hier waarom de standaard moet worden aangepast en waar de vraag vandaan komt met evt verwijzing naar SDIMG-nummer.
