@@ -4,7 +4,7 @@
     "id": "area-alt",
     "impact": "critical",
     "description": "Ensure <area> elements of image maps have alternative text",
-    "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/area-alt?application=webdriverjs",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/area-alt?application=webdriverjs",
     "nodes": [
       {
         "target": [
@@ -153,7 +153,7 @@
     "id": "color-contrast",
     "impact": "serious",
     "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-    "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=webdriverjs",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=webdriverjs",
     "nodes": [
       {
         "target": [
@@ -169,7 +169,7 @@
     "id": "target-size",
     "impact": "serious",
     "description": "Ensure touch targets have sufficient size and space",
-    "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/target-size?application=webdriverjs",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/target-size?application=webdriverjs",
     "nodes": [
       {
         "target": [
