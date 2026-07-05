@@ -9,11 +9,9 @@
 
 <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid>
    a skos:ConceptScheme ;
-   dct:title "Informatiemodel Geluid"@nl ;
+   dct:title "Begrippencatalogus Informatiemodel Geluid"@nl ;
 .
 
-# ## Package IMGeluid
-# Construct: IMGeluid::Geluidgegevenscollectie (OBJECTTYPE)
 <http://definities.geostandaarden.nl/img/id/concept/Geluidgegevenscollectie>
    a skos:Concept ;
    skos:prefLabel "collectie geluidgegevens"@nl ;
@@ -581,20 +579,6 @@ De gegeven snelheid is de representatief te achten snelheid in kilometer per uur
                      '''@nl ;
 .
 
-# Construct: IMGeluid::Schermtype (ENUMERATIE)
-<http://definities.geostandaarden.nl/img/id/collection/Schermtype>
-   a skos:Collection ;
-   skos:prefLabel "schermtype"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''De gehanteerde categorisering van de type geluidschermen.'''@nl ;
-   skos:scopeNote '''De schermwerking is voor ieder type hetzelfde, maar het is voor adviesbureaus en andere partijen waardevol om de herkomst van het scherm op basis van de typering te kunnen herleiden.'''@nl ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/brugwand> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/geluidscherm> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/geluidwal> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/overkappingszijwand> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/perronrand> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/tunnelbakwand> ;
-.
 
 # Construct: IMGeluid::Schermtype.brugwand (attrib) (ENUMERATIEWAARDE)
 <http://definities.geostandaarden.nl/img/id/concept/brugwand>
@@ -722,74 +706,8 @@ De gegeven snelheid is de representatief te achten snelheid in kilometer per uur
    skos:definition '''Breuklijn van tunnelbak'''@nl ;
 .
 
-# Construct: IMGeluid::Spoorvoertuigcategorie (ENUMERATIE)
-<http://definities.geostandaarden.nl/img/id/collection/Spoorvoertuigcategorie>
-   a skos:Collection ;
-   skos:prefLabel "spoorvoertuigcategorie"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Categorie-indeling van spoorvoertuigtypen.'''@nl ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/1> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/2> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/3> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/4> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/5> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/6> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/7> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/8> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/9> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/10> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/11> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/12> ;
-.
 
-# Construct: IMGeluid::IndexSpoorstaafonderbreking (ENUMERATIE)
-<http://definities.geostandaarden.nl/img/id/collection/IndexSpoorstaafonderbreking>
-   a skos:Collection ;
-   skos:prefLabel "IndexSpoorstaafonderbreking"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Enumeratie met mogelijke waarden voor de spoorstaafonderbreking index (m).'''@nl ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/1> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/2> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/3> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/4> ;
-.
-
-# Construct: IMGeluid::IndexSpoorstaafonderbreking.1 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/1>
-   a skos:Concept ;
-   skos:prefLabel "1"@nl ;
-   skos:altLabel "1 (IndexSpoorstaafonderbreking)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Voegloze spoorstaaf (doorgelast) met of zonder voegloze wissels en kruisingen (index m = 1).'''@nl ;
-.
-
-<http://definities.geostandaarden.nl/img/id/concept/DoorgelasteSpoorstaaf>
-   a skos:Concept ;
-   skos:prefLabel "doorgelaste spoorstaaf"@nl ;
-   skos:altLabel "2 (IndexSpoorstaafonderbreking)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Niet doorgelaste spoorstaaf (=voegenspoorstaaf) (m = 2).'''@nl ;
-.
-
-<http://definities.geostandaarden.nl/img/id/concept/InternVoegloosWissel>
-   a skos:Concept ;
-   skos:prefLabel "intern-voegloos wissel"@nl ;
-   skos:altLabel "3 (IndexSpoorstaafonderbreking)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Intern-voegloos wissel (index m=3).'''@nl ;
-.
-
-# Construct: IMGeluid::IndexSpoorstaafonderbreking.4 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/NietVoegloosWissel>
-   a skos:Concept ;
-   skos:prefLabel "Niet-voegloos wissel"@nl ;
-   skos:altLabel "4 (IndexSpoorstaafonderbreking)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Niet-voegloos wissel (index m=4).'''@nl ;
-.
-
-# Construct: IMGeluid::Dagdeel (ENUMERATIE)
-<http://definities.geostandaarden.nl/img/id/collection/Dagdeel>
+<http://definities.geostandaarden.nl/img/id/concept/Dagdeel>
    a skos:Collection ;
    skos:prefLabel "dagdeel"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
@@ -799,9 +717,6 @@ De gegeven snelheid is de representatief te achten snelheid in kilometer per uur
                         Avondperiode (19.00-23.00 uur)
                         Nachtperiode (23.00-7.00 uur)
                      '''@nl ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/dag> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/avond> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/nacht> ;
 .
 
 # Construct: IMGeluid::Dagdeel.dag (attrib) (ENUMERATIEWAARDE)
@@ -1037,65 +952,47 @@ Tijdelijke afspraak voor Schiphol: het MER van december 2020 waarin de geluidcon
    skos:definition '''Is behandeld door rekensoftware als een uitstralend dak.'''@nl ;
 .
 
-# Construct: IMGeluid::Geluidbron (ENUMERATIE)
-<http://definities.geostandaarden.nl/img/id/collection/Geluidbron>
-   a skos:Collection ;
-   skos:prefLabel "Geluidbron"@nl ;
+<http://definities.geostandaarden.nl/img/id/concept/geluidbron>
+   a skos:Concept ;
+   skos:prefLabel "geluidbron"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Enumeratie van mogelijke domeinen waaruit de geluidemissie afkomstig is.'''@nl ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/rijksweg> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/provinciale%20weg> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/gemeenteweg> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/waterschapsweg> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/hoofdspoorweg> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/lokale%20spoorweg> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/luchtvaart> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/industrieterrein> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/windturbine> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/schiet-%20of%20springterrein> ;
+   skos:definition '''Een object in de fysieke leefomgeving dat geluid produceert. In de context van de aanvullingswet geluid wordt daarbij specifiek gesproken over wegen, spoorwegen, industrieterreinen met activiteiten die in aanzienlijke mate geluid kunnen veroorzaken, windturbines, luchthavens en schiet- of springterreinen.'''@nl ;
 .
 
-# Construct: IMGeluid::Geluidbron.rijksweg (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/rijksweg>
+<http://definities.geostandaarden.nl/img/id/concept/Rijksweg>
    a skos:Concept ;
    skos:prefLabel "rijksweg"@nl ;
-   skos:altLabel "rijksweg (Geluidbron)"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Geluidgegevenscollectie bevat geluidgegevens conform domein GPP Weg met rijksweg als geluidbron. '''@nl ;
+   skos:definition '''Weg in beheer bij het Rijk'''@nl ;
 .
 
-# Construct: IMGeluid::Geluidbron.provinciale weg (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/provinciale%20weg>
+<http://definities.geostandaarden.nl/img/id/concept/ProvincialeWeg>
    a skos:Concept ;
    skos:prefLabel "provinciale weg"@nl ;
-   skos:altLabel "provinciale weg (Geluidbron)"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Geluidgegevenscollectie bevat geluidgegevens conform domein GPP Weg met provinciale weg als geluidbron. '''@nl ;
+   skos:definition '''Weg in beheer bij een provincie.'''@nl ;
 .
 
-# Construct: IMGeluid::Geluidbron.gemeenteweg (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/gemeenteweg>
+<http://definities.geostandaarden.nl/img/id/concept/Gemeenteweg>
    a skos:Concept ;
    skos:prefLabel "gemeenteweg"@nl ;
    skos:altLabel "gemeenteweg (Geluidbron)"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Geluidgegevenscollectie bevat geluidgegevens conform domein BGE Weg met gemeenteweg als geluidbron. '''@nl ;
+   skos:definition '''Weg in beheer bij een gemeente'''@nl ;
 .
 
-# Construct: IMGeluid::Geluidbron.waterschapsweg (attrib) (ENUMERATIEWAARDE)
 <http://definities.geostandaarden.nl/img/id/concept/waterschapsweg>
    a skos:Concept ;
    skos:prefLabel "waterschapsweg"@nl ;
    skos:altLabel "waterschapsweg (Geluidbron)"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Geluidgegevenscollectie bevat geluidgegevens conform domein BGE Weg met waterschapsweg als geluidbron. '''@nl ;
+   skos:definition '''Weg in beheer bij een waterschap.'''@nl ;
 .
 
 # Construct: IMGeluid::Geluidbron.hoofdspoorweg (attrib) (ENUMERATIEWAARDE)
 <http://definities.geostandaarden.nl/img/id/concept/hoofdspoorweg>
    a skos:Concept ;
    skos:prefLabel "hoofdspoorweg"@nl ;
-   skos:altLabel "hoofdspoorweg (Geluidbron)"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Geluidgegevenscollectie bevat geluidgegevens conform domein GPP Spoor met hoofdspoorweg als geluidbron. '''@nl ;
 .
@@ -1235,19 +1132,6 @@ Tijdelijke afspraak voor Schiphol: het MER van december 2020 waarin de geluidcon
    skos:definition '''Profielcorrectiewaarde is 2 decibel.'''@nl ;
 .
 
-# Construct: IMGeluid::Gegevenscollectietype (ENUMERATIE)
-<http://definities.geostandaarden.nl/img/id/collection/Gegevenscollectietype>
-   a skos:Collection ;
-   skos:prefLabel "Gegevenscollectietype"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Indicatie van het type geluidgegevenscollectie'''@nl ;
-   skos:scopeNote '''Een geluidgegevenscollectie dient verschillende toepassingen: ter vaststelling van een geluidproductieplafond of basisgeluidemissie, het monitoren van de vastgestelde gleuidproductieplafonds of basisgeluidemissies of een prognose op een basisgeluidemissie.'''@nl ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/vaststelling> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/brongegevens%20monitoring> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/prognose> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/monitoringresultaat> ;
-.
-
 # Construct: IMGeluid::Gegevenscollectietype.vaststelling (attrib) (ENUMERATIEWAARDE)
 <http://definities.geostandaarden.nl/img/id/concept/vaststelling>
    a skos:Concept ;
@@ -1275,230 +1159,12 @@ Tijdelijke afspraak voor Schiphol: het MER van december 2020 waarin de geluidcon
    skos:definition '''Objecten die een reflectie zijn van de toekomstige werkelijkheid en de prognoses van bijbehorende intensiteiten.'''@nl ;
 .
 
-# Construct: IMGeluid::Bovenbouwcode (ENUMERATIE)
-<http://definities.geostandaarden.nl/img/id/collection/Bovenbouwcode>
-   a skos:Collection ;
-   skos:prefLabel "Bovenbouwcode"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Categorie-indeling van de bovenbouw.'''@nl ;
-   skos:scopeNote '''
-                        Een geospoortak kan in SoundBase verschillende bovenbouwcodes hebben.
-                        De in te voeren bovenbouwcode is afhankelijk van de boring, dwarsliggertype, spoorstaafbevestiging, ballastdikte en de eventuele aanwezigheid van raildempers.
-                        De combinatie van voorgaande factoren resulteert in een bijbehorende bovenbouwklasse.
-                     '''@nl ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/1> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/2> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/3> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/4> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/5> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/6> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/7> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/8> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/9> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/10> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/11> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/12> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/13> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/14> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/15> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/16> ;
-.
 
-# Construct: IMGeluid::Bovenbouwcode.1 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/1>
-   a skos:Concept ;
-   skos:prefLabel "1"@nl ;
-   skos:altLabel "1 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Baan op betonnen mono- of duoblok dwarsliggers in ballastbed (index bb = 1)'''@nl ;
-.
-
-# Construct: IMGeluid::Bovenbouwcode.2 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/2>
-   a skos:Concept ;
-   skos:prefLabel "2"@nl ;
-   skos:altLabel "2 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Baan op houten of zigzag betonnen dwarsliggers in ballastbed (index bb = 2)'''@nl ;
-.
-
-# Construct: IMGeluid::Bovenbouwcode.3 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/3>
-   a skos:Concept ;
-   skos:prefLabel "3"@nl ;
-   skos:altLabel "3 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Baan met ballastbed met niet doorgelaste spoorstaven of onderbroken door maximaal twee niet voegloze wissels binnen 50 m (index bb = 3)'''@nl ;
-.
-
-# Construct: IMGeluid::Bovenbouwcode.4 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/4>
-   a skos:Concept ;
-   skos:prefLabel "4"@nl ;
-   skos:altLabel "4 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Baan met blokkenspoor (index bb = 4)'''@nl ;
-.
-
-# Construct: IMGeluid::Bovenbouwcode.5 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/5>
-   a skos:Concept ;
-   skos:prefLabel "5"@nl ;
-   skos:altLabel "5 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Baan met blokkenspoor en ballastbed (index bb = 5)'''@nl ;
-.
-
-# Construct: IMGeluid::Bovenbouwcode.6 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/6>
-   a skos:Concept ;
-   skos:prefLabel "6"@nl ;
-   skos:altLabel "6 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Baan met regelbare spoorstaafbevestiging (index bb = 6)'''@nl ;
-.
-
-# Construct: IMGeluid::Bovenbouwcode.7 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/7>
-   a skos:Concept ;
-   skos:prefLabel "7"@nl ;
-   skos:altLabel "7 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Baan met regelbare spoorstaafbevestiging en ballastbed (index bb = 7)'''@nl ;
-.
-
-# Construct: IMGeluid::Bovenbouwcode.8 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/8>
-   a skos:Concept ;
-   skos:prefLabel "8"@nl ;
-   skos:altLabel "8 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Baan met ingegoten spoorstaaf (index bb = 8)'''@nl ;
-.
-
-# Construct: IMGeluid::Bovenbouwcode.9 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/9>
-   a skos:Concept ;
-   skos:prefLabel "9"@nl ;
-   skos:altLabel "9 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Baan met directe railbevestiging op een onderheide betonplaat voor metro- en sneltrammaterieel (index bb = 9)'''@nl ;
-.
-
-# Construct: IMGeluid::Bovenbouwcode.10 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/10>
-   a skos:Concept ;
-   skos:prefLabel "10"@nl ;
-   skos:altLabel "10 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Baan met raildempers op betonnen mono- of duoblok dwarsliggers in ballastbed (index bb = 10)'''@nl ;
-.
-
-# Construct: IMGeluid::Bovenbouwcode.11 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/11>
-   a skos:Concept ;
-   skos:prefLabel "11"@nl ;
-   skos:altLabel "11 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Baan met HSL-Rhedaspoor (indexb b = 11)'''@nl ;
-.
-
-# Construct: IMGeluid::Bovenbouwcode.12 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/12>
-   a skos:Concept ;
-   skos:prefLabel "12"@nl ;
-   skos:altLabel "12 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''baan met HSL – Rhedaspoor en raildempers (index bb = 12)'''@nl ;
-.
-
-# Construct: IMGeluid::Bovenbouwcode.13 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/13>
-   a skos:Concept ;
-   skos:prefLabel "13"@nl ;
-   skos:altLabel "13 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Trambaan in gras (index bb=13)'''@nl ;
-.
-
-# Construct: IMGeluid::Bovenbouwcode.14 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/14>
-   a skos:Concept ;
-   skos:prefLabel "14"@nl ;
-   skos:altLabel "14 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Trambaan in asfalt (index bb=14)'''@nl ;
-.
-
-# Construct: IMGeluid::Bovenbouwcode.15 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/15>
-   a skos:Concept ;
-   skos:prefLabel "15"@nl ;
-   skos:altLabel "15 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Tramplatenspoor (index bb=15)'''@nl ;
-.
-
-# Construct: IMGeluid::Bovenbouwcode.16 (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/16>
-   a skos:Concept ;
-   skos:prefLabel "16"@nl ;
-   skos:altLabel "16 (Bovenbouwcode)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Trambaan in klinkers (index bb=16)'''@nl ;
-.
-
-# Construct: IMGeluid::ContourMaatType (ENUMERATIE)
-<http://definities.geostandaarden.nl/img/id/collection/ContourMaatType>
-   a skos:Collection ;
-   skos:prefLabel "ContourMaatType"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Lijst van bestaande contour types in categorie overig waarvoor een geluidcontour kan worden opgenomen.'''@nl ;
-   skos:scopeNote '''Er zijn verschillende maten om geluidcontouren te berekenen. Verschillende type maten voor het berekenen van contouren staan in deze enumeratie. '''@nl ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/lden> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/ke> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/bs> ;
-.
-
-# Construct: IMGeluid::ContourMaatType.lden (attrib) (ENUMERATIEWAARDE)
 <http://definities.geostandaarden.nl/img/id/concept/lden>
    a skos:Concept ;
    skos:prefLabel "lden"@nl ;
-   skos:altLabel "lden (ContourMaatType)"@nl ;
    skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
    skos:definition '''Uniforme maat om geluidproductie in uit te drukken voor dag avond en nacht bij elkaar.'''@nl ;
-.
-
-# Construct: IMGeluid::ContourMaatType.ke (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/ke>
-   a skos:Concept ;
-   skos:prefLabel "ke"@nl ;
-   skos:altLabel "ke (ContourMaatType)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Een maat om de geluidsbelasting rond vliegvelden mee uit te drukken aan de hand van de Kosten formule.'''@nl ;
-.
-
-# Construct: IMGeluid::ContourMaatType.bs (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/bs>
-   a skos:Concept ;
-   skos:prefLabel "bs"@nl ;
-   skos:altLabel "bs (ContourMaatType)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Contourtype dat gebruikt wordt bij een schiet- of springterrein.'''@nl ;
-.
-
-# Construct: IMGeluid::ProfieltypeGeluidscherm (ENUMERATIE)
-<http://definities.geostandaarden.nl/img/id/collection/ProfieltypeGeluidscherm>
-   a skos:Collection ;
-   skos:prefLabel "ProfieltypeGeluidscherm"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Vormaanduiding van het type geluidscherm'''@nl ;
-   skos:scopeNote '''Deze klassen corresponderen met vaste profielcorrectiewaarden van 0,0 dB, 2,0 dB of 5,0 dB.'''@nl ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/scherp> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/stomp> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/perron> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/middenberm> ;
-   skos:member <http://definities.geostandaarden.nl/img/id/concept/t-top> ;
 .
 
 # Construct: IMGeluid::ProfieltypeGeluidscherm.scherp (attrib) (ENUMERATIEWAARDE)
@@ -1521,17 +1187,6 @@ Tijdelijke afspraak voor Schiphol: het MER van december 2020 waarin de geluidcon
    skos:scopeNote '''De profielcorrectiewaarde van een stomp scherm is 2,0 dB'''@nl ;
 .
 
-# Construct: IMGeluid::ProfieltypeGeluidscherm.perron (attrib) (ENUMERATIEWAARDE)
-<http://definities.geostandaarden.nl/img/id/concept/perron>
-   a skos:Concept ;
-   skos:prefLabel "perron"@nl ;
-   skos:altLabel "perron (ProfieltypeGeluidscherm)"@nl ;
-   skos:inScheme <http://definities.geostandaarden.nl/img/id/conceptscheme/IMGeluid> ;
-   skos:definition '''Rand van het perron.'''@nl ;
-   skos:scopeNote '''De perronrand heeft een afschermende werking en wordt gemodelleerd als een scherm van 0,8 meter hoogte, gemeten vanaf de bovenkant van het spoor. De profielcorrectie van een perron is 5,0 dB.'''@nl ;
-.
-
-# Construct: IMGeluid::ProfieltypeGeluidscherm.middenberm (attrib) (ENUMERATIEWAARDE)
 <http://definities.geostandaarden.nl/img/id/concept/middenberm>
    a skos:Concept ;
    skos:prefLabel "middenberm"@nl ;
