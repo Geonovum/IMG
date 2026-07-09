@@ -5,6 +5,12 @@ Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokke
 
 Afwegingen en onderbouwing die ten grondslag liggen aan de inhoud van deze catalogus zijn te vinden in de [Issues](https://github.com/Geonovum/IMG/issues/) sectie van de Github repository.
 
+## Wijzigingen doorgevoerd in versie 4.0.0
+
+|**nummer**| **Github issue**                                 | **Soort wijziging**                  | **Wijziging**                                |
+| ---------|------------------------------------------------- | ------------------------------------ | -------------------------------------------- |
+| x        |[217](https://github.com/Geonovum/IMG/issues/217) | Diagram aangepast                 | De tagged values van Geluidgegevenscollectie.herkomstCollectie gezet op 'Gegevensgroep'.|
+
 ## Wijzigingen doorgevoerd in versie 3.1.1
 
 |**nummer**| **Github issue**                                 | **Soort wijziging**                  | **Wijziging**                                |
