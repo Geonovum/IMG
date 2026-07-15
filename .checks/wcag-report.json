@@ -29,30 +29,30 @@
       },
       {
         "target": [
-          "area[coords=\"70,469,222,662\"]"
+          "area[coords=\"70,488,222,681\"]"
         ],
-        "html": "<area shape=\"rect\" alt=\"\" coords=\"70,469,222,662\" href=\"#global_class_IMGeluid_Schermtype\">",
+        "html": "<area shape=\"rect\" alt=\"\" coords=\"70,488,222,681\" href=\"#global_class_IMGeluid_Schermtype\">",
         "failureSummary": "Fix any of the following:\n  Element has an empty alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
       },
       {
         "target": [
-          "area[coords=\"817,505,960,680\"]"
+          "area[coords=\"817,524,960,699\"]"
         ],
-        "html": "<area shape=\"rect\" alt=\"\" coords=\"817,505,960,680\" href=\"#global_class_IMGeluid_Hoogtelijntype\">",
+        "html": "<area shape=\"rect\" alt=\"\" coords=\"817,524,960,699\" href=\"#global_class_IMGeluid_Hoogtelijntype\">",
         "failureSummary": "Fix any of the following:\n  Element has an empty alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
       },
       {
         "target": [
-          "area[coords=\"977,505,1123,680\"]"
+          "area[coords=\"977,524,1123,699\"]"
         ],
-        "html": "<area shape=\"rect\" alt=\"\" coords=\"977,505,1123,680\" href=\"#global_class_IMGeluid_ProfieltypeGeluidscherm\">",
+        "html": "<area shape=\"rect\" alt=\"\" coords=\"977,524,1123,699\" href=\"#global_class_IMGeluid_ProfieltypeGeluidscherm\">",
         "failureSummary": "Fix any of the following:\n  Element has an empty alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
       },
       {
         "target": [
-          "area[coords=\"523,207,654,346\"]"
+          "area[coords=\"523,226,654,365\"]"
         ],
-        "html": "<area shape=\"rect\" alt=\"\" coords=\"523,207,654,346\" href=\"#global_class_IMGeluid_BronTypeWaarde\">",
+        "html": "<area shape=\"rect\" alt=\"\" coords=\"523,226,654,365\" href=\"#global_class_IMGeluid_BronTypeWaarde\">",
         "failureSummary": "Fix any of the following:\n  Element has an empty alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
       },
       {
@@ -92,23 +92,23 @@
       },
       {
         "target": [
-          "area[coords=\"451,475,629,655\"]"
+          "area[coords=\"451,494,629,674\"]"
         ],
-        "html": "<area shape=\"rect\" alt=\"\" coords=\"451,475,629,655\" href=\"#global_class_IMGeluid_Gegevenscollectietype\">",
+        "html": "<area shape=\"rect\" alt=\"\" coords=\"451,494,629,674\" href=\"#global_class_IMGeluid_Gegevenscollectietype\">",
         "failureSummary": "Fix any of the following:\n  Element has an empty alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
       },
       {
         "target": [
-          "area[coords=\"650,476,806,618\"]"
+          "area[coords=\"650,495,806,638\"]"
         ],
-        "html": "<area shape=\"rect\" alt=\"\" coords=\"650,476,806,618\" href=\"#global_class_IMGeluid_Documenttype\">",
+        "html": "<area shape=\"rect\" alt=\"\" coords=\"650,495,806,638\" href=\"#global_class_IMGeluid_Documenttype\">",
         "failureSummary": "Fix any of the following:\n  Element has an empty alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
       },
       {
         "target": [
-          "area[coords=\"241,599,361,739\"]"
+          "area[coords=\"241,613,361,752\"]"
         ],
-        "html": "<area shape=\"rect\" alt=\"\" coords=\"241,599,361,739\" href=\"#global_class_IMGeluid_Dagdeel\">",
+        "html": "<area shape=\"rect\" alt=\"\" coords=\"241,613,361,752\" href=\"#global_class_IMGeluid_Dagdeel\">",
         "failureSummary": "Fix any of the following:\n  Element has an empty alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
       },
       {
@@ -134,16 +134,16 @@
       },
       {
         "target": [
-          "area[coords=\"880,207,1056,477\"]"
+          "area[coords=\"880,226,1056,497\"]"
         ],
-        "html": "<area shape=\"rect\" alt=\"\" coords=\"880,207,1056,477\" href=\"#global_class_IMGeluid_Geluidbron\">",
+        "html": "<area shape=\"rect\" alt=\"\" coords=\"880,226,1056,497\" href=\"#global_class_IMGeluid_Geluidbron\">",
         "failureSummary": "Fix any of the following:\n  Element has an empty alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
       },
       {
         "target": [
-          "area[coords=\"672,207,861,435\"]"
+          "area[coords=\"672,226,861,454\"]"
         ],
-        "html": "<area shape=\"rect\" alt=\"\" coords=\"672,207,861,435\" href=\"#global_class_IMGeluid_Geluidbronsoort\">",
+        "html": "<area shape=\"rect\" alt=\"\" coords=\"672,226,861,454\" href=\"#global_class_IMGeluid_Geluidbronsoort\">",
         "failureSummary": "Fix any of the following:\n  Element has an empty alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
       }
     ]
