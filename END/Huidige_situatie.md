@@ -100,7 +100,6 @@ Centraal rapporteren van kaarten aan InfoMil
 tabblad om de afbeelding groter te zien.</figcaption>
 </figure>
 
-
 Wanneer de geluidbelastingkaarten berekend zijn, worden deze gerapporteerd aan
 InfoMil. In het geval van luchthavens van nationaal belang, rijkswegen en
 hoofdspoorwegen buiten agglomeratiegrenzen, draagt het Ministerie van I&W de

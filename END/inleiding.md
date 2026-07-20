@@ -128,6 +128,6 @@ huis) aan. In het kader van geluidproductieplafond- en
 basisgeluidemissieberekeningen is de geluidemissie, de geluidproductie van de
 geluidbron, het belangrijkst. Daarom wordt de omgeving maar beperkt meegenomen.
 Bij het berekenen van geluidbelastingkaarten wordt een meer gedetailleerd
-omgevingsmodel gebruikt. Dit omgevingsmodel bevat (3D) informatie over de
+omgevingsmodel gebruikt. Dit omgevingsmodel bevat (2.5D) informatie over de
 omliggende gebouwen en het terrein. Om uitwisseling van geluidgegevens voor geluidbelastingkaarten mogelijk te maken, moeten er dus aparte objecttypen aan het IMGeluid worden toegevoegd.
 

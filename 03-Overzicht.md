@@ -255,18 +255,16 @@ Als de hoogte wordt opgenomen, gebeurt dit als onderdeel van de geometrie.
 Coördinaten zijn een x,y en z waarde, waarbij de z-waarde de hoogte is t.o.v.
 het Normaal Amsterdams Peil (NAP). Bij elk x,y-locatie is er maximaal één
 z-waarde beschikbaar. Dat betekent dat tweedimensionale (2D) geometrieën zich in
-een driedimensionale (3D) ruimte (x,y,z) bevinden maar dat de geometrieën
-zichzelf of elkaar niet mogen overlappen in de horizontale projectie. Eigenlijk
-is dit een 2,5D geometrie (zie [Handreiking Geometrie](https://docs.geostandaarden.nl/nen3610/gimeg/),
-maar voor de begrijpelijkheid en leesbaarheid noemen we dit binnen IMGeluid
-3D-geometrie. Als de hoogte niet is opgenomen, spreken we van een 2D-geometrie.
+een driedimensionale ruimte (x,y,z) bevinden maar dat de geometrieën
+zichzelf of elkaar niet mogen overlappen in de horizontale projectie. Dit
+is een 2.5D geometrie (zie [Handreiking Geometrie](https://docs.geostandaarden.nl/nen3610/gimeg/). Als de hoogte niet is opgenomen, spreken we van een 2D-geometrie.
 
-Hoogte wordt in 3D geometrie opgenomen als derde coördinaat, de 'z'-coordinaat.
+Hoogte wordt in een 2.5D geometrie opgenomen als derde coördinaat, de 'z'-coordinaat.
 In hoofdstuk 4 is bij elk objecttype dat een
 geometrie als eigenschap heeft, bij deze eigenschap voorgeschreven of het om een
-2D of 3D geometrie gaat.
+2D of 2.5D geometrie gaat.
 
-Hoogte is bij 3D geometrieën aangegeven in meters. Afhankeljik van het
+Hoogte is bij 2.5D geometrieën aangegeven in meters. Afhankeljik van het
 coördinaatsysteem is dit ten opzichte van NAP (in het geval van RD New) of ten
 opzichte van de ellipsoid (in het geval van ETRS89). Zie ook de volgende
 paragraaf voor uitleg over deze coördinaatsystemen. 
@@ -292,7 +290,7 @@ de hoogte.
 Coördinaten in ETRS89 worden vastgelegd in eenheden van decimale graden, waarbij
 de waarde maximaal 8 decimalen achter de komma mag hebben. De hoogte wordt
 uitgedrukt in meters t.o.v. ellipsoide. Coördinaten in RD New + NAP bestaan uit
-x, y, en H (hoogte t.o.v. NAP, in geval van 3D) en worden vastgelegd in meters,
+x, y, en H (hoogte t.o.v. NAP, in geval van 2.5D) en worden vastgelegd in meters,
 waarbij de waarde maximaal 2 decimalen achter de komma mag hebben. Zo nodig
 wordt daarvoor afgerond, zodanig dat als het derde cijfer achter de komma de
 waarde 1 t/m 4 bedraagt, het tweede cijfer achter de komma niet wijzigt en als
@@ -306,9 +304,9 @@ vermelden van de EPSG code. Toegestane EPSG codes zijn:
 | Referentiesysteem | EPSG code    |
 |-------------------|--------------|
 | ETRS89 (2D)       | 'EPSG:4258'  |
-| ETRS89 (3D)       | 'EPSG:4937'  |
+| ETRS89 (2.5D)       | 'EPSG:4937'  |
 | RD New (2D)       | 'EPSG:28992' |
-| RD New + NAP (3D) | 'EPSG:7415'  |
+| RD New + NAP (2.5D) | 'EPSG:7415'  |
 
 #### Datum en tijd
 
