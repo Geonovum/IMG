@@ -60,26 +60,25 @@ objecttypen niet redundant in de dataspecificatie hoeven worden opgenomen.
 
 #### Uitgangspunten toegepast bij modelleren van IMGeluid
 
--   IMGeluid omschrijft de dataspecificatie voor het geluidregister. Een
+- IMGeluid omschrijft de dataspecificatie voor het geluidregister. Een
     uitwissel/berichtenmodel kan hierop worden gebaseerd, maar valt niet binnen
     de scope van dit document.
 
--   IMGeluid is gemodelleerd conform het Metamodel Informatie Modellering
-    (versie 1.1).
+- IMGeluid is gemodelleerd conform het Metamodel Informatie Modellering [[MIM]].
 
--   In de IMGeluid catalogus worden attribuutsoorten afkomstig uit een MIM
+- In de IMGeluid catalogus worden attribuutsoorten afkomstig uit een MIM
     Gegevensgroep aangegeven met een "-" voor de naam van de attribuutsoort.
 
--   In de IMGeluid catalogus worden openbare attribuutsoorten aangegeven met een
+- In de IMGeluid catalogus worden openbare attribuutsoorten aangegeven met een
     "+" voor de naam van de attribuutsoort in de diagrammen.
 
--   IMGeluid is opgesteld in de Nederlandse taal.
+- IMGeluid is opgesteld in de Nederlandse taal.
 
--   IMGeluid hanteert de richlijnen van NEN3610:2011.
+- IMGeluid hanteert de richtlijnen van [[NEN3610]].
 
--   IMGeluid hanteert de richtlijnen van ISO19107.
+- IMGeluid hanteert de richtlijnen van [[ISO19107]].
 
--   IMGeluid ondersteunt de huidige werkprocessen en is niet bedoeld om die te
+- IMGeluid ondersteunt de huidige werkprocessen en is niet bedoeld om die te
     harmoniseren. Wanneer vanuit gebruik de behoefte bestaat aan aanvullende
     informatie bovenop het wettelijke verplichte minimum, dan kan dat uit
     oogpunt van dienstverlening worden opgenomen.
@@ -173,20 +172,19 @@ IMGeluid niet van belang, maar moet wel worden ingevuld conform MIM.
 #### Identificatie binnen het informatiemodel
 
 Objecten worden in NEN3610 voorzien van een unieke identificatie: een NEN3610ID.
-Het informatiemodel maakt ook gebruik van dergelijke identificaties. Een
-NEN3610ID is opgebouwd uit drie delen: een namespace, lokaalID en versienummer.
-De volgende richtlijnen gelden voor het vullen van het NEN3610ID voor
+Het informatiemodel maakt gebruik van de identificatie zoals beschreven in de
+NEN 3610:2011 versie van de standaard. Een NEN3610ID is opgebouwd uit drie delen:
+een namespace, lokaalID en versienummer. De volgende richtlijnen gelden voor het
+vullen van het NEN3610ID voor
 geluidgegevens:
-<ul>
-<li>De namespace is altijd “NL.img”;</li>
-<li>De lokaalID is opgebouwd uit:
-<ul>
-<li>Een unieke code van de bronhouder;</li>
-<li>Een punt (“.”);</li>
-<li>Een lokale identificatie zoals gebruikt door de bronhouder;</li>
-</ul></li>
-<li>Het versienummer</li>
-</ul>
+
+- De namespace is altijd “NL.img”;
+- De lokaalID is opgebouwd uit:
+  - Een unieke code van de bronhouder;
+  - Een punt (“.”);
+  - Een lokale identificatie zoals gebruikt door de bronhouder;
+- Het versienummer
+
 
 De unieke code van de bronhouder is het KvK-nummer van de organisatie. De lengte
 van de lokale identificatie staat toe dat bronhouders gebruik maken van
@@ -206,7 +204,7 @@ lokaalID is maximaal 255 karakters lang.
 #### Authentieke gegevens
 
 Voor invulling van het [MIM metagegegeven
-Authentiek](https://geonovum.github.io/MIM-Werkomgeving/#authentieke-gegevens),
+Authentiek](https://docs.geostandaarden.nl/mim/mim/#authentieke-gegevens),
 zal aan attributen het label 'wettelijk kerngegeven' of 'overig' worden
 toegekend. Daar is voor gekozen omdat de CVGG geen basisregistratie is, maar wel
 een grondslag heeft in de wet. Indien er voor een attribuutsoort binnen iedere
@@ -301,11 +299,11 @@ voorliggende cijfers, waarbij dezelfde regel geldt.
 Het ruimtelijk referentiesysteem moet altijd expliciet zijn aangegeven door het
 vermelden van de EPSG code. Toegestane EPSG codes zijn:
 
-| Referentiesysteem | EPSG code    |
-|-------------------|--------------|
-| ETRS89 (2D)       | 'EPSG:4258'  |
+| Referentiesysteem   | EPSG code    |
+| ------------------- | ------------ |
+| ETRS89 (2D)         | 'EPSG:4258'  |
 | ETRS89 (2.5D)       | 'EPSG:4937'  |
-| RD New (2D)       | 'EPSG:28992' |
+| RD New (2D)         | 'EPSG:28992' |
 | RD New + NAP (2.5D) | 'EPSG:7415'  |
 
 #### Datum en tijd
@@ -318,11 +316,11 @@ altijd de in Nederland geldende tijdszone bedoeld.
 
 De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
 
--   [Metamodel Informatie Modellering 1.1](https://docs.geostandaarden.nl/mim/mim/)
+-   [[MIM]] Metamodel Informatie Modellering.
 -   [Raamwerk van geo-standaarden 3.0](https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf)
--   [NEN 3610:2011/A1:2016 Basismodel Geo-informatie](https://www.geonovum.nl/geo-standaarden/nen-3610-basismodel-voor-informatiemodellen)
+-   [[NEN3610]] Basismodel Geo-informatie.
 -   [[iso-19107-2003]] ISO19107: Geographic information – Spatial schema
--   [Geography Markup Language (GML) simple features profile (with Corrigendum) version 2.0 ](https://portal.opengeospatial.org/files/?artifact_id=42729)
+-   [[GMLSF]] Geography Markup Language (GML) simple features profile (with Corrigendum) version 2.0
 -   RIVM: PSA Centrale Voorziening Geluidgegevens 1.04
 -   Geconsolideerde versies Omgevingswet, AMvB's en Omgevingsregeling, versie
     december 2020
@@ -361,6 +359,18 @@ De mapping is als volgt:
 | &nbsp;&nbsp;specialisedZoneType        | geluidbronsoort                                                           |
 | LegislationCitation                    | ontbreekt in IMGeluid, vaste verwijzing naar gerelateerde wet/regelgeving |
 | &nbsp;&nbsp;level                      | vaste waarde: 'national'                                                  |
+
+## Semantische relatie met NEN3610
+
+Veel van de klassen in IMGeluid zijn afgeleid van het semantisch model zoals beschreven in paragraaf 8.4 van [[NEN3610]]. In deze paragraaf staat welke klassen in IMGeluid zijn afgeleid van welke klasses in NEN3610
+
+| **Klasse in IMGeluid** | **Klasse in NEN3610** |
+| ---------------------- | --------------------- |
+| NEN3610ID              | NEN3610ID (volgens NEN 3610:2011 standaard)             |
+| Kunstwerk              | [Kunstwerk](https://definities.geostandaarden.nl/nen3610-2022/nl/page/kunstwerk)             |
+| WegdeelBGE             | [Wegverkeerruimte](https://definities.geostandaarden.nl/nen3610-2022/nl/page/wegverkeerruimte)      |
+| SpoordeelBGE           | [Spoorverkeerruimte](https://definities.geostandaarden.nl/nen3610-2022/nl/page/spoorverkeerruimte)    |
+
 
 ## Algemene Termen en definities
 

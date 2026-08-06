@@ -108,14 +108,6 @@ let respecConfig = {
   // - Voeg dan pas hieronder toe.
   localBiblio: 
   {
-    MIM: {
-      id: "mim10",
-      title: "MIM - Metamodel Informatie Modellering",
-      href: "https://docs.geostandaarden.nl/mim/mim10/",
-      status: "Definitief",
-      publisher: "Geonovum",
-      date: "2017-06-14"
-    },
     "ISO19108-2005": {
       "href": "https://www.iso.org/standard/39891.html",
       "title": "Geographic information -- Rules for application schema",
@@ -127,14 +119,6 @@ let respecConfig = {
       "title": "Geographic information -- Encoding",
       "date": "2011-10",
       "publisher": "International Organization for Standardization"
-    },
-    "NEN3610": {
-      id: "NEN 3610:2011 nl",
-      title: "NEN 3610:2011 nl - Basismodel geo-informatie - Termen, definities, relaties en algemene regels voor de uitwisseling van informatie over aan de aarde gerelateerde ruimtelijke objecten",
-      href: "https://www.geonovum.nl/geo-standaarden/nen-3610-basismodel-voor-informatiemodellen",
-      status: "Definitief",
-      publisher: "NEN",
-      date: "2011-03-01"
     },
     "GML": {
       "href": "https://www.opengeospatial.org/standards/gml",
