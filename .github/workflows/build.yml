@@ -6,12 +6,12 @@ env:
 jobs:
   build:
     name: Snapshot + Checks
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Bepaal branch voor terugschrijven
         id: commit-target
@@ -84,7 +84,7 @@ jobs:
           fi
 
       - name: Generate HTML snapshot
-        run: npx respec --localhost --src index.html --out snapshot.html
+        run: npx respec --localhost --disable-sandbox --timeout 120 --src index.html --out snapshot.html
 
       - name: Prepare HTML for validation
         run: |
@@ -95,7 +95,7 @@ jobs:
           fi
 
       - name: Validate HTML
-        uses: anishathalye/proof-html@a76b66427e600c6992e8937a741afffd2264a613 # v2.2.3
+        uses: anishathalye/proof-html@21330b795d4bca6c32743151abbdbda6d361ad9c # v2.2.4
         continue-on-error: true
         with:
           directory: ${{ env.CHECK_DIR }}/site
@@ -270,7 +270,12 @@ jobs:
             git add *.pdf
           fi
 
-          git commit -m "Snapshot + checks gegenereerd" || echo "No changes to commit"
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Snapshot + checks gegenereerd"
 
           TARGET_BRANCH="${{ steps.commit-target.outputs.target_branch }}"
           git push origin HEAD:"$TARGET_BRANCH"
