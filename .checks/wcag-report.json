@@ -1601,7 +1601,7 @@
       },
       {
         "target": [
-          ".tocline:nth-child(5) > .toc > .tocline:nth-child(9) > .tocxref"
+          ".tocline:nth-child(2) > .toc > .tocline:nth-child(5) > .toc > .tocline:nth-child(9) > .tocxref"
         ],
         "html": "<a class=\"tocxref\" href=\"#detail_attribute_IMGeluid_VerkeersgegevensWeg_aantalVerkeersgegevensWegNachtZwaar\"><bdi class=\"secno\">4.14.2.5.9 </bdi>Attribuutsoort details  <span class=\"formerLink\">Verkeersgegevens­Weg</span> aantal­Verkeersgegevens­Weg­Nacht­Zwaar</a>",
         "failureSummary": "Fix any of the following:\n  Target has insufficient size (517px by 18.6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.8px instead of at least 24px."
