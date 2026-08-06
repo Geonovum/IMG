@@ -18,22 +18,20 @@ voort uit verschillende wet- en regelgevingen. Deze zijn:
     De Omgevingswet bundelt en moderniseert in één wet alle wetten voor de
     leefomgeving. In 2024 treedt de wet in werking.
 
--   **Aanvullingsspoor geluid:** De nieuwe geluidregelgeving onder de Omgevingswet wordt vormgegeven via het Aanvullingsspoor geluid onder de Omgevingswet. Het Aanvullingsspoor     geluid bestaat uit een Aanvullingswet, een Aanvullingsbesluit, en een Aanvullingsregeling. De belangrijkste regels over de beheersing van geluid afkomstig van infrastructuur     (wegen en spoorwegen) en industrieterreinen staat in het Aanvullingsbesluit geluid Omgevingswet. Regels voor deze geluidbronnen zijn tot
-    dusver gesteld in en op grond van hoofdstuk 11 van de Wet milieubeheer voor
-    rijksinfrastructuur en de Wet geluidhinder voor decentrale infrastructuur en
-    industrieterreinen en voor geluidgevoelige objecten. De regels worden in
-    overeenstemming gebracht met de opbouw en de doelen van de Omgevingswet en
-    daarin geïntegreerd. Tegelijkertijd wordt de regelgeving voor het decentraal
-    niveau ingrijpend herzien. Doel daarvan is om ook voor decentrale wegen,
-    lokaal spoor en industrieterreinen te komen tot een effectiever en
-    transparanter systeem voor de beheersing van de geluidbelasting. Voor de
-    rijksinfrastructuur gelden al sinds 2012 geluidproductieplafonds. Deze
-    systematiek was onderdeel van het beleidsvernieuwingstraject “Swung-1”
-    (Samen Werken aan de Uitvoering van Nieuw Geluidbeleid). Met het
-    aanvullingsspoor geluid en de daarop te baseren uitvoeringsregelgeving wordt
-    het tweede en laatste deel van dit traject voltooid. Deze vernieuwing van de
-    geluidsystematiek is samen met IPO, UvW, VNG en VNO-NCW ontwikkeld onder de
-    noemer “Swung-2”.
+-   **Aanvullingsspoor geluid:** De nieuwe geluidregelgeving onder de Omgevingswet wordt vormgegeven via het Aanvullingsspoor geluid onder de Omgevingswet. Het Aanvullingsspoor     geluid bestaat uit een Aanvullingswet, een Aanvullingsbesluit, en een Aanvullingsregeling. De belangrijkste regels over de beheersing van geluid afkomstig van infrastructuur     (wegen en spoorwegen) en industrieterreinen staat in het Aanvullingsbesluit geluid Omgevingswet. Regels voor deze geluidbronnen zijn tot dusver gesteld in en op grond van hoofdstuk 11 van de Wet milieubeheer voor rijksinfrastructuur en de Wet geluidhinder voor decentrale infrastructuur en
+industrieterreinen en voor geluidgevoelige objecten. De regels worden in
+overeenstemming gebracht met de opbouw en de doelen van de Omgevingswet en
+daarin geïntegreerd. Tegelijkertijd wordt de regelgeving voor het decentraal
+niveau ingrijpend herzien. Doel daarvan is om ook voor decentrale wegen,
+lokaal spoor en industrieterreinen te komen tot een effectiever en
+transparanter systeem voor de beheersing van de geluidbelasting. Voor de
+rijksinfrastructuur gelden al sinds 2012 geluidproductieplafonds. Deze
+systematiek was onderdeel van het beleidsvernieuwingstraject “Swung-1”
+(Samen Werken aan de Uitvoering van Nieuw Geluidbeleid). Met het
+aanvullingsspoor geluid en de daarop te baseren uitvoeringsregelgeving wordt
+het tweede en laatste deel van dit traject voltooid. Deze vernieuwing van de
+geluidsystematiek is samen met IPO, UvW, VNG en VNO-NCW ontwikkeld onder de
+noemer “Swung-2”.
 
 -   **AREG:** De Aanvullingsregeling geluid Omgevingswet (AREG) bevat het Reken- en Meetvoorschrift Geluid (RMG). Dit RMG bevat een aantal noodzakelijke en belangrijke wijzigingen ten opzichte van het RMG 2012.
 
