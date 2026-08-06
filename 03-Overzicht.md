@@ -121,7 +121,7 @@ eigenschappen noemen we attribuutsoort. Relaties zijn in dit voorbeeld niet te
 zien maar worden in de diagrammen getoond als een pijl van het ene naar het
 andere objecttype.
 
-Zowel bij attribuutsoorten als bij relatiesoorten wordt aangegeven of dit
+Zowel bij attribuutsoorten als bij relatierollen wordt aangegeven of dit
 gegeven verplicht of optioneel is, en of het één of meer keer voor kan komen
 binnen een object, door middel van de *kardinaliteit*, in de vorm van een
 aanduiding tussen blokhaken.
@@ -140,7 +140,7 @@ Het IMGeluid bestaat zoals in de vorige paragraaf is uitgelegd, uit een aantal
 modules, waarvan sommige generieker (algemener) zijn en andere specifieker. Als
 een objecttype in een algemener deel van IMGeluid optioneel is verklaard, dan
 geldt dit ook in de specifiekere modules die gebruik maken van dit objecttype.
-Met andere woorden, de kardinaliteit die een attribuutsoort of relatiesoort in
+Met andere woorden, de kardinaliteit die een attribuutsoort of relatierol in
 een generieke module van IMGeluid heeft, geldt ook voor de meer specifieker modules.
 
 Dit objecttype heeft een attribuutsoort 'naam' met kardinaliteit '[0..1]', dat
