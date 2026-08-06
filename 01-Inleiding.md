@@ -53,7 +53,7 @@ Bijlage A geeft een overzicht van de wijzigingen in het informatiemodel ten opzi
 ### Diagram leeswijzer
 
 Hoe dit document kan worden gelezen wordt [in deze video verder toegelicht](https://www.youtube.com/watch?v=2UiJ38_QdRU). 
-Objecttypen worden binnen IMGeluid gecategoriseert als Administratief objecttype, Geluidberekening objecttype of Geluidgegevens objecttype. Deze categorisering wordt aangegeven in het diagram aan de hand van de kleuren in de legenda. 
+Objecttypen worden binnen IMGeluid gecategoriseerd als Administratief objecttype, Geluidberekening objecttype of Geluidgegevens objecttype. Deze categorisering wordt aangegeven in het diagram aan de hand van de kleuren in de legenda.
 
 | Categorie              | Omschrijving                                                                                                                                                             |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
