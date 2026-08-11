@@ -1482,6 +1482,13 @@
       },
       {
         "target": [
+          ".tocline:nth-child(2) > .toc > .tocline:nth-child(3) > .toc > .tocline:nth-child(4) > .tocxref"
+        ],
+        "html": "<a class=\"tocxref\" href=\"#detail_association_IMGeluid_BovenbouwgegevensSpoor_spoorstaafruwheidMiddelsMeting\"><bdi class=\"secno\">4.14.2.3.4 </bdi>Relatierol details  <span class=\"formerLink\">Bovenbouwgegevens­Spoor</span> spoorstaafruwheid­Middels­Meting</a>",
+        "failureSummary": "Fix any of the following:\n  Target has insufficient size (517px by 18.6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.8px instead of at least 24px."
+      },
+      {
+        "target": [
           ".tocline:nth-child(2) > .toc > .tocline:nth-child(4) > .toc > .tocline:nth-child(1) > .tocxref"
         ],
         "html": "<a class=\"tocxref\" href=\"#detail_attribute_IMGeluid_IntensiteitgegevensSpoor_intensiteit\"><bdi class=\"secno\">4.14.2.4.1 </bdi>Attribuutsoort details  <span class=\"formerLink\">Intensiteitgegevens­Spoor</span> intensiteit</a>",
