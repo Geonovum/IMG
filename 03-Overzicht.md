@@ -255,7 +255,7 @@ het Normaal Amsterdams Peil (NAP). Bij elk x,y-locatie is er maximaal één
 z-waarde beschikbaar. Dat betekent dat tweedimensionale (2D) geometrieën zich in
 een driedimensionale ruimte (x,y,z) bevinden maar dat de geometrieën
 zichzelf of elkaar niet mogen overlappen in de horizontale projectie. Dit
-is een 2.5D geometrie (zie [Handreiking Geometrie](https://docs.geostandaarden.nl/nen3610/gimeg/). Als de hoogte niet is opgenomen, spreken we van een 2D-geometrie.
+is een 2.5D geometrie (zie [Handreiking Geometrie](https://docs.geostandaarden.nl/nen3610/gimeg/)). Als de hoogte niet is opgenomen, spreken we van een 2D-geometrie.
 
 Hoogte wordt in een 2.5D geometrie opgenomen als derde coördinaat, de 'z'-coordinaat.
 In hoofdstuk 4 is bij elk objecttype dat een
