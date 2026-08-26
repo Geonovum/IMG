@@ -1,17 +1,27 @@
 # Wijzigingen in het Informatiemodel Geluid
 
-Hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden na versie 1.2 van 15 november 2021 voor versies 2.0, 2.1, 3.0, 3.1. en 3.1.1.  
+Hieronder staan de wijzigingen die in deze versie hebben plaatsgevonden vanaf versie 1.2 van 15 november 2021 voor versies 2.0, 2.1, 3.0, 3.1, 3.1.1. en 4.0.0. 
 Er worden alleen wezenlijke veranderingen genoemd die invloed hebben op betrokkenen als software-ontwikkelaars. Dus bv geen correcties op typefouten, spelling of leesbaarheid.
 
 Afwegingen en onderbouwing die ten grondslag liggen aan de inhoud van deze catalogus zijn te vinden in de [Issues](https://github.com/Geonovum/IMG/issues/) sectie van de Github repository.
 
 ## Wijzigingen doorgevoerd in versie 4.0.0
 
-| **nummer** | **Github issue**                                  | **Soort wijziging** | **Wijziging**                                                                            |
-| ---------- | ------------------------------------------------- | ------------------- | ---------------------------------------------------------------------------------------- |
-| x          | [217](https://github.com/Geonovum/IMG/issues/217) | Diagram aangepast   | De tagged values van Geluidgegevenscollectie.herkomstCollectie gezet op 'Gegevensgroep'. |
-| x          | [212](https://github.com/Geonovum/IMG/issues/212) |                     | Overstappen naar NEN3610:2022                                                            |
-|            |                                                   |                     |                                                                                          |
+| **nummer** | **Github issue**                                  | **Soort wijziging**         | **Wijziging**                                                                                        |
+| ---------- | ------------------------------------------------- | --------------------------- | ---------------------------------------------------------------------------------------------------- |
+| 1          | [212](https://github.com/Geonovum/IMG/issues/212) | Tekstuele wijzigingen       | Overstappen naar NEN3610:2022 met tabel in paragraaf 3.6                                             |
+| 2          | [214](https://github.com/Geonovum/IMG/issues/214) | Fout uit xsd                | Een xsd-fout t.a.v. verplichte velden waar ten onrechte "minOccurs=0" stond is opgelost              |
+| 3          | [217](https://github.com/Geonovum/IMG/issues/217) | Diagram aangepast           | De tagged values van Geluidgegevenscollectie.herkomstCollectie gezet op 'Gegevensgroep'.             |
+| 4          | [218](https://github.com/Geonovum/IMG/issues/218) | Definitie aangepast         | De definitie van attribuut Geluidproductieplafondobject.vaststellingVanRechtswege is aangepast.      |
+| 5          | [219](https://github.com/Geonovum/IMG/issues/219) | Nieuwe regel                | Een nieuwe regel bij Geluidproductieplafondobject                                                    |
+| 6          | [221](https://github.com/Geonovum/IMG/issues/221) | Nieuwe relatierol           | Verplichte relatie vanuit Basisgeluidemissieobject opgenoemen naar Documentverwijzing met als relatierol "+verslagBGE" |
+| 7          | [223](https://github.com/Geonovum/IMG/issues/223) | Diagram aangepast           | Object GeluidsschermdeelMetdiffractor uit het diagram voor GPP-Industrie gehaald.                    |
+| 8          | [224](https://github.com/Geonovum/IMG/issues/224) | Attribuutkenmerken aangepast| Patronen en Meeteenheden zijn aangepast en onnodige tags zijn verwijderd zonder xsd wijziging.  |
+| 9          | [233](https://github.com/Geonovum/IMG/issues/233) | Tekstuele wijzigingen       | Op alle plekken waar "relatiesoort" gebruikt wordt, is dit vervangen door "relatierol".              |
+| 10         | [235](https://github.com/Geonovum/IMG/issues/235) | Waardelijsten extern        | Waardelijsten en begrippen ook gepubliceerd in een catalogus volgens de NL-SBB standaard.            |
+| 11         | [239](https://github.com/Geonovum/IMG/issues/239) | Tekstuele wijzigingen       | Overal waar 3D stond is dit vervangen door 2.5D                                                      |
+| 12         | [240](https://github.com/Geonovum/IMG/issues/240) | Definities aangepast        | De definities voor object Geluidcontour en zijn attributen contourLijn en contourVlak zijn aangepast.|
+| 13         | [242](https://github.com/Geonovum/IMG/issues/242) | Objectkenmerk aangepast     | In het kenmerk Polpulatie van de objecten OptrektoeslagKruispunt en Geluidcontour is een foute default tekst verwijderd.|
 
 ## Wijzigingen doorgevoerd in versie 3.1.1
 
