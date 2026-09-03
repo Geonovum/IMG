@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:img="http://www.geluidgegevens.nl/IMGeluid/3.1"
+<xs:schema xmlns:img="http://www.geluidgegevens.nl/IMGeluid/4.0"
            xmlns:gml="http://www.opengis.net/gml/3.2"
            xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://www.geluidgegevens.nl/IMGeluid/3.1"
+           targetNamespace="http://www.geluidgegevens.nl/IMGeluid/4.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="3.1-0">
+           version="4.0.0">
    <xs:annotation>
-      <xs:appinfo source="http://www.imvertor.org/model-info/project">MIMLM</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/model-info/application">IMGeluid</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/model-info/release">20230920</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/model-info/version">3.1</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/model-info/phase">0</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/model-info/uri">http://www.geluidgegevens.nl/IMGeluid</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/model-info/generated">2026-03-24T12:44:05Z</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/file-location">IMGeluid/unknown/v20230920/IMGeluid_IMGeluid_v3_1.xsd</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generated">March 24, 2026 at 12:44:05</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generated">September 3, 2026 at 12:37:55</xs:appinfo>
       <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generator">4.5.0</xs:appinfo>
-      <xs:documentation source="http://www.imvertor.org/schema-info/file-location">IMGeluid/unknown/v20230920/IMGeluid_IMGeluid_v3_1.xsd</xs:documentation>
       <xs:documentation source="http://www.imvertor.org/schema-info/conversion">
         This schema is based on an UML specification, which is transformed by the Imvertor software. Imvertor modules are in the public domain, see http://www.imvertor.org.
+
+        Schemawijzigingen in 4.0.0:
+        - Basisgeluidemissieobject.verslagBGE toegevoegd (https://github.com/Geonovum/IMG/issues/221)
+        - minOccurs verwijderd in NEN3610IDPropertyType" (https://github.com/Geonovum/IMG/issues/214)
+        - minOccurs verwijderd in WaardePerOctaafbandPropertyType (https://github.com/Geonovum/IMG/issues/214)
+        - minOccurs verwijderd in FactorPerOctaafbandPropertyType (https://github.com/Geonovum/IMG/issues/214)
+        - minOccurs verwijderd in BedrijfsduurcorrectieWaardePropertyType (https://github.com/Geonovum/IMG/issues/214)
+        - minOccurs verwijderd in UitstralingsrichtingwaardePropertyType (https://github.com/Geonovum/IMG/issues/214)
+        - Verschillende definities aangepast. Dit heeft geen impact op de werking van het XSD.
     </xs:documentation>
    </xs:annotation>
    <xs:annotation>
@@ -29,7 +29,7 @@
       </xs:appinfo>
    </xs:annotation>
    <xs:import namespace="http://www.opengis.net/gml/3.2"
-              schemaLocation="../../../gml/3.2.2/gml.xsd"/>
+              schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
    <xs:element name="Geluidgegevenscollectie"
                type="img:GeluidgegevenscollectieType"
                substitutionGroup="gml:AbstractFeature">
@@ -203,7 +203,7 @@ Explanation: Het geluidproductieplafondobject is een verzamelobject dat de in ee
             <xs:sequence>
                <xs:element name="geometrieReferentiepunt" type="gml:PointPropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De als een 3D punt gemodelleerde meetkundige representatie van de locatie, van een door het bevoegd gezag vastgesteld geluidproductieplafond, op vaste afstand t.o.v. van een rijksweg, een provinciale weg, een spoorbaan of een industrieterrein.</xs:documentation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De als een 2.5D punt gemodelleerde meetkundige representatie van de locatie, van een door het bevoegd gezag vastgesteld geluidproductieplafond, op vaste afstand t.o.v. van een rijksweg, een provinciale weg, een spoorbaan of een industrieterrein.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="hoogteReferentiepunt" minOccurs="0">
@@ -271,7 +271,7 @@ Explanation: Een vrijstelling geldt in situaties waarin een trace- of project-be
                </xs:element>
                <xs:element name="vaststellingVanRechtswege" type="xs:boolean">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicatie of de initiële vastelling van het geluidproductieplafond van rechtswege is.</xs:documentation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicatie of de initiële vastelling van het geluidproductieplafond van rechtswege is. Onder de Wet milieubeheer zijn geluidproductieplafonds bij rijkswegen en hoofdspoorwegen van rechtswege tot stand gekomen (artikel 11.45 Wm) zonder een specifiek bestuursrechtelijk besluit. Wanneer deze gpp’s daarna niet bij besluit gewijzigd zijn, kan bij ‘Documentverwijzing’ geen link naar een besluit worden opgegeven. In deze gevallen wordt bij ‘vaststellingVanRechtswege’ ‘ja’ ingevuld. Wanneer gpp’s later tot stand zijn gekomen of zijn gewijzigd, moest een besluit genomen worden en moet voor ‘vaststellingVanRechtswege’ ‘nee’ worden ingevuld. Voor alle gpp’s die onder de Omgevingswet tot stand komen, moet altijd een specifiek besluit genomen worden en moet dus voor ‘vaststellingVanRechtswege’ ‘nee’ worden ingevuld.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element maxOccurs="2"
@@ -407,6 +407,9 @@ Explanation: De gemiddelde geluidemissie wordt gebruikt om de basisgeluidemissie
                      </xs:restriction>
                   </xs:simpleType>
                </xs:element>
+               <xs:element name="verslagBGE"
+                           nillable="false"
+                           type="img:DocumentverwijzingPropertyType"/>
                <xs:element name="metadataBerekening"
                            nillable="false"
                            type="img:GeluidberekeningobjectPropertyType"/>
@@ -748,7 +751,7 @@ Explanation: Dit object wordt zowel voor binnen het domein GPP-industrie als GPP
             <xs:sequence>
                <xs:element name="geometrie" type="gml:MultiPointPropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3D-punt gemodelleerde meetkundige representatie van een geluidbronindustrie.</xs:documentation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2.5D-punt gemodelleerde meetkundige representatie van een geluidbronindustrie.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="reflectiepuntHoogte" minOccurs="0">
@@ -865,7 +868,7 @@ Explanation: Omschrijving toevoegen is optioneel. Alleen toevoegen wanneer deze 
                </xs:element>
                <xs:element name="geometrie" type="gml:CurvePropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3D-lijn gemodelleerde meetkundige representatie van een lijnbron of een mobielebron, die afkomstig is uit een softwarepakket.</xs:documentation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2.5D-lijn gemodelleerde meetkundige representatie van een lijnbron of een mobielebron, die afkomstig is uit een softwarepakket.</xs:documentation>
                   </xs:annotation>
                </xs:element>
             </xs:sequence>
@@ -907,7 +910,7 @@ Explanation: Omschrijving toevoegen is optioneel. Alleen toevoegen wanneer deze 
                </xs:element>
                <xs:element name="geometrie" type="gml:SurfacePropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3D-vlak gemodelleerde meetkundige representatie van een vlakbron die afkomstig is uit een softwarepakket.</xs:documentation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2.5D-vlak gemodelleerde meetkundige representatie van een vlakbron die afkomstig is uit een softwarepakket.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="negeerOverdrachtsobjecten" type="xs:boolean">
@@ -937,7 +940,7 @@ Explanation: Deze optie bestaat omdat het bronvermogen per m2 vaak gegeven is in
             <xs:sequence>
                <xs:element name="geluidbronregisterlijn" type="gml:CurvePropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een 3D-Lijn gelegen boven een wegdeel die fungeert als meetkundige representatie van de geluidbron.
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een 2.5D-Lijn gelegen boven een wegdeel die fungeert als meetkundige representatie van de geluidbron.
 Explanation: Het bevoegd gezag bepaalt zelf de locatie en de hoeveelheid geluidbronregisterlijnen die het nodig acht voor de bepaling van het geluidproductieplafond en de monitoring daarvan. Het begin- en eindpunt van de lijn wordt bepaald door het punt in de ruimte waarop één van de akoestische eigenschappen van de geluidbron wijzigt.</xs:documentation>
                   </xs:annotation>
                </xs:element>
@@ -989,7 +992,7 @@ Explanation: Een spoorbaan in het informatiemodel is opgebouwd uit allemaal afzo
             <xs:sequence>
                <xs:element name="geluidbronregisterlijn" type="gml:CurvePropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Meetkundige representatie van een deel van een spoorweg, gemodelleerd als een 3D-lijn, waarover de geluidemissie van spoorvoertuiggeluid min of meer constant kan worden verondersteld, gelet op de snelheden, intensiteiten, bovenbouwconstructie en de baangesteldheid.
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Meetkundige representatie van een deel van een spoorweg, gemodelleerd als een 2.5D-lijn, waarover de geluidemissie van spoorvoertuiggeluid min of meer constant kan worden verondersteld, gelet op de snelheden, intensiteiten, bovenbouwconstructie en de baangesteldheid.
 Explanation: Dit is over het algemeen de hartlijn van de spoorbaan. Dit wordt ook wel de bronregisterlijn genoemd. De Z-waarde voor de hoogte van het spoor is de bovenkant van de spoorstaaf (BS). Zie ook fig 33 uit de meet en rekenvoorschriften: fig33_dwarsdoorsnee_talud)</xs:documentation>
                   </xs:annotation>
                </xs:element>
@@ -1041,8 +1044,8 @@ Explanation: Dit is een repeterende gegevensgroep; een Spoordeel kan meerdere ge
                type="img:WegdeelBGEType"
                substitutionGroup="img:Geluidemissieobject">
       <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Kleinste functioneel onafhankelijk stukje van een NEN 3610 Weg waarover de geluidemissie van wegverkeer constant kan worden verondersteld, gelet op het type wegdek, gemiddelde snelheid en verkeersintensiteiten.
-Explanation: Dit een op akoestische toepassingen toegespitste definitie van een BGT-wegdeel.</xs:documentation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Kleinste functioneel onafhankelijk stukje van een NEN 3610 Wegverkeerruimte waarover de geluidemissie van wegverkeer constant kan worden verondersteld, gelet op het type wegdek, gemiddelde snelheid en verkeersintensiteiten.
+Explanation: Dit is een op akoestische toepassingen toegespitste definitie van een BGT-wegdeel.</xs:documentation>
       </xs:annotation>
    </xs:element>
    <xs:complexType name="WegdeelBGEType">
@@ -1080,7 +1083,7 @@ Explanation: De etmaalperiode (ook wel: dagdeel) is het gedeelte van een etmaal 
                type="img:SpoordeelBGEType"
                substitutionGroup="img:Geluidemissieobject">
       <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Kleinste functioneel onafhankelijk stukje van een NEN 3610 Weg met gelijkblijvende, homogene akoestische eigenschappen en relaties en primair bedoeld voor het representeren van akoestische eigenschappen van lokaal spoorverkeer, zoals een metro, tram of lightrail.
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Kleinste functioneel onafhankelijk stukje van een NEN 3610 Spoorverkeerruimte met gelijkblijvende, homogene akoestische eigenschappen en relaties en primair bedoeld voor het representeren van akoestische eigenschappen van lokaal spoorverkeer, zoals een metro, tram of lightrail.
 Explanation: Dit een op akoestische toepassingen toegespitste definitie van een BGT-wegdeel.</xs:documentation>
       </xs:annotation>
    </xs:element>
@@ -1138,7 +1141,7 @@ Explanation: Voor windturbines worden alleen de brongegevens opgeslagen in de ce
             <xs:sequence>
                <xs:element name="geometrie" type="gml:PointPropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3D-punt gemodelleerde meetkundige representatie van de wieken-as van de windturbine.</xs:documentation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2.5D-punt gemodelleerde meetkundige representatie van de wieken-as van de windturbine.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="turbineHoogte">
@@ -1231,13 +1234,13 @@ Explanation: Dient voor afscherming en heeft een reflectiefactor die aan de twee
             <xs:sequence>
                <xs:element name="bovenkantScherm" type="gml:CurvePropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3D-lijn gemodelleerde meetkundige representatie van de top van het afschermende object.
-Explanation: De ligging wordt opgenomen als 3D GM_Curve. De z-coördinaat geeft de top van het geluidschermdeel aan. De x- en y-coördinaten geven een locatie recht boven de voet van het geluidschermdeel aan. Dit betekent dat bij een hellend scherm niet de bovenkant van het scherm wordt gevolg, maar een geprojecteerde lijn die recht boven de voet van het scherm op de hoogte van de bovenkant ligt. Voor deze modellering is gekozen omdat in een aparte attribuutsoort de hellingshoek van het geluidschermdeel wordt opgenomen, waarbij de wens is om denkbeeldige draai-as ten opzichte waarop de hellingshoek gegevens wordt, te kunnen relateren aan de onderkant van het geluidschermdeel (en niet aan de bovenkant).</xs:documentation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2.5D-lijn gemodelleerde meetkundige representatie van de top van het afschermende object.
+Explanation: De ligging wordt opgenomen als 2.5D GM_Curve. De z-coördinaat geeft de top van het geluidschermdeel aan. De x- en y-coördinaten geven een locatie recht boven de voet van het geluidschermdeel aan. Dit betekent dat bij een hellend scherm niet de bovenkant van het scherm wordt gevolg, maar een geprojecteerde lijn die recht boven de voet van het scherm op de hoogte van de bovenkant ligt. Voor deze modellering is gekozen omdat in een aparte attribuutsoort de hellingshoek van het geluidschermdeel wordt opgenomen, waarbij de wens is om denkbeeldige draai-as ten opzichte waarop de hellingshoek gegevens wordt, te kunnen relateren aan de onderkant van het geluidschermdeel (en niet aan de bovenkant).</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="onderkantScherm" type="gml:CurvePropertyType" minOccurs="0">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3D-lijn gemodelleerde meetkundige representatie van de voet van het afschermende object.
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2.5D-lijn gemodelleerde meetkundige representatie van de voet van het afschermende object.
 Explanation: Uit het verschil van de z-coördinaten tussen bovenkantScherm en onderkantScherm is de hoogte van het scherm t.o.v. de voet te bepalen.</xs:documentation>
                   </xs:annotation>
                </xs:element>
@@ -1301,13 +1304,13 @@ Explanation: Dient voor afscherming en heeft een reflectiefactor die aan de twee
             <xs:sequence>
                <xs:element name="bovenkantScherm" type="gml:CurvePropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3D-lijn gemodelleerde meetkundige representatie van de top van het afschermende object.
-Explanation: De ligging wordt opgenomen als 3D GM_Curve. De z-coördinaat geeft de top van het geluidschermdeel aan. De x- en y-coördinaten geven een locatie recht boven de voet van het geluidschermdeel aan. Dit betekent dat bij een hellend scherm niet de bovenkant van het scherm wordt gevolg, maar een geprojecteerde lijn die recht boven de voet van het scherm op de hoogte van de bovenkant ligt. Voor deze modellering is gekozen omdat in een aparte attribuutsoort de hellingshoek van het geluidschermdeel wordt opgenomen, waarbij de wens is om denkbeeldige draai-as ten opzichte waarop de hellingshoek gegevens wordt, te kunnen relateren aan de onderkant van het geluidschermdeel (en niet aan de bovenkant).</xs:documentation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2.5D-lijn gemodelleerde meetkundige representatie van de top van het afschermende object.
+Explanation: De ligging wordt opgenomen als 2.5D GM_Curve. De z-coördinaat geeft de top van het geluidschermdeel aan. De x- en y-coördinaten geven een locatie recht boven de voet van het geluidschermdeel aan. Dit betekent dat bij een hellend scherm niet de bovenkant van het scherm wordt gevolg, maar een geprojecteerde lijn die recht boven de voet van het scherm op de hoogte van de bovenkant ligt. Voor deze modellering is gekozen omdat in een aparte attribuutsoort de hellingshoek van het geluidschermdeel wordt opgenomen, waarbij de wens is om denkbeeldige draai-as ten opzichte waarop de hellingshoek gegevens wordt, te kunnen relateren aan de onderkant van het geluidschermdeel (en niet aan de bovenkant).</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="onderkantScherm" type="gml:CurvePropertyType" minOccurs="0">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3D-lijn gemodelleerde meetkundige representatie van de voet van het afschermende object.
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2.5D-lijn gemodelleerde meetkundige representatie van de voet van het afschermende object.
 Explanation: Uit het verschil van de z-coördinaten tussen bovenkantScherm en onderkantScherm is de hoogte van het scherm t.o.v. de voet te bepalen.</xs:documentation>
                   </xs:annotation>
                </xs:element>
@@ -1378,7 +1381,7 @@ Explanation: Het object Hoogtelijn is optioneel. Het is niet verplicht om hoogte
             <xs:sequence>
                <xs:element name="geometrie" type="gml:CurvePropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De als een 3D-lijn gemodelleerde meetkundige representatie van een hoogtelijn.</xs:documentation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De als een 2.5D-lijn gemodelleerde meetkundige representatie van een hoogtelijn.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="hoogtelijntype"
@@ -1449,13 +1452,13 @@ Explanation: Een Bouwwerk kan bij akoestisch onderzoek voor industrieterreinen w
             <xs:sequence>
                <xs:element name="geometrie" type="gml:SurfacePropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3D-vlak gemodelleerde meetkundige horizontaal platte representatie van het dak van een bouwwerk.
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2.5D-vlak gemodelleerde meetkundige horizontaal platte representatie van het dak van een bouwwerk.
 Explanation: De z-coördinaat representeert een hoogte die akoestische representatief is voor dat Bouwwerk. Bij het modelleren van een complex bouwwerk mogen meerdere Bouwwerk objecten worden gebruikt.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="maaiveld" type="gml:SurfacePropertyType" minOccurs="0">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: 3D-geometrie die evenveel punten bevat als het attribuut 'geometrie' met dezelde x- en y- coördinaten. De z-coördinaat bevat de maaiveldhoogte. Deze geometrie bevat dus een projectie van het Bouwwerk op het maaiveld.</xs:documentation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: 2.5D-geometrie die evenveel punten bevat als het attribuut 'geometrie' met dezelde x- en y- coördinaten. De z-coördinaat bevat de maaiveldhoogte. Deze geometrie bevat dus een projectie van het Bouwwerk op het maaiveld.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="reflectiefactor" type="img:FactorPerOctaafbandPropertyType">
@@ -1496,12 +1499,12 @@ Explanation: Wanneer een gebouw een cilinder is worden andere absorptiewaardes t
             <xs:sequence>
                <xs:element name="geometrie" type="gml:SurfacePropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3D-vlak gemodelleerde meetkundige representatie van een procesinstallatiegebied.</xs:documentation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2.5D-vlak gemodelleerde meetkundige representatie van een procesinstallatiegebied.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="maaiveld" type="gml:SurfacePropertyType" minOccurs="0">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: 3D-geometrie die evenveel punten bevat als het attribuut 'geometrie' met dezelde x- en y- coördinaten. De z-coördinaat bevat de maaiveldhoogte. Deze geometrie bevat dus een projectie van het Procesinstallatiegebeid op het maaiveld.
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: 2.5D-geometrie die evenveel punten bevat als het attribuut 'geometrie' met dezelde x- en y- coördinaten. De z-coördinaat bevat de maaiveldhoogte. Deze geometrie bevat dus een projectie van het Procesinstallatiegebeid op het maaiveld.
 Explanation: Uit het verschil van de z-coördinaten tussen de geometrie van een Procesinstallatiegebied en de z-coördinaten in maaveld is de hoogte van een Procesinstallatiegebied t.o.v. het maaiveld te bepalen,</xs:documentation>
                   </xs:annotation>
                </xs:element>
@@ -1543,13 +1546,13 @@ Explanation: Uit het verschil van de z-coördinaten tussen de geometrie van een 
             <xs:sequence>
                <xs:element name="geometrie" type="gml:SurfacePropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3D-vlak gemodelleerde meetkundige representatie van een vegetatiegebied.
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2.5D-vlak gemodelleerde meetkundige representatie van een vegetatiegebied.
 Explanation: Voor het modelleren van een vegetatiegebied met verschillende eigenschappen mogen meerdere objecten worden gebruikt.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="maaiveld" type="gml:SurfacePropertyType" minOccurs="0">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: 3D-geometrie die evenveel punten bevat als het attribuut 'geometrie' met dezelde x- en y- coördinaten. De z-coördinaat bevat de maaiveldhoogte. Deze geometrie bevat dus een projectie van het Vegetatiegebied op het maaiveld.
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: 2.5D-geometrie die evenveel punten bevat als het attribuut 'geometrie' met dezelde x- en y- coördinaten. De z-coördinaat bevat de maaiveldhoogte. Deze geometrie bevat dus een projectie van het Vegetatiegebied op het maaiveld.
 Explanation: Uit het verschil van de z-coördinaten tussen de geometrie van een Vegetatiegebied en onderkantVegetatiegebied is de hoogte van een Vegetatiegebied t.o.v. het maaiveld te bepalen,</xs:documentation>
                   </xs:annotation>
                </xs:element>
@@ -1581,7 +1584,7 @@ Explanation: Een diffractor is een betonnen constructie met daarin holtes die pa
             <xs:sequence>
                <xs:element name="geometrie" type="gml:CurvePropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3d-lijn gemodelleerde meetkundige representatie van de middellijn van een diffractor of geluidgoot.</xs:documentation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2.5D-lijn gemodelleerde meetkundige representatie van de middellijn van een diffractor of geluidgoot.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="diffractoreffect" type="img:WaardePerOctaafbandPropertyType">
@@ -1591,7 +1594,7 @@ Explanation: Een diffractor is een betonnen constructie met daarin holtes die pa
                </xs:element>
                <xs:element name="breedte">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De breedte in meters van de diffractor, gezien vanuit de geluidbron (weg/spoor)kortste afmeting van een geluidbeperkende voorziening.
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De breedte in meters van de diffractor, gezien vanuit de geluidbron (weg/spoor) kortste afmeting van een geluidbeperkende voorziening.
 Explanation: Deze waarde wordt alleen bij de berekening met diffractor gebruikt. De gebruiker dient het midden van de diffractor te modelleren. De bodem onder een diffractor wordt in de berekening altijd als hard verondersteld! Eventuele andere bodemfactoren worden dus ter plekke van de diffractor niet gebruikt.</xs:documentation>
                   </xs:annotation>
                   <xs:simpleType>
@@ -1629,7 +1632,7 @@ Explanation: Het object zit niet vast aan de grond. Hiermee is het mogelijk een 
             <xs:sequence>
                <xs:element name="geometrie" type="gml:SurfacePropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3D of 2D vlak gemodelleerde meetkundige representatie van een kunstwerk.
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2.5D of 2D vlak gemodelleerde meetkundige representatie van een kunstwerk.
 Explanation: Hierbij gaat het specifiek om een brug, een overkapping, een tunnelbak of een tunnel.</xs:documentation>
                   </xs:annotation>
                </xs:element>
@@ -1879,7 +1882,7 @@ Explanation: Voorbeelden zijn: kruisingen, drempels of minirotondes.</xs:documen
                type="img:GeluidcontourType"
                substitutionGroup="gml:AbstractFeature">
       <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een lijn die punten met een gelijke geluidbelasting verbindt.
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een lijn of vlak die of dat een bepaalde geluidbelasting representeert in hele decibellen.
 Explanation: Per 1 dB moet een contour worden berekend. Bij luchtvaart is het bereik van 48 dB Lden tot 70 dB.</xs:documentation>
       </xs:annotation>
    </xs:element>
@@ -1894,13 +1897,13 @@ Explanation: Per 1 dB moet een contour worden berekend. Bij luchtvaart is het be
                </xs:element>
                <xs:element name="contourLijn" type="gml:MultiCurvePropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2D-Lijn gemodelleerde meetkundige representatie van een geluidcontour.
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2D-Lijn gemodelleerde meetkundige representatie van een geluidcontour. De contourlijnen liggen precies op het hele getal.
 Explanation: 2D geometrie van een geluidcontour.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="contourVlak" type="gml:MultiSurfacePropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: 2D vlakgeometrie van een geluidcontour boven Nederlands grondgebied.</xs:documentation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: 2D vlakgeometrie van een geluidcontour boven Nederlands grondgebied. Een contourvlak wordt begrensd door de 1 dB-contourlijnen, en de waarde van een contourvlak is gelijk aan de laagste waarde van de twee aanliggende contourlijnen.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="geluidniveau">
@@ -2305,7 +2308,7 @@ Explanation: De zijkant van een fly-over is een Geluidoverdrachtobject en lijkt 
             <xs:sequence>
                <xs:element name="geometrie" type="gml:CurvePropertyType">
                   <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 3d-lijn gemodelleerde meetkundige representatie van de onderkant van een Flyoverzijkant.</xs:documentation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Als 2.5D-lijn gemodelleerde meetkundige representatie van de onderkant van een Flyoverzijkant.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="reflectiefactorLinks"
@@ -2465,7 +2468,7 @@ Explanation: Wanneer er gesproken wordt over links en rechts, dan is dit relatie
    </xs:complexType>
    <xs:element name="NEN3610ID" type="img:NEN3610IDType">
       <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: identificatiegegevens voor de universeel unieke identificatie van een object
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: identificatiegegevens voor de universeel unieke identificatie van een object. Deze identificatie is volgens de NEN 3610:2011 standaard.
 Explanation: De combinatie van namespace van een registratie, lokale identificatie en versie informatie maken een object uniek identificeerbaar. Met de informatie van deze klasse kan daardoor met zekerheid worden verwezen naar het geïdentificeerde object.</xs:documentation>
       </xs:annotation>
    </xs:element>
@@ -3685,7 +3688,7 @@ Explanation: Een geospoortak kan in SoundBase verschillende bovenbouwcodes hebbe
          </xs:enumeration>
          <xs:enumeration value="12">
             <xs:annotation>
-               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: baan met HSL ï¿½ Rhedaspoor en raildempers (index bb = 12)</xs:documentation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: baan met HSL-Rhedaspoor en raildempers (index bb = 12)</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
          <xs:enumeration value="13">
