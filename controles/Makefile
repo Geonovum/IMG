@@ -1,5 +1,5 @@
-XSDFILE = ../xsd/3.1.0/IMGeluid-3.1.0-rc1.xsd 
-MIMFILE = ../mim/IMGeluid.xml
+XSDFILE = ../xsd/4.0.0/IMGeluid-4.0.0-rc1.xsd
+MIMFILE = ../mim-ex/IMGeluid.xml
 
 all: mimreport.html xsdreport.html
 

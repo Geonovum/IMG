@@ -2,8 +2,8 @@
 <!-- LET OP Dit is een testbestand.
  Dit bestand moet 5 validatiefouten geven voor missende eigenschappen.-->
 <gml:FeatureCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.opengis.net/gml/3.2 https://register.geostandaarden.nl/gmlapplicatieschema/img/3.1.1/IMGeluid-3.1.1-rc1.xsd"
- xmlns:img="http://www.geluidgegevens.nl/IMGeluid/3.1" xmlns:gco="http://www.isotc211.org/2005/gco"
+ xsi:schemaLocation="http://www.opengis.net/gml/3.2 ../xsd/4.0.0/IMGeluid-4.0.0-rc1.xsd"
+ xmlns:img="http://www.geluidgegevens.nl/IMGeluid/4.0" xmlns:gco="http://www.isotc211.org/2005/gco"
  xmlns:hfp="http://www.w3.org/2001/XMLSchema-hasFacetAndProperty"
  xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gml="http://www.opengis.net/gml/3.2"
  xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0" xmlns:gsr="http://www.isotc211.org/2005/gsr"
