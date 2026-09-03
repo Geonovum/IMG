@@ -14,14 +14,14 @@ Afwegingen en onderbouwing die ten grondslag liggen aan de inhoud van deze catal
 | 3          | [217](https://github.com/Geonovum/IMG/issues/217) | Diagram aangepast           | De tagged values van Geluidgegevenscollectie.herkomstCollectie gezet op 'Gegevensgroep'.             |
 | 4          | [218](https://github.com/Geonovum/IMG/issues/218) | Definitie aangepast         | De definitie van attribuut Geluidproductieplafondobject.vaststellingVanRechtswege is aangepast.      |
 | 5          | [219](https://github.com/Geonovum/IMG/issues/219) | Nieuwe regel                | Een nieuwe regel bij Geluidproductieplafondobject                                                    |
-| 6          | [221](https://github.com/Geonovum/IMG/issues/221) | Nieuwe relatierol           | Verplichte relatie vanuit Basisgeluidemissieobject opgenoemen naar Documentverwijzing met als relatierol "+verslagBGE" |
+| 6          | [221](https://github.com/Geonovum/IMG/issues/221) | Nieuwe relatierol           | Verplichte relatie vanuit Basisgeluidemissieobject opgenomen naar Documentverwijzing met als relatierol "+verslagBGE" |
 | 7          | [223](https://github.com/Geonovum/IMG/issues/223) | Diagram aangepast           | Object GeluidsschermdeelMetdiffractor uit het diagram voor GPP-Industrie gehaald.                    |
 | 8          | [224](https://github.com/Geonovum/IMG/issues/224) | Attribuutkenmerken aangepast| Patronen en Meeteenheden zijn aangepast en onnodige tags zijn verwijderd zonder xsd wijziging.  |
 | 9          | [233](https://github.com/Geonovum/IMG/issues/233) | Tekstuele wijzigingen       | Op alle plekken waar "relatiesoort" gebruikt wordt, is dit vervangen door "relatierol".              |
 | 10         | [235](https://github.com/Geonovum/IMG/issues/235) | Waardelijsten extern        | Waardelijsten en begrippen ook gepubliceerd in een catalogus volgens de NL-SBB standaard.            |
 | 11         | [239](https://github.com/Geonovum/IMG/issues/239) | Tekstuele wijzigingen       | Overal waar 3D stond is dit vervangen door 2.5D                                                      |
 | 12         | [240](https://github.com/Geonovum/IMG/issues/240) | Definities aangepast        | De definities voor object Geluidcontour en zijn attributen contourLijn en contourVlak zijn aangepast.|
-| 13         | [242](https://github.com/Geonovum/IMG/issues/242) | Objectkenmerk aangepast     | In het kenmerk Polpulatie van de objecten OptrektoeslagKruispunt en Geluidcontour is een foute default tekst verwijderd.|
+| 13         | [242](https://github.com/Geonovum/IMG/issues/242) | Objectkenmerk aangepast     | In het kenmerk Populatie van de objecten OptrektoeslagKruispunt en Geluidcontour is een foute default tekst verwijderd.|
 
 ## Wijzigingen doorgevoerd in versie 3.1.1
 
