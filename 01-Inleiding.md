@@ -48,7 +48,7 @@ informatie- en data-uitwisselingsproces. In dit hoofdstuk zijn ook de normatieve
 referenties opgenomen en de lijst met algemene termen, definities en
 afkortingen. In hoofdstuk 4 is het Informatiemodel Geluid gespecificeerd in UML. In paragraaf 4.1 tot en met 4.7 staan  alle diagrammen. Door op objecttypen in de diagrammen te klikken, kan meer gedetailleerde informatie in tabelvorm worden weergegeven. Hoofdstuk 5 bevat de inhoud van alle bij de gegevensuitwisseling gebruikte waardenlijsten.
 
-Bijlage A geeft een overzicht van de wijzigingen in het informatiemodel ten opzichte van de vorige versie. Bijlage B bevat een bibliografe.
+Bijlage A geeft een overzicht van de wijzigingen in het informatiemodel ten opzichte van de vorige versie. Bijlage B gaat over conformiteit. Bijlage C bevat referenties.
 
 ### Diagram leeswijzer
 

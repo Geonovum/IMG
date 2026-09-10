@@ -364,12 +364,14 @@ De mapping is als volgt:
 
 Veel van de klassen in IMGeluid zijn afgeleid van het semantisch model zoals beschreven in paragraaf 8.4 van [[NEN3610]]. In deze paragraaf staat welke klassen in IMGeluid zijn afgeleid van welke klasses in NEN3610
 
-| **Klasse in IMGeluid** | **Klasse in NEN3610** |
-| ---------------------- | --------------------- |
-| NEN3610ID              | NEN3610ID (volgens NEN 3610:2011 standaard)             |
-| Kunstwerk              | [Kunstwerk](https://definities.geostandaarden.nl/nen3610-2022/nl/page/kunstwerk)             |
-| WegdeelBGE             | [Wegverkeerruimte](https://definities.geostandaarden.nl/nen3610-2022/nl/page/wegverkeerruimte)      |
-| SpoordeelBGE           | [Spoorverkeerruimte](https://definities.geostandaarden.nl/nen3610-2022/nl/page/spoorverkeerruimte)    |
+| **Klasse in IMGeluid** | **Klasse in NEN3610**                                                                             |
+| ---------------------- | ------------------------------------------------------------------------------------------------- |
+| NEN3610ID              | NEN3610ID (Dit is volgens de NEN3610:2011 standaard, maar NEN3610:2022 staat de NEN3610:2011 identificatiemethode ook toe.) |
+| Kunstwerk              | [Kunstwerk](https://definities.geostandaarden.nl/nen3610-2022/nl/page/kunstwerk)                  |
+| WegdeelBGE             | [Wegverkeerruimte](https://definities.geostandaarden.nl/nen3610-2022/nl/page/wegverkeerruimte)    |
+| SpoordeelBGE           | [Spoorverkeerruimte](https://definities.geostandaarden.nl/nen3610-2022/nl/page/spoorverkeerruimte)|
+| WegdeelGPP             | [Wegverkeerruimte](https://definities.geostandaarden.nl/nen3610-2022/nl/page/wegverkeerruimte)    |
+| SpoordeelGPP           | [Spoorverkeerruimte](https://definities.geostandaarden.nl/nen3610-2022/nl/page/spoorverkeerruimte)|
 
 
 ## Algemene Termen en definities
