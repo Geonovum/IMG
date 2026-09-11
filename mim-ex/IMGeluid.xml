@@ -6480,7 +6480,7 @@ Een documentverwijzing kan verbonden zijn aan een monitoringresultaat dat toebeh
                         <ul>
                            <li>Geluidproductieplafondobject mag voorkomen indien Geluidgegevenscollectie.systematiek="GPP" en Geluidgegevenscollectie.type="vaststelling" en Geluidgegevenscollectie.geluidbron = "rijksweg", OF "provinciale weg", OF "hoofdspoor", OF "lokale spoorweg". In alle overige gevallen mag Geluidproductieplafondobject niet voorkomen.</li>
                            <li>Als de subklasse GeluidproductieplafondobjectIndustrie van toepassing is mag de superklasse Geluidproductieplafondobject niet gebruikt worden.</li>
-                           <li>Wanneer Geluidproductieplafond.VaststellingVanRechtswege = "False", dan moet er een xlink naar een Documentverwijzing opgenomen zijn.</li>
+                           <li>Wanneer Geluidproductieplafondobject.VaststellingVanRechtswege = "False", dan moet er een xlink naar een Documentverwijzing opgenomen zijn.</li>
                         </ul>
                      </body>
                   </mim-ext:Kenmerk>

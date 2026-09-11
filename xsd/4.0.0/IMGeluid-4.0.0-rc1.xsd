@@ -6,9 +6,9 @@
            targetNamespace="http://www.geluidgegevens.nl/IMGeluid/4.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="4.0.0">
+           version="4.0.0-rc1">
    <xs:annotation>
-      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generated">September 3, 2026 at 12:37:55</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generated">September 11, 2026 at 10:46:31</xs:appinfo>
       <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generator">4.5.0</xs:appinfo>
       <xs:documentation source="http://www.imvertor.org/schema-info/conversion">
         This schema is based on an UML specification, which is transformed by the Imvertor software. Imvertor modules are in the public domain, see http://www.imvertor.org.
