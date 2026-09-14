@@ -27,6 +27,8 @@ jobs:
 
       - name: Prepare content
         run: |
+          set -euo pipefail
+
           rm -f *.md index.html
           mv snapshot.html index.html
           mkdir content
@@ -39,6 +41,10 @@ jobs:
               echo "Directory '$dir' bestaat niet, wordt overgeslagen."
             fi
           done
+
+          find content -type f \
+            \( -name '*.respec.html' -o -name '*.respec.catalog.xhtml' \) \
+            -delete
 
       - name: Blokkeer raw.githubusercontent.com-links in publicatie
         shell: bash

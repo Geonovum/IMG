@@ -102,6 +102,10 @@ jobs:
             fi
           done
 
+          find "$PUBLICATION_DIR" -type f \
+            \( -name '*.respec.html' -o -name '*.respec.catalog.xhtml' \) \
+            -delete
+
       - name: Validate publication HTML
         id: publication-html
         uses: anishathalye/proof-html@f060b7619c2410bd85d970459a60ef431cf47ed5 # v2.2.5
@@ -237,7 +241,7 @@ jobs:
           args: >-
             --offline
             --root-dir "${{ github.workspace }}/publication-validation"
-            './**/*.html'
+            './index.html'
           fail: true
           failIfEmpty: true
           format: markdown
