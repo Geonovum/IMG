@@ -2,7 +2,7 @@
    <body>
       <section id="cat" class="normative">
          <h2>Gegevensdefinitie</h2>
-         <!--MIMLM-IMGeluid-4.0.0-0-20230920-20260916-120246 imvertor Nightly-build.0-->
+         <!--MIMLM-IMGeluid-4.0.0-0-20230920-20260916-222605 imvertor Nightly-build.0-->
          <section id="EAID_66AE8FA2_74FC_4d4d_B2B2_249C8D6A651F">
             <h3>   Basismodel - overzicht</h3>
             <div class="imageinfo overview">
@@ -8293,6 +8293,20 @@
                               <td><a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Year</a></td>
                            </tr>
                            <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Geluidgegevenscollectie.jaar moet voorkomen wanneer Geluidgegevenscollectie.type =
+                                       "monitoring" OF "brongegevens monitoring" OF "prognose";</li>
+                                    
+                                    <li>Geluidgegevenscollectie.jaar moet in het verleden liggen als Geluidgegevenscollectie.type
+                                       = "monitoringresultaat" of "brongegevens monitoring".</li>
+                                    </ul>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th scope="row">Kardinaliteit</th>
                               <td>0 .. 1</td>
                            </tr>
@@ -9176,6 +9190,16 @@
                               <td><a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">URI</a></td>
                            </tr>
                            <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Hierin moet een correcte URL naar het document staan.</li>
+                                    </ul>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th scope="row">Indicatie formele historie</th>
                               <td>Nee</td>
                            </tr>
@@ -9690,6 +9714,19 @@
                               <td>99.9</td>
                            </tr>
                            <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Geluidproductieplafondobject.tijdelijke­Ontheffingswaarde mag ingevuld worden als
+                                       Geluidproductieplafondobject.begin­Tijdelijke­Ontheffing is ingevuld. In alle andere
+                                       gevallen mag Geluidproductieplafondobject.tijdelijke­Ontheffingswaarde niet worden
+                                       ingevuld.</li>
+                                    </ul>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th scope="row">Indicatie formele historie</th>
                               <td>Nee</td>
                            </tr>
@@ -10014,6 +10051,19 @@
                            <tr>
                               <th scope="row">Formaat</th>
                               <td><a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Date</a></td>
+                           </tr>
+                           <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>eind­Vrijstelling mag alleen een waarde hebben als begin­Vrijstelling is ingevuld.
+                                       In alle andere gevallen mag eind­Vrijstelling geen waarde hebben;</li>
+                                    
+                                    <li>De waarde van eind­Vrijstelling moet altijd na de waarde van begin­Vrijstelling liggen.</li>
+                                    </ul>
+                                 </td>
                            </tr>
                            <tr>
                               <th scope="row">Indicatie formele historie</th>
@@ -10406,6 +10456,19 @@
                            <tr>
                               <th scope="row">Maximumwaarde inclusief</th>
                               <td>99.9</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Geluidproductieplafondobject­Industrie.tijdelijke­Ontheffingswaarde­Lnight mag ingevuld
+                                       worden als begin­Tijdelijke­Ontheffing­Lnight is ingevuld. In alle andere gevallen
+                                       mag Geluidproductieplafondobject­Industrie.tijdelijke­Ontheffingswaarde­Lnight niet
+                                       worden ingevuld.</li>
+                                    </ul>
+                                 </td>
                            </tr>
                            <tr>
                               <th scope="row">Indicatie formele historie</th>
@@ -11768,6 +11831,20 @@
                               <td><a class="link" href="#detail_class_IMGeluid_Terreintype">Terreintype</a></td>
                            </tr>
                            <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Wanneer Geluidgegevenscollectie.geluidbron = 'luchtvaart' MOET terrein.type­Terrein
+                                       'luchthavengebied' zijn.</li>
+                                    
+                                    <li>Wanneer Geluidgegevenscollectie.geluidbron = 'schiet- of springterrein' MOET terrein.type­Terrein
+                                       'schiet- of springterrein' zijn.</li>
+                                    </ul>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th scope="row">Indicatie formele historie</th>
                               <td>Nee</td>
                            </tr>
@@ -12116,6 +12193,17 @@
                            <tr>
                               <th scope="row">Formaat</th>
                               <td><a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a></td>
+                           </tr>
+                           <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Indien het gebruikte softwarepakket meerdere rekenmodellen ondersteunt, moet men ook
+                                       de rekenmodelversie opnemen.</li>
+                                    </ul>
+                                 </td>
                            </tr>
                            <tr>
                               <th scope="row">Indicatie formele historie</th>
@@ -12927,6 +13015,22 @@
                               <td><a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Year</a></td>
                            </tr>
                            <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Geluidemissieobject.situatie­Van moet een waarde hebben als het besluit is genomen
+                                       na inwerkingtreding van de omgevingswet en Geluidgegevenscollectie.systematiek="GPP"
+                                       EN ( Geluidgegevenscollectie.geluidbron = "rijksweg", OF "provinciale weg", OF "hoofdspoorweg"
+                                       OF "lokale spoorweg");</li>
+                                    
+                                    <li>Geluidemissieobject.situatie­Van moet een waarde hebben als Geluidgegevenscollectie.systematiek="BGE"
+                                       en Geluidgegevenscollectie.type="vaststelling".</li>
+                                    </ul>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th scope="row">Indicatie formele historie</th>
                               <td>Nee</td>
                            </tr>
@@ -13102,6 +13206,17 @@
                            <tr>
                               <th scope="row">Maximumwaarde inclusief</th>
                               <td>1000</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Als Geluidgegevenscollectie.geluidbron gelijk is "industrieterrein", dan moet reflectiepunt­Hoogte
+                                       een waarde hebben.</li>
+                                    </ul>
+                                 </td>
                            </tr>
                            <tr>
                               <th scope="row">Indicatie formele historie</th>
@@ -13454,6 +13569,17 @@
                               <td><a class="link" href="#detail_class_IMGeluid_BronTypeWaarde">Bron­Type­Waarde</a></td>
                            </tr>
                            <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Geluidbron­Industrie.brontype moet ingevuld zijn als Geluidgegevenscollectie.geluidbron
+                                       = "Industrie";</li>
+                                    </ul>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th scope="row">Indicatie formele historie</th>
                               <td>Nee</td>
                            </tr>
@@ -13528,6 +13654,17 @@
                               <td><a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Boolean</a></td>
                            </tr>
                            <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Geluidbron­Industrie.negeer­Gebouw moet ingevuld zijn als Geluidgegevenscollectie.geluidbron
+                                       = "Industrie".</li>
+                                    </ul>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th scope="row">Indicatie formele historie</th>
                               <td>Nee</td>
                            </tr>
@@ -13595,6 +13732,17 @@
                               <td><a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Boolean</a></td>
                            </tr>
                            <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Geluidbron­Industrie.negeer­Procesinstallatiegebied moet ingevuld zijn als Geluidgegevenscollectie.geluidbron
+                                       = "Industrie".</li>
+                                    </ul>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th scope="row">Indicatie formele historie</th>
                               <td>Nee</td>
                            </tr>
@@ -13660,6 +13808,17 @@
                            <tr>
                               <th scope="row">Formaat</th>
                               <td><a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Boolean</a></td>
+                           </tr>
+                           <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Geluidbron­Industrie.negeer­Reflectie moet ingevuld zijn als Geluidgegevenscollectie.geluidbron
+                                       = "Industrie".</li>
+                                    </ul>
+                                 </td>
                            </tr>
                            <tr>
                               <th scope="row">Indicatie formele historie</th>
@@ -15468,6 +15627,16 @@
                               <td><a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">URI</a></td>
                            </tr>
                            <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Hier moet een correcte URL naar het document staan.</li>
+                                    </ul>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th scope="row">Indicatie formele historie</th>
                               <td>Nee</td>
                            </tr>
@@ -15971,6 +16140,20 @@
                            <tr>
                               <th scope="row">Formaat</th>
                               <td>GM_Curve</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Als onderkant­Scherm gevuld is moet de geometrie van de onderkant­Scherm evenveel
+                                       punten bevatten als bovenkant­Scherm met dezelfde x- en y-coordinaten in dezelfde
+                                       volgorde.</li>
+                                    
+                                    <li>Als status­Zwevend de waarde "true" heeft dan moet onderkant­Scherm ingevuld zijn.</li>
+                                    </ul>
+                                 </td>
                            </tr>
                            <tr>
                               <th scope="row">Indicatie formele historie</th>
@@ -16595,6 +16778,20 @@
                            <tr>
                               <th scope="row">Formaat</th>
                               <td>GM_Curve</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Als onderkant­Scherm gevuld is moet de geometrie van de onderkant­Scherm evenveel
+                                       punten bevatten als bovenkant­Scherm met dezelfde x- en y-coordinaten in dezelfde
+                                       volgorde.</li>
+                                    
+                                    <li>Als status­Zwevend de waarde "true" heeft dan moet onderkant­Scherm ingevuld zijn.</li>
+                                    </ul>
+                                 </td>
                            </tr>
                            <tr>
                               <th scope="row">Indicatie formele historie</th>
@@ -17522,6 +17719,16 @@
                               <td>GM_Surface</td>
                            </tr>
                            <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Alle z-coördinaten in Bouwwerk.geometrie moeten hetzelfde zijn.</li>
+                                    </ul>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th scope="row">Indicatie formele historie</th>
                               <td>Nee</td>
                            </tr>
@@ -17602,6 +17809,17 @@
                            <tr>
                               <th scope="row">Formaat</th>
                               <td>GM_Surface</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Als maaiveld gevuld is moet deze evenveel punten bevatten als de geometrie met dezelfde
+                                       x- en y-coördinaten in dezelfde volgorde.</li>
+                                    </ul>
+                                 </td>
                            </tr>
                            <tr>
                               <th scope="row">Indicatie formele historie</th>
@@ -17893,6 +18111,16 @@
                               <td>GM_Surface</td>
                            </tr>
                            <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Alle z-coördinaten in Procesinstallatiegebied.geometrie moeten dezelfde waarde hebben.</li>
+                                    </ul>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th scope="row">Indicatie formele historie</th>
                               <td>Nee</td>
                            </tr>
@@ -17959,6 +18187,17 @@
                            <tr>
                               <th scope="row">Formaat</th>
                               <td>GM_Surface</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Als maaiveld gevuld is moet deze evenveel punten bevatten als de geometrie van het
+                                       Procesinstallatiegebied met dezelfde x- en y-coördinaten in dezelfde volgorde.</li>
+                                    </ul>
+                                 </td>
                            </tr>
                            <tr>
                               <th scope="row">Indicatie formele historie</th>
@@ -18196,6 +18435,16 @@
                               <td>GM_Surface</td>
                            </tr>
                            <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Alle z-coördinaten in Vegetatiegebied.geometrie moeten dezelfde waarde hebben.</li>
+                                    </ul>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th scope="row">Indicatie formele historie</th>
                               <td>Nee</td>
                            </tr>
@@ -18273,6 +18522,17 @@
                            <tr>
                               <th scope="row">Formaat</th>
                               <td>GM_Surface</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">Regels</th>
+                              <td>
+                                 
+                                 <ul>
+                                    
+                                    <li>Als maaiveld gevuld is moet deze evenveel punten bevatten als de geometrie van een
+                                       Vegetatiegebied met dezelfde x- en y-coördinaten in dezelfde volgorde.</li>
+                                    </ul>
+                                 </td>
                            </tr>
                            <tr>
                               <th scope="row">Indicatie formele historie</th>
@@ -26671,7 +26931,7 @@
       </section>
       <section id="lis" class="normative">
          <h2>Inhoud van waardelijsten</h2>
-         <!--MIMLM-IMGeluid-4.0.0-0-20230920-20260916-120246 imvertor Nightly-build.0-->
+         <!--MIMLM-IMGeluid-4.0.0-0-20230920-20260916-222605 imvertor Nightly-build.0-->
          <section id="detail_class_IMGeluid_Schermtype">
             <h3>Enumeratie details  Schermtype</h3>
             
