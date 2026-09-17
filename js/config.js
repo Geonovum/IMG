@@ -1,7 +1,7 @@
 let respecConfig = {
   useLogo: true,
   useLabel: true,
-  // TODO: title is verplicht! Neem hieronder de titel van het document op
+  // title is verplicht! Neem hieronder de titel van het document op
   title: "Informatie Model Geluid (IMGeluid)",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   //specStatus: "wv",                   // Werkversie
@@ -92,16 +92,8 @@ let respecConfig = {
 
   // github URL in.
   // neem hier de URL van de github repository op waar het respec document in staat
-  github: "https://github.com/Geonovum/IMG",
+  edDraftURI: "https://geonovum.github.io/IMG/",
 
-  // Create PDF and link to file in header (optional):
-  // TODO: Change the filename as preferred.
-  //alternateFormats: [
-  //    {
-  //        label: "pdf",
-  //        uri: "static/IMGeluid.pdf",
-  //    },
-  //],
   // Lokale lijst voor bibliografie
   // - Kijk eerst naar de beschikbare www.specref.org .
   // - Kijk daarna in de organisatieconfig.
