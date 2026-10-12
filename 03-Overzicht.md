@@ -363,7 +363,7 @@ De mapping is als volgt:
 ## Semantische relatie met NEN3610
 
 Veel van de klassen in IMGeluid zijn afgeleid van het semantisch model zoals beschreven in paragraaf 8.4 van [[NEN3610]]. 
-In deze paragraaf staat welke klassen in IMGeluid zijn afgeleid van welke klasses in NEN3610. Er is daarbij uitgegaan van versie 2022 van NEN3610.
+In deze paragraaf staat welke klassen in IMGeluid zijn afgeleid van welke klassen in NEN3610. Er is daarbij uitgegaan van versie 2022 van NEN3610.
 
 
 | **Klasse in IMGeluid** | **Klasse in NEN3610:2022**                                                                             |
@@ -384,7 +384,7 @@ gesorteerd op alfabetische volgorde per domein.
 ### Geluiddomein
 
 De definities van de waardelijsten en hun waarden zijn te vinden in de [conceptenbilbliotheek van Geonovum](https://definities.geostandaarden.nl/img/nl/).
-Sommige van deze definities wijken af van definities hieronder. Dat komt doordat ze in de conceptenbibliotheek specifiek als waardelijst of waarde in een waardelijst voorkomen en in de lijst hieronder meer als algemene begrippen.
+Sommige van deze definities wijken af van definities hieronder. Dat komt doordat ze in de conceptenbibliotheek specifiek als waardelijst of waarde in een waardelijst voorkomen en in de lijst hieronder meer als algemene begrippen in het geluiddomein.
 
 | **Term**                   | **Definitie**                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
