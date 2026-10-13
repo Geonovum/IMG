@@ -4,10 +4,10 @@ let respecConfig = {
   // title is verplicht! Neem hieronder de titel van het document op
   title: "Informatie Model Geluid (IMGeluid)",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-  specStatus: "wv",                   // Werkversie
+  //specStatus: "wv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
   //specStatus: "vv",               // Versie ter vaststelling
-  //specStatus: "def",              // Vastgestelde versie
+  specStatus: "def",              // Vastgestelde versie
   //specStatus: "basis",            // Basis Document
 
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
@@ -25,10 +25,10 @@ let respecConfig = {
   
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  publishDate: "2026-09-25",
+  publishDate: "2026-10-15",
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   publishVersion: "4.0",
-  previousPublishVersion: "3.1.1",
+  previousPublishVersion: "4.0vv",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
   previousPublishDate: "2026-09-25",
   previousMaturity: "vv",
