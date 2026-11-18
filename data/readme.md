@@ -1,6 +1,6 @@
 Dit Imvertor software maakt voor één plaat een fout. De verwijzing
 naar het plaatje moet na het draaien van Imvertor gefixed worden.
 
-Vervang `.ges/fig33-dwarsdoorsnee-talud.png.` door `data/Images/fig33_dwarsdoorsnee_talud.png`
+Vervang `ges/fig33-dwarsdoorsnee-talud.png` door `data/Images/fig33_dwarsdoorsnee_talud.png` in IMG-cat.respec.html.
 
-Het script `fixImage.sh` doet dit voor je.
+Het script `fixImage.sh` kan dit voor je doen als je juiste rechten hebt.
